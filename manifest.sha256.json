@@ -1,8 +1,24 @@
 {
   "files": [
     {
+      "path": "LICENSE",
+      "sha256": "9f95d837746f5dc3823e1931f6ff51a6576695434c845b7164d9911f6d571029"
+    },
+    {
+      "path": "README.md",
+      "sha256": "203f36c7b48f166966c3ac5a7abc687b1304ebce5ce8ea4f6b5b2048f43ff810"
+    },
+    {
       "path": "docs/architecture/oci-1-contract-profile.md",
-      "sha256": "13b78ebcdddef482183848b5cf56c69a0718ca2d778915a3650df2774dc30ea1"
+      "sha256": "3182520063466224c484b83081a36e3ecc1c0d257d40cae190dd45ae605e579e"
+    },
+    {
+      "path": "docs/architecture/oci-1-error-map.json",
+      "sha256": "c41fc247fa22ba4ccfabefa4da0802d8516244fedae3f0c836429bd0ea522e21"
+    },
+    {
+      "path": "docs/architecture/oci-1-fixture-index.json",
+      "sha256": "f2a5bb2f3f412bb2455652f389e36e68ec8f62e3f70df8028c2e80faffd59ff3"
     },
     {
       "path": "docs/architecture/oci-1-profile.json",
@@ -45,6 +61,118 @@
       "sha256": "d4f57cb4b4576341cf1c1cdc487eb9ad16ee88bb4fc54390fa62e6b2ef579cf8"
     },
     {
+      "path": "export-metadata.json",
+      "sha256": "6bd5568aefa6545bbe1e91dcbd24cf0551ef27ef58f0e254b7b785544c1fa9b9"
+    },
+    {
+      "path": "fixtures/oci1/invalid/bad-file-hash/bundle.json",
+      "sha256": "0b1fd929d2af1bc58ad0d627e94381b8a6e34d88c21294487506334c390d8b61"
+    },
+    {
+      "path": "fixtures/oci1/invalid/bad-file-hash/context.jsonld",
+      "sha256": "ab0f2d3cb76c92ba4363c4c262b55d69fe67d0283271f7a1253c26f592fa015c"
+    },
+    {
+      "path": "fixtures/oci1/invalid/bad-file-hash/obt.jws",
+      "sha256": "11eecdf2877142716948ea36c7e319d0e950fd6cfd3f9848a5a930653e542276"
+    },
+    {
+      "path": "fixtures/oci1/invalid/bad-file-hash/pack.json",
+      "sha256": "58eef77e81ba6c34d21765f88a88f4d928ae5dc436749664c100c31c551867d4"
+    },
+    {
+      "path": "fixtures/oci1/invalid/bad-file-hash/vocab.skos.jsonld",
+      "sha256": "1404abee86169588ed1ae151fa0db817727c1a4571d41b9415f7b77e699a8718"
+    },
+    {
+      "path": "fixtures/oci1/invalid/missing-required-field/bundle.json",
+      "sha256": "416b576c811106845359b54190ed67170d23e8be091a399bdb3f22d28396487f"
+    },
+    {
+      "path": "fixtures/oci1/invalid/missing-required-field/context.jsonld",
+      "sha256": "ab0f2d3cb76c92ba4363c4c262b55d69fe67d0283271f7a1253c26f592fa015c"
+    },
+    {
+      "path": "fixtures/oci1/invalid/missing-required-field/obt.jws",
+      "sha256": "759115c4b3a7bf6d89f7101d2ba0a19377c753eeb683027a8d2d3925580da7f0"
+    },
+    {
+      "path": "fixtures/oci1/invalid/missing-required-field/pack.json",
+      "sha256": "9a438ada204f1cc6b51550952530d10100fe38ca6b6809783739786dd1e1776d"
+    },
+    {
+      "path": "fixtures/oci1/invalid/missing-required-field/vocab.skos.jsonld",
+      "sha256": "1404abee86169588ed1ae151fa0db817727c1a4571d41b9415f7b77e699a8718"
+    },
+    {
+      "path": "fixtures/oci1/invalid/overlay-precedence-conflict/bundle.json",
+      "sha256": "6afff5d2b3ec26fc0c2514ea01c77c90b304e39e9a8ed1dfc97687b1469d661e"
+    },
+    {
+      "path": "fixtures/oci1/invalid/overlay-precedence-conflict/context.jsonld",
+      "sha256": "ab0f2d3cb76c92ba4363c4c262b55d69fe67d0283271f7a1253c26f592fa015c"
+    },
+    {
+      "path": "fixtures/oci1/invalid/overlay-precedence-conflict/obt.jws",
+      "sha256": "7950162edf0f0175c19fce022f43853d6490a7c0a2e32166d295d333bc1361df"
+    },
+    {
+      "path": "fixtures/oci1/invalid/overlay-precedence-conflict/pack.json",
+      "sha256": "a6a08de23eb60225ecff3b3ceac31dfb0c5d912de2dd9bcfc0064b366d3ca401"
+    },
+    {
+      "path": "fixtures/oci1/invalid/overlay-precedence-conflict/vocab.skos.jsonld",
+      "sha256": "1404abee86169588ed1ae151fa0db817727c1a4571d41b9415f7b77e699a8718"
+    },
+    {
+      "path": "fixtures/oci1/invalid/signature-mismatch/bundle.json",
+      "sha256": "416b576c811106845359b54190ed67170d23e8be091a399bdb3f22d28396487f"
+    },
+    {
+      "path": "fixtures/oci1/invalid/signature-mismatch/context.jsonld",
+      "sha256": "ab0f2d3cb76c92ba4363c4c262b55d69fe67d0283271f7a1253c26f592fa015c"
+    },
+    {
+      "path": "fixtures/oci1/invalid/signature-mismatch/obt.jws",
+      "sha256": "ff2696f6d37b3d6694670ab277982d52a4e616016d52ed11c9f1193c3cb8fc7c"
+    },
+    {
+      "path": "fixtures/oci1/invalid/signature-mismatch/pack.json",
+      "sha256": "58eef77e81ba6c34d21765f88a88f4d928ae5dc436749664c100c31c551867d4"
+    },
+    {
+      "path": "fixtures/oci1/invalid/signature-mismatch/vocab.skos.jsonld",
+      "sha256": "1404abee86169588ed1ae151fa0db817727c1a4571d41b9415f7b77e699a8718"
+    },
+    {
+      "path": "fixtures/oci1/keys/ed25519-test-pub.jwk.json",
+      "sha256": "1e17ddca0efa63f0abe148203907de5fb0912629667c0d4f870ed057e09f5064"
+    },
+    {
+      "path": "fixtures/oci1/valid/minimal/bundle.json",
+      "sha256": "416b576c811106845359b54190ed67170d23e8be091a399bdb3f22d28396487f"
+    },
+    {
+      "path": "fixtures/oci1/valid/minimal/context.jsonld",
+      "sha256": "ab0f2d3cb76c92ba4363c4c262b55d69fe67d0283271f7a1253c26f592fa015c"
+    },
+    {
+      "path": "fixtures/oci1/valid/minimal/obt.jws",
+      "sha256": "759115c4b3a7bf6d89f7101d2ba0a19377c753eeb683027a8d2d3925580da7f0"
+    },
+    {
+      "path": "fixtures/oci1/valid/minimal/pack.json",
+      "sha256": "58eef77e81ba6c34d21765f88a88f4d928ae5dc436749664c100c31c551867d4"
+    },
+    {
+      "path": "fixtures/oci1/valid/minimal/vocab.skos.jsonld",
+      "sha256": "1404abee86169588ed1ae151fa0db817727c1a4571d41b9415f7b77e699a8718"
+    },
+    {
+      "path": "registry/index.json",
+      "sha256": "1979ffa81c48ca4847a3b175f527c74eb717e4f6231a1bb9c14171b7df53355f"
+    },
+    {
       "path": "schemas/bundle-manifest.schema.json",
       "sha256": "20407e2db39d9cf7ba97020c8320a77abc4fd86e25935370a9a49903bf3c9679"
     },
@@ -75,6 +203,14 @@
     {
       "path": "schemas/promotion-gate-result.schema.json",
       "sha256": "49164199f3b735019e29a0c399d1cd413cb1aba7d3da1c146ab125bb67ac4651"
+    },
+    {
+      "path": "tools/generate-oci1-fixtures.mjs",
+      "sha256": "6b62d81adaac1eb4298e64e3d99e408310ba2678812e24d12c59f82453dd4d54"
+    },
+    {
+      "path": "tools/run-oci1-conformance-fixtures.mjs",
+      "sha256": "c0046fe21ba83e4c6818030b3706590908d3d58b8d9e4f276a577e6019138871"
     }
   ]
 }

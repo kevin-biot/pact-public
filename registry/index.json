@@ -1,0 +1,12 @@
+{
+  "packs": [
+    {
+      "snapshot_id": "ontology:test-fixture:v0.1.0",
+      "domain": "test-fixture",
+      "provider_id": "ontology:pact-fixtures",
+      "trust_tier": "Tier1",
+      "version": "v0.1.0",
+      "path": "fixtures/oci1/valid/minimal"
+    }
+  ]
+}

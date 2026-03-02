@@ -1,0 +1,52 @@
+{
+  "schema_version": "1.0",
+  "generated_at_utc": "2026-03-02T11:47:40.571Z",
+  "keyset": "fixtures/oci1/keys/ed25519-test-pub.jwk.json",
+  "cases": [
+    {
+      "id": "OCI1-VALID-001",
+      "description": "Valid minimal OCI-1 pack, bundle, and EdDSA signature.",
+      "path": "fixtures/oci1/valid/minimal",
+      "expected": {
+        "status": "pass",
+        "code": "PASS"
+      }
+    },
+    {
+      "id": "OCI1-FAIL-001",
+      "description": "pack.json missing required field provider_id.",
+      "path": "fixtures/oci1/invalid/missing-required-field",
+      "expected": {
+        "status": "fail",
+        "code": "PACK_SCHEMA_REQUIRED_MISSING"
+      }
+    },
+    {
+      "id": "OCI1-FAIL-002",
+      "description": "bundle.json hash does not match vocab file content.",
+      "path": "fixtures/oci1/invalid/bad-file-hash",
+      "expected": {
+        "status": "fail",
+        "code": "BUNDLE_FILE_HASH_MISMATCH"
+      }
+    },
+    {
+      "id": "OCI1-FAIL-003",
+      "description": "JWS signature does not verify for bundle payload.",
+      "path": "fixtures/oci1/invalid/signature-mismatch",
+      "expected": {
+        "status": "fail",
+        "code": "BUNDLE_SIGNATURE_INVALID"
+      }
+    },
+    {
+      "id": "OCI1-FAIL-004",
+      "description": "Overlay precedence refers to missing logical overlay key.",
+      "path": "fixtures/oci1/invalid/overlay-precedence-conflict",
+      "expected": {
+        "status": "fail",
+        "code": "OVL_CANONICAL_MISMATCH"
+      }
+    }
+  ]
+}

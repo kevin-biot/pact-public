@@ -1,0 +1,16 @@
+{
+  "@context": {
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "dct": "http://purl.org/dc/terms/"
+  },
+  "@id": "https://pact.example/vocab/test-fixture",
+  "@type": "skos:ConceptScheme",
+  "dct:title": "PACT Test Fixture Vocabulary",
+  "skos:hasTopConcept": [
+    {
+      "@id": "https://pact.example/vocab/test-fixture#intent.activate",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "Intent Activate"
+    }
+  ]
+}

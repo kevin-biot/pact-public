@@ -57,3 +57,16 @@ OCI-1 is defined by these artifacts:
 2. Breaking semantic changes require OCI major version bump.
 3. No unversioned contract break is allowed on main.
 4. CI enforces a version gate via `scripts/check-oci-version-gate.sh` when OCI contract files change.
+
+## 6. Public Fixture Baseline
+
+Implementation-neutral fixtures are published as part of OCI-1 baseline:
+
+1. `docs/architecture/oci-1-fixture-index.json`
+2. `docs/architecture/oci-1-error-map.json`
+3. `fixtures/oci1/valid/*`
+4. `fixtures/oci1/invalid/*`
+
+Reference harness:
+
+1. `tools/run-oci1-conformance-fixtures.mjs`

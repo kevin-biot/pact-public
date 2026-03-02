@@ -1,6 +1,6 @@
 {
-  "exported_at_utc": "2026-03-02T11:31:41Z",
-  "source_repo_head": "82e3c1729b25ceb2e7c3ce4a4be20aab5d7bdca0",
-  "allowlist": "../../scripts/pact-public-allowlist.txt",
-  "file_count": 19
+  "exported_at_utc": "2026-03-02T11:48:48Z",
+  "source_repo_head": "3bbb3efa55114a24cffd763cac1c96fd0fadc44f",
+  "allowlist": "public-repo-tracked-artifacts",
+  "file_count": 53
 }

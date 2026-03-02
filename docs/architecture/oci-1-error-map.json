@@ -1,0 +1,20 @@
+{
+  "schema_version": "1.0",
+  "errors": {
+    "PASS": "Case passed expected OCI-1 checks.",
+    "PACK_SCHEMA_REQUIRED_MISSING": "pack.json missing required top-level field.",
+    "PACK_SCHEMA_UNKNOWN_FIELD": "pack.json contains unknown top-level field when additionalProperties=false.",
+    "BUNDLE_SCHEMA_REQUIRED_MISSING": "bundle.json missing required top-level field.",
+    "BUNDLE_SCHEMA_UNKNOWN_FIELD": "bundle.json contains unknown top-level field when additionalProperties=false.",
+    "BUNDLE_FILE_LOGICAL_KEY_MISSING": "bundle logical key not present in pack files map.",
+    "BUNDLE_FILE_HASH_MISMATCH": "bundle declared hash does not match referenced file.",
+    "BUNDLE_SIGNATURE_FORMAT_INVALID": "obt.jws is not a valid compact JWS payload.",
+    "BUNDLE_SIGNATURE_ALG_UNSUPPORTED": "JWS alg is unsupported for OCI-1 baseline.",
+    "BUNDLE_SIGNATURE_PAYLOAD_MISMATCH": "JWS payload does not equal bundle.json.",
+    "BUNDLE_SIGNATURE_INVALID": "JWS signature verification failed.",
+    "OVL_CANONICAL_MISMATCH": "Overlay precedence references are inconsistent with files map or deny-wins constraints.",
+    "CASE_PATH_MISSING": "Fixture case path does not exist.",
+    "CASE_FILE_MISSING": "Required fixture file is missing.",
+    "CASE_JSON_INVALID": "Fixture JSON file is invalid."
+  }
+}

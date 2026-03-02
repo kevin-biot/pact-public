@@ -40,6 +40,29 @@ Implementations claiming OCI-1 compatibility MUST validate against the following
 
 Conformance claims should reference specific artifact versions or release tags.
 
+## Conformance Fixtures
+
+This repository includes implementation-neutral OCI-1 conformance fixtures under:
+
+1. `fixtures/oci1/valid`
+2. `fixtures/oci1/invalid`
+3. `docs/architecture/oci-1-fixture-index.json`
+4. `docs/architecture/oci-1-error-map.json`
+
+Run the fixture harness:
+
+```bash
+node tools/run-oci1-conformance-fixtures.mjs
+```
+
+Regenerate synthetic fixtures (including test signatures):
+
+```bash
+node tools/generate-oci1-fixtures.mjs
+```
+
+Fixture signing keys are test-only and must not be used in production systems.
+
 ## Publication Model
 
 This repository is generated from a private core engineering repository using an allowlisted export process.
