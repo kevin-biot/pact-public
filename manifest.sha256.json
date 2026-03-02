@@ -6,11 +6,11 @@
     },
     {
       "path": "README.md",
-      "sha256": "056ef78eb2082cf23d44029d2a09d404b83f078f5c5e6aeb551469588a4bec92"
+      "sha256": "47c9e9e8de9509c4ea12d2a642b368056b2b29238728d4a1361958d299a975f5"
     },
     {
       "path": "docs/architecture/oci-1-contract-profile.md",
-      "sha256": "e53bcdaee801c5148d5080596ab55a8670f75d647ee9787410b6ed63a4dd9d96"
+      "sha256": "187c3af0777d5697a244cd73346aae918f0a9be03547429f39231c5b18addca4"
     },
     {
       "path": "docs/architecture/oci-1-error-map.json",
@@ -62,7 +62,7 @@
     },
     {
       "path": "export-metadata.json",
-      "sha256": "eca38a6093a6c40402461154c3c0690d17fc1fd647155e77107af6203d119a81"
+      "sha256": "7756ee06881ba3062067f0fbc6a6a3cce65ca44a5b09be92d29f70675c0bbd76"
     },
     {
       "path": "fixtures/oci1/invalid/bad-file-hash/bundle.json",
@@ -169,6 +169,22 @@
       "sha256": "1404abee86169588ed1ae151fa0db817727c1a4571d41b9415f7b77e699a8718"
     },
     {
+      "path": "fixtures/policy-reference/cases/fail-bundle-commit-mismatch.json",
+      "sha256": "9e9a0208d28cc184c21fde49556be88e292db147c21aa00cd0632f6850e10be1"
+    },
+    {
+      "path": "fixtures/policy-reference/cases/fail-missing-effect.json",
+      "sha256": "25146af76d26cf47dded08c1a42a5ac7cee61edb0adf95fe89ab3ab232fdb502"
+    },
+    {
+      "path": "fixtures/policy-reference/cases/valid-cic-psc.json",
+      "sha256": "c05b26ad0c42c0dba9fc964ae649ea1b1654dfd1a4625e241a65ccaa59760104"
+    },
+    {
+      "path": "fixtures/policy-reference/index.json",
+      "sha256": "7d5af4c5e78a2b0a2cc638e1fad43c1684f5aba39f8f6c327181160feeafa768"
+    },
+    {
       "path": "fixtures/telco-reference/cases/fail-bundle-commit-mismatch.json",
       "sha256": "0f4a4c0e476ae7f1b13fee53bceb595226a477dff4e200871d9d4a491d0a1da3"
     },
@@ -186,7 +202,7 @@
     },
     {
       "path": "registry/index.json",
-      "sha256": "53af89e11c27aadf5707489ebf47d0b1907dfa01d79147368650419f17cfedb1"
+      "sha256": "6db4876d99072ec4b78921a8e3688ab5f313740cbe125d11ac0940d37760df07"
     },
     {
       "path": "schemas/bundle-manifest.schema.json",
@@ -229,12 +245,56 @@
       "sha256": "c0046fe21ba83e4c6818030b3706590908d3d58b8d9e4f276a577e6019138871"
     },
     {
+      "path": "tools/run-policy-reference-fixtures.mjs",
+      "sha256": "4b32ef1329bbb7889d265075702c7181dcabd5d3ebc907ab26479d1343914e55"
+    },
+    {
       "path": "tools/run-telco-reference-fixtures.mjs",
       "sha256": "0d6ccff0e31f6aa71087b50f9c73067723b10fc094f5b2bf767c4f6e05d9517e"
     },
     {
+      "path": "verticals/policy-reference-pack/README.md",
+      "sha256": "7f98dd96981ebf0b42eec5ae806d45e3fe00c9e03ea01f674e213cb8676efdd6"
+    },
+    {
+      "path": "verticals/policy-reference-pack/bundle.json",
+      "sha256": "c977889be454afc994c3f27e36a809fe46fe3fc1553628f28a8bbffdb10e737a"
+    },
+    {
+      "path": "verticals/policy-reference-pack/context.jsonld",
+      "sha256": "4d4e233612216134c4bfea3644a0ab302ca5a363cdd40cf531b620c2512dabf3"
+    },
+    {
+      "path": "verticals/policy-reference-pack/intent-mappings.json",
+      "sha256": "44869793decd6ddf4970b396ef589980d42ef991bc57f0532ff465130d5df1b7"
+    },
+    {
+      "path": "verticals/policy-reference-pack/keys/ed25519-reference-pub.jwk.json",
+      "sha256": "7d5cb34337034e871398bf8502be67b1986a29c6e6d6ed2af2f8942e7b6ec0e4"
+    },
+    {
+      "path": "verticals/policy-reference-pack/lineage.json",
+      "sha256": "77ee0a39830693539d84bafb71ffcfbac43796a47407f95ea8a4de93013daba0"
+    },
+    {
+      "path": "verticals/policy-reference-pack/obt.jws",
+      "sha256": "8fe09b838a199200ed35594e1b2b24159cd09a9c0dd38717238803824e2d290b"
+    },
+    {
+      "path": "verticals/policy-reference-pack/pack.json",
+      "sha256": "95ae1fe6e9c1ab82c3608274e584777fa318353b9e2e9f6813d4f923f137173d"
+    },
+    {
+      "path": "verticals/policy-reference-pack/shapes.ttl",
+      "sha256": "3fab9255d8a6983c70c0907cac556f50e8d5284afd9092445677156418be2e9c"
+    },
+    {
+      "path": "verticals/policy-reference-pack/vocab.skos.jsonld",
+      "sha256": "d8f0536dbd63a147eb58c202f00e74f98e5d94f27e95933139589ed6d22e1a8a"
+    },
+    {
       "path": "verticals/telco-reference-pack/README.md",
-      "sha256": "6101cc8128e08673ea0b6faf8afba4d2557d25c487ffff188bcff00c8e5518bc"
+      "sha256": "c3824c0f41f4742cb605b75ef815d20382f839b833de5a47e65a6472c558ca85"
     },
     {
       "path": "verticals/telco-reference-pack/bundle.json",

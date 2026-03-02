@@ -15,6 +15,14 @@
       "trust_tier": "Tier1",
       "version": "v0.1.0",
       "path": "verticals/telco-reference-pack"
+    },
+    {
+      "snapshot_id": "ontology:policy-reference:v0.1.0",
+      "domain": "policy-reference",
+      "provider_id": "ontology:pact-reference",
+      "trust_tier": "Tier1",
+      "version": "v0.1.0",
+      "path": "verticals/policy-reference-pack"
     }
   ]
 }

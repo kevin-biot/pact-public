@@ -1,0 +1,20 @@
+{
+  "id": "policy-reference-pack-0.1.0",
+  "domain": "policy-reference",
+  "version": "0.1.0",
+  "providerId": "ontology:pact-reference",
+  "trustTier": "Tier1",
+  "policySnapshotId": "sha256:cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc",
+  "files": {
+    "context": "sha256:4d4e233612216134c4bfea3644a0ab302ca5a363cdd40cf531b620c2512dabf3",
+    "vocab": "sha256:d8f0536dbd63a147eb58c202f00e74f98e5d94f27e95933139589ed6d22e1a8a",
+    "shapes": "sha256:3fab9255d8a6983c70c0907cac556f50e8d5284afd9092445677156418be2e9c",
+    "intent_mappings": "sha256:44869793decd6ddf4970b396ef589980d42ef991bc57f0532ff465130d5df1b7",
+    "lineage": "sha256:77ee0a39830693539d84bafb71ffcfbac43796a47407f95ea8a4de93013daba0"
+  },
+  "precedence": [],
+  "denyWins": true,
+  "nbf": "2026-03-02T00:00:00Z",
+  "exp": "2030-03-02T00:00:00Z",
+  "revEpoch": 1
+}

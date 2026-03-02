@@ -70,6 +70,12 @@ Run the reference telco CIC+PSC fixture harness:
 node tools/run-telco-reference-fixtures.mjs
 ```
 
+Run the reference policy CIC+PSC fixture harness:
+
+```bash
+node tools/run-policy-reference-fixtures.mjs
+```
+
 Regenerate synthetic fixtures (including test signatures):
 
 ```bash
@@ -83,9 +89,12 @@ Fixture signing keys are test-only and must not be used in production systems.
 This repository includes:
 
 1. `verticals/telco-reference-pack/`
+2. `verticals/policy-reference-pack/`
 
 This telco pack is a non-normative example vertical profile demonstrating PACT extension mechanics.
 It does not define TM Forum standards and does not replace IG1453.
+
+The policy reference pack is a non-normative base-policy example demonstrating cross-domain policy semantics independent of telco standards.
 
 ## Publication Model
 

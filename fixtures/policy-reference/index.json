@@ -1,0 +1,31 @@
+{
+  "schema_version": "1.0",
+  "generated_at_utc": "2026-03-02T00:00:00Z",
+  "pack_path": "verticals/policy-reference-pack",
+  "cases": [
+    {
+      "id": "POLICY-REF-VALID-001",
+      "path": "fixtures/policy-reference/cases/valid-cic-psc.json",
+      "expected": {
+        "status": "pass",
+        "code": "PASS"
+      }
+    },
+    {
+      "id": "POLICY-REF-FAIL-001",
+      "path": "fixtures/policy-reference/cases/fail-missing-effect.json",
+      "expected": {
+        "status": "fail",
+        "code": "CIC_REQUIRED_FIELD_MISSING"
+      }
+    },
+    {
+      "id": "POLICY-REF-FAIL-002",
+      "path": "fixtures/policy-reference/cases/fail-bundle-commit-mismatch.json",
+      "expected": {
+        "status": "fail",
+        "code": "PSC_BUNDLE_COMMIT_MISMATCH"
+      }
+    }
+  ]
+}

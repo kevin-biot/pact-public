@@ -1,0 +1,13 @@
+{
+  "bundleId": "sha256:c977889be454afc994c3f27e36a809fe46fe3fc1553628f28a8bbffdb10e737a",
+  "decision": {
+    "type": "PolicyDecision",
+    "intent_class": "policy.decision.request.v1",
+    "subjectType": "agent",
+    "action": "execute",
+    "resourceType": "tool.call",
+    "context": {
+      "jurisdiction": "EU"
+    }
+  }
+}

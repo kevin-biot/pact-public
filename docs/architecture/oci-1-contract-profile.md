@@ -84,3 +84,9 @@ Purpose:
 Non-goal:
 
 1. Defining or replacing TM Forum standards.
+
+Additional non-normative base policy profile:
+
+1. `verticals/policy-reference-pack`
+2. `fixtures/policy-reference/index.json`
+3. `tools/run-policy-reference-fixtures.mjs`

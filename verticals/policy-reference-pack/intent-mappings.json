@@ -1,0 +1,11 @@
+{
+  "schema_version": "1.0",
+  "domain": "policy-reference",
+  "mappings": [
+    {
+      "phrase": "evaluate this policy decision",
+      "intent_class": "policy.decision.request.v1",
+      "type": "PolicyDecision"
+    }
+  ]
+}

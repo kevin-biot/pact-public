@@ -1,0 +1,14 @@
+{
+  "@context": {
+    "@version": 1.1,
+    "id": "@id",
+    "type": "@type",
+    "pol": "https://pact.example/policy#",
+    "intentClass": "pol:intentClass",
+    "subjectType": "pol:subjectType",
+    "action": "pol:action",
+    "resourceType": "pol:resourceType",
+    "jurisdiction": "pol:jurisdiction",
+    "effect": "pol:effect"
+  }
+}
