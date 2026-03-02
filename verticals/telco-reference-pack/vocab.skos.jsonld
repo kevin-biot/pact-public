@@ -1,0 +1,23 @@
+{
+  "@context": {
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "dct": "http://purl.org/dc/terms/"
+  },
+  "@id": "https://pact.example/telco/reference/v0.1",
+  "@type": "skos:ConceptScheme",
+  "dct:title": "PACT Telco Governance Reference Vocabulary",
+  "skos:hasTopConcept": [
+    {
+      "@id": "https://pact.example/telco/reference#fault-diagnosis-task",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "Fault Diagnosis Task",
+      "skos:notation": "FaultDiagnosis"
+    },
+    {
+      "@id": "https://pact.example/telco/reference#fault-diagnosis-request",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "Fault Diagnosis Request Intent",
+      "skos:notation": "fault.diagnosis.request.v1"
+    }
+  ]
+}

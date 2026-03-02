@@ -1,0 +1,14 @@
+{
+  "bundleId": "sha256:ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+  "decision": {
+    "type": "FaultDiagnosis",
+    "intent_class": "fault.diagnosis.request.v1",
+    "taskType": "FaultDiagnosis",
+    "targetObject": {
+      "identifier": "OSS-FAULT-20260302-003"
+    },
+    "taskContext": {
+      "faultOccurrenceTime": "2026-03-02T11:00:00Z"
+    }
+  }
+}

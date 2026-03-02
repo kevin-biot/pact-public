@@ -1,0 +1,20 @@
+{
+  "id": "telco-reference-pack-0.1.0",
+  "domain": "telco-reference",
+  "version": "0.1.0",
+  "providerId": "ontology:pact-reference",
+  "trustTier": "Tier1",
+  "policySnapshotId": "sha256:bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+  "files": {
+    "context": "sha256:cc199a2551c3ddaf3b296d4fd9e783ade088168d3e6d639bd100fc9931409956",
+    "vocab": "sha256:262b322b18c251f4e37196d749313a038a884de35d36f93f95a3641c805b9da8",
+    "shapes": "sha256:c585f6de8ad79519af71ea726bc3f8728410ef42e345c597198bdace5a05e678",
+    "intent_mappings": "sha256:5b428799bf0f1d7370a35b15509f70c51c6d74e2c8dc0f4ed9443f7b2f753895",
+    "lineage": "sha256:e4ab0fac81d6c0e76be0303fd4b1eab97dfc4b73bd74ec35630cc07748a2acd6"
+  },
+  "precedence": [],
+  "denyWins": true,
+  "nbf": "2026-03-02T00:00:00Z",
+  "exp": "2030-03-02T00:00:00Z",
+  "revEpoch": 1
+}

@@ -1,0 +1,11 @@
+{
+  "schema_version": "1.0",
+  "domain": "telco-reference",
+  "mappings": [
+    {
+      "phrase": "diagnose this telecom fault",
+      "intent_class": "fault.diagnosis.request.v1",
+      "task_type": "FaultDiagnosis"
+    }
+  ]
+}

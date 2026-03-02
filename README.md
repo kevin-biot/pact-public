@@ -23,6 +23,15 @@ This repository does not contain:
 
 PACT is implementation-neutral. Multiple independent implementations are expected and encouraged.
 
+## Distribution Modes
+
+PACT supports both deployer distribution modes:
+
+1. Public pack registries (for open/shared ecosystems).
+2. Private pack registries (for enterprise-controlled deployments).
+
+Conformance requirements remain the same in both modes.
+
 ## Normative Contract Baseline
 
 Implementations claiming OCI-1 compatibility MUST validate against the following normative artifacts:
@@ -55,6 +64,12 @@ Run the fixture harness:
 node tools/run-oci1-conformance-fixtures.mjs
 ```
 
+Run the reference telco CIC+PSC fixture harness:
+
+```bash
+node tools/run-telco-reference-fixtures.mjs
+```
+
 Regenerate synthetic fixtures (including test signatures):
 
 ```bash
@@ -62,6 +77,15 @@ node tools/generate-oci1-fixtures.mjs
 ```
 
 Fixture signing keys are test-only and must not be used in production systems.
+
+## Reference Vertical Pack
+
+This repository includes:
+
+1. `verticals/telco-reference-pack/`
+
+This telco pack is a non-normative example vertical profile demonstrating PACT extension mechanics.
+It does not define TM Forum standards and does not replace IG1453.
 
 ## Publication Model
 

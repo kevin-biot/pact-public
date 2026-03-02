@@ -6,11 +6,11 @@
     },
     {
       "path": "README.md",
-      "sha256": "203f36c7b48f166966c3ac5a7abc687b1304ebce5ce8ea4f6b5b2048f43ff810"
+      "sha256": "056ef78eb2082cf23d44029d2a09d404b83f078f5c5e6aeb551469588a4bec92"
     },
     {
       "path": "docs/architecture/oci-1-contract-profile.md",
-      "sha256": "3182520063466224c484b83081a36e3ecc1c0d257d40cae190dd45ae605e579e"
+      "sha256": "e53bcdaee801c5148d5080596ab55a8670f75d647ee9787410b6ed63a4dd9d96"
     },
     {
       "path": "docs/architecture/oci-1-error-map.json",
@@ -62,7 +62,7 @@
     },
     {
       "path": "export-metadata.json",
-      "sha256": "6bd5568aefa6545bbe1e91dcbd24cf0551ef27ef58f0e254b7b785544c1fa9b9"
+      "sha256": "eca38a6093a6c40402461154c3c0690d17fc1fd647155e77107af6203d119a81"
     },
     {
       "path": "fixtures/oci1/invalid/bad-file-hash/bundle.json",
@@ -169,8 +169,24 @@
       "sha256": "1404abee86169588ed1ae151fa0db817727c1a4571d41b9415f7b77e699a8718"
     },
     {
+      "path": "fixtures/telco-reference/cases/fail-bundle-commit-mismatch.json",
+      "sha256": "0f4a4c0e476ae7f1b13fee53bceb595226a477dff4e200871d9d4a491d0a1da3"
+    },
+    {
+      "path": "fixtures/telco-reference/cases/fail-missing-fault-time.json",
+      "sha256": "58f77f401a20fcb05da0d560703ea5090bcee537e590fcc837b7727e5a3adf27"
+    },
+    {
+      "path": "fixtures/telco-reference/cases/valid-cic-psc.json",
+      "sha256": "24d1f1fa1d0ceaf4cdc47d038757cf68bb0c15a0746488b3343d7cb28caa3ccd"
+    },
+    {
+      "path": "fixtures/telco-reference/index.json",
+      "sha256": "7034c12229d92b4cb357503f238fce57df88780f60f885eebcf49cce30aa3ad8"
+    },
+    {
       "path": "registry/index.json",
-      "sha256": "1979ffa81c48ca4847a3b175f527c74eb717e4f6231a1bb9c14171b7df53355f"
+      "sha256": "53af89e11c27aadf5707489ebf47d0b1907dfa01d79147368650419f17cfedb1"
     },
     {
       "path": "schemas/bundle-manifest.schema.json",
@@ -211,6 +227,50 @@
     {
       "path": "tools/run-oci1-conformance-fixtures.mjs",
       "sha256": "c0046fe21ba83e4c6818030b3706590908d3d58b8d9e4f276a577e6019138871"
+    },
+    {
+      "path": "tools/run-telco-reference-fixtures.mjs",
+      "sha256": "0d6ccff0e31f6aa71087b50f9c73067723b10fc094f5b2bf767c4f6e05d9517e"
+    },
+    {
+      "path": "verticals/telco-reference-pack/README.md",
+      "sha256": "6101cc8128e08673ea0b6faf8afba4d2557d25c487ffff188bcff00c8e5518bc"
+    },
+    {
+      "path": "verticals/telco-reference-pack/bundle.json",
+      "sha256": "a69303b26407aff54795e35ef69c2da6371006b4a42c7b3dd83ba05f968f0a78"
+    },
+    {
+      "path": "verticals/telco-reference-pack/context.jsonld",
+      "sha256": "cc199a2551c3ddaf3b296d4fd9e783ade088168d3e6d639bd100fc9931409956"
+    },
+    {
+      "path": "verticals/telco-reference-pack/intent-mappings.json",
+      "sha256": "5b428799bf0f1d7370a35b15509f70c51c6d74e2c8dc0f4ed9443f7b2f753895"
+    },
+    {
+      "path": "verticals/telco-reference-pack/keys/ed25519-reference-pub.jwk.json",
+      "sha256": "6f52bc879ec768037a8c45f865a11be7f3755eed9aca83fabc3e972b87d8f2f7"
+    },
+    {
+      "path": "verticals/telco-reference-pack/lineage.json",
+      "sha256": "e4ab0fac81d6c0e76be0303fd4b1eab97dfc4b73bd74ec35630cc07748a2acd6"
+    },
+    {
+      "path": "verticals/telco-reference-pack/obt.jws",
+      "sha256": "4f9fa5694dd9899d5fb7d8f8e277b52bdf80abd685138d78cbfb3b54df2406a1"
+    },
+    {
+      "path": "verticals/telco-reference-pack/pack.json",
+      "sha256": "a5e89893e313694003a1fc921f3123f875bee7e4c2eadaa8296d064144672527"
+    },
+    {
+      "path": "verticals/telco-reference-pack/shapes.ttl",
+      "sha256": "c585f6de8ad79519af71ea726bc3f8728410ef42e345c597198bdace5a05e678"
+    },
+    {
+      "path": "verticals/telco-reference-pack/vocab.skos.jsonld",
+      "sha256": "262b322b18c251f4e37196d749313a038a884de35d36f93f95a3641c805b9da8"
     }
   ]
 }

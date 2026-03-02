@@ -1,0 +1,28 @@
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix telco: <https://pact.example/telco#> .
+
+# Minimal shape for reference fault diagnosis admission.
+telco:FaultDiagnosisDecisionShape
+  a sh:NodeShape ;
+  sh:targetClass telco:FaultDiagnosisDecision ;
+  sh:property [
+    sh:path telco:intentClass ;
+    sh:datatype xsd:string ;
+    sh:minCount 1 ;
+  ] ;
+  sh:property [
+    sh:path telco:taskType ;
+    sh:datatype xsd:string ;
+    sh:minCount 1 ;
+  ] ;
+  sh:property [
+    sh:path telco:targetIdentifier ;
+    sh:datatype xsd:string ;
+    sh:minCount 1 ;
+  ] ;
+  sh:property [
+    sh:path telco:faultOccurrenceTime ;
+    sh:datatype xsd:dateTime ;
+    sh:minCount 1 ;
+  ] .

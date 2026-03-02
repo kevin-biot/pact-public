@@ -1,0 +1,28 @@
+{
+  "pack_schema": "1.0",
+  "id": "telco-reference-pack-0.1.0",
+  "domain": "telco-reference",
+  "version": "0.1.0",
+  "provider_id": "ontology:pact-reference",
+  "trust_tier": "Tier1",
+  "nbf": "2026-03-02T00:00:00Z",
+  "exp": "2030-03-02T00:00:00Z",
+  "rev_epoch": 1,
+  "deny_wins": true,
+  "precedence": [],
+  "files": {
+    "context": "context.jsonld",
+    "vocab": "vocab.skos.jsonld",
+    "shapes": "shapes.ttl",
+    "intent_mappings": "intent-mappings.json",
+    "lineage": "lineage.json"
+  },
+  "dc": {
+    "identifier": "ontology:telco-reference:v0.1.0",
+    "title": "PACT Telco Governance Reference Pack",
+    "creator": "PACT Public Working Draft",
+    "issued": "2026-03-02",
+    "rights": "Apache-2.0",
+    "description": "Non-normative minimal telco governance profile for CIC and PSC demonstration."
+  }
+}

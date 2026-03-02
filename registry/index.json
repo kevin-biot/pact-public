@@ -7,6 +7,14 @@
       "trust_tier": "Tier1",
       "version": "v0.1.0",
       "path": "fixtures/oci1/valid/minimal"
+    },
+    {
+      "snapshot_id": "ontology:telco-reference:v0.1.0",
+      "domain": "telco-reference",
+      "provider_id": "ontology:pact-reference",
+      "trust_tier": "Tier1",
+      "version": "v0.1.0",
+      "path": "verticals/telco-reference-pack"
     }
   ]
 }

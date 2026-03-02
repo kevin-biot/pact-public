@@ -70,3 +70,17 @@ Implementation-neutral fixtures are published as part of OCI-1 baseline:
 Reference harness:
 
 1. `tools/run-oci1-conformance-fixtures.mjs`
+
+## 7. Reference Vertical Profile (Non-Normative)
+
+This repository includes `verticals/telco-reference-pack` as a minimal reference vertical profile.
+
+Purpose:
+
+1. Demonstrate extension mechanics against OCI-1 artifact contracts.
+2. Demonstrate CIC + PSC checks using synthetic telco fault-diagnosis fixtures.
+3. Keep PACT positioning implementation-neutral and cross-domain.
+
+Non-goal:
+
+1. Defining or replacing TM Forum standards.

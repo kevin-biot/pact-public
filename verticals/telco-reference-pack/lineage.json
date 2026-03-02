@@ -1,0 +1,27 @@
+{
+  "lineage_contract_version": "1.0",
+  "id": "telco-reference-pack-lineage-v0.1.0",
+  "status": "active",
+  "source_snapshot": {
+    "source_document_id": "tmf-ig1453-a2at-reference",
+    "source_version": "2.0.0-reference",
+    "snapshot_id": "a2at-reference-minimal-2026-03-02",
+    "acquired_utc": "2026-03-02T00:00:00Z",
+    "effective_from": "2026-03-02",
+    "effective_to": null
+  },
+  "scope": {
+    "included": [
+      "fault-diagnosis-task-shape",
+      "fault-occurrence-time-required"
+    ],
+    "excluded": [
+      "full-tmf-ig1453-semantic-model",
+      "full-3gpp-or-sid-coverage"
+    ]
+  },
+  "notes": [
+    "This reference pack is non-normative and demonstrative.",
+    "It is designed to show PACT extension mechanics without claiming standards replacement."
+  ]
+}
