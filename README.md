@@ -95,6 +95,7 @@ This telco pack is a non-normative example vertical profile demonstrating PACT e
 It does not define TM Forum standards and does not replace IG1453.
 
 The policy reference pack is a non-normative base-policy example demonstrating cross-domain policy semantics independent of telco standards.
+It includes a minimal jurisdiction overlay deny-wins composition example.
 
 ## Publication Model
 

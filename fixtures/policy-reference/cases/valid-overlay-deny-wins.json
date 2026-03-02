@@ -8,6 +8,8 @@
     "resourceType": "tool.call",
     "context": {
       "jurisdiction": "EU"
-    }
+    },
+    "effect": "permit",
+    "expected_composed_effect": "deny"
   }
 }

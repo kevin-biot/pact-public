@@ -1,5 +1,5 @@
 {
-  "bundleId": "sha256:c977889be454afc994c3f27e36a809fe46fe3fc1553628f28a8bbffdb10e737a",
+  "bundleId": "sha256:51d858f0f9edca6c7651f8cba784dadda1f88a69d3a0f40279d50af8c0921c8d",
   "decision": {
     "type": "PolicyDecision",
     "intent_class": "policy.decision.request.v1",
@@ -7,8 +7,9 @@
     "action": "execute",
     "resourceType": "tool.call",
     "context": {
-      "jurisdiction": "EU"
+      "jurisdiction": "US"
     },
-    "effect": "deny"
+    "effect": "permit",
+    "expected_composed_effect": "permit"
   }
 }

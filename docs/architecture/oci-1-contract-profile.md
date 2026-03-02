@@ -90,3 +90,5 @@ Additional non-normative base policy profile:
 1. `verticals/policy-reference-pack`
 2. `fixtures/policy-reference/index.json`
 3. `tools/run-policy-reference-fixtures.mjs`
+
+The policy reference profile includes a minimal deny-wins jurisdiction overlay composition example and corresponding fail-closed fixtures.

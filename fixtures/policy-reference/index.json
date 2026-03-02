@@ -12,6 +12,14 @@
       }
     },
     {
+      "id": "POLICY-REF-VALID-002",
+      "path": "fixtures/policy-reference/cases/valid-overlay-deny-wins.json",
+      "expected": {
+        "status": "pass",
+        "code": "PASS"
+      }
+    },
+    {
       "id": "POLICY-REF-FAIL-001",
       "path": "fixtures/policy-reference/cases/fail-missing-effect.json",
       "expected": {
@@ -25,6 +33,23 @@
       "expected": {
         "status": "fail",
         "code": "PSC_BUNDLE_COMMIT_MISMATCH"
+      }
+    },
+    {
+      "id": "POLICY-REF-FAIL-003",
+      "path": "fixtures/policy-reference/cases/fail-overlay-authority-expansion.json",
+      "expected": {
+        "status": "fail",
+        "code": "OVL_AUTHORITY_EXPANSION_DENIED"
+      }
+    },
+    {
+      "id": "POLICY-REF-FAIL-004",
+      "path": "fixtures/policy-reference/cases/fail-overlay-denywins-disabled.json",
+      "pack_path": "verticals/policy-reference-pack-denywins-off",
+      "expected": {
+        "status": "fail",
+        "code": "OVL_DENY_WINS_REQUIRED"
       }
     }
   ]

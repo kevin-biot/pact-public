@@ -13,6 +13,9 @@
     "BUNDLE_SIGNATURE_PAYLOAD_MISMATCH": "JWS payload does not equal bundle.json.",
     "BUNDLE_SIGNATURE_INVALID": "JWS signature verification failed.",
     "OVL_CANONICAL_MISMATCH": "Overlay precedence references are inconsistent with files map or deny-wins constraints.",
+    "OVL_DENY_WINS_REQUIRED": "Overlay precedence is present but deny-wins is not enabled consistently.",
+    "OVL_AUTHORITY_EXPANSION_DENIED": "Composed overlay result denies authority expansion attempt.",
+    "OVL_COMPOSED_EFFECT_MISMATCH": "Computed composed effect does not match asserted or expected effect.",
     "CASE_PATH_MISSING": "Fixture case path does not exist.",
     "CASE_FILE_MISSING": "Required fixture file is missing.",
     "CASE_JSON_INVALID": "Fixture JSON file is invalid."

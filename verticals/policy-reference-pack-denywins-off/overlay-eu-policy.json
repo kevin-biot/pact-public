@@ -1,0 +1,17 @@
+{
+  "schema_version": "1.0",
+  "id": "overlay-eu-deny-execute-v1",
+  "mode": "restrictive",
+  "rules": [
+    {
+      "id": "eu-tool-execute-deny",
+      "when": {
+        "jurisdiction": "EU",
+        "action": "execute",
+        "resourceType": "tool.call"
+      },
+      "effect": "deny",
+      "reason_code": "OVL_POLICY_DENY_EU_EXECUTE"
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "lineage_contract_version": "1.0",
+  "id": "policy-reference-pack-lineage-v0.1.0",
+  "status": "active",
+  "source_snapshot": {
+    "source_document_id": "pact-base-policy-reference",
+    "source_version": "0.1.0",
+    "snapshot_id": "policy-reference-minimal-2026-03-02",
+    "acquired_utc": "2026-03-02T00:00:00Z",
+    "effective_from": "2026-03-02",
+    "effective_to": null
+  },
+  "scope": {
+    "included": [
+      "policy-decision-envelope",
+      "effect-required"
+    ],
+    "excluded": [
+      "full-domain-policy-taxonomies",
+      "runtime-policy-evaluation-engines"
+    ]
+  },
+  "notes": [
+    "This pack is non-normative and demonstrative.",
+    "It defines a reusable base policy semantics example independent of telco-specific models."
+  ]
+}

@@ -1,10 +1,10 @@
 {
-  "id": "policy-reference-pack-0.1.0",
+  "id": "policy-reference-pack-denywins-off-0.1.0",
   "domain": "policy-reference",
   "version": "0.1.0",
   "providerId": "ontology:pact-reference",
   "trustTier": "Tier1",
-  "policySnapshotId": "sha256:cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc",
+  "policySnapshotId": "sha256:dddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd",
   "files": {
     "context": "sha256:4d4e233612216134c4bfea3644a0ab302ca5a363cdd40cf531b620c2512dabf3",
     "vocab": "sha256:d8f0536dbd63a147eb58c202f00e74f98e5d94f27e95933139589ed6d22e1a8a",
@@ -16,7 +16,7 @@
   "precedence": [
     "overlay_eu"
   ],
-  "denyWins": true,
+  "denyWins": false,
   "nbf": "2026-03-02T00:00:00Z",
   "exp": "2030-03-02T00:00:00Z",
   "revEpoch": 1

@@ -1,6 +1,6 @@
 {
   "pack_schema": "1.0",
-  "id": "policy-reference-pack-0.1.0",
+  "id": "policy-reference-pack-denywins-off-0.1.0",
   "domain": "policy-reference",
   "version": "0.1.0",
   "provider_id": "ontology:pact-reference",
@@ -8,7 +8,7 @@
   "nbf": "2026-03-02T00:00:00Z",
   "exp": "2030-03-02T00:00:00Z",
   "rev_epoch": 1,
-  "deny_wins": true,
+  "deny_wins": false,
   "precedence": [
     "overlay_eu"
   ],
@@ -21,11 +21,11 @@
     "overlay_eu": "overlay-eu-policy.json"
   },
   "dc": {
-    "identifier": "ontology:policy-reference:v0.1.0",
-    "title": "PACT Policy Governance Reference Pack",
+    "identifier": "ontology:policy-reference-denywins-off:v0.1.0",
+    "title": "PACT Policy Governance Reference Pack (Invalid deny-wins variant)",
     "creator": "PACT Public Working Draft",
     "issued": "2026-03-02",
     "rights": "Apache-2.0",
-    "description": "Non-normative minimal policy governance profile for CIC, PSC, and overlay deny-wins composition demonstration."
+    "description": "Intentional invalid fixture variant with deny-wins disabled."
   }
 }

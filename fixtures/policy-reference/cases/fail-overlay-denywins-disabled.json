@@ -1,5 +1,5 @@
 {
-  "bundleId": "sha256:51d858f0f9edca6c7651f8cba784dadda1f88a69d3a0f40279d50af8c0921c8d",
+  "bundleId": "sha256:15c37f7b3e219a1b0be80f589a675a26344529891ad6dc586ceeb3eeb53a1c36",
   "decision": {
     "type": "PolicyDecision",
     "intent_class": "policy.decision.request.v1",
@@ -8,6 +8,7 @@
     "resourceType": "tool.call",
     "context": {
       "jurisdiction": "EU"
-    }
+    },
+    "effect": "permit"
   }
 }

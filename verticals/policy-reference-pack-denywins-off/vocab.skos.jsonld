@@ -1,0 +1,35 @@
+{
+  "@context": {
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "dct": "http://purl.org/dc/terms/"
+  },
+  "@id": "https://pact.example/policy/reference/v0.1",
+  "@type": "skos:ConceptScheme",
+  "dct:title": "PACT Policy Governance Reference Vocabulary",
+  "skos:hasTopConcept": [
+    {
+      "@id": "https://pact.example/policy/reference#policy-decision",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "Policy Decision",
+      "skos:notation": "PolicyDecision"
+    },
+    {
+      "@id": "https://pact.example/policy/reference#policy-decision-request",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "Policy Decision Request",
+      "skos:notation": "policy.decision.request.v1"
+    },
+    {
+      "@id": "https://pact.example/policy/reference#permit",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "Permit",
+      "skos:notation": "permit"
+    },
+    {
+      "@id": "https://pact.example/policy/reference#deny",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "Deny",
+      "skos:notation": "deny"
+    }
+  ]
+}

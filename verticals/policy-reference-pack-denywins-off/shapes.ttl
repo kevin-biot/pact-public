@@ -1,0 +1,14 @@
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix pol: <https://pact.example/policy#> .
+
+# Minimal shape for policy decision admission.
+pol:PolicyDecisionShape
+  a sh:NodeShape ;
+  sh:targetClass pol:PolicyDecision ;
+  sh:property [ sh:path pol:intentClass ; sh:datatype xsd:string ; sh:minCount 1 ; ] ;
+  sh:property [ sh:path pol:subjectType ; sh:datatype xsd:string ; sh:minCount 1 ; ] ;
+  sh:property [ sh:path pol:action ; sh:datatype xsd:string ; sh:minCount 1 ; ] ;
+  sh:property [ sh:path pol:resourceType ; sh:datatype xsd:string ; sh:minCount 1 ; ] ;
+  sh:property [ sh:path pol:jurisdiction ; sh:datatype xsd:string ; sh:minCount 1 ; ] ;
+  sh:property [ sh:path pol:effect ; sh:datatype xsd:string ; sh:minCount 1 ; ] .

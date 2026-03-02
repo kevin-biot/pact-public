@@ -11,17 +11,19 @@ This pack intentionally covers:
 1. A minimal policy decision envelope (`subject`, `action`, `resource`, `context`, `effect`).
 2. One canonical intent class (`policy.decision.request.v1`).
 3. Deterministic admission checks for CIC + PSC.
+4. Minimal jurisdiction overlay composition with deny-wins semantics.
 
 This pack intentionally does not cover:
 
 1. Full regulatory policy catalogs.
 2. Runtime policy engine semantics.
-3. Jurisdiction overlay composition (`deny-wins`) in this first slice.
+3. Multi-overlay conflict arbitration beyond the single reference overlay.
 
 ## Demonstrated Invariants
 
 1. CIC (Canonical Meaning Precondition): required policy decision fields and canonical values.
 2. PSC (Frozen Semantic State): bundle commitment hash must match transaction scope.
+3. OAC (Deterministic Overlay): overlay restrictions compose with deny-wins and cannot silently widen authority.
 
 ## Source Lineage (High-Level)
 
