@@ -1,0 +1,70 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://ontology.example.com/schemas/bundle-manifest.schema.json",
+  "title": "Ontology Bundle Manifest (bundle.json)",
+  "description": "Formal schema for ontology bundle manifests. Uses camelCase field names (JWS convention). See ADR-019 §2.",
+  "type": "object",
+  "required": ["id", "domain", "version", "providerId", "trustTier", "policySnapshotId", "files", "precedence", "denyWins", "nbf", "exp", "revEpoch"],
+  "properties": {
+    "id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "domain": {
+      "type": "string",
+      "minLength": 1
+    },
+    "version": {
+      "type": "string",
+      "minLength": 1
+    },
+    "providerId": {
+      "type": "string",
+      "description": "Publishing authority identifier (camelCase of provider_id)"
+    },
+    "trustTier": {
+      "type": "string",
+      "enum": ["Tier0", "Tier1", "Tier2"],
+      "description": "Editorial authority classification (camelCase of trust_tier)"
+    },
+    "policySnapshotId": {
+      "type": "string",
+      "pattern": "^sha256:[0-9a-f]{64}$",
+      "description": "SHA-256 hash of the policy snapshot bound to this bundle"
+    },
+    "files": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "string",
+        "pattern": "^sha256:[0-9a-f]{64}$"
+      },
+      "description": "Logical key to SHA-256 content hash mapping",
+      "minProperties": 1
+    },
+    "precedence": {
+      "type": "array",
+      "items": {"type": "string"},
+      "description": "Ordered overlay logical keys for deny-wins resolution"
+    },
+    "denyWins": {
+      "type": "boolean",
+      "description": "Whether deny-wins precedence applies to overlay conflict resolution"
+    },
+    "nbf": {
+      "type": "string",
+      "format": "date-time",
+      "description": "Not-before timestamp (RFC 3339)"
+    },
+    "exp": {
+      "type": "string",
+      "format": "date-time",
+      "description": "Expiration timestamp (RFC 3339)"
+    },
+    "revEpoch": {
+      "type": "integer",
+      "minimum": 0,
+      "description": "Revocation epoch for RTGF checking (camelCase of rev_epoch)"
+    }
+  },
+  "additionalProperties": false
+}

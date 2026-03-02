@@ -1,0 +1,23 @@
+{
+  "oci_version": "1.0",
+  "profile_markdown": "docs/architecture/oci-1-contract-profile.md",
+  "fixture_index": "docs/architecture/oci-1-fixture-index.json",
+  "error_map": "docs/architecture/oci-1-error-map.json",
+  "contract_files": [
+    "docs/architecture/oci-1-profile.json",
+    "docs/architecture/oci-1-contract-profile.md",
+    "docs/architecture/oci-1-fixture-index.json",
+    "docs/architecture/oci-1-error-map.json",
+    "registry/index.json",
+    "schemas/pack-descriptor.schema.json",
+    "schemas/bundle-manifest.schema.json",
+    "schemas/pack-index.schema.json",
+    "schemas/entity-patterns.schema.json",
+    "schemas/intent-mappings.schema.json",
+    "schemas/convergence-fixtures.schema.json"
+  ],
+  "version_policy": {
+    "minor": "Backward-compatible additive changes only.",
+    "major": "Required for any semantic breaking contract change."
+  }
+}

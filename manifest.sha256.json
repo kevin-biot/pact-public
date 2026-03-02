@@ -1,0 +1,80 @@
+{
+  "files": [
+    {
+      "path": "docs/architecture/oci-1-contract-profile.md",
+      "sha256": "13b78ebcdddef482183848b5cf56c69a0718ca2d778915a3650df2774dc30ea1"
+    },
+    {
+      "path": "docs/architecture/oci-1-profile.json",
+      "sha256": "59e4184b042c2e7b599c363aee83c8cbe57189166626d41a8b52379ab6f6e28a"
+    },
+    {
+      "path": "draft-lane2-closed-world-agentic-ontology-rationale-00.md",
+      "sha256": "b30f400edc40ad1d4b3fb1379de29f94b0237baf5e4f469b6aa13c6d7881a788"
+    },
+    {
+      "path": "draft-lane2-ontology-certification-and-trust-mark-00.md",
+      "sha256": "f263a0bf8eba49280d63969a2252756862c0ef3abab52da16692f7012ffe6079"
+    },
+    {
+      "path": "draft-lane2-ontology-open-pack-spec-00.md",
+      "sha256": "2e9660338af8f9bd49487ef2ae7ebdfda9942d4f7cf34a5386ea0f6415c144cb"
+    },
+    {
+      "path": "draft-lane2-ontology-open-standard-transition-00.md",
+      "sha256": "c0acf8c069600a77ac8e39165820f87dc29abb83cb29f06538b90bea80248277"
+    },
+    {
+      "path": "draft-lane2-ontology-pack-authoring-and-approval-workflow-00.md",
+      "sha256": "73c3a4509bc979ad7675a01526b9a4110fcd60100788167c7bff88195ea79657"
+    },
+    {
+      "path": "draft-lane2-ontology-pack-conformance-00.md",
+      "sha256": "dd76831b020df12526266e833533b17b61528caec0e37193d50577591142b98a"
+    },
+    {
+      "path": "draft-lane2-ontology-pack-governance-00.md",
+      "sha256": "a57470bf531c1e867470339d9d1a5b3f20343aed3b39bcdc36b95c3b23669fa1"
+    },
+    {
+      "path": "draft-lane2-operational-ontology-profile-00.md",
+      "sha256": "d5923ae89365b915b78e82d1f31a4557a819ae2e2528571eafbce5b9d1f34827"
+    },
+    {
+      "path": "draft-lane2-pact-manifesto-00.md",
+      "sha256": "d4f57cb4b4576341cf1c1cdc487eb9ad16ee88bb4fc54390fa62e6b2ef579cf8"
+    },
+    {
+      "path": "schemas/bundle-manifest.schema.json",
+      "sha256": "20407e2db39d9cf7ba97020c8320a77abc4fd86e25935370a9a49903bf3c9679"
+    },
+    {
+      "path": "schemas/convergence-fixtures.schema.json",
+      "sha256": "b0792ee617c6c3d43dcc027c491d7e99ff1732136d2aa83331004efae0e2590a"
+    },
+    {
+      "path": "schemas/delivery-profile.schema.json",
+      "sha256": "3e16827cd45e2f551618c61af081a3f2d510fd0d9967e38be5fac35a546a4479"
+    },
+    {
+      "path": "schemas/entity-patterns.schema.json",
+      "sha256": "bcc8b89fe6b27335901613f247cc1b472873ae7d6b0783f55db2e40b4f78901c"
+    },
+    {
+      "path": "schemas/intent-mappings.schema.json",
+      "sha256": "6f128fa1b53930b0a1e3100439f2dd7d329805f34ef7f1c93ef7fd77cc2c9203"
+    },
+    {
+      "path": "schemas/pack-descriptor.schema.json",
+      "sha256": "5153a59b7e85ba07a70a0370d34eb98375954fdd66927899b464e303a2b135a2"
+    },
+    {
+      "path": "schemas/pack-index.schema.json",
+      "sha256": "f18d10316f17ed66b73a855729c1ac3bc469a533b85b322df48923d952fb940e"
+    },
+    {
+      "path": "schemas/promotion-gate-result.schema.json",
+      "sha256": "49164199f3b735019e29a0c399d1cd413cb1aba7d3da1c146ab125bb67ac4651"
+    }
+  ]
+}

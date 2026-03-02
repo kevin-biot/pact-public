@@ -1,0 +1,87 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://ontology.example.com/schemas/entity-patterns.schema.json",
+  "title": "Ontology Entity Extraction Patterns (patterns.json)",
+  "description": "Schema for entity extraction patterns bound to SKOS concept URIs. See ADR-018.",
+  "type": "object",
+  "required": ["schema_version", "domain", "patterns"],
+  "properties": {
+    "schema_version": {
+      "type": "string",
+      "const": "1.0",
+      "description": "Schema version for forward compatibility. Must be 1.0 for ADR-018."
+    },
+    "domain": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Domain name. Must match pack.json domain."
+    },
+    "patterns": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "concept_uri", "entity_type", "regex"],
+        "properties": {
+          "id": {
+            "type": "string",
+            "minLength": 1,
+            "description": "Unique pattern identifier within this file"
+          },
+          "concept_uri": {
+            "type": "string",
+            "minLength": 1,
+            "description": "SKOS concept URI from the pack's vocab.skos.jsonld. Binds the pattern to a vocabulary concept."
+          },
+          "entity_type": {
+            "type": "string",
+            "minLength": 1,
+            "description": "Semantic type of the extracted entity (e.g. amount, iban, date, name)"
+          },
+          "regex": {
+            "type": "string",
+            "minLength": 1,
+            "description": "Regular expression (PCRE-compatible) for entity extraction"
+          },
+          "capture_groups": {
+            "type": "object",
+            "additionalProperties": {"type": "string"},
+            "description": "Maps regex capture group numbers (as strings) to named fields"
+          },
+          "normalise": {
+            "type": "object",
+            "properties": {
+              "type": {
+                "type": "string",
+                "description": "Target data type for normalisation (e.g. decimal, string, date)"
+              },
+              "currency": {
+                "type": "string",
+                "description": "ISO 4217 currency code for amount normalisation"
+              },
+              "transform": {
+                "type": "string",
+                "description": "String transform to apply (e.g. upper, lower, trim)"
+              }
+            },
+            "additionalProperties": true,
+            "description": "Normalisation rules for extracted values"
+          },
+          "priority": {
+            "type": "integer",
+            "minimum": 0,
+            "default": 100,
+            "description": "Matching priority (lower = higher priority). Default: 100."
+          },
+          "examples": {
+            "type": "array",
+            "items": {"type": "string"},
+            "description": "Example inputs that should match. Used for testing and documentation."
+          }
+        },
+        "additionalProperties": false
+      },
+      "description": "Ordered list of entity extraction patterns"
+    }
+  },
+  "additionalProperties": false
+}

@@ -1,0 +1,46 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://ontology.example.com/schemas/pack-index.schema.json",
+  "title": "Ontology Pack Collection Index",
+  "description": "Schema for the collection discovery index (index.json). See ADR-016 §3.",
+  "type": "object",
+  "required": ["packs"],
+  "properties": {
+    "packs": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["snapshot_id", "domain", "version", "path"],
+        "properties": {
+          "snapshot_id": {
+            "type": "string",
+            "description": "Globally unique identifier in ontology:{domain}:{version} format"
+          },
+          "domain": {
+            "type": "string",
+            "description": "Ontology domain name"
+          },
+          "provider_id": {
+            "type": "string",
+            "description": "Publishing authority identifier"
+          },
+          "trust_tier": {
+            "type": "string",
+            "enum": ["Tier0", "Tier1", "Tier2"],
+            "description": "Editorial authority classification"
+          },
+          "version": {
+            "type": "string",
+            "description": "Semantic version with v prefix"
+          },
+          "path": {
+            "type": "string",
+            "description": "URL path segment for this pack's files. All Layer 2/3 URLs use /{path}/{filename}."
+          }
+        },
+        "additionalProperties": false
+      }
+    }
+  },
+  "additionalProperties": false
+}

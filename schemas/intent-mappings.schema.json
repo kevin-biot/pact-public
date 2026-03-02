@@ -1,0 +1,52 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://ontology.example.com/schemas/intent-mappings.schema.json",
+  "title": "Ontology Intent Mappings (intent-mappings.json)",
+  "description": "Schema for deterministic concept_uri to intent_class mappings with confidence floors.",
+  "type": "object",
+  "required": ["schema_version", "domain", "mappings"],
+  "properties": {
+    "schema_version": {
+      "type": "string",
+      "const": "1.0",
+      "description": "Schema version for forward compatibility. Must be 1.0 for ADR-025."
+    },
+    "domain": {
+      "type": "string",
+      "minLength": 1,
+      "pattern": "^[a-z0-9][a-z0-9_-]*$",
+      "description": "Domain name. Must match pack.json domain."
+    },
+    "mappings": {
+      "type": "array",
+      "minItems": 1,
+      "description": "Ordered concept to canonical intent mappings.",
+      "items": {
+        "type": "object",
+        "required": ["concept_uri", "intent_class", "confidence_floor"],
+        "properties": {
+          "concept_uri": {
+            "type": "string",
+            "minLength": 1,
+            "pattern": "^[a-z0-9][a-z0-9_-]*:[a-z0-9][a-z0-9_.-]*$",
+            "description": "Concept URI that MUST exist in vocab.skos.jsonld @id entries."
+          },
+          "intent_class": {
+            "type": "string",
+            "minLength": 1,
+            "pattern": "^[a-z0-9]+(\\.[a-z0-9_]+){1,}\\.v[0-9]+$",
+            "description": "Canonical dotted intent class ending with a version segment (e.g. payments.card.authorize.v1)."
+          },
+          "confidence_floor": {
+            "type": "number",
+            "minimum": 0,
+            "maximum": 1,
+            "description": "Minimum confidence threshold in [0,1] for mapping eligibility."
+          }
+        },
+        "additionalProperties": false
+      }
+    }
+  },
+  "additionalProperties": false
+}

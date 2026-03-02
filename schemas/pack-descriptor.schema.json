@@ -1,0 +1,110 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://ontology.example.com/schemas/pack-descriptor.schema.json",
+  "title": "Ontology Pack Descriptor (pack.json)",
+  "description": "Formal schema for ontology pack descriptors. Uses snake_case field names (config convention). See ADR-019 §2.",
+  "type": "object",
+  "required": ["pack_schema", "id", "domain", "version", "provider_id", "trust_tier", "nbf", "exp", "rev_epoch", "files", "dc"],
+  "properties": {
+    "pack_schema": {
+      "type": "string",
+      "description": "Schema version for forward compatibility (default: 1.0). Consumers MUST reject packs with a major version higher than they support.",
+      "pattern": "^[0-9]+\\.[0-9]+$"
+    },
+    "id": {
+      "type": "string",
+      "description": "Pack identifier in {domain}-{version} format",
+      "minLength": 1
+    },
+    "domain": {
+      "type": "string",
+      "description": "Ontology domain name (e.g. iso20022, payments)",
+      "minLength": 1
+    },
+    "version": {
+      "type": "string",
+      "description": "Content semantic version (without v prefix)",
+      "minLength": 1
+    },
+    "key_name": {
+      "type": "string",
+      "description": "Override for signing key prefix. If absent, domain is used as key prefix."
+    },
+    "provider_id": {
+      "type": "string",
+      "description": "Publishing authority identifier (e.g. ontology:lane2)"
+    },
+    "trust_tier": {
+      "type": "string",
+      "enum": ["Tier0", "Tier1", "Tier2"],
+      "description": "Editorial authority classification. Tier0=ISO standard, Tier1=curated, Tier2=contributed."
+    },
+    "nbf": {
+      "type": "string",
+      "format": "date-time",
+      "description": "Not-before timestamp (RFC 3339)"
+    },
+    "exp": {
+      "type": "string",
+      "format": "date-time",
+      "description": "Expiration timestamp (RFC 3339)"
+    },
+    "rev_epoch": {
+      "type": "integer",
+      "minimum": 0,
+      "description": "Revocation epoch for RTGF checking"
+    },
+    "deny_wins": {
+      "type": "boolean",
+      "description": "Whether deny-wins precedence applies to overlay conflict resolution"
+    },
+    "precedence": {
+      "type": "array",
+      "items": {"type": "string"},
+      "description": "Ordered overlay logical keys for deny-wins resolution"
+    },
+    "files": {
+      "type": "object",
+      "additionalProperties": {"type": "string"},
+      "description": "Logical key to filename mapping. Standard keys: vocab, thesaurus, shapes, context, patterns, overlay_*.",
+      "minProperties": 1
+    },
+    "dc": {
+      "type": "object",
+      "description": "Required Dublin Core provenance metadata (ISO 15836). Not included in signed payload.",
+      "required": ["identifier", "title", "creator", "issued", "rights"],
+      "properties": {
+        "identifier": {
+          "type": "string",
+          "description": "Globally unique identifier (mirrors snapshot_id or pack id)"
+        },
+        "title": {
+          "type": "string",
+          "description": "Human-readable pack title"
+        },
+        "creator": {
+          "type": "string",
+          "description": "Publishing organisation or team"
+        },
+        "issued": {
+          "type": "string",
+          "description": "Publication date (ISO 8601)"
+        },
+        "coverage": {
+          "type": "string",
+          "description": "Jurisdictional or geographic coverage"
+        },
+        "rights": {
+          "type": "string",
+          "description": "Licensing or rights statement"
+        },
+        "description": {
+          "type": "string",
+          "description": "Brief description of pack contents"
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  "additionalProperties": false
+}

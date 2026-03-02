@@ -1,0 +1,97 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://lane2.example/schemas/promotion-gate-result.schema.json",
+  "title": "Promotion Gate Result",
+  "type": "object",
+  "required": [
+    "promotable",
+    "checks"
+  ],
+  "properties": {
+    "promotable": {
+      "type": "boolean"
+    },
+    "domain": {
+      "type": "string",
+      "minLength": 1
+    },
+    "target_stage": {
+      "type": "string",
+      "enum": [
+        "draft",
+        "validated",
+        "staging",
+        "production"
+      ]
+    },
+    "delivery_mode": {
+      "type": "string",
+      "enum": [
+        "hosted_mcp",
+        "local_binary"
+      ]
+    },
+    "delivery_profile_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "delivery_profile_tier": {
+      "type": "string",
+      "enum": [
+        "production",
+        "pilot",
+        "lab"
+      ]
+    },
+    "error_code": {
+      "type": "string",
+      "minLength": 1
+    },
+    "failed_check": {
+      "type": "string",
+      "enum": [
+        "input",
+        "signoff",
+        "mapping_review",
+        "sources_manifest",
+        "promotion_audit",
+        "promotion_bundle",
+        "signature"
+      ]
+    },
+    "checks": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": [
+          "name",
+          "status",
+          "code"
+        ],
+        "properties": {
+          "name": {
+            "type": "string",
+            "minLength": 1
+          },
+          "status": {
+            "type": "string",
+            "enum": [
+              "pass",
+              "fail"
+            ]
+          },
+          "code": {
+            "type": "string",
+            "minLength": 1
+          },
+          "details": {
+            "type": "string"
+          }
+        },
+        "additionalProperties": false
+      }
+    }
+  },
+  "additionalProperties": false
+}
