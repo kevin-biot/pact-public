@@ -34,7 +34,27 @@
     },
     {
       "path": "README.md",
-      "sha256": "784719219092b1211be80feb9711d3e58275bf1a0cf6525d4e14307961669cae"
+      "sha256": "654d17cd4c869a13941181b89869ee1b4a68f9928354380a0718ce6a8ce35ce1"
+    },
+    {
+      "path": "docs/adr/ADR-000-public-scope-and-non-goals.md",
+      "sha256": "b75b9977823f46b859191240800e6a2ea6be80bbbc352a6ea572585911f6551e"
+    },
+    {
+      "path": "docs/adr/ADR-001-governance-safety-invariants.md",
+      "sha256": "6b6b7461f0ace1d9accfb28652ce86c1df733eaf82214506fd15b8ab712092af"
+    },
+    {
+      "path": "docs/adr/ADR-002-artifact-contract-and-conformance-fixtures.md",
+      "sha256": "d1389c09b119e077b3d514dc79493c7009eca77dc6a9a2afdba0e13333b5cfa0"
+    },
+    {
+      "path": "docs/adr/ADR-003-extension-model-and-reference-vertical-packs.md",
+      "sha256": "40d6ff5b9555708c19d0aa6080376e8a03fb9e82adab73d02fb6f03827393d46"
+    },
+    {
+      "path": "docs/adr/README.md",
+      "sha256": "d801d0ca01156babe6e6b6b03712fb8aaed1c740ca2d759f9758599998eb5dfe"
     },
     {
       "path": "docs/architecture/oci-1-contract-profile.md",
@@ -51,6 +71,10 @@
     {
       "path": "docs/architecture/oci-1-profile.json",
       "sha256": "59e4184b042c2e7b599c363aee83c8cbe57189166626d41a8b52379ab6f6e28a"
+    },
+    {
+      "path": "docs/architecture/real-world-deployment-overview.md",
+      "sha256": "1dc16d60b870b6109431389050e7a07dc2f17299625206d38245ab08182afb23"
     },
     {
       "path": "draft-lane2-closed-world-agentic-ontology-rationale-00.md",
@@ -90,7 +114,7 @@
     },
     {
       "path": "export-metadata.json",
-      "sha256": "e8fb06f7cc6ef749ac8e6ed30fd588872f47203ab2bc56ac2f8caca848c68404"
+      "sha256": "26e07cd02844760af1257a4c60513aec2f938666d8d7792a379fd1fd6d867f8a"
     },
     {
       "path": "fixtures/oci1/invalid/bad-file-hash/bundle.json",
@@ -239,6 +263,10 @@
     {
       "path": "fixtures/telco-reference/index.json",
       "sha256": "7034c12229d92b4cb357503f238fce57df88780f60f885eebcf49cce30aa3ad8"
+    },
+    {
+      "path": "manifest.sha256.json.tmp",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
     },
     {
       "path": "registry/index.json",

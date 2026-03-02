@@ -49,6 +49,19 @@ Implementations claiming OCI-1 compatibility MUST validate against the following
 
 Conformance claims should reference specific artifact versions or release tags.
 
+## Architecture Decisions
+
+Public ADRs define specification intent and boundaries:
+
+1. `docs/adr/ADR-000-public-scope-and-non-goals.md`
+2. `docs/adr/ADR-001-governance-safety-invariants.md`
+3. `docs/adr/ADR-002-artifact-contract-and-conformance-fixtures.md`
+4. `docs/adr/ADR-003-extension-model-and-reference-vertical-packs.md`
+
+ADR index:
+
+1. `docs/adr/README.md`
+
 ## Conformance Fixtures
 
 This repository includes implementation-neutral OCI-1 conformance fixtures under:
@@ -96,6 +109,12 @@ It does not define TM Forum standards and does not replace IG1453.
 
 The policy reference pack is a non-normative base-policy example demonstrating cross-domain policy semantics independent of telco standards.
 It includes a minimal jurisdiction overlay deny-wins composition example.
+
+## Real-World Deployment View
+
+For a concise implementation-neutral flow from task intake to regulated execution evidence, see:
+
+1. `docs/architecture/real-world-deployment-overview.md`
 
 ## Publication Model
 
