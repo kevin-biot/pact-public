@@ -49,6 +49,10 @@ Implementations claiming OCI-1 compatibility MUST validate against the following
 
 Conformance claims should reference specific artifact versions or release tags.
 
+Authority boundary guidance:
+
+1. `docs/architecture/pack-bounded-authority.md` — packs are authoritative for execution; external context (including RAG/graph retrieval) is advisory and must not silently expand scope.
+
 ## Architecture Decisions
 
 Public ADRs define specification intent and boundaries:
