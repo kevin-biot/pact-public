@@ -2,7 +2,7 @@
 
 **Version:** 1.0  
 **Status:** Draft baseline  
-**Authority:** `docs/ADR/ADR-028-client-interface-contract-and-adapter-boundary.md`
+**Authority:** `docs/adr/ADR-002-artifact-contract-and-conformance-fixtures.md`
 
 ## 1. Contract Authority
 
@@ -11,9 +11,9 @@ OCI-1 is defined by these artifacts:
 0. Machine-readable profile and version gate root:
    - `docs/architecture/oci-1-profile.json`
 
-1. Distribution API and trust flow:
-   - `docs/ADR/ADR-016-pack-distribution-api.md`
-   - `docs/ADR/ADR-017-obt-token-specification.md`
+1. Public authority and conformance model:
+   - `docs/adr/ADR-002-artifact-contract-and-conformance-fixtures.md`
+   - `docs/adr/ADR-001-governance-safety-invariants.md`
 2. Pack wire schemas:
    - `schemas/pack-descriptor.schema.json`
    - `schemas/bundle-manifest.schema.json`
@@ -21,9 +21,9 @@ OCI-1 is defined by these artifacts:
    - `schemas/intent-mappings.schema.json`
    - `schemas/entity-patterns.schema.json`
    - `schemas/convergence-fixtures.schema.json`
-3. Deterministic execution and convergence obligations:
-   - `docs/ADR/ADR-024-ontology-convergence-tests.md`
-   - `docs/ADR/ADR-026-agentic-ontology-execution-invariants.md`
+3. Deterministic execution obligations:
+   - `docs/adr/ADR-001-governance-safety-invariants.md`
+   - `docs/architecture/pack-bounded-authority.md`
 
 ## 2. Supported Client Classes
 
@@ -46,17 +46,18 @@ OCI-1 is defined by these artifacts:
 
 ## 4. Deterministic Contract Rules
 
-1. OBT signature, key selection, and payload verification are fail-closed.
+1. OBT signature, key selection (`kid`), and payload verification are fail-closed.
 2. Canonicalization checks must be equivalent across client implementations.
-3. Bundle/time/revocation checks use deterministic machine outcomes.
+3. Bundle/time/revocation checks (`nbf`, `exp`, `revEpoch`) use deterministic machine outcomes.
 4. Error codes are stable and language-neutral (see `docs/architecture/oci-1-error-map.json`).
+5. Unsigned pack provenance metadata (`pack.json` `dc`) is informational only and MUST NOT be treated as authority-bearing.
 
 ## 5. Versioning
 
 1. Minor additions are backward-compatible.
 2. Breaking semantic changes require OCI major version bump.
 3. No unversioned contract break is allowed on main.
-4. CI enforces a version gate via `scripts/check-oci-version-gate.sh` when OCI contract files change.
+4. CI/release automation SHOULD enforce a version gate when OCI contract files change, using `docs/architecture/oci-1-profile.json` `contract_files` as the baseline list.
 
 ## 6. Public Fixture Baseline
 

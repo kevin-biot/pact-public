@@ -35,8 +35,17 @@ function base64url(buf) {
     .replace(/=+$/g, '');
 }
 
-function signJwsEdDsa(payloadObj, privateKey, kid = 'fixture-ed25519') {
-  const header = { alg: 'EdDSA', kid, typ: 'JWS' };
+function signJwsEdDsa(payloadObj, privateKey, opts = {}) {
+  const {
+    alg = 'EdDSA',
+    typ = 'JWS',
+    kid = 'fixture-ed25519',
+    includeKid = true
+  } = opts;
+  const header = { alg, typ };
+  if (includeKid) {
+    header.kid = kid;
+  }
   const protectedB64 = base64url(Buffer.from(JSON.stringify(header), 'utf8'));
   const payloadB64 = base64url(Buffer.from(JSON.stringify(payloadObj), 'utf8'));
   const signingInput = `${protectedB64}.${payloadB64}`;
@@ -153,10 +162,17 @@ function nowUtc() {
 
 ensureDir(fixturesRoot);
 
+const REQUIRED_KID = 'fixture-ed25519';
+const EVAL_NOW_UTC = '2027-01-01T00:00:00Z';
+const MIN_REV_EPOCH = 1;
+
 const keyPair = generateKeyPairSync('ed25519');
 const privateKey = createPrivateKey(keyPair.privateKey.export({ format: 'pem', type: 'pkcs8' }));
 const publicKey = createPublicKey(keyPair.publicKey.export({ format: 'pem', type: 'spki' }));
-const publicJwk = publicKey.export({ format: 'jwk' });
+const publicJwk = {
+  ...publicKey.export({ format: 'jwk' }),
+  kid: REQUIRED_KID
+};
 
 const keysDir = path.join(fixturesRoot, 'keys');
 writeJson(path.join(keysDir, 'ed25519-test-pub.jwk.json'), publicJwk);
@@ -278,9 +294,148 @@ const caseDefs = [];
   });
 }
 
+// Case 6: signature kid mismatch (unknown kid)
+{
+  const caseRel = path.join('invalid', 'signature-kid-mismatch');
+  const dir = buildCaseDir(caseRel);
+  writeCommonFiles(dir, false);
+
+  const filesMap = { context: 'context.jsonld', vocab: 'vocab.skos.jsonld' };
+  const pack = basePack(filesMap);
+  const bundle = baseBundle(fileHashMap(dir, filesMap));
+  const jws = signJwsEdDsa(bundle, privateKey, { kid: 'unknown-kid' });
+
+  writeCaseArtifacts(caseRel, { pack, bundle, jws });
+  caseDefs.push({
+    id: 'OCI1-FAIL-005',
+    description: 'JWS kid does not match required fixture key id.',
+    path: `fixtures/oci1/${caseRel}`,
+    expected: { status: 'fail', code: 'BUNDLE_SIGNATURE_KID_UNKNOWN' }
+  });
+}
+
+// Case 7: signature kid missing
+{
+  const caseRel = path.join('invalid', 'signature-kid-missing');
+  const dir = buildCaseDir(caseRel);
+  writeCommonFiles(dir, false);
+
+  const filesMap = { context: 'context.jsonld', vocab: 'vocab.skos.jsonld' };
+  const pack = basePack(filesMap);
+  const bundle = baseBundle(fileHashMap(dir, filesMap));
+  const jws = signJwsEdDsa(bundle, privateKey, { includeKid: false });
+
+  writeCaseArtifacts(caseRel, { pack, bundle, jws });
+  caseDefs.push({
+    id: 'OCI1-FAIL-006',
+    description: 'JWS kid is missing from protected header.',
+    path: `fixtures/oci1/${caseRel}`,
+    expected: { status: 'fail', code: 'BUNDLE_SIGNATURE_KID_MISSING' }
+  });
+}
+
+// Case 8: not yet valid (nbf in future relative to deterministic evaluation clock)
+{
+  const caseRel = path.join('invalid', 'not-yet-valid');
+  const dir = buildCaseDir(caseRel);
+  writeCommonFiles(dir, false);
+
+  const filesMap = { context: 'context.jsonld', vocab: 'vocab.skos.jsonld' };
+  const pack = basePack(filesMap, {
+    nbf: '2028-01-01T00:00:00Z',
+    exp: '2030-03-02T00:00:00Z'
+  });
+  const bundle = baseBundle(fileHashMap(dir, filesMap), {
+    nbf: '2028-01-01T00:00:00Z',
+    exp: '2030-03-02T00:00:00Z'
+  });
+  const jws = signJwsEdDsa(bundle, privateKey);
+
+  writeCaseArtifacts(caseRel, { pack, bundle, jws });
+  caseDefs.push({
+    id: 'OCI1-FAIL-007',
+    description: 'Bundle is not yet valid for evaluation clock.',
+    path: `fixtures/oci1/${caseRel}`,
+    expected: { status: 'fail', code: 'BUNDLE_NOT_YET_VALID' }
+  });
+}
+
+// Case 9: expired bundle for evaluation clock
+{
+  const caseRel = path.join('invalid', 'expired');
+  const dir = buildCaseDir(caseRel);
+  writeCommonFiles(dir, false);
+
+  const filesMap = { context: 'context.jsonld', vocab: 'vocab.skos.jsonld' };
+  const pack = basePack(filesMap, {
+    nbf: '2025-01-01T00:00:00Z',
+    exp: '2026-01-01T00:00:00Z'
+  });
+  const bundle = baseBundle(fileHashMap(dir, filesMap), {
+    nbf: '2025-01-01T00:00:00Z',
+    exp: '2026-01-01T00:00:00Z'
+  });
+  const jws = signJwsEdDsa(bundle, privateKey);
+
+  writeCaseArtifacts(caseRel, { pack, bundle, jws });
+  caseDefs.push({
+    id: 'OCI1-FAIL-008',
+    description: 'Bundle has expired for evaluation clock.',
+    path: `fixtures/oci1/${caseRel}`,
+    expected: { status: 'fail', code: 'BUNDLE_EXPIRED' }
+  });
+}
+
+// Case 10: revoked epoch (below minimum epoch in fixture policy)
+{
+  const caseRel = path.join('invalid', 'revoked-epoch');
+  const dir = buildCaseDir(caseRel);
+  writeCommonFiles(dir, false);
+
+  const filesMap = { context: 'context.jsonld', vocab: 'vocab.skos.jsonld' };
+  const pack = basePack(filesMap, { rev_epoch: 0 });
+  const bundle = baseBundle(fileHashMap(dir, filesMap), { revEpoch: 0 });
+  const jws = signJwsEdDsa(bundle, privateKey);
+
+  writeCaseArtifacts(caseRel, { pack, bundle, jws });
+  caseDefs.push({
+    id: 'OCI1-FAIL-009',
+    description: 'Bundle revocation epoch is below minimum required epoch.',
+    path: `fixtures/oci1/${caseRel}`,
+    expected: { status: 'fail', code: 'BUNDLE_REVOKED' }
+  });
+}
+
+// Case 11: schema pattern violation in bundle policySnapshotId
+{
+  const caseRel = path.join('invalid', 'bundle-schema-pattern');
+  const dir = buildCaseDir(caseRel);
+  writeCommonFiles(dir, false);
+
+  const filesMap = { context: 'context.jsonld', vocab: 'vocab.skos.jsonld' };
+  const pack = basePack(filesMap);
+  const bundle = baseBundle(fileHashMap(dir, filesMap), {
+    policySnapshotId: 'sha256:not-a-valid-64-byte-hex'
+  });
+  const jws = signJwsEdDsa(bundle, privateKey);
+
+  writeCaseArtifacts(caseRel, { pack, bundle, jws });
+  caseDefs.push({
+    id: 'OCI1-FAIL-010',
+    description: 'bundle.json fails schema pattern validation for policySnapshotId.',
+    path: `fixtures/oci1/${caseRel}`,
+    expected: { status: 'fail', code: 'BUNDLE_SCHEMA_VALIDATION_FAILED' }
+  });
+}
+
 writeJson(path.join(root, 'docs', 'architecture', 'oci-1-fixture-index.json'), {
   schema_version: '1.0',
   generated_at_utc: nowUtc(),
+  evaluation: {
+    now_utc: EVAL_NOW_UTC,
+    min_rev_epoch: MIN_REV_EPOCH,
+    required_kid: REQUIRED_KID
+  },
   keyset: 'fixtures/oci1/keys/ed25519-test-pub.jwk.json',
   cases: caseDefs
 });
@@ -291,15 +446,28 @@ writeJson(path.join(root, 'docs', 'architecture', 'oci-1-error-map.json'), {
     PASS: 'Case passed expected OCI-1 checks.',
     PACK_SCHEMA_REQUIRED_MISSING: 'pack.json missing required top-level field.',
     PACK_SCHEMA_UNKNOWN_FIELD: 'pack.json contains unknown top-level field when additionalProperties=false.',
+    PACK_SCHEMA_VALIDATION_FAILED: 'pack.json failed JSON Schema validation constraints.',
     BUNDLE_SCHEMA_REQUIRED_MISSING: 'bundle.json missing required top-level field.',
     BUNDLE_SCHEMA_UNKNOWN_FIELD: 'bundle.json contains unknown top-level field when additionalProperties=false.',
+    BUNDLE_SCHEMA_VALIDATION_FAILED: 'bundle.json failed JSON Schema validation constraints.',
     BUNDLE_FILE_LOGICAL_KEY_MISSING: 'bundle logical key not present in pack files map.',
     BUNDLE_FILE_HASH_MISMATCH: 'bundle declared hash does not match referenced file.',
     BUNDLE_SIGNATURE_FORMAT_INVALID: 'obt.jws is not a valid compact JWS payload.',
     BUNDLE_SIGNATURE_ALG_UNSUPPORTED: 'JWS alg is unsupported for OCI-1 baseline.',
+    BUNDLE_SIGNATURE_KID_MISSING: 'JWS protected header kid is missing.',
+    BUNDLE_SIGNATURE_KID_UNKNOWN: 'JWS kid does not match required trust key selection policy.',
     BUNDLE_SIGNATURE_PAYLOAD_MISMATCH: 'JWS payload does not equal bundle.json.',
     BUNDLE_SIGNATURE_INVALID: 'JWS signature verification failed.',
+    BUNDLE_TIME_WINDOW_INVALID: 'Bundle time window is invalid (nbf/exp malformed or exp<=nbf).',
+    BUNDLE_TIME_WINDOW_MISMATCH: 'Pack and bundle nbf/exp values do not match.',
+    BUNDLE_NOT_YET_VALID: 'Bundle nbf is later than evaluation clock.',
+    BUNDLE_EXPIRED: 'Bundle exp is at or before evaluation clock.',
+    BUNDLE_REV_EPOCH_MISMATCH: 'Pack and bundle revocation epoch values do not match.',
+    BUNDLE_REVOKED: 'Bundle revocation epoch is below required minimum epoch.',
     OVL_CANONICAL_MISMATCH: 'Overlay precedence references are inconsistent with files map or deny-wins constraints.',
+    OVL_DENY_WINS_REQUIRED: 'Overlay precedence is present but deny-wins is not enabled consistently.',
+    OVL_AUTHORITY_EXPANSION_DENIED: 'Composed overlay result denies authority expansion attempt.',
+    OVL_COMPOSED_EFFECT_MISMATCH: 'Computed composed effect does not match asserted or expected effect.',
     CASE_PATH_MISSING: 'Fixture case path does not exist.',
     CASE_FILE_MISSING: 'Required fixture file is missing.',
     CASE_JSON_INVALID: 'Fixture JSON file is invalid.'
@@ -315,6 +483,22 @@ writeJson(path.join(root, 'registry', 'index.json'), {
       trust_tier: 'Tier1',
       version: 'v0.1.0',
       path: 'fixtures/oci1/valid/minimal'
+    },
+    {
+      snapshot_id: 'ontology:telco-reference:v0.1.0',
+      domain: 'telco-reference',
+      provider_id: 'ontology:pact-reference',
+      trust_tier: 'Tier1',
+      version: 'v0.1.0',
+      path: 'verticals/telco-reference-pack'
+    },
+    {
+      snapshot_id: 'ontology:policy-reference:v0.1.0',
+      domain: 'policy-reference',
+      provider_id: 'ontology:pact-reference',
+      trust_tier: 'Tier1',
+      version: 'v0.1.0',
+      path: 'verticals/policy-reference-pack'
     }
   ]
 });

@@ -1,0 +1,17 @@
+{
+  "id": "test-fixture-0.1.0",
+  "domain": "test-fixture",
+  "version": "0.1.0",
+  "providerId": "ontology:pact-fixtures",
+  "trustTier": "Tier1",
+  "policySnapshotId": "sha256:aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+  "files": {
+    "context": "sha256:ab0f2d3cb76c92ba4363c4c262b55d69fe67d0283271f7a1253c26f592fa015c",
+    "vocab": "sha256:1404abee86169588ed1ae151fa0db817727c1a4571d41b9415f7b77e699a8718"
+  },
+  "precedence": [],
+  "denyWins": true,
+  "nbf": "2026-03-02T00:00:00Z",
+  "exp": "2030-03-02T00:00:00Z",
+  "revEpoch": 0
+}

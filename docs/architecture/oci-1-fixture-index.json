@@ -1,6 +1,11 @@
 {
   "schema_version": "1.0",
-  "generated_at_utc": "2026-03-02T11:47:40.571Z",
+  "generated_at_utc": "2026-03-16T18:00:48.746Z",
+  "evaluation": {
+    "now_utc": "2027-01-01T00:00:00Z",
+    "min_rev_epoch": 1,
+    "required_kid": "fixture-ed25519"
+  },
   "keyset": "fixtures/oci1/keys/ed25519-test-pub.jwk.json",
   "cases": [
     {
@@ -46,6 +51,60 @@
       "expected": {
         "status": "fail",
         "code": "OVL_CANONICAL_MISMATCH"
+      }
+    },
+    {
+      "id": "OCI1-FAIL-005",
+      "description": "JWS kid does not match required fixture key id.",
+      "path": "fixtures/oci1/invalid/signature-kid-mismatch",
+      "expected": {
+        "status": "fail",
+        "code": "BUNDLE_SIGNATURE_KID_UNKNOWN"
+      }
+    },
+    {
+      "id": "OCI1-FAIL-006",
+      "description": "JWS kid is missing from protected header.",
+      "path": "fixtures/oci1/invalid/signature-kid-missing",
+      "expected": {
+        "status": "fail",
+        "code": "BUNDLE_SIGNATURE_KID_MISSING"
+      }
+    },
+    {
+      "id": "OCI1-FAIL-007",
+      "description": "Bundle is not yet valid for evaluation clock.",
+      "path": "fixtures/oci1/invalid/not-yet-valid",
+      "expected": {
+        "status": "fail",
+        "code": "BUNDLE_NOT_YET_VALID"
+      }
+    },
+    {
+      "id": "OCI1-FAIL-008",
+      "description": "Bundle has expired for evaluation clock.",
+      "path": "fixtures/oci1/invalid/expired",
+      "expected": {
+        "status": "fail",
+        "code": "BUNDLE_EXPIRED"
+      }
+    },
+    {
+      "id": "OCI1-FAIL-009",
+      "description": "Bundle revocation epoch is below minimum required epoch.",
+      "path": "fixtures/oci1/invalid/revoked-epoch",
+      "expected": {
+        "status": "fail",
+        "code": "BUNDLE_REVOKED"
+      }
+    },
+    {
+      "id": "OCI1-FAIL-010",
+      "description": "bundle.json fails schema pattern validation for policySnapshotId.",
+      "path": "fixtures/oci1/invalid/bundle-schema-pattern",
+      "expected": {
+        "status": "fail",
+        "code": "BUNDLE_SCHEMA_VALIDATION_FAILED"
       }
     }
   ]

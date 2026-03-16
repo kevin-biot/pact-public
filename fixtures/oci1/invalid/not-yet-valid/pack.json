@@ -1,0 +1,25 @@
+{
+  "pack_schema": "1.0",
+  "id": "test-fixture-0.1.0",
+  "domain": "test-fixture",
+  "version": "0.1.0",
+  "provider_id": "ontology:pact-fixtures",
+  "trust_tier": "Tier1",
+  "nbf": "2028-01-01T00:00:00Z",
+  "exp": "2030-03-02T00:00:00Z",
+  "rev_epoch": 1,
+  "deny_wins": true,
+  "precedence": [],
+  "files": {
+    "context": "context.jsonld",
+    "vocab": "vocab.skos.jsonld"
+  },
+  "dc": {
+    "identifier": "ontology:test-fixture:v0.1.0",
+    "title": "PACT OCI-1 Fixture Pack",
+    "creator": "PACT Public Fixtures",
+    "issued": "2026-03-02",
+    "rights": "Apache-2.0",
+    "description": "Synthetic pack fixture for OCI-1 conformance checks."
+  }
+}

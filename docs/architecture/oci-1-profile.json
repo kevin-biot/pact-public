@@ -14,7 +14,9 @@
     "schemas/pack-index.schema.json",
     "schemas/entity-patterns.schema.json",
     "schemas/intent-mappings.schema.json",
-    "schemas/convergence-fixtures.schema.json"
+    "schemas/convergence-fixtures.schema.json",
+    "schemas/promotion-gate-result.schema.json",
+    "schemas/delivery-profile.schema.json"
   ],
   "version_policy": {
     "minor": "Backward-compatible additive changes only.",
