@@ -205,14 +205,41 @@ For a concise implementation-neutral flow from task intake to regulated executio
 
 1. `docs/architecture/real-world-deployment-overview.md`
 
+## Implementation Status
+
+PACT is not a theoretical specification. It is derived from a working agentic governance system with production-grade tooling.
+
+The internal reference implementation includes:
+
+1. **Ontology server** — runtime pack verification, policy gate evaluation, STA (Secure Token Attestation) issuance, and overlay composition.
+2. **Pack authoring pipeline** — SKOS vocabulary compilation, SHACL shape generation, intent mapping extraction, Ed25519 signing, and bundle manifest production.
+3. **Promotion gates** — automated conformance validation, stability analysis, and drift detection before packs are promoted to production.
+4. **Drift detection** — continuous monitoring for semantic drift between pack versions, scorer stability degradation, and policy threshold sensitivity changes.
+5. **A2A bridge** — normalization of Agent2Agent protocol task types into PACT canonical decisions with policy-gate attestation before execution.
+6. **Evidence pipeline** — Dublin Core metadata generation, Merkle-chain linking, and immutable audit trail production.
+
+**What this repository publishes**: the specification surface — schemas, contract profiles, conformance fixtures, reference packs, and architectural documentation. Everything an implementor needs to build a conformant system.
+
+**What this repository does not publish**: the runtime server, toolchain, signing keys, or operational infrastructure. These are implementation choices that belong to each adopter.
+
+Implementors should expect to build:
+
+1. A pack verification service (signature checking, hash validation, validity window enforcement, revocation epoch checking).
+2. A policy evaluation engine (intent admissibility, fact validation, state transition checking, overlay composition).
+3. A signing and publishing pipeline for their own domain packs.
+4. An evidence emission layer appropriate to their audit requirements.
+5. Integration adapters for their agent framework (A2A, MCP, or custom protocols).
+
+The conformance fixtures in this repository (`fixtures/oci1/`, `fixtures/rfc9457/`) provide the test baseline. An implementation that passes these fixtures and validates against the published schemas is conformant regardless of language, runtime, or infrastructure choices.
+
 ## Publication Model
 
-This repository is generated from a private core engineering repository using an allowlisted export process.
+This repository is generated from the core engineering repository using an allowlisted export process.
 
 The export boundary ensures:
 
 1. Separation of specification artifacts from runtime implementation.
-2. No publication of private keys, internal code, or non-public registries.
+2. No publication of signing keys, runtime code, or operational registries.
 3. Reproducible public specification surfaces.
 
 PACT does not depend on any specific implementation.
