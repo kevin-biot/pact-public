@@ -132,6 +132,8 @@ PACT does not replace these implementations. It provides the composition layer:
 | Trust model | Implicit (provider reputation) | Explicit (trust tiers, signed packs) — see [security consideration](security-unsigned-error-instruction-injection.md) |
 | Evidence | Trace ID | Immutable audit chain |
 
+Single-service RFC 9457 implementations (e.g., exception-to-status-code middleware that maps application errors to Problem Details responses) solve the format problem within one service boundary. Each service defines its own exception taxonomy, its own `type` URIs, and its own retry semantics. Two services, both fully RFC 9457 compliant, produce semantically incompatible error responses — different `type` URIs for equivalent failures, different retry conventions, different error classification schemes. An agent consuming both services must maintain per-service error handling logic, which is exactly the fragmentation RFC 9457 was supposed to eliminate. PACT's shared error taxonomy, deontic model, and schema-validated extension fields exist to close this gap: one contract surface that means the same thing regardless of which service produced the error.
+
 An agent operating in regulated domains SHOULD use the PACT profile. An agent operating in unregulated, single-provider contexts MAY use flat RFC 9457 extensions directly.
 
 ## Conformance Expectation
