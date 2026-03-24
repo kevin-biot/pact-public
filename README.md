@@ -23,6 +23,77 @@ This repository does not contain:
 
 PACT is implementation-neutral. Multiple independent implementations are expected and encouraged.
 
+## What Is a Pack and Why Not a Classical Ontology?
+
+### The problem with classical ontologies at runtime
+
+Classical ontologies (OWL, full RDF graphs, open-world inference) are designed for broad semantic modeling: global completeness, cross-domain reuse, and open-ended reasoning. These are valuable for knowledge representation and discovery. They are dangerous for agent execution in regulated domains, because:
+
+1. **Open-world assumption**: a classical ontology assumes that anything not explicitly stated might still be true. An agent operating under open-world inference can reason itself into actions that were never authorized.
+2. **Non-deterministic inference**: two reasoners processing the same OWL ontology can produce different entailments depending on implementation, rule ordering, and inference depth. Regulated execution requires deterministic replay.
+3. **Unbounded scope**: a classical ontology grows to cover everything in the domain. An agent bound to an unbounded ontology has no clear authority boundary — it cannot distinguish "I am allowed to do this" from "this concept exists in my knowledge graph."
+4. **No signing or validity window**: OWL files and RDF graphs have no standard mechanism for cryptographic signing, time-bound validity, or revocation. An agent cannot verify that the ontology it loaded is the one its operator approved.
+
+PACT does not reject classical ontology. It treats classical ontologies as **upstream source material** that is compiled into bounded, signed, runtime-safe artifacts called packs.
+
+### What a pack is
+
+A pack is a self-contained, signed, time-bounded ontology slice scoped to a single domain. It contains everything an agent or service needs to operate within that domain — vocabulary, validation rules, intent mappings, and provenance — in a form that is deterministically verifiable.
+
+### Anatomy of a pack
+
+| Artifact | Format | Purpose | Classical ontology equivalent |
+|----------|--------|---------|------------------------------|
+| `pack.json` | JSON (pack descriptor) | Identity, domain, version, trust tier, validity window (`nbf`/`exp`), revocation epoch, file manifest, Dublin Core provenance | No equivalent — classical ontologies have no standard packaging, versioning, or validity metadata |
+| `vocab.skos.jsonld` | SKOS (JSON-LD) | Domain vocabulary — concepts, labels, relationships, hierarchies | OWL classes and properties, but scoped to one domain slice rather than a universal graph |
+| `shapes.ttl` | SHACL (Turtle) | Validation constraints — what data shapes are valid within this domain | OWL restrictions and axioms, but executable as validation rules rather than inference inputs |
+| `context.jsonld` | JSON-LD context | Namespace bindings and term definitions for compact serialization | OWL imports and namespace declarations |
+| `intent-mappings.json` | PACT schema | Deterministic mapping from SKOS concept URIs to intent classes with confidence floors | No equivalent — classical ontologies describe what things *are*, not what actions they *authorize* |
+| `bundle.json` | JWS (signed) | Cryptographic manifest — content hashes of every artifact, signature, validity window, revocation epoch | No equivalent — classical ontologies are unsigned |
+| `obt.jws` | JWS (signed) | Ontology binding token — signed attestation binding the pack to a specific policy snapshot | No equivalent |
+| `overlay-*.json` | PACT schema | Jurisdictional overlays — region-specific or regulation-specific constraints that compose with deny-wins precedence | No equivalent — classical ontologies have no composition model with precedence rules |
+| `lineage.json` | PACT schema | Derivation provenance — where this pack was compiled from, which upstream sources contributed | PROV-O provenance, but mandatory rather than optional |
+
+### Why each element exists
+
+**`pack.json` (descriptor)**: Classical ontologies have no standard way to say "this knowledge is valid from March 1 to March 31, was published by this authority, and should be revoked if epoch 3 is reached." The pack descriptor makes these operational concerns first-class. An agent can verify before loading: is this pack signed by an authority I trust? Is it within its validity window? Has it been revoked?
+
+**`vocab.skos.jsonld` (vocabulary)**: SKOS is a W3C standard for controlled vocabularies. PACT uses SKOS rather than OWL because SKOS is descriptive (labels, hierarchies, mappings) without being inferential. An agent can look up what a concept means without triggering open-world reasoning. The vocabulary is scoped to one domain — a payments pack does not include telecommunications concepts.
+
+**`shapes.ttl` (validation)**: SHACL is a W3C standard for validating RDF data against constraints. PACT uses SHACL rather than OWL restrictions because SHACL is closed-world by design: it validates what is present, not what might be inferred. A SHACL shape says "this field must be a string matching this pattern" — deterministic, testable, no inference required.
+
+**`intent-mappings.json` (action authorization)**: This is where PACT diverges most from classical ontology. A classical ontology describes entities and relationships. An intent mapping describes what an agent is **authorized to do**: concept X maps to intent class Y with confidence floor Z. This is the bridge between knowledge (what things are) and governance (what actions are permitted).
+
+**`bundle.json` (signed manifest)**: The bundle is what makes a pack trustworthy. Every artifact in the pack is content-hashed. The bundle is signed with Ed25519. An agent that verifies the bundle signature knows that no artifact has been tampered with since publication. Classical ontologies have no equivalent — you load an OWL file and hope it is the right one.
+
+**Overlays (jurisdictional composition)**: A payments pack may need different constraints in the EU versus the UK. Classical ontologies handle this by either duplicating the entire ontology or using complex import chains. PACT uses overlays that compose deterministically with deny-wins precedence: if any overlay denies an action, the action is denied. This makes multi-jurisdiction governance predictable.
+
+### The compilation pipeline
+
+```
+Classical ontology sources          PACT pack (runtime artifact)
+┌──────────────────────┐           ┌─────────────────────────┐
+│ OWL/RDF/SKOS broad   │           │ vocab.skos.jsonld       │
+│ domain models         │──derive──►│ shapes.ttl              │
+│                       │           │ intent-mappings.json    │
+│ Regulatory texts      │──extract─►│ overlay-eu.json         │
+│ (PSD3, MiFID, etc.)  │           │ overlay-uk.json         │
+│                       │           │ context.jsonld          │
+│ Industry standards    │──align───►│ lineage.json            │
+│ (ISO 20022, etc.)    │           │ pack.json               │
+│                       │           │ bundle.json (signed)    │
+└──────────────────────┘           └─────────────────────────┘
+     Open-world,                       Closed-world,
+     unbounded,                        bounded,
+     unsigned                          signed,
+                                       time-valid,
+                                       revocable
+```
+
+The pipeline is one-way at runtime. An agent never reasons against the upstream classical ontology directly. It operates within the compiled pack, which has been governance-gated, signed, and scoped. The classical ontology remains valuable for authoring, alignment, and discovery — but it stays out of the execution path.
+
+For the full rationale, see `draft-lane2-closed-world-agentic-ontology-rationale-00.md`.
+
 ## Distribution Modes
 
 PACT supports both deployer distribution modes:
