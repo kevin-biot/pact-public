@@ -59,6 +59,10 @@ Agentic error flow and ontology composition:
 
 1. `docs/architecture/agentic-error-flow-and-domain-ontology.md` — how RFC 9457 problem detail responses flow through the agentic call chain when caller and target operate within ontology-governed domain spaces.
 
+Security considerations:
+
+1. `docs/architecture/security-unsigned-error-instruction-injection.md` — threat model for unsigned RFC 9457 error instruction injection, PACT's trust chain mitigations, and agent hygiene rules.
+
 ## Architecture Decisions
 
 Public ADRs define specification intent and boundaries:

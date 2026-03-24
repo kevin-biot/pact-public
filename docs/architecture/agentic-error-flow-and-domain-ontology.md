@@ -95,7 +95,7 @@ An intermediary returns a non-PACT RFC 9457 response (e.g., flat `retryable: tru
 - PACT-governed responses (contain `pact_error_code` and `pact_schema_version`).
 - Non-PACT responses (flat RFC 9457 with provider-specific extensions).
 
-For non-PACT responses, the agent falls back to its own ontology's out-of-scope behavior (typically: escalate or deny).
+For non-PACT responses, the agent falls back to its own ontology's out-of-scope behavior (typically: escalate or deny). See `docs/architecture/security-unsigned-error-instruction-injection.md` for the full threat model and agent hygiene rules for handling untrusted error responses.
 
 ## Why Ontology Is Agent Hygiene
 
@@ -129,7 +129,7 @@ PACT does not replace these implementations. It provides the composition layer:
 | Semantic versioning | By promise | By schema version + pack version |
 | Deontic classification | Prose guidance | Machine-checkable `must`/`may`/`must_not` |
 | Regulatory traceability | None | `pact_source_ref` with regulatory citation |
-| Trust model | Implicit (provider reputation) | Explicit (trust tiers, signed packs) |
+| Trust model | Implicit (provider reputation) | Explicit (trust tiers, signed packs) — see [security consideration](security-unsigned-error-instruction-injection.md) |
 | Evidence | Trace ID | Immutable audit chain |
 
 An agent operating in regulated domains SHOULD use the PACT profile. An agent operating in unregulated, single-provider contexts MAY use flat RFC 9457 extensions directly.
@@ -150,4 +150,5 @@ Agents and APIs claiming PACT conformance for RFC 9457 error handling MUST:
 - `schemas/pact-problem-extensions.schema.json` — PACT problem extension schema
 - `docs/architecture/real-world-deployment-overview.md` — PACT operational flow
 - `docs/architecture/pack-bounded-authority.md` — authority boundary for external context
+- `docs/architecture/security-unsigned-error-instruction-injection.md` — threat model for unsigned error instruction injection
 - `docs/adr/ADR-003-extension-model-and-reference-vertical-packs.md` — extension model
