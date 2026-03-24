@@ -1,0 +1,10 @@
+{
+  "_comment": "MUST fail validation: missing required pact_error_code field",
+  "type": "https://pact.example/problems/DSC_INTENT_NOT_ADMISSIBLE",
+  "title": "Intent not admissible",
+  "status": 422,
+  "detail": "Missing pact_error_code.",
+  "instance": "urn:trace:fail-001",
+  "pact_domain": "payments",
+  "pact_schema_version": "1.0"
+}

@@ -1,0 +1,12 @@
+{
+  "_comment": "MUST fail validation: pact_risk_band is conditional and requires delivery profile gate rfc9457_projection.risk_band: true",
+  "type": "https://pact.example/problems/DSC_FACT_STRUCTURE_INVALID",
+  "title": "Fact structure invalid",
+  "status": 422,
+  "detail": "Conditional field present without delivery profile enablement.",
+  "instance": "urn:trace:fail-003",
+  "pact_error_code": "DSC_FACT_STRUCTURE_INVALID",
+  "pact_domain": "payments",
+  "pact_schema_version": "1.0",
+  "pact_risk_band": "High"
+}

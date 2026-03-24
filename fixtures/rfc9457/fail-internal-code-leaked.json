@@ -1,0 +1,11 @@
+{
+  "_comment": "MUST fail validation: OVL_CACHE_STALE is projection:internal and must not appear in wire responses",
+  "type": "https://pact.example/problems/OVL_CACHE_STALE",
+  "title": "Overlay cache stale",
+  "status": 503,
+  "detail": "Internal cache state leaked to wire.",
+  "instance": "urn:trace:fail-002",
+  "pact_error_code": "OVL_CACHE_STALE",
+  "pact_domain": "payments",
+  "pact_schema_version": "1.0"
+}

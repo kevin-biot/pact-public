@@ -1,0 +1,110 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://pact.example/schemas/pact-problem-extensions.schema.json",
+  "title": "PACT RFC 9457 Problem Detail Extensions",
+  "description": "JSON Schema for PACT extension members in RFC 9457 problem detail responses. Validates the public projection of ontology error semantics.",
+  "type": "object",
+  "required": [
+    "type",
+    "title",
+    "status",
+    "pact_error_code",
+    "pact_domain",
+    "pact_schema_version"
+  ],
+  "properties": {
+    "type": {
+      "type": "string",
+      "format": "uri",
+      "pattern": "^https://pact\\.example/problems/[A-Z]+_[A-Z_]+$",
+      "description": "RFC 9457 type URI. MUST match pattern: https://pact.example/problems/{PACT_ERROR_CODE}"
+    },
+    "title": {
+      "type": "string",
+      "minLength": 1,
+      "description": "RFC 9457 human-readable summary. Non-contractual — clients MUST NOT branch on this value."
+    },
+    "status": {
+      "type": "integer",
+      "minimum": 400,
+      "maximum": 599,
+      "description": "RFC 9457 HTTP status code. MUST match actual HTTP response status."
+    },
+    "detail": {
+      "type": "string",
+      "description": "RFC 9457 human-readable explanation. Non-contractual — clients MUST NOT branch on this value."
+    },
+    "instance": {
+      "type": "string",
+      "description": "RFC 9457 URI reference identifying the specific occurrence. Used for audit correlation with internal evidence chain."
+    },
+    "pact_error_code": {
+      "type": "string",
+      "pattern": "^[A-Z]+_[A-Z_]+$",
+      "description": "Stable machine code from ontology error taxonomy. MUST be annotated projection:public in ontology.",
+      "enum": [
+        "OVL_CYCLE_DETECTED",
+        "OVL_PRECEDENCE_CONFLICT",
+        "OVL_FEED_INVALID",
+        "OVL_CANONICAL_MISMATCH",
+        "OVL_SIGNATURE_INVALID",
+        "TAX_OVERRIDE_CONFLICT",
+        "TAX_VERSION_MISMATCH",
+        "TAX_SCHEMA_MISMATCH",
+        "ATTN_POLICY_FIELD_REQUIRED",
+        "ATTN_POLICY_FIELD_INVALID",
+        "ATTN_POLICY_FIELD_DENIED",
+        "ATTN_POLICY_FIELD_NOT_ALLOWED",
+        "ATTN_POLICY_INTENT_CLASS_REQUIRED",
+        "ATTN_POLICY_INTENT_CLASS_INVALID",
+        "ATTN_POLICY_INTENT_CLASS_DENIED",
+        "ATTN_POLICY_INTENT_CLASS_NOT_ALLOWED",
+        "ATTN_POLICY_TAXONOMY_DENIED",
+        "DSC_REQUIRED_MISSING",
+        "DSC_INTENT_NOT_ADMISSIBLE",
+        "DSC_FACT_TYPE_NOT_ADMISSIBLE",
+        "DSC_FACT_STRUCTURE_INVALID",
+        "DSC_TRANSITION_NOT_ADMISSIBLE",
+        "RSE_REQUIRED_MISSING",
+        "ROUTE_FEDERATION_HASH_MISMATCH",
+        "ROUTE_TRANSPARENCY_PROOF_FAIL"
+      ]
+    },
+    "pact_domain": {
+      "type": "string",
+      "pattern": "^[a-z0-9][a-z0-9_-]*$",
+      "description": "Pack domain identifier. MUST match the domain in the originating pack descriptor."
+    },
+    "pact_schema_version": {
+      "type": "string",
+      "const": "1.0",
+      "description": "Version of this PACT problem extension schema."
+    },
+    "pact_deontic": {
+      "type": "string",
+      "enum": ["may", "must", "must_not"],
+      "description": "Deontic classification of the violated transition. Present when the error relates to a decision-space transition with deontic annotation."
+    },
+    "pact_source_ref": {
+      "type": "string",
+      "description": "Regulatory source reference for the deontic classification (e.g., psd3:article:97:1:a). Present when pact_deontic is present and the transition cites a source."
+    },
+    "pact_decision_state": {
+      "type": "string",
+      "description": "Current state in the decision-space state model when the error occurred."
+    },
+    "pact_risk_band": {
+      "type": "string",
+      "enum": ["Low", "Medium", "High", "Critical"],
+      "description": "CONDITIONAL: Risk band at time of error. Only present when delivery profile sets rfc9457_projection.risk_band: true."
+    },
+    "pact_corridor_id": {
+      "type": "string",
+      "description": "CONDITIONAL: Corridor identifier. Only present when delivery profile sets rfc9457_projection.corridor_id: true."
+    }
+  },
+  "dependentRequired": {
+    "pact_source_ref": ["pact_deontic"]
+  },
+  "additionalProperties": true
+}

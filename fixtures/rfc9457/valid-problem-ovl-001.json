@@ -1,0 +1,10 @@
+{
+  "type": "https://pact.example/problems/OVL_PRECEDENCE_CONFLICT",
+  "title": "Overlay precedence conflict",
+  "status": 409,
+  "detail": "Overlays for jurisdictions EU and UK produce conflicting precedence on deny-wins evaluation.",
+  "instance": "urn:trace:a1b2-c3d4-e5f6",
+  "pact_error_code": "OVL_PRECEDENCE_CONFLICT",
+  "pact_domain": "payments",
+  "pact_schema_version": "1.0"
+}

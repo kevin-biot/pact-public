@@ -1,0 +1,13 @@
+{
+  "type": "https://pact.example/problems/DSC_INTENT_NOT_ADMISSIBLE",
+  "title": "Intent not admissible in current decision space",
+  "status": 422,
+  "detail": "Intent class payments.transfer.initiate.v1 is not admissible in state 'suspended'.",
+  "instance": "urn:trace:9f3d-abc1-7e2f",
+  "pact_error_code": "DSC_INTENT_NOT_ADMISSIBLE",
+  "pact_domain": "payments",
+  "pact_schema_version": "1.0",
+  "pact_decision_state": "suspended",
+  "pact_deontic": "must_not",
+  "pact_source_ref": "psd3:article:97:1:a"
+}

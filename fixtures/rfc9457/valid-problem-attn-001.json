@@ -1,0 +1,10 @@
+{
+  "type": "https://pact.example/problems/ATTN_POLICY_INTENT_CLASS_DENIED",
+  "title": "Intent class denied by policy",
+  "status": 403,
+  "detail": "Intent class lending.approve.v1 denied under current policy binding.",
+  "instance": "urn:trace:f7g8-h9i0-j1k2",
+  "pact_error_code": "ATTN_POLICY_INTENT_CLASS_DENIED",
+  "pact_domain": "lending",
+  "pact_schema_version": "1.0"
+}

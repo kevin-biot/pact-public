@@ -1,0 +1,14 @@
+{
+  "type": "https://pact.example/problems/DSC_TRANSITION_NOT_ADMISSIBLE",
+  "title": "State transition not admissible",
+  "status": 422,
+  "detail": "Transition from 'active' to 'execute' requires risk band Low or Medium.",
+  "instance": "urn:trace:m3n4-o5p6-q7r8",
+  "pact_error_code": "DSC_TRANSITION_NOT_ADMISSIBLE",
+  "pact_domain": "payments",
+  "pact_schema_version": "1.0",
+  "pact_decision_state": "active",
+  "pact_deontic": "must",
+  "pact_risk_band": "High",
+  "pact_corridor_id": "payments-eu-uk"
+}

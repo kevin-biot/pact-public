@@ -46,6 +46,8 @@ Implementations claiming OCI-1 compatibility MUST validate against the following
 8. `schemas/convergence-fixtures.schema.json`
 9. `schemas/promotion-gate-result.schema.json`
 10. `schemas/delivery-profile.schema.json`
+11. `schemas/pact-problem-extensions.schema.json`
+12. `docs/rfc9457-pact-profile.md`
 
 Conformance claims should reference specific artifact versions or release tags.
 
@@ -98,6 +100,10 @@ Regenerate synthetic fixtures (including test signatures):
 ```bash
 node tools/generate-oci1-fixtures.mjs
 ```
+
+RFC 9457 problem detail conformance fixtures:
+
+1. `fixtures/rfc9457/` — valid and fail fixtures for PACT problem extension schema
 
 Fixture signing keys are test-only and must not be used in production systems.
 
