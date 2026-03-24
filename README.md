@@ -213,10 +213,11 @@ The internal reference implementation includes:
 
 1. **Ontology server** — runtime pack verification, policy gate evaluation, STA (Secure Token Attestation) issuance, and overlay composition.
 2. **Pack authoring pipeline** — SKOS vocabulary compilation, SHACL shape generation, intent mapping extraction, Ed25519 signing, and bundle manifest production.
-3. **Promotion gates** — automated conformance validation, stability analysis, and drift detection before packs are promoted to production.
-4. **Drift detection** — continuous monitoring for semantic drift between pack versions, scorer stability degradation, and policy threshold sensitivity changes.
-5. **A2A bridge** — normalization of Agent2Agent protocol task types into PACT canonical decisions with policy-gate attestation before execution.
-6. **Evidence pipeline** — Dublin Core metadata generation, Merkle-chain linking, and immutable audit trail production.
+3. **NER extraction tooling** — zero-shot Named Entity Recognition (GLiNER) for accelerated vocabulary and concept authoring from source documents (regulatory texts, standards, specifications). Containerized, deterministic (pinned model versions, SHA256 provenance), with domain-specific extraction profiles (telco, regulatory). All extractions produce candidates only — human review is mandatory before any candidate enters the ontology pipeline. Supports pluggable adapters (GLiNER default, extensible to spaCy/OpenNLP/GATE).
+4. **Promotion gates** — automated conformance validation, stability analysis, drift detection, and candidate-status enforcement (unreviewed NER candidates are rejected) before packs are promoted to production.
+5. **Drift detection** — continuous monitoring for semantic drift between pack versions, scorer stability degradation, and policy threshold sensitivity changes.
+6. **A2A bridge** — normalization of Agent2Agent protocol task types into PACT canonical decisions with policy-gate attestation before execution.
+7. **Evidence pipeline** — Dublin Core metadata generation, Merkle-chain linking, and immutable audit trail production.
 
 **What this repository publishes**: the specification surface — schemas, contract profiles, conformance fixtures, reference packs, and architectural documentation. Everything an implementor needs to build a conformant system.
 
@@ -227,8 +228,9 @@ Implementors should expect to build:
 1. A pack verification service (signature checking, hash validation, validity window enforcement, revocation epoch checking).
 2. A policy evaluation engine (intent admissibility, fact validation, state transition checking, overlay composition).
 3. A signing and publishing pipeline for their own domain packs.
-4. An evidence emission layer appropriate to their audit requirements.
-5. Integration adapters for their agent framework (A2A, MCP, or custom protocols).
+4. An extraction and curation pipeline for sourcing vocabulary and concepts from domain documents (regulatory texts, standards, specifications) — with mandatory human review gates before candidates enter production packs.
+5. An evidence emission layer appropriate to their audit requirements.
+6. Integration adapters for their agent framework (A2A, MCP, or custom protocols).
 
 The conformance fixtures in this repository (`fixtures/oci1/`, `fixtures/rfc9457/`) provide the test baseline. An implementation that passes these fixtures and validates against the published schemas is conformant regardless of language, runtime, or infrastructure choices.
 
