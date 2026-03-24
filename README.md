@@ -55,6 +55,10 @@ Authority boundary guidance:
 
 1. `docs/architecture/pack-bounded-authority.md` — packs are authoritative for execution; external context (including RAG/graph retrieval) is advisory and must not silently expand scope.
 
+Agentic error flow and ontology composition:
+
+1. `docs/architecture/agentic-error-flow-and-domain-ontology.md` — how RFC 9457 problem detail responses flow through the agentic call chain when caller and target operate within ontology-governed domain spaces.
+
 ## Architecture Decisions
 
 Public ADRs define specification intent and boundaries:
