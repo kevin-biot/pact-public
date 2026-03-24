@@ -211,26 +211,50 @@ PACT is not a theoretical specification. It is derived from a working agentic go
 
 The internal reference implementation includes:
 
-1. **Ontology server** — runtime pack verification, policy gate evaluation, STA (Secure Token Attestation) issuance, and overlay composition.
-2. **Pack authoring pipeline** — SKOS vocabulary compilation, SHACL shape generation, intent mapping extraction, Ed25519 signing, and bundle manifest production.
-3. **NER extraction tooling** — zero-shot Named Entity Recognition (GLiNER) for accelerated vocabulary and concept authoring from source documents (regulatory texts, standards, specifications). Containerized, deterministic (pinned model versions, SHA256 provenance), with domain-specific extraction profiles (telco, regulatory). All extractions produce candidates only — human review is mandatory before any candidate enters the ontology pipeline. Supports pluggable adapters (GLiNER default, extensible to spaCy/OpenNLP/GATE).
-4. **Promotion gates** — automated conformance validation, stability analysis, drift detection, and candidate-status enforcement (unreviewed NER candidates are rejected) before packs are promoted to production.
-5. **Drift detection** — continuous monitoring for semantic drift between pack versions, scorer stability degradation, and policy threshold sensitivity changes.
-6. **A2A bridge** — normalization of Agent2Agent protocol task types into PACT canonical decisions with policy-gate attestation before execution.
-7. **Evidence pipeline** — Dublin Core metadata generation, Merkle-chain linking, and immutable audit trail production.
+**Runtime services:**
+
+1. **Policy gate server** — HTTP service handling pack verification, policy snapshot binding, STA (Secure Token Attestation) issuance, overlay composition, and taxonomy enforcement. Content-addressed state with optimistic locking, append-only audit logs, and in-process cache event broker.
+2. **Attribute credential provider** — JWKS endpoint, credential minting, enrollment management, and rate-limited token issuance for pilot onboarding.
+3. **Pack registry** — immutable file server for signed pack artifacts, manifests, and bundle metadata.
+
+**Authoring and extraction toolchain:**
+
+4. **Pack authoring pipeline** — SKOS vocabulary compilation, SHACL shape generation, intent mapping extraction, Ed25519 signing, and bundle manifest production.
+5. **NER extraction tooling** — zero-shot Named Entity Recognition (GLiNER) for accelerated vocabulary and concept authoring from source documents (regulatory texts, standards, specifications). Containerized, deterministic (pinned model versions, SHA256 provenance), with domain-specific extraction profiles (telco, regulatory). All extractions produce candidates only — human review is mandatory before any candidate enters the ontology pipeline. Pluggable adapter architecture (GLiNER default, extensible to spaCy/OpenNLP/GATE).
+6. **Database schema extraction** — introspection and canonicalization from Salesforce, OpenAPI, and generic database sources into normalized concept schemas.
+7. **Intent canonicalization** — deterministic normalization of inbound intents against compiled pack taxonomy.
+8. **Schema normalization** — cross-format schema alignment tooling.
+
+**Governance and quality:**
+
+9. **Promotion gates** — automated conformance validation, stability analysis (Lyapunov spectral framework), drift detection, and candidate-status enforcement (unreviewed NER candidates are rejected) before packs are promoted to production.
+10. **Drift detection** — continuous monitoring for semantic drift between pack versions, scorer stability degradation, and policy threshold sensitivity changes. Production posture checks and promotion-gate mode parity validation.
+11. **Quality scorecards** — automated pack quality assessment against configurable thresholds.
+
+**Integration and deployment:**
+
+12. **A2A bridge** — normalization of Agent2Agent protocol task types into PACT canonical decisions with policy-gate attestation before execution.
+13. **Evidence pipeline** — Dublin Core metadata generation, Merkle-chain linking, and immutable audit trail production.
+14. **Client SDKs** — TypeScript and Go clients for policy snapshot retrieval, bundle binding, attestation, Ed25519 signature verification, and JWS/JWK validation.
+15. **Container infrastructure** — multi-stage Docker builds, Docker Compose orchestration, Alpine runtime images with health checks, and static binary compilation.
+
+**Operational tooling:**
+
+16. **50+ pipeline scripts** — domain-specific orchestration for telco, financial services, medical, regulatory, and standards-body workflows. Includes backup/restore, bundle export, production rehearsal, and shadow stability gates.
 
 **What this repository publishes**: the specification surface — schemas, contract profiles, conformance fixtures, reference packs, and architectural documentation. Everything an implementor needs to build a conformant system.
 
-**What this repository does not publish**: the runtime server, toolchain, signing keys, or operational infrastructure. These are implementation choices that belong to each adopter.
+**What this repository does not publish**: the runtime services, toolchain, SDKs, extraction tools, database schemas, pipeline scripts, signing keys, or operational infrastructure. These are implementation choices that belong to each adopter.
 
 Implementors should expect to build:
 
-1. A pack verification service (signature checking, hash validation, validity window enforcement, revocation epoch checking).
-2. A policy evaluation engine (intent admissibility, fact validation, state transition checking, overlay composition).
-3. A signing and publishing pipeline for their own domain packs.
-4. An extraction and curation pipeline for sourcing vocabulary and concepts from domain documents (regulatory texts, standards, specifications) — with mandatory human review gates before candidates enter production packs.
+1. A pack verification and policy evaluation service (signature checking, hash validation, validity window enforcement, revocation checking, intent admissibility, fact validation, state transition checking, overlay composition).
+2. A signing and publishing pipeline for their own domain packs.
+3. An extraction and curation pipeline for sourcing vocabulary and concepts from domain documents (regulatory texts, standards, databases) — with mandatory human review gates before candidates enter production packs.
+4. Client libraries for policy binding, attestation, and signature verification in their language of choice.
 5. An evidence emission layer appropriate to their audit requirements.
-6. Integration adapters for their agent framework (A2A, MCP, or custom protocols).
+6. Promotion gates and drift detection appropriate to their deployment cadence.
+7. Integration adapters for their agent framework (A2A, MCP, or custom protocols).
 
 The conformance fixtures in this repository (`fixtures/oci1/`, `fixtures/rfc9457/`) provide the test baseline. An implementation that passes these fixtures and validates against the published schemas is conformant regardless of language, runtime, or infrastructure choices.
 
