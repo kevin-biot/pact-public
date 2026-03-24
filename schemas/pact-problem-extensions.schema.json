@@ -2,7 +2,7 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "https://pact.example/schemas/pact-problem-extensions.schema.json",
   "title": "PACT RFC 9457 Problem Detail Extensions",
-  "description": "JSON Schema for PACT extension members in RFC 9457 problem detail responses. Validates the public projection of ontology error semantics.",
+  "description": "JSON Schema for PACT extension members in RFC 9457 problem detail responses. Validates the public PACT error taxonomy projection.",
   "type": "object",
   "required": [
     "type",
@@ -36,12 +36,12 @@
     },
     "instance": {
       "type": "string",
-      "description": "RFC 9457 URI reference identifying the specific occurrence. Used for audit correlation with internal evidence chain."
+      "description": "RFC 9457 URI reference identifying the specific occurrence. Used for audit correlation."
     },
     "pact_error_code": {
       "type": "string",
       "pattern": "^[A-Z]+_[A-Z_]+$",
-      "description": "Stable machine code from ontology error taxonomy. MUST be annotated projection:public in ontology.",
+      "description": "Stable machine code from the PACT error taxonomy. Only codes enumerated in this schema are permitted in conformant responses.",
       "enum": [
         "OVL_CYCLE_DETECTED",
         "OVL_PRECEDENCE_CONFLICT",

@@ -2,7 +2,7 @@
 
 **Status:** Draft
 **Date:** 2026-03-24
-**Normative references:** RFC 9457 (IETF STD), pact-public ADR-003, ontology ADR-059
+**Normative references:** RFC 9457 (IETF STD), pact-public ADR-003
 **Schema:** `schemas/pact-problem-extensions.schema.json`
 
 ---
@@ -26,7 +26,7 @@ A conformant PACT API:
 
 - MUST produce `application/problem+json` responses for all 4xx and 5xx status codes.
 - MUST include the `type`, `title`, `status`, and `pact_error_code` fields.
-- MUST NOT include ontology fields annotated `projection: internal` (per ontology ADR-059).
+- MUST NOT include fields classified as internal in the PACT error taxonomy. Only error codes listed in `schemas/pact-problem-extensions.schema.json` are permitted in wire responses.
 - MUST use the `type` URI structure defined in §3.
 - SHOULD include `instance` as an opaque trace reference for audit correlation.
 
@@ -44,7 +44,7 @@ A conformant PACT client:
 https://pact.example/problems/{PACT_ERROR_CODE}
 ```
 
-- `{PACT_ERROR_CODE}` is the stable machine code from the ontology error taxonomy (e.g., `DSC_INTENT_NOT_ADMISSIBLE`).
+- `{PACT_ERROR_CODE}` is the stable machine code from the PACT error taxonomy (e.g., `DSC_INTENT_NOT_ADMISSIBLE`).
 - The URI MUST resolve to human-readable documentation.
 - The special value `about:blank` (RFC 9457 default) MUST NOT be used by conformant PACT APIs.
 
@@ -56,7 +56,7 @@ https://pact.example/problems/{PACT_ERROR_CODE}
 
 | Field | Type | Description |
 |-------|------|-------------|
-| `pact_error_code` | string | Stable machine code from ontology error taxonomy. MUST match the `{PACT_ERROR_CODE}` segment of the `type` URI. |
+| `pact_error_code` | string | Stable machine code from the PACT error taxonomy. MUST match the `{PACT_ERROR_CODE}` segment of the `type` URI. |
 | `pact_domain` | string | Pack domain identifier (e.g., `payments`, `telco-reference`). |
 | `pact_schema_version` | string | Version of the PACT problem extension schema. Currently `"1.0"`. |
 
@@ -174,7 +174,7 @@ Implementations MAY refine within these ranges. The `status` field in the proble
 - The `pact_schema_version` field tracks this profile's version.
 - Minor version increments (1.0 → 1.1) add optional fields only (backward-compatible).
 - Major version increments (1.x → 2.0) may change required fields or remove fields.
-- The profile version is independent of ontology schema versions but MUST document which ontology version it projects from.
+- The profile version is independent of PACT core schema versions but MUST document which error taxonomy version it incorporates.
 
 ---
 
@@ -194,14 +194,14 @@ Conformance fixtures are provided in `fixtures/rfc9457/`:
 
 ---
 
-## 9. Relationship to Ontology
+## 9. Relationship to PACT Error Taxonomy
 
-This profile is a **projection** of ontology error semantics, not a redefinition.
+This profile is a **projection** of PACT error semantics into a standard wire format, not a redefinition.
 
-- Error code semantics are authoritative in the ontology repo.
-- This profile selects which codes and domain fields are safe for wire exposure, per ontology ADR-059.
-- When ontology adds new `projection: public` codes, this profile's schema SHOULD be updated to include them.
-- When ontology reclassifies a code from `public` to `internal`, this profile MUST remove it in the next major version.
+- Error code semantics are defined by the PACT specification. This profile selects which codes and domain fields are safe for wire exposure.
+- The allowed error codes are enumerated in `schemas/pact-problem-extensions.schema.json`. Only codes listed there are permitted in conformant problem responses.
+- When new public error codes are added to the PACT error taxonomy, this profile's schema SHOULD be updated to include them.
+- When an error code is reclassified from public to internal, this profile MUST remove it in the next major version.
 
 ---
 
@@ -210,4 +210,3 @@ This profile is a **projection** of ontology error semantics, not a redefinition
 - RFC 9457: Problem Details for HTTP APIs (IETF, July 2023)
 - RFC 2119: Key words for use in RFCs (IETF)
 - pact-public ADR-003: Extension Model and Reference Vertical Packs
-- Ontology ADR-059: RFC 9457 Problem Detail Projection Policy

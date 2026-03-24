@@ -1,5 +1,5 @@
 {
-  "_comment": "MUST fail validation: OVL_CACHE_STALE is projection:internal and must not appear in wire responses",
+  "_comment": "MUST fail validation: OVL_CACHE_STALE is not in the permitted error code enum and must not appear in wire responses",
   "type": "https://pact.example/problems/OVL_CACHE_STALE",
   "title": "Overlay cache stale",
   "status": 503,
