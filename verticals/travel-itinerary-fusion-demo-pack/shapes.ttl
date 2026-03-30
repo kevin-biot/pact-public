@@ -1,0 +1,55 @@
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix travel: <https://ontology.lane2.example/travel-itinerary-fusion-v1#> .
+
+travel:ItineraryFusionRequestShape
+  a sh:NodeShape ;
+  sh:targetClass travel:ItineraryFusionRequest ;
+  sh:property [
+    sh:path travel:itineraryId ;
+    sh:datatype xsd:string ;
+    sh:minCount 1
+  ] ;
+  sh:property [
+    sh:path travel:airReservationId ;
+    sh:datatype xsd:string ;
+    sh:minCount 1
+  ] ;
+  sh:property [
+    sh:path travel:hotelReservationId ;
+    sh:datatype xsd:string ;
+    sh:minCount 1
+  ] ;
+  sh:property [
+    sh:path travel:fusionScope ;
+    sh:datatype xsd:string ;
+    sh:minCount 1 ;
+    sh:in (
+      "air_hotel"
+    )
+  ] .
+
+travel:ItineraryNodeShape
+  a sh:NodeShape ;
+  sh:targetClass travel:ItineraryNode ;
+  sh:property [
+    sh:path travel:nodeId ;
+    sh:datatype xsd:string ;
+    sh:minCount 1
+  ] ;
+  sh:property [
+    sh:path travel:nodeType ;
+    sh:datatype xsd:string ;
+    sh:minCount 1 ;
+    sh:in (
+      "flight_reservation"
+      "hotel_reservation"
+      "connection"
+    )
+  ] ;
+  sh:property [
+    sh:path travel:sequence ;
+    sh:datatype xsd:integer ;
+    sh:minCount 1 ;
+    sh:minInclusive 0
+  ] .

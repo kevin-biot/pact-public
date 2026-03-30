@@ -1,0 +1,78 @@
+{
+  "@context": {
+    "concept": "https://lane2.example/ontology/travel-itinerary-fusion/concept"
+  },
+  "entries": [
+    {
+      "label": "Air Reservation Link",
+      "alt": [
+        "air reservation link"
+      ],
+      "concept_id": "travel-itinerary-fusion.air-reservation-link"
+    },
+    {
+      "label": "Itinerary Fusion Deny Reason",
+      "alt": [
+        "fusion deny reason"
+      ],
+      "concept_id": "travel-itinerary-fusion.deny-reason"
+    },
+    {
+      "label": "Fused Reservation",
+      "alt": [
+        "fused reservation"
+      ],
+      "concept_id": "travel-itinerary-fusion.fused-reservation"
+    },
+    {
+      "label": "Hotel Reservation Link",
+      "alt": [
+        "hotel reservation link"
+      ],
+      "concept_id": "travel-itinerary-fusion.hotel-reservation-link"
+    },
+    {
+      "label": "Itinerary Fusion Intent",
+      "alt": [
+        "itinerary fusion intent",
+        "trip fusion"
+      ],
+      "concept_id": "travel-itinerary-fusion.intent"
+    },
+    {
+      "label": "Canonical Itinerary",
+      "alt": [
+        "canonical itinerary"
+      ],
+      "concept_id": "travel-itinerary-fusion.itinerary"
+    },
+    {
+      "label": "Itinerary Node",
+      "alt": [
+        "itinerary node"
+      ],
+      "concept_id": "travel-itinerary-fusion.itinerary-node"
+    },
+    {
+      "label": "Location Anchor",
+      "alt": [
+        "location anchor"
+      ],
+      "concept_id": "travel-itinerary-fusion.location-anchor"
+    },
+    {
+      "label": "Itinerary Fusion Policy Guard",
+      "alt": [
+        "fusion policy guard"
+      ],
+      "concept_id": "travel-itinerary-fusion.policy-guard"
+    },
+    {
+      "label": "Temporal Ordering",
+      "alt": [
+        "temporal ordering"
+      ],
+      "concept_id": "travel-itinerary-fusion.temporal-ordering"
+    }
+  ]
+}

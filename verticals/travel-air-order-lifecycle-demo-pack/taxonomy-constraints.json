@@ -1,0 +1,54 @@
+{
+  "version": "tax:v1",
+  "decisionTypes": {
+    "TravelAirOrderLifecycle": {
+      "allow": [
+        "travel.flight.order.create.v1",
+        "travel.flight.order.read.v1",
+        "travel.flight.order.cancel.v1"
+      ],
+      "deny": [
+        "travel.flight.order.modify.unbounded.v1"
+      ],
+      "fieldPolicy": {
+        "operationType": {
+          "required": true,
+          "allow": [
+            "create",
+            "read",
+            "cancel"
+          ],
+          "deny": [
+            "modify",
+            "void"
+          ]
+        },
+        "flightOrderId": {
+          "required": false,
+          "minLength": 4,
+          "maxLength": 64,
+          "pattern": "^[A-Za-z0-9._:-]{4,64}$"
+        },
+        "flightOffers[]": {
+          "required": true,
+          "minLength": 1
+        },
+        "travelers[]": {
+          "required": true,
+          "minLength": 1
+        },
+        "contacts[]": {
+          "required": false,
+          "minLength": 1
+        },
+        "ticketingAgreement.option": {
+          "required": false,
+          "allow": [
+            "DELAY_TO_CANCEL",
+            "DELAY_TO_TICKET"
+          ]
+        }
+      }
+    }
+  }
+}

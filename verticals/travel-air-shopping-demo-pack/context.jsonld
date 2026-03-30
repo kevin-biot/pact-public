@@ -1,0 +1,7 @@
+{
+  "@context": {
+    "dc": "http://purl.org/dc/elements/1.1/",
+    "domain": "https://lane2.example/ontology/travel-air-shopping/",
+    "skos": "http://www.w3.org/2004/02/skos/core#"
+  }
+}

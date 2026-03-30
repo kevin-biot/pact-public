@@ -1,0 +1,85 @@
+{
+  "@context": {
+    "concept": "https://lane2.example/ontology/travel-air-order-lifecycle/concept"
+  },
+  "entries": [
+    {
+      "label": "Contact",
+      "alt": [
+        "contact payload"
+      ],
+      "concept_id": "travel-air-order-lifecycle.contact"
+    },
+    {
+      "label": "Air Order Lifecycle Deny Reason",
+      "alt": [
+        "order lifecycle deny reason"
+      ],
+      "concept_id": "travel-air-order-lifecycle.deny-reason"
+    },
+    {
+      "label": "Flight Offer Reference",
+      "alt": [
+        "flight offer reference"
+      ],
+      "concept_id": "travel-air-order-lifecycle.flight-offer-reference"
+    },
+    {
+      "label": "Air Order Lifecycle Intent",
+      "alt": [
+        "air order lifecycle intent"
+      ],
+      "concept_id": "travel-air-order-lifecycle.intent"
+    },
+    {
+      "label": "Lifecycle Action",
+      "alt": [
+        "create read cancel",
+        "lifecycle action"
+      ],
+      "concept_id": "travel-air-order-lifecycle.lifecycle-action"
+    },
+    {
+      "label": "Flight Order",
+      "alt": [
+        "flight order"
+      ],
+      "concept_id": "travel-air-order-lifecycle.order"
+    },
+    {
+      "label": "Flight Order Identifier",
+      "alt": [
+        "order id"
+      ],
+      "concept_id": "travel-air-order-lifecycle.order-id"
+    },
+    {
+      "label": "Order Status",
+      "alt": [
+        "order status"
+      ],
+      "concept_id": "travel-air-order-lifecycle.order-status"
+    },
+    {
+      "label": "Air Order Lifecycle Policy Guard",
+      "alt": [
+        "order lifecycle policy"
+      ],
+      "concept_id": "travel-air-order-lifecycle.policy-guard"
+    },
+    {
+      "label": "Ticketing Agreement",
+      "alt": [
+        "ticketing agreement"
+      ],
+      "concept_id": "travel-air-order-lifecycle.ticketing-agreement"
+    },
+    {
+      "label": "Traveler",
+      "alt": [
+        "traveler payload"
+      ],
+      "concept_id": "travel-air-order-lifecycle.traveler"
+    }
+  ]
+}

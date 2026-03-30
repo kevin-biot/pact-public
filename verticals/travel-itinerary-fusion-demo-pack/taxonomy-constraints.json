@@ -1,0 +1,56 @@
+{
+  "version": "tax:v1",
+  "decisionTypes": {
+    "TravelItineraryFusion": {
+      "allow": [
+        "travel.itinerary.fusion.v1",
+        "travel.itinerary.read.v1"
+      ],
+      "deny": [
+        "travel.multimodal.freight.fusion.v1"
+      ],
+      "fieldPolicy": {
+        "itineraryId": {
+          "required": true,
+          "minLength": 4,
+          "maxLength": 64,
+          "pattern": "^[A-Za-z0-9._:-]{4,64}$"
+        },
+        "airReservationId": {
+          "required": true,
+          "minLength": 4,
+          "maxLength": 64
+        },
+        "hotelReservationId": {
+          "required": true,
+          "minLength": 4,
+          "maxLength": 64
+        },
+        "nodeSequence[]": {
+          "required": true,
+          "minLength": 2
+        },
+        "fusionScope": {
+          "required": true,
+          "allow": [
+            "air_hotel"
+          ],
+          "deny": [
+            "freight",
+            "cargo"
+          ]
+        },
+        "operationType": {
+          "required": true,
+          "allow": [
+            "fuse",
+            "read"
+          ],
+          "deny": [
+            "mutate-unbounded"
+          ]
+        }
+      }
+    }
+  }
+}

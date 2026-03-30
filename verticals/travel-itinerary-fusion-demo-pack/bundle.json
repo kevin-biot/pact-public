@@ -1,0 +1,20 @@
+{
+  "id": "travel-itinerary-fusion-demo-0.1.0",
+  "domain": "travel-itinerary-fusion",
+  "version": "0.1.0",
+  "providerId": "ontology:lane2:travel-itinerary-fusion-demo",
+  "trustTier": "Tier1",
+  "policySnapshotId": "sha256:de93910b5a55669504e880f862be54015b611d8410d8cc16f5d3c3ec974f5116",
+  "files": {
+    "context": "sha256:cf067464f395f5f2f090db4af9c22e279d8ed14a7867a09be48304fba47b5cd0",
+    "shapes": "sha256:bba4af25a2d7bba2c6683273e8bebc112a3528b9200a6b706dfb8e69181571a9",
+    "taxonomy_constraints": "sha256:77556062fa321d750699bc5593936838711ed6081f40cf5c01307a6478c49537",
+    "thesaurus": "sha256:1e8defb975ec3a79aad6bdda316b3d9f8a1a6b1a97dbc43a84777ce3c1696c0a",
+    "vocab": "sha256:3281f7f10a6b74d7a1bdb71a3c39832b9458dd2605232596299c8a2a24a9ff5f"
+  },
+  "precedence": [],
+  "denyWins": true,
+  "nbf": "2026-03-30T00:00:00Z",
+  "exp": "2030-03-31T00:00:00Z",
+  "revEpoch": 1
+}

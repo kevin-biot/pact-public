@@ -1,0 +1,111 @@
+{
+  "@graph": [
+    {
+      "@id": "travel-itinerary-fusion.air-reservation-link",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "Air Reservation Link",
+      "skos:definition": "Link edge from itinerary node to flight reservation object.",
+      "skos:altLabel": [
+        "air reservation link"
+      ],
+      "skos:broader": "travel-itinerary-fusion.itinerary-node"
+    },
+    {
+      "@id": "travel-itinerary-fusion.deny-reason",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "Itinerary Fusion Deny Reason",
+      "skos:definition": "Normalized deny reason for unsupported fusion or out-of-scope multimodal requests.",
+      "skos:altLabel": [
+        "fusion deny reason"
+      ],
+      "skos:broader": "travel-itinerary-fusion.policy-guard"
+    },
+    {
+      "@id": "travel-itinerary-fusion.domain",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "Travel Itinerary Fusion Domain",
+      "skos:definition": "Domain concept for cross-pack itinerary graph fusion across air and hotel reservations."
+    },
+    {
+      "@id": "travel-itinerary-fusion.fused-reservation",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "Fused Reservation",
+      "skos:definition": "Composite reservation view spanning transport and lodging components.",
+      "skos:altLabel": [
+        "fused reservation"
+      ],
+      "skos:broader": "travel-itinerary-fusion.itinerary"
+    },
+    {
+      "@id": "travel-itinerary-fusion.hotel-reservation-link",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "Hotel Reservation Link",
+      "skos:definition": "Link edge from itinerary node to hotel reservation object.",
+      "skos:altLabel": [
+        "hotel reservation link"
+      ],
+      "skos:broader": "travel-itinerary-fusion.itinerary-node"
+    },
+    {
+      "@id": "travel-itinerary-fusion.intent",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "Itinerary Fusion Intent",
+      "skos:definition": "Intent envelope for combining heterogeneous reservation objects into a canonical itinerary.",
+      "skos:altLabel": [
+        "itinerary fusion intent",
+        "trip fusion"
+      ],
+      "skos:broader": "travel-itinerary-fusion.domain"
+    },
+    {
+      "@id": "travel-itinerary-fusion.itinerary",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "Canonical Itinerary",
+      "skos:definition": "Canonical itinerary node representing an ordered trip context.",
+      "skos:altLabel": [
+        "canonical itinerary"
+      ],
+      "skos:broader": "travel-itinerary-fusion.domain"
+    },
+    {
+      "@id": "travel-itinerary-fusion.itinerary-node",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "Itinerary Node",
+      "skos:definition": "Node within an itinerary graph linked to reservation or segment objects.",
+      "skos:altLabel": [
+        "itinerary node"
+      ],
+      "skos:broader": "travel-itinerary-fusion.itinerary"
+    },
+    {
+      "@id": "travel-itinerary-fusion.location-anchor",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "Location Anchor",
+      "skos:definition": "Normalized place identifier used to connect itinerary legs and reservations.",
+      "skos:altLabel": [
+        "location anchor"
+      ],
+      "skos:broader": "travel-itinerary-fusion.itinerary-node"
+    },
+    {
+      "@id": "travel-itinerary-fusion.policy-guard",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "Itinerary Fusion Policy Guard",
+      "skos:definition": "Fail-closed control for allowed fusion scopes and cross-domain link integrity.",
+      "skos:altLabel": [
+        "fusion policy guard"
+      ],
+      "skos:broader": "travel-itinerary-fusion.domain"
+    },
+    {
+      "@id": "travel-itinerary-fusion.temporal-ordering",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "Temporal Ordering",
+      "skos:definition": "Ordering constraints ensuring chronological sequence across fused nodes.",
+      "skos:altLabel": [
+        "temporal ordering"
+      ],
+      "skos:broader": "travel-itinerary-fusion.itinerary"
+    }
+  ]
+}

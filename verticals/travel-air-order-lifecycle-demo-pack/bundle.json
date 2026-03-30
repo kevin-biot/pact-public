@@ -1,0 +1,20 @@
+{
+  "id": "travel-air-order-lifecycle-demo-0.1.0",
+  "domain": "travel-air-order-lifecycle",
+  "version": "0.1.0",
+  "providerId": "ontology:lane2:travel-air-order-lifecycle-demo",
+  "trustTier": "Tier1",
+  "policySnapshotId": "sha256:de93910b5a55669504e880f862be54015b611d8410d8cc16f5d3c3ec974f5116",
+  "files": {
+    "context": "sha256:ee6691176f72684a7cb704f110e0bf44825ed4d830c73d8ecd127ceb5bcdcf31",
+    "shapes": "sha256:6e25abd4e1e195a0f77bf08181840ceef47bed244b7dff41c0492c5b3ae5d84c",
+    "taxonomy_constraints": "sha256:5a2dd0672c1b11d2cb48ea87e9e16dfcb8ae58c15521d809a2b77a1edde28123",
+    "thesaurus": "sha256:8934c83abec966a925c29ccd95a2f9ca46ba862b858fbd29a97990910b6c0314",
+    "vocab": "sha256:e078e70270ec068fb734288654d9e50f0cd9e30c4faeb8427c61c598bb2ac303"
+  },
+  "precedence": [],
+  "denyWins": true,
+  "nbf": "2026-03-30T00:00:00Z",
+  "exp": "2030-03-31T00:00:00Z",
+  "revEpoch": 1
+}

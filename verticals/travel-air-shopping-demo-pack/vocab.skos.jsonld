@@ -1,0 +1,123 @@
+{
+  "@graph": [
+    {
+      "@id": "travel-air-shopping.carrier-filter",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "Carrier Filter",
+      "skos:definition": "Include/exclude airline filtering controls in shopping requests.",
+      "skos:altLabel": [
+        "carrier filter"
+      ],
+      "skos:broader": "travel-air-shopping.intent"
+    },
+    {
+      "@id": "travel-air-shopping.deny-reason",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "Air Shopping Deny Reason",
+      "skos:definition": "Normalized deny reason code for invalid or out-of-policy air shopping requests.",
+      "skos:altLabel": [
+        "deny reason"
+      ],
+      "skos:broader": "travel-air-shopping.policy-guard"
+    },
+    {
+      "@id": "travel-air-shopping.domain",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "Travel Air Shopping Domain",
+      "skos:definition": "Domain concept for governed air offer discovery and pricing intents."
+    },
+    {
+      "@id": "travel-air-shopping.intent",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "Air Shopping Intent",
+      "skos:definition": "Intent envelope for flight offer search and offer pricing flows.",
+      "skos:altLabel": [
+        "air shopping intent",
+        "flight search intent"
+      ],
+      "skos:broader": "travel-air-shopping.domain"
+    },
+    {
+      "@id": "travel-air-shopping.offer",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "Flight Offer",
+      "skos:definition": "Candidate priced flight offer returned by a provider search operation.",
+      "skos:altLabel": [
+        "flight offer"
+      ],
+      "skos:broader": "travel-air-shopping.domain"
+    },
+    {
+      "@id": "travel-air-shopping.offer-price",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "Flight Offer Price",
+      "skos:definition": "Monetary quote attached to a specific flight offer and traveler set.",
+      "skos:altLabel": [
+        "offer price"
+      ],
+      "skos:broader": "travel-air-shopping.offer"
+    },
+    {
+      "@id": "travel-air-shopping.policy-guard",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "Air Shopping Policy Guard",
+      "skos:definition": "Fail-closed policy layer controlling allowed shopping and pricing intents.",
+      "skos:altLabel": [
+        "air shopping policy"
+      ],
+      "skos:broader": "travel-air-shopping.domain"
+    },
+    {
+      "@id": "travel-air-shopping.route-constraint",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "Route Constraint",
+      "skos:definition": "Origin, destination, and schedule constraints for air search.",
+      "skos:altLabel": [
+        "departure date",
+        "origin destination"
+      ],
+      "skos:broader": "travel-air-shopping.intent"
+    },
+    {
+      "@id": "travel-air-shopping.segment",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "Flight Segment",
+      "skos:definition": "Single air segment within a returned flight offer itinerary.",
+      "skos:altLabel": [
+        "flight segment"
+      ],
+      "skos:broader": "travel-air-shopping.offer"
+    },
+    {
+      "@id": "travel-air-shopping.source-lane",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "Source Lane",
+      "skos:definition": "Provider source lane identifier such as GDS or NDC.",
+      "skos:altLabel": [
+        "source lane"
+      ],
+      "skos:broader": "travel-air-shopping.offer"
+    },
+    {
+      "@id": "travel-air-shopping.tax-component",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "Tax Component",
+      "skos:definition": "Tax and fee component included in total price calculations.",
+      "skos:altLabel": [
+        "tax fee component"
+      ],
+      "skos:broader": "travel-air-shopping.offer-price"
+    },
+    {
+      "@id": "travel-air-shopping.traveler-constraint",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "Traveler Constraint",
+      "skos:definition": "Traveler-count and cabin preference filters for offer retrieval.",
+      "skos:altLabel": [
+        "cabin class",
+        "traveler count"
+      ],
+      "skos:broader": "travel-air-shopping.intent"
+    }
+  ]
+}

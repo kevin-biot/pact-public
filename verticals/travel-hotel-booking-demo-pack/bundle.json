@@ -1,0 +1,20 @@
+{
+  "id": "travel-hotel-booking-demo-0.1.0",
+  "domain": "travel-hotel-booking",
+  "version": "0.1.0",
+  "providerId": "ontology:lane2:travel-hotel-booking-demo",
+  "trustTier": "Tier1",
+  "policySnapshotId": "sha256:de93910b5a55669504e880f862be54015b611d8410d8cc16f5d3c3ec974f5116",
+  "files": {
+    "context": "sha256:85999740de0421e95b08809722b417679528f2fa6c4af08833d0d18c9b16260d",
+    "shapes": "sha256:85820f0c037e564acaeaa3b86907c1c778cbfbd7a4bc50a1531222eb8e4095bd",
+    "taxonomy_constraints": "sha256:761a0b52985517da17bcf653069e8b424de61d38e2bd2423e3dc5f62b008d75f",
+    "thesaurus": "sha256:70ef19254b3f3a086caa7a1d194d9954528ea353e0851fbc02c1b4d4ef714f93",
+    "vocab": "sha256:d4a81c8d40120a3ec8c7f376bbc4fc21dd0402dae5aebf783f0ea80c278a32df"
+  },
+  "precedence": [],
+  "denyWins": true,
+  "nbf": "2026-03-30T00:00:00Z",
+  "exp": "2030-03-31T00:00:00Z",
+  "revEpoch": 1
+}

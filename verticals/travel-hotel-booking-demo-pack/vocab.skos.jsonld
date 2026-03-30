@@ -1,0 +1,122 @@
+{
+  "@graph": [
+    {
+      "@id": "travel-hotel-booking.deny-reason",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "Hotel Booking Deny Reason",
+      "skos:definition": "Normalized deny reason for invalid or prohibited hotel booking requests.",
+      "skos:altLabel": [
+        "hotel deny reason"
+      ],
+      "skos:broader": "travel-hotel-booking.policy-guard"
+    },
+    {
+      "@id": "travel-hotel-booking.domain",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "Travel Hotel Booking Domain",
+      "skos:definition": "Domain concept for hotel offer search, pricing, and booking order creation."
+    },
+    {
+      "@id": "travel-hotel-booking.guest",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "Guest",
+      "skos:definition": "Guest identity information used in booking requests.",
+      "skos:altLabel": [
+        "guest"
+      ],
+      "skos:broader": "travel-hotel-booking.hotel-order"
+    },
+    {
+      "@id": "travel-hotel-booking.hotel-offer",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "Hotel Offer",
+      "skos:definition": "Provider hotel offer object returned by search/pricing calls.",
+      "skos:altLabel": [
+        "hotel offer"
+      ],
+      "skos:broader": "travel-hotel-booking.room-rate"
+    },
+    {
+      "@id": "travel-hotel-booking.hotel-order",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "Hotel Order",
+      "skos:definition": "Created hotel booking order linked to guests and offer references.",
+      "skos:altLabel": [
+        "hotel order"
+      ],
+      "skos:broader": "travel-hotel-booking.domain"
+    },
+    {
+      "@id": "travel-hotel-booking.intent",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "Hotel Booking Intent",
+      "skos:definition": "Intent envelope for hotel shopping and booking lifecycle actions.",
+      "skos:altLabel": [
+        "hotel booking intent",
+        "lodging booking intent"
+      ],
+      "skos:broader": "travel-hotel-booking.domain"
+    },
+    {
+      "@id": "travel-hotel-booking.payment",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "Hotel Payment",
+      "skos:definition": "Payment method and card metadata required for booking confirmation.",
+      "skos:altLabel": [
+        "payment method"
+      ],
+      "skos:broader": "travel-hotel-booking.hotel-order"
+    },
+    {
+      "@id": "travel-hotel-booking.policy-guard",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "Hotel Booking Policy Guard",
+      "skos:definition": "Fail-closed policy guard controlling required booking/payment constraints.",
+      "skos:altLabel": [
+        "hotel booking policy"
+      ],
+      "skos:broader": "travel-hotel-booking.domain"
+    },
+    {
+      "@id": "travel-hotel-booking.property-search",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "Property Search",
+      "skos:definition": "Hotel property and availability search scope constraints.",
+      "skos:altLabel": [
+        "property search"
+      ],
+      "skos:broader": "travel-hotel-booking.intent"
+    },
+    {
+      "@id": "travel-hotel-booking.room-association",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "Room Association",
+      "skos:definition": "Association between selected offer room and guest references.",
+      "skos:altLabel": [
+        "room association"
+      ],
+      "skos:broader": "travel-hotel-booking.hotel-order"
+    },
+    {
+      "@id": "travel-hotel-booking.room-rate",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "Room Rate",
+      "skos:definition": "Room, board, and pricing details for a selected hotel offer.",
+      "skos:altLabel": [
+        "room rate"
+      ],
+      "skos:broader": "travel-hotel-booking.domain"
+    },
+    {
+      "@id": "travel-hotel-booking.stay-window",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "Stay Window",
+      "skos:definition": "Check-in and check-out period constraints for lodging search and booking.",
+      "skos:altLabel": [
+        "check in check out",
+        "stay window"
+      ],
+      "skos:broader": "travel-hotel-booking.intent"
+    }
+  ]
+}

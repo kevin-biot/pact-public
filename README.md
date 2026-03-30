@@ -186,13 +186,17 @@ RFC 9457 problem detail conformance fixtures:
 
 Fixture signing keys are test-only and must not be used in production systems.
 
-## Reference Vertical Pack
+## Reference Vertical Packs
 
 This repository includes:
 
 1. `verticals/telco-reference-pack/`
 2. `verticals/policy-reference-pack/`
 3. `verticals/iso20022-reference-pack/`
+4. `verticals/travel-air-shopping-demo-pack/`
+5. `verticals/travel-hotel-booking-demo-pack/`
+6. `verticals/travel-air-order-lifecycle-demo-pack/`
+7. `verticals/travel-itinerary-fusion-demo-pack/`
 
 This telco pack is a non-normative example vertical profile demonstrating PACT extension mechanics.
 It does not define TM Forum standards and does not replace IG1453.
@@ -201,6 +205,8 @@ The policy reference pack is a non-normative base-policy example demonstrating c
 It includes a minimal jurisdiction overlay deny-wins composition example.
 
 The ISO 20022 reference pack is a review-candidate payments ontology artifact bundle for external interoperability and governance review.
+
+The travel demo packs are grounded example ontology bundles for air shopping, hotel booking, air order lifecycle, and itinerary fusion.
 
 ## Real-World Deployment View
 

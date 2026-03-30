@@ -1,0 +1,63 @@
+{
+  "version": "tax:v1",
+  "decisionTypes": {
+    "TravelHotelBooking": {
+      "allow": [
+        "travel.hotel.search.v1",
+        "travel.hotel.offer.price.v1",
+        "travel.hotel.order.create.v1"
+      ],
+      "deny": [
+        "travel.hotel.order.create.without-payment.v1"
+      ],
+      "fieldPolicy": {
+        "hotelIds[]": {
+          "required": true,
+          "minLength": 1
+        },
+        "checkInDate": {
+          "required": true,
+          "format": "date"
+        },
+        "checkOutDate": {
+          "required": true,
+          "format": "date"
+        },
+        "adults": {
+          "required": false,
+          "format": "integer"
+        },
+        "roomQuantity": {
+          "required": false,
+          "format": "integer"
+        },
+        "currency": {
+          "required": false,
+          "pattern": "^[A-Z]{3}$"
+        },
+        "payment.method": {
+          "required": true,
+          "allow": [
+            "CREDIT_CARD",
+            "DEBIT_CARD",
+            "VIRTUAL_CARD"
+          ],
+          "deny": [
+            "NONE"
+          ]
+        },
+        "payment.paymentCard.paymentCardInfo.cardNumber": {
+          "required": true,
+          "minLength": 12,
+          "maxLength": 19,
+          "pattern": "^[0-9X]{12,19}$"
+        },
+        "roomAssociations[].hotelOfferId": {
+          "required": true,
+          "minLength": 4,
+          "maxLength": 64
+        }
+      }
+    }
+  }
+}

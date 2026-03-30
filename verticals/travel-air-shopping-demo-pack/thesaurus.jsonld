@@ -1,0 +1,87 @@
+{
+  "@context": {
+    "concept": "https://lane2.example/ontology/travel-air-shopping/concept"
+  },
+  "entries": [
+    {
+      "label": "Carrier Filter",
+      "alt": [
+        "carrier filter"
+      ],
+      "concept_id": "travel-air-shopping.carrier-filter"
+    },
+    {
+      "label": "Air Shopping Deny Reason",
+      "alt": [
+        "deny reason"
+      ],
+      "concept_id": "travel-air-shopping.deny-reason"
+    },
+    {
+      "label": "Air Shopping Intent",
+      "alt": [
+        "air shopping intent",
+        "flight search intent"
+      ],
+      "concept_id": "travel-air-shopping.intent"
+    },
+    {
+      "label": "Flight Offer",
+      "alt": [
+        "flight offer"
+      ],
+      "concept_id": "travel-air-shopping.offer"
+    },
+    {
+      "label": "Flight Offer Price",
+      "alt": [
+        "offer price"
+      ],
+      "concept_id": "travel-air-shopping.offer-price"
+    },
+    {
+      "label": "Air Shopping Policy Guard",
+      "alt": [
+        "air shopping policy"
+      ],
+      "concept_id": "travel-air-shopping.policy-guard"
+    },
+    {
+      "label": "Route Constraint",
+      "alt": [
+        "departure date",
+        "origin destination"
+      ],
+      "concept_id": "travel-air-shopping.route-constraint"
+    },
+    {
+      "label": "Flight Segment",
+      "alt": [
+        "flight segment"
+      ],
+      "concept_id": "travel-air-shopping.segment"
+    },
+    {
+      "label": "Source Lane",
+      "alt": [
+        "source lane"
+      ],
+      "concept_id": "travel-air-shopping.source-lane"
+    },
+    {
+      "label": "Tax Component",
+      "alt": [
+        "tax fee component"
+      ],
+      "concept_id": "travel-air-shopping.tax-component"
+    },
+    {
+      "label": "Traveler Constraint",
+      "alt": [
+        "cabin class",
+        "traveler count"
+      ],
+      "concept_id": "travel-air-shopping.traveler-constraint"
+    }
+  ]
+}

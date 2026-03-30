@@ -1,0 +1,20 @@
+{
+  "id": "travel-air-shopping-demo-0.1.0",
+  "domain": "travel-air-shopping",
+  "version": "0.1.0",
+  "providerId": "ontology:lane2:travel-air-shopping-demo",
+  "trustTier": "Tier1",
+  "policySnapshotId": "sha256:de93910b5a55669504e880f862be54015b611d8410d8cc16f5d3c3ec974f5116",
+  "files": {
+    "context": "sha256:c6eb5e3cfa1788421a131ac8846ceaa3ed69aa0db2b87d046f46029ca604a2d5",
+    "shapes": "sha256:1d116de3cab3a36ebb0d8463b0cf6e919e0d8fa33f49983119150a35db57a34f",
+    "taxonomy_constraints": "sha256:8f8d3ed8cd5b97258f24a6cebc18d900997d6e8eafc635982535983a0e877148",
+    "thesaurus": "sha256:d6c59afd53bba7bb304809f9a941b4d4cc340667083dd7b08ecdcc9e066dfc61",
+    "vocab": "sha256:58d95793fba3ea8c06364cc4a121656a8369a10e5326ca46d0da10dcf6ab67ea"
+  },
+  "precedence": [],
+  "denyWins": true,
+  "nbf": "2026-03-30T00:00:00Z",
+  "exp": "2030-03-31T00:00:00Z",
+  "revEpoch": 1
+}

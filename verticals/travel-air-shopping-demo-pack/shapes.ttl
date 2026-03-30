@@ -1,0 +1,74 @@
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix travel: <https://ontology.lane2.example/travel-air-shopping-v1#> .
+
+travel:AirShoppingRequestShape
+  a sh:NodeShape ;
+  sh:targetClass travel:AirShoppingRequest ;
+  sh:property [
+    sh:path travel:originLocationCode ;
+    sh:datatype xsd:string ;
+    sh:minCount 1 ;
+    sh:pattern "^[A-Z]{3}$"
+  ] ;
+  sh:property [
+    sh:path travel:destinationLocationCode ;
+    sh:datatype xsd:string ;
+    sh:minCount 1 ;
+    sh:pattern "^[A-Z]{3}$"
+  ] ;
+  sh:property [
+    sh:path travel:departureDate ;
+    sh:datatype xsd:date ;
+    sh:minCount 1
+  ] ;
+  sh:property [
+    sh:path travel:adults ;
+    sh:datatype xsd:integer ;
+    sh:minCount 1 ;
+    sh:minInclusive 1 ;
+    sh:maxInclusive 9
+  ] ;
+  sh:property [
+    sh:path travel:travelClass ;
+    sh:datatype xsd:string ;
+    sh:minCount 0 ;
+    sh:in (
+      "ECONOMY"
+      "PREMIUM_ECONOMY"
+      "BUSINESS"
+      "FIRST"
+    )
+  ] .
+
+travel:FlightOfferShape
+  a sh:NodeShape ;
+  sh:targetClass travel:FlightOffer ;
+  sh:property [
+    sh:path travel:offerId ;
+    sh:datatype xsd:string ;
+    sh:minCount 1
+  ] ;
+  sh:property [
+    sh:path travel:source ;
+    sh:datatype xsd:string ;
+    sh:minCount 1 ;
+    sh:in (
+      "GDS"
+      "NDC"
+      "LTC"
+      "EAC"
+    )
+  ] ;
+  sh:property [
+    sh:path travel:currencyCode ;
+    sh:datatype xsd:string ;
+    sh:minCount 1 ;
+    sh:pattern "^[A-Z]{3}$"
+  ] ;
+  sh:property [
+    sh:path travel:total ;
+    sh:datatype xsd:decimal ;
+    sh:minCount 1 ;
+    sh:minInclusive 0
+  ] .

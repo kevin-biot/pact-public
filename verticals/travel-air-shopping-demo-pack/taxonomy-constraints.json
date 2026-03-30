@@ -1,0 +1,70 @@
+{
+  "version": "tax:v1",
+  "decisionTypes": {
+    "TravelAirShopping": {
+      "allow": [
+        "travel.flight.shopping.v1",
+        "travel.flight.offer.price.v1"
+      ],
+      "deny": [
+        "travel.flight.shopping.bulk.scrape.v1"
+      ],
+      "fieldPolicy": {
+        "originLocationCode": {
+          "required": true,
+          "pattern": "^[A-Z]{3}$"
+        },
+        "destinationLocationCode": {
+          "required": true,
+          "pattern": "^[A-Z]{3}$"
+        },
+        "departureDate": {
+          "required": true,
+          "format": "date"
+        },
+        "returnDate": {
+          "required": false,
+          "format": "date"
+        },
+        "adults": {
+          "required": true,
+          "format": "integer"
+        },
+        "travelClass": {
+          "required": false,
+          "allow": [
+            "ECONOMY",
+            "PREMIUM_ECONOMY",
+            "BUSINESS",
+            "FIRST"
+          ]
+        },
+        "includedAirlineCodes": {
+          "required": false,
+          "pattern": "^[0-9A-Z]{2}(,[0-9A-Z]{2})*$"
+        },
+        "excludedAirlineCodes": {
+          "required": false,
+          "pattern": "^[0-9A-Z]{2}(,[0-9A-Z]{2})*$"
+        },
+        "currencyCode": {
+          "required": false,
+          "pattern": "^[A-Z]{3}$"
+        },
+        "maxPrice": {
+          "required": false,
+          "format": "integer"
+        },
+        "source": {
+          "required": false,
+          "allow": [
+            "GDS",
+            "NDC",
+            "LTC",
+            "EAC"
+          ]
+        }
+      }
+    }
+  }
+}

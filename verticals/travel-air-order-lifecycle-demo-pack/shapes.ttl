@@ -1,0 +1,48 @@
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix travel: <https://ontology.lane2.example/travel-air-order-lifecycle-v1#> .
+
+travel:FlightOrderCreateRequestShape
+  a sh:NodeShape ;
+  sh:targetClass travel:FlightOrderCreateRequest ;
+  sh:property [
+    sh:path travel:operationType ;
+    sh:datatype xsd:string ;
+    sh:minCount 1 ;
+    sh:in (
+      "create"
+      "read"
+      "cancel"
+    )
+  ] ;
+  sh:property [
+    sh:path travel:flightOfferCount ;
+    sh:datatype xsd:integer ;
+    sh:minCount 1 ;
+    sh:minInclusive 1
+  ] ;
+  sh:property [
+    sh:path travel:travelerCount ;
+    sh:datatype xsd:integer ;
+    sh:minCount 1 ;
+    sh:minInclusive 1
+  ] .
+
+travel:FlightOrderLifecycleActionShape
+  a sh:NodeShape ;
+  sh:targetClass travel:FlightOrderLifecycleAction ;
+  sh:property [
+    sh:path travel:flightOrderId ;
+    sh:datatype xsd:string ;
+    sh:minCount 1 ;
+    sh:pattern "^[A-Za-z0-9._:-]{4,64}$"
+  ] ;
+  sh:property [
+    sh:path travel:action ;
+    sh:datatype xsd:string ;
+    sh:minCount 1 ;
+    sh:in (
+      "read"
+      "cancel"
+    )
+  ] .

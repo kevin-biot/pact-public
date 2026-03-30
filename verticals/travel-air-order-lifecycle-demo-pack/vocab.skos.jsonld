@@ -1,0 +1,121 @@
+{
+  "@graph": [
+    {
+      "@id": "travel-air-order-lifecycle.contact",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "Contact",
+      "skos:definition": "Contact payload required for order creation confirmation and notifications.",
+      "skos:altLabel": [
+        "contact payload"
+      ],
+      "skos:broader": "travel-air-order-lifecycle.order"
+    },
+    {
+      "@id": "travel-air-order-lifecycle.deny-reason",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "Air Order Lifecycle Deny Reason",
+      "skos:definition": "Normalized deny reason for out-of-policy lifecycle operations.",
+      "skos:altLabel": [
+        "order lifecycle deny reason"
+      ],
+      "skos:broader": "travel-air-order-lifecycle.policy-guard"
+    },
+    {
+      "@id": "travel-air-order-lifecycle.domain",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "Travel Air Order Lifecycle Domain",
+      "skos:definition": "Domain concept for flight order creation, read, and cancel lifecycle controls."
+    },
+    {
+      "@id": "travel-air-order-lifecycle.flight-offer-reference",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "Flight Offer Reference",
+      "skos:definition": "Selected priced offer references carried into order creation.",
+      "skos:altLabel": [
+        "flight offer reference"
+      ],
+      "skos:broader": "travel-air-order-lifecycle.order"
+    },
+    {
+      "@id": "travel-air-order-lifecycle.intent",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "Air Order Lifecycle Intent",
+      "skos:definition": "Lifecycle intent envelope for flight order actions.",
+      "skos:altLabel": [
+        "air order lifecycle intent"
+      ],
+      "skos:broader": "travel-air-order-lifecycle.domain"
+    },
+    {
+      "@id": "travel-air-order-lifecycle.lifecycle-action",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "Lifecycle Action",
+      "skos:definition": "Operation class over an order: create, read, cancel.",
+      "skos:altLabel": [
+        "create read cancel",
+        "lifecycle action"
+      ],
+      "skos:broader": "travel-air-order-lifecycle.intent"
+    },
+    {
+      "@id": "travel-air-order-lifecycle.order",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "Flight Order",
+      "skos:definition": "Flight booking order resource returned by create/read lifecycle actions.",
+      "skos:altLabel": [
+        "flight order"
+      ],
+      "skos:broader": "travel-air-order-lifecycle.domain"
+    },
+    {
+      "@id": "travel-air-order-lifecycle.order-id",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "Flight Order Identifier",
+      "skos:definition": "Provider order identifier used for lifecycle retrieval and cancel operations.",
+      "skos:altLabel": [
+        "order id"
+      ],
+      "skos:broader": "travel-air-order-lifecycle.order"
+    },
+    {
+      "@id": "travel-air-order-lifecycle.order-status",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "Order Status",
+      "skos:definition": "Lifecycle status projection for read and cancel responses.",
+      "skos:altLabel": [
+        "order status"
+      ],
+      "skos:broader": "travel-air-order-lifecycle.order"
+    },
+    {
+      "@id": "travel-air-order-lifecycle.policy-guard",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "Air Order Lifecycle Policy Guard",
+      "skos:definition": "Fail-closed policy guard for lifecycle operation and field-level constraints.",
+      "skos:altLabel": [
+        "order lifecycle policy"
+      ],
+      "skos:broader": "travel-air-order-lifecycle.domain"
+    },
+    {
+      "@id": "travel-air-order-lifecycle.ticketing-agreement",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "Ticketing Agreement",
+      "skos:definition": "Ticketing policy option for order processing behavior.",
+      "skos:altLabel": [
+        "ticketing agreement"
+      ],
+      "skos:broader": "travel-air-order-lifecycle.order"
+    },
+    {
+      "@id": "travel-air-order-lifecycle.traveler",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "Traveler",
+      "skos:definition": "Traveler payload bound to order lifecycle operations.",
+      "skos:altLabel": [
+        "traveler payload"
+      ],
+      "skos:broader": "travel-air-order-lifecycle.order"
+    }
+  ]
+}

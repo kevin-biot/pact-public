@@ -1,0 +1,86 @@
+{
+  "@context": {
+    "concept": "https://lane2.example/ontology/travel-hotel-booking/concept"
+  },
+  "entries": [
+    {
+      "label": "Hotel Booking Deny Reason",
+      "alt": [
+        "hotel deny reason"
+      ],
+      "concept_id": "travel-hotel-booking.deny-reason"
+    },
+    {
+      "label": "Guest",
+      "alt": [
+        "guest"
+      ],
+      "concept_id": "travel-hotel-booking.guest"
+    },
+    {
+      "label": "Hotel Offer",
+      "alt": [
+        "hotel offer"
+      ],
+      "concept_id": "travel-hotel-booking.hotel-offer"
+    },
+    {
+      "label": "Hotel Order",
+      "alt": [
+        "hotel order"
+      ],
+      "concept_id": "travel-hotel-booking.hotel-order"
+    },
+    {
+      "label": "Hotel Booking Intent",
+      "alt": [
+        "hotel booking intent",
+        "lodging booking intent"
+      ],
+      "concept_id": "travel-hotel-booking.intent"
+    },
+    {
+      "label": "Hotel Payment",
+      "alt": [
+        "payment method"
+      ],
+      "concept_id": "travel-hotel-booking.payment"
+    },
+    {
+      "label": "Hotel Booking Policy Guard",
+      "alt": [
+        "hotel booking policy"
+      ],
+      "concept_id": "travel-hotel-booking.policy-guard"
+    },
+    {
+      "label": "Property Search",
+      "alt": [
+        "property search"
+      ],
+      "concept_id": "travel-hotel-booking.property-search"
+    },
+    {
+      "label": "Room Association",
+      "alt": [
+        "room association"
+      ],
+      "concept_id": "travel-hotel-booking.room-association"
+    },
+    {
+      "label": "Room Rate",
+      "alt": [
+        "room rate"
+      ],
+      "concept_id": "travel-hotel-booking.room-rate"
+    },
+    {
+      "label": "Stay Window",
+      "alt": [
+        "check in check out",
+        "stay window"
+      ],
+      "concept_id": "travel-hotel-booking.stay-window"
+    }
+  ]
+}

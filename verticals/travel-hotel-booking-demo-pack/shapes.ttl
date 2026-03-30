@@ -1,0 +1,59 @@
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix travel: <https://ontology.lane2.example/travel-hotel-booking-v1#> .
+
+travel:HotelSearchRequestShape
+  a sh:NodeShape ;
+  sh:targetClass travel:HotelSearchRequest ;
+  sh:property [
+    sh:path travel:hotelId ;
+    sh:datatype xsd:string ;
+    sh:minCount 1
+  ] ;
+  sh:property [
+    sh:path travel:checkInDate ;
+    sh:datatype xsd:date ;
+    sh:minCount 1
+  ] ;
+  sh:property [
+    sh:path travel:checkOutDate ;
+    sh:datatype xsd:date ;
+    sh:minCount 1
+  ] ;
+  sh:property [
+    sh:path travel:adults ;
+    sh:datatype xsd:integer ;
+    sh:minCount 1 ;
+    sh:minInclusive 1 ;
+    sh:maxInclusive 9
+  ] .
+
+travel:HotelOrderShape
+  a sh:NodeShape ;
+  sh:targetClass travel:HotelOrder ;
+  sh:property [
+    sh:path travel:hotelOrderId ;
+    sh:datatype xsd:string ;
+    sh:minCount 1
+  ] ;
+  sh:property [
+    sh:path travel:hotelOfferId ;
+    sh:datatype xsd:string ;
+    sh:minCount 1
+  ] ;
+  sh:property [
+    sh:path travel:paymentMethod ;
+    sh:datatype xsd:string ;
+    sh:minCount 1 ;
+    sh:in (
+      "CREDIT_CARD"
+      "DEBIT_CARD"
+      "VIRTUAL_CARD"
+    )
+  ] ;
+  sh:property [
+    sh:path travel:guestCount ;
+    sh:datatype xsd:integer ;
+    sh:minCount 1 ;
+    sh:minInclusive 1
+  ] .
