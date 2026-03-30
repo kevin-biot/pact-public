@@ -1,22 +1,78 @@
 {
-  "schema_version": "0.1",
+  "schema_version": "0.2",
   "domain": "openbanking-ais-read-demo",
+  "generated_at_utc": "2026-03-30T23:24:01Z",
+  "lane": "openbanking-separate-source-extract",
+  "source_policy": {
+    "iso20022_reuse": "none",
+    "runtime_model": "closed-world"
+  },
   "sources": [
     {
-      "name": "Berlin Group NextGenPSD2",
+      "standard": "Berlin Group NextGenPSD2",
+      "artifact": "Core PSD2 Compliancy OpenAPI",
+      "url": "https://gitlab.com/the-berlin-group/nextgenpsd2/-/raw/main/Core%20PSD2%20Compliancy/psd2-api_v1.3.16-2025-11-27.openapi.yaml",
+      "ref": {
+        "default_branch": "main",
+        "blob_id": "8de7893337d9c4e72abd19351f3f8fa7583d314c"
+      },
+      "http_status": 200,
+      "sha256": "ab6893b24fe06e773b53af42d10fad465cbe11935d67e2c2d69a6c3efd688b4b",
+      "bytes": 708782,
+      "content_type": "text/plain; charset=utf-8",
+      "fetched_at_utc": "2026-03-30T23:24:01Z",
       "role": "schema-reference"
     },
     {
-      "name": "UK Open Banking Standard",
+      "standard": "UK Open Banking",
+      "artifact": "Account Information OpenAPI",
+      "url": "https://raw.githubusercontent.com/OpenBankingUK/read-write-api-specs/master/dist/openapi/account-info-openapi.yaml",
+      "ref": {
+        "branch": "master",
+        "blob_sha": "caee79c2efe78ae11b86372879a777dfe028246e"
+      },
+      "http_status": 200,
+      "sha256": "7d9297935e11971173664ba793c14b6fd64e162a97d2de46967cd7f9cc0ca792",
+      "bytes": 565017,
+      "content_type": "text/plain; charset=utf-8",
+      "fetched_at_utc": "2026-03-30T23:24:01Z",
       "role": "schema-reference"
     },
     {
-      "name": "Financial Data Exchange",
-      "role": "schema-reference"
+      "standard": "FDX",
+      "artifact": "FDX API Release 6.4 announcement",
+      "url": "https://financialdataexchange.org/fdx-feed/fdx-announces-spring-2025-api-release-fdx-api-version-6-4/",
+      "http_status": 200,
+      "sha256": "e51f915620e42aabcbd9cca1cef04720cfbcf6e7e7b8b7cf270fcfdce14a9823",
+      "bytes": 112398,
+      "content_type": "text/html; charset=UTF-8",
+      "fetched_at_utc": "2026-03-30T23:24:01Z",
+      "role": "release-reference"
+    },
+    {
+      "standard": "FDX",
+      "artifact": "FDX onboarding portal",
+      "url": "https://onboarding.financialdataexchange.org/",
+      "http_status": 200,
+      "sha256": "e724671f4db4e25494488972e5a7f68990fd31575719bffb0b3588ec85688dff",
+      "bytes": 3978,
+      "content_type": "text/html",
+      "fetched_at_utc": "2026-03-30T23:24:01Z",
+      "role": "access-reference",
+      "note": "Primary FDX machine-readable API schemas appear distributed via member/onboarding workflow."
     }
   ],
   "selection": {
-    "narrow_scope": ["accounts", "balances", "transactions"],
+    "narrow_scope": [
+      "accounts",
+      "balances",
+      "transactions"
+    ],
     "runtime_model": "closed-world"
-  }
+  },
+  "replay_commands": [
+    "curl -sSL 'https://gitlab.com/the-berlin-group/nextgenpsd2/-/raw/main/Core%20PSD2%20Compliancy/psd2-api_v1.3.16-2025-11-27.openapi.yaml'",
+    "curl -sSL 'https://raw.githubusercontent.com/OpenBankingUK/read-write-api-specs/master/dist/openapi/account-info-openapi.yaml'",
+    "curl -sSL 'https://financialdataexchange.org/fdx-feed/fdx-announces-spring-2025-api-release-fdx-api-version-6-4/'"
+  ]
 }

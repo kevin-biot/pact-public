@@ -1,22 +1,83 @@
 {
-  "schema_version": "0.1",
+  "schema_version": "0.2",
   "domain": "openbanking-consent-lifecycle-demo",
+  "generated_at_utc": "2026-03-30T23:24:01Z",
+  "lane": "openbanking-separate-source-extract",
+  "source_policy": {
+    "iso20022_reuse": "none",
+    "runtime_model": "closed-world"
+  },
   "sources": [
     {
-      "name": "Berlin Group NextGenPSD2",
+      "standard": "Berlin Group NextGenPSD2",
+      "artifact": "Confirmation of Funds Consent OpenAPI",
+      "url": "https://gitlab.com/the-berlin-group/nextgenpsd2/-/raw/main/Extended%20Value-added%20Service/psd2-api-confirmation-of-funds-consent_v2.x_recent.openapi.yaml",
+      "ref": {
+        "default_branch": "main",
+        "blob_id": "d6aefa6cfd102e10ec421b6a417c46ca9d75d75f"
+      },
+      "http_status": 200,
+      "sha256": "f37aef2c31502044bb4e2c87594bb52eee06c3a204e56dcbdee438932a6049ce",
+      "bytes": 88844,
+      "content_type": "text/plain; charset=utf-8",
+      "fetched_at_utc": "2026-03-30T23:24:01Z",
       "role": "consent-reference"
     },
     {
-      "name": "UK Open Banking Standard",
+      "standard": "UK Open Banking",
+      "artifact": "Account Information OpenAPI",
+      "url": "https://raw.githubusercontent.com/OpenBankingUK/read-write-api-specs/master/dist/openapi/account-info-openapi.yaml",
+      "ref": {
+        "branch": "master",
+        "blob_sha": "caee79c2efe78ae11b86372879a777dfe028246e"
+      },
+      "http_status": 200,
+      "sha256": "7d9297935e11971173664ba793c14b6fd64e162a97d2de46967cd7f9cc0ca792",
+      "bytes": 565017,
+      "content_type": "text/plain; charset=utf-8",
+      "fetched_at_utc": "2026-03-30T23:24:01Z",
       "role": "consent-reference"
     },
     {
-      "name": "Financial Data Exchange",
-      "role": "consent-reference"
+      "standard": "UK Open Banking",
+      "artifact": "Event Notifications OpenAPI",
+      "url": "https://raw.githubusercontent.com/OpenBankingUK/read-write-api-specs/master/dist/openapi/event-notifications-openapi.yaml",
+      "ref": {
+        "branch": "master",
+        "blob_sha": "c499b4b803ff2d242721fc725d53b7e1cbde8359"
+      },
+      "http_status": 200,
+      "sha256": "c60932f376472697c22af602d4deba5842921732aa547ef71d6c41a67389908a",
+      "bytes": 5065,
+      "content_type": "text/plain; charset=utf-8",
+      "fetched_at_utc": "2026-03-30T23:24:01Z",
+      "role": "event-reference"
+    },
+    {
+      "standard": "FDX",
+      "artifact": "FDX onboarding portal",
+      "url": "https://onboarding.financialdataexchange.org/",
+      "http_status": 200,
+      "sha256": "e724671f4db4e25494488972e5a7f68990fd31575719bffb0b3588ec85688dff",
+      "bytes": 3978,
+      "content_type": "text/html",
+      "fetched_at_utc": "2026-03-30T23:24:01Z",
+      "role": "access-reference",
+      "note": "FDX consent-related machine-readable schemas are not publicly exposed without onboarding/login."
     }
   ],
   "selection": {
-    "narrow_scope": ["create", "authorize", "revoke", "status"],
+    "narrow_scope": [
+      "create",
+      "authorize",
+      "revoke",
+      "status"
+    ],
     "runtime_model": "closed-world"
-  }
+  },
+  "replay_commands": [
+    "curl -sSL 'https://gitlab.com/the-berlin-group/nextgenpsd2/-/raw/main/Extended%20Value-added%20Service/psd2-api-confirmation-of-funds-consent_v2.x_recent.openapi.yaml'",
+    "curl -sSL 'https://raw.githubusercontent.com/OpenBankingUK/read-write-api-specs/master/dist/openapi/account-info-openapi.yaml'",
+    "curl -sSL 'https://raw.githubusercontent.com/OpenBankingUK/read-write-api-specs/master/dist/openapi/event-notifications-openapi.yaml'"
+  ]
 }
