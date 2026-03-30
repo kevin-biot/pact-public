@@ -1,0 +1,73 @@
+{
+  "@context": {
+    "iso20022": "https://lane2.example/ontology/iso20022/"
+  },
+  "entries": [
+    {
+      "label": "IBAN",
+      "alt": ["international bank account number"],
+      "properties": {
+        "entity_type": "iban",
+        "pattern": "[A-Z]{2}\\d{2}[A-Z0-9]{4,30}",
+        "description": "International Bank Account Number (2-letter country + 2 check digits + up to 30 alphanumeric)",
+        "example": "DE89370400440532013000"
+      }
+    },
+    {
+      "label": "BIC",
+      "alt": ["bank identifier code", "swift code", "swift"],
+      "properties": {
+        "entity_type": "bic",
+        "pattern": "[A-Z]{4}[A-Z]{2}[A-Z0-9]{2}(?:[A-Z0-9]{3})?",
+        "description": "Bank Identifier Code / SWIFT code (4-letter bank + 2-letter country + 2-char location + optional 3-char branch)",
+        "example": "DEUTDEFF"
+      }
+    },
+    {
+      "label": "LEI",
+      "alt": ["legal entity identifier"],
+      "properties": {
+        "entity_type": "lei",
+        "pattern": "[A-Z0-9]{4}[A-Z0-9]{14}\\d{2}",
+        "description": "Legal Entity Identifier (4-char LOU + 14-char entity + 2 check digits)",
+        "example": "529900HNOAA1KXQJUH09"
+      }
+    },
+    {
+      "label": "Amount",
+      "alt": ["monetary amount", "payment amount", "transaction amount"],
+      "properties": {
+        "entity_type": "amount",
+        "pattern": "(?:(?:EUR|USD|GBP|THB|JPY|CHF)\\s*)?(\\d{1,3}(?:[,. ]\\d{3})*(?:[.,]\\d{1,2})?)\\s*(?:EUR|USD|GBP|THB|JPY|CHF)?",
+        "description": "Monetary amount with optional currency prefix/suffix"
+      }
+    },
+    {
+      "label": "Currency Code",
+      "alt": ["iso 4217", "currency"],
+      "properties": {
+        "entity_type": "currency",
+        "pattern": "\\b(EUR|USD|GBP|THB|JPY|CHF|CAD|AUD|SGD|HKD|CNY)\\b",
+        "description": "ISO 4217 currency code"
+      }
+    },
+    {
+      "label": "Reason Code",
+      "alt": ["rejection code", "status code", "return reason"],
+      "properties": {
+        "entity_type": "reason_code",
+        "pattern": "\\b([A-Z]{2,4}\\d{2})\\b",
+        "description": "ISO 20022 reason/status code (2-4 uppercase letters + 2 digits)"
+      }
+    },
+    {
+      "label": "Message Type",
+      "alt": ["message identifier", "msg type"],
+      "properties": {
+        "entity_type": "message_type",
+        "pattern": "\\b((?:pacs|pain|camt|acmt|auth|reda|semt|setr|sese|colr)\\.\\d{3})\\b",
+        "description": "ISO 20022 message type identifier (family.nnn)"
+      }
+    }
+  ]
+}

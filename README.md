@@ -192,12 +192,15 @@ This repository includes:
 
 1. `verticals/telco-reference-pack/`
 2. `verticals/policy-reference-pack/`
+3. `verticals/iso20022-reference-pack/`
 
 This telco pack is a non-normative example vertical profile demonstrating PACT extension mechanics.
 It does not define TM Forum standards and does not replace IG1453.
 
 The policy reference pack is a non-normative base-policy example demonstrating cross-domain policy semantics independent of telco standards.
 It includes a minimal jurisdiction overlay deny-wins composition example.
+
+The ISO 20022 reference pack is a review-candidate payments ontology artifact bundle for external interoperability and governance review.
 
 ## Real-World Deployment View
 

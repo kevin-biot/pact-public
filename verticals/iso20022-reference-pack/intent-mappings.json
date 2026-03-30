@@ -1,0 +1,36 @@
+{
+  "schema_version": "1.0",
+  "domain": "iso20022",
+  "mappings": [
+    {
+      "concept_uri": "iso20022:msgtype/pacs.008",
+      "intent_class": "iso20022.payment.credit_transfer.v1",
+      "confidence_floor": 0.72
+    },
+    {
+      "concept_uri": "iso20022:msgtype/pacs.002",
+      "intent_class": "iso20022.payment.status_report.v1",
+      "confidence_floor": 0.70
+    },
+    {
+      "concept_uri": "iso20022:msgtype/pain.001",
+      "intent_class": "iso20022.payment.initiation.v1",
+      "confidence_floor": 0.72
+    },
+    {
+      "concept_uri": "iso20022:msgtype/camt.053",
+      "intent_class": "iso20022.account.statement.v1",
+      "confidence_floor": 0.75
+    },
+    {
+      "concept_uri": "iso20022:msgtype/pain.008",
+      "intent_class": "iso20022.payment.direct_debit.v1",
+      "confidence_floor": 0.70
+    },
+    {
+      "concept_uri": "iso20022:msgtype/pacs.004",
+      "intent_class": "iso20022.payment.return.v1",
+      "confidence_floor": 0.68
+    }
+  ]
+}

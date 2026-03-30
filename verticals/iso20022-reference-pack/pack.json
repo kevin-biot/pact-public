@@ -1,0 +1,32 @@
+{
+  "pack_schema": "1.0",
+  "id": "iso20022-1.0.0",
+  "domain": "iso20022",
+  "version": "1.0.0",
+  "provider_id": "ontology:lane2:iso20022",
+  "trust_tier": "Tier0",
+  "nbf": "2025-01-01T00:00:00Z",
+  "exp": "2030-01-01T00:00:00Z",
+  "rev_epoch": 1,
+  "deny_wins": true,
+  "decision_authority": true,
+  "precedence": [],
+  "files": {
+    "context": "context.jsonld",
+    "vocab": "vocab.skos.jsonld",
+    "shapes": "shapes.ttl",
+    "thesaurus": "thesaurus.jsonld",
+    "thesaurus_local": "thesaurus-local.json",
+    "patterns": "patterns.json",
+    "intent_mappings": "intent-mappings.json",
+    "convergence": "convergence.json",
+    "decision_space": "decision-space.json"
+  },
+  "dc": {
+    "identifier": "ontology:iso20022:v1.0.0",
+    "title": "ISO 20022 Ontology Pack",
+    "creator": "Lane2 Ontology Team",
+    "issued": "2026-02-14",
+    "rights": "Lane2 internal"
+  }
+}

@@ -23,6 +23,14 @@
       "trust_tier": "Tier1",
       "version": "v0.1.0",
       "path": "verticals/policy-reference-pack"
+    },
+    {
+      "snapshot_id": "ontology:iso20022:v1.0.0",
+      "domain": "iso20022",
+      "provider_id": "ontology:lane2:iso20022",
+      "trust_tier": "Tier0",
+      "version": "v1.0.0",
+      "path": "verticals/iso20022-reference-pack"
     }
   ]
 }

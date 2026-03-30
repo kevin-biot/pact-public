@@ -1,0 +1,46 @@
+{
+  "schema_version": "1.0",
+  "domain": "iso20022",
+  "thresholds": {
+    "overall_min_pass_rate": 1.0,
+    "require_critical_pass": true
+  },
+  "cases": [
+    {
+      "id": "iso20022-credit-transfer",
+      "phrase": "credit transfer",
+      "expect": "iso20022.payment.credit_transfer.v1",
+      "critical": true
+    },
+    {
+      "id": "iso20022-status-report",
+      "phrase": "payment status report",
+      "expect": "iso20022.payment.status_report.v1",
+      "critical": true
+    },
+    {
+      "id": "iso20022-initiation",
+      "phrase": "customer credit transfer initiation",
+      "expect": "iso20022.payment.initiation.v1",
+      "critical": true
+    },
+    {
+      "id": "iso20022-account-statement",
+      "phrase": "account statement",
+      "expect": "iso20022.account.statement.v1",
+      "critical": true
+    },
+    {
+      "id": "iso20022-direct-debit",
+      "phrase": "direct debit initiation",
+      "expect": "iso20022.payment.direct_debit.v1",
+      "critical": true
+    },
+    {
+      "id": "iso20022-return",
+      "phrase": "return payment",
+      "expect": "iso20022.payment.return.v1",
+      "critical": true
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "lineage_contract_version": "1.0",
+  "id": "iso20022-reference-pack-lineage-v1.0.0",
+  "status": "active",
+  "source_snapshot": {
+    "source_document_id": "ontology-iso20022-pack",
+    "source_version": "1.0.0",
+    "snapshot_id": "ontology-main-7387902",
+    "acquired_utc": "2026-03-30T00:00:00Z",
+    "effective_from": "2026-03-30",
+    "effective_to": null
+  },
+  "scope": {
+    "included": [
+      "iso20022-concepts-and-thesaurus",
+      "intent-mappings-and-pattern-hints",
+      "convergence-fixtures-and-decision-space"
+    ],
+    "excluded": [
+      "runtime-server-implementation",
+      "private-tooling-and-operational-code",
+      "private-signing-seed-material"
+    ]
+  },
+  "notes": [
+    "Published as a review candidate for external standards and implementation feedback.",
+    "No private implementation code is included in this repository."
+  ]
+}
