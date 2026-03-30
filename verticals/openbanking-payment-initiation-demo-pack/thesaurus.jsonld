@@ -1,0 +1,22 @@
+{
+  "@context": {
+    "ob": "https://lane2.example/ontology/openbanking/"
+  },
+  "entries": [
+    {
+      "label": "initiate payment",
+      "alt": ["payment initiation", "submit payment"],
+      "concept_id": "ob:payment/initiate"
+    },
+    {
+      "label": "payment status",
+      "alt": ["payment state", "status query"],
+      "concept_id": "ob:payment/status"
+    },
+    {
+      "label": "cancel payment",
+      "alt": ["revoke payment", "payment cancellation"],
+      "concept_id": "ob:payment/cancel"
+    }
+  ]
+}

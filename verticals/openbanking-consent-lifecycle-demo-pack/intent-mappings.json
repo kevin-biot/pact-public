@@ -1,0 +1,26 @@
+{
+  "schema_version": "1.0",
+  "domain": "openbanking-consent-lifecycle-demo",
+  "mappings": [
+    {
+      "concept_uri": "ob:consent/create",
+      "intent_class": "openbanking.consent.create.v1",
+      "confidence_floor": 0.75
+    },
+    {
+      "concept_uri": "ob:consent/authorize",
+      "intent_class": "openbanking.consent.authorize.v1",
+      "confidence_floor": 0.75
+    },
+    {
+      "concept_uri": "ob:consent/revoke",
+      "intent_class": "openbanking.consent.revoke.v1",
+      "confidence_floor": 0.75
+    },
+    {
+      "concept_uri": "ob:consent/status",
+      "intent_class": "openbanking.consent.status.read.v1",
+      "confidence_floor": 0.75
+    }
+  ]
+}

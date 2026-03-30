@@ -1,0 +1,21 @@
+{
+  "schema_version": "1.0",
+  "domain": "openbanking-payment-initiation-demo",
+  "mappings": [
+    {
+      "concept_uri": "ob:payment/initiate",
+      "intent_class": "openbanking.payment.initiate.v1",
+      "confidence_floor": 0.75
+    },
+    {
+      "concept_uri": "ob:payment/status",
+      "intent_class": "openbanking.payment.status.read.v1",
+      "confidence_floor": 0.75
+    },
+    {
+      "concept_uri": "ob:payment/cancel",
+      "intent_class": "openbanking.payment.cancel.v1",
+      "confidence_floor": 0.75
+    }
+  ]
+}

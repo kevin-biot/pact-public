@@ -1,0 +1,24 @@
+{
+  "id": "openbanking-payment-initiation-demo-0.1.0",
+  "domain": "openbanking-payment-initiation-demo",
+  "version": "0.1.0",
+  "providerId": "ontology:lane2:openbanking-payment-initiation-demo",
+  "trustTier": "Tier1",
+  "policySnapshotId": "sha256:de93910b5a55669504e880f862be54015b611d8410d8cc16f5d3c3ec974f5116",
+  "files": {
+    "context": "sha256:af13ae81102f2fdd459f39366717f77b443b104c1847f26aa27b85d3bd0cbdfd",
+    "convergence": "sha256:c53d033b715636bcb9b4d00198c5f6542f2b1354d75a68424b59452f1416b8bc",
+    "decision_space": "sha256:241bfa339e67582027a185b36fa1a78cc3fafa7f1295596799d0d69557c76500",
+    "intent_mappings": "sha256:d7ef27347ea5f9abb1a99f72e8734df3a58c5d8154b505c17b5fe707962b82bb",
+    "patterns": "sha256:476e725fee325d1df9746d4bdf71daee8471eb7e8dbd4c88fb9511520cf13f13",
+    "shapes": "sha256:f4ff35df2ddb86143bc648b7ecc54b696c5a0055ff62e83a77820dcc3ecab3a5",
+    "thesaurus": "sha256:d043d826da084d238db8a2621dcad41dc7767cec883573e1f521e877ed34c488",
+    "thesaurus_local": "sha256:df5eafcf4682a7132c51cb10038346a786b7204a1e5c121a76e56170795ef506",
+    "vocab": "sha256:1adbcf4f850cb5dec2d68f0f91fe3f114c35d5d898a1bd4c8dbf7b4741230596"
+  },
+  "precedence": [],
+  "denyWins": true,
+  "nbf": "2026-03-30T00:00:00Z",
+  "exp": "2030-03-31T00:00:00Z",
+  "revEpoch": 1
+}

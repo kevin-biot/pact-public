@@ -1,0 +1,28 @@
+{
+  "schema_version": "1.0",
+  "domain": "openbanking-ais-read-demo",
+  "thresholds": {
+    "overall_min_pass_rate": 1.0,
+    "require_critical_pass": true
+  },
+  "cases": [
+    {
+      "id": "ais_accounts_read",
+      "phrase": "show my account list",
+      "expect": "openbanking.account.read.v1",
+      "critical": true
+    },
+    {
+      "id": "ais_balances_read",
+      "phrase": "retrieve account balances",
+      "expect": "openbanking.balance.read.v1",
+      "critical": true
+    },
+    {
+      "id": "ais_transactions_read",
+      "phrase": "fetch transaction history",
+      "expect": "openbanking.transaction.read.v1",
+      "critical": true
+    }
+  ]
+}

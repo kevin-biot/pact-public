@@ -1,0 +1,7 @@
+{
+  "@context": {
+    "ob": "https://lane2.example/ontology/openbanking/",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "dc": "http://purl.org/dc/terms/"
+  }
+}

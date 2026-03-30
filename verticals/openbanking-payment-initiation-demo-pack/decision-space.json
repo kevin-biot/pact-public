@@ -1,0 +1,173 @@
+{
+  "schema_version": "1.0",
+  "domain": "openbanking-payment-initiation-demo",
+  "pack_id": "openbanking-payment-initiation-demo-0.1.0",
+  "version": "0.1.0",
+  "out_of_scope_behavior": "escalate",
+  "state_model": {
+    "states": [
+      "ingress",
+      "validated",
+      "submitted",
+      "accepted",
+      "settled",
+      "rejected",
+      "cancelled",
+      "escalated"
+    ],
+    "initial_state": "ingress",
+    "terminal_states": [
+      "settled",
+      "rejected",
+      "cancelled",
+      "escalated"
+    ]
+  },
+  "admissible_intents": [
+    {
+      "intent_class": "openbanking.payment.initiate.v1",
+      "allowed_states": ["ingress", "validated"],
+      "required_fact_types": ["payment_request"],
+      "transition_ids": ["validate_payment_initiate", "submit_payment"]
+    },
+    {
+      "intent_class": "openbanking.payment.status.read.v1",
+      "allowed_states": ["submitted", "accepted", "rejected", "settled", "cancelled"],
+      "required_fact_types": ["payment_request"],
+      "transition_ids": ["read_submitted_status", "read_accepted_status", "read_closed_status", "accept_payment", "settle_payment", "reject_payment"]
+    },
+    {
+      "intent_class": "openbanking.payment.cancel.v1",
+      "allowed_states": ["submitted", "accepted"],
+      "required_fact_types": ["payment_request"],
+      "transition_ids": ["cancel_payment_submitted", "cancel_payment_accepted"]
+    }
+  ],
+  "admissible_facts": [
+    {
+      "fact_type": "payment_request",
+      "schema_ref": "urn:openbanking:payment:initiation:v1",
+      "additional_properties": "allow",
+      "field_constraints": [
+        {
+          "path": "api.profile",
+          "datatype": "string",
+          "required": true,
+          "pattern": "^(berlin-group|uk-ob|fdx)$"
+        },
+        {
+          "path": "payment.id",
+          "datatype": "string",
+          "required": true
+        },
+        {
+          "path": "amount.currency",
+          "datatype": "string",
+          "required": true,
+          "pattern": "^[A-Z]{3}$"
+        },
+        {
+          "path": "amount.value",
+          "datatype": "number",
+          "required": true,
+          "minimum": 0.01
+        },
+        {
+          "path": "creditor.iban",
+          "datatype": "string",
+          "required": true,
+          "pattern": "^[A-Z]{2}[0-9A-Z]{13,32}$"
+        }
+      ]
+    }
+  ],
+  "admissible_transitions": [
+    {
+      "id": "validate_payment_initiate",
+      "from_state": "ingress",
+      "intent_class": "openbanking.payment.initiate.v1",
+      "to_state": "validated",
+      "guard_refs": ["guard:payment_payload_valid"]
+    },
+    {
+      "id": "submit_payment",
+      "from_state": "validated",
+      "intent_class": "openbanking.payment.initiate.v1",
+      "to_state": "submitted",
+      "guard_refs": ["guard:debtor_auth_verified"]
+    },
+    {
+      "id": "accept_payment",
+      "from_state": "submitted",
+      "intent_class": "openbanking.payment.status.read.v1",
+      "to_state": "accepted",
+      "guard_refs": ["guard:aspsp_accept_received"]
+    },
+    {
+      "id": "settle_payment",
+      "from_state": "accepted",
+      "intent_class": "openbanking.payment.status.read.v1",
+      "to_state": "settled",
+      "guard_refs": ["guard:settlement_confirmed"]
+    },
+    {
+      "id": "reject_payment",
+      "from_state": "submitted",
+      "intent_class": "openbanking.payment.status.read.v1",
+      "to_state": "rejected",
+      "guard_refs": ["guard:rejection_received"]
+    },
+    {
+      "id": "cancel_payment_submitted",
+      "from_state": "submitted",
+      "intent_class": "openbanking.payment.cancel.v1",
+      "to_state": "cancelled",
+      "guard_refs": ["guard:cancellation_window_open"]
+    },
+    {
+      "id": "cancel_payment_accepted",
+      "from_state": "accepted",
+      "intent_class": "openbanking.payment.cancel.v1",
+      "to_state": "cancelled",
+      "guard_refs": ["guard:cancellation_window_open"]
+    },
+    {
+      "id": "read_submitted_status",
+      "from_state": "submitted",
+      "intent_class": "openbanking.payment.status.read.v1",
+      "to_state": "submitted",
+      "guard_refs": ["guard:payment_found"]
+    },
+    {
+      "id": "read_accepted_status",
+      "from_state": "accepted",
+      "intent_class": "openbanking.payment.status.read.v1",
+      "to_state": "accepted",
+      "guard_refs": ["guard:payment_found"]
+    },
+    {
+      "id": "read_closed_status",
+      "from_state": "settled",
+      "intent_class": "openbanking.payment.status.read.v1",
+      "to_state": "settled",
+      "guard_refs": ["guard:payment_found"]
+    },
+    {
+      "id": "escalate_unknown_payment",
+      "from_state": "ingress",
+      "intent_class": "openbanking.payment.initiate.v1",
+      "to_state": "escalated",
+      "guard_refs": ["guard:payment_operation_unmapped"],
+      "deontic": "must",
+      "source_ref": "openbanking:governance:unknown-payment-operation:v1"
+    }
+  ],
+  "escalation_predicates": [
+    {
+      "predicate_id": "epsilon_1",
+      "trigger": "unclassifiable_activity",
+      "description": "Payment request cannot be mapped to initiate, status read, or cancel scope.",
+      "routing": "escalate"
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "@context": {
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "ob": "https://lane2.example/ontology/openbanking/"
+  },
+  "@graph": [
+    {
+      "@id": "ob:family/consent",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "Consent"
+    },
+    {
+      "@id": "ob:consent/create",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "Create Consent",
+      "skos:altLabel": ["consent create", "initiate consent"],
+      "skos:broader": "ob:family/consent"
+    },
+    {
+      "@id": "ob:consent/authorize",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "Authorize Consent",
+      "skos:altLabel": ["approve consent", "activate consent"],
+      "skos:broader": "ob:family/consent"
+    },
+    {
+      "@id": "ob:consent/revoke",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "Revoke Consent",
+      "skos:altLabel": ["withdraw consent", "cancel consent"],
+      "skos:broader": "ob:family/consent"
+    },
+    {
+      "@id": "ob:consent/status",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "Consent Status",
+      "skos:altLabel": ["consent state", "consent status read"],
+      "skos:broader": "ob:family/consent"
+    }
+  ]
+}

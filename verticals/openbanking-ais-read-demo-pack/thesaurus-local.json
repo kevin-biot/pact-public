@@ -1,0 +1,43 @@
+{
+  "schema_version": "1.0",
+  "domain": "openbanking-ais-read-demo",
+  "last_modified": "2026-03-31",
+  "concepts": [
+    {
+      "concept_id": "ob:resource/accounts",
+      "preferred_term": "accounts",
+      "synonyms": ["account information", "account list"],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "ob:family/ais",
+      "narrower": [],
+      "source_refs": ["Berlin Group", "UK Open Banking", "FDX"],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "ob:resource/balances",
+      "preferred_term": "balances",
+      "synonyms": ["account balances", "balance read"],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "ob:family/ais",
+      "narrower": [],
+      "source_refs": ["Berlin Group", "UK Open Banking", "FDX"],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "ob:resource/transactions",
+      "preferred_term": "transactions",
+      "synonyms": ["transaction history", "statement lines"],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "ob:family/ais",
+      "narrower": [],
+      "source_refs": ["Berlin Group", "UK Open Banking", "FDX"],
+      "ner_provenance": null
+    }
+  ]
+}

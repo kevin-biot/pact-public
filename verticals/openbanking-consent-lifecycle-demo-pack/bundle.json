@@ -1,0 +1,24 @@
+{
+  "id": "openbanking-consent-lifecycle-demo-0.1.0",
+  "domain": "openbanking-consent-lifecycle-demo",
+  "version": "0.1.0",
+  "providerId": "ontology:lane2:openbanking-consent-lifecycle-demo",
+  "trustTier": "Tier1",
+  "policySnapshotId": "sha256:de93910b5a55669504e880f862be54015b611d8410d8cc16f5d3c3ec974f5116",
+  "files": {
+    "context": "sha256:af13ae81102f2fdd459f39366717f77b443b104c1847f26aa27b85d3bd0cbdfd",
+    "convergence": "sha256:4ef646a1d4b9b0a01c7d853b19f15b16d8e5fd4ca8d12ff2e998db0f17d0a394",
+    "decision_space": "sha256:2b7080f42736f3a185af9bccd6478a4f364c7845fdb5fee51eb4f8470b4ddcb5",
+    "intent_mappings": "sha256:65e5cb28325dcc654e489f2d6e4eae743509df69272daf611d91a8185a16eae1",
+    "patterns": "sha256:f4b75d0cb86d668b3af3c68bd19232561e9364ee73c4cd33a739be49d1e536d4",
+    "shapes": "sha256:c0450eea9a9f905202c2e470e95641aa032c083c6691f9028c6025c9c6bb4c64",
+    "thesaurus": "sha256:ede7dc89648f1c6edce814cd4136f26d08cbf46983a0a93241c62ccb52d390f6",
+    "thesaurus_local": "sha256:58902715682ec59ecda2468cfee2d7ca381d9df2660b7b3d16763d660e7a2218",
+    "vocab": "sha256:8c680dc5f672064440571e9548af7a3d2a7682ed8ebc540e0b43a6e9b9b37f8f"
+  },
+  "precedence": [],
+  "denyWins": true,
+  "nbf": "2026-03-30T00:00:00Z",
+  "exp": "2030-03-31T00:00:00Z",
+  "revEpoch": 1
+}

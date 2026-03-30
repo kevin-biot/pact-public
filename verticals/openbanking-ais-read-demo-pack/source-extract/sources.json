@@ -1,0 +1,22 @@
+{
+  "schema_version": "0.1",
+  "domain": "openbanking-ais-read-demo",
+  "sources": [
+    {
+      "name": "Berlin Group NextGenPSD2",
+      "role": "schema-reference"
+    },
+    {
+      "name": "UK Open Banking Standard",
+      "role": "schema-reference"
+    },
+    {
+      "name": "Financial Data Exchange",
+      "role": "schema-reference"
+    }
+  ],
+  "selection": {
+    "narrow_scope": ["accounts", "balances", "transactions"],
+    "runtime_model": "closed-world"
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "schema_version": "1.0",
+  "domain": "openbanking-payment-initiation-demo",
+  "last_modified": "2026-03-31",
+  "concepts": [
+    {
+      "concept_id": "ob:payment/initiate",
+      "preferred_term": "initiate payment",
+      "synonyms": ["payment initiation", "submit payment"],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "ob:family/payments",
+      "narrower": [],
+      "source_refs": ["Berlin Group", "UK Open Banking", "FDX"],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "ob:payment/status",
+      "preferred_term": "payment status",
+      "synonyms": ["payment state", "status query"],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "ob:family/payments",
+      "narrower": [],
+      "source_refs": ["Berlin Group", "UK Open Banking", "FDX"],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "ob:payment/cancel",
+      "preferred_term": "cancel payment",
+      "synonyms": ["revoke payment", "payment cancellation"],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "ob:family/payments",
+      "narrower": [],
+      "source_refs": ["Berlin Group", "UK Open Banking", "FDX"],
+      "ner_provenance": null
+    }
+  ]
+}

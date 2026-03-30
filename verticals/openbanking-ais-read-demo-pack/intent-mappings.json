@@ -1,0 +1,21 @@
+{
+  "schema_version": "1.0",
+  "domain": "openbanking-ais-read-demo",
+  "mappings": [
+    {
+      "concept_uri": "ob:resource/accounts",
+      "intent_class": "openbanking.account.read.v1",
+      "confidence_floor": 0.75
+    },
+    {
+      "concept_uri": "ob:resource/balances",
+      "intent_class": "openbanking.balance.read.v1",
+      "confidence_floor": 0.75
+    },
+    {
+      "concept_uri": "ob:resource/transactions",
+      "intent_class": "openbanking.transaction.read.v1",
+      "confidence_floor": 0.75
+    }
+  ]
+}

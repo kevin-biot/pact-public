@@ -1,0 +1,157 @@
+{
+  "schema_version": "1.0",
+  "domain": "openbanking-consent-lifecycle-demo",
+  "pack_id": "openbanking-consent-lifecycle-demo-0.1.0",
+  "version": "0.1.0",
+  "out_of_scope_behavior": "escalate",
+  "state_model": {
+    "states": [
+      "ingress",
+      "consent_pending",
+      "consent_active",
+      "consent_revoked",
+      "consent_expired",
+      "rejected",
+      "escalated"
+    ],
+    "initial_state": "ingress",
+    "terminal_states": [
+      "consent_revoked",
+      "consent_expired",
+      "rejected",
+      "escalated"
+    ]
+  },
+  "admissible_intents": [
+    {
+      "intent_class": "openbanking.consent.create.v1",
+      "allowed_states": ["ingress"],
+      "required_fact_types": ["consent_request"],
+      "transition_ids": ["create_consent", "reject_invalid_consent"]
+    },
+    {
+      "intent_class": "openbanking.consent.authorize.v1",
+      "allowed_states": ["consent_pending"],
+      "required_fact_types": ["consent_request"],
+      "transition_ids": ["authorize_consent"]
+    },
+    {
+      "intent_class": "openbanking.consent.revoke.v1",
+      "allowed_states": ["consent_active"],
+      "required_fact_types": ["consent_request"],
+      "transition_ids": ["revoke_consent"]
+    },
+    {
+      "intent_class": "openbanking.consent.status.read.v1",
+      "allowed_states": ["consent_pending", "consent_active", "consent_revoked", "consent_expired"],
+      "required_fact_types": ["consent_request"],
+      "transition_ids": ["read_status_pending", "read_status_active", "read_status_closed"]
+    }
+  ],
+  "admissible_facts": [
+    {
+      "fact_type": "consent_request",
+      "schema_ref": "urn:openbanking:consent:request:v1",
+      "additional_properties": "allow",
+      "field_constraints": [
+        {
+          "path": "api.profile",
+          "datatype": "string",
+          "required": true,
+          "pattern": "^(berlin-group|uk-ob|fdx)$"
+        },
+        {
+          "path": "consent.id",
+          "datatype": "string",
+          "required": true
+        },
+        {
+          "path": "consent.status",
+          "datatype": "string",
+          "required": true,
+          "enum_values": ["pending", "active", "revoked", "expired"]
+        },
+        {
+          "path": "consent.permissions",
+          "datatype": "array",
+          "required": true
+        }
+      ]
+    }
+  ],
+  "admissible_transitions": [
+    {
+      "id": "create_consent",
+      "from_state": "ingress",
+      "intent_class": "openbanking.consent.create.v1",
+      "to_state": "consent_pending",
+      "guard_refs": ["guard:consent_payload_valid", "guard:consent_not_existing"]
+    },
+    {
+      "id": "authorize_consent",
+      "from_state": "consent_pending",
+      "intent_class": "openbanking.consent.authorize.v1",
+      "to_state": "consent_active",
+      "guard_refs": ["guard:psu_auth_verified"]
+    },
+    {
+      "id": "revoke_consent",
+      "from_state": "consent_active",
+      "intent_class": "openbanking.consent.revoke.v1",
+      "to_state": "consent_revoked",
+      "guard_refs": ["guard:revoke_request_verified"]
+    },
+    {
+      "id": "read_status_pending",
+      "from_state": "consent_pending",
+      "intent_class": "openbanking.consent.status.read.v1",
+      "to_state": "consent_pending",
+      "guard_refs": ["guard:consent_found"]
+    },
+    {
+      "id": "read_status_active",
+      "from_state": "consent_active",
+      "intent_class": "openbanking.consent.status.read.v1",
+      "to_state": "consent_active",
+      "guard_refs": ["guard:consent_found"]
+    },
+    {
+      "id": "read_status_closed",
+      "from_state": "consent_revoked",
+      "intent_class": "openbanking.consent.status.read.v1",
+      "to_state": "consent_revoked",
+      "guard_refs": ["guard:consent_found"]
+    },
+    {
+      "id": "expire_consent",
+      "from_state": "consent_active",
+      "intent_class": "openbanking.consent.status.read.v1",
+      "to_state": "consent_expired",
+      "guard_refs": ["guard:consent_ttl_elapsed"]
+    },
+    {
+      "id": "reject_invalid_consent",
+      "from_state": "ingress",
+      "intent_class": "openbanking.consent.create.v1",
+      "to_state": "rejected",
+      "guard_refs": ["guard:consent_payload_invalid"]
+    },
+    {
+      "id": "escalate_unknown_consent",
+      "from_state": "ingress",
+      "intent_class": "openbanking.consent.create.v1",
+      "to_state": "escalated",
+      "guard_refs": ["guard:consent_operation_unmapped"],
+      "deontic": "must",
+      "source_ref": "openbanking:governance:unknown-consent-operation:v1"
+    }
+  ],
+  "escalation_predicates": [
+    {
+      "predicate_id": "epsilon_1",
+      "trigger": "unclassifiable_activity",
+      "description": "Consent request operation cannot be mapped to create, authorize, revoke, or status read.",
+      "routing": "escalate"
+    }
+  ]
+}

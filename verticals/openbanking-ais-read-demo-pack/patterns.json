@@ -1,0 +1,27 @@
+{
+  "schema_version": "1.0",
+  "domain": "openbanking-ais-read-demo",
+  "patterns": [
+    {
+      "id": "ob_balances_intent",
+      "concept_uri": "ob:resource/balances",
+      "entity_type": "intent_hint",
+      "regex": "(?i)\\b(balance|balances|account\\s+balance)\\b",
+      "examples": ["get account balances", "balance read"]
+    },
+    {
+      "id": "ob_transactions_intent",
+      "concept_uri": "ob:resource/transactions",
+      "entity_type": "intent_hint",
+      "regex": "(?i)\\b(transactions?|transaction\\s+history|statement\\s+lines?)\\b",
+      "examples": ["show transactions", "transaction history"]
+    },
+    {
+      "id": "ob_accounts_intent",
+      "concept_uri": "ob:resource/accounts",
+      "entity_type": "intent_hint",
+      "regex": "(?i)\\b(accounts|account\\s+information|account\\s+list)\\b",
+      "examples": ["show my accounts", "account information"]
+    }
+  ]
+}

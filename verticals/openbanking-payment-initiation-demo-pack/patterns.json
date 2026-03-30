@@ -1,0 +1,27 @@
+{
+  "schema_version": "1.0",
+  "domain": "openbanking-payment-initiation-demo",
+  "patterns": [
+    {
+      "id": "ob_payment_initiate_intent",
+      "concept_uri": "ob:payment/initiate",
+      "entity_type": "intent_hint",
+      "regex": "(?i)\\b(initiate|submit|create)\\b.*\\bpayment\\b",
+      "examples": ["initiate payment", "submit payment"]
+    },
+    {
+      "id": "ob_payment_status_intent",
+      "concept_uri": "ob:payment/status",
+      "entity_type": "intent_hint",
+      "regex": "(?i)\\b(payment\\s+status|status\\s+query)\\b",
+      "examples": ["payment status", "status query"]
+    },
+    {
+      "id": "ob_payment_cancel_intent",
+      "concept_uri": "ob:payment/cancel",
+      "entity_type": "intent_hint",
+      "regex": "(?i)\\b(cancel|revoke)\\b.*\\bpayment\\b",
+      "examples": ["cancel payment", "revoke payment"]
+    }
+  ]
+}

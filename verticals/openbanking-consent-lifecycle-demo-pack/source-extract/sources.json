@@ -1,0 +1,22 @@
+{
+  "schema_version": "0.1",
+  "domain": "openbanking-consent-lifecycle-demo",
+  "sources": [
+    {
+      "name": "Berlin Group NextGenPSD2",
+      "role": "consent-reference"
+    },
+    {
+      "name": "UK Open Banking Standard",
+      "role": "consent-reference"
+    },
+    {
+      "name": "Financial Data Exchange",
+      "role": "consent-reference"
+    }
+  ],
+  "selection": {
+    "narrow_scope": ["create", "authorize", "revoke", "status"],
+    "runtime_model": "closed-world"
+  }
+}

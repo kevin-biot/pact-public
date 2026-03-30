@@ -1,0 +1,34 @@
+{
+  "schema_version": "1.0",
+  "domain": "openbanking-consent-lifecycle-demo",
+  "thresholds": {
+    "overall_min_pass_rate": 1.0,
+    "require_critical_pass": true
+  },
+  "cases": [
+    {
+      "id": "consent_create",
+      "phrase": "initiate consent for account access",
+      "expect": "openbanking.consent.create.v1",
+      "critical": true
+    },
+    {
+      "id": "consent_authorize",
+      "phrase": "approve the consent",
+      "expect": "openbanking.consent.authorize.v1",
+      "critical": true
+    },
+    {
+      "id": "consent_revoke",
+      "phrase": "withdraw consent now",
+      "expect": "openbanking.consent.revoke.v1",
+      "critical": true
+    },
+    {
+      "id": "consent_status",
+      "phrase": "check consent status",
+      "expect": "openbanking.consent.status.read.v1",
+      "critical": true
+    }
+  ]
+}

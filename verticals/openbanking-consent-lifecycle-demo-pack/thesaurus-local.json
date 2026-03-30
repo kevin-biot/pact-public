@@ -1,0 +1,55 @@
+{
+  "schema_version": "1.0",
+  "domain": "openbanking-consent-lifecycle-demo",
+  "last_modified": "2026-03-31",
+  "concepts": [
+    {
+      "concept_id": "ob:consent/create",
+      "preferred_term": "create consent",
+      "synonyms": ["consent create", "initiate consent"],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "ob:family/consent",
+      "narrower": [],
+      "source_refs": ["Berlin Group", "UK Open Banking", "FDX"],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "ob:consent/authorize",
+      "preferred_term": "authorize consent",
+      "synonyms": ["approve consent", "activate consent"],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "ob:family/consent",
+      "narrower": [],
+      "source_refs": ["Berlin Group", "UK Open Banking", "FDX"],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "ob:consent/revoke",
+      "preferred_term": "revoke consent",
+      "synonyms": ["withdraw consent", "cancel consent"],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "ob:family/consent",
+      "narrower": [],
+      "source_refs": ["Berlin Group", "UK Open Banking", "FDX"],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "ob:consent/status",
+      "preferred_term": "consent status",
+      "synonyms": ["consent state", "consent status read"],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "ob:family/consent",
+      "narrower": [],
+      "source_refs": ["Berlin Group", "UK Open Banking", "FDX"],
+      "ner_provenance": null
+    }
+  ]
+}

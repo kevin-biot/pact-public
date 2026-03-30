@@ -1,0 +1,24 @@
+{
+  "id": "openbanking-ais-read-demo-0.1.0",
+  "domain": "openbanking-ais-read-demo",
+  "version": "0.1.0",
+  "providerId": "ontology:lane2:openbanking-ais-read-demo",
+  "trustTier": "Tier1",
+  "policySnapshotId": "sha256:de93910b5a55669504e880f862be54015b611d8410d8cc16f5d3c3ec974f5116",
+  "files": {
+    "context": "sha256:af13ae81102f2fdd459f39366717f77b443b104c1847f26aa27b85d3bd0cbdfd",
+    "convergence": "sha256:470b7ccf8146de0482917b80f85c6339d4fe566e4dd9df84f5aeff2708764176",
+    "decision_space": "sha256:c263cafa8008585bfa5fb577d41ec31d5d93f5b8d9326c6ceb8800c6465cf5d3",
+    "intent_mappings": "sha256:cafe97689331673ee104246d125c0c549877683cdd953e547fdad2bce07a584a",
+    "patterns": "sha256:68a0cf0855c6237be897971377d2f10914c6fc945ae2a2cad39aa5cf7426c330",
+    "shapes": "sha256:d44409283117a5b20785aafade242a7b2db2903d7abae1240f97878790ffc66b",
+    "thesaurus": "sha256:ee535457d686ebf6db01050e25975c9faa7adae964f8f8485ce370a355731142",
+    "thesaurus_local": "sha256:8b43100298afaae4245fc7b8406cc0e1f62e9a7a2a53f39287a368e42055a461",
+    "vocab": "sha256:7e73afb99e03c5bb227f1111ff614a11c8217c96d71e3ff2bb6e96be3d82864c"
+  },
+  "precedence": [],
+  "denyWins": true,
+  "nbf": "2026-03-30T00:00:00Z",
+  "exp": "2030-03-31T00:00:00Z",
+  "revEpoch": 1
+}

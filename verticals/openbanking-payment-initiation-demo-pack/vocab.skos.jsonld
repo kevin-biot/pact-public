@@ -1,0 +1,34 @@
+{
+  "@context": {
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "ob": "https://lane2.example/ontology/openbanking/"
+  },
+  "@graph": [
+    {
+      "@id": "ob:family/payments",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "Payments"
+    },
+    {
+      "@id": "ob:payment/initiate",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "Initiate Payment",
+      "skos:altLabel": ["payment initiation", "submit payment"],
+      "skos:broader": "ob:family/payments"
+    },
+    {
+      "@id": "ob:payment/status",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "Payment Status",
+      "skos:altLabel": ["payment state", "status query"],
+      "skos:broader": "ob:family/payments"
+    },
+    {
+      "@id": "ob:payment/cancel",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "Cancel Payment",
+      "skos:altLabel": ["revoke payment", "payment cancellation"],
+      "skos:broader": "ob:family/payments"
+    }
+  ]
+}

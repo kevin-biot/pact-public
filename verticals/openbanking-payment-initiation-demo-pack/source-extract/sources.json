@@ -1,0 +1,22 @@
+{
+  "schema_version": "0.1",
+  "domain": "openbanking-payment-initiation-demo",
+  "sources": [
+    {
+      "name": "Berlin Group NextGenPSD2",
+      "role": "payment-reference"
+    },
+    {
+      "name": "UK Open Banking Standard",
+      "role": "payment-reference"
+    },
+    {
+      "name": "Financial Data Exchange",
+      "role": "payment-reference"
+    }
+  ],
+  "selection": {
+    "narrow_scope": ["initiate", "status", "cancel"],
+    "runtime_model": "closed-world"
+  }
+}

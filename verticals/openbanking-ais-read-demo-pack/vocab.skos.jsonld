@@ -1,0 +1,37 @@
+{
+  "@context": {
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "ob": "https://lane2.example/ontology/openbanking/"
+  },
+  "@graph": [
+    {
+      "@id": "ob:family/ais",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "AIS"
+    },
+    {
+      "@id": "ob:resource/accounts",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "Accounts",
+      "skos:altLabel": ["account information", "account list"],
+      "skos:definition": "Account list and account detail access concept.",
+      "skos:broader": "ob:family/ais"
+    },
+    {
+      "@id": "ob:resource/balances",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "Balances",
+      "skos:altLabel": ["account balances", "balance read"],
+      "skos:definition": "Balance retrieval concept for account information services.",
+      "skos:broader": "ob:family/ais"
+    },
+    {
+      "@id": "ob:resource/transactions",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "Transactions",
+      "skos:altLabel": ["transaction history", "statement lines"],
+      "skos:definition": "Transaction retrieval concept for account information services.",
+      "skos:broader": "ob:family/ais"
+    }
+  ]
+}

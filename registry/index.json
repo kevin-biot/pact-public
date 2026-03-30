@@ -47,6 +47,30 @@
       "trust_tier": "Tier1",
       "version": "0.2.0",
       "path": "verticals/iso20022-canonical-demo-pack"
+    },
+    {
+      "snapshot_id": "ontology:openbanking-ais-read-demo:v0.1.0",
+      "domain": "openbanking-ais-read-demo",
+      "provider_id": "ontology:lane2:openbanking-ais-read-demo",
+      "trust_tier": "Tier1",
+      "version": "0.1.0",
+      "path": "verticals/openbanking-ais-read-demo-pack"
+    },
+    {
+      "snapshot_id": "ontology:openbanking-consent-lifecycle-demo:v0.1.0",
+      "domain": "openbanking-consent-lifecycle-demo",
+      "provider_id": "ontology:lane2:openbanking-consent-lifecycle-demo",
+      "trust_tier": "Tier1",
+      "version": "0.1.0",
+      "path": "verticals/openbanking-consent-lifecycle-demo-pack"
+    },
+    {
+      "snapshot_id": "ontology:openbanking-payment-initiation-demo:v0.1.0",
+      "domain": "openbanking-payment-initiation-demo",
+      "provider_id": "ontology:lane2:openbanking-payment-initiation-demo",
+      "trust_tier": "Tier1",
+      "version": "0.1.0",
+      "path": "verticals/openbanking-payment-initiation-demo-pack"
     }
   ]
 }

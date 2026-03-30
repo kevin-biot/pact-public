@@ -1,0 +1,156 @@
+{
+  "schema_version": "1.0",
+  "domain": "openbanking-ais-read-demo",
+  "pack_id": "openbanking-ais-read-demo-0.1.0",
+  "version": "0.1.0",
+  "out_of_scope_behavior": "escalate",
+  "state_model": {
+    "states": [
+      "ingress",
+      "validated",
+      "classified",
+      "responded",
+      "rejected",
+      "escalated"
+    ],
+    "initial_state": "ingress",
+    "terminal_states": [
+      "responded",
+      "rejected",
+      "escalated"
+    ]
+  },
+  "admissible_intents": [
+    {
+      "intent_class": "openbanking.account.read.v1",
+      "allowed_states": ["ingress", "validated", "classified"],
+      "required_fact_types": ["ais_request"],
+      "transition_ids": ["validate_account_read", "classify_account_read", "respond_account_read"]
+    },
+    {
+      "intent_class": "openbanking.balance.read.v1",
+      "allowed_states": ["ingress", "validated", "classified"],
+      "required_fact_types": ["ais_request"],
+      "transition_ids": ["validate_balance_read", "classify_balance_read", "respond_balance_read"]
+    },
+    {
+      "intent_class": "openbanking.transaction.read.v1",
+      "allowed_states": ["ingress", "validated", "classified"],
+      "required_fact_types": ["ais_request"],
+      "transition_ids": ["validate_transaction_read", "classify_transaction_read", "respond_transaction_read"]
+    }
+  ],
+  "admissible_facts": [
+    {
+      "fact_type": "ais_request",
+      "schema_ref": "urn:openbanking:ais:request:v1",
+      "additional_properties": "allow",
+      "field_constraints": [
+        {
+          "path": "api.profile",
+          "datatype": "string",
+          "required": true,
+          "pattern": "^(berlin-group|uk-ob|fdx)$"
+        },
+        {
+          "path": "api.resource",
+          "datatype": "string",
+          "required": true,
+          "pattern": "^(accounts|balances|transactions)$"
+        },
+        {
+          "path": "consent.id",
+          "datatype": "string",
+          "required": true
+        },
+        {
+          "path": "psu.id",
+          "datatype": "string",
+          "required": false
+        }
+      ]
+    }
+  ],
+  "admissible_transitions": [
+    {
+      "id": "validate_account_read",
+      "from_state": "ingress",
+      "intent_class": "openbanking.account.read.v1",
+      "to_state": "validated",
+      "guard_refs": ["guard:ais_payload_valid"]
+    },
+    {
+      "id": "classify_account_read",
+      "from_state": "validated",
+      "intent_class": "openbanking.account.read.v1",
+      "to_state": "classified",
+      "guard_refs": ["guard:intent_account_read_mapped"]
+    },
+    {
+      "id": "respond_account_read",
+      "from_state": "classified",
+      "intent_class": "openbanking.account.read.v1",
+      "to_state": "responded",
+      "guard_refs": ["guard:data_access_permitted"]
+    },
+    {
+      "id": "validate_balance_read",
+      "from_state": "ingress",
+      "intent_class": "openbanking.balance.read.v1",
+      "to_state": "validated",
+      "guard_refs": ["guard:ais_payload_valid"]
+    },
+    {
+      "id": "classify_balance_read",
+      "from_state": "validated",
+      "intent_class": "openbanking.balance.read.v1",
+      "to_state": "classified",
+      "guard_refs": ["guard:intent_balance_read_mapped"]
+    },
+    {
+      "id": "respond_balance_read",
+      "from_state": "classified",
+      "intent_class": "openbanking.balance.read.v1",
+      "to_state": "responded",
+      "guard_refs": ["guard:data_access_permitted"]
+    },
+    {
+      "id": "validate_transaction_read",
+      "from_state": "ingress",
+      "intent_class": "openbanking.transaction.read.v1",
+      "to_state": "validated",
+      "guard_refs": ["guard:ais_payload_valid"]
+    },
+    {
+      "id": "classify_transaction_read",
+      "from_state": "validated",
+      "intent_class": "openbanking.transaction.read.v1",
+      "to_state": "classified",
+      "guard_refs": ["guard:intent_transaction_read_mapped"]
+    },
+    {
+      "id": "respond_transaction_read",
+      "from_state": "classified",
+      "intent_class": "openbanking.transaction.read.v1",
+      "to_state": "responded",
+      "guard_refs": ["guard:data_access_permitted"]
+    },
+    {
+      "id": "escalate_unknown_ais",
+      "from_state": "ingress",
+      "intent_class": "openbanking.account.read.v1",
+      "to_state": "escalated",
+      "guard_refs": ["guard:resource_unmapped"],
+      "deontic": "must",
+      "source_ref": "openbanking:governance:unknown-ais-resource:v1"
+    }
+  ],
+  "escalation_predicates": [
+    {
+      "predicate_id": "epsilon_1",
+      "trigger": "unclassifiable_activity",
+      "description": "AIS request cannot be mapped to account, balance, or transaction read profile.",
+      "routing": "escalate"
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "@context": {
+    "ob": "https://lane2.example/ontology/openbanking/"
+  },
+  "entries": [
+    {
+      "label": "create consent",
+      "alt": ["consent create", "initiate consent"],
+      "concept_id": "ob:consent/create"
+    },
+    {
+      "label": "authorize consent",
+      "alt": ["approve consent", "activate consent"],
+      "concept_id": "ob:consent/authorize"
+    },
+    {
+      "label": "revoke consent",
+      "alt": ["withdraw consent", "cancel consent"],
+      "concept_id": "ob:consent/revoke"
+    },
+    {
+      "label": "consent status",
+      "alt": ["consent state", "consent status read"],
+      "concept_id": "ob:consent/status"
+    }
+  ]
+}

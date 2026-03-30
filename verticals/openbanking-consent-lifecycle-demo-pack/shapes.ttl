@@ -1,0 +1,23 @@
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix ob: <https://lane2.example/ontology/openbanking/> .
+
+ob:ConsentRequestShape
+  a sh:NodeShape ;
+  sh:targetClass ob:ConsentRequest ;
+  sh:property [
+    sh:path ob:consentId ;
+    sh:datatype xsd:string ;
+    sh:minCount 1 ;
+    sh:maxCount 1 ;
+  ] ;
+  sh:property [
+    sh:path ob:consentStatus ;
+    sh:datatype xsd:string ;
+    sh:minCount 1 ;
+    sh:maxCount 1 ;
+  ] ;
+  sh:property [
+    sh:path ob:permissions ;
+    sh:minCount 1 ;
+  ] .

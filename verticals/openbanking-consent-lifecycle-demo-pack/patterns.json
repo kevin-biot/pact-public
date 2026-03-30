@@ -1,0 +1,34 @@
+{
+  "schema_version": "1.0",
+  "domain": "openbanking-consent-lifecycle-demo",
+  "patterns": [
+    {
+      "id": "ob_consent_create_intent",
+      "concept_uri": "ob:consent/create",
+      "entity_type": "intent_hint",
+      "regex": "(?i)\\b(create|initiate)\\s+(new\\s+)?consent\\b",
+      "examples": ["create consent", "initiate consent"]
+    },
+    {
+      "id": "ob_consent_authorize_intent",
+      "concept_uri": "ob:consent/authorize",
+      "entity_type": "intent_hint",
+      "regex": "(?i)\\b(authorize|approve|activate)\\s+(the\\s+)?consent\\b",
+      "examples": ["authorize consent", "approve consent"]
+    },
+    {
+      "id": "ob_consent_revoke_intent",
+      "concept_uri": "ob:consent/revoke",
+      "entity_type": "intent_hint",
+      "regex": "(?i)\\b(revoke|withdraw|cancel)\\s+consent\\b",
+      "examples": ["revoke consent", "withdraw consent"]
+    },
+    {
+      "id": "ob_consent_status_intent",
+      "concept_uri": "ob:consent/status",
+      "entity_type": "intent_hint",
+      "regex": "(?i)\\b(consent\\s+status|consent\\s+state)\\b",
+      "examples": ["consent status", "consent state"]
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "@context": {
+    "ob": "https://lane2.example/ontology/openbanking/"
+  },
+  "entries": [
+    {
+      "label": "accounts",
+      "alt": ["account information", "account list"],
+      "concept_id": "ob:resource/accounts"
+    },
+    {
+      "label": "balances",
+      "alt": ["account balances", "balance read"],
+      "concept_id": "ob:resource/balances"
+    },
+    {
+      "label": "transactions",
+      "alt": ["transaction history", "statement lines"],
+      "concept_id": "ob:resource/transactions"
+    }
+  ]
+}

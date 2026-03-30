@@ -1,0 +1,28 @@
+{
+  "schema_version": "1.0",
+  "domain": "openbanking-payment-initiation-demo",
+  "thresholds": {
+    "overall_min_pass_rate": 1.0,
+    "require_critical_pass": true
+  },
+  "cases": [
+    {
+      "id": "payment_initiate",
+      "phrase": "submit a new payment",
+      "expect": "openbanking.payment.initiate.v1",
+      "critical": true
+    },
+    {
+      "id": "payment_status",
+      "phrase": "query payment status",
+      "expect": "openbanking.payment.status.read.v1",
+      "critical": true
+    },
+    {
+      "id": "payment_cancel",
+      "phrase": "cancel the payment",
+      "expect": "openbanking.payment.cancel.v1",
+      "critical": true
+    }
+  ]
+}
