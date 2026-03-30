@@ -1,0 +1,222 @@
+{
+  "schema_version": "0.1",
+  "generated_at_utc": "2026-03-30T18:50:32Z",
+  "erepo_url": "https://www.iso20022.org/sites/default/files/media/file/20250424_ISO20022_2013_eRepository.zip",
+  "erepo_archive_bytes": 9381581,
+  "erepo_entry": "20250424_ISO20022_2013_eRepository.iso20022",
+  "metamodel_url": "https://www.iso20022.org/sites/default/files/documents/D7/ISO20022_2013_ecore_metamodel.zip",
+  "metamodel_archive_bytes": 16833,
+  "metamodel_entry": "ISO20022.ecore",
+  "areas_filter": [
+    "camt",
+    "pacs",
+    "pain"
+  ],
+  "allowed_registration_statuses": [
+    "Registered"
+  ],
+  "version_policy": "latest-per-type",
+  "top_level_type_counts": {
+    "iso20022:Amount": 17,
+    "iso20022:Binary": 14,
+    "iso20022:BusinessComponent": 785,
+    "iso20022:ChoiceComponent": 4136,
+    "iso20022:CodeSet": 3973,
+    "iso20022:Date": 1,
+    "iso20022:DateTime": 2,
+    "iso20022:ExternalSchema": 7,
+    "iso20022:IdentifierSet": 71,
+    "iso20022:Indicator": 13,
+    "iso20022:MessageComponent": 13810,
+    "iso20022:Month": 1,
+    "iso20022:Quantity": 25,
+    "iso20022:Rate": 8,
+    "iso20022:SchemaType": 44,
+    "iso20022:Text": 145,
+    "iso20022:Time": 1,
+    "iso20022:UserDefined": 2,
+    "iso20022:Year": 2,
+    "iso20022:YearMonth": 1
+  },
+  "top_level_samples": {
+    "iso20022:Amount": [
+      "ActiveCurrencyAnd13DecimalAmount",
+      "ActiveCurrencyAnd20Amount",
+      "ActiveCurrencyAnd24Amount",
+      "ActiveCurrencyAndAmount",
+      "ActiveOrHistoricCurrencyAnd13DecimalAmount",
+      "ActiveOrHistoricCurrencyAnd19DecimalAmount",
+      "ActiveOrHistoricCurrencyAnd20Amount",
+      "ActiveOrHistoricCurrencyAnd20DecimalAmount"
+    ],
+    "iso20022:Binary": [
+      "Max10000Binary",
+      "Max100KBinary",
+      "Max10KBinary",
+      "Max10MbBinary",
+      "Max140Binary",
+      "Max20MbBinary",
+      "Max2KBinary",
+      "Max2MBBinary"
+    ],
+    "iso20022:BusinessComponent": [
+      "ATMTotal",
+      "AcceptorConfiguration",
+      "AcceptorRole",
+      "Account",
+      "AccountContract",
+      "AccountEntry",
+      "AccountIdentification",
+      "AccountInformationRecipientRole"
+    ],
+    "iso20022:ChoiceComponent": [
+      "ATMCommandParameters1Choice",
+      "ATMCommandParameters2Choice",
+      "ATMCommandParameters3Choice",
+      "ATMSignature2Choice",
+      "AcceptedReason10Choice",
+      "AcceptedReason11Choice",
+      "AcceptedReason12Choice",
+      "AcceptedReason15Choice"
+    ],
+    "iso20022:CodeSet": [
+      "AMFDoctrine1Code",
+      "AMFDoctrineCode",
+      "ATMAccountUsage1Code",
+      "ATMAccountUsageCode",
+      "ATMActionType1Code",
+      "ATMActionTypeCode",
+      "ATMCassetteStatus1Code",
+      "ATMCassetteStatusCode"
+    ],
+    "iso20022:Date": [
+      "ISODate"
+    ],
+    "iso20022:DateTime": [
+      "ISODateTime",
+      "ISONormalisedDateTime"
+    ],
+    "iso20022:ExternalSchema": [
+      "LaxPayload",
+      "ReferenceDataEnvelope1",
+      "SignatureEnvelope",
+      "SignatureEnvelopeReference",
+      "SkipPayload",
+      "StrictPayload",
+      "SupplementaryDataEnvelope1"
+    ],
+    "iso20022:IdentifierSet": [
+      "AnyBICDec2014Identifier",
+      "AnyBICIdentifier",
+      "AustrianBankleitzahlIdentifier",
+      "BBANIdentifier",
+      "BEIIdentifier",
+      "BICFIDec2014Identifier",
+      "BICFIIdentifier",
+      "BICIdentifier"
+    ],
+    "iso20022:Indicator": [
+      "AMLIndicator",
+      "AllOrNoneIndicator",
+      "BatchBookingIndicator",
+      "ChargeIncludedIndicator",
+      "GroupCancellationIndicator",
+      "GroupingIndicator",
+      "IdentificationVerificationIndicator",
+      "OverrideIndicator"
+    ],
+    "iso20022:MessageComponent": [
+      "ATMAccountStatement1",
+      "ATMAccountStatement2",
+      "ATMAccountStatement3",
+      "ATMCassette1",
+      "ATMCassette2",
+      "ATMCassette3",
+      "ATMCassetteCounters1",
+      "ATMCassetteCounters2"
+    ],
+    "iso20022:Month": [
+      "ISOMonth"
+    ],
+    "iso20022:Quantity": [
+      "DayOfMonthNumber",
+      "DecimalNumber",
+      "DecimalNumberFraction5",
+      "Fraction5DecimalNumber",
+      "LongDecimalNumber",
+      "LongFraction19DecimalNumber",
+      "LongFraction21DecimalNumber",
+      "Max10NumberFraction2"
+    ],
+    "iso20022:Rate": [
+      "BaseOne14Rate",
+      "BaseOne18Rate",
+      "BaseOne25Rate",
+      "BaseOneRate",
+      "Percentage",
+      "Percentage14Rate",
+      "PercentageBoundedRate",
+      "PercentageRate"
+    ],
+    "iso20022:SchemaType": [
+      "ENTITIES",
+      "ENTITY",
+      "ID",
+      "IDREF",
+      "IDREFS",
+      "NCName",
+      "NMTOKEN",
+      "NMTOKENS"
+    ],
+    "iso20022:Text": [
+      "DateOffsetText",
+      "Exact10Text",
+      "Exact12Text",
+      "Exact15Text",
+      "Exact1HexBinaryText",
+      "Exact1NumericText",
+      "Exact2AlphaNumericText",
+      "Exact2NumericText"
+    ],
+    "iso20022:Time": [
+      "ISOTime"
+    ],
+    "iso20022:UserDefined": [
+      "ExtensionContents1",
+      "SkipProcessing"
+    ],
+    "iso20022:Year": [
+      "ISORestrictedYear",
+      "ISOYear"
+    ],
+    "iso20022:YearMonth": [
+      "ISOYearMonth"
+    ]
+  },
+  "message_identifiers_raw_count": 558,
+  "message_identifiers_count": 117,
+  "message_types_count": 117,
+  "message_counts_by_area": {
+    "camt": 94,
+    "pacs": 10,
+    "pain": 13
+  },
+  "included_by_status": {
+    "Registered": 558
+  },
+  "excluded_by_status": {
+    "Provisionally Registered": 16
+  },
+  "unknown_status_count": 0,
+  "ecore_class_count": 85,
+  "ecore_class_samples": [
+    "AbstractDateTimeConcept",
+    "Address",
+    "Amount",
+    "Binary",
+    "Boolean",
+    "BroadcastList",
+    "BusinessArea",
+    "BusinessAssociationEnd"
+  ]
+}

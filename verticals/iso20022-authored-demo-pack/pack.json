@@ -1,0 +1,34 @@
+{
+  "pack_schema": "1.0",
+  "id": "iso20022-authored-demo-0.1.0",
+  "domain": "iso20022-authored-demo",
+  "version": "0.1.0",
+  "provider_id": "ontology:lane2:iso20022-authored-demo",
+  "trust_tier": "Tier1",
+  "nbf": "2026-03-30T00:00:00Z",
+  "exp": "2030-03-30T00:00:00Z",
+  "rev_epoch": 1,
+  "deny_wins": true,
+  "decision_authority": true,
+  "precedence": [],
+  "key_name": "iso20022",
+  "files": {
+    "context": "context.jsonld",
+    "vocab": "vocab.skos.jsonld",
+    "shapes": "shapes.ttl",
+    "thesaurus": "thesaurus.jsonld",
+    "thesaurus_local": "thesaurus-local.json",
+    "patterns": "patterns.json",
+    "intent_mappings": "intent-mappings.json",
+    "convergence": "convergence.json",
+    "decision_space": "decision-space.json"
+  },
+  "dc": {
+    "identifier": "ontology:iso20022-authored-demo:v0.1.0",
+    "title": "ISO 20022 Authored Demo Pack",
+    "creator": "Lane2 Ontology Team",
+    "issued": "2026-03-30",
+    "rights": "Lane2 internal demo",
+    "description": "Route A sample: authored ISO 20022 demo profile for comparative review against canonical extraction route."
+  }
+}

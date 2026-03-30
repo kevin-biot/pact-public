@@ -1,0 +1,17 @@
+{
+  "schema_version": "0.1",
+  "generated_at_utc": "2026-03-30T00:00:00Z",
+  "areas_filter": [
+    "pacs"
+  ],
+  "allowed_registration_statuses": [
+    "Registered"
+  ],
+  "version_policy": "latest-per-type",
+  "message_identifiers": [
+    "pacs.008.001.13"
+  ],
+  "message_types": [
+    "pacs.008"
+  ]
+}

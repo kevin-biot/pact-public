@@ -1,0 +1,16 @@
+{
+  "@context": {
+    "iso20022": "https://lane2.example/ontology/iso20022/"
+  },
+  "entries": [
+    {
+      "label": "pacs.008",
+      "alt": [
+        "credit transfer",
+        "fi to fi customer credit transfer",
+        "pacs 008"
+      ],
+      "concept_id": "iso20022:msgtype/pacs.008"
+    }
+  ]
+}

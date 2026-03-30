@@ -1,0 +1,75 @@
+{
+  "schema_version": "1.0",
+  "domain": "iso20022-authored-demo",
+  "patterns": [
+    {
+      "id": "iso20022_pacs002_intent",
+      "concept_uri": "iso20022:msgtype/pacs.002",
+      "entity_type": "intent_hint",
+      "regex": "(?i)\\b(payment\\s+status\\s+report|pacs\\.002)\\b",
+      "examples": [
+        "payment status report",
+        "pacs.002"
+      ]
+    },
+    {
+      "id": "iso20022_pain001_intent",
+      "concept_uri": "iso20022:msgtype/pain.001",
+      "entity_type": "intent_hint",
+      "regex": "(?i)\\b(customer\\s+credit\\s+transfer\\s+initiation|pain\\.001)\\b",
+      "examples": [
+        "customer credit transfer initiation",
+        "pain.001"
+      ]
+    },
+    {
+      "id": "iso20022_pacs008_intent",
+      "concept_uri": "iso20022:msgtype/pacs.008",
+      "entity_type": "intent_hint",
+      "regex": "(?i)\\b(credit\\s+transfer|pacs\\.008)\\b",
+      "examples": [
+        "credit transfer",
+        "pacs.008"
+      ]
+    },
+    {
+      "id": "iso20022_camt053_intent",
+      "concept_uri": "iso20022:msgtype/camt.053",
+      "entity_type": "intent_hint",
+      "regex": "(?i)\\b(account\\s+statement|camt\\.053)\\b",
+      "examples": [
+        "account statement",
+        "camt.053"
+      ]
+    },
+    {
+      "id": "iso20022_pain008_intent",
+      "concept_uri": "iso20022:msgtype/pain.008",
+      "entity_type": "intent_hint",
+      "regex": "(?i)\\b(direct\\s+debit\\s+initiation|pain\\.008)\\b",
+      "examples": [
+        "direct debit initiation",
+        "pain.008"
+      ]
+    },
+    {
+      "id": "iso20022_pacs004_intent",
+      "concept_uri": "iso20022:msgtype/pacs.004",
+      "entity_type": "intent_hint",
+      "regex": "(?i)\\b(return\\s+payment|pacs\\.004)\\b",
+      "examples": [
+        "return payment",
+        "pacs.004"
+      ]
+    },
+    {
+      "id": "iso20022_currency_eur",
+      "concept_uri": "iso20022:currency/EUR",
+      "entity_type": "currency",
+      "regex": "(?i)\\bEUR\\b",
+      "examples": [
+        "EUR"
+      ]
+    }
+  ]
+}

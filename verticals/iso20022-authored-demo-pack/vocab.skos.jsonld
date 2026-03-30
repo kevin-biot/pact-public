@@ -1,0 +1,405 @@
+{
+  "@context": {
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "iso20022": "https://lane2.example/ontology/iso20022/"
+  },
+  "@graph": [
+    {
+      "@id": "iso20022:family/pacs",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "pacs",
+      "skos:altLabel": ["clearing", "settlement", "clearing and settlement"]
+    },
+    {
+      "@id": "iso20022:family/pain",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "pain",
+      "skos:altLabel": ["payments initiation", "initiation"]
+    },
+    {
+      "@id": "iso20022:family/camt",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "camt",
+      "skos:altLabel": ["cash management", "account management", "reporting"]
+    },
+    {
+      "@id": "iso20022:family/acmt",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "acmt",
+      "skos:altLabel": ["account management", "account services"]
+    },
+
+    {
+      "@id": "iso20022:msgtype/pacs.002",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "pacs.002",
+      "skos:altLabel": ["payment status", "status report", "payment status report"],
+      "skos:broader": "iso20022:family/pacs"
+    },
+    {
+      "@id": "iso20022:msgtype/pacs.003",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "pacs.003",
+      "skos:altLabel": ["direct debit", "debit instruction", "customer direct debit"],
+      "skos:broader": "iso20022:family/pacs"
+    },
+    {
+      "@id": "iso20022:msgtype/pacs.004",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "pacs.004",
+      "skos:altLabel": ["payment return", "return payment", "returned payment"],
+      "skos:broader": "iso20022:family/pacs"
+    },
+    {
+      "@id": "iso20022:msgtype/pacs.008",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "pacs.008",
+      "skos:altLabel": ["credit transfer", "wire transfer", "bank transfer", "payment instruction"],
+      "skos:broader": "iso20022:family/pacs"
+    },
+    {
+      "@id": "iso20022:msgtype/pacs.009",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "pacs.009",
+      "skos:altLabel": ["cover payment", "institution transfer", "fi credit transfer"],
+      "skos:broader": "iso20022:family/pacs"
+    },
+    {
+      "@id": "iso20022:msgtype/pacs.028",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "pacs.028",
+      "skos:altLabel": ["status request", "payment status request", "where is my payment"],
+      "skos:broader": "iso20022:family/pacs"
+    },
+
+    {
+      "@id": "iso20022:msgtype/pain.001",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "pain.001",
+      "skos:altLabel": ["payment initiation", "send payment", "initiate transfer", "make payment"],
+      "skos:broader": "iso20022:family/pain"
+    },
+    {
+      "@id": "iso20022:msgtype/pain.002",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "pain.002",
+      "skos:altLabel": ["customer status", "payment confirmation", "payment receipt"],
+      "skos:broader": "iso20022:family/pain"
+    },
+    {
+      "@id": "iso20022:msgtype/pain.007",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "pain.007",
+      "skos:altLabel": ["payment reversal", "reverse payment", "cancel payment", "refund"],
+      "skos:broader": "iso20022:family/pain"
+    },
+    {
+      "@id": "iso20022:msgtype/pain.008",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "pain.008",
+      "skos:altLabel": ["direct debit request", "collect payment", "debit request"],
+      "skos:broader": "iso20022:family/pain"
+    },
+    {
+      "@id": "iso20022:msgtype/pain.013",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "pain.013",
+      "skos:altLabel": ["request to pay", "payment request", "rtp", "invoice payment"],
+      "skos:broader": "iso20022:family/pain"
+    },
+
+    {
+      "@id": "iso20022:msgtype/camt.052",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "camt.052",
+      "skos:altLabel": ["account report", "intraday report", "balance report"],
+      "skos:broader": "iso20022:family/camt"
+    },
+    {
+      "@id": "iso20022:msgtype/camt.053",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "camt.053",
+      "skos:altLabel": ["account statement", "bank statement", "statement of account"],
+      "skos:broader": "iso20022:family/camt"
+    },
+    {
+      "@id": "iso20022:msgtype/camt.054",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "camt.054",
+      "skos:altLabel": ["debit notification", "credit notification", "transaction notification"],
+      "skos:broader": "iso20022:family/camt"
+    },
+    {
+      "@id": "iso20022:msgtype/camt.055",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "camt.055",
+      "skos:altLabel": ["cancellation request", "cancel payment request", "stop payment"],
+      "skos:broader": "iso20022:family/camt"
+    },
+    {
+      "@id": "iso20022:msgtype/camt.056",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "camt.056",
+      "skos:altLabel": ["bank cancellation", "institution cancellation", "recall payment"],
+      "skos:broader": "iso20022:family/camt"
+    },
+    {
+      "@id": "iso20022:msgtype/camt.029",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "camt.029",
+      "skos:altLabel": ["investigation resolution", "case resolution", "dispute resolution"],
+      "skos:broader": "iso20022:family/camt"
+    },
+
+    {
+      "@id": "iso20022:msgtype/acmt.001",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "acmt.001",
+      "skos:altLabel": ["open account", "new account", "account opening"],
+      "skos:broader": "iso20022:family/acmt"
+    },
+    {
+      "@id": "iso20022:msgtype/acmt.007",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "acmt.007",
+      "skos:altLabel": ["amend account", "modify account", "update account"],
+      "skos:broader": "iso20022:family/acmt"
+    },
+
+    {
+      "@id": "iso20022:reason_category/account",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "account",
+      "skos:altLabel": ["account issue", "account problem", "account error"]
+    },
+    {
+      "@id": "iso20022:reason_category/agent",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "agent",
+      "skos:altLabel": ["agent issue", "bank issue", "institution error"]
+    },
+    {
+      "@id": "iso20022:reason_category/amount",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "amount",
+      "skos:altLabel": ["amount issue", "amount problem", "value error"]
+    },
+    {
+      "@id": "iso20022:reason_category/regulatory",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "regulatory",
+      "skos:altLabel": ["regulatory issue", "compliance issue", "legal rejection"]
+    },
+    {
+      "@id": "iso20022:reason_category/technical",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "technical",
+      "skos:altLabel": ["technical issue", "format error", "system error"]
+    },
+
+    {
+      "@id": "iso20022:reason/AC01",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "AC01",
+      "skos:altLabel": ["incorrect account", "wrong account number", "invalid account"],
+      "skos:broader": "iso20022:reason_category/account"
+    },
+    {
+      "@id": "iso20022:reason/AC04",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "AC04",
+      "skos:altLabel": ["closed account", "account closed", "account terminated"],
+      "skos:broader": "iso20022:reason_category/account"
+    },
+    {
+      "@id": "iso20022:reason/AC06",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "AC06",
+      "skos:altLabel": ["blocked account", "frozen account", "account suspended"],
+      "skos:broader": "iso20022:reason_category/account"
+    },
+    {
+      "@id": "iso20022:reason/AC13",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "AC13",
+      "skos:altLabel": ["invalid account type", "wrong account type"],
+      "skos:broader": "iso20022:reason_category/account"
+    },
+
+    {
+      "@id": "iso20022:reason/AG01",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "AG01",
+      "skos:altLabel": ["transaction forbidden", "not supported", "operation not allowed"],
+      "skos:broader": "iso20022:reason_category/agent"
+    },
+    {
+      "@id": "iso20022:reason/AG07",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "AG07",
+      "skos:altLabel": ["unsupported clearing", "clearing not available"],
+      "skos:broader": "iso20022:reason_category/agent"
+    },
+
+    {
+      "@id": "iso20022:reason/AM01",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "AM01",
+      "skos:altLabel": ["zero amount", "no amount", "amount is zero"],
+      "skos:broader": "iso20022:reason_category/amount"
+    },
+    {
+      "@id": "iso20022:reason/AM02",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "AM02",
+      "skos:altLabel": ["amount exceeded", "over limit", "amount not allowed", "limit exceeded"],
+      "skos:broader": "iso20022:reason_category/amount"
+    },
+    {
+      "@id": "iso20022:reason/AM04",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "AM04",
+      "skos:altLabel": ["insufficient funds", "not enough balance", "insufficient balance", "nsf"],
+      "skos:broader": "iso20022:reason_category/amount"
+    },
+    {
+      "@id": "iso20022:reason/AM05",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "AM05",
+      "skos:altLabel": ["duplicate", "duplicate payment", "already sent", "double payment"],
+      "skos:broader": "iso20022:reason_category/amount"
+    },
+    {
+      "@id": "iso20022:reason/AM09",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "AM09",
+      "skos:altLabel": ["wrong amount", "incorrect amount", "amount mismatch"],
+      "skos:broader": "iso20022:reason_category/amount"
+    },
+
+    {
+      "@id": "iso20022:reason/MD01",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "MD01",
+      "skos:altLabel": ["no mandate", "no authorization", "mandate missing"],
+      "skos:broader": "iso20022:reason_category/regulatory"
+    },
+    {
+      "@id": "iso20022:reason/MD07",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "MD07",
+      "skos:altLabel": ["customer deceased", "account holder deceased"],
+      "skos:broader": "iso20022:reason_category/regulatory"
+    },
+    {
+      "@id": "iso20022:reason/RR01",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "RR01",
+      "skos:altLabel": ["missing debtor info", "debtor not identified"],
+      "skos:broader": "iso20022:reason_category/regulatory"
+    },
+    {
+      "@id": "iso20022:reason/RR04",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "RR04",
+      "skos:altLabel": ["regulatory rejection", "compliance rejection", "sanctions", "aml rejection"],
+      "skos:broader": "iso20022:reason_category/regulatory"
+    },
+
+    {
+      "@id": "iso20022:reason/FF01",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "FF01",
+      "skos:altLabel": ["invalid format", "bad format", "format error"],
+      "skos:broader": "iso20022:reason_category/technical"
+    },
+    {
+      "@id": "iso20022:reason/RC01",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "RC01",
+      "skos:altLabel": ["wrong bic", "incorrect bic", "invalid bank code"],
+      "skos:broader": "iso20022:reason_category/technical"
+    },
+    {
+      "@id": "iso20022:reason/TM01",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "TM01",
+      "skos:altLabel": ["cut off", "too late", "after deadline", "past cutoff"],
+      "skos:broader": "iso20022:reason_category/technical"
+    },
+    {
+      "@id": "iso20022:reason/FOCR",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "FOCR",
+      "skos:altLabel": ["cancellation return", "recall accepted", "cancelled and returned"],
+      "skos:broader": "iso20022:reason_category/technical"
+    },
+
+    {
+      "@id": "iso20022:currency/EUR",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "EUR",
+      "skos:altLabel": ["euro", "euros", "\u20ac"]
+    },
+    {
+      "@id": "iso20022:currency/USD",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "USD",
+      "skos:altLabel": ["dollar", "dollars", "us dollar", "$"]
+    },
+    {
+      "@id": "iso20022:currency/GBP",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "GBP",
+      "skos:altLabel": ["pound", "pounds", "sterling", "\u00a3"]
+    },
+    {
+      "@id": "iso20022:currency/THB",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "THB",
+      "skos:altLabel": ["baht", "thai baht", "\u0e3f"]
+    },
+    {
+      "@id": "iso20022:currency/JPY",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "JPY",
+      "skos:altLabel": ["yen", "japanese yen", "\u00a5"]
+    },
+    {
+      "@id": "iso20022:currency/CHF",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "CHF",
+      "skos:altLabel": ["franc", "swiss franc"]
+    },
+    {
+      "@id": "iso20022:currency/CAD",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "CAD",
+      "skos:altLabel": ["canadian dollar", "cad"]
+    },
+    {
+      "@id": "iso20022:currency/AUD",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "AUD",
+      "skos:altLabel": ["australian dollar", "aud"]
+    },
+    {
+      "@id": "iso20022:currency/SGD",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "SGD",
+      "skos:altLabel": ["singapore dollar", "sgd"]
+    },
+    {
+      "@id": "iso20022:currency/HKD",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "HKD",
+      "skos:altLabel": ["hong kong dollar", "hkd"]
+    },
+    {
+      "@id": "iso20022:currency/CNY",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "CNY",
+      "skos:altLabel": ["yuan", "renminbi", "rmb", "chinese yuan"]
+    }
+  ]
+}

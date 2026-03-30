@@ -1,0 +1,1191 @@
+{
+  "schema_version": "1.0",
+  "domain": "iso20022-authored-demo",
+  "last_modified": "2026-03-25T23:00:00Z",
+  "concepts": [
+    {
+      "concept_id": "pacs",
+      "preferred_term": "pacs",
+      "synonyms": [
+        "clearing",
+        "settlement",
+        "clearing and settlement"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": null,
+      "narrower": [],
+      "source_refs": [],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "pain",
+      "preferred_term": "pain",
+      "synonyms": [
+        "payments initiation",
+        "initiation"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": null,
+      "narrower": [],
+      "source_refs": [],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "camt",
+      "preferred_term": "camt",
+      "synonyms": [
+        "cash management",
+        "account management",
+        "reporting"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": null,
+      "narrower": [],
+      "source_refs": [],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "acmt",
+      "preferred_term": "acmt",
+      "synonyms": [
+        "account management",
+        "account services"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": null,
+      "narrower": [],
+      "source_refs": [],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "pacs_002",
+      "preferred_term": "pacs.002",
+      "synonyms": [
+        "payment status",
+        "status report",
+        "payment status report"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "iso20022:family/pacs",
+      "narrower": [],
+      "source_refs": [],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "pacs_003",
+      "preferred_term": "pacs.003",
+      "synonyms": [
+        "direct debit",
+        "debit instruction",
+        "customer direct debit"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "iso20022:family/pacs",
+      "narrower": [],
+      "source_refs": [],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "pacs_004",
+      "preferred_term": "pacs.004",
+      "synonyms": [
+        "payment return",
+        "return payment",
+        "returned payment"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "iso20022:family/pacs",
+      "narrower": [],
+      "source_refs": [],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "pacs_008",
+      "preferred_term": "pacs.008",
+      "synonyms": [
+        "credit transfer",
+        "wire transfer",
+        "bank transfer",
+        "payment instruction"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "iso20022:family/pacs",
+      "narrower": [],
+      "source_refs": [],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "pacs_009",
+      "preferred_term": "pacs.009",
+      "synonyms": [
+        "cover payment",
+        "institution transfer",
+        "fi credit transfer"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "iso20022:family/pacs",
+      "narrower": [],
+      "source_refs": [],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "pacs_028",
+      "preferred_term": "pacs.028",
+      "synonyms": [
+        "status request",
+        "payment status request",
+        "where is my payment"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "iso20022:family/pacs",
+      "narrower": [],
+      "source_refs": [],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "pain_001",
+      "preferred_term": "pain.001",
+      "synonyms": [
+        "payment initiation",
+        "send payment",
+        "initiate transfer",
+        "make payment"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "iso20022:family/pain",
+      "narrower": [],
+      "source_refs": [],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "pain_002",
+      "preferred_term": "pain.002",
+      "synonyms": [
+        "customer status",
+        "payment confirmation",
+        "payment receipt"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "iso20022:family/pain",
+      "narrower": [],
+      "source_refs": [],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "pain_007",
+      "preferred_term": "pain.007",
+      "synonyms": [
+        "payment reversal",
+        "reverse payment",
+        "cancel payment",
+        "refund"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "iso20022:family/pain",
+      "narrower": [],
+      "source_refs": [],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "pain_008",
+      "preferred_term": "pain.008",
+      "synonyms": [
+        "direct debit request",
+        "collect payment",
+        "debit request"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "iso20022:family/pain",
+      "narrower": [],
+      "source_refs": [],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "pain_013",
+      "preferred_term": "pain.013",
+      "synonyms": [
+        "request to pay",
+        "payment request",
+        "rtp",
+        "invoice payment"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "iso20022:family/pain",
+      "narrower": [],
+      "source_refs": [],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "camt_052",
+      "preferred_term": "camt.052",
+      "synonyms": [
+        "account report",
+        "intraday report",
+        "balance report"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "iso20022:family/camt",
+      "narrower": [],
+      "source_refs": [],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "camt_053",
+      "preferred_term": "camt.053",
+      "synonyms": [
+        "account statement",
+        "bank statement",
+        "statement of account"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "iso20022:family/camt",
+      "narrower": [],
+      "source_refs": [],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "camt_054",
+      "preferred_term": "camt.054",
+      "synonyms": [
+        "debit notification",
+        "credit notification",
+        "transaction notification"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "iso20022:family/camt",
+      "narrower": [],
+      "source_refs": [],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "camt_055",
+      "preferred_term": "camt.055",
+      "synonyms": [
+        "cancellation request",
+        "cancel payment request",
+        "stop payment"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "iso20022:family/camt",
+      "narrower": [],
+      "source_refs": [],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "camt_056",
+      "preferred_term": "camt.056",
+      "synonyms": [
+        "bank cancellation",
+        "institution cancellation",
+        "recall payment"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "iso20022:family/camt",
+      "narrower": [],
+      "source_refs": [],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "camt_029",
+      "preferred_term": "camt.029",
+      "synonyms": [
+        "investigation resolution",
+        "case resolution",
+        "dispute resolution"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "iso20022:family/camt",
+      "narrower": [],
+      "source_refs": [],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "acmt_001",
+      "preferred_term": "acmt.001",
+      "synonyms": [
+        "open account",
+        "new account",
+        "account opening"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "iso20022:family/acmt",
+      "narrower": [],
+      "source_refs": [],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "acmt_007",
+      "preferred_term": "acmt.007",
+      "synonyms": [
+        "amend account",
+        "modify account",
+        "update account"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "iso20022:family/acmt",
+      "narrower": [],
+      "source_refs": [],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "account",
+      "preferred_term": "account",
+      "synonyms": [
+        "account issue",
+        "account problem",
+        "account error"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": null,
+      "narrower": [],
+      "source_refs": [],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "agent",
+      "preferred_term": "agent",
+      "synonyms": [
+        "agent issue",
+        "bank issue",
+        "institution error"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": null,
+      "narrower": [],
+      "source_refs": [],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "amount",
+      "preferred_term": "amount",
+      "synonyms": [
+        "amount issue",
+        "amount problem",
+        "value error",
+        "monetary amount",
+        "payment amount",
+        "transaction amount"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": null,
+      "narrower": [],
+      "source_refs": [],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "regulatory",
+      "preferred_term": "regulatory",
+      "synonyms": [
+        "regulatory issue",
+        "compliance issue",
+        "legal rejection"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": null,
+      "narrower": [],
+      "source_refs": [],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "technical",
+      "preferred_term": "technical",
+      "synonyms": [
+        "technical issue",
+        "format error",
+        "system error"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": null,
+      "narrower": [],
+      "source_refs": [],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "ac01",
+      "preferred_term": "AC01",
+      "synonyms": [
+        "incorrect account",
+        "wrong account number",
+        "invalid account"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "iso20022:reason_category/account",
+      "narrower": [],
+      "source_refs": [],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "ac04",
+      "preferred_term": "AC04",
+      "synonyms": [
+        "closed account",
+        "account closed",
+        "account terminated"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "iso20022:reason_category/account",
+      "narrower": [],
+      "source_refs": [],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "ac06",
+      "preferred_term": "AC06",
+      "synonyms": [
+        "blocked account",
+        "frozen account",
+        "account suspended"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "iso20022:reason_category/account",
+      "narrower": [],
+      "source_refs": [],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "ac13",
+      "preferred_term": "AC13",
+      "synonyms": [
+        "invalid account type",
+        "wrong account type"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "iso20022:reason_category/account",
+      "narrower": [],
+      "source_refs": [],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "ag01",
+      "preferred_term": "AG01",
+      "synonyms": [
+        "transaction forbidden",
+        "not supported",
+        "operation not allowed"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "iso20022:reason_category/agent",
+      "narrower": [],
+      "source_refs": [],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "ag07",
+      "preferred_term": "AG07",
+      "synonyms": [
+        "unsupported clearing",
+        "clearing not available"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "iso20022:reason_category/agent",
+      "narrower": [],
+      "source_refs": [],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "am01",
+      "preferred_term": "AM01",
+      "synonyms": [
+        "zero amount",
+        "no amount",
+        "amount is zero"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "iso20022:reason_category/amount",
+      "narrower": [],
+      "source_refs": [],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "am02",
+      "preferred_term": "AM02",
+      "synonyms": [
+        "amount exceeded",
+        "over limit",
+        "amount not allowed",
+        "limit exceeded"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "iso20022:reason_category/amount",
+      "narrower": [],
+      "source_refs": [],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "am04",
+      "preferred_term": "AM04",
+      "synonyms": [
+        "insufficient funds",
+        "not enough balance",
+        "insufficient balance",
+        "nsf"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "iso20022:reason_category/amount",
+      "narrower": [],
+      "source_refs": [],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "am05",
+      "preferred_term": "AM05",
+      "synonyms": [
+        "duplicate",
+        "duplicate payment",
+        "already sent",
+        "double payment"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "iso20022:reason_category/amount",
+      "narrower": [],
+      "source_refs": [],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "am09",
+      "preferred_term": "AM09",
+      "synonyms": [
+        "wrong amount",
+        "incorrect amount",
+        "amount mismatch"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "iso20022:reason_category/amount",
+      "narrower": [],
+      "source_refs": [],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "md01",
+      "preferred_term": "MD01",
+      "synonyms": [
+        "no mandate",
+        "no authorization",
+        "mandate missing"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "iso20022:reason_category/regulatory",
+      "narrower": [],
+      "source_refs": [],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "md07",
+      "preferred_term": "MD07",
+      "synonyms": [
+        "customer deceased",
+        "account holder deceased"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "iso20022:reason_category/regulatory",
+      "narrower": [],
+      "source_refs": [],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "rr01",
+      "preferred_term": "RR01",
+      "synonyms": [
+        "missing debtor info",
+        "debtor not identified"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "iso20022:reason_category/regulatory",
+      "narrower": [],
+      "source_refs": [],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "rr04",
+      "preferred_term": "RR04",
+      "synonyms": [
+        "regulatory rejection",
+        "compliance rejection",
+        "sanctions",
+        "aml rejection"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "iso20022:reason_category/regulatory",
+      "narrower": [],
+      "source_refs": [],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "ff01",
+      "preferred_term": "FF01",
+      "synonyms": [
+        "invalid format",
+        "bad format",
+        "format error"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "iso20022:reason_category/technical",
+      "narrower": [],
+      "source_refs": [],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "rc01",
+      "preferred_term": "RC01",
+      "synonyms": [
+        "wrong bic",
+        "incorrect bic",
+        "invalid bank code"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "iso20022:reason_category/technical",
+      "narrower": [],
+      "source_refs": [],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "tm01",
+      "preferred_term": "TM01",
+      "synonyms": [
+        "cut off",
+        "too late",
+        "after deadline",
+        "past cutoff"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "iso20022:reason_category/technical",
+      "narrower": [],
+      "source_refs": [],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "focr",
+      "preferred_term": "FOCR",
+      "synonyms": [
+        "cancellation return",
+        "recall accepted",
+        "cancelled and returned"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "iso20022:reason_category/technical",
+      "narrower": [],
+      "source_refs": [],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "eur",
+      "preferred_term": "EUR",
+      "synonyms": [
+        "euro",
+        "euros",
+        "\u20ac"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": null,
+      "narrower": [],
+      "source_refs": [],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "usd",
+      "preferred_term": "USD",
+      "synonyms": [
+        "dollar",
+        "dollars",
+        "us dollar",
+        "$"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": null,
+      "narrower": [],
+      "source_refs": [],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "gbp",
+      "preferred_term": "GBP",
+      "synonyms": [
+        "pound",
+        "pounds",
+        "sterling",
+        "\u00a3"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": null,
+      "narrower": [],
+      "source_refs": [],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "thb",
+      "preferred_term": "THB",
+      "synonyms": [
+        "baht",
+        "thai baht",
+        "\u0e3f"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": null,
+      "narrower": [],
+      "source_refs": [],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "jpy",
+      "preferred_term": "JPY",
+      "synonyms": [
+        "yen",
+        "japanese yen",
+        "\u00a5"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": null,
+      "narrower": [],
+      "source_refs": [],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "chf",
+      "preferred_term": "CHF",
+      "synonyms": [
+        "franc",
+        "swiss franc"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": null,
+      "narrower": [],
+      "source_refs": [],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "cad",
+      "preferred_term": "CAD",
+      "synonyms": [
+        "canadian dollar",
+        "cad"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": null,
+      "narrower": [],
+      "source_refs": [],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "aud",
+      "preferred_term": "AUD",
+      "synonyms": [
+        "australian dollar",
+        "aud"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": null,
+      "narrower": [],
+      "source_refs": [],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "sgd",
+      "preferred_term": "SGD",
+      "synonyms": [
+        "singapore dollar",
+        "sgd"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": null,
+      "narrower": [],
+      "source_refs": [],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "hkd",
+      "preferred_term": "HKD",
+      "synonyms": [
+        "hong kong dollar",
+        "hkd"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": null,
+      "narrower": [],
+      "source_refs": [],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "cny",
+      "preferred_term": "CNY",
+      "synonyms": [
+        "yuan",
+        "renminbi",
+        "rmb",
+        "chinese yuan"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": null,
+      "narrower": [],
+      "source_refs": [],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "iban",
+      "preferred_term": "IBAN",
+      "synonyms": [
+        "international bank account number"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": null,
+      "narrower": [],
+      "source_refs": [],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "bic",
+      "preferred_term": "BIC",
+      "synonyms": [
+        "bank identifier code",
+        "swift code",
+        "swift"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": null,
+      "narrower": [],
+      "source_refs": [],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "lei",
+      "preferred_term": "LEI",
+      "synonyms": [
+        "legal entity identifier"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": null,
+      "narrower": [],
+      "source_refs": [],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "currency_code",
+      "preferred_term": "Currency Code",
+      "synonyms": [
+        "iso 4217",
+        "currency"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": null,
+      "narrower": [],
+      "source_refs": [],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "reason_code",
+      "preferred_term": "Reason Code",
+      "synonyms": [
+        "rejection code",
+        "status code",
+        "return reason"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": null,
+      "narrower": [],
+      "source_refs": [],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "message_type",
+      "preferred_term": "Message Type",
+      "synonyms": [
+        "message identifier",
+        "msg type"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": null,
+      "narrower": [],
+      "source_refs": [],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "fibo:payment_netting_provision",
+      "preferred_term": "payment netting provision",
+      "synonyms": [],
+      "register_variants": {
+        "formal": "netting provision that specifies the way in which all payments in a single currency owed between parties will be aggregated for each traded currency per value date and within the larger aggregate obli"
+      },
+      "domain_vocabulary": {
+        "fibo": "payment netting provision"
+      },
+      "translations": {},
+      "broader": "https://spec.edmcouncil.org/fibo/ontology/FND/Agreements/Contracts/NettingProvision",
+      "narrower": [],
+      "source_refs": [
+        "fibo:fibo-contracts.rdf"
+      ],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "fibo:settlement_netting_provision",
+      "preferred_term": "settlement netting provision",
+      "synonyms": [],
+      "register_variants": {
+        "formal": "netting provision that specifies the way in which on a given payment date, each party will aggregate the amounts of a currency to be delivered by it, and only the difference in the aggregate amounts w"
+      },
+      "domain_vocabulary": {
+        "fibo": "settlement netting provision"
+      },
+      "translations": {},
+      "broader": "https://spec.edmcouncil.org/fibo/ontology/FND/Agreements/Contracts/NettingProvision",
+      "narrower": [],
+      "source_refs": [
+        "fibo:fibo-contracts.rdf"
+      ],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "fibo:derivative_settlement_terms",
+      "preferred_term": "derivative settlement terms",
+      "synonyms": [],
+      "register_variants": {
+        "formal": "settlement terms specifying additional details with respect to what is to be delivered when, to whom, under what conditions at the time of settlement"
+      },
+      "domain_vocabulary": {
+        "fibo": "derivative settlement terms"
+      },
+      "translations": {},
+      "broader": "https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/DerivativesBasics/DerivativeTerms",
+      "narrower": [],
+      "source_refs": [
+        "fibo:fibo-derivatives-basics.rdf"
+      ],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "fibo:derivatives_clearing_organization",
+      "preferred_term": "derivatives clearing organization",
+      "synonyms": [],
+      "register_variants": {
+        "formal": "clearing house that enables parties to substitute the credit of the DCO for the credit of the parties"
+      },
+      "domain_vocabulary": {
+        "fibo": "derivatives clearing organization"
+      },
+      "translations": {},
+      "broader": "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/FinancialServicesEntities/ClearingHouse",
+      "narrower": [],
+      "source_refs": [
+        "fibo:fibo-derivatives-basics.rdf"
+      ],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "fibo:settlement_terms",
+      "preferred_term": "settlement terms",
+      "synonyms": [],
+      "register_variants": {
+        "formal": "contract terms that define the commitment to and mechanism for settling one or more sides of a transaction"
+      },
+      "domain_vocabulary": {
+        "fibo": "settlement terms"
+      },
+      "translations": {},
+      "broader": "https://spec.edmcouncil.org/fibo/ontology/FND/Agreements/Contracts/ContractualCommitment",
+      "narrower": [],
+      "source_refs": [
+        "fibo:fibo-financial-products.rdf"
+      ],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "fibo:individual_payment_transaction",
+      "preferred_term": "individual payment transaction",
+      "synonyms": [],
+      "register_variants": {
+        "formal": "actual payment of principal, interest, fees, or other related amounts towards fulfillment of a debt obligation"
+      },
+      "domain_vocabulary": {
+        "fibo": "individual payment transaction"
+      },
+      "translations": {},
+      "broader": "https://spec.edmcouncil.org/fibo/ontology/FBC/ProductsAndServices/ClientsAndAccounts/IndividualTransaction",
+      "narrower": [],
+      "source_refs": [
+        "fibo:fibo-loans.rdf"
+      ],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "fibo:loan_payment_schedule",
+      "preferred_term": "loan payment schedule",
+      "synonyms": [],
+      "register_variants": {
+        "formal": "regular or explicit (ad hoc) payment schedule associated with a given loan-specific account"
+      },
+      "domain_vocabulary": {
+        "fibo": "loan payment schedule"
+      },
+      "translations": {},
+      "broader": "https://spec.edmcouncil.org/fibo/ontology/FND/ProductsAndServices/PaymentsAndSchedules/PaymentSchedule",
+      "narrower": [],
+      "source_refs": [
+        "fibo:fibo-loans.rdf"
+      ],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "fibo:payment_history",
+      "preferred_term": "payment history",
+      "synonyms": [],
+      "register_variants": {
+        "formal": "record of actual payments of principal, interest, and other related amounts made by a borrower to a lender or servicer in order to fulfill their re-payment obligation"
+      },
+      "domain_vocabulary": {
+        "fibo": "payment history"
+      },
+      "translations": {},
+      "broader": "https://spec.edmcouncil.org/fibo/ontology/FBC/ProductsAndServices/ClientsAndAccounts/TransactionRecord",
+      "narrower": [],
+      "source_refs": [
+        "fibo:fibo-loans.rdf"
+      ],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "fibo:pre_payment_terms",
+      "preferred_term": "pre-payment terms",
+      "synonyms": [],
+      "register_variants": {
+        "formal": "principal repayment terms related to payment of the loan prior to maturity"
+      },
+      "domain_vocabulary": {
+        "fibo": "pre-payment terms"
+      },
+      "translations": {},
+      "broader": "https://spec.edmcouncil.org/fibo/ontology/FBC/DebtAndEquities/Debt/PrincipalRepaymentTerms",
+      "narrower": [],
+      "source_refs": [
+        "fibo:fibo-loans.rdf"
+      ],
+      "ner_provenance": null
+    }
+  ]
+}

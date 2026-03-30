@@ -1,0 +1,1070 @@
+{
+  "schema_version": "0.1",
+  "generated_at_utc": "2026-03-30T18:50:32Z",
+  "domain": "iso20022",
+  "source": "ISO 20022 e-Repository messageDefinitionIdentifier extraction",
+  "areas_filter": [
+    "camt",
+    "pacs",
+    "pain"
+  ],
+  "allowed_registration_statuses": [
+    "Registered"
+  ],
+  "version_policy": "latest-per-type",
+  "concepts": [
+    {
+      "id": "iso20022:msgtype/camt.003",
+      "label": "camt.003",
+      "tags": [
+        "iso20022",
+        "msgtype",
+        "camt"
+      ]
+    },
+    {
+      "id": "iso20022:msgtype/camt.004",
+      "label": "camt.004",
+      "tags": [
+        "iso20022",
+        "msgtype",
+        "camt"
+      ]
+    },
+    {
+      "id": "iso20022:msgtype/camt.005",
+      "label": "camt.005",
+      "tags": [
+        "iso20022",
+        "msgtype",
+        "camt"
+      ]
+    },
+    {
+      "id": "iso20022:msgtype/camt.006",
+      "label": "camt.006",
+      "tags": [
+        "iso20022",
+        "msgtype",
+        "camt"
+      ]
+    },
+    {
+      "id": "iso20022:msgtype/camt.007",
+      "label": "camt.007",
+      "tags": [
+        "iso20022",
+        "msgtype",
+        "camt"
+      ]
+    },
+    {
+      "id": "iso20022:msgtype/camt.008",
+      "label": "camt.008",
+      "tags": [
+        "iso20022",
+        "msgtype",
+        "camt"
+      ]
+    },
+    {
+      "id": "iso20022:msgtype/camt.009",
+      "label": "camt.009",
+      "tags": [
+        "iso20022",
+        "msgtype",
+        "camt"
+      ]
+    },
+    {
+      "id": "iso20022:msgtype/camt.010",
+      "label": "camt.010",
+      "tags": [
+        "iso20022",
+        "msgtype",
+        "camt"
+      ]
+    },
+    {
+      "id": "iso20022:msgtype/camt.011",
+      "label": "camt.011",
+      "tags": [
+        "iso20022",
+        "msgtype",
+        "camt"
+      ]
+    },
+    {
+      "id": "iso20022:msgtype/camt.012",
+      "label": "camt.012",
+      "tags": [
+        "iso20022",
+        "msgtype",
+        "camt"
+      ]
+    },
+    {
+      "id": "iso20022:msgtype/camt.013",
+      "label": "camt.013",
+      "tags": [
+        "iso20022",
+        "msgtype",
+        "camt"
+      ]
+    },
+    {
+      "id": "iso20022:msgtype/camt.014",
+      "label": "camt.014",
+      "tags": [
+        "iso20022",
+        "msgtype",
+        "camt"
+      ]
+    },
+    {
+      "id": "iso20022:msgtype/camt.015",
+      "label": "camt.015",
+      "tags": [
+        "iso20022",
+        "msgtype",
+        "camt"
+      ]
+    },
+    {
+      "id": "iso20022:msgtype/camt.016",
+      "label": "camt.016",
+      "tags": [
+        "iso20022",
+        "msgtype",
+        "camt"
+      ]
+    },
+    {
+      "id": "iso20022:msgtype/camt.017",
+      "label": "camt.017",
+      "tags": [
+        "iso20022",
+        "msgtype",
+        "camt"
+      ]
+    },
+    {
+      "id": "iso20022:msgtype/camt.018",
+      "label": "camt.018",
+      "tags": [
+        "iso20022",
+        "msgtype",
+        "camt"
+      ]
+    },
+    {
+      "id": "iso20022:msgtype/camt.019",
+      "label": "camt.019",
+      "tags": [
+        "iso20022",
+        "msgtype",
+        "camt"
+      ]
+    },
+    {
+      "id": "iso20022:msgtype/camt.020",
+      "label": "camt.020",
+      "tags": [
+        "iso20022",
+        "msgtype",
+        "camt"
+      ]
+    },
+    {
+      "id": "iso20022:msgtype/camt.021",
+      "label": "camt.021",
+      "tags": [
+        "iso20022",
+        "msgtype",
+        "camt"
+      ]
+    },
+    {
+      "id": "iso20022:msgtype/camt.023",
+      "label": "camt.023",
+      "tags": [
+        "iso20022",
+        "msgtype",
+        "camt"
+      ]
+    },
+    {
+      "id": "iso20022:msgtype/camt.024",
+      "label": "camt.024",
+      "tags": [
+        "iso20022",
+        "msgtype",
+        "camt"
+      ]
+    },
+    {
+      "id": "iso20022:msgtype/camt.025",
+      "label": "camt.025",
+      "tags": [
+        "iso20022",
+        "msgtype",
+        "camt"
+      ]
+    },
+    {
+      "id": "iso20022:msgtype/camt.026",
+      "label": "camt.026",
+      "tags": [
+        "iso20022",
+        "msgtype",
+        "camt"
+      ]
+    },
+    {
+      "id": "iso20022:msgtype/camt.027",
+      "label": "camt.027",
+      "tags": [
+        "iso20022",
+        "msgtype",
+        "camt"
+      ]
+    },
+    {
+      "id": "iso20022:msgtype/camt.028",
+      "label": "camt.028",
+      "tags": [
+        "iso20022",
+        "msgtype",
+        "camt"
+      ]
+    },
+    {
+      "id": "iso20022:msgtype/camt.029",
+      "label": "camt.029",
+      "tags": [
+        "iso20022",
+        "msgtype",
+        "camt"
+      ]
+    },
+    {
+      "id": "iso20022:msgtype/camt.030",
+      "label": "camt.030",
+      "tags": [
+        "iso20022",
+        "msgtype",
+        "camt"
+      ]
+    },
+    {
+      "id": "iso20022:msgtype/camt.031",
+      "label": "camt.031",
+      "tags": [
+        "iso20022",
+        "msgtype",
+        "camt"
+      ]
+    },
+    {
+      "id": "iso20022:msgtype/camt.032",
+      "label": "camt.032",
+      "tags": [
+        "iso20022",
+        "msgtype",
+        "camt"
+      ]
+    },
+    {
+      "id": "iso20022:msgtype/camt.033",
+      "label": "camt.033",
+      "tags": [
+        "iso20022",
+        "msgtype",
+        "camt"
+      ]
+    },
+    {
+      "id": "iso20022:msgtype/camt.034",
+      "label": "camt.034",
+      "tags": [
+        "iso20022",
+        "msgtype",
+        "camt"
+      ]
+    },
+    {
+      "id": "iso20022:msgtype/camt.035",
+      "label": "camt.035",
+      "tags": [
+        "iso20022",
+        "msgtype",
+        "camt"
+      ]
+    },
+    {
+      "id": "iso20022:msgtype/camt.036",
+      "label": "camt.036",
+      "tags": [
+        "iso20022",
+        "msgtype",
+        "camt"
+      ]
+    },
+    {
+      "id": "iso20022:msgtype/camt.037",
+      "label": "camt.037",
+      "tags": [
+        "iso20022",
+        "msgtype",
+        "camt"
+      ]
+    },
+    {
+      "id": "iso20022:msgtype/camt.038",
+      "label": "camt.038",
+      "tags": [
+        "iso20022",
+        "msgtype",
+        "camt"
+      ]
+    },
+    {
+      "id": "iso20022:msgtype/camt.039",
+      "label": "camt.039",
+      "tags": [
+        "iso20022",
+        "msgtype",
+        "camt"
+      ]
+    },
+    {
+      "id": "iso20022:msgtype/camt.040",
+      "label": "camt.040",
+      "tags": [
+        "iso20022",
+        "msgtype",
+        "camt"
+      ]
+    },
+    {
+      "id": "iso20022:msgtype/camt.041",
+      "label": "camt.041",
+      "tags": [
+        "iso20022",
+        "msgtype",
+        "camt"
+      ]
+    },
+    {
+      "id": "iso20022:msgtype/camt.042",
+      "label": "camt.042",
+      "tags": [
+        "iso20022",
+        "msgtype",
+        "camt"
+      ]
+    },
+    {
+      "id": "iso20022:msgtype/camt.043",
+      "label": "camt.043",
+      "tags": [
+        "iso20022",
+        "msgtype",
+        "camt"
+      ]
+    },
+    {
+      "id": "iso20022:msgtype/camt.044",
+      "label": "camt.044",
+      "tags": [
+        "iso20022",
+        "msgtype",
+        "camt"
+      ]
+    },
+    {
+      "id": "iso20022:msgtype/camt.045",
+      "label": "camt.045",
+      "tags": [
+        "iso20022",
+        "msgtype",
+        "camt"
+      ]
+    },
+    {
+      "id": "iso20022:msgtype/camt.046",
+      "label": "camt.046",
+      "tags": [
+        "iso20022",
+        "msgtype",
+        "camt"
+      ]
+    },
+    {
+      "id": "iso20022:msgtype/camt.047",
+      "label": "camt.047",
+      "tags": [
+        "iso20022",
+        "msgtype",
+        "camt"
+      ]
+    },
+    {
+      "id": "iso20022:msgtype/camt.048",
+      "label": "camt.048",
+      "tags": [
+        "iso20022",
+        "msgtype",
+        "camt"
+      ]
+    },
+    {
+      "id": "iso20022:msgtype/camt.049",
+      "label": "camt.049",
+      "tags": [
+        "iso20022",
+        "msgtype",
+        "camt"
+      ]
+    },
+    {
+      "id": "iso20022:msgtype/camt.050",
+      "label": "camt.050",
+      "tags": [
+        "iso20022",
+        "msgtype",
+        "camt"
+      ]
+    },
+    {
+      "id": "iso20022:msgtype/camt.051",
+      "label": "camt.051",
+      "tags": [
+        "iso20022",
+        "msgtype",
+        "camt"
+      ]
+    },
+    {
+      "id": "iso20022:msgtype/camt.052",
+      "label": "camt.052",
+      "tags": [
+        "iso20022",
+        "msgtype",
+        "camt"
+      ]
+    },
+    {
+      "id": "iso20022:msgtype/camt.053",
+      "label": "camt.053",
+      "tags": [
+        "iso20022",
+        "msgtype",
+        "camt"
+      ]
+    },
+    {
+      "id": "iso20022:msgtype/camt.054",
+      "label": "camt.054",
+      "tags": [
+        "iso20022",
+        "msgtype",
+        "camt"
+      ]
+    },
+    {
+      "id": "iso20022:msgtype/camt.055",
+      "label": "camt.055",
+      "tags": [
+        "iso20022",
+        "msgtype",
+        "camt"
+      ]
+    },
+    {
+      "id": "iso20022:msgtype/camt.056",
+      "label": "camt.056",
+      "tags": [
+        "iso20022",
+        "msgtype",
+        "camt"
+      ]
+    },
+    {
+      "id": "iso20022:msgtype/camt.057",
+      "label": "camt.057",
+      "tags": [
+        "iso20022",
+        "msgtype",
+        "camt"
+      ]
+    },
+    {
+      "id": "iso20022:msgtype/camt.058",
+      "label": "camt.058",
+      "tags": [
+        "iso20022",
+        "msgtype",
+        "camt"
+      ]
+    },
+    {
+      "id": "iso20022:msgtype/camt.059",
+      "label": "camt.059",
+      "tags": [
+        "iso20022",
+        "msgtype",
+        "camt"
+      ]
+    },
+    {
+      "id": "iso20022:msgtype/camt.060",
+      "label": "camt.060",
+      "tags": [
+        "iso20022",
+        "msgtype",
+        "camt"
+      ]
+    },
+    {
+      "id": "iso20022:msgtype/camt.061",
+      "label": "camt.061",
+      "tags": [
+        "iso20022",
+        "msgtype",
+        "camt"
+      ]
+    },
+    {
+      "id": "iso20022:msgtype/camt.062",
+      "label": "camt.062",
+      "tags": [
+        "iso20022",
+        "msgtype",
+        "camt"
+      ]
+    },
+    {
+      "id": "iso20022:msgtype/camt.063",
+      "label": "camt.063",
+      "tags": [
+        "iso20022",
+        "msgtype",
+        "camt"
+      ]
+    },
+    {
+      "id": "iso20022:msgtype/camt.064",
+      "label": "camt.064",
+      "tags": [
+        "iso20022",
+        "msgtype",
+        "camt"
+      ]
+    },
+    {
+      "id": "iso20022:msgtype/camt.065",
+      "label": "camt.065",
+      "tags": [
+        "iso20022",
+        "msgtype",
+        "camt"
+      ]
+    },
+    {
+      "id": "iso20022:msgtype/camt.066",
+      "label": "camt.066",
+      "tags": [
+        "iso20022",
+        "msgtype",
+        "camt"
+      ]
+    },
+    {
+      "id": "iso20022:msgtype/camt.067",
+      "label": "camt.067",
+      "tags": [
+        "iso20022",
+        "msgtype",
+        "camt"
+      ]
+    },
+    {
+      "id": "iso20022:msgtype/camt.068",
+      "label": "camt.068",
+      "tags": [
+        "iso20022",
+        "msgtype",
+        "camt"
+      ]
+    },
+    {
+      "id": "iso20022:msgtype/camt.069",
+      "label": "camt.069",
+      "tags": [
+        "iso20022",
+        "msgtype",
+        "camt"
+      ]
+    },
+    {
+      "id": "iso20022:msgtype/camt.070",
+      "label": "camt.070",
+      "tags": [
+        "iso20022",
+        "msgtype",
+        "camt"
+      ]
+    },
+    {
+      "id": "iso20022:msgtype/camt.071",
+      "label": "camt.071",
+      "tags": [
+        "iso20022",
+        "msgtype",
+        "camt"
+      ]
+    },
+    {
+      "id": "iso20022:msgtype/camt.072",
+      "label": "camt.072",
+      "tags": [
+        "iso20022",
+        "msgtype",
+        "camt"
+      ]
+    },
+    {
+      "id": "iso20022:msgtype/camt.073",
+      "label": "camt.073",
+      "tags": [
+        "iso20022",
+        "msgtype",
+        "camt"
+      ]
+    },
+    {
+      "id": "iso20022:msgtype/camt.074",
+      "label": "camt.074",
+      "tags": [
+        "iso20022",
+        "msgtype",
+        "camt"
+      ]
+    },
+    {
+      "id": "iso20022:msgtype/camt.075",
+      "label": "camt.075",
+      "tags": [
+        "iso20022",
+        "msgtype",
+        "camt"
+      ]
+    },
+    {
+      "id": "iso20022:msgtype/camt.078",
+      "label": "camt.078",
+      "tags": [
+        "iso20022",
+        "msgtype",
+        "camt"
+      ]
+    },
+    {
+      "id": "iso20022:msgtype/camt.079",
+      "label": "camt.079",
+      "tags": [
+        "iso20022",
+        "msgtype",
+        "camt"
+      ]
+    },
+    {
+      "id": "iso20022:msgtype/camt.080",
+      "label": "camt.080",
+      "tags": [
+        "iso20022",
+        "msgtype",
+        "camt"
+      ]
+    },
+    {
+      "id": "iso20022:msgtype/camt.081",
+      "label": "camt.081",
+      "tags": [
+        "iso20022",
+        "msgtype",
+        "camt"
+      ]
+    },
+    {
+      "id": "iso20022:msgtype/camt.082",
+      "label": "camt.082",
+      "tags": [
+        "iso20022",
+        "msgtype",
+        "camt"
+      ]
+    },
+    {
+      "id": "iso20022:msgtype/camt.083",
+      "label": "camt.083",
+      "tags": [
+        "iso20022",
+        "msgtype",
+        "camt"
+      ]
+    },
+    {
+      "id": "iso20022:msgtype/camt.084",
+      "label": "camt.084",
+      "tags": [
+        "iso20022",
+        "msgtype",
+        "camt"
+      ]
+    },
+    {
+      "id": "iso20022:msgtype/camt.085",
+      "label": "camt.085",
+      "tags": [
+        "iso20022",
+        "msgtype",
+        "camt"
+      ]
+    },
+    {
+      "id": "iso20022:msgtype/camt.086",
+      "label": "camt.086",
+      "tags": [
+        "iso20022",
+        "msgtype",
+        "camt"
+      ]
+    },
+    {
+      "id": "iso20022:msgtype/camt.087",
+      "label": "camt.087",
+      "tags": [
+        "iso20022",
+        "msgtype",
+        "camt"
+      ]
+    },
+    {
+      "id": "iso20022:msgtype/camt.088",
+      "label": "camt.088",
+      "tags": [
+        "iso20022",
+        "msgtype",
+        "camt"
+      ]
+    },
+    {
+      "id": "iso20022:msgtype/camt.101",
+      "label": "camt.101",
+      "tags": [
+        "iso20022",
+        "msgtype",
+        "camt"
+      ]
+    },
+    {
+      "id": "iso20022:msgtype/camt.102",
+      "label": "camt.102",
+      "tags": [
+        "iso20022",
+        "msgtype",
+        "camt"
+      ]
+    },
+    {
+      "id": "iso20022:msgtype/camt.103",
+      "label": "camt.103",
+      "tags": [
+        "iso20022",
+        "msgtype",
+        "camt"
+      ]
+    },
+    {
+      "id": "iso20022:msgtype/camt.104",
+      "label": "camt.104",
+      "tags": [
+        "iso20022",
+        "msgtype",
+        "camt"
+      ]
+    },
+    {
+      "id": "iso20022:msgtype/camt.105",
+      "label": "camt.105",
+      "tags": [
+        "iso20022",
+        "msgtype",
+        "camt"
+      ]
+    },
+    {
+      "id": "iso20022:msgtype/camt.106",
+      "label": "camt.106",
+      "tags": [
+        "iso20022",
+        "msgtype",
+        "camt"
+      ]
+    },
+    {
+      "id": "iso20022:msgtype/camt.107",
+      "label": "camt.107",
+      "tags": [
+        "iso20022",
+        "msgtype",
+        "camt"
+      ]
+    },
+    {
+      "id": "iso20022:msgtype/camt.108",
+      "label": "camt.108",
+      "tags": [
+        "iso20022",
+        "msgtype",
+        "camt"
+      ]
+    },
+    {
+      "id": "iso20022:msgtype/camt.109",
+      "label": "camt.109",
+      "tags": [
+        "iso20022",
+        "msgtype",
+        "camt"
+      ]
+    },
+    {
+      "id": "iso20022:msgtype/camt.110",
+      "label": "camt.110",
+      "tags": [
+        "iso20022",
+        "msgtype",
+        "camt"
+      ]
+    },
+    {
+      "id": "iso20022:msgtype/camt.111",
+      "label": "camt.111",
+      "tags": [
+        "iso20022",
+        "msgtype",
+        "camt"
+      ]
+    },
+    {
+      "id": "iso20022:msgtype/pacs.002",
+      "label": "pacs.002",
+      "tags": [
+        "iso20022",
+        "msgtype",
+        "pacs"
+      ]
+    },
+    {
+      "id": "iso20022:msgtype/pacs.003",
+      "label": "pacs.003",
+      "tags": [
+        "iso20022",
+        "msgtype",
+        "pacs"
+      ]
+    },
+    {
+      "id": "iso20022:msgtype/pacs.004",
+      "label": "pacs.004",
+      "tags": [
+        "iso20022",
+        "msgtype",
+        "pacs"
+      ]
+    },
+    {
+      "id": "iso20022:msgtype/pacs.006",
+      "label": "pacs.006",
+      "tags": [
+        "iso20022",
+        "msgtype",
+        "pacs"
+      ]
+    },
+    {
+      "id": "iso20022:msgtype/pacs.007",
+      "label": "pacs.007",
+      "tags": [
+        "iso20022",
+        "msgtype",
+        "pacs"
+      ]
+    },
+    {
+      "id": "iso20022:msgtype/pacs.008",
+      "label": "pacs.008",
+      "tags": [
+        "iso20022",
+        "msgtype",
+        "pacs"
+      ]
+    },
+    {
+      "id": "iso20022:msgtype/pacs.009",
+      "label": "pacs.009",
+      "tags": [
+        "iso20022",
+        "msgtype",
+        "pacs"
+      ]
+    },
+    {
+      "id": "iso20022:msgtype/pacs.010",
+      "label": "pacs.010",
+      "tags": [
+        "iso20022",
+        "msgtype",
+        "pacs"
+      ]
+    },
+    {
+      "id": "iso20022:msgtype/pacs.028",
+      "label": "pacs.028",
+      "tags": [
+        "iso20022",
+        "msgtype",
+        "pacs"
+      ]
+    },
+    {
+      "id": "iso20022:msgtype/pacs.029",
+      "label": "pacs.029",
+      "tags": [
+        "iso20022",
+        "msgtype",
+        "pacs"
+      ]
+    },
+    {
+      "id": "iso20022:msgtype/pain.001",
+      "label": "pain.001",
+      "tags": [
+        "iso20022",
+        "msgtype",
+        "pain"
+      ]
+    },
+    {
+      "id": "iso20022:msgtype/pain.002",
+      "label": "pain.002",
+      "tags": [
+        "iso20022",
+        "msgtype",
+        "pain"
+      ]
+    },
+    {
+      "id": "iso20022:msgtype/pain.006",
+      "label": "pain.006",
+      "tags": [
+        "iso20022",
+        "msgtype",
+        "pain"
+      ]
+    },
+    {
+      "id": "iso20022:msgtype/pain.007",
+      "label": "pain.007",
+      "tags": [
+        "iso20022",
+        "msgtype",
+        "pain"
+      ]
+    },
+    {
+      "id": "iso20022:msgtype/pain.008",
+      "label": "pain.008",
+      "tags": [
+        "iso20022",
+        "msgtype",
+        "pain"
+      ]
+    },
+    {
+      "id": "iso20022:msgtype/pain.009",
+      "label": "pain.009",
+      "tags": [
+        "iso20022",
+        "msgtype",
+        "pain"
+      ]
+    },
+    {
+      "id": "iso20022:msgtype/pain.010",
+      "label": "pain.010",
+      "tags": [
+        "iso20022",
+        "msgtype",
+        "pain"
+      ]
+    },
+    {
+      "id": "iso20022:msgtype/pain.011",
+      "label": "pain.011",
+      "tags": [
+        "iso20022",
+        "msgtype",
+        "pain"
+      ]
+    },
+    {
+      "id": "iso20022:msgtype/pain.012",
+      "label": "pain.012",
+      "tags": [
+        "iso20022",
+        "msgtype",
+        "pain"
+      ]
+    },
+    {
+      "id": "iso20022:msgtype/pain.013",
+      "label": "pain.013",
+      "tags": [
+        "iso20022",
+        "msgtype",
+        "pain"
+      ]
+    },
+    {
+      "id": "iso20022:msgtype/pain.014",
+      "label": "pain.014",
+      "tags": [
+        "iso20022",
+        "msgtype",
+        "pain"
+      ]
+    },
+    {
+      "id": "iso20022:msgtype/pain.017",
+      "label": "pain.017",
+      "tags": [
+        "iso20022",
+        "msgtype",
+        "pain"
+      ]
+    },
+    {
+      "id": "iso20022:msgtype/pain.018",
+      "label": "pain.018",
+      "tags": [
+        "iso20022",
+        "msgtype",
+        "pain"
+      ]
+    }
+  ]
+}

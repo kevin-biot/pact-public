@@ -1,0 +1,22 @@
+{
+  "schema_version": "1.0",
+  "domain": "iso20022-canonical-demo",
+  "thresholds": {
+    "overall_min_pass_rate": 1.0,
+    "require_critical_pass": true
+  },
+  "cases": [
+    {
+      "id": "iso20022-canonical-pacs008-code",
+      "phrase": "pacs.008",
+      "expect": "iso20022.payment.credit_transfer.v1",
+      "critical": true
+    },
+    {
+      "id": "iso20022-canonical-pacs008-phrase",
+      "phrase": "credit transfer",
+      "expect": "iso20022.payment.credit_transfer.v1",
+      "critical": true
+    }
+  ]
+}

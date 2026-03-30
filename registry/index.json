@@ -31,6 +31,22 @@
       "trust_tier": "Tier0",
       "version": "v1.0.0",
       "path": "verticals/iso20022-reference-pack"
+    },
+    {
+      "snapshot_id": "ontology:iso20022-authored-demo:v0.1.0",
+      "domain": "iso20022-authored-demo",
+      "provider_id": "ontology:lane2:iso20022-authored-demo",
+      "trust_tier": "Tier1",
+      "version": "0.1.0",
+      "path": "verticals/iso20022-authored-demo-pack"
+    },
+    {
+      "snapshot_id": "ontology:iso20022-canonical-demo:v0.2.0",
+      "domain": "iso20022-canonical-demo",
+      "provider_id": "ontology:lane2:iso20022-canonical-demo",
+      "trust_tier": "Tier1",
+      "version": "0.2.0",
+      "path": "verticals/iso20022-canonical-demo-pack"
     }
   ]
 }

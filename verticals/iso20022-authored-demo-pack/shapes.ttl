@@ -1,0 +1,308 @@
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix iso: <https://lane2.example/ontology/iso20022/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# -------------------------------------------------------------------
+# ISO 20022 SHACL shapes — structural validation only.
+# Behavioral/quality validation is handled by DOP rubrics (ADR-015).
+# This profile is intentionally compact and review-friendly.
+# -------------------------------------------------------------------
+
+# --- pacs.008: FI-to-FI Customer Credit Transfer ---
+iso:CreditTransferShape
+  a sh:NodeShape ;
+  sh:targetClass iso:msgtype\/pacs.008 ;
+  sh:property [
+    sh:path iso:currency ;
+    sh:datatype xsd:string ;
+    sh:in ( "EUR" "USD" "GBP" "THB" "JPY" "CHF" "CAD" "AUD" "SGD" "HKD" "CNY" ) ;
+    sh:minCount 1 ;
+    sh:maxCount 1 ;
+    sh:message "currency must be a supported ISO 4217 code"
+  ] ;
+  sh:property [
+    sh:path iso:amount ;
+    sh:datatype xsd:decimal ;
+    sh:minInclusive 0.01 ;
+    sh:minCount 1 ;
+    sh:maxCount 1 ;
+    sh:message "amount must be a positive decimal"
+  ] ;
+  sh:property [
+    sh:path iso:messageId ;
+    sh:datatype xsd:string ;
+    sh:pattern "^[A-Za-z0-9][A-Za-z0-9-]{5,34}$" ;
+    sh:minCount 1 ;
+    sh:maxCount 1 ;
+    sh:message "messageId must be present and use a compact alphanumeric token format"
+  ] ;
+  sh:property [
+    sh:path iso:endToEndId ;
+    sh:datatype xsd:string ;
+    sh:pattern "^[A-Za-z0-9][A-Za-z0-9-]{5,34}$" ;
+    sh:minCount 1 ;
+    sh:maxCount 1 ;
+    sh:message "endToEndId must be present for credit transfer tracking"
+  ] ;
+  sh:property [
+    sh:path iso:debtorIBAN ;
+    sh:datatype xsd:string ;
+    sh:pattern "^[A-Z]{2}\\d{2}[A-Z0-9]{4,30}$" ;
+    sh:minCount 1 ;
+    sh:maxCount 1 ;
+    sh:message "debtorIBAN must be a valid IBAN"
+  ] ;
+  sh:property [
+    sh:path iso:creditorIBAN ;
+    sh:datatype xsd:string ;
+    sh:pattern "^[A-Z]{2}\\d{2}[A-Z0-9]{4,30}$" ;
+    sh:minCount 1 ;
+    sh:maxCount 1 ;
+    sh:message "creditorIBAN must be a valid IBAN"
+  ] ;
+  sh:property [
+    sh:path iso:debtorBIC ;
+    sh:datatype xsd:string ;
+    sh:pattern "^[A-Z]{4}[A-Z]{2}[A-Z0-9]{2}([A-Z0-9]{3})?$" ;
+    sh:minCount 1 ;
+    sh:maxCount 1 ;
+    sh:message "debtorBIC must be a valid BIC/SWIFT code"
+  ] ;
+  sh:property [
+    sh:path iso:creditorBIC ;
+    sh:datatype xsd:string ;
+    sh:pattern "^[A-Z]{4}[A-Z]{2}[A-Z0-9]{2}([A-Z0-9]{3})?$" ;
+    sh:minCount 1 ;
+    sh:maxCount 1 ;
+    sh:message "creditorBIC must be a valid BIC/SWIFT code"
+  ] .
+
+# --- pacs.002: FI-to-FI Payment Status Report ---
+iso:PaymentStatusReportShape
+  a sh:NodeShape ;
+  sh:targetClass iso:msgtype\/pacs.002 ;
+  sh:property [
+    sh:path iso:reasonCode ;
+    sh:datatype xsd:string ;
+    sh:pattern "^[A-Z]{2,4}\\d{2}$" ;
+    sh:minCount 1 ;
+    sh:maxCount 1 ;
+    sh:message "reasonCode must match ISO 20022 format (2-4 letters + 2 digits)"
+  ] ;
+  sh:property [
+    sh:path iso:originalMessageType ;
+    sh:datatype xsd:string ;
+    sh:pattern "^(pacs|pain|camt|acmt)\\.\\d{3}$" ;
+    sh:minCount 1 ;
+    sh:maxCount 1 ;
+    sh:message "originalMessageType must be a valid ISO 20022 message type"
+  ] ;
+  sh:property [
+    sh:path iso:originalMessageId ;
+    sh:datatype xsd:string ;
+    sh:pattern "^[A-Za-z0-9][A-Za-z0-9-]{5,34}$" ;
+    sh:minCount 1 ;
+    sh:maxCount 1 ;
+    sh:message "originalMessageId is required to correlate with the original payment"
+  ] ;
+  sh:property [
+    sh:path iso:transactionStatus ;
+    sh:datatype xsd:string ;
+    sh:in ( "ACSP" "ACSC" "RJCT" "PDNG" ) ;
+    sh:minCount 1 ;
+    sh:maxCount 1 ;
+    sh:message "transactionStatus must be one of ACSP, ACSC, RJCT, PDNG"
+  ] .
+
+# --- pain.001: Customer Credit Transfer Initiation ---
+iso:PaymentInitiationShape
+  a sh:NodeShape ;
+  sh:targetClass iso:msgtype\/pain.001 ;
+  sh:property [
+    sh:path iso:currency ;
+    sh:datatype xsd:string ;
+    sh:in ( "EUR" "USD" "GBP" "THB" "JPY" "CHF" "CAD" "AUD" "SGD" "HKD" "CNY" ) ;
+    sh:minCount 1 ;
+    sh:maxCount 1 ;
+    sh:message "currency is required for payment initiation"
+  ] ;
+  sh:property [
+    sh:path iso:amount ;
+    sh:datatype xsd:decimal ;
+    sh:minInclusive 0.01 ;
+    sh:minCount 1 ;
+    sh:maxCount 1 ;
+    sh:message "amount must be a positive decimal"
+  ] ;
+  sh:property [
+    sh:path iso:messageId ;
+    sh:datatype xsd:string ;
+    sh:pattern "^[A-Za-z0-9][A-Za-z0-9-]{5,34}$" ;
+    sh:minCount 1 ;
+    sh:maxCount 1 ;
+    sh:message "messageId is required for payment initiation"
+  ] ;
+  sh:property [
+    sh:path iso:debtorIBAN ;
+    sh:datatype xsd:string ;
+    sh:pattern "^[A-Z]{2}\\d{2}[A-Z0-9]{4,30}$" ;
+    sh:minCount 1 ;
+    sh:maxCount 1 ;
+    sh:message "debtorIBAN is required and must be a valid IBAN"
+  ] ;
+  sh:property [
+    sh:path iso:creditorIBAN ;
+    sh:datatype xsd:string ;
+    sh:pattern "^[A-Z]{2}\\d{2}[A-Z0-9]{4,30}$" ;
+    sh:minCount 1 ;
+    sh:maxCount 1 ;
+    sh:message "creditorIBAN is required and must be a valid IBAN"
+  ] ;
+  sh:property [
+    sh:path iso:requestedExecutionDate ;
+    sh:datatype xsd:date ;
+    sh:minCount 1 ;
+    sh:maxCount 1 ;
+    sh:message "requestedExecutionDate is required and must be a valid date"
+  ] .
+
+# --- camt.053: Bank-to-Customer Statement ---
+iso:AccountStatementShape
+  a sh:NodeShape ;
+  sh:targetClass iso:msgtype\/camt.053 ;
+  sh:property [
+    sh:path iso:accountIBAN ;
+    sh:datatype xsd:string ;
+    sh:pattern "^[A-Z]{2}\\d{2}[A-Z0-9]{4,30}$" ;
+    sh:minCount 1 ;
+    sh:maxCount 1 ;
+    sh:message "accountIBAN is required for account statements"
+  ] ;
+  sh:property [
+    sh:path iso:statementDate ;
+    sh:datatype xsd:date ;
+    sh:minCount 1 ;
+    sh:maxCount 1 ;
+    sh:message "statementDate is required and must be a valid date"
+  ] ;
+  sh:property [
+    sh:path iso:openingBalance ;
+    sh:datatype xsd:decimal ;
+    sh:minInclusive 0.0 ;
+    sh:minCount 1 ;
+    sh:maxCount 1 ;
+    sh:message "openingBalance is required and must be a non-negative decimal"
+  ] ;
+  sh:property [
+    sh:path iso:closingBalance ;
+    sh:datatype xsd:decimal ;
+    sh:minInclusive 0.0 ;
+    sh:minCount 1 ;
+    sh:maxCount 1 ;
+    sh:message "closingBalance is required and must be a non-negative decimal"
+  ] .
+
+# --- pain.008: Customer Direct Debit Initiation ---
+iso:DirectDebitInitiationShape
+  a sh:NodeShape ;
+  sh:targetClass iso:msgtype\/pain.008 ;
+  sh:property [
+    sh:path iso:currency ;
+    sh:datatype xsd:string ;
+    sh:in ( "EUR" "USD" "GBP" "THB" "JPY" "CHF" "CAD" "AUD" "SGD" "HKD" "CNY" ) ;
+    sh:minCount 1 ;
+    sh:maxCount 1 ;
+    sh:message "currency is required for direct debit initiation"
+  ] ;
+  sh:property [
+    sh:path iso:amount ;
+    sh:datatype xsd:decimal ;
+    sh:minInclusive 0.01 ;
+    sh:minCount 1 ;
+    sh:maxCount 1 ;
+    sh:message "amount must be a positive decimal"
+  ] ;
+  sh:property [
+    sh:path iso:messageId ;
+    sh:datatype xsd:string ;
+    sh:pattern "^[A-Za-z0-9][A-Za-z0-9-]{5,34}$" ;
+    sh:minCount 1 ;
+    sh:maxCount 1 ;
+    sh:message "messageId is required for direct debit initiation"
+  ] ;
+  sh:property [
+    sh:path iso:mandateId ;
+    sh:datatype xsd:string ;
+    sh:pattern "^[A-Za-z0-9][A-Za-z0-9-]{5,34}$" ;
+    sh:minCount 1 ;
+    sh:maxCount 1 ;
+    sh:message "mandateId is required for direct debit initiation"
+  ] ;
+  sh:property [
+    sh:path iso:debtorIBAN ;
+    sh:datatype xsd:string ;
+    sh:pattern "^[A-Z]{2}\\d{2}[A-Z0-9]{4,30}$" ;
+    sh:minCount 1 ;
+    sh:maxCount 1 ;
+    sh:message "debtorIBAN is required and must be a valid IBAN"
+  ] ;
+  sh:property [
+    sh:path iso:creditorIBAN ;
+    sh:datatype xsd:string ;
+    sh:pattern "^[A-Z]{2}\\d{2}[A-Z0-9]{4,30}$" ;
+    sh:minCount 1 ;
+    sh:maxCount 1 ;
+    sh:message "creditorIBAN is required and must be a valid IBAN"
+  ] ;
+  sh:property [
+    sh:path iso:collectionDate ;
+    sh:datatype xsd:date ;
+    sh:minCount 1 ;
+    sh:maxCount 1 ;
+    sh:message "collectionDate is required and must be a valid date"
+  ] .
+
+# --- pacs.004: Payment Return ---
+iso:PaymentReturnShape
+  a sh:NodeShape ;
+  sh:targetClass iso:msgtype\/pacs.004 ;
+  sh:property [
+    sh:path iso:currency ;
+    sh:datatype xsd:string ;
+    sh:in ( "EUR" "USD" "GBP" "THB" "JPY" "CHF" "CAD" "AUD" "SGD" "HKD" "CNY" ) ;
+    sh:minCount 1 ;
+    sh:maxCount 1 ;
+    sh:message "currency is required for payment return"
+  ] ;
+  sh:property [
+    sh:path iso:amount ;
+    sh:datatype xsd:decimal ;
+    sh:minInclusive 0.01 ;
+    sh:minCount 1 ;
+    sh:maxCount 1 ;
+    sh:message "amount must be a positive decimal"
+  ] ;
+  sh:property [
+    sh:path iso:returnId ;
+    sh:datatype xsd:string ;
+    sh:pattern "^[A-Za-z0-9][A-Za-z0-9-]{5,34}$" ;
+    sh:minCount 1 ;
+    sh:maxCount 1 ;
+    sh:message "returnId is required for payment return"
+  ] ;
+  sh:property [
+    sh:path iso:originalMessageId ;
+    sh:datatype xsd:string ;
+    sh:pattern "^[A-Za-z0-9][A-Za-z0-9-]{5,34}$" ;
+    sh:minCount 1 ;
+    sh:maxCount 1 ;
+    sh:message "originalMessageId is required to link the return to the original payment"
+  ] ;
+  sh:property [
+    sh:path iso:reasonCode ;
+    sh:datatype xsd:string ;
+    sh:pattern "^[A-Z]{2,4}\\d{2}$" ;
+    sh:minCount 1 ;
+    sh:maxCount 1 ;
+    sh:message "reasonCode must match ISO 20022 format (2-4 letters + 2 digits)"
+  ] .

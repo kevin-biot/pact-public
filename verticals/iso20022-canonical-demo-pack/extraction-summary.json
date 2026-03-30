@@ -1,0 +1,24 @@
+{
+  "schema_version": "0.1",
+  "generated_at_utc": "2026-03-30T00:00:00Z",
+  "erepo_url": "https://www.iso20022.org/sites/default/files/media/file/20250424_ISO20022_2013_eRepository.zip",
+  "metamodel_url": "https://www.iso20022.org/sites/default/files/documents/D7/ISO20022_2013_ecore_metamodel.zip",
+  "areas_filter": [
+    "pacs"
+  ],
+  "allowed_registration_statuses": [
+    "Registered"
+  ],
+  "version_policy": "latest-per-type",
+  "message_identifiers_raw_count": 91,
+  "message_identifiers_count": 1,
+  "message_types_count": 1,
+  "message_counts_by_area": {
+    "pacs": 1
+  },
+  "narrow_selection": {
+    "selected_message_identifier": "pacs.008.001.13",
+    "selected_message_type": "pacs.008",
+    "selection_reason": "narrow extractive demo profile from canonical model"
+  }
+}

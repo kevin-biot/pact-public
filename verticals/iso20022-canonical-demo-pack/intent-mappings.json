@@ -1,0 +1,11 @@
+{
+  "schema_version": "1.0",
+  "domain": "iso20022-canonical-demo",
+  "mappings": [
+    {
+      "concept_uri": "iso20022:msgtype/pacs.008",
+      "intent_class": "iso20022.payment.credit_transfer.v1",
+      "confidence_floor": 0.72
+    }
+  ]
+}

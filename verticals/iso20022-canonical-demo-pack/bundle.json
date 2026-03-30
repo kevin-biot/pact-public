@@ -1,0 +1,26 @@
+{
+  "id": "iso20022-canonical-demo-0.2.0",
+  "domain": "iso20022-canonical-demo",
+  "version": "0.2.0",
+  "providerId": "ontology:lane2:iso20022-canonical-demo",
+  "trustTier": "Tier1",
+  "policySnapshotId": "sha256:de93910b5a55669504e880f862be54015b611d8410d8cc16f5d3c3ec974f5116",
+  "files": {
+    "context": "sha256:23030db88b3b3666d5f3b17d60404944783194b2f818a926b06ed6fbe5d44b59",
+    "convergence": "sha256:8e61cdc3aff12c8182aa3dae51cf2d412f5b675027f1879c588fd636504a6fcd",
+    "decision_space": "sha256:d7372976d99acb4c46a3b60165de3aa60e2b4daba4301cc50be28c174d865aa7",
+    "extraction_summary": "sha256:e9d8d25729d7968eef289f9e0fdde1927393ed02b62190ded613c83af81b1ee4",
+    "intent_mappings": "sha256:a8c75fcade8341f924bc0135a1dbbb17a10351a8702e96a33e3663d63b45986d",
+    "message_identifiers": "sha256:f7331b49d6556674e0806b042467fc0725fc4d9bc84ed733d13bd674ab7938d5",
+    "patterns": "sha256:00ab0de70d736655d0a4891dd083e5209a6882ed083861cd44a9a4ab9a6e26e7",
+    "shapes": "sha256:0d382ce844849528a95a0fa5f91d6f23895d2bc6243bd54bdb4b5cc96adc4863",
+    "thesaurus": "sha256:363f484f88e336d60e9b86a1e977e55a581e19e251b1c340247c0b32a1c7f5e6",
+    "thesaurus_local": "sha256:32b094aa04a385550ba33aad4befb326933d54671f356f76fcc87305652aef29",
+    "vocab": "sha256:ea2104ba6621e8736a871cf02a0d3bac677b636f397fed27a32462538d767fc5"
+  },
+  "precedence": [],
+  "denyWins": true,
+  "nbf": "2026-03-30T00:00:00Z",
+  "exp": "2030-03-30T00:00:00Z",
+  "revEpoch": 1
+}

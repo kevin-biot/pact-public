@@ -1,0 +1,25 @@
+{
+  "schema_version": "1.0",
+  "domain": "iso20022-canonical-demo",
+  "last_modified": "2026-03-30",
+  "concepts": [
+    {
+      "concept_id": "iso20022:msgtype/pacs.008",
+      "preferred_term": "pacs.008",
+      "synonyms": [
+        "credit transfer",
+        "fi to fi customer credit transfer",
+        "pacs 008"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "iso20022:family/pacs",
+      "narrower": [],
+      "source_refs": [
+        "ISO 20022 e-Repository"
+      ],
+      "ner_provenance": null
+    }
+  ]
+}

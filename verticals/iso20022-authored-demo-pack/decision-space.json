@@ -1,0 +1,431 @@
+{
+  "schema_version": "1.0",
+  "domain": "iso20022-authored-demo",
+  "pack_id": "iso20022-authored-demo-0.1.0",
+  "version": "0.1.0",
+  "out_of_scope_behavior": "escalate",
+  "state_model": {
+    "states": [
+      "ingress",
+      "validated",
+      "classified",
+      "routed",
+      "settled",
+      "rejected",
+      "escalated"
+    ],
+    "initial_state": "ingress",
+    "terminal_states": [
+      "settled",
+      "rejected",
+      "escalated"
+    ]
+  },
+  "admissible_intents": [
+    {
+      "intent_class": "iso20022.payment.credit_transfer.v1",
+      "allowed_states": [
+        "ingress",
+        "validated",
+        "classified",
+        "routed"
+      ],
+      "required_fact_types": [
+        "payment_message"
+      ],
+      "transition_ids": [
+        "validate_credit_transfer",
+        "classify_credit_transfer",
+        "route_credit_transfer",
+        "settle_credit_transfer",
+        "reject_credit_transfer"
+      ]
+    },
+    {
+      "intent_class": "iso20022.payment.initiation.v1",
+      "allowed_states": [
+        "ingress",
+        "validated",
+        "classified",
+        "routed"
+      ],
+      "required_fact_types": [
+        "payment_message"
+      ],
+      "transition_ids": [
+        "validate_initiation",
+        "classify_initiation",
+        "route_initiation",
+        "settle_initiation",
+        "reject_initiation"
+      ]
+    },
+    {
+      "intent_class": "iso20022.payment.status_report.v1",
+      "allowed_states": [
+        "ingress",
+        "validated",
+        "classified",
+        "routed"
+      ],
+      "required_fact_types": [
+        "payment_message"
+      ],
+      "transition_ids": [
+        "validate_status",
+        "classify_status",
+        "route_status"
+      ]
+    },
+    {
+      "intent_class": "iso20022.account.statement.v1",
+      "allowed_states": [
+        "ingress",
+        "validated",
+        "classified",
+        "routed"
+      ],
+      "required_fact_types": [
+        "payment_message"
+      ],
+      "transition_ids": [
+        "validate_statement",
+        "classify_statement",
+        "route_statement"
+      ]
+    },
+    {
+      "intent_class": "iso20022.payment.direct_debit.v1",
+      "allowed_states": [
+        "ingress",
+        "validated",
+        "classified",
+        "routed"
+      ],
+      "required_fact_types": [
+        "payment_message"
+      ],
+      "transition_ids": [
+        "validate_direct_debit",
+        "classify_direct_debit",
+        "route_direct_debit",
+        "settle_direct_debit",
+        "reject_direct_debit"
+      ]
+    },
+    {
+      "intent_class": "iso20022.payment.return.v1",
+      "allowed_states": [
+        "ingress",
+        "validated",
+        "classified",
+        "routed"
+      ],
+      "required_fact_types": [
+        "payment_message"
+      ],
+      "transition_ids": [
+        "validate_return",
+        "classify_return",
+        "route_return",
+        "settle_return",
+        "reject_return"
+      ]
+    }
+  ],
+  "admissible_facts": [
+    {
+      "fact_type": "payment_message",
+      "schema_ref": "urn:iso20022:message-envelope",
+      "additional_properties": "allow",
+      "field_constraints": [
+        {
+          "path": "message.type",
+          "datatype": "string",
+          "required": true,
+          "pattern": "^(pacs|pain|camt)\\.[0-9]{3}$"
+        },
+        {
+          "path": "message.id",
+          "datatype": "string",
+          "required": true
+        },
+        {
+          "path": "amount.currency",
+          "datatype": "string",
+          "required": false,
+          "pattern": "^[A-Z]{3}$"
+        }
+      ]
+    }
+  ],
+  "admissible_transitions": [
+    {
+      "id": "validate_credit_transfer",
+      "from_state": "ingress",
+      "intent_class": "iso20022.payment.credit_transfer.v1",
+      "to_state": "validated",
+      "guard_refs": [
+        "guard:message_shape_valid",
+        "guard:message_type_pacs008"
+      ]
+    },
+    {
+      "id": "classify_credit_transfer",
+      "from_state": "validated",
+      "intent_class": "iso20022.payment.credit_transfer.v1",
+      "to_state": "classified",
+      "guard_refs": [
+        "guard:intent_credit_transfer_mapped"
+      ]
+    },
+    {
+      "id": "route_credit_transfer",
+      "from_state": "classified",
+      "intent_class": "iso20022.payment.credit_transfer.v1",
+      "to_state": "routed",
+      "guard_refs": [
+        "guard:routing_profile_known"
+      ]
+    },
+    {
+      "id": "settle_credit_transfer",
+      "from_state": "routed",
+      "intent_class": "iso20022.payment.credit_transfer.v1",
+      "to_state": "settled",
+      "guard_refs": [
+        "guard:settlement_ack_received"
+      ]
+    },
+    {
+      "id": "reject_credit_transfer",
+      "from_state": "routed",
+      "intent_class": "iso20022.payment.credit_transfer.v1",
+      "to_state": "rejected",
+      "guard_refs": [
+        "guard:settlement_reject_received"
+      ]
+    },
+    {
+      "id": "validate_initiation",
+      "from_state": "ingress",
+      "intent_class": "iso20022.payment.initiation.v1",
+      "to_state": "validated",
+      "guard_refs": [
+        "guard:message_shape_valid",
+        "guard:message_type_pain001"
+      ]
+    },
+    {
+      "id": "classify_initiation",
+      "from_state": "validated",
+      "intent_class": "iso20022.payment.initiation.v1",
+      "to_state": "classified",
+      "guard_refs": [
+        "guard:intent_initiation_mapped"
+      ],
+      "deontic": "must",
+      "source_ref": "iso20022:usage-guideline:initiation"
+    },
+    {
+      "id": "route_initiation",
+      "from_state": "classified",
+      "intent_class": "iso20022.payment.initiation.v1",
+      "to_state": "routed",
+      "guard_refs": [
+        "guard:routing_profile_known"
+      ]
+    },
+    {
+      "id": "settle_initiation",
+      "from_state": "routed",
+      "intent_class": "iso20022.payment.initiation.v1",
+      "to_state": "settled",
+      "guard_refs": [
+        "guard:settlement_ack_received"
+      ]
+    },
+    {
+      "id": "reject_initiation",
+      "from_state": "routed",
+      "intent_class": "iso20022.payment.initiation.v1",
+      "to_state": "rejected",
+      "guard_refs": [
+        "guard:settlement_reject_received"
+      ]
+    },
+    {
+      "id": "validate_status",
+      "from_state": "ingress",
+      "intent_class": "iso20022.payment.status_report.v1",
+      "to_state": "validated",
+      "guard_refs": [
+        "guard:message_shape_valid",
+        "guard:message_type_pacs002"
+      ]
+    },
+    {
+      "id": "classify_status",
+      "from_state": "validated",
+      "intent_class": "iso20022.payment.status_report.v1",
+      "to_state": "classified",
+      "guard_refs": [
+        "guard:intent_status_mapped"
+      ]
+    },
+    {
+      "id": "route_status",
+      "from_state": "classified",
+      "intent_class": "iso20022.payment.status_report.v1",
+      "to_state": "routed",
+      "guard_refs": [
+        "guard:status_subscription_present"
+      ]
+    },
+    {
+      "id": "validate_statement",
+      "from_state": "ingress",
+      "intent_class": "iso20022.account.statement.v1",
+      "to_state": "validated",
+      "guard_refs": [
+        "guard:message_shape_valid",
+        "guard:message_type_camt053"
+      ]
+    },
+    {
+      "id": "classify_statement",
+      "from_state": "validated",
+      "intent_class": "iso20022.account.statement.v1",
+      "to_state": "classified",
+      "guard_refs": [
+        "guard:intent_statement_mapped"
+      ]
+    },
+    {
+      "id": "route_statement",
+      "from_state": "classified",
+      "intent_class": "iso20022.account.statement.v1",
+      "to_state": "routed",
+      "guard_refs": [
+        "guard:statement_consumer_present"
+      ]
+    },
+    {
+      "id": "validate_direct_debit",
+      "from_state": "ingress",
+      "intent_class": "iso20022.payment.direct_debit.v1",
+      "to_state": "validated",
+      "guard_refs": [
+        "guard:message_shape_valid",
+        "guard:message_type_pain008"
+      ]
+    },
+    {
+      "id": "classify_direct_debit",
+      "from_state": "validated",
+      "intent_class": "iso20022.payment.direct_debit.v1",
+      "to_state": "classified",
+      "guard_refs": [
+        "guard:intent_direct_debit_mapped"
+      ]
+    },
+    {
+      "id": "route_direct_debit",
+      "from_state": "classified",
+      "intent_class": "iso20022.payment.direct_debit.v1",
+      "to_state": "routed",
+      "guard_refs": [
+        "guard:mandate_context_present"
+      ]
+    },
+    {
+      "id": "settle_direct_debit",
+      "from_state": "routed",
+      "intent_class": "iso20022.payment.direct_debit.v1",
+      "to_state": "settled",
+      "guard_refs": [
+        "guard:settlement_ack_received"
+      ]
+    },
+    {
+      "id": "reject_direct_debit",
+      "from_state": "routed",
+      "intent_class": "iso20022.payment.direct_debit.v1",
+      "to_state": "rejected",
+      "guard_refs": [
+        "guard:settlement_reject_received"
+      ]
+    },
+    {
+      "id": "validate_return",
+      "from_state": "ingress",
+      "intent_class": "iso20022.payment.return.v1",
+      "to_state": "validated",
+      "guard_refs": [
+        "guard:message_shape_valid",
+        "guard:message_type_pacs004"
+      ]
+    },
+    {
+      "id": "classify_return",
+      "from_state": "validated",
+      "intent_class": "iso20022.payment.return.v1",
+      "to_state": "classified",
+      "guard_refs": [
+        "guard:intent_return_mapped"
+      ]
+    },
+    {
+      "id": "route_return",
+      "from_state": "classified",
+      "intent_class": "iso20022.payment.return.v1",
+      "to_state": "routed",
+      "guard_refs": [
+        "guard:return_destination_known"
+      ]
+    },
+    {
+      "id": "settle_return",
+      "from_state": "routed",
+      "intent_class": "iso20022.payment.return.v1",
+      "to_state": "settled",
+      "guard_refs": [
+        "guard:return_ack_received"
+      ]
+    },
+    {
+      "id": "reject_return",
+      "from_state": "routed",
+      "intent_class": "iso20022.payment.return.v1",
+      "to_state": "rejected",
+      "guard_refs": [
+        "guard:return_reject_received"
+      ]
+    },
+    {
+      "id": "escalate_unknown_message",
+      "from_state": "ingress",
+      "intent_class": "iso20022.payment.status_report.v1",
+      "to_state": "escalated",
+      "guard_refs": [
+        "guard:message_type_unmapped"
+      ],
+      "deontic": "must",
+      "source_ref": "iso20022:governance:unknown-message:v1"
+    }
+  ],
+  "escalation_predicates": [
+    {
+      "predicate_id": "epsilon_1",
+      "trigger": "unclassifiable_activity",
+      "description": "Inbound ISO 20022 message cannot be mapped to an admissible message type.",
+      "routing": "escalate"
+    },
+    {
+      "predicate_id": "epsilon_2",
+      "trigger": "missing_required_context",
+      "description": "Mandatory transaction context is missing for routing or settlement.",
+      "routing": "escalate"
+    }
+  ]
+}

@@ -1,0 +1,122 @@
+{
+  "profile_id": "iso20022-canonical-narrow-pacs.008.001.13-v1",
+  "profile_schema": "0.1",
+  "description": "Deterministic extraction profile for pacs.008.001.13 from the ISO 20022 canonical model.",
+  "sources": {
+    "erepository_zip_url": "https://www.iso20022.org/sites/default/files/media/file/20250424_ISO20022_2013_eRepository.zip",
+    "metamodel_zip_url": "https://www.iso20022.org/sites/default/files/documents/D7/ISO20022_2013_ecore_metamodel.zip"
+  },
+  "selection": {
+    "business_areas": [
+      "pacs"
+    ],
+    "allowed_registration_statuses": [
+      "Registered"
+    ],
+    "message_identifier_allowlist": [
+      "pacs.008.001.13"
+    ],
+    "version_policy": "exact-message-identifier",
+    "fallback_behavior": "escalate"
+  },
+  "extract": {
+    "message_identity": {
+      "full_identifier": true,
+      "message_type": true,
+      "identifier_parts": true,
+      "registration_status": true
+    },
+    "message_definition": {
+      "name": true,
+      "definition": true,
+      "business_process_references": true
+    },
+    "structure": {
+      "root_component": true,
+      "transitive_components": true,
+      "attributes": true,
+      "associations": true,
+      "cardinality": true
+    },
+    "datatypes_and_constraints": {
+      "datatype_references": true,
+      "length_bounds": true,
+      "pattern_constraints": true,
+      "numeric_bounds": true
+    },
+    "code_sets": {
+      "referenced_code_sets": true,
+      "code_values": true,
+      "deprecation_metadata": true
+    },
+    "labels_and_synonyms": {
+      "canonical_labels": true,
+      "canonical_aliases": true,
+      "allow_noncanonical_terms": false
+    }
+  },
+  "artifact_projection": {
+    "message-identifiers.json": {
+      "required": true,
+      "fields": [
+        "message_identifiers",
+        "message_types"
+      ]
+    },
+    "extraction-summary.json": {
+      "required": true,
+      "fields": [
+        "erepo_url",
+        "metamodel_url",
+        "areas_filter",
+        "allowed_registration_statuses",
+        "version_policy",
+        "message_identifiers_raw_count",
+        "message_identifiers_count",
+        "message_types_count",
+        "narrow_selection"
+      ]
+    },
+    "vocab.skos.jsonld": {
+      "required": true,
+      "concept_ids": [
+        "iso20022:msgtype/pacs.008"
+      ]
+    },
+    "thesaurus.jsonld": {
+      "required": true,
+      "canonical_anchor": "iso20022:msgtype/pacs.008"
+    },
+    "thesaurus-local.json": {
+      "required": true,
+      "canonical_anchor": "iso20022:msgtype/pacs.008"
+    },
+    "intent-mappings.json": {
+      "required": true,
+      "mapping_rule": "message_type_to_intent"
+    },
+    "patterns.json": {
+      "required": true,
+      "pattern_rule": "deterministic_exact_match"
+    },
+    "shapes.ttl": {
+      "required": true,
+      "shape_rule": "canonical_cardinality_datatype_codeset_projection"
+    },
+    "convergence.json": {
+      "required": true,
+      "fixture_rule": "same_intent_under_safe_perturbations"
+    },
+    "decision-space.json": {
+      "required": true,
+      "decision_rule": "single_scope_intent_else_escalate"
+    }
+  },
+  "quality_gates": {
+    "expected_message_identifiers_count": 1,
+    "expected_message_identifier": "pacs.008.001.13",
+    "expected_message_type": "pacs.008",
+    "require_constraint_traceability": true,
+    "require_unknown_message_escalation": true
+  }
+}

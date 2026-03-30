@@ -1,0 +1,25 @@
+{
+  "@context": {
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "iso20022": "https://lane2.example/ontology/iso20022/"
+  },
+  "@graph": [
+    {
+      "@id": "iso20022:family/pacs",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "pacs",
+      "skos:definition": "Payments Clearing and Settlement message family."
+    },
+    {
+      "@id": "iso20022:msgtype/pacs.008",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "pacs.008",
+      "skos:definition": "FIToFICustomerCreditTransfer message type (canonical latest selected: pacs.008.001.13).",
+      "skos:altLabel": [
+        "credit transfer",
+        "fi to fi customer credit transfer"
+      ],
+      "skos:broader": "iso20022:family/pacs"
+    }
+  ]
+}

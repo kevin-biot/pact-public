@@ -1,0 +1,8 @@
+{
+  "@context": {
+    "iso20022": "https://lane2.example/ontology/iso20022/",
+    "msgtype": "https://lane2.example/ontology/iso20022/msgtype/",
+    "family": "https://lane2.example/ontology/iso20022/family/",
+    "skos": "http://www.w3.org/2004/02/skos/core#"
+  }
+}

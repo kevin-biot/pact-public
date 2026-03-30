@@ -1,0 +1,16 @@
+{
+  "schema_version": "1.0",
+  "domain": "iso20022-canonical-demo",
+  "patterns": [
+    {
+      "id": "iso20022_pacs008_intent",
+      "concept_uri": "iso20022:msgtype/pacs.008",
+      "entity_type": "intent_hint",
+      "regex": "(?i)\\b(pacs\\.008|credit\\s+transfer|fi\\s*to\\s*fi\\s+customer\\s+credit\\s+transfer)\\b",
+      "examples": [
+        "pacs.008",
+        "credit transfer"
+      ]
+    }
+  ]
+}

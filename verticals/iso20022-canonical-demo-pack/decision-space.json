@@ -1,0 +1,152 @@
+{
+  "schema_version": "1.0",
+  "domain": "iso20022-canonical-demo",
+  "pack_id": "iso20022-canonical-demo-0.2.0",
+  "version": "0.2.0",
+  "out_of_scope_behavior": "escalate",
+  "state_model": {
+    "states": [
+      "ingress",
+      "validated",
+      "classified",
+      "routed",
+      "settled",
+      "rejected",
+      "escalated"
+    ],
+    "initial_state": "ingress",
+    "terminal_states": [
+      "settled",
+      "rejected",
+      "escalated"
+    ]
+  },
+  "admissible_intents": [
+    {
+      "intent_class": "iso20022.payment.credit_transfer.v1",
+      "allowed_states": [
+        "ingress",
+        "validated",
+        "classified",
+        "routed"
+      ],
+      "required_fact_types": [
+        "payment_message"
+      ],
+      "transition_ids": [
+        "validate_credit_transfer",
+        "classify_credit_transfer",
+        "route_credit_transfer",
+        "settle_credit_transfer",
+        "reject_credit_transfer"
+      ]
+    }
+  ],
+  "admissible_facts": [
+    {
+      "fact_type": "payment_message",
+      "schema_ref": "urn:iso20022:pacs.008.001.13",
+      "additional_properties": "allow",
+      "field_constraints": [
+        {
+          "path": "message.type",
+          "datatype": "string",
+          "required": true,
+          "pattern": "^pacs\\.008$"
+        },
+        {
+          "path": "message.version",
+          "datatype": "string",
+          "required": true,
+          "pattern": "^001\\.13$"
+        },
+        {
+          "path": "message.id",
+          "datatype": "string",
+          "required": true
+        },
+        {
+          "path": "amount.currency",
+          "datatype": "string",
+          "required": true,
+          "pattern": "^[A-Z]{3}$"
+        },
+        {
+          "path": "amount.value",
+          "datatype": "number",
+          "required": true,
+          "minimum": 0.01
+        }
+      ]
+    }
+  ],
+  "admissible_transitions": [
+    {
+      "id": "validate_credit_transfer",
+      "from_state": "ingress",
+      "intent_class": "iso20022.payment.credit_transfer.v1",
+      "to_state": "validated",
+      "guard_refs": [
+        "guard:message_shape_valid",
+        "guard:message_type_pacs008_001_13"
+      ]
+    },
+    {
+      "id": "classify_credit_transfer",
+      "from_state": "validated",
+      "intent_class": "iso20022.payment.credit_transfer.v1",
+      "to_state": "classified",
+      "guard_refs": [
+        "guard:intent_credit_transfer_mapped"
+      ],
+      "deontic": "must",
+      "source_ref": "iso20022:pacs.008.001.13"
+    },
+    {
+      "id": "route_credit_transfer",
+      "from_state": "classified",
+      "intent_class": "iso20022.payment.credit_transfer.v1",
+      "to_state": "routed",
+      "guard_refs": [
+        "guard:routing_profile_known"
+      ]
+    },
+    {
+      "id": "settle_credit_transfer",
+      "from_state": "routed",
+      "intent_class": "iso20022.payment.credit_transfer.v1",
+      "to_state": "settled",
+      "guard_refs": [
+        "guard:settlement_ack_received"
+      ]
+    },
+    {
+      "id": "reject_credit_transfer",
+      "from_state": "routed",
+      "intent_class": "iso20022.payment.credit_transfer.v1",
+      "to_state": "rejected",
+      "guard_refs": [
+        "guard:settlement_reject_received"
+      ]
+    },
+    {
+      "id": "escalate_unknown_message",
+      "from_state": "ingress",
+      "intent_class": "iso20022.payment.credit_transfer.v1",
+      "to_state": "escalated",
+      "guard_refs": [
+        "guard:message_type_unmapped"
+      ],
+      "deontic": "must",
+      "source_ref": "iso20022:governance:unknown-message:v1"
+    }
+  ],
+  "escalation_predicates": [
+    {
+      "predicate_id": "epsilon_1",
+      "trigger": "unclassifiable_activity",
+      "description": "Inbound payment message cannot be mapped to pacs.008.001.13 profile.",
+      "routing": "escalate"
+    }
+  ]
+}

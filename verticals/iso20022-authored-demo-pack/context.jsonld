@@ -1,0 +1,13 @@
+{
+  "@context": {
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "sh": "http://www.w3.org/ns/shacl#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "iso20022": "https://lane2.example/ontology/iso20022/",
+    "msgtype": "https://lane2.example/ontology/iso20022/msgtype/",
+    "family": "https://lane2.example/ontology/iso20022/family/",
+    "reason": "https://lane2.example/ontology/iso20022/reason/",
+    "reason_category": "https://lane2.example/ontology/iso20022/reason_category/",
+    "currency": "https://lane2.example/ontology/iso20022/currency/"
+  }
+}

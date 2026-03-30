@@ -1,0 +1,35 @@
+{
+  "pack_schema": "1.0",
+  "id": "iso20022-canonical-demo-0.2.0",
+  "domain": "iso20022-canonical-demo",
+  "version": "0.2.0",
+  "provider_id": "ontology:lane2:iso20022-canonical-demo",
+  "trust_tier": "Tier1",
+  "nbf": "2026-03-30T00:00:00Z",
+  "exp": "2030-03-30T00:00:00Z",
+  "rev_epoch": 1,
+  "deny_wins": true,
+  "decision_authority": true,
+  "precedence": [],
+  "files": {
+    "context": "context.jsonld",
+    "vocab": "vocab.skos.jsonld",
+    "shapes": "shapes.ttl",
+    "thesaurus": "thesaurus.jsonld",
+    "thesaurus_local": "thesaurus-local.json",
+    "intent_mappings": "intent-mappings.json",
+    "patterns": "patterns.json",
+    "convergence": "convergence.json",
+    "decision_space": "decision-space.json",
+    "extraction_summary": "extraction-summary.json",
+    "message_identifiers": "message-identifiers.json"
+  },
+  "dc": {
+    "identifier": "ontology:iso20022-canonical-demo:v0.2.0",
+    "title": "ISO 20022 Canonical-Derived Narrow Demo Pack (pacs.008.001.13)",
+    "creator": "Lane2 Ontology Team",
+    "issued": "2026-03-30",
+    "rights": "Internal demo pack for canonical extraction workflow",
+    "description": "Narrow extractive sample derived from ISO 20022 canonical model for pacs.008.001.13."
+  }
+}
