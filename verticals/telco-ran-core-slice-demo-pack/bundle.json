@@ -1,0 +1,18 @@
+{
+  "id": "pack-ran-core-slice-0.1.0",
+  "domain": "telco-ran-core-slice",
+  "version": "0.1.0",
+  "providerId": "ontology:telco:ran-core-slice",
+  "trustTier": "Tier1",
+  "policySnapshotId": "sha256:de93910b5a55669504e880f862be54015b611d8410d8cc16f5d3c3ec974f5116",
+  "files": {
+    "context": "sha256:105f2a328f7ccedea160e5d8899d92d14073bd788c84bb73afa651f275ba5ebf",
+    "thesaurus": "sha256:7b728111b361e863bed15539b9b9c7f564231ee986b7dfefef0fba2de2ae17bf",
+    "vocab": "sha256:91f8c74549d638120cfee6bbf9801c649d6fda5f94489fda9bc88b9082d5b020"
+  },
+  "precedence": [],
+  "denyWins": true,
+  "nbf": "2026-03-02T00:00:00Z",
+  "exp": "2031-03-02T00:00:00Z",
+  "revEpoch": 1
+}

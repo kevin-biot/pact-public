@@ -1,0 +1,10 @@
+{
+  "bundleId": "sha256:ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+  "decision": {
+    "type": "FaultDiagnosis",
+    "intent_class": "fault.diagnosis.request.v1",
+    "targetObject": {"identifier": "node-edge-1234"},
+    "taskContext": {"faultOccurrenceTime": "2026-03-08T10:15:00Z"},
+    "constraints": {"taskPriority": "High"}
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "bundleId": "sha256:502ee70019342bc3c182b92be51576641f0626ba0fd9bb48f35bb6ab816d6a6d",
+  "decision": {
+    "type": "FaultDiagnosis",
+    "intent_class": "fault.diagnosis.request.v1",
+    "targetObject": {"identifier": "node-edge-1234"},
+    "taskContext": {"faultOccurrenceTime": "2026-03-08T10:15:00Z"},
+    "constraints": {"taskPriority": "High"}
+  }
+}

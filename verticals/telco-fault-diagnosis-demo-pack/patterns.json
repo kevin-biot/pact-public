@@ -1,0 +1,27 @@
+{
+  "schema_version": "1.0",
+  "domain": "telco-fault-diagnosis",
+  "patterns": [
+    {
+      "id": "fd_fault_diagnosis",
+      "concept_uri": "telco-fault-diagnosis.fault-diagnosis-task",
+      "entity_type": "intent_hint",
+      "regex": "(?i)\\b(fault\\s+diagnosis|fault\\s+diagnoses|root\\s+cause\\s+analysis)\\b",
+      "examples": ["fault diagnosis", "root cause analysis"]
+    },
+    {
+      "id": "fd_fault_ticket",
+      "concept_uri": "telco-fault-diagnosis.fault-ticket",
+      "entity_type": "entity_hint",
+      "regex": "(?i)\\b(fault\\s+ticket|ticket\\s+id)\\b",
+      "examples": ["fault ticket"]
+    },
+    {
+      "id": "fd_repair_recommendation",
+      "concept_uri": "telco-fault-diagnosis.repair-recommendation",
+      "entity_type": "entity_hint",
+      "regex": "(?i)\\b(repair\\s+recommendation|recommended\\s+fix)\\b",
+      "examples": ["repair recommendation"]
+    }
+  ]
+}

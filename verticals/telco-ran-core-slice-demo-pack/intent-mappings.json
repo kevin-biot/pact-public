@@ -1,0 +1,21 @@
+{
+  "schema_version": "1.0",
+  "domain": "telco-ran-core-slice",
+  "mappings": [
+    {
+      "concept_uri": "telco-ran-core-slice.intent-anchor",
+      "intent_class": "telco.ran.slice.attach.v1",
+      "confidence_floor": 0.75
+    },
+    {
+      "concept_uri": "telco-ran-core-slice.network-slice",
+      "intent_class": "telco.ran.slice.attach.v1",
+      "confidence_floor": 0.75
+    },
+    {
+      "concept_uri": "telco-ran-core-slice.network-slice-subnet",
+      "intent_class": "telco.ran.slice.attach.v1",
+      "confidence_floor": 0.75
+    }
+  ]
+}

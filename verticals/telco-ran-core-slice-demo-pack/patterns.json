@@ -1,0 +1,27 @@
+{
+  "schema_version": "1.0",
+  "domain": "telco-ran-core-slice",
+  "patterns": [
+    {
+      "id": "ran_slice_attach",
+      "concept_uri": "telco-ran-core-slice.intent-anchor",
+      "entity_type": "intent_hint",
+      "regex": "(?i)\\b(slice\\s+attach|attach\\s+slice|slice\\s+intent)\\b",
+      "examples": ["slice attach", "attach slice"]
+    },
+    {
+      "id": "ran_nssmf",
+      "concept_uri": "telco-ran-core-slice.nssmf",
+      "entity_type": "entity_hint",
+      "regex": "(?i)\\b(nssmf|slice\\s+subnet\\s+controller)\\b",
+      "examples": ["nssmf"]
+    },
+    {
+      "id": "ran_gnb_du",
+      "concept_uri": "telco-ran-core-slice.gnb-du-function",
+      "entity_type": "entity_hint",
+      "regex": "(?i)\\b(gnb\\s*du\\s*function|gnbdufunction)\\b",
+      "examples": ["gnbdufunction"]
+    }
+  ]
+}

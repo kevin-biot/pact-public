@@ -1,0 +1,27 @@
+{
+  "schema_version": "1.0",
+  "generated_at_utc": "2026-03-31T00:00:00Z",
+  "pack_path": "verticals/telco-ran-core-slice-demo-pack",
+  "cases": [
+    {
+      "id": "TELCO-RAN-VALID-001",
+      "path": "fixtures/telco-ran-core-slice/cases/valid-happy.json",
+      "expected": {"status": "pass", "code": "PASS"}
+    },
+    {
+      "id": "TELCO-RAN-FAIL-001",
+      "path": "fixtures/telco-ran-core-slice/cases/fail-adversarial.json",
+      "expected": {"status": "fail", "code": "DENY_INVALID_RAN_SLICE_FIELDS"}
+    },
+    {
+      "id": "TELCO-RAN-FAIL-002",
+      "path": "fixtures/telco-ran-core-slice/cases/fail-out-of-scope.json",
+      "expected": {"status": "fail", "code": "ESCALATE_OUT_OF_SCOPE_INTENT"}
+    },
+    {
+      "id": "TELCO-RAN-FAIL-003",
+      "path": "fixtures/telco-ran-core-slice/cases/fail-bundle-commit-mismatch.json",
+      "expected": {"status": "fail", "code": "PSC_BUNDLE_COMMIT_MISMATCH"}
+    }
+  ]
+}

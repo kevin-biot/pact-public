@@ -1,0 +1,30 @@
+{
+  "@context": {
+    "concept": "https://lane2.example/ontology/telco-fault-diagnosis/concept"
+  },
+  "entries": [
+    {
+      "label": "Fault Diagnosis Task",
+      "alt": [
+        "fault diagnoses",
+        "fault diagnosis",
+        "root cause analysis"
+      ],
+      "concept_id": "telco-fault-diagnosis.fault-diagnosis-task"
+    },
+    {
+      "label": "Fault Ticket",
+      "alt": [
+        "fault ticket"
+      ],
+      "concept_id": "telco-fault-diagnosis.fault-ticket"
+    },
+    {
+      "label": "Repair Recommendation",
+      "alt": [
+        "repair suggestion"
+      ],
+      "concept_id": "telco-fault-diagnosis.repair-recommendation"
+    }
+  ]
+}

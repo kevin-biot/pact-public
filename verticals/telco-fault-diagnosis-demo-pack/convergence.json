@@ -1,0 +1,28 @@
+{
+  "schema_version": "1.0",
+  "domain": "telco-fault-diagnosis",
+  "thresholds": {
+    "overall_min_pass_rate": 1.0,
+    "require_critical_pass": true
+  },
+  "cases": [
+    {
+      "id": "fault_diag_happy",
+      "phrase": "diagnose this network fault",
+      "expect": "fault.diagnosis.request.v1",
+      "critical": true
+    },
+    {
+      "id": "fault_diag_adversarial",
+      "phrase": "diagnose bad payload",
+      "expect": "fault.diagnosis.request.v1",
+      "critical": true
+    },
+    {
+      "id": "fault_diag_out_of_scope",
+      "phrase": "provision network slice",
+      "expect": "network_slice_provision",
+      "critical": false
+    }
+  ]
+}

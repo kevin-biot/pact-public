@@ -39,6 +39,7 @@ For a richer public review surface aligned with the private ontology registry wo
 This companion includes retail intent convergence, patterns, thesaurus artifacts, overlays, and a candidate decision-space profile.
 It is intentionally non-normative and does not change the signed minimal baseline artifacts in this folder.
 For a standalone broader public candidate pack, see `verticals/telco-retail-demo-pack/`.
+Additional focused public candidates are available at `verticals/telco-fault-diagnosis-demo-pack/` and `verticals/telco-ran-core-slice-demo-pack/`.
 
 ## Source Lineage (High-Level)
 

@@ -1,0 +1,113 @@
+{
+  "@context": {
+    "concept": "https://lane2.example/ontology/telco-ran-core-slice/concept"
+  },
+  "entries": [
+    {
+      "label": "AMF Function",
+      "alt": [
+        "amf"
+      ],
+      "concept_id": "telco-ran-core-slice.amf-function"
+    },
+    {
+      "label": "5G Core Domain",
+      "alt": [
+        "5gc"
+      ],
+      "concept_id": "telco-ran-core-slice.core-domain"
+    },
+    {
+      "label": "gNB CU-CP Function",
+      "alt": [
+        "gnb cu cp function"
+      ],
+      "concept_id": "telco-ran-core-slice.gnb-cu-cp-function"
+    },
+    {
+      "label": "gNB DU Function",
+      "alt": [
+        "gnb du function"
+      ],
+      "concept_id": "telco-ran-core-slice.gnb-du-function"
+    },
+    {
+      "label": "Intent Anchor",
+      "alt": [
+        "slice intent"
+      ],
+      "concept_id": "telco-ran-core-slice.intent-anchor"
+    },
+    {
+      "label": "Network Slice",
+      "alt": [
+        "network slice"
+      ],
+      "concept_id": "telco-ran-core-slice.network-slice"
+    },
+    {
+      "label": "Network Slice Subnet",
+      "alt": [
+        "network slice subnet",
+        "nssi"
+      ],
+      "concept_id": "telco-ran-core-slice.network-slice-subnet"
+    },
+    {
+      "label": "NR Cell CU",
+      "alt": [
+        "nr cell cu"
+      ],
+      "concept_id": "telco-ran-core-slice.nr-cell-cu"
+    },
+    {
+      "label": "NR Cell DU",
+      "alt": [
+        "nr cell du"
+      ],
+      "concept_id": "telco-ran-core-slice.nr-cell-du"
+    },
+    {
+      "label": "NSSMF",
+      "alt": [
+        "nssmf"
+      ],
+      "concept_id": "telco-ran-core-slice.nssmf"
+    },
+    {
+      "label": "NWDAF Function",
+      "alt": [
+        "nwdaf"
+      ],
+      "concept_id": "telco-ran-core-slice.nwdaf-function"
+    },
+    {
+      "label": "RAN Core Slice Domain",
+      "alt": [
+        "ran core slice"
+      ],
+      "concept_id": "telco-ran-core-slice.ran-core-slice-domain"
+    },
+    {
+      "label": "Slice Domain",
+      "alt": [
+        "slice domain"
+      ],
+      "concept_id": "telco-ran-core-slice.slice-domain"
+    },
+    {
+      "label": "SMF Function",
+      "alt": [
+        "smf"
+      ],
+      "concept_id": "telco-ran-core-slice.smf-function"
+    },
+    {
+      "label": "UPF Function",
+      "alt": [
+        "upf"
+      ],
+      "concept_id": "telco-ran-core-slice.upf-function"
+    }
+  ]
+}

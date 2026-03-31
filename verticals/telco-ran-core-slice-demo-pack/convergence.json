@@ -1,0 +1,28 @@
+{
+  "schema_version": "1.0",
+  "domain": "telco-ran-core-slice",
+  "thresholds": {
+    "overall_min_pass_rate": 1.0,
+    "require_critical_pass": true
+  },
+  "cases": [
+    {
+      "id": "ran_slice_happy",
+      "phrase": "attach slice to gnb du",
+      "expect": "telco.ran.slice.attach.v1",
+      "critical": true
+    },
+    {
+      "id": "ran_slice_adversarial",
+      "phrase": "attach slice invalid fields",
+      "expect": "telco.ran.slice.attach.v1",
+      "critical": true
+    },
+    {
+      "id": "ran_slice_out_of_scope",
+      "phrase": "customer billing adjustment",
+      "expect": "customer_billing_adjustment",
+      "critical": false
+    }
+  ]
+}

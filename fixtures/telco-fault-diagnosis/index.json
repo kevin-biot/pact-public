@@ -1,0 +1,27 @@
+{
+  "schema_version": "1.0",
+  "generated_at_utc": "2026-03-31T00:00:00Z",
+  "pack_path": "verticals/telco-fault-diagnosis-demo-pack",
+  "cases": [
+    {
+      "id": "TELCO-FD-VALID-001",
+      "path": "fixtures/telco-fault-diagnosis/cases/valid-happy.json",
+      "expected": {"status": "pass", "code": "PASS"}
+    },
+    {
+      "id": "TELCO-FD-FAIL-001",
+      "path": "fixtures/telco-fault-diagnosis/cases/fail-adversarial.json",
+      "expected": {"status": "fail", "code": "DENY_INVALID_FAULT_DIAGNOSIS_FIELDS"}
+    },
+    {
+      "id": "TELCO-FD-FAIL-002",
+      "path": "fixtures/telco-fault-diagnosis/cases/fail-out-of-scope.json",
+      "expected": {"status": "fail", "code": "ESCALATE_OUT_OF_SCOPE_TASK"}
+    },
+    {
+      "id": "TELCO-FD-FAIL-003",
+      "path": "fixtures/telco-fault-diagnosis/cases/fail-bundle-commit-mismatch.json",
+      "expected": {"status": "fail", "code": "PSC_BUNDLE_COMMIT_MISMATCH"}
+    }
+  ]
+}

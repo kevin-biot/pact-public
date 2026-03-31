@@ -1,0 +1,10 @@
+{
+  "bundleId": "sha256:502ee70019342bc3c182b92be51576641f0626ba0fd9bb48f35bb6ab816d6a6d",
+  "decision": {
+    "type": "FaultDiagnosis",
+    "intent_class": "fault.diagnosis.request.v1",
+    "targetObject": {"identifier": "bad"},
+    "taskContext": {"faultOccurrenceTime": "not-a-date"},
+    "constraints": {"taskPriority": "Urgent"}
+  }
+}

@@ -1,0 +1,36 @@
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix telco: <https://ontology.lane2.example/telco-fault-diagnosis#> .
+
+telco:FaultDiagnosisTaskShape
+  a sh:NodeShape ;
+  sh:targetClass telco:FaultDiagnosisTask ;
+  sh:property [
+    sh:path telco:faultIdentifier ;
+    sh:datatype xsd:string ;
+    sh:minCount 1 ;
+    sh:minLength 8 ;
+    sh:maxLength 64 ;
+    sh:pattern "^[A-Za-z0-9][A-Za-z0-9._:-]{7,63}$"
+  ] ;
+  sh:property [
+    sh:path telco:faultOccurrenceTime ;
+    sh:datatype xsd:dateTime ;
+    sh:minCount 1
+  ] ;
+  sh:property [
+    sh:path telco:taskPriority ;
+    sh:datatype xsd:string ;
+    sh:minCount 1 ;
+    sh:in (
+      "Low"
+      "Medium"
+      "High"
+    )
+  ] ;
+  sh:property [
+    sh:path telco:timeLimit ;
+    sh:datatype xsd:string ;
+    sh:minCount 0 ;
+    sh:pattern "^[0-9]+(ns|us|µs|ms|s|m|h)([0-9]+(ns|us|µs|ms|s|m|h))*$"
+  ] .

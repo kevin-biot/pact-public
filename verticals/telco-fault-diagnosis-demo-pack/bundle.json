@@ -1,0 +1,20 @@
+{
+  "id": "pack-fault-diagnosis-0.1.0",
+  "domain": "telco-fault-diagnosis",
+  "version": "0.1.0",
+  "providerId": "ontology:telco:fault-diagnosis",
+  "trustTier": "Tier1",
+  "policySnapshotId": "sha256:de93910b5a55669504e880f862be54015b611d8410d8cc16f5d3c3ec974f5116",
+  "files": {
+    "context": "sha256:8ae327cf2fe1351ab6cea506d7cf5bcf3856fb4440005235917777a5ca7a1b20",
+    "shapes": "sha256:76717aea992f13b3d5116947574a3177a8268f2e29aba55fe6ce864c991080ff",
+    "taxonomy_constraints": "sha256:f5f0e1ae34cccf413c9f3b7fc98427e36d6a3ad75123fe7c5fc8b1c38529fbce",
+    "thesaurus": "sha256:ff3d10a202ecb1cfbc84faa105fd587d1ec20b7ff24c3856e4990a40d8218985",
+    "vocab": "sha256:248a18d65ea6c7cee7f0d328678b82f649dcb10a68e89b8694ef6484fe27e981"
+  },
+  "precedence": [],
+  "denyWins": true,
+  "nbf": "2026-03-02T00:00:00Z",
+  "exp": "2031-03-02T00:00:00Z",
+  "revEpoch": 1
+}

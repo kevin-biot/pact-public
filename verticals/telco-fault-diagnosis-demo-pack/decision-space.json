@@ -1,0 +1,53 @@
+{
+  "schema_version": "1.0",
+  "domain": "telco-fault-diagnosis",
+  "pack_id": "pack-fault-diagnosis-0.1.0",
+  "version": "0.1.0",
+  "out_of_scope_behavior": "escalate",
+  "state_model": {
+    "states": ["ingress", "validated", "classified", "responded", "rejected", "escalated"],
+    "initial_state": "ingress",
+    "terminal_states": ["responded", "rejected", "escalated"]
+  },
+  "admissible_intents": [
+    {
+      "intent_class": "fault.diagnosis.request.v1",
+      "allowed_states": ["ingress", "validated", "classified"],
+      "required_fact_types": ["fault_diagnosis_request"],
+      "transition_ids": ["validate_request", "classify_request", "respond_request"]
+    }
+  ],
+  "admissible_facts": [
+    {
+      "fact_type": "fault_diagnosis_request",
+      "schema_ref": "urn:telco:fault-diagnosis:request:v1",
+      "additional_properties": "allow",
+      "field_constraints": [
+        {
+          "path": "targetObject.identifier",
+          "datatype": "string",
+          "required": true,
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9._:-]{7,63}$"
+        },
+        {
+          "path": "taskContext.faultOccurrenceTime",
+          "datatype": "string",
+          "required": true,
+          "format": "rfc3339"
+        },
+        {
+          "path": "constraints.taskPriority",
+          "datatype": "string",
+          "required": true,
+          "allowed_values": ["Low", "Medium", "High"]
+        },
+        {
+          "path": "constraints.timeLimit",
+          "datatype": "string",
+          "required": false,
+          "format": "duration"
+        }
+      ]
+    }
+  ]
+}

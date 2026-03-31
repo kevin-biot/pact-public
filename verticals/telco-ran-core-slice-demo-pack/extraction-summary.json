@@ -1,0 +1,11 @@
+{
+  "schema_version": "0.1",
+  "generated_at_utc": "2026-03-31T00:00:00Z",
+  "profile": "telco-ran-core-slice-demo-pack",
+  "domain": "telco-ran-core-slice",
+  "source_spec": "3GPP TS 28.541 K10",
+  "source_artifact_count": 3,
+  "mapped_symbol_count": 12,
+  "mapped_field_count": 0,
+  "note": "Curated symbol-level crosswalk profile for RAN/Core/Slice concept governance."
+}

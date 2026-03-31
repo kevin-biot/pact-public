@@ -1,0 +1,75 @@
+{
+  "schema_version": "1.0",
+  "domain": "pack-fault-diagnosis",
+  "last_modified": "2026-03-25T22:28:02Z",
+  "concepts": [
+    {
+      "concept_id": "fault_context",
+      "preferred_term": "Fault Context",
+      "synonyms": [],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "telco-fault-diagnosis.fault-domain",
+      "narrower": [],
+      "source_refs": [],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "fault_diagnosis_task",
+      "preferred_term": "Fault Diagnosis Task",
+      "synonyms": [
+        "fault diagnoses",
+        "fault diagnosis",
+        "root cause analysis"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "telco-fault-diagnosis.fault-domain",
+      "narrower": [],
+      "source_refs": [],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "fault_diagnosis_domain",
+      "preferred_term": "Fault Diagnosis Domain",
+      "synonyms": [],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": null,
+      "narrower": [],
+      "source_refs": [],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "fault_ticket",
+      "preferred_term": "Fault Ticket",
+      "synonyms": [
+        "fault ticket"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "telco-fault-diagnosis.fault-domain",
+      "narrower": [],
+      "source_refs": [],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "repair_recommendation",
+      "preferred_term": "Repair Recommendation",
+      "synonyms": [
+        "repair suggestion"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "telco-fault-diagnosis.fault-diagnosis-task",
+      "narrower": [],
+      "source_refs": [],
+      "ner_provenance": null
+    }
+  ]
+}

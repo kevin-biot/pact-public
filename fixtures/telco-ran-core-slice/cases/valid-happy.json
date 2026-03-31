@@ -1,0 +1,9 @@
+{
+  "bundleId": "sha256:d3fffecaa40589be62836fb3739d54fb08fe4cefe9d452976ec2a60423dfabbb",
+  "decision": {
+    "type": "RanCoreSliceIntent",
+    "intent_class": "telco.ran.slice.attach.v1",
+    "sliceId": "slice-a1-prod",
+    "target": "gnbdufunction"
+  }
+}

@@ -1,0 +1,600 @@
+{
+  "schema_version": "1.0",
+  "domain": "pack-ran-core-slice",
+  "last_modified": "2026-03-25T23:30:00Z",
+  "concepts": [
+    {
+      "concept_id": "amf_function",
+      "preferred_term": "AMF Function",
+      "synonyms": [
+        "amf"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "telco-ran-core-slice.core-domain",
+      "narrower": [],
+      "source_refs": [],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "5g_core_domain",
+      "preferred_term": "5G Core Domain",
+      "synonyms": [
+        "5gc"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "telco-ran-core-slice.ran-core-slice-domain",
+      "narrower": [],
+      "source_refs": [],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "gnb_cu_cp_function",
+      "preferred_term": "gNB CU-CP Function",
+      "synonyms": [
+        "gnb cu cp function"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "telco-ran-core-slice.ran-core-slice-domain",
+      "narrower": [],
+      "source_refs": [],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "gnb_du_function",
+      "preferred_term": "gNB DU Function",
+      "synonyms": [
+        "gnb du function"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "telco-ran-core-slice.ran-core-slice-domain",
+      "narrower": [],
+      "source_refs": [],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "intent_anchor",
+      "preferred_term": "Intent Anchor",
+      "synonyms": [
+        "slice intent"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "telco-ran-core-slice.slice-domain",
+      "narrower": [],
+      "source_refs": [],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "network_slice",
+      "preferred_term": "Network Slice",
+      "synonyms": [
+        "network slice"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "telco-ran-core-slice.slice-domain",
+      "narrower": [],
+      "source_refs": [],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "network_slice_subnet",
+      "preferred_term": "Network Slice Subnet",
+      "synonyms": [
+        "network slice subnet",
+        "nssi"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "telco-ran-core-slice.network-slice",
+      "narrower": [],
+      "source_refs": [],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "nr_cell_cu",
+      "preferred_term": "NR Cell CU",
+      "synonyms": [
+        "nr cell cu"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "telco-ran-core-slice.gnb-cu-cp-function",
+      "narrower": [],
+      "source_refs": [],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "nr_cell_du",
+      "preferred_term": "NR Cell DU",
+      "synonyms": [
+        "nr cell du"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "telco-ran-core-slice.gnb-du-function",
+      "narrower": [],
+      "source_refs": [],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "nssmf",
+      "preferred_term": "NSSMF",
+      "synonyms": [
+        "nssmf"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "telco-ran-core-slice.slice-domain",
+      "narrower": [],
+      "source_refs": [],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "nwdaf_function",
+      "preferred_term": "NWDAF Function",
+      "synonyms": [
+        "nwdaf"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "telco-ran-core-slice.core-domain",
+      "narrower": [],
+      "source_refs": [],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "ran_core_slice_domain",
+      "preferred_term": "RAN Core Slice Domain",
+      "synonyms": [
+        "ran core slice"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": null,
+      "narrower": [],
+      "source_refs": [],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "slice_domain",
+      "preferred_term": "Slice Domain",
+      "synonyms": [
+        "slice domain"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "telco-ran-core-slice.ran-core-slice-domain",
+      "narrower": [],
+      "source_refs": [],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "smf_function",
+      "preferred_term": "SMF Function",
+      "synonyms": [
+        "smf"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "telco-ran-core-slice.core-domain",
+      "narrower": [],
+      "source_refs": [],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "upf_function",
+      "preferred_term": "UPF Function",
+      "synonyms": [
+        "upf"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "telco-ran-core-slice.core-domain",
+      "narrower": [],
+      "source_refs": [],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "gnb",
+      "preferred_term": "gNB",
+      "synonyms": [
+        "gNodeB",
+        "next generation Node B",
+        "5G base station"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": null,
+      "narrower": [],
+      "source_refs": [
+        "3gpp:ts38.300"
+      ],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "gnb_du",
+      "preferred_term": "gNB-DU",
+      "synonyms": [
+        "distributed unit",
+        "DU",
+        "gNB distributed unit"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": null,
+      "narrower": [],
+      "source_refs": [
+        "3gpp:ts38.401"
+      ],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "gnb_cu",
+      "preferred_term": "gNB-CU",
+      "synonyms": [
+        "centralized unit",
+        "CU",
+        "gNB central unit"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": null,
+      "narrower": [],
+      "source_refs": [
+        "3gpp:ts38.401"
+      ],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "amf",
+      "preferred_term": "AMF",
+      "synonyms": [
+        "Access and Mobility Management Function",
+        "mobility management"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": null,
+      "narrower": [],
+      "source_refs": [
+        "3gpp:ts23.501"
+      ],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "smf",
+      "preferred_term": "SMF",
+      "synonyms": [
+        "Session Management Function",
+        "session management"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": null,
+      "narrower": [],
+      "source_refs": [
+        "3gpp:ts23.501"
+      ],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "upf",
+      "preferred_term": "UPF",
+      "synonyms": [
+        "User Plane Function",
+        "user plane",
+        "data plane function"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": null,
+      "narrower": [],
+      "source_refs": [
+        "3gpp:ts23.501"
+      ],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "nrf",
+      "preferred_term": "NRF",
+      "synonyms": [
+        "Network Repository Function",
+        "network function repository"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": null,
+      "narrower": [],
+      "source_refs": [
+        "3gpp:ts23.501"
+      ],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "s_nssai",
+      "preferred_term": "S-NSSAI",
+      "synonyms": [
+        "Single Network Slice Selection Assistance Information",
+        "slice identifier"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": null,
+      "narrower": [],
+      "source_refs": [
+        "3gpp:ts23.501"
+      ],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "nssai",
+      "preferred_term": "NSSAI",
+      "synonyms": [
+        "Network Slice Selection Assistance Information"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": null,
+      "narrower": [],
+      "source_refs": [
+        "3gpp:ts23.501"
+      ],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "nr_cell",
+      "preferred_term": "NR Cell",
+      "synonyms": [
+        "New Radio cell",
+        "5G cell",
+        "NR cell"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": null,
+      "narrower": [],
+      "source_refs": [
+        "3gpp:ts38.300"
+      ],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "ssb",
+      "preferred_term": "SSB",
+      "synonyms": [
+        "Synchronization Signal Block",
+        "SS block",
+        "sync signal"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": null,
+      "narrower": [],
+      "source_refs": [
+        "3gpp:ts38.211"
+      ],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "bwp",
+      "preferred_term": "BWP",
+      "synonyms": [
+        "Bandwidth Part",
+        "bandwidth partition"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": null,
+      "narrower": [],
+      "source_refs": [
+        "3gpp:ts38.211"
+      ],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "harq",
+      "preferred_term": "HARQ",
+      "synonyms": [
+        "Hybrid Automatic Repeat Request",
+        "hybrid ARQ"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": null,
+      "narrower": [],
+      "source_refs": [
+        "3gpp:ts38.212"
+      ],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "mimo",
+      "preferred_term": "MIMO",
+      "synonyms": [
+        "Multiple Input Multiple Output",
+        "multi-antenna",
+        "spatial multiplexing"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": null,
+      "narrower": [],
+      "source_refs": [
+        "3gpp:ts38.214"
+      ],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "beamforming",
+      "preferred_term": "beamforming",
+      "synonyms": [
+        "beam management",
+        "beam sweeping",
+        "directional transmission"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": null,
+      "narrower": [],
+      "source_refs": [
+        "3gpp:ts38.214"
+      ],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "o_ran",
+      "preferred_term": "O-RAN",
+      "synonyms": [
+        "Open RAN",
+        "open radio access network"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": null,
+      "narrower": [],
+      "source_refs": [
+        "o-ran:architecture"
+      ],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "ric",
+      "preferred_term": "RIC",
+      "synonyms": [
+        "RAN Intelligent Controller",
+        "intelligent controller"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": null,
+      "narrower": [],
+      "source_refs": [
+        "o-ran:architecture"
+      ],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "xapp",
+      "preferred_term": "xApp",
+      "synonyms": [
+        "extended application",
+        "RIC application"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": null,
+      "narrower": [],
+      "source_refs": [
+        "o-ran:architecture"
+      ],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "rapp",
+      "preferred_term": "rApp",
+      "synonyms": [
+        "RIC application",
+        "non-real-time RIC application"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": null,
+      "narrower": [],
+      "source_refs": [
+        "o-ran:architecture"
+      ],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "intent",
+      "preferred_term": "intent",
+      "synonyms": [
+        "intent-driven management",
+        "declarative intent"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": null,
+      "narrower": [],
+      "source_refs": [
+        "3gpp:ts28.312"
+      ],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "closed_loop",
+      "preferred_term": "closed-loop",
+      "synonyms": [
+        "closed-loop automation",
+        "autonomous closed loop",
+        "CLA"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": null,
+      "narrower": [],
+      "source_refs": [
+        "3gpp:ts28.535"
+      ],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "mda",
+      "preferred_term": "MDA",
+      "synonyms": [
+        "Management Data Analytics",
+        "analytics function"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": null,
+      "narrower": [],
+      "source_refs": [
+        "3gpp:ts28.104"
+      ],
+      "ner_provenance": null
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "schema_version": "0.1",
+  "generated_at_utc": "2026-03-31T00:00:00Z",
+  "profile": "telco-fault-diagnosis-demo-pack",
+  "domain": "telco-fault-diagnosis",
+  "source_spec": "TMF IG1453 A2A-T v2.0.0",
+  "source_artifact_count": 1,
+  "mapped_symbol_count": 3,
+  "mapped_field_count": 4,
+  "note": "Curated crosswalk profile for deterministic fault diagnosis governance."
+}

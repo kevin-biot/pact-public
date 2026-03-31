@@ -1,0 +1,49 @@
+{
+  "@graph": [
+    {
+      "@id": "telco-fault-diagnosis.fault-context",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "Fault Context",
+      "skos:definition": "Context envelope carrying time and related conditions for diagnosis.",
+      "skos:broader": "telco-fault-diagnosis.fault-domain"
+    },
+    {
+      "@id": "telco-fault-diagnosis.fault-diagnosis-task",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "Fault Diagnosis Task",
+      "skos:definition": "Canonical task representing root-cause diagnosis and repair recommendation workflow.",
+      "skos:altLabel": [
+        "fault diagnoses",
+        "fault diagnosis",
+        "root cause analysis"
+      ],
+      "skos:broader": "telco-fault-diagnosis.fault-domain"
+    },
+    {
+      "@id": "telco-fault-diagnosis.fault-domain",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "Fault Diagnosis Domain",
+      "skos:definition": "Top-level concept group for telecom fault diagnosis tasks."
+    },
+    {
+      "@id": "telco-fault-diagnosis.fault-ticket",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "Fault Ticket",
+      "skos:definition": "Identifier for the fault case under diagnosis.",
+      "skos:altLabel": [
+        "fault ticket"
+      ],
+      "skos:broader": "telco-fault-diagnosis.fault-domain"
+    },
+    {
+      "@id": "telco-fault-diagnosis.repair-recommendation",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "Repair Recommendation",
+      "skos:definition": "Structured output representing repair actions and root-cause recommendations.",
+      "skos:altLabel": [
+        "repair suggestion"
+      ],
+      "skos:broader": "telco-fault-diagnosis.fault-diagnosis-task"
+    }
+  ]
+}

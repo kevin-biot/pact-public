@@ -1,0 +1,154 @@
+{
+  "@graph": [
+    {
+      "@id": "telco-ran-core-slice.amf-function",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "AMF Function",
+      "skos:definition": "Access and mobility management function in 5GC.",
+      "skos:altLabel": [
+        "amf"
+      ],
+      "skos:broader": "telco-ran-core-slice.core-domain"
+    },
+    {
+      "@id": "telco-ran-core-slice.core-domain",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "5G Core Domain",
+      "skos:definition": "Top-level concept for 5G Core managed functions.",
+      "skos:altLabel": [
+        "5gc"
+      ],
+      "skos:broader": "telco-ran-core-slice.ran-core-slice-domain"
+    },
+    {
+      "@id": "telco-ran-core-slice.gnb-cu-cp-function",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "gNB CU-CP Function",
+      "skos:definition": "NR centralized unit control-plane managed function.",
+      "skos:altLabel": [
+        "gnb cu cp function"
+      ],
+      "skos:broader": "telco-ran-core-slice.ran-core-slice-domain"
+    },
+    {
+      "@id": "telco-ran-core-slice.gnb-du-function",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "gNB DU Function",
+      "skos:definition": "NR distributed unit managed function from 3GPP NR NRM.",
+      "skos:altLabel": [
+        "gnb du function"
+      ],
+      "skos:broader": "telco-ran-core-slice.ran-core-slice-domain"
+    },
+    {
+      "@id": "telco-ran-core-slice.intent-anchor",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "Intent Anchor",
+      "skos:definition": "Intent-facing anchor concept for slice operations mapped to managed objects.",
+      "skos:altLabel": [
+        "slice intent"
+      ],
+      "skos:broader": "telco-ran-core-slice.slice-domain"
+    },
+    {
+      "@id": "telco-ran-core-slice.network-slice",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "Network Slice",
+      "skos:definition": "Top-level network slice managed object.",
+      "skos:altLabel": [
+        "network slice"
+      ],
+      "skos:broader": "telco-ran-core-slice.slice-domain"
+    },
+    {
+      "@id": "telco-ran-core-slice.network-slice-subnet",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "Network Slice Subnet",
+      "skos:definition": "Domain-level subnet component of a network slice.",
+      "skos:altLabel": [
+        "network slice subnet",
+        "nssi"
+      ],
+      "skos:broader": "telco-ran-core-slice.network-slice"
+    },
+    {
+      "@id": "telco-ran-core-slice.nr-cell-cu",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "NR Cell CU",
+      "skos:definition": "Centralized-unit NR cell managed object.",
+      "skos:altLabel": [
+        "nr cell cu"
+      ],
+      "skos:broader": "telco-ran-core-slice.gnb-cu-cp-function"
+    },
+    {
+      "@id": "telco-ran-core-slice.nr-cell-du",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "NR Cell DU",
+      "skos:definition": "Distributed-unit NR cell managed object.",
+      "skos:altLabel": [
+        "nr cell du"
+      ],
+      "skos:broader": "telco-ran-core-slice.gnb-du-function"
+    },
+    {
+      "@id": "telco-ran-core-slice.nssmf",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "NSSMF",
+      "skos:definition": "Network Slice Subnet Management Function role.",
+      "skos:altLabel": [
+        "nssmf"
+      ],
+      "skos:broader": "telco-ran-core-slice.slice-domain"
+    },
+    {
+      "@id": "telco-ran-core-slice.nwdaf-function",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "NWDAF Function",
+      "skos:definition": "Network data analytics function in 5GC.",
+      "skos:altLabel": [
+        "nwdaf"
+      ],
+      "skos:broader": "telco-ran-core-slice.core-domain"
+    },
+    {
+      "@id": "telco-ran-core-slice.ran-core-slice-domain",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "RAN Core Slice Domain",
+      "skos:definition": "Top-level domain concept spanning 5G RAN, Core, and slicing semantics.",
+      "skos:altLabel": [
+        "ran core slice"
+      ]
+    },
+    {
+      "@id": "telco-ran-core-slice.slice-domain",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "Slice Domain",
+      "skos:definition": "Top-level concept for network slicing entities.",
+      "skos:altLabel": [
+        "slice domain"
+      ],
+      "skos:broader": "telco-ran-core-slice.ran-core-slice-domain"
+    },
+    {
+      "@id": "telco-ran-core-slice.smf-function",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "SMF Function",
+      "skos:definition": "Session management function in 5GC.",
+      "skos:altLabel": [
+        "smf"
+      ],
+      "skos:broader": "telco-ran-core-slice.core-domain"
+    },
+    {
+      "@id": "telco-ran-core-slice.upf-function",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "UPF Function",
+      "skos:definition": "User-plane function in 5GC.",
+      "skos:altLabel": [
+        "upf"
+      ],
+      "skos:broader": "telco-ran-core-slice.core-domain"
+    }
+  ]
+}

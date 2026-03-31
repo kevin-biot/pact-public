@@ -1,0 +1,21 @@
+{
+  "schema_version": "1.0",
+  "domain": "telco-fault-diagnosis",
+  "mappings": [
+    {
+      "concept_uri": "telco-fault-diagnosis.fault-diagnosis-task",
+      "intent_class": "fault.diagnosis.request.v1",
+      "confidence_floor": 0.75
+    },
+    {
+      "concept_uri": "telco-fault-diagnosis.fault-ticket",
+      "intent_class": "fault.diagnosis.request.v1",
+      "confidence_floor": 0.75
+    },
+    {
+      "concept_uri": "telco-fault-diagnosis.fault-context",
+      "intent_class": "fault.diagnosis.request.v1",
+      "confidence_floor": 0.75
+    }
+  ]
+}
