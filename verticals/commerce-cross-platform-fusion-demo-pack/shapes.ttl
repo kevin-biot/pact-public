@@ -1,0 +1,21 @@
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix cp: <https://lane2.example/ontology/commerce/cross-platform/> .
+
+cp:CommerceEventNodeShape a sh:NodeShape ;
+  sh:targetClass cp:CommerceEvent ;
+  sh:property [
+    sh:path cp:intentClass ;
+    sh:datatype xsd:string ;
+    sh:minCount 1 ;
+  ] ;
+  sh:property [
+    sh:path cp:correlationId ;
+    sh:datatype xsd:string ;
+    sh:minCount 1 ;
+  ] ;
+  sh:property [
+    sh:path cp:sourceDomain ;
+    sh:datatype xsd:string ;
+    sh:minCount 1 ;
+  ] .

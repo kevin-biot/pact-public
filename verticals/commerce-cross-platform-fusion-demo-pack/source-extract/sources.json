@@ -1,0 +1,37 @@
+{
+  "domain": "commerce-cross-platform-fusion-demo",
+  "lane": "cross-platform-commerce-fusion",
+  "generated_at_utc": "2026-03-31T01:56:38Z",
+  "sources": [
+    {
+      "standard": "Open Banking",
+      "pack_ref": "registry/openbanking-payment-initiation-demo",
+      "intent_classes": [
+        "openbanking.payment.initiate.v1",
+        "openbanking.payment.status.read.v1",
+        "openbanking.payment.cancel.v1"
+      ]
+    },
+    {
+      "standard": "Shopify Functions",
+      "pack_ref": "registry/shopify-functions-core-seed-demo",
+      "intent_classes": [
+        "shopify.functions.cart.transform.run.v1",
+        "shopify.functions.cart.lines.discounts.generate.run.v1",
+        "shopify.functions.cart.delivery-options.discounts.generate.run.v1",
+        "shopify.functions.cart.payment-methods.transform.run.v1",
+        "shopify.functions.cart.validations.generate.run.v1"
+      ]
+    },
+    {
+      "standard": "ISO 20022",
+      "pack_ref": "registry/iso20022",
+      "intent_classes": [
+        "iso20022.payment.initiation.v1",
+        "iso20022.payment.credit_transfer.v1",
+        "iso20022.payment.status_report.v1",
+        "iso20022.payment.return.v1"
+      ]
+    }
+  ]
+}

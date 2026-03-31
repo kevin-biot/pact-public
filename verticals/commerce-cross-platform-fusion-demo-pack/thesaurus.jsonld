@@ -1,0 +1,154 @@
+{
+  "@context": {
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "cp": "https://lane2.example/ontology/commerce/cross-platform/",
+    "dct": "http://purl.org/dc/terms/",
+    "source": "dct:source"
+  },
+  "@graph": [
+    {
+      "@id": "cp:intent/openbanking.payment.initiate",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "initiate open banking payment",
+      "skos:altLabel": [
+        "openbanking.payment.initiate.v1"
+      ],
+      "skos:broader": "cp:lane/openbanking",
+      "source": [
+        "registry/openbanking-payment-initiation-demo"
+      ]
+    },
+    {
+      "@id": "cp:intent/iso20022.payment.initiation",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "normalize into iso20022 initiation",
+      "skos:altLabel": [
+        "iso20022.payment.initiation.v1"
+      ],
+      "skos:broader": "cp:lane/iso20022",
+      "source": [
+        "registry/iso20022"
+      ]
+    },
+    {
+      "@id": "cp:intent/shopify.functions.cart.transform.run",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "transform cart before pricing",
+      "skos:altLabel": [
+        "shopify.functions.cart.transform.run.v1"
+      ],
+      "skos:broader": "cp:lane/shopify-functions",
+      "source": [
+        "registry/shopify-functions-cart-transform-surface-demo"
+      ]
+    },
+    {
+      "@id": "cp:intent/shopify.functions.cart.lines.discounts.generate.run",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "apply line discounts",
+      "skos:altLabel": [
+        "shopify.functions.cart.lines.discounts.generate.run.v1"
+      ],
+      "skos:broader": "cp:lane/shopify-functions",
+      "source": [
+        "registry/shopify-functions-discount-surface-demo"
+      ]
+    },
+    {
+      "@id": "cp:intent/shopify.functions.cart.delivery-options.discounts.generate.run",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "apply delivery discounts",
+      "skos:altLabel": [
+        "shopify.functions.cart.delivery-options.discounts.generate.run.v1"
+      ],
+      "skos:broader": "cp:lane/shopify-functions",
+      "source": [
+        "registry/shopify-functions-discount-surface-demo"
+      ]
+    },
+    {
+      "@id": "cp:intent/shopify.functions.cart.payment-methods.transform.run",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "customize payment method choices",
+      "skos:altLabel": [
+        "shopify.functions.cart.payment-methods.transform.run.v1"
+      ],
+      "skos:broader": "cp:lane/shopify-functions",
+      "source": [
+        "registry/shopify-functions-payment-surface-demo"
+      ]
+    },
+    {
+      "@id": "cp:intent/shopify.functions.cart.validations.generate.run",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "validate checkout policy constraints",
+      "skos:altLabel": [
+        "shopify.functions.cart.validations.generate.run.v1"
+      ],
+      "skos:broader": "cp:lane/shopify-functions",
+      "source": [
+        "registry/shopify-functions-validation-surface-demo"
+      ]
+    },
+    {
+      "@id": "cp:intent/iso20022.payment.credit_transfer",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "submit credit transfer on payment rail",
+      "skos:altLabel": [
+        "iso20022.payment.credit_transfer.v1"
+      ],
+      "skos:broader": "cp:lane/iso20022",
+      "source": [
+        "registry/iso20022"
+      ]
+    },
+    {
+      "@id": "cp:intent/iso20022.payment.status_report",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "consume payment status report",
+      "skos:altLabel": [
+        "iso20022.payment.status_report.v1"
+      ],
+      "skos:broader": "cp:lane/iso20022",
+      "source": [
+        "registry/iso20022"
+      ]
+    },
+    {
+      "@id": "cp:intent/openbanking.payment.status.read",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "read open banking payment status",
+      "skos:altLabel": [
+        "openbanking.payment.status.read.v1"
+      ],
+      "skos:broader": "cp:lane/openbanking",
+      "source": [
+        "registry/openbanking-payment-initiation-demo"
+      ]
+    },
+    {
+      "@id": "cp:intent/openbanking.payment.cancel",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "cancel open banking payment",
+      "skos:altLabel": [
+        "openbanking.payment.cancel.v1"
+      ],
+      "skos:broader": "cp:lane/openbanking",
+      "source": [
+        "registry/openbanking-payment-initiation-demo"
+      ]
+    },
+    {
+      "@id": "cp:intent/iso20022.payment.return",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "process rail return",
+      "skos:altLabel": [
+        "iso20022.payment.return.v1"
+      ],
+      "skos:broader": "cp:lane/iso20022",
+      "source": [
+        "registry/iso20022"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "schema_version": "1.0",
+  "domain": "commerce-cross-platform-fusion-demo",
+  "mappings": [
+    {
+      "concept_uri": "cp:intent/openbanking.payment.initiate",
+      "intent_class": "openbanking.payment.initiate.v1",
+      "confidence_floor": 0.75
+    },
+    {
+      "concept_uri": "cp:intent/iso20022.payment.initiation",
+      "intent_class": "iso20022.payment.initiation.v1",
+      "confidence_floor": 0.75
+    },
+    {
+      "concept_uri": "cp:intent/shopify.functions.cart.transform.run",
+      "intent_class": "shopify.functions.cart.transform.run.v1",
+      "confidence_floor": 0.75
+    },
+    {
+      "concept_uri": "cp:intent/shopify.functions.cart.lines.discounts.generate.run",
+      "intent_class": "shopify.functions.cart.lines.discounts.generate.run.v1",
+      "confidence_floor": 0.75
+    },
+    {
+      "concept_uri": "cp:intent/shopify.functions.cart.delivery-options.discounts.generate.run",
+      "intent_class": "shopify.functions.cart.delivery-options.discounts.generate.run.v1",
+      "confidence_floor": 0.75
+    },
+    {
+      "concept_uri": "cp:intent/shopify.functions.cart.payment-methods.transform.run",
+      "intent_class": "shopify.functions.cart.payment-methods.transform.run.v1",
+      "confidence_floor": 0.75
+    },
+    {
+      "concept_uri": "cp:intent/shopify.functions.cart.validations.generate.run",
+      "intent_class": "shopify.functions.cart.validations.generate.run.v1",
+      "confidence_floor": 0.75
+    },
+    {
+      "concept_uri": "cp:intent/iso20022.payment.credit_transfer",
+      "intent_class": "iso20022.payment.credit_transfer.v1",
+      "confidence_floor": 0.75
+    },
+    {
+      "concept_uri": "cp:intent/iso20022.payment.status_report",
+      "intent_class": "iso20022.payment.status_report.v1",
+      "confidence_floor": 0.75
+    },
+    {
+      "concept_uri": "cp:intent/openbanking.payment.status.read",
+      "intent_class": "openbanking.payment.status.read.v1",
+      "confidence_floor": 0.75
+    },
+    {
+      "concept_uri": "cp:intent/openbanking.payment.cancel",
+      "intent_class": "openbanking.payment.cancel.v1",
+      "confidence_floor": 0.75
+    },
+    {
+      "concept_uri": "cp:intent/iso20022.payment.return",
+      "intent_class": "iso20022.payment.return.v1",
+      "confidence_floor": 0.75
+    }
+  ]
+}

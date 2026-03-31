@@ -1,0 +1,114 @@
+{
+  "schema_version": "1.0",
+  "domain": "commerce-cross-platform-fusion-demo",
+  "patterns": [
+    {
+      "id": "cp_openbanking-payment-initiate-v1_intent",
+      "concept_uri": "cp:intent/openbanking.payment.initiate",
+      "entity_type": "intent_hint",
+      "regex": "(?i)^initiate\\ open\\ banking\\ payment$",
+      "examples": [
+        "initiate open banking payment"
+      ]
+    },
+    {
+      "id": "cp_iso20022-payment-initiation-v1_intent",
+      "concept_uri": "cp:intent/iso20022.payment.initiation",
+      "entity_type": "intent_hint",
+      "regex": "(?i)^normalize\\ into\\ iso20022\\ initiation$",
+      "examples": [
+        "normalize into iso20022 initiation"
+      ]
+    },
+    {
+      "id": "cp_shopify-functions-cart-transform-run-v1_intent",
+      "concept_uri": "cp:intent/shopify.functions.cart.transform.run",
+      "entity_type": "intent_hint",
+      "regex": "(?i)^transform\\ cart\\ before\\ pricing$",
+      "examples": [
+        "transform cart before pricing"
+      ]
+    },
+    {
+      "id": "cp_shopify-functions-cart-lines-discounts-generate-run-v1_intent",
+      "concept_uri": "cp:intent/shopify.functions.cart.lines.discounts.generate.run",
+      "entity_type": "intent_hint",
+      "regex": "(?i)^apply\\ line\\ discounts$",
+      "examples": [
+        "apply line discounts"
+      ]
+    },
+    {
+      "id": "cp_shopify-functions-cart-delivery-options-discounts-generate-run-v1_intent",
+      "concept_uri": "cp:intent/shopify.functions.cart.delivery-options.discounts.generate.run",
+      "entity_type": "intent_hint",
+      "regex": "(?i)^apply\\ delivery\\ discounts$",
+      "examples": [
+        "apply delivery discounts"
+      ]
+    },
+    {
+      "id": "cp_shopify-functions-cart-payment-methods-transform-run-v1_intent",
+      "concept_uri": "cp:intent/shopify.functions.cart.payment-methods.transform.run",
+      "entity_type": "intent_hint",
+      "regex": "(?i)^customize\\ payment\\ method\\ choices$",
+      "examples": [
+        "customize payment method choices"
+      ]
+    },
+    {
+      "id": "cp_shopify-functions-cart-validations-generate-run-v1_intent",
+      "concept_uri": "cp:intent/shopify.functions.cart.validations.generate.run",
+      "entity_type": "intent_hint",
+      "regex": "(?i)^validate\\ checkout\\ policy\\ constraints$",
+      "examples": [
+        "validate checkout policy constraints"
+      ]
+    },
+    {
+      "id": "cp_iso20022-payment-credit-transfer-v1_intent",
+      "concept_uri": "cp:intent/iso20022.payment.credit_transfer",
+      "entity_type": "intent_hint",
+      "regex": "(?i)^submit\\ credit\\ transfer\\ on\\ payment\\ rail$",
+      "examples": [
+        "submit credit transfer on payment rail"
+      ]
+    },
+    {
+      "id": "cp_iso20022-payment-status-report-v1_intent",
+      "concept_uri": "cp:intent/iso20022.payment.status_report",
+      "entity_type": "intent_hint",
+      "regex": "(?i)^consume\\ payment\\ status\\ report$",
+      "examples": [
+        "consume payment status report"
+      ]
+    },
+    {
+      "id": "cp_openbanking-payment-status-read-v1_intent",
+      "concept_uri": "cp:intent/openbanking.payment.status.read",
+      "entity_type": "intent_hint",
+      "regex": "(?i)^read\\ open\\ banking\\ payment\\ status$",
+      "examples": [
+        "read open banking payment status"
+      ]
+    },
+    {
+      "id": "cp_openbanking-payment-cancel-v1_intent",
+      "concept_uri": "cp:intent/openbanking.payment.cancel",
+      "entity_type": "intent_hint",
+      "regex": "(?i)^cancel\\ open\\ banking\\ payment$",
+      "examples": [
+        "cancel open banking payment"
+      ]
+    },
+    {
+      "id": "cp_iso20022-payment-return-v1_intent",
+      "concept_uri": "cp:intent/iso20022.payment.return",
+      "entity_type": "intent_hint",
+      "regex": "(?i)^process\\ rail\\ return$",
+      "examples": [
+        "process rail return"
+      ]
+    }
+  ]
+}

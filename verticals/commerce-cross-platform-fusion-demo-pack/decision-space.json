@@ -1,0 +1,375 @@
+{
+  "schema_version": "1.0",
+  "domain": "commerce-cross-platform-fusion-demo",
+  "pack_id": "commerce-cross-platform-fusion-demo-0.1.0",
+  "version": "0.1.0",
+  "out_of_scope_behavior": "escalate",
+  "state_model": {
+    "states": [
+      "ingress",
+      "normalized",
+      "cart_prepared",
+      "cart_priced",
+      "payment_ready",
+      "validated",
+      "submitted",
+      "reconciled",
+      "completed",
+      "failed",
+      "escalated"
+    ],
+    "initial_state": "ingress",
+    "terminal_states": [
+      "completed",
+      "failed",
+      "escalated"
+    ]
+  },
+  "admissible_intents": [
+    {
+      "intent_class": "openbanking.payment.initiate.v1",
+      "allowed_states": [
+        "ingress"
+      ],
+      "required_fact_types": [
+        "commerce_event"
+      ],
+      "transition_ids": [
+        "transition_openbanking-payment-initiate-v1"
+      ]
+    },
+    {
+      "intent_class": "iso20022.payment.initiation.v1",
+      "allowed_states": [
+        "ingress"
+      ],
+      "required_fact_types": [
+        "commerce_event"
+      ],
+      "transition_ids": [
+        "transition_iso20022-payment-initiation-v1"
+      ]
+    },
+    {
+      "intent_class": "shopify.functions.cart.transform.run.v1",
+      "allowed_states": [
+        "normalized"
+      ],
+      "required_fact_types": [
+        "commerce_event"
+      ],
+      "transition_ids": [
+        "transition_shopify-functions-cart-transform-run-v1"
+      ]
+    },
+    {
+      "intent_class": "shopify.functions.cart.lines.discounts.generate.run.v1",
+      "allowed_states": [
+        "cart_prepared"
+      ],
+      "required_fact_types": [
+        "commerce_event"
+      ],
+      "transition_ids": [
+        "transition_shopify-functions-cart-lines-discounts-generate-run-v1"
+      ]
+    },
+    {
+      "intent_class": "shopify.functions.cart.delivery-options.discounts.generate.run.v1",
+      "allowed_states": [
+        "cart_prepared"
+      ],
+      "required_fact_types": [
+        "commerce_event"
+      ],
+      "transition_ids": [
+        "transition_shopify-functions-cart-delivery-options-discounts-generate-run-v1"
+      ]
+    },
+    {
+      "intent_class": "shopify.functions.cart.payment-methods.transform.run.v1",
+      "allowed_states": [
+        "cart_priced"
+      ],
+      "required_fact_types": [
+        "commerce_event"
+      ],
+      "transition_ids": [
+        "transition_shopify-functions-cart-payment-methods-transform-run-v1"
+      ]
+    },
+    {
+      "intent_class": "shopify.functions.cart.validations.generate.run.v1",
+      "allowed_states": [
+        "payment_ready"
+      ],
+      "required_fact_types": [
+        "commerce_event"
+      ],
+      "transition_ids": [
+        "transition_shopify-functions-cart-validations-generate-run-v1"
+      ]
+    },
+    {
+      "intent_class": "iso20022.payment.credit_transfer.v1",
+      "allowed_states": [
+        "validated"
+      ],
+      "required_fact_types": [
+        "commerce_event"
+      ],
+      "transition_ids": [
+        "transition_iso20022-payment-credit-transfer-v1"
+      ]
+    },
+    {
+      "intent_class": "iso20022.payment.status_report.v1",
+      "allowed_states": [
+        "submitted"
+      ],
+      "required_fact_types": [
+        "commerce_event"
+      ],
+      "transition_ids": [
+        "transition_iso20022-payment-status-report-v1"
+      ]
+    },
+    {
+      "intent_class": "openbanking.payment.status.read.v1",
+      "allowed_states": [
+        "reconciled"
+      ],
+      "required_fact_types": [
+        "commerce_event"
+      ],
+      "transition_ids": [
+        "transition_openbanking-payment-status-read-v1"
+      ]
+    },
+    {
+      "intent_class": "openbanking.payment.cancel.v1",
+      "allowed_states": [
+        "submitted"
+      ],
+      "required_fact_types": [
+        "commerce_event"
+      ],
+      "transition_ids": [
+        "transition_openbanking-payment-cancel-v1"
+      ]
+    },
+    {
+      "intent_class": "iso20022.payment.return.v1",
+      "allowed_states": [
+        "submitted"
+      ],
+      "required_fact_types": [
+        "commerce_event"
+      ],
+      "transition_ids": [
+        "transition_iso20022-payment-return-v1"
+      ]
+    }
+  ],
+  "admissible_facts": [
+    {
+      "fact_type": "commerce_event",
+      "schema_ref": "urn:commerce:cross-platform-fusion:v1",
+      "additional_properties": "allow",
+      "field_constraints": [
+        {
+          "path": "source.domain",
+          "datatype": "string",
+          "required": true
+        },
+        {
+          "path": "intent_class",
+          "datatype": "string",
+          "required": true
+        },
+        {
+          "path": "event_id",
+          "datatype": "string",
+          "required": true
+        },
+        {
+          "path": "correlation_id",
+          "datatype": "string",
+          "required": true
+        }
+      ]
+    }
+  ],
+  "admissible_transitions": [
+    {
+      "id": "transition_openbanking-payment-initiate-v1",
+      "from_state": "ingress",
+      "intent_class": "openbanking.payment.initiate.v1",
+      "to_state": "ingress",
+      "guard_refs": [
+        "guard:payload_valid",
+        "guard:policy_allow"
+      ]
+    },
+    {
+      "id": "transition_iso20022-payment-initiation-v1",
+      "from_state": "ingress",
+      "intent_class": "iso20022.payment.initiation.v1",
+      "to_state": "normalized",
+      "guard_refs": [
+        "guard:payload_valid",
+        "guard:policy_allow"
+      ]
+    },
+    {
+      "id": "transition_shopify-functions-cart-transform-run-v1",
+      "from_state": "normalized",
+      "intent_class": "shopify.functions.cart.transform.run.v1",
+      "to_state": "cart_prepared",
+      "guard_refs": [
+        "guard:payload_valid",
+        "guard:policy_allow"
+      ]
+    },
+    {
+      "id": "transition_shopify-functions-cart-lines-discounts-generate-run-v1",
+      "from_state": "cart_prepared",
+      "intent_class": "shopify.functions.cart.lines.discounts.generate.run.v1",
+      "to_state": "cart_priced",
+      "guard_refs": [
+        "guard:payload_valid",
+        "guard:policy_allow"
+      ]
+    },
+    {
+      "id": "transition_shopify-functions-cart-delivery-options-discounts-generate-run-v1",
+      "from_state": "cart_prepared",
+      "intent_class": "shopify.functions.cart.delivery-options.discounts.generate.run.v1",
+      "to_state": "cart_priced",
+      "guard_refs": [
+        "guard:payload_valid",
+        "guard:policy_allow"
+      ]
+    },
+    {
+      "id": "transition_shopify-functions-cart-payment-methods-transform-run-v1",
+      "from_state": "cart_priced",
+      "intent_class": "shopify.functions.cart.payment-methods.transform.run.v1",
+      "to_state": "payment_ready",
+      "guard_refs": [
+        "guard:payload_valid",
+        "guard:policy_allow"
+      ]
+    },
+    {
+      "id": "transition_shopify-functions-cart-validations-generate-run-v1",
+      "from_state": "payment_ready",
+      "intent_class": "shopify.functions.cart.validations.generate.run.v1",
+      "to_state": "validated",
+      "guard_refs": [
+        "guard:payload_valid",
+        "guard:policy_allow"
+      ]
+    },
+    {
+      "id": "transition_iso20022-payment-credit-transfer-v1",
+      "from_state": "validated",
+      "intent_class": "iso20022.payment.credit_transfer.v1",
+      "to_state": "submitted",
+      "guard_refs": [
+        "guard:payload_valid",
+        "guard:policy_allow"
+      ]
+    },
+    {
+      "id": "transition_iso20022-payment-status-report-v1",
+      "from_state": "submitted",
+      "intent_class": "iso20022.payment.status_report.v1",
+      "to_state": "reconciled",
+      "guard_refs": [
+        "guard:payload_valid",
+        "guard:policy_allow"
+      ]
+    },
+    {
+      "id": "transition_openbanking-payment-status-read-v1",
+      "from_state": "reconciled",
+      "intent_class": "openbanking.payment.status.read.v1",
+      "to_state": "completed",
+      "guard_refs": [
+        "guard:payload_valid",
+        "guard:policy_allow"
+      ]
+    },
+    {
+      "id": "transition_openbanking-payment-cancel-v1",
+      "from_state": "submitted",
+      "intent_class": "openbanking.payment.cancel.v1",
+      "to_state": "failed",
+      "guard_refs": [
+        "guard:payload_valid",
+        "guard:policy_allow"
+      ]
+    },
+    {
+      "id": "transition_iso20022-payment-return-v1",
+      "from_state": "submitted",
+      "intent_class": "iso20022.payment.return.v1",
+      "to_state": "failed",
+      "guard_refs": [
+        "guard:payload_valid",
+        "guard:policy_allow"
+      ]
+    }
+  ],
+  "journey_routes": [
+    {
+      "id": "checkout_to_settlement_happy_path",
+      "description": "Open Banking intent to ISO settlement through Shopify checkout controls.",
+      "stage_sequence": [
+        "ingress_intent",
+        "rail_normalization",
+        "checkout_preparation",
+        "checkout_pricing",
+        "payment_method_selection",
+        "checkout_validation",
+        "rail_submission",
+        "rail_reconciliation",
+        "client_status_sync"
+      ],
+      "intent_sequence": [
+        "openbanking.payment.initiate.v1",
+        "iso20022.payment.initiation.v1",
+        "shopify.functions.cart.transform.run.v1",
+        "shopify.functions.cart.lines.discounts.generate.run.v1",
+        "shopify.functions.cart.payment-methods.transform.run.v1",
+        "shopify.functions.cart.validations.generate.run.v1",
+        "iso20022.payment.credit_transfer.v1",
+        "iso20022.payment.status_report.v1",
+        "openbanking.payment.status.read.v1"
+      ]
+    },
+    {
+      "id": "post_submission_compensation_path",
+      "description": "Cancellation/return compensation path after submission.",
+      "stage_sequence": [
+        "rail_submission",
+        "compensation_path"
+      ],
+      "intent_sequence": [
+        "openbanking.payment.cancel.v1",
+        "iso20022.payment.return.v1"
+      ]
+    }
+  ],
+  "fallback_rules": [
+    {
+      "id": "escalate_unknown_commerce_intent",
+      "from_state": "ingress",
+      "intent_class": "openbanking.payment.initiate.v1",
+      "to_state": "escalated",
+      "source_ref": "commerce:governance:unknown_intent:v1",
+      "description": "Intent is outside approved cross-platform commerce surface."
+    }
+  ]
+}

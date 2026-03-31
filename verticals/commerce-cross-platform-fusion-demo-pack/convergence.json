@@ -1,0 +1,82 @@
+{
+  "schema_version": "1.0",
+  "domain": "commerce-cross-platform-fusion-demo",
+  "thresholds": {
+    "overall_min_pass_rate": 1,
+    "require_critical_pass": true
+  },
+  "cases": [
+    {
+      "id": "cp_case_001",
+      "phrase": "initiate open banking payment",
+      "expect": "openbanking.payment.initiate.v1",
+      "critical": true
+    },
+    {
+      "id": "cp_case_002",
+      "phrase": "normalize into iso20022 initiation",
+      "expect": "iso20022.payment.initiation.v1",
+      "critical": true
+    },
+    {
+      "id": "cp_case_003",
+      "phrase": "transform cart before pricing",
+      "expect": "shopify.functions.cart.transform.run.v1",
+      "critical": true
+    },
+    {
+      "id": "cp_case_004",
+      "phrase": "apply line discounts",
+      "expect": "shopify.functions.cart.lines.discounts.generate.run.v1",
+      "critical": true
+    },
+    {
+      "id": "cp_case_005",
+      "phrase": "apply delivery discounts",
+      "expect": "shopify.functions.cart.delivery-options.discounts.generate.run.v1",
+      "critical": true
+    },
+    {
+      "id": "cp_case_006",
+      "phrase": "customize payment method choices",
+      "expect": "shopify.functions.cart.payment-methods.transform.run.v1",
+      "critical": true
+    },
+    {
+      "id": "cp_case_007",
+      "phrase": "validate checkout policy constraints",
+      "expect": "shopify.functions.cart.validations.generate.run.v1",
+      "critical": true
+    },
+    {
+      "id": "cp_case_008",
+      "phrase": "submit credit transfer on payment rail",
+      "expect": "iso20022.payment.credit_transfer.v1",
+      "critical": true
+    },
+    {
+      "id": "cp_case_009",
+      "phrase": "consume payment status report",
+      "expect": "iso20022.payment.status_report.v1",
+      "critical": true
+    },
+    {
+      "id": "cp_case_010",
+      "phrase": "read open banking payment status",
+      "expect": "openbanking.payment.status.read.v1",
+      "critical": true
+    },
+    {
+      "id": "cp_case_011",
+      "phrase": "cancel open banking payment",
+      "expect": "openbanking.payment.cancel.v1",
+      "critical": true
+    },
+    {
+      "id": "cp_case_012",
+      "phrase": "process rail return",
+      "expect": "iso20022.payment.return.v1",
+      "critical": true
+    }
+  ]
+}

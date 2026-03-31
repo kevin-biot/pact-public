@@ -1,0 +1,39 @@
+{
+  "schema_version": "0.1",
+  "generated_at_utc": "2026-03-31T01:56:38Z",
+  "source_profile": "cross-platform-commerce-fusion-v1",
+  "source_pack_count": 3,
+  "source_packs": [
+    "registry/openbanking-payment-initiation-demo",
+    "registry/shopify-functions-core-seed-demo",
+    "registry/iso20022"
+  ],
+  "route_count": 12,
+  "stage_count": 10,
+  "stages": [
+    "ingress_intent",
+    "rail_normalization",
+    "checkout_preparation",
+    "checkout_pricing",
+    "payment_method_selection",
+    "checkout_validation",
+    "rail_submission",
+    "rail_reconciliation",
+    "client_status_sync",
+    "compensation_path"
+  ],
+  "intent_classes": [
+    "openbanking.payment.initiate.v1",
+    "iso20022.payment.initiation.v1",
+    "shopify.functions.cart.transform.run.v1",
+    "shopify.functions.cart.lines.discounts.generate.run.v1",
+    "shopify.functions.cart.delivery-options.discounts.generate.run.v1",
+    "shopify.functions.cart.payment-methods.transform.run.v1",
+    "shopify.functions.cart.validations.generate.run.v1",
+    "iso20022.payment.credit_transfer.v1",
+    "iso20022.payment.status_report.v1",
+    "openbanking.payment.status.read.v1",
+    "openbanking.payment.cancel.v1",
+    "iso20022.payment.return.v1"
+  ]
+}

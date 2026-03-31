@@ -1,0 +1,139 @@
+{
+  "@context": {
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "cp": "https://lane2.example/ontology/commerce/cross-platform/"
+  },
+  "@graph": [
+    {
+      "@id": "cp:family/commerce",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "Cross Platform Commerce"
+    },
+    {
+      "@id": "cp:lane/openbanking",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "Open Banking",
+      "skos:broader": "cp:family/commerce"
+    },
+    {
+      "@id": "cp:lane/shopify-functions",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "Shopify Functions",
+      "skos:broader": "cp:family/commerce"
+    },
+    {
+      "@id": "cp:lane/iso20022",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "ISO 20022",
+      "skos:broader": "cp:family/commerce"
+    },
+    {
+      "@id": "cp:intent/openbanking.payment.initiate",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "Initiate Open Banking Payment",
+      "skos:altLabel": [
+        "openbanking.payment.initiate.v1"
+      ],
+      "skos:broader": "cp:lane/openbanking"
+    },
+    {
+      "@id": "cp:intent/iso20022.payment.initiation",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "Normalize Into Iso20022 Initiation",
+      "skos:altLabel": [
+        "iso20022.payment.initiation.v1"
+      ],
+      "skos:broader": "cp:lane/iso20022"
+    },
+    {
+      "@id": "cp:intent/shopify.functions.cart.transform.run",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "Transform Cart Before Pricing",
+      "skos:altLabel": [
+        "shopify.functions.cart.transform.run.v1"
+      ],
+      "skos:broader": "cp:lane/shopify-functions"
+    },
+    {
+      "@id": "cp:intent/shopify.functions.cart.lines.discounts.generate.run",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "Apply Line Discounts",
+      "skos:altLabel": [
+        "shopify.functions.cart.lines.discounts.generate.run.v1"
+      ],
+      "skos:broader": "cp:lane/shopify-functions"
+    },
+    {
+      "@id": "cp:intent/shopify.functions.cart.delivery-options.discounts.generate.run",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "Apply Delivery Discounts",
+      "skos:altLabel": [
+        "shopify.functions.cart.delivery-options.discounts.generate.run.v1"
+      ],
+      "skos:broader": "cp:lane/shopify-functions"
+    },
+    {
+      "@id": "cp:intent/shopify.functions.cart.payment-methods.transform.run",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "Customize Payment Method Choices",
+      "skos:altLabel": [
+        "shopify.functions.cart.payment-methods.transform.run.v1"
+      ],
+      "skos:broader": "cp:lane/shopify-functions"
+    },
+    {
+      "@id": "cp:intent/shopify.functions.cart.validations.generate.run",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "Validate Checkout Policy Constraints",
+      "skos:altLabel": [
+        "shopify.functions.cart.validations.generate.run.v1"
+      ],
+      "skos:broader": "cp:lane/shopify-functions"
+    },
+    {
+      "@id": "cp:intent/iso20022.payment.credit_transfer",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "Submit Credit Transfer On Payment Rail",
+      "skos:altLabel": [
+        "iso20022.payment.credit_transfer.v1"
+      ],
+      "skos:broader": "cp:lane/iso20022"
+    },
+    {
+      "@id": "cp:intent/iso20022.payment.status_report",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "Consume Payment Status Report",
+      "skos:altLabel": [
+        "iso20022.payment.status_report.v1"
+      ],
+      "skos:broader": "cp:lane/iso20022"
+    },
+    {
+      "@id": "cp:intent/openbanking.payment.status.read",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "Read Open Banking Payment Status",
+      "skos:altLabel": [
+        "openbanking.payment.status.read.v1"
+      ],
+      "skos:broader": "cp:lane/openbanking"
+    },
+    {
+      "@id": "cp:intent/openbanking.payment.cancel",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "Cancel Open Banking Payment",
+      "skos:altLabel": [
+        "openbanking.payment.cancel.v1"
+      ],
+      "skos:broader": "cp:lane/openbanking"
+    },
+    {
+      "@id": "cp:intent/iso20022.payment.return",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "Process Rail Return",
+      "skos:altLabel": [
+        "iso20022.payment.return.v1"
+      ],
+      "skos:broader": "cp:lane/iso20022"
+    }
+  ]
+}

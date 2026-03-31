@@ -1,0 +1,24 @@
+{
+  "id": "commerce-cross-platform-fusion-demo-0.1.0",
+  "domain": "commerce-cross-platform-fusion-demo",
+  "version": "0.1.0",
+  "providerId": "ontology:lane2:commerce-cross-platform-fusion-demo",
+  "trustTier": "Tier1",
+  "policySnapshotId": "sha256:de93910b5a55669504e880f862be54015b611d8410d8cc16f5d3c3ec974f5116",
+  "files": {
+    "context": "sha256:0a7762dba75eecf1fc547682fe9320a7e08d6176b34ce1e16ae6f45ec59d6162",
+    "convergence": "sha256:d6b99d7edcad82a3567f07a760474d31894ae66899576a7253da46da6c48c29d",
+    "decision_space": "sha256:25686e56b17ab589e8b94734f28a43a8b9a86851333f66e55f66b18e351f15db",
+    "intent_mappings": "sha256:819fd295a5d9412f2bc07c74b5a8a324f1b37dae4373a42ed19d4f515a4a9472",
+    "patterns": "sha256:c5c67359709919a6c83fd616ea6a7dded80652b29906e500a0f30ab81bf86cd7",
+    "shapes": "sha256:8abeb7dc3e52fd152d7d299e167047b1f1bdf5581cea005b012f6cd844bde135",
+    "thesaurus": "sha256:ef0cce51e09cb7dadd4988a0d70b290e64f342b83c97e6aad8d2a621a318d23a",
+    "thesaurus_local": "sha256:64d9d6398d22993c254b3482e62f0662b0cd67c661b768581c9109c50c6ff926",
+    "vocab": "sha256:ff07b8b24a184f34de4ce5e2c08fd5069ced340ca07c19def8a2c465ad67fd53"
+  },
+  "precedence": [],
+  "denyWins": true,
+  "nbf": "2026-03-31T00:00:00Z",
+  "exp": "2030-03-31T00:00:00Z",
+  "revEpoch": 1
+}

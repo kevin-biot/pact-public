@@ -1,6 +1,14 @@
 {
   "packs": [
     {
+      "snapshot_id": "ontology:commerce-cross-platform-fusion-demo:v0.1.0",
+      "domain": "commerce-cross-platform-fusion-demo",
+      "provider_id": "ontology:lane2:commerce-cross-platform-fusion-demo",
+      "trust_tier": "Tier1",
+      "version": "0.1.0",
+      "path": "verticals/commerce-cross-platform-fusion-demo-pack"
+    },
+    {
       "snapshot_id": "ontology:iso20022-authored-demo:v0.1.0",
       "domain": "iso20022-authored-demo",
       "provider_id": "ontology:lane2:iso20022-authored-demo",
