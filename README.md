@@ -35,6 +35,7 @@ PACT execution starts from user intent, not dynamic API/tool discovery.
 4. Local APIs remain behind that bounded intent contract.
 
 This avoids open-ended "agent proxy" behavior, reduces capability hallucination risk, and keeps audit/liability boundaries deterministic.
+It also gives a structural prompt-injection defense: out-of-scope capability requests must fail closed (deny or escalate), not execute.
 
 Further design rationale is documented in the ontology authoring repo:
 [Intent-First Bounded Execution Pattern](https://github.com/kevin-biot/ontology/blob/main/docs/architecture/intent-first-bounded-execution-pattern.md)
