@@ -1,0 +1,42 @@
+{
+  "schema_version": "1.0",
+  "generated_at_utc": "2026-03-31T00:00:00Z",
+  "sources": [
+    {
+      "id": "hl7-fhir-r5-medications-module",
+      "title": "FHIR R5 Medications Module",
+      "url": "https://www.hl7.org/fhir/medications-module.html",
+      "accessed_utc": "2026-03-31T00:00:00Z"
+    },
+    {
+      "id": "hl7-fhir-r5-list",
+      "title": "FHIR R5 List",
+      "url": "https://www.hl7.org/fhir/list.html",
+      "accessed_utc": "2026-03-31T00:00:00Z",
+      "notes": [
+        "List is a curated collection of resources.",
+        "List can represent curated point-in-time allergy or medication snapshots."
+      ]
+    },
+    {
+      "id": "hl7-fhir-r5-allergyintolerance",
+      "title": "FHIR R5 AllergyIntolerance",
+      "url": "https://www.hl7.org/fhir/allergyintolerance.html",
+      "accessed_utc": "2026-03-31T00:00:00Z",
+      "notes": [
+        "Risk of adverse response associated with exposure to a substance.",
+        "Used as patient safety tool in medication workflows."
+      ]
+    },
+    {
+      "id": "hl7-fhir-r5-medicationstatement",
+      "title": "FHIR R5 MedicationStatement",
+      "url": "https://www.hl7.org/fhir/medicationstatement.html",
+      "accessed_utc": "2026-03-31T00:00:00Z",
+      "notes": [
+        "Record of medication being taken by a patient.",
+        "Commonly used in intake and active medication summaries."
+      ]
+    }
+  ]
+}

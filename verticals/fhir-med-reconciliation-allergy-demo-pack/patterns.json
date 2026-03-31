@@ -1,0 +1,10 @@
+{
+  "schema_version": "1.0",
+  "domain": "fhir-med-reconciliation-allergy",
+  "patterns": [
+    {"id": "recon_list", "concept_uri": "fhir.medication.reconciliation.list.v1", "entity_type": "intent_hint", "regex": "(?i)\\b(medication\\s+reconciliation|reconciled\\s+medications\\s+list|medication\\s+list\\s+snapshot)\\b", "examples": ["medication reconciliation list"]},
+    {"id": "allergy_record", "concept_uri": "fhir.allergy.intolerance.record.v1", "entity_type": "intent_hint", "regex": "(?i)\\b(allergy\\s+record|allergy\\s+intolerance|adverse\\s+reaction\\s+risk)\\b", "examples": ["allergy intolerance"]},
+    {"id": "med_statement", "concept_uri": "fhir.medication.statement.capture.v1", "entity_type": "intent_hint", "regex": "(?i)\\b(medication\\s+statement|active\\s+medications\\s+statement|medication\\s+usage\\s+statement)\\b", "examples": ["medication statement"]},
+    {"id": "med_request_ctx", "concept_uri": "fhir.medication.request.context.v1", "entity_type": "intent_hint", "regex": "(?i)\\b(medication\\s+request|prescription\\s+order\\s+context)\\b", "examples": ["medication request context"]}
+  ]
+}

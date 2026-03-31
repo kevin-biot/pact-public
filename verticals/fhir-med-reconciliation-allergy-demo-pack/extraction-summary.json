@@ -1,0 +1,10 @@
+{
+  "schema_version": "0.1",
+  "generated_at_utc": "2026-03-31T00:00:00Z",
+  "profile": "fhir-med-reconciliation-allergy-demo-pack",
+  "domain": "fhir-med-reconciliation-allergy",
+  "source_spec": "HL7 FHIR R5 Medications Module + List + AllergyIntolerance + MedicationStatement",
+  "source_artifact_count": 4,
+  "resource_index_count": 4,
+  "note": "Curated companion extraction for reconciliation/allergy safety workflows."
+}

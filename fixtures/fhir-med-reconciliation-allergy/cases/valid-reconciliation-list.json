@@ -1,0 +1,11 @@
+{
+  "bundleId": "sha256:12ee87a9c473a183b3fcc687e7eae8fc12b227e7efb1c8dc5c403565a49f8e96",
+  "decision": {
+    "type": "FHIRMedicationReconAllergyIntent",
+    "intent_class": "fhir.medication.reconciliation.list.v1",
+    "resourceType": "List",
+    "patientRef": "Patient/456",
+    "listMode": "snapshot",
+    "listStatus": "current"
+  }
+}

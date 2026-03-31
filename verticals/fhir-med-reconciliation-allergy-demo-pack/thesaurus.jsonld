@@ -1,0 +1,22 @@
+{
+  "@context": {
+    "fhirmra": "https://lane2.example/ontology/fhir-med-recon-allergy/"
+  },
+  "entries": [
+    {
+      "label": "Medication Reconciliation List",
+      "alt": ["reconciled medications list", "medication list snapshot"],
+      "properties": {"entity_type": "intent_hint", "description": "Curated medication list representation."}
+    },
+    {
+      "label": "Allergy Intolerance",
+      "alt": ["allergy record", "adverse reaction risk"],
+      "properties": {"entity_type": "intent_hint", "description": "Substance-related adverse reaction risk record."}
+    },
+    {
+      "label": "Medication Statement",
+      "alt": ["active medications statement", "medication usage statement"],
+      "properties": {"entity_type": "intent_hint", "description": "Statement of medication use from patient/clinician context."}
+    }
+  ]
+}

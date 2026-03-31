@@ -1,0 +1,33 @@
+{
+  "pack_schema": "1.0",
+  "id": "fhir-med-reconciliation-allergy-demo-0.1.0",
+  "domain": "fhir-med-reconciliation-allergy",
+  "version": "0.1.0",
+  "provider_id": "ontology:pact-public:fhir",
+  "trust_tier": "Tier1",
+  "nbf": "2026-03-31T00:00:00Z",
+  "exp": "2030-03-31T00:00:00Z",
+  "rev_epoch": 1,
+  "deny_wins": true,
+  "precedence": [],
+  "files": {
+    "context": "context.jsonld",
+    "vocab": "vocab.skos.jsonld",
+    "shapes": "shapes.ttl",
+    "thesaurus": "thesaurus.jsonld",
+    "thesaurus_local": "thesaurus-local.json",
+    "patterns": "patterns.json",
+    "intent_mappings": "intent-mappings.json",
+    "convergence": "convergence.json",
+    "decision_space": "decision-space.json",
+    "source_extract": "source-extract/sources.json"
+  },
+  "dc": {
+    "identifier": "ontology:fhir-med-reconciliation-allergy-demo:v0.1.0",
+    "title": "FHIR Medication Reconciliation + Allergy Demo Pack",
+    "creator": "PACT Public Working Draft",
+    "issued": "2026-03-31",
+    "rights": "Apache-2.0",
+    "description": "Non-normative companion demo pack grounded to HL7 FHIR R5 reconciliation and allergy resources."
+  }
+}

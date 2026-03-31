@@ -1,0 +1,55 @@
+{
+  "schema_version": "1.0",
+  "domain": "fhir-med-reconciliation-allergy",
+  "last_modified": "2026-03-31",
+  "concepts": [
+    {
+      "concept_id": "fhir.medication.reconciliation.list.v1",
+      "preferred_term": "Medication Reconciliation List",
+      "synonyms": ["reconciled medications list", "medication list snapshot"],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "MedicationReconciliation",
+      "narrower": [],
+      "source_refs": ["hl7-fhir-r5-list", "hl7-fhir-r5-medications-module"],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "fhir.allergy.intolerance.record.v1",
+      "preferred_term": "AllergyIntolerance",
+      "synonyms": ["allergy record", "adverse reaction risk"],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "MedicationSafety",
+      "narrower": [],
+      "source_refs": ["hl7-fhir-r5-allergyintolerance"],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "fhir.medication.statement.capture.v1",
+      "preferred_term": "MedicationStatement",
+      "synonyms": ["active medications statement", "medication usage statement"],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "MedicationReconciliation",
+      "narrower": [],
+      "source_refs": ["hl7-fhir-r5-medicationstatement"],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "fhir.medication.request.context.v1",
+      "preferred_term": "MedicationRequest",
+      "synonyms": ["prescription order context", "medication order context"],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "MedicationReconciliation",
+      "narrower": [],
+      "source_refs": ["hl7-fhir-r5-medications-module"],
+      "ner_provenance": null
+    }
+  ]
+}

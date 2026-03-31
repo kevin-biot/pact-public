@@ -1,0 +1,25 @@
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix fhirmra: <https://lane2.example/ontology/fhir-med-recon-allergy/> .
+
+fhirmra:IntentShape
+  a sh:NodeShape ;
+  sh:targetClass fhirmra:Intention ;
+  sh:property [
+    sh:path fhirmra:intentClass ;
+    sh:datatype xsd:string ;
+    sh:minCount 1 ;
+    sh:message "intentClass is required"
+  ] ;
+  sh:property [
+    sh:path fhirmra:resourceType ;
+    sh:datatype xsd:string ;
+    sh:minCount 1 ;
+    sh:message "resourceType is required"
+  ] ;
+  sh:property [
+    sh:path fhirmra:patientRef ;
+    sh:datatype xsd:string ;
+    sh:minCount 1 ;
+    sh:message "patientRef is required"
+  ] .

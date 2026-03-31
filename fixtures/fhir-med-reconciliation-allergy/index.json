@@ -1,0 +1,32 @@
+{
+  "schema_version": "1.0",
+  "generated_at_utc": "2026-03-31T00:00:00Z",
+  "pack_path": "verticals/fhir-med-reconciliation-allergy-demo-pack",
+  "cases": [
+    {
+      "id": "FHIR-MRA-VALID-001",
+      "path": "fixtures/fhir-med-reconciliation-allergy/cases/valid-reconciliation-list.json",
+      "expected": {"status": "pass", "code": "PASS"}
+    },
+    {
+      "id": "FHIR-MRA-VALID-002",
+      "path": "fixtures/fhir-med-reconciliation-allergy/cases/valid-allergy-record.json",
+      "expected": {"status": "pass", "code": "PASS"}
+    },
+    {
+      "id": "FHIR-MRA-FAIL-001",
+      "path": "fixtures/fhir-med-reconciliation-allergy/cases/fail-missing-required-field.json",
+      "expected": {"status": "fail", "code": "CIC_REQUIRED_FIELD_MISSING"}
+    },
+    {
+      "id": "FHIR-MRA-FAIL-002",
+      "path": "fixtures/fhir-med-reconciliation-allergy/cases/fail-out-of-scope-intent.json",
+      "expected": {"status": "fail", "code": "ESCALATE_OUT_OF_SCOPE_INTENT"}
+    },
+    {
+      "id": "FHIR-MRA-FAIL-003",
+      "path": "fixtures/fhir-med-reconciliation-allergy/cases/fail-bundle-commit-mismatch.json",
+      "expected": {"status": "fail", "code": "PSC_BUNDLE_COMMIT_MISMATCH"}
+    }
+  ]
+}

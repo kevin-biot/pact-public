@@ -1,0 +1,25 @@
+{
+  "id": "fhir-med-reconciliation-allergy-demo-0.1.0",
+  "domain": "fhir-med-reconciliation-allergy",
+  "version": "0.1.0",
+  "providerId": "ontology:pact-public:fhir",
+  "trustTier": "Tier1",
+  "policySnapshotId": "sha256:4f030e7c1c5d5f739f19dc36bd70dd144665b218fd5ae9e74b126505b4b34e4b",
+  "files": {
+    "context": "sha256:c47747a283cc291cab0017a1bcc45fee9d432f06840925a309f0584b25b73454",
+    "vocab": "sha256:cb93a25c487f2386e5874cbcc8c2828a3fff448037c7ab99a81c0fe433d47cbb",
+    "shapes": "sha256:d3fc6eb1749b2376f5f866c138469d5f849ec56c3fc8b8c40f7bad39fcb40240",
+    "thesaurus": "sha256:efcebe0fa729988d0b44792454d0d6f219461f4885ffe74367ea16196cc6c77c",
+    "thesaurus_local": "sha256:bb4f323e2106ca4f0a271284b8c1e81a6bec095abf406f6d4e8507ced71f2573",
+    "patterns": "sha256:f558fa1329ff94a45cce2048fdc083451388e51d8fbe724e3db78d9d26c4a3e3",
+    "intent_mappings": "sha256:068acee63690b1bee512db672fea064bd68128995c9cadc72458aadf7e2ce9a9",
+    "convergence": "sha256:705b11e70a96b2ba67ce3adfee398eaa818cefc7c7e116074bb0dac774b99336",
+    "decision_space": "sha256:9c0f28dc243d961e211e03c1edb6f4cbc0928c2dc4ee3a0acbc253bdd58fc0d7",
+    "source_extract": "sha256:82728a3de7fdcf78b5003b1d412912bbc6c5d5d8794fb622917e92283eb22e3e"
+  },
+  "precedence": [],
+  "denyWins": true,
+  "nbf": "2026-03-31T00:00:00Z",
+  "exp": "2030-03-31T00:00:00Z",
+  "revEpoch": 1
+}

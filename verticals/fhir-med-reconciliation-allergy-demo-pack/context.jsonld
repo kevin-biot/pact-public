@@ -1,0 +1,10 @@
+{
+  "@context": {
+    "fhirmra": "https://lane2.example/ontology/fhir-med-recon-allergy/",
+    "intentClass": "fhirmra:intentClass",
+    "resourceType": "fhirmra:resourceType",
+    "patientRef": "fhirmra:patientRef",
+    "listMode": "fhirmra:listMode",
+    "listStatus": "fhirmra:listStatus"
+  }
+}

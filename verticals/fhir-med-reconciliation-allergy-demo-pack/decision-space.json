@@ -1,0 +1,24 @@
+{
+  "schema_version": "1.0",
+  "domain": "fhir-med-reconciliation-allergy",
+  "pack_id": "fhir-med-reconciliation-allergy-demo-0.1.0",
+  "version": "0.1.0",
+  "out_of_scope_behavior": "escalate",
+  "state_model": {
+    "states": ["ingress", "validated", "classified", "responded", "rejected", "escalated"],
+    "initial_state": "ingress",
+    "terminal_states": ["responded", "rejected", "escalated"]
+  },
+  "intent_resource_map": {
+    "fhir.medication.reconciliation.list.v1": ["List"],
+    "fhir.allergy.intolerance.record.v1": ["AllergyIntolerance"],
+    "fhir.medication.statement.capture.v1": ["MedicationStatement"],
+    "fhir.medication.request.context.v1": ["MedicationRequest"]
+  },
+  "required_fields_by_intent": {
+    "fhir.medication.reconciliation.list.v1": ["patientRef", "listMode", "listStatus"],
+    "fhir.allergy.intolerance.record.v1": ["patientRef", "substanceCode", "verificationStatus"],
+    "fhir.medication.statement.capture.v1": ["patientRef", "medicationCode", "effectiveDateTime"],
+    "fhir.medication.request.context.v1": ["patientRef", "medicationCode", "authoredOn"]
+  }
+}

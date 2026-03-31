@@ -1,0 +1,14 @@
+{
+  "@context": {
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "fhirmra": "https://lane2.example/ontology/fhir-med-recon-allergy/"
+  },
+  "concepts": [
+    {"id": "fhirmra:MedicationReconciliation", "prefLabel": "Medication Reconciliation"},
+    {"id": "fhirmra:List", "prefLabel": "List", "broader": "fhirmra:MedicationReconciliation"},
+    {"id": "fhirmra:AllergyIntolerance", "prefLabel": "AllergyIntolerance", "broader": "fhirmra:MedicationSafety"},
+    {"id": "fhirmra:MedicationStatement", "prefLabel": "MedicationStatement", "broader": "fhirmra:MedicationReconciliation"},
+    {"id": "fhirmra:MedicationRequest", "prefLabel": "MedicationRequest", "broader": "fhirmra:MedicationReconciliation"},
+    {"id": "fhirmra:MedicationSafety", "prefLabel": "Medication Safety"}
+  ]
+}
