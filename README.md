@@ -25,6 +25,20 @@ PACT is implementation-neutral. Multiple independent implementations are expecte
 
 ## What Is a Pack and Why Not a Classical Ontology?
 
+### Intent First, Not API First
+
+PACT execution starts from user intent, not dynamic API/tool discovery.
+
+1. Input expresses intent (example: "I've got a leak", "Send EUR 50").
+2. Runtime binds to a pre-scoped ontology pack.
+3. Only admissible functions/states/transitions are exposed.
+4. Local APIs remain behind that bounded intent contract.
+
+This avoids open-ended "agent proxy" behavior, reduces capability hallucination risk, and keeps audit/liability boundaries deterministic.
+
+Further design rationale is documented in the ontology authoring repo:
+[Intent-First Bounded Execution Pattern](https://github.com/kevin-biot/ontology/blob/main/docs/architecture/intent-first-bounded-execution-pattern.md)
+
 ### The problem with classical ontologies at runtime
 
 Classical ontologies (OWL, full RDF graphs, open-world inference) are designed for broad semantic modeling: global completeness, cross-domain reuse, and open-ended reasoning. These are valuable for knowledge representation and discovery. They are dangerous for agent execution in regulated domains, because:
@@ -223,6 +237,8 @@ RFC 9457 problem detail conformance fixtures:
 Fixture signing keys are test-only and must not be used in production systems.
 
 ## Reference Vertical Packs
+
+This repository currently publishes 35 reference/demo packs across healthcare, commerce, payments, open banking, telco, travel, and policy.
 
 This repository includes:
 
