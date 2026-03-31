@@ -1,0 +1,21 @@
+{
+  "schema_version": "1.0",
+  "domain": "travel-air-shopping",
+  "mappings": [
+    {
+      "concept_uri": "travel-air-shopping.intent",
+      "intent_class": "travel.flight.shopping.v1",
+      "confidence_floor": 0.75
+    },
+    {
+      "concept_uri": "travel-air-shopping.policy-guard",
+      "intent_class": "travel.flight.shopping.v1",
+      "confidence_floor": 0.75
+    },
+    {
+      "concept_uri": "travel-air-shopping.deny-reason",
+      "intent_class": "travel.flight.shopping.v1",
+      "confidence_floor": 0.75
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "schema_version": "0.1",
+  "generated_at_utc": "2026-03-30T23:35:45Z",
+  "profile": "curated-travel-demo-pack",
+  "domain": "travel-air-order-lifecycle",
+  "source_spec": "Amadeus Flight Create Orders v1 and Flight Order Management v1",
+  "source_artifact_count": 2,
+  "mapped_symbol_count": 2,
+  "mapped_field_count": 8,
+  "note": "Curated API/schema crosswalk profile; message-identifier extraction is not applicable."
+}

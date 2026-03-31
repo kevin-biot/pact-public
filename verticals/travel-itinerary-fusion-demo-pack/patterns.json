@@ -1,0 +1,105 @@
+{
+  "schema_version": "1.0",
+  "domain": "travel-itinerary-fusion",
+  "patterns": [
+    {
+      "id": "pattern_1",
+      "concept_uri": "travel-itinerary-fusion.intent",
+      "entity_type": "intent_hint",
+      "regex": "(?i)\\bitinerary\\s+fusion\\s+intent\\b",
+      "examples": [
+        "itinerary fusion intent"
+      ]
+    },
+    {
+      "id": "pattern_2",
+      "concept_uri": "travel-itinerary-fusion.intent",
+      "entity_type": "intent_hint",
+      "regex": "(?i)\\btrip\\s+fusion\\b",
+      "examples": [
+        "trip fusion"
+      ]
+    },
+    {
+      "id": "pattern_3",
+      "concept_uri": "travel-itinerary-fusion.itinerary",
+      "entity_type": "intent_hint",
+      "regex": "(?i)\\bcanonical\\s+itinerary\\b",
+      "examples": [
+        "canonical itinerary"
+      ]
+    },
+    {
+      "id": "pattern_4",
+      "concept_uri": "travel-itinerary-fusion.itinerary-node",
+      "entity_type": "intent_hint",
+      "regex": "(?i)\\bitinerary\\s+node\\b",
+      "examples": [
+        "itinerary node"
+      ]
+    },
+    {
+      "id": "pattern_5",
+      "concept_uri": "travel-itinerary-fusion.air-reservation-link",
+      "entity_type": "intent_hint",
+      "regex": "(?i)\\bair\\s+reservation\\s+link\\b",
+      "examples": [
+        "air reservation link"
+      ]
+    },
+    {
+      "id": "pattern_6",
+      "concept_uri": "travel-itinerary-fusion.hotel-reservation-link",
+      "entity_type": "intent_hint",
+      "regex": "(?i)\\bhotel\\s+reservation\\s+link\\b",
+      "examples": [
+        "hotel reservation link"
+      ]
+    },
+    {
+      "id": "pattern_7",
+      "concept_uri": "travel-itinerary-fusion.fused-reservation",
+      "entity_type": "intent_hint",
+      "regex": "(?i)\\bfused\\s+reservation\\b",
+      "examples": [
+        "fused reservation"
+      ]
+    },
+    {
+      "id": "pattern_8",
+      "concept_uri": "travel-itinerary-fusion.temporal-ordering",
+      "entity_type": "intent_hint",
+      "regex": "(?i)\\btemporal\\s+ordering\\b",
+      "examples": [
+        "temporal ordering"
+      ]
+    },
+    {
+      "id": "pattern_9",
+      "concept_uri": "travel-itinerary-fusion.location-anchor",
+      "entity_type": "intent_hint",
+      "regex": "(?i)\\blocation\\s+anchor\\b",
+      "examples": [
+        "location anchor"
+      ]
+    },
+    {
+      "id": "pattern_10",
+      "concept_uri": "travel-itinerary-fusion.policy-guard",
+      "entity_type": "intent_hint",
+      "regex": "(?i)\\bfusion\\s+policy\\s+guard\\b",
+      "examples": [
+        "fusion policy guard"
+      ]
+    },
+    {
+      "id": "pattern_11",
+      "concept_uri": "travel-itinerary-fusion.deny-reason",
+      "entity_type": "intent_hint",
+      "regex": "(?i)\\bfusion\\s+deny\\s+reason\\b",
+      "examples": [
+        "fusion deny reason"
+      ]
+    }
+  ]
+}

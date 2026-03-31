@@ -1,0 +1,114 @@
+{
+  "schema_version": "1.0",
+  "domain": "travel-hotel-booking",
+  "patterns": [
+    {
+      "id": "pattern_1",
+      "concept_uri": "travel-hotel-booking.intent",
+      "entity_type": "intent_hint",
+      "regex": "(?i)\\bhotel\\s+booking\\s+intent\\b",
+      "examples": [
+        "hotel booking intent"
+      ]
+    },
+    {
+      "id": "pattern_2",
+      "concept_uri": "travel-hotel-booking.intent",
+      "entity_type": "intent_hint",
+      "regex": "(?i)\\blodging\\s+booking\\s+intent\\b",
+      "examples": [
+        "lodging booking intent"
+      ]
+    },
+    {
+      "id": "pattern_3",
+      "concept_uri": "travel-hotel-booking.property-search",
+      "entity_type": "intent_hint",
+      "regex": "(?i)\\bproperty\\s+search\\b",
+      "examples": [
+        "property search"
+      ]
+    },
+    {
+      "id": "pattern_4",
+      "concept_uri": "travel-hotel-booking.stay-window",
+      "entity_type": "intent_hint",
+      "regex": "(?i)\\bstay\\s+window\\b",
+      "examples": [
+        "stay window"
+      ]
+    },
+    {
+      "id": "pattern_5",
+      "concept_uri": "travel-hotel-booking.stay-window",
+      "entity_type": "intent_hint",
+      "regex": "(?i)\\bcheck\\s+in\\s+check\\s+out\\b",
+      "examples": [
+        "check in check out"
+      ]
+    },
+    {
+      "id": "pattern_6",
+      "concept_uri": "travel-hotel-booking.room-rate",
+      "entity_type": "intent_hint",
+      "regex": "(?i)\\broom\\s+rate\\b",
+      "examples": [
+        "room rate"
+      ]
+    },
+    {
+      "id": "pattern_7",
+      "concept_uri": "travel-hotel-booking.hotel-offer",
+      "entity_type": "intent_hint",
+      "regex": "(?i)\\bhotel\\s+offer\\b",
+      "examples": [
+        "hotel offer"
+      ]
+    },
+    {
+      "id": "pattern_8",
+      "concept_uri": "travel-hotel-booking.hotel-order",
+      "entity_type": "intent_hint",
+      "regex": "(?i)\\bhotel\\s+order\\b",
+      "examples": [
+        "hotel order"
+      ]
+    },
+    {
+      "id": "pattern_9",
+      "concept_uri": "travel-hotel-booking.guest",
+      "entity_type": "intent_hint",
+      "regex": "(?i)\\bguest\\b",
+      "examples": [
+        "guest"
+      ]
+    },
+    {
+      "id": "pattern_10",
+      "concept_uri": "travel-hotel-booking.room-association",
+      "entity_type": "intent_hint",
+      "regex": "(?i)\\broom\\s+association\\b",
+      "examples": [
+        "room association"
+      ]
+    },
+    {
+      "id": "pattern_11",
+      "concept_uri": "travel-hotel-booking.payment",
+      "entity_type": "intent_hint",
+      "regex": "(?i)\\bpayment\\s+method\\b",
+      "examples": [
+        "payment method"
+      ]
+    },
+    {
+      "id": "pattern_12",
+      "concept_uri": "travel-hotel-booking.policy-guard",
+      "entity_type": "intent_hint",
+      "regex": "(?i)\\bhotel\\s+booking\\s+policy\\b",
+      "examples": [
+        "hotel booking policy"
+      ]
+    }
+  ]
+}

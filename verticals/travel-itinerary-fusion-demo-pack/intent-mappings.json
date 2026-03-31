@@ -1,0 +1,21 @@
+{
+  "schema_version": "1.0",
+  "domain": "travel-itinerary-fusion",
+  "mappings": [
+    {
+      "concept_uri": "travel-itinerary-fusion.intent",
+      "intent_class": "travel.itinerary.fusion.v1",
+      "confidence_floor": 0.75
+    },
+    {
+      "concept_uri": "travel-itinerary-fusion.policy-guard",
+      "intent_class": "travel.itinerary.fusion.v1",
+      "confidence_floor": 0.75
+    },
+    {
+      "concept_uri": "travel-itinerary-fusion.deny-reason",
+      "intent_class": "travel.itinerary.fusion.v1",
+      "confidence_floor": 0.75
+    }
+  ]
+}

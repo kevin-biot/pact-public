@@ -1,0 +1,218 @@
+{
+  "schema_version": "1.0",
+  "domain": "travel-itinerary-fusion",
+  "last_modified": "2026-03-31",
+  "concepts": [
+    {
+      "concept_id": "travel-itinerary-fusion.domain",
+      "preferred_term": "travel itinerary fusion domain",
+      "synonyms": [],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": null,
+      "narrower": [
+        "travel-itinerary-fusion.intent",
+        "travel-itinerary-fusion.itinerary",
+        "travel-itinerary-fusion.policy-guard"
+      ],
+      "source_refs": [
+        "Amadeus",
+        "schema.org",
+        "UIC OSDM"
+      ],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "travel-itinerary-fusion.intent",
+      "preferred_term": "itinerary fusion intent",
+      "synonyms": [
+        "itinerary fusion intent",
+        "trip fusion"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "travel-itinerary-fusion.domain",
+      "narrower": [],
+      "source_refs": [
+        "Amadeus",
+        "schema.org",
+        "UIC OSDM"
+      ],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "travel-itinerary-fusion.itinerary",
+      "preferred_term": "canonical itinerary",
+      "synonyms": [
+        "canonical itinerary"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "travel-itinerary-fusion.domain",
+      "narrower": [
+        "travel-itinerary-fusion.itinerary-node",
+        "travel-itinerary-fusion.fused-reservation",
+        "travel-itinerary-fusion.temporal-ordering"
+      ],
+      "source_refs": [
+        "Amadeus",
+        "schema.org",
+        "UIC OSDM"
+      ],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "travel-itinerary-fusion.itinerary-node",
+      "preferred_term": "itinerary node",
+      "synonyms": [
+        "itinerary node"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "travel-itinerary-fusion.itinerary",
+      "narrower": [
+        "travel-itinerary-fusion.air-reservation-link",
+        "travel-itinerary-fusion.hotel-reservation-link",
+        "travel-itinerary-fusion.location-anchor"
+      ],
+      "source_refs": [
+        "Amadeus",
+        "schema.org",
+        "UIC OSDM"
+      ],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "travel-itinerary-fusion.air-reservation-link",
+      "preferred_term": "air reservation link",
+      "synonyms": [
+        "air reservation link"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "travel-itinerary-fusion.itinerary-node",
+      "narrower": [],
+      "source_refs": [
+        "Amadeus",
+        "schema.org",
+        "UIC OSDM"
+      ],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "travel-itinerary-fusion.hotel-reservation-link",
+      "preferred_term": "hotel reservation link",
+      "synonyms": [
+        "hotel reservation link"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "travel-itinerary-fusion.itinerary-node",
+      "narrower": [],
+      "source_refs": [
+        "Amadeus",
+        "schema.org",
+        "UIC OSDM"
+      ],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "travel-itinerary-fusion.fused-reservation",
+      "preferred_term": "fused reservation",
+      "synonyms": [
+        "fused reservation"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "travel-itinerary-fusion.itinerary",
+      "narrower": [],
+      "source_refs": [
+        "Amadeus",
+        "schema.org",
+        "UIC OSDM"
+      ],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "travel-itinerary-fusion.temporal-ordering",
+      "preferred_term": "temporal ordering",
+      "synonyms": [
+        "temporal ordering"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "travel-itinerary-fusion.itinerary",
+      "narrower": [],
+      "source_refs": [
+        "Amadeus",
+        "schema.org",
+        "UIC OSDM"
+      ],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "travel-itinerary-fusion.location-anchor",
+      "preferred_term": "location anchor",
+      "synonyms": [
+        "location anchor"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "travel-itinerary-fusion.itinerary-node",
+      "narrower": [],
+      "source_refs": [
+        "Amadeus",
+        "schema.org",
+        "UIC OSDM"
+      ],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "travel-itinerary-fusion.policy-guard",
+      "preferred_term": "itinerary fusion policy guard",
+      "synonyms": [
+        "fusion policy guard"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "travel-itinerary-fusion.domain",
+      "narrower": [
+        "travel-itinerary-fusion.deny-reason"
+      ],
+      "source_refs": [
+        "Amadeus",
+        "schema.org",
+        "UIC OSDM"
+      ],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "travel-itinerary-fusion.deny-reason",
+      "preferred_term": "itinerary fusion deny reason",
+      "synonyms": [
+        "fusion deny reason"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "travel-itinerary-fusion.policy-guard",
+      "narrower": [],
+      "source_refs": [
+        "Amadeus",
+        "schema.org",
+        "UIC OSDM"
+      ],
+      "ner_provenance": null
+    }
+  ]
+}

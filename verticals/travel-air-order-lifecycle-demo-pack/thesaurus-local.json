@@ -1,0 +1,237 @@
+{
+  "schema_version": "1.0",
+  "domain": "travel-air-order-lifecycle",
+  "last_modified": "2026-03-31",
+  "concepts": [
+    {
+      "concept_id": "travel-air-order-lifecycle.domain",
+      "preferred_term": "travel air order lifecycle domain",
+      "synonyms": [],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": null,
+      "narrower": [
+        "travel-air-order-lifecycle.intent",
+        "travel-air-order-lifecycle.order",
+        "travel-air-order-lifecycle.policy-guard"
+      ],
+      "source_refs": [
+        "Amadeus",
+        "OpenTravel",
+        "IATA"
+      ],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "travel-air-order-lifecycle.intent",
+      "preferred_term": "air order lifecycle intent",
+      "synonyms": [
+        "air order lifecycle intent"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "travel-air-order-lifecycle.domain",
+      "narrower": [
+        "travel-air-order-lifecycle.lifecycle-action"
+      ],
+      "source_refs": [
+        "Amadeus",
+        "OpenTravel",
+        "IATA"
+      ],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "travel-air-order-lifecycle.order",
+      "preferred_term": "flight order",
+      "synonyms": [
+        "flight order"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "travel-air-order-lifecycle.domain",
+      "narrower": [
+        "travel-air-order-lifecycle.order-id",
+        "travel-air-order-lifecycle.flight-offer-reference",
+        "travel-air-order-lifecycle.traveler",
+        "travel-air-order-lifecycle.contact",
+        "travel-air-order-lifecycle.ticketing-agreement",
+        "travel-air-order-lifecycle.order-status"
+      ],
+      "source_refs": [
+        "Amadeus",
+        "OpenTravel",
+        "IATA"
+      ],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "travel-air-order-lifecycle.order-id",
+      "preferred_term": "flight order identifier",
+      "synonyms": [
+        "order id"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "travel-air-order-lifecycle.order",
+      "narrower": [],
+      "source_refs": [
+        "Amadeus",
+        "OpenTravel",
+        "IATA"
+      ],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "travel-air-order-lifecycle.lifecycle-action",
+      "preferred_term": "lifecycle action",
+      "synonyms": [
+        "lifecycle action",
+        "create read cancel"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "travel-air-order-lifecycle.intent",
+      "narrower": [],
+      "source_refs": [
+        "Amadeus",
+        "OpenTravel",
+        "IATA"
+      ],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "travel-air-order-lifecycle.flight-offer-reference",
+      "preferred_term": "flight offer reference",
+      "synonyms": [
+        "flight offer reference"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "travel-air-order-lifecycle.order",
+      "narrower": [],
+      "source_refs": [
+        "Amadeus",
+        "OpenTravel",
+        "IATA"
+      ],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "travel-air-order-lifecycle.traveler",
+      "preferred_term": "traveler",
+      "synonyms": [
+        "traveler payload"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "travel-air-order-lifecycle.order",
+      "narrower": [],
+      "source_refs": [
+        "Amadeus",
+        "OpenTravel",
+        "IATA"
+      ],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "travel-air-order-lifecycle.contact",
+      "preferred_term": "contact",
+      "synonyms": [
+        "contact payload"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "travel-air-order-lifecycle.order",
+      "narrower": [],
+      "source_refs": [
+        "Amadeus",
+        "OpenTravel",
+        "IATA"
+      ],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "travel-air-order-lifecycle.ticketing-agreement",
+      "preferred_term": "ticketing agreement",
+      "synonyms": [
+        "ticketing agreement"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "travel-air-order-lifecycle.order",
+      "narrower": [],
+      "source_refs": [
+        "Amadeus",
+        "OpenTravel",
+        "IATA"
+      ],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "travel-air-order-lifecycle.order-status",
+      "preferred_term": "order status",
+      "synonyms": [
+        "order status"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "travel-air-order-lifecycle.order",
+      "narrower": [],
+      "source_refs": [
+        "Amadeus",
+        "OpenTravel",
+        "IATA"
+      ],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "travel-air-order-lifecycle.policy-guard",
+      "preferred_term": "air order lifecycle policy guard",
+      "synonyms": [
+        "order lifecycle policy"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "travel-air-order-lifecycle.domain",
+      "narrower": [
+        "travel-air-order-lifecycle.deny-reason"
+      ],
+      "source_refs": [
+        "Amadeus",
+        "OpenTravel",
+        "IATA"
+      ],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "travel-air-order-lifecycle.deny-reason",
+      "preferred_term": "air order lifecycle deny reason",
+      "synonyms": [
+        "order lifecycle deny reason"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "travel-air-order-lifecycle.policy-guard",
+      "narrower": [],
+      "source_refs": [
+        "Amadeus",
+        "OpenTravel",
+        "IATA"
+      ],
+      "ner_provenance": null
+    }
+  ]
+}

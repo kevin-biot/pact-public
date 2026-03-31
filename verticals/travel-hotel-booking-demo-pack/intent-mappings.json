@@ -1,0 +1,21 @@
+{
+  "schema_version": "1.0",
+  "domain": "travel-hotel-booking",
+  "mappings": [
+    {
+      "concept_uri": "travel-hotel-booking.intent",
+      "intent_class": "travel.hotel.order.create.v1",
+      "confidence_floor": 0.75
+    },
+    {
+      "concept_uri": "travel-hotel-booking.policy-guard",
+      "intent_class": "travel.hotel.order.create.v1",
+      "confidence_floor": 0.75
+    },
+    {
+      "concept_uri": "travel-hotel-booking.deny-reason",
+      "intent_class": "travel.hotel.order.create.v1",
+      "confidence_floor": 0.75
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "schema_version": "1.0",
+  "domain": "travel-itinerary-fusion",
+  "thresholds": {
+    "overall_min_pass_rate": 1.0,
+    "require_critical_pass": true
+  },
+  "cases": [
+    {
+      "id": "happy_path",
+      "phrase": "travel.itinerary.fusion.v1",
+      "expect": "travel.itinerary.fusion.v1",
+      "critical": true
+    },
+    {
+      "id": "adversarial_path",
+      "phrase": "travel.itinerary.fusion.v1",
+      "expect": "travel.itinerary.fusion.v1",
+      "critical": true
+    },
+    {
+      "id": "out_of_scope_path",
+      "phrase": "travel.multimodal.freight.fusion.v1",
+      "expect": "travel.multimodal.freight.fusion.v1",
+      "critical": false
+    }
+  ]
+}

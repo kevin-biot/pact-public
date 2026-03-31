@@ -1,0 +1,155 @@
+{
+  "schema_version": "1.0",
+  "domain": "travel-air-order-lifecycle",
+  "pack_id": "travel-air-order-lifecycle-demo-0.1.0",
+  "version": "0.1.0",
+  "out_of_scope_behavior": "escalate",
+  "state_model": {
+    "states": [
+      "ingress",
+      "validated",
+      "classified",
+      "responded",
+      "rejected",
+      "escalated"
+    ],
+    "initial_state": "ingress",
+    "terminal_states": [
+      "responded",
+      "rejected",
+      "escalated"
+    ]
+  },
+  "admissible_intents": [
+    {
+      "intent_class": "travel.flight.order.create.v1",
+      "allowed_states": [
+        "ingress",
+        "validated",
+        "classified"
+      ],
+      "required_fact_types": [
+        "travel_request"
+      ],
+      "transition_ids": [
+        "validate_request",
+        "classify_request",
+        "respond_request"
+      ]
+    }
+  ],
+  "admissible_facts": [
+    {
+      "fact_type": "travel_request",
+      "schema_ref": "urn:travel:travel-air-order-lifecycle:request:v1",
+      "additional_properties": "deny",
+      "field_constraints": [
+        {
+          "path": "operationType",
+          "datatype": "string",
+          "required": true,
+          "allowed_values": [
+            "create",
+            "read",
+            "cancel"
+          ]
+        },
+        {
+          "path": "data.flightOffers[]",
+          "datatype": "string",
+          "required": true
+        },
+        {
+          "path": "data.travelers[]",
+          "datatype": "string",
+          "required": true
+        },
+        {
+          "path": "data.contacts[]",
+          "datatype": "string",
+          "required": false
+        },
+        {
+          "path": "data.ticketingAgreement.option",
+          "datatype": "string",
+          "required": false,
+          "allowed_values": [
+            "DELAY_TO_CANCEL",
+            "DELAY_TO_TICKET"
+          ]
+        },
+        {
+          "path": "flight-orderId",
+          "datatype": "string",
+          "required": true,
+          "pattern": "^[A-Za-z0-9._:-]{4,64}$"
+        },
+        {
+          "path": "flight-orderId",
+          "datatype": "string",
+          "required": true,
+          "pattern": "^[A-Za-z0-9._:-]{4,64}$"
+        },
+        {
+          "path": "data.flightOffers[].source",
+          "datatype": "string",
+          "required": true,
+          "allowed_values": [
+            "GDS",
+            "NDC",
+            "LTC",
+            "EAC"
+          ]
+        }
+      ]
+    }
+  ],
+  "admissible_transitions": [
+    {
+      "id": "validate_request",
+      "from_state": "ingress",
+      "intent_class": "travel.flight.order.create.v1",
+      "to_state": "validated",
+      "guard_refs": [
+        "guard:payload_valid"
+      ]
+    },
+    {
+      "id": "classify_request",
+      "from_state": "validated",
+      "intent_class": "travel.flight.order.create.v1",
+      "to_state": "classified",
+      "guard_refs": [
+        "guard:intent_mapped"
+      ]
+    },
+    {
+      "id": "respond_request",
+      "from_state": "classified",
+      "intent_class": "travel.flight.order.create.v1",
+      "to_state": "responded",
+      "guard_refs": [
+        "guard:policy_permitted"
+      ]
+    },
+    {
+      "id": "handle_out_of_scope",
+      "from_state": "ingress",
+      "intent_class": "travel.flight.order.create.v1",
+      "to_state": "escalated",
+      "guard_refs": [
+        "guard:intent_out_of_scope"
+      ],
+      "deontic": "must",
+      "source_ref": "travel:governance:out-of-scope:v1"
+    }
+  ],
+  "escalation_predicates": [
+    {
+      "predicate_id": "travel_out_of_scope",
+      "trigger": "intent_out_of_scope",
+      "description": "Hotel-order intent is outside the scoped air-order lifecycle decision surface.",
+      "routing": "escalate"
+    }
+  ]
+}

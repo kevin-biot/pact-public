@@ -1,0 +1,114 @@
+{
+  "schema_version": "1.0",
+  "domain": "travel-air-shopping",
+  "patterns": [
+    {
+      "id": "pattern_1",
+      "concept_uri": "travel-air-shopping.intent",
+      "entity_type": "intent_hint",
+      "regex": "(?i)\\bair\\s+shopping\\s+intent\\b",
+      "examples": [
+        "air shopping intent"
+      ]
+    },
+    {
+      "id": "pattern_2",
+      "concept_uri": "travel-air-shopping.intent",
+      "entity_type": "intent_hint",
+      "regex": "(?i)\\bflight\\s+search\\s+intent\\b",
+      "examples": [
+        "flight search intent"
+      ]
+    },
+    {
+      "id": "pattern_3",
+      "concept_uri": "travel-air-shopping.route-constraint",
+      "entity_type": "intent_hint",
+      "regex": "(?i)\\borigin\\s+destination\\b",
+      "examples": [
+        "origin destination"
+      ]
+    },
+    {
+      "id": "pattern_4",
+      "concept_uri": "travel-air-shopping.route-constraint",
+      "entity_type": "intent_hint",
+      "regex": "(?i)\\bdeparture\\s+date\\b",
+      "examples": [
+        "departure date"
+      ]
+    },
+    {
+      "id": "pattern_5",
+      "concept_uri": "travel-air-shopping.traveler-constraint",
+      "entity_type": "intent_hint",
+      "regex": "(?i)\\btraveler\\s+count\\b",
+      "examples": [
+        "traveler count"
+      ]
+    },
+    {
+      "id": "pattern_6",
+      "concept_uri": "travel-air-shopping.traveler-constraint",
+      "entity_type": "intent_hint",
+      "regex": "(?i)\\bcabin\\s+class\\b",
+      "examples": [
+        "cabin class"
+      ]
+    },
+    {
+      "id": "pattern_7",
+      "concept_uri": "travel-air-shopping.carrier-filter",
+      "entity_type": "intent_hint",
+      "regex": "(?i)\\bcarrier\\s+filter\\b",
+      "examples": [
+        "carrier filter"
+      ]
+    },
+    {
+      "id": "pattern_8",
+      "concept_uri": "travel-air-shopping.offer",
+      "entity_type": "intent_hint",
+      "regex": "(?i)\\bflight\\s+offer\\b",
+      "examples": [
+        "flight offer"
+      ]
+    },
+    {
+      "id": "pattern_9",
+      "concept_uri": "travel-air-shopping.offer-price",
+      "entity_type": "intent_hint",
+      "regex": "(?i)\\boffer\\s+price\\b",
+      "examples": [
+        "offer price"
+      ]
+    },
+    {
+      "id": "pattern_10",
+      "concept_uri": "travel-air-shopping.segment",
+      "entity_type": "intent_hint",
+      "regex": "(?i)\\bflight\\s+segment\\b",
+      "examples": [
+        "flight segment"
+      ]
+    },
+    {
+      "id": "pattern_11",
+      "concept_uri": "travel-air-shopping.tax-component",
+      "entity_type": "intent_hint",
+      "regex": "(?i)\\btax\\s+fee\\s+component\\b",
+      "examples": [
+        "tax fee component"
+      ]
+    },
+    {
+      "id": "pattern_12",
+      "concept_uri": "travel-air-shopping.source-lane",
+      "entity_type": "intent_hint",
+      "regex": "(?i)\\bsource\\s+lane\\b",
+      "examples": [
+        "source lane"
+      ]
+    }
+  ]
+}

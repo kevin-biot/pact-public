@@ -1,0 +1,240 @@
+{
+  "schema_version": "1.0",
+  "domain": "travel-air-shopping",
+  "last_modified": "2026-03-31",
+  "concepts": [
+    {
+      "concept_id": "travel-air-shopping.domain",
+      "preferred_term": "travel air shopping domain",
+      "synonyms": [],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": null,
+      "narrower": [
+        "travel-air-shopping.intent",
+        "travel-air-shopping.offer",
+        "travel-air-shopping.policy-guard"
+      ],
+      "source_refs": [
+        "Amadeus",
+        "OpenTravel",
+        "IATA"
+      ],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "travel-air-shopping.intent",
+      "preferred_term": "air shopping intent",
+      "synonyms": [
+        "air shopping intent",
+        "flight search intent"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "travel-air-shopping.domain",
+      "narrower": [
+        "travel-air-shopping.route-constraint",
+        "travel-air-shopping.traveler-constraint",
+        "travel-air-shopping.carrier-filter"
+      ],
+      "source_refs": [
+        "Amadeus",
+        "OpenTravel",
+        "IATA"
+      ],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "travel-air-shopping.route-constraint",
+      "preferred_term": "route constraint",
+      "synonyms": [
+        "origin destination",
+        "departure date"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "travel-air-shopping.intent",
+      "narrower": [],
+      "source_refs": [
+        "Amadeus",
+        "OpenTravel",
+        "IATA"
+      ],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "travel-air-shopping.traveler-constraint",
+      "preferred_term": "traveler constraint",
+      "synonyms": [
+        "traveler count",
+        "cabin class"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "travel-air-shopping.intent",
+      "narrower": [],
+      "source_refs": [
+        "Amadeus",
+        "OpenTravel",
+        "IATA"
+      ],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "travel-air-shopping.carrier-filter",
+      "preferred_term": "carrier filter",
+      "synonyms": [
+        "carrier filter"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "travel-air-shopping.intent",
+      "narrower": [],
+      "source_refs": [
+        "Amadeus",
+        "OpenTravel",
+        "IATA"
+      ],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "travel-air-shopping.offer",
+      "preferred_term": "flight offer",
+      "synonyms": [
+        "flight offer"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "travel-air-shopping.domain",
+      "narrower": [
+        "travel-air-shopping.offer-price",
+        "travel-air-shopping.segment",
+        "travel-air-shopping.source-lane"
+      ],
+      "source_refs": [
+        "Amadeus",
+        "OpenTravel",
+        "IATA"
+      ],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "travel-air-shopping.offer-price",
+      "preferred_term": "flight offer price",
+      "synonyms": [
+        "offer price"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "travel-air-shopping.offer",
+      "narrower": [
+        "travel-air-shopping.tax-component"
+      ],
+      "source_refs": [
+        "Amadeus",
+        "OpenTravel",
+        "IATA"
+      ],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "travel-air-shopping.segment",
+      "preferred_term": "flight segment",
+      "synonyms": [
+        "flight segment"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "travel-air-shopping.offer",
+      "narrower": [],
+      "source_refs": [
+        "Amadeus",
+        "OpenTravel",
+        "IATA"
+      ],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "travel-air-shopping.tax-component",
+      "preferred_term": "tax component",
+      "synonyms": [
+        "tax fee component"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "travel-air-shopping.offer-price",
+      "narrower": [],
+      "source_refs": [
+        "Amadeus",
+        "OpenTravel",
+        "IATA"
+      ],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "travel-air-shopping.source-lane",
+      "preferred_term": "source lane",
+      "synonyms": [
+        "source lane"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "travel-air-shopping.offer",
+      "narrower": [],
+      "source_refs": [
+        "Amadeus",
+        "OpenTravel",
+        "IATA"
+      ],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "travel-air-shopping.policy-guard",
+      "preferred_term": "air shopping policy guard",
+      "synonyms": [
+        "air shopping policy"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "travel-air-shopping.domain",
+      "narrower": [
+        "travel-air-shopping.deny-reason"
+      ],
+      "source_refs": [
+        "Amadeus",
+        "OpenTravel",
+        "IATA"
+      ],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "travel-air-shopping.deny-reason",
+      "preferred_term": "air shopping deny reason",
+      "synonyms": [
+        "deny reason"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "travel-air-shopping.policy-guard",
+      "narrower": [],
+      "source_refs": [
+        "Amadeus",
+        "OpenTravel",
+        "IATA"
+      ],
+      "ner_provenance": null
+    }
+  ]
+}

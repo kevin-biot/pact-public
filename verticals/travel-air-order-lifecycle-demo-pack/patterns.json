@@ -1,0 +1,114 @@
+{
+  "schema_version": "1.0",
+  "domain": "travel-air-order-lifecycle",
+  "patterns": [
+    {
+      "id": "pattern_1",
+      "concept_uri": "travel-air-order-lifecycle.intent",
+      "entity_type": "intent_hint",
+      "regex": "(?i)\\bair\\s+order\\s+lifecycle\\s+intent\\b",
+      "examples": [
+        "air order lifecycle intent"
+      ]
+    },
+    {
+      "id": "pattern_2",
+      "concept_uri": "travel-air-order-lifecycle.order",
+      "entity_type": "intent_hint",
+      "regex": "(?i)\\bflight\\s+order\\b",
+      "examples": [
+        "flight order"
+      ]
+    },
+    {
+      "id": "pattern_3",
+      "concept_uri": "travel-air-order-lifecycle.order-id",
+      "entity_type": "intent_hint",
+      "regex": "(?i)\\border\\s+id\\b",
+      "examples": [
+        "order id"
+      ]
+    },
+    {
+      "id": "pattern_4",
+      "concept_uri": "travel-air-order-lifecycle.lifecycle-action",
+      "entity_type": "intent_hint",
+      "regex": "(?i)\\blifecycle\\s+action\\b",
+      "examples": [
+        "lifecycle action"
+      ]
+    },
+    {
+      "id": "pattern_5",
+      "concept_uri": "travel-air-order-lifecycle.lifecycle-action",
+      "entity_type": "intent_hint",
+      "regex": "(?i)\\bcreate\\s+read\\s+cancel\\b",
+      "examples": [
+        "create read cancel"
+      ]
+    },
+    {
+      "id": "pattern_6",
+      "concept_uri": "travel-air-order-lifecycle.flight-offer-reference",
+      "entity_type": "intent_hint",
+      "regex": "(?i)\\bflight\\s+offer\\s+reference\\b",
+      "examples": [
+        "flight offer reference"
+      ]
+    },
+    {
+      "id": "pattern_7",
+      "concept_uri": "travel-air-order-lifecycle.traveler",
+      "entity_type": "intent_hint",
+      "regex": "(?i)\\btraveler\\s+payload\\b",
+      "examples": [
+        "traveler payload"
+      ]
+    },
+    {
+      "id": "pattern_8",
+      "concept_uri": "travel-air-order-lifecycle.contact",
+      "entity_type": "intent_hint",
+      "regex": "(?i)\\bcontact\\s+payload\\b",
+      "examples": [
+        "contact payload"
+      ]
+    },
+    {
+      "id": "pattern_9",
+      "concept_uri": "travel-air-order-lifecycle.ticketing-agreement",
+      "entity_type": "intent_hint",
+      "regex": "(?i)\\bticketing\\s+agreement\\b",
+      "examples": [
+        "ticketing agreement"
+      ]
+    },
+    {
+      "id": "pattern_10",
+      "concept_uri": "travel-air-order-lifecycle.order-status",
+      "entity_type": "intent_hint",
+      "regex": "(?i)\\border\\s+status\\b",
+      "examples": [
+        "order status"
+      ]
+    },
+    {
+      "id": "pattern_11",
+      "concept_uri": "travel-air-order-lifecycle.policy-guard",
+      "entity_type": "intent_hint",
+      "regex": "(?i)\\border\\s+lifecycle\\s+policy\\b",
+      "examples": [
+        "order lifecycle policy"
+      ]
+    },
+    {
+      "id": "pattern_12",
+      "concept_uri": "travel-air-order-lifecycle.deny-reason",
+      "entity_type": "intent_hint",
+      "regex": "(?i)\\border\\s+lifecycle\\s+deny\\s+reason\\b",
+      "examples": [
+        "order lifecycle deny reason"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "schema_version": "0.1",
+  "generated_at_utc": "2026-03-30T23:29:55Z",
+  "profile": "curated-travel-demo-pack",
+  "domain": "travel-air-shopping",
+  "source_spec": "Amadeus Flight Offers Search/Price + OpenTravel OTA Air search baseline",
+  "source_artifact_count": 4,
+  "mapped_symbol_count": 2,
+  "mapped_field_count": 12,
+  "note": "Curated API/schema crosswalk profile; message-identifier extraction is not applicable."
+}

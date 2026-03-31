@@ -1,0 +1,11 @@
+{
+  "schema_version": "0.1",
+  "generated_at_utc": "2026-03-30T23:37:59Z",
+  "profile": "curated-travel-demo-pack",
+  "domain": "travel-itinerary-fusion",
+  "source_spec": "Air + Hotel reservation fusion profile",
+  "source_artifact_count": 4,
+  "mapped_symbol_count": 1,
+  "mapped_field_count": 6,
+  "note": "Curated API/schema crosswalk profile; message-identifier extraction is not applicable."
+}

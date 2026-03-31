@@ -1,0 +1,174 @@
+{
+  "schema_version": "1.0",
+  "domain": "travel-hotel-booking",
+  "pack_id": "travel-hotel-booking-demo-0.1.0",
+  "version": "0.1.0",
+  "out_of_scope_behavior": "escalate",
+  "state_model": {
+    "states": [
+      "ingress",
+      "validated",
+      "classified",
+      "responded",
+      "rejected",
+      "escalated"
+    ],
+    "initial_state": "ingress",
+    "terminal_states": [
+      "responded",
+      "rejected",
+      "escalated"
+    ]
+  },
+  "admissible_intents": [
+    {
+      "intent_class": "travel.hotel.order.create.v1",
+      "allowed_states": [
+        "ingress",
+        "validated",
+        "classified"
+      ],
+      "required_fact_types": [
+        "travel_request"
+      ],
+      "transition_ids": [
+        "validate_request",
+        "classify_request",
+        "respond_request"
+      ]
+    }
+  ],
+  "admissible_facts": [
+    {
+      "fact_type": "travel_request",
+      "schema_ref": "urn:travel:travel-hotel-booking:request:v1",
+      "additional_properties": "deny",
+      "field_constraints": [
+        {
+          "path": "hotelIds",
+          "datatype": "string",
+          "required": true
+        },
+        {
+          "path": "checkInDate",
+          "datatype": "string",
+          "required": true,
+          "format": "date"
+        },
+        {
+          "path": "checkOutDate",
+          "datatype": "string",
+          "required": true,
+          "format": "date"
+        },
+        {
+          "path": "adults",
+          "datatype": "integer",
+          "required": false,
+          "format": "integer"
+        },
+        {
+          "path": "roomQuantity",
+          "datatype": "integer",
+          "required": false,
+          "format": "integer"
+        },
+        {
+          "path": "currency",
+          "datatype": "string",
+          "required": false,
+          "pattern": "^[A-Z]{3}$"
+        },
+        {
+          "path": "paymentPolicy",
+          "datatype": "string",
+          "required": false,
+          "allowed_values": [
+            "GUARANTEE",
+            "DEPOSIT",
+            "NONE"
+          ]
+        },
+        {
+          "path": "data.guests[]",
+          "datatype": "string",
+          "required": true
+        },
+        {
+          "path": "data.roomAssociations[].hotelOfferId",
+          "datatype": "string",
+          "required": true
+        },
+        {
+          "path": "data.payment.method",
+          "datatype": "string",
+          "required": true,
+          "allowed_values": [
+            "CREDIT_CARD",
+            "DEBIT_CARD",
+            "VIRTUAL_CARD"
+          ]
+        },
+        {
+          "path": "data.payment.paymentCard.paymentCardInfo.cardNumber",
+          "datatype": "string",
+          "required": true,
+          "pattern": "^[0-9X]{12,19}$"
+        },
+        {
+          "path": "RoomStay.RoomRates.RoomRate",
+          "datatype": "string",
+          "required": true
+        }
+      ]
+    }
+  ],
+  "admissible_transitions": [
+    {
+      "id": "validate_request",
+      "from_state": "ingress",
+      "intent_class": "travel.hotel.order.create.v1",
+      "to_state": "validated",
+      "guard_refs": [
+        "guard:payload_valid"
+      ]
+    },
+    {
+      "id": "classify_request",
+      "from_state": "validated",
+      "intent_class": "travel.hotel.order.create.v1",
+      "to_state": "classified",
+      "guard_refs": [
+        "guard:intent_mapped"
+      ]
+    },
+    {
+      "id": "respond_request",
+      "from_state": "classified",
+      "intent_class": "travel.hotel.order.create.v1",
+      "to_state": "responded",
+      "guard_refs": [
+        "guard:policy_permitted"
+      ]
+    },
+    {
+      "id": "handle_out_of_scope",
+      "from_state": "ingress",
+      "intent_class": "travel.hotel.order.create.v1",
+      "to_state": "escalated",
+      "guard_refs": [
+        "guard:intent_out_of_scope"
+      ],
+      "deontic": "must",
+      "source_ref": "travel:governance:out-of-scope:v1"
+    }
+  ],
+  "escalation_predicates": [
+    {
+      "predicate_id": "travel_out_of_scope",
+      "trigger": "intent_out_of_scope",
+      "description": "Flight-order intent is outside the scoped hotel-booking decision surface.",
+      "routing": "escalate"
+    }
+  ]
+}

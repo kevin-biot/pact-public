@@ -1,0 +1,239 @@
+{
+  "schema_version": "1.0",
+  "domain": "travel-hotel-booking",
+  "last_modified": "2026-03-31",
+  "concepts": [
+    {
+      "concept_id": "travel-hotel-booking.domain",
+      "preferred_term": "travel hotel booking domain",
+      "synonyms": [],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": null,
+      "narrower": [
+        "travel-hotel-booking.intent",
+        "travel-hotel-booking.room-rate",
+        "travel-hotel-booking.hotel-order",
+        "travel-hotel-booking.policy-guard"
+      ],
+      "source_refs": [
+        "Amadeus",
+        "OpenTravel",
+        "schema.org"
+      ],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "travel-hotel-booking.intent",
+      "preferred_term": "hotel booking intent",
+      "synonyms": [
+        "hotel booking intent",
+        "lodging booking intent"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "travel-hotel-booking.domain",
+      "narrower": [
+        "travel-hotel-booking.property-search",
+        "travel-hotel-booking.stay-window"
+      ],
+      "source_refs": [
+        "Amadeus",
+        "OpenTravel",
+        "schema.org"
+      ],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "travel-hotel-booking.property-search",
+      "preferred_term": "property search",
+      "synonyms": [
+        "property search"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "travel-hotel-booking.intent",
+      "narrower": [],
+      "source_refs": [
+        "Amadeus",
+        "OpenTravel",
+        "schema.org"
+      ],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "travel-hotel-booking.stay-window",
+      "preferred_term": "stay window",
+      "synonyms": [
+        "stay window",
+        "check in check out"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "travel-hotel-booking.intent",
+      "narrower": [],
+      "source_refs": [
+        "Amadeus",
+        "OpenTravel",
+        "schema.org"
+      ],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "travel-hotel-booking.room-rate",
+      "preferred_term": "room rate",
+      "synonyms": [
+        "room rate"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "travel-hotel-booking.domain",
+      "narrower": [
+        "travel-hotel-booking.hotel-offer"
+      ],
+      "source_refs": [
+        "Amadeus",
+        "OpenTravel",
+        "schema.org"
+      ],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "travel-hotel-booking.hotel-offer",
+      "preferred_term": "hotel offer",
+      "synonyms": [
+        "hotel offer"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "travel-hotel-booking.room-rate",
+      "narrower": [],
+      "source_refs": [
+        "Amadeus",
+        "OpenTravel",
+        "schema.org"
+      ],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "travel-hotel-booking.hotel-order",
+      "preferred_term": "hotel order",
+      "synonyms": [
+        "hotel order"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "travel-hotel-booking.domain",
+      "narrower": [
+        "travel-hotel-booking.guest",
+        "travel-hotel-booking.room-association",
+        "travel-hotel-booking.payment"
+      ],
+      "source_refs": [
+        "Amadeus",
+        "OpenTravel",
+        "schema.org"
+      ],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "travel-hotel-booking.guest",
+      "preferred_term": "guest",
+      "synonyms": [
+        "guest"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "travel-hotel-booking.hotel-order",
+      "narrower": [],
+      "source_refs": [
+        "Amadeus",
+        "OpenTravel",
+        "schema.org"
+      ],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "travel-hotel-booking.room-association",
+      "preferred_term": "room association",
+      "synonyms": [
+        "room association"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "travel-hotel-booking.hotel-order",
+      "narrower": [],
+      "source_refs": [
+        "Amadeus",
+        "OpenTravel",
+        "schema.org"
+      ],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "travel-hotel-booking.payment",
+      "preferred_term": "hotel payment",
+      "synonyms": [
+        "payment method"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "travel-hotel-booking.hotel-order",
+      "narrower": [],
+      "source_refs": [
+        "Amadeus",
+        "OpenTravel",
+        "schema.org"
+      ],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "travel-hotel-booking.policy-guard",
+      "preferred_term": "hotel booking policy guard",
+      "synonyms": [
+        "hotel booking policy"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "travel-hotel-booking.domain",
+      "narrower": [
+        "travel-hotel-booking.deny-reason"
+      ],
+      "source_refs": [
+        "Amadeus",
+        "OpenTravel",
+        "schema.org"
+      ],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "travel-hotel-booking.deny-reason",
+      "preferred_term": "hotel booking deny reason",
+      "synonyms": [
+        "hotel deny reason"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "travel-hotel-booking.policy-guard",
+      "narrower": [],
+      "source_refs": [
+        "Amadeus",
+        "OpenTravel",
+        "schema.org"
+      ],
+      "ner_provenance": null
+    }
+  ]
+}

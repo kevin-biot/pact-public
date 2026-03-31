@@ -1,0 +1,136 @@
+{
+  "schema_version": "1.0",
+  "domain": "travel-itinerary-fusion",
+  "pack_id": "travel-itinerary-fusion-demo-0.1.0",
+  "version": "0.1.0",
+  "out_of_scope_behavior": "deny",
+  "state_model": {
+    "states": [
+      "ingress",
+      "validated",
+      "classified",
+      "responded",
+      "rejected",
+      "escalated"
+    ],
+    "initial_state": "ingress",
+    "terminal_states": [
+      "responded",
+      "rejected",
+      "escalated"
+    ]
+  },
+  "admissible_intents": [
+    {
+      "intent_class": "travel.itinerary.fusion.v1",
+      "allowed_states": [
+        "ingress",
+        "validated",
+        "classified"
+      ],
+      "required_fact_types": [
+        "travel_request"
+      ],
+      "transition_ids": [
+        "validate_request",
+        "classify_request",
+        "respond_request"
+      ]
+    }
+  ],
+  "admissible_facts": [
+    {
+      "fact_type": "travel_request",
+      "schema_ref": "urn:travel:travel-itinerary-fusion:request:v1",
+      "additional_properties": "deny",
+      "field_constraints": [
+        {
+          "path": "flightOrderId",
+          "datatype": "string",
+          "required": true
+        },
+        {
+          "path": "hotelOrderId",
+          "datatype": "string",
+          "required": true
+        },
+        {
+          "path": "itineraryId",
+          "datatype": "string",
+          "required": true,
+          "pattern": "^[A-Za-z0-9._:-]{4,64}$"
+        },
+        {
+          "path": "nodeSequence[]",
+          "datatype": "string",
+          "required": true
+        },
+        {
+          "path": "fusionScope",
+          "datatype": "string",
+          "required": true,
+          "allowed_values": [
+            "air_hotel"
+          ]
+        },
+        {
+          "path": "operationType",
+          "datatype": "string",
+          "required": true,
+          "allowed_values": [
+            "fuse",
+            "read"
+          ]
+        }
+      ]
+    }
+  ],
+  "admissible_transitions": [
+    {
+      "id": "validate_request",
+      "from_state": "ingress",
+      "intent_class": "travel.itinerary.fusion.v1",
+      "to_state": "validated",
+      "guard_refs": [
+        "guard:payload_valid"
+      ]
+    },
+    {
+      "id": "classify_request",
+      "from_state": "validated",
+      "intent_class": "travel.itinerary.fusion.v1",
+      "to_state": "classified",
+      "guard_refs": [
+        "guard:intent_mapped"
+      ]
+    },
+    {
+      "id": "respond_request",
+      "from_state": "classified",
+      "intent_class": "travel.itinerary.fusion.v1",
+      "to_state": "responded",
+      "guard_refs": [
+        "guard:policy_permitted"
+      ]
+    },
+    {
+      "id": "handle_out_of_scope",
+      "from_state": "ingress",
+      "intent_class": "travel.itinerary.fusion.v1",
+      "to_state": "rejected",
+      "guard_refs": [
+        "guard:intent_out_of_scope"
+      ],
+      "deontic": "must",
+      "source_ref": "travel:governance:out-of-scope:v1"
+    }
+  ],
+  "escalation_predicates": [
+    {
+      "predicate_id": "travel_out_of_scope",
+      "trigger": "intent_out_of_scope",
+      "description": "Requested multimodal freight fusion is outside allowed air-hotel scope and is fail-closed.",
+      "routing": "deny"
+    }
+  ]
+}

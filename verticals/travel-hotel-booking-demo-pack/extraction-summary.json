@@ -1,0 +1,11 @@
+{
+  "schema_version": "0.1",
+  "generated_at_utc": "2026-03-30T23:33:19Z",
+  "profile": "curated-travel-demo-pack",
+  "domain": "travel-hotel-booking",
+  "source_spec": "Amadeus Hotel Search v3 and Hotel Booking v2",
+  "source_artifact_count": 4,
+  "mapped_symbol_count": 2,
+  "mapped_field_count": 12,
+  "note": "Curated API/schema crosswalk profile; message-identifier extraction is not applicable."
+}

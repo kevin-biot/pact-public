@@ -1,0 +1,28 @@
+{
+  "schema_version": "1.0",
+  "domain": "travel-air-shopping",
+  "thresholds": {
+    "overall_min_pass_rate": 1.0,
+    "require_critical_pass": true
+  },
+  "cases": [
+    {
+      "id": "happy_path",
+      "phrase": "travel.flight.shopping.v1",
+      "expect": "travel.flight.shopping.v1",
+      "critical": true
+    },
+    {
+      "id": "adversarial_path",
+      "phrase": "travel.flight.shopping.v1",
+      "expect": "travel.flight.shopping.v1",
+      "critical": true
+    },
+    {
+      "id": "out_of_scope_path",
+      "phrase": "travel.hotel.order.create.v1",
+      "expect": "travel.hotel.order.create.v1",
+      "critical": false
+    }
+  ]
+}
