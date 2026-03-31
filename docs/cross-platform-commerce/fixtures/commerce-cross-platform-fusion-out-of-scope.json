@@ -1,0 +1,17 @@
+{
+  "pack_id": "commerce-cross-platform-fusion-demo",
+  "scenario_type": "out_of_scope",
+  "input": {
+    "intent": "medical.encounter.transition.v1",
+    "event_id": "evt-med-01",
+    "correlation_id": "corr-med-01",
+    "source": {
+      "domain": "medical"
+    }
+  },
+  "expected_outcome": {
+    "decision": "escalate",
+    "code": "ESCALATE_OUT_OF_SCOPE_COMMERCE_INTENT",
+    "reason": "Medical encounter transition intent is outside the cross-platform commerce bounded scope."
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "pack_id": "commerce-cross-platform-fusion-demo",
+  "scenario_type": "adversarial_path",
+  "input": {
+    "intent": "shopify.functions.cart.validations.generate.run.v1",
+    "event_id": "",
+    "correlation_id": "",
+    "source": {
+      "domain": "shopify-functions"
+    },
+    "payload": {
+      "cart_id": "cart-12",
+      "validation_context": null
+    }
+  },
+  "expected_outcome": {
+    "decision": "deny",
+    "code": "DENY_INVALID_COMMERCE_EVENT_ENVELOPE",
+    "reason": "Missing correlation and event identifiers violate deterministic cross-platform event envelope constraints."
+  }
+}

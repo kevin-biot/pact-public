@@ -1,0 +1,19 @@
+{
+  "pack_id": "commerce-cross-platform-fusion-demo",
+  "scenario_type": "happy_path",
+  "input": {
+    "intent": "openbanking.payment.initiate.v1",
+    "event_id": "evt-merchant-1001",
+    "correlation_id": "corr-order-7781",
+    "source": {
+      "domain": "openbanking"
+    },
+    "amount": "125.50",
+    "currency": "EUR"
+  },
+  "expected_outcome": {
+    "decision": "allow",
+    "code": "ALLOW_CROSS_PLATFORM_COMMERCE_ROUTE",
+    "reason": "In-scope payment initiation matches approved cross-platform journey entry point."
+  }
+}
