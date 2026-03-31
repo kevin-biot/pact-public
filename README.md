@@ -39,7 +39,7 @@ It also gives a structural prompt-injection defense: out-of-scope capability req
 A request can be API/JSON-valid and still be denied if its noun/verb/parameter combination is outside the bound ontology intent profile.
 
 Further design rationale is documented in the ontology authoring repo:
-[Intent-First Bounded Execution Pattern](https://github.com/kevin-biot/ontology/blob/main/docs/architecture/intent-first-bounded-execution-pattern.md)
+[Intent-First Bounded Execution Pattern](docs/architecture/intent-first-bounded-execution-pattern.md)
 
 ### The problem with classical ontologies at runtime
 
