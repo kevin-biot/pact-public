@@ -226,19 +226,30 @@ Fixture signing keys are test-only and must not be used in production systems.
 
 This repository includes:
 
-1. `verticals/telco-reference-pack/`
-2. `verticals/policy-reference-pack/`
-3. `verticals/iso20022-reference-pack/`
-4. `verticals/travel-air-shopping-demo-pack/`
-5. `verticals/travel-hotel-booking-demo-pack/`
-6. `verticals/travel-air-order-lifecycle-demo-pack/`
-7. `verticals/travel-itinerary-fusion-demo-pack/`
-8. `verticals/telco-retail-demo-pack/`
-9. `verticals/telco-fault-diagnosis-demo-pack/`
-10. `verticals/telco-ran-core-slice-demo-pack/`
-11. `verticals/fhir-medications-module-demo-pack/`
-12. `verticals/fhir-med-reconciliation-allergy-demo-pack/`
-13. `verticals/fhir-encounter-transitions-demo-pack/`
+1. `verticals/fhir-medications-module-demo-pack/`
+2. `verticals/fhir-med-reconciliation-allergy-demo-pack/`
+3. `verticals/fhir-encounter-transitions-demo-pack/`
+4. `verticals/iso20022-reference-pack/`
+5. `verticals/iso20022-authored-demo-pack/`
+6. `verticals/iso20022-canonical-demo-pack/`
+7. `verticals/openbanking-ais-read-demo-pack/`
+8. `verticals/openbanking-consent-lifecycle-demo-pack/`
+9. `verticals/openbanking-payment-initiation-demo-pack/`
+10. `verticals/policy-reference-pack/`
+11. `verticals/policy-reference-pack-denywins-off/`
+12. `verticals/revolut-merchant-core-seed-pack/`
+13. `verticals/revolut-merchant-customer-subscription-surface-pack/`
+14. `verticals/revolut-merchant-disputes-surface-pack/`
+15. `verticals/revolut-merchant-order-payment-surface-pack/`
+16. `verticals/revolut-merchant-ops-observability-surface-pack/`
+17. `verticals/telco-reference-pack/`
+18. `verticals/telco-retail-demo-pack/`
+19. `verticals/telco-fault-diagnosis-demo-pack/`
+20. `verticals/telco-ran-core-slice-demo-pack/`
+21. `verticals/travel-air-shopping-demo-pack/`
+22. `verticals/travel-hotel-booking-demo-pack/`
+23. `verticals/travel-air-order-lifecycle-demo-pack/`
+24. `verticals/travel-itinerary-fusion-demo-pack/`
 
 This telco pack is a non-normative example vertical profile demonstrating PACT extension mechanics.
 It does not define TM Forum standards and does not replace IG1453.
@@ -248,6 +259,9 @@ The telco fault-diagnosis and RAN/core/slice demo packs provide focused candidat
 The FHIR medications module demo pack provides a healthcare candidate surface grounded to HL7 FHIR R5 medications resources.
 The FHIR reconciliation+allergy companion pack extends healthcare coverage for medication list reconciliation and allergy safety records.
 The FHIR encounter transitions pack provides a stepwise surface for transfer, ward step-down, discharge, history, and transition notifications.
+The open banking demo packs provide separate bounded surfaces for AIS read, consent lifecycle, and payment initiation.
+The ISO 20022 authored/canonical demo packs provide comparative Route A/Route B surfaces alongside the reference pack.
+The Revolut merchant surface packs provide candidate bounded domains for seed, order/payment, disputes, subscriptions, and ops observability.
 
 The policy reference pack is a non-normative base-policy example demonstrating cross-domain policy semantics independent of telco standards.
 It includes a minimal jurisdiction overlay deny-wins composition example.
