@@ -1,0 +1,11 @@
+{
+  "bundleId": "sha256:d483a57693133a671eb58807cae0cb7acdac9c197cf67f914d3c062c27cb6497",
+  "decision": {
+    "type": "TelcoRetailIntent",
+    "intent_class": "telco.retail.top_up.v1",
+    "subscriber_id": "sub-002",
+    "amount": 25,
+    "currency": "EUR",
+    "jurisdiction": "OM-MCT"
+  }
+}

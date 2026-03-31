@@ -1,0 +1,11 @@
+{
+  "bundleId": "sha256:d483a57693133a671eb58807cae0cb7acdac9c197cf67f914d3c062c27cb6497",
+  "decision": {
+    "type": "TelcoRetailIntent",
+    "intent_class": "telco.retail.sim_swap.v1",
+    "subscriber_id": "sub-001",
+    "current_iccid": "8991101200003204510",
+    "new_iccid": "8991101200003204511",
+    "jurisdiction": "EU-DE"
+  }
+}

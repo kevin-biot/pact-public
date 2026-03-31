@@ -1,0 +1,9 @@
+{
+  "bundleId": "sha256:d483a57693133a671eb58807cae0cb7acdac9c197cf67f914d3c062c27cb6497",
+  "decision": {
+    "type": "TelcoRetailIntent",
+    "intent_class": "telco.retail.port_in.v1",
+    "msisdn": "+447700900111",
+    "donor_operator": "example-operator"
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "schema_version": "1.0",
+  "generated_at_utc": "2026-03-31T00:00:00Z",
+  "pack_path": "verticals/telco-retail-demo-pack",
+  "cases": [
+    {
+      "id": "TELCO-RET-VALID-001",
+      "path": "fixtures/telco-retail/cases/valid-sim-swap.json",
+      "expected": {
+        "status": "pass",
+        "code": "PASS"
+      }
+    },
+    {
+      "id": "TELCO-RET-VALID-002",
+      "path": "fixtures/telco-retail/cases/valid-top-up.json",
+      "expected": {
+        "status": "pass",
+        "code": "PASS"
+      }
+    },
+    {
+      "id": "TELCO-RET-FAIL-001",
+      "path": "fixtures/telco-retail/cases/fail-missing-subscriber-id.json",
+      "expected": {
+        "status": "fail",
+        "code": "CIC_REQUIRED_FIELD_MISSING"
+      }
+    },
+    {
+      "id": "TELCO-RET-FAIL-002",
+      "path": "fixtures/telco-retail/cases/fail-unknown-intent.json",
+      "expected": {
+        "status": "fail",
+        "code": "CIC_CANONICAL_VALUE_INVALID"
+      }
+    },
+    {
+      "id": "TELCO-RET-FAIL-003",
+      "path": "fixtures/telco-retail/cases/fail-bundle-commit-mismatch.json",
+      "expected": {
+        "status": "fail",
+        "code": "PSC_BUNDLE_COMMIT_MISMATCH"
+      }
+    }
+  ]
+}

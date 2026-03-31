@@ -1,0 +1,36 @@
+{
+  "pack_schema": "1.0",
+  "id": "telco-core-1.0.0",
+  "domain": "telco",
+  "version": "1.0.0",
+  "key_name": "demo",
+  "provider_id": "ontology:lane2",
+  "trust_tier": "Tier1",
+  "nbf": "2026-02-16T00:00:00Z",
+  "exp": "2030-02-16T00:00:00Z",
+  "rev_epoch": 1,
+  "deny_wins": true,
+  "precedence": [
+    "overlay_eu",
+    "overlay_om"
+  ],
+  "files": {
+    "context": "context.jsonld",
+    "vocab": "vocab.skos.jsonld",
+    "shapes": "shapes.ttl",
+    "thesaurus": "thesaurus.jsonld",
+    "patterns": "patterns.json",
+    "intent_mappings": "intent-mappings.json",
+    "overlay_eu": "overlay-eu.ttl",
+    "overlay_om": "overlay-om.ttl"
+  },
+  "dc": {
+    "identifier": "ontology:telco-core:v1.0.0",
+    "title": "Telco Retail Core Ontology Pack",
+    "creator": "Lane2 Ontology Team",
+    "issued": "2026-02-16",
+    "coverage": "Oman and EU reference overlays",
+    "rights": "Lane2 internal",
+    "description": "Telco retail ontology pack for SIM swap, port-in, top-up, plan upgrade, balance, and KYC routing."
+  }
+}

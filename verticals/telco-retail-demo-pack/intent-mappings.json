@@ -1,0 +1,36 @@
+{
+  "schema_version": "1.0",
+  "domain": "telco",
+  "mappings": [
+    {
+      "concept_uri": "telco:sim.swap",
+      "intent_class": "telco.retail.sim_swap.v1",
+      "confidence_floor": 0.72
+    },
+    {
+      "concept_uri": "telco:port.in",
+      "intent_class": "telco.retail.port_in.v1",
+      "confidence_floor": 0.72
+    },
+    {
+      "concept_uri": "telco:top.up",
+      "intent_class": "telco.retail.top_up.v1",
+      "confidence_floor": 0.70
+    },
+    {
+      "concept_uri": "telco:plan.upgrade",
+      "intent_class": "telco.retail.plan_upgrade.v1",
+      "confidence_floor": 0.70
+    },
+    {
+      "concept_uri": "telco:balance.check",
+      "intent_class": "telco.retail.balance_check.v1",
+      "confidence_floor": 0.68
+    },
+    {
+      "concept_uri": "telco:kyc.verify",
+      "intent_class": "telco.retail.kyc_verify.v1",
+      "confidence_floor": 0.70
+    }
+  ]
+}

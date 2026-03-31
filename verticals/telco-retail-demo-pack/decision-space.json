@@ -1,0 +1,50 @@
+{
+  "schema_version": "1.0",
+  "domain": "telco",
+  "pack_id": "telco-core-1.0.0",
+  "version": "1.0.0",
+  "out_of_scope_behavior": "escalate",
+  "state_model": {
+    "states": ["ingress", "validated", "classified", "responded", "rejected", "escalated"],
+    "initial_state": "ingress",
+    "terminal_states": ["responded", "rejected", "escalated"]
+  },
+  "admissible_intents": [
+    {
+      "intent_class": "telco.retail.sim_swap.v1",
+      "allowed_states": ["ingress", "validated", "classified"],
+      "required_fact_types": ["telco_retail_request"],
+      "transition_ids": ["validate_request", "classify_request", "respond_request"]
+    },
+    {
+      "intent_class": "telco.retail.port_in.v1",
+      "allowed_states": ["ingress", "validated", "classified"],
+      "required_fact_types": ["telco_retail_request"],
+      "transition_ids": ["validate_request", "classify_request", "respond_request"]
+    },
+    {
+      "intent_class": "telco.retail.top_up.v1",
+      "allowed_states": ["ingress", "validated", "classified"],
+      "required_fact_types": ["telco_retail_request"],
+      "transition_ids": ["validate_request", "classify_request", "respond_request"]
+    },
+    {
+      "intent_class": "telco.retail.plan_upgrade.v1",
+      "allowed_states": ["ingress", "validated", "classified"],
+      "required_fact_types": ["telco_retail_request"],
+      "transition_ids": ["validate_request", "classify_request", "respond_request"]
+    },
+    {
+      "intent_class": "telco.retail.balance_check.v1",
+      "allowed_states": ["ingress", "validated", "classified"],
+      "required_fact_types": ["telco_retail_request"],
+      "transition_ids": ["validate_request", "classify_request", "respond_request"]
+    },
+    {
+      "intent_class": "telco.retail.kyc_verify.v1",
+      "allowed_states": ["ingress", "validated", "classified"],
+      "required_fact_types": ["telco_retail_request"],
+      "transition_ids": ["validate_request", "classify_request", "respond_request"]
+    }
+  ]
+}

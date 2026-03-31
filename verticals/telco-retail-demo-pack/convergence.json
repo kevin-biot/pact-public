@@ -1,0 +1,82 @@
+{
+  "schema_version": "1.0",
+  "domain": "telco",
+  "thresholds": {
+    "overall_min_pass_rate": 1.0,
+    "require_critical_pass": true
+  },
+  "cases": [
+    {
+      "id": "telco-sim-swap-1",
+      "phrase": "I need to swap my SIM card",
+      "expect": "telco.retail.sim_swap.v1",
+      "critical": true
+    },
+    {
+      "id": "telco-sim-swap-2",
+      "phrase": "replace my sim",
+      "expect": "telco.retail.sim_swap.v1",
+      "critical": true
+    },
+    {
+      "id": "telco-port-in-1",
+      "phrase": "port in my number",
+      "expect": "telco.retail.port_in.v1",
+      "critical": true
+    },
+    {
+      "id": "telco-port-in-2",
+      "phrase": "bring my number from another carrier",
+      "expect": "telco.retail.port_in.v1",
+      "critical": true
+    },
+    {
+      "id": "telco-top-up-1",
+      "phrase": "top up my balance",
+      "expect": "telco.retail.top_up.v1",
+      "critical": true
+    },
+    {
+      "id": "telco-top-up-2",
+      "phrase": "recharge my phone",
+      "expect": "telco.retail.top_up.v1",
+      "critical": true
+    },
+    {
+      "id": "telco-plan-upgrade-1",
+      "phrase": "upgrade my plan",
+      "expect": "telco.retail.plan_upgrade.v1",
+      "critical": true
+    },
+    {
+      "id": "telco-plan-upgrade-2",
+      "phrase": "need more data",
+      "expect": "telco.retail.plan_upgrade.v1",
+      "critical": true
+    },
+    {
+      "id": "telco-balance-check-1",
+      "phrase": "check balance",
+      "expect": "telco.retail.balance_check.v1",
+      "critical": true
+    },
+    {
+      "id": "telco-balance-check-2",
+      "phrase": "remaining credit",
+      "expect": "telco.retail.balance_check.v1",
+      "critical": true
+    },
+    {
+      "id": "telco-kyc-1",
+      "phrase": "kyc verification",
+      "expect": "telco.retail.kyc_verify.v1",
+      "critical": true
+    },
+    {
+      "id": "telco-kyc-2",
+      "phrase": "verify my identity",
+      "expect": "telco.retail.kyc_verify.v1",
+      "critical": true
+    }
+  ]
+}

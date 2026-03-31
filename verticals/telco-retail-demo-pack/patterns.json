@@ -1,0 +1,48 @@
+{
+  "schema_version": "1.0",
+  "domain": "telco",
+  "patterns": [
+    {
+      "id": "telco_sim_swap_intent",
+      "concept_uri": "telco:sim.swap",
+      "entity_type": "intent_hint",
+      "regex": "(?i)\\b(sim\\s*(swap|replacement)|swap\\s+my\\s+sim|replace\\s+my\\s+sim|new\\s+sim)\\b",
+      "examples": ["I need to swap my SIM card", "replace my sim", "sim replacement"]
+    },
+    {
+      "id": "telco_port_in_intent",
+      "concept_uri": "telco:port.in",
+      "entity_type": "intent_hint",
+      "regex": "(?i)\\b(port\\s*in|bring\\s+my\\s+number|number\\s+portability|move\\s+my\\s+number|transfer\\s+number\\s+in)\\b",
+      "examples": ["port in my number", "bring my number from another carrier", "number portability"]
+    },
+    {
+      "id": "telco_top_up_intent",
+      "concept_uri": "telco:top.up",
+      "entity_type": "intent_hint",
+      "regex": "(?i)\\b(top[\\s-]*up|recharge|add\\s+credit|buy\\s+prepaid\\s+credit|reload\\s+my\\s+balance)\\b",
+      "examples": ["top up my balance", "recharge my phone", "add credit"]
+    },
+    {
+      "id": "telco_plan_upgrade_intent",
+      "concept_uri": "telco:plan.upgrade",
+      "entity_type": "intent_hint",
+      "regex": "(?i)\\b(plan\\s+upgrade|upgrade\\s+my\\s+plan|change\\s+my\\s+plan|switch\\s+to\\s+a\\s+better\\s+plan|need\\s+more\\s+data)\\b",
+      "examples": ["I want a plan upgrade", "upgrade my plan", "need more data"]
+    },
+    {
+      "id": "telco_balance_check_intent",
+      "concept_uri": "telco:balance.check",
+      "entity_type": "intent_hint",
+      "regex": "(?i)\\b(check\\s+balance|what\\s+is\\s+my\\s+balance|show\\s+my\\s+balance|remaining\\s+credit|remaining\\s+data)\\b",
+      "examples": ["check balance", "what is my balance", "remaining credit"]
+    },
+    {
+      "id": "telco_kyc_verify_intent",
+      "concept_uri": "telco:kyc.verify",
+      "entity_type": "intent_hint",
+      "regex": "(?i)\\b(kyc\\s+verification|verify\\s+my\\s+identity|verify\\s+my\\s+id|identity\\s+verification|check\\s+my\\s+documents)\\b",
+      "examples": ["kyc verification", "verify my identity", "check my documents"]
+    }
+  ]
+}

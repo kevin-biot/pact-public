@@ -1,0 +1,26 @@
+{
+  "id": "telco-core-1.0.0",
+  "domain": "telco",
+  "version": "1.0.0",
+  "providerId": "ontology:lane2",
+  "trustTier": "Tier1",
+  "policySnapshotId": "sha256:de93910b5a55669504e880f862be54015b611d8410d8cc16f5d3c3ec974f5116",
+  "files": {
+    "context": "sha256:94f55a210c1bd576566df28e8f101e7adadb3b0b1a7ab7378829f0ab9b924f54",
+    "intent_mappings": "sha256:876ff73769f92be46d02ace8e42e62a828f1d6491a34b39a90a9c9aea93d2d1a",
+    "overlay_eu": "sha256:1d364e7d78a949816cc88f64ff22375603ba21bd316722c3eb77b108c8aeac41",
+    "overlay_om": "sha256:ae581f5236468dafd496b5b02f4661a505148eb5eab9311e773ca5d780d58978",
+    "patterns": "sha256:dd66b624396b477faf29b47744ae2137deecc6c953a5736059e1d4c26f1ddccd",
+    "shapes": "sha256:2e165e6845b0eaf950b7f0d61263b16124413d91c5f02e65911b28e3430db677",
+    "thesaurus": "sha256:bb49164ee7a67688e1efcf2f05c41ca77f0b8dbae9dcbb62a0f8cdd285460e82",
+    "vocab": "sha256:1df239b32902d098d03f6b0cd287e2ae940d22dc4e6fbe612ea1a50681c9083f"
+  },
+  "precedence": [
+    "overlay_eu",
+    "overlay_om"
+  ],
+  "denyWins": true,
+  "nbf": "2026-02-16T00:00:00Z",
+  "exp": "2030-02-16T00:00:00Z",
+  "revEpoch": 1
+}

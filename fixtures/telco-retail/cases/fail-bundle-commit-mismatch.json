@@ -1,0 +1,9 @@
+{
+  "bundleId": "sha256:ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+  "decision": {
+    "type": "TelcoRetailIntent",
+    "intent_class": "telco.retail.kyc_verify.v1",
+    "subscriber_id": "sub-004",
+    "id_document": "passport"
+  }
+}
