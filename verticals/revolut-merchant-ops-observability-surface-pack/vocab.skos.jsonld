@@ -1,0 +1,249 @@
+{
+  "@context": {
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "rv": "https://lane2.example/ontology/revolut/merchant/"
+  },
+  "@graph": [
+    {
+      "@id": "rv:family/merchant",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "Revolut Merchant"
+    },
+    {
+      "@id": "rv:resource/apple-pay",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "Apple Pay",
+      "skos:broader": "rv:family/merchant"
+    },
+    {
+      "@id": "rv:resource/locations",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "Locations",
+      "skos:broader": "rv:family/merchant"
+    },
+    {
+      "@id": "rv:resource/report-runs",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "Report Runs",
+      "skos:broader": "rv:family/merchant"
+    },
+    {
+      "@id": "rv:resource/synchronous-webhooks",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "Synchronous Webhooks",
+      "skos:broader": "rv:family/merchant"
+    },
+    {
+      "@id": "rv:resource/terminals",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "Terminals",
+      "skos:broader": "rv:family/merchant"
+    },
+    {
+      "@id": "rv:resource/webhooks",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "Webhooks",
+      "skos:broader": "rv:family/merchant"
+    },
+    {
+      "@id": "rv:intent/apple-pay.create-register",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "Create Register Apple Pay",
+      "skos:altLabel": [
+        "create register apple pay",
+        "post /api/apple-pay/domains/register"
+      ],
+      "skos:broader": "rv:resource/apple-pay"
+    },
+    {
+      "@id": "rv:intent/apple-pay.create-unregister",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "Create Unregister Apple Pay",
+      "skos:altLabel": [
+        "create unregister apple pay",
+        "post /api/apple-pay/domains/unregister"
+      ],
+      "skos:broader": "rv:resource/apple-pay"
+    },
+    {
+      "@id": "rv:intent/locations.list",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "List Locations",
+      "skos:altLabel": [
+        "list locations",
+        "get /api/locations"
+      ],
+      "skos:broader": "rv:resource/locations"
+    },
+    {
+      "@id": "rv:intent/locations.create",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "Create Locations",
+      "skos:altLabel": [
+        "create locations",
+        "post /api/locations"
+      ],
+      "skos:broader": "rv:resource/locations"
+    },
+    {
+      "@id": "rv:intent/locations.delete-locations",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "Delete Locations Locations",
+      "skos:altLabel": [
+        "delete locations locations",
+        "delete /api/locations/{location_id}"
+      ],
+      "skos:broader": "rv:resource/locations"
+    },
+    {
+      "@id": "rv:intent/locations.retrieve-locations",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "Retrieve Locations Locations",
+      "skos:altLabel": [
+        "retrieve locations locations",
+        "get /api/locations/{location_id}"
+      ],
+      "skos:broader": "rv:resource/locations"
+    },
+    {
+      "@id": "rv:intent/locations.update-locations",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "Update Locations Locations",
+      "skos:altLabel": [
+        "update locations locations",
+        "patch /api/locations/{location_id}"
+      ],
+      "skos:broader": "rv:resource/locations"
+    },
+    {
+      "@id": "rv:intent/report-runs.create",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "Create Report Runs",
+      "skos:altLabel": [
+        "create report runs",
+        "post /api/report-runs"
+      ],
+      "skos:broader": "rv:resource/report-runs"
+    },
+    {
+      "@id": "rv:intent/report-runs.retrieve-report-runs",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "Retrieve Report Runs Report Runs",
+      "skos:altLabel": [
+        "retrieve report runs report runs",
+        "get /api/report-runs/{report_run_id}"
+      ],
+      "skos:broader": "rv:resource/report-runs"
+    },
+    {
+      "@id": "rv:intent/report-runs.list-file",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "List File Report Runs",
+      "skos:altLabel": [
+        "list file report runs",
+        "get /api/report-runs/{report_run_id}/file"
+      ],
+      "skos:broader": "rv:resource/report-runs"
+    },
+    {
+      "@id": "rv:intent/synchronous-webhooks.list",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "List Synchronous Webhooks",
+      "skos:altLabel": [
+        "list synchronous webhooks",
+        "get /api/synchronous-webhooks"
+      ],
+      "skos:broader": "rv:resource/synchronous-webhooks"
+    },
+    {
+      "@id": "rv:intent/synchronous-webhooks.create",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "Create Synchronous Webhooks",
+      "skos:altLabel": [
+        "create synchronous webhooks",
+        "post /api/synchronous-webhooks"
+      ],
+      "skos:broader": "rv:resource/synchronous-webhooks"
+    },
+    {
+      "@id": "rv:intent/synchronous-webhooks.delete-synchronous-webhooks",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "Delete Synchronous Webhooks Synchronous Webhooks",
+      "skos:altLabel": [
+        "delete synchronous webhooks synchronous webhooks",
+        "delete /api/synchronous-webhooks/{synchronous_webhook_id}"
+      ],
+      "skos:broader": "rv:resource/synchronous-webhooks"
+    },
+    {
+      "@id": "rv:intent/terminals.list",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "List Terminals",
+      "skos:altLabel": [
+        "list terminals",
+        "get /api/terminals"
+      ],
+      "skos:broader": "rv:resource/terminals"
+    },
+    {
+      "@id": "rv:intent/webhooks.list",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "List Webhooks",
+      "skos:altLabel": [
+        "list webhooks",
+        "get /api/webhooks"
+      ],
+      "skos:broader": "rv:resource/webhooks"
+    },
+    {
+      "@id": "rv:intent/webhooks.create",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "Create Webhooks",
+      "skos:altLabel": [
+        "create webhooks",
+        "post /api/webhooks"
+      ],
+      "skos:broader": "rv:resource/webhooks"
+    },
+    {
+      "@id": "rv:intent/webhooks.delete-webhooks",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "Delete Webhooks Webhooks",
+      "skos:altLabel": [
+        "delete webhooks webhooks",
+        "delete /api/webhooks/{webhook_id}"
+      ],
+      "skos:broader": "rv:resource/webhooks"
+    },
+    {
+      "@id": "rv:intent/webhooks.retrieve-webhooks",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "Retrieve Webhooks Webhooks",
+      "skos:altLabel": [
+        "retrieve webhooks webhooks",
+        "get /api/webhooks/{webhook_id}"
+      ],
+      "skos:broader": "rv:resource/webhooks"
+    },
+    {
+      "@id": "rv:intent/webhooks.update-webhooks",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "Update Webhooks Webhooks",
+      "skos:altLabel": [
+        "update webhooks webhooks",
+        "patch /api/webhooks/{webhook_id}"
+      ],
+      "skos:broader": "rv:resource/webhooks"
+    },
+    {
+      "@id": "rv:intent/webhooks.create-rotate-signing-secret",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "Create Rotate Signing Secret Webhooks",
+      "skos:altLabel": [
+        "create rotate signing secret webhooks",
+        "post /api/webhooks/{webhook_id}/rotate-signing-secret"
+      ],
+      "skos:broader": "rv:resource/webhooks"
+    }
+  ]
+}

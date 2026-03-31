@@ -1,0 +1,186 @@
+{
+  "schema_version": "1.0",
+  "domain": "revolut-merchant-ops-observability-surface",
+  "patterns": [
+    {
+      "id": "rv_apple-pay_create-register_intent",
+      "concept_uri": "rv:intent/apple-pay.create-register",
+      "entity_type": "intent_hint",
+      "regex": "(?i)^create register apple pay$",
+      "examples": [
+        "create register apple pay"
+      ]
+    },
+    {
+      "id": "rv_apple-pay_create-unregister_intent",
+      "concept_uri": "rv:intent/apple-pay.create-unregister",
+      "entity_type": "intent_hint",
+      "regex": "(?i)^create unregister apple pay$",
+      "examples": [
+        "create unregister apple pay"
+      ]
+    },
+    {
+      "id": "rv_locations_list_intent",
+      "concept_uri": "rv:intent/locations.list",
+      "entity_type": "intent_hint",
+      "regex": "(?i)^list locations$",
+      "examples": [
+        "list locations"
+      ]
+    },
+    {
+      "id": "rv_locations_create_intent",
+      "concept_uri": "rv:intent/locations.create",
+      "entity_type": "intent_hint",
+      "regex": "(?i)^create locations$",
+      "examples": [
+        "create locations"
+      ]
+    },
+    {
+      "id": "rv_locations_delete-locations_intent",
+      "concept_uri": "rv:intent/locations.delete-locations",
+      "entity_type": "intent_hint",
+      "regex": "(?i)^delete locations locations$",
+      "examples": [
+        "delete locations locations"
+      ]
+    },
+    {
+      "id": "rv_locations_retrieve-locations_intent",
+      "concept_uri": "rv:intent/locations.retrieve-locations",
+      "entity_type": "intent_hint",
+      "regex": "(?i)^retrieve locations locations$",
+      "examples": [
+        "retrieve locations locations"
+      ]
+    },
+    {
+      "id": "rv_locations_update-locations_intent",
+      "concept_uri": "rv:intent/locations.update-locations",
+      "entity_type": "intent_hint",
+      "regex": "(?i)^update locations locations$",
+      "examples": [
+        "update locations locations"
+      ]
+    },
+    {
+      "id": "rv_report-runs_create_intent",
+      "concept_uri": "rv:intent/report-runs.create",
+      "entity_type": "intent_hint",
+      "regex": "(?i)^create report runs$",
+      "examples": [
+        "create report runs"
+      ]
+    },
+    {
+      "id": "rv_report-runs_retrieve-report-runs_intent",
+      "concept_uri": "rv:intent/report-runs.retrieve-report-runs",
+      "entity_type": "intent_hint",
+      "regex": "(?i)^retrieve report runs report runs$",
+      "examples": [
+        "retrieve report runs report runs"
+      ]
+    },
+    {
+      "id": "rv_report-runs_list-file_intent",
+      "concept_uri": "rv:intent/report-runs.list-file",
+      "entity_type": "intent_hint",
+      "regex": "(?i)^list file report runs$",
+      "examples": [
+        "list file report runs"
+      ]
+    },
+    {
+      "id": "rv_synchronous-webhooks_list_intent",
+      "concept_uri": "rv:intent/synchronous-webhooks.list",
+      "entity_type": "intent_hint",
+      "regex": "(?i)^list synchronous webhooks$",
+      "examples": [
+        "list synchronous webhooks"
+      ]
+    },
+    {
+      "id": "rv_synchronous-webhooks_create_intent",
+      "concept_uri": "rv:intent/synchronous-webhooks.create",
+      "entity_type": "intent_hint",
+      "regex": "(?i)^create synchronous webhooks$",
+      "examples": [
+        "create synchronous webhooks"
+      ]
+    },
+    {
+      "id": "rv_synchronous-webhooks_delete-synchronous-webhooks_intent",
+      "concept_uri": "rv:intent/synchronous-webhooks.delete-synchronous-webhooks",
+      "entity_type": "intent_hint",
+      "regex": "(?i)^delete synchronous webhooks synchronous webhooks$",
+      "examples": [
+        "delete synchronous webhooks synchronous webhooks"
+      ]
+    },
+    {
+      "id": "rv_terminals_list_intent",
+      "concept_uri": "rv:intent/terminals.list",
+      "entity_type": "intent_hint",
+      "regex": "(?i)^list terminals$",
+      "examples": [
+        "list terminals"
+      ]
+    },
+    {
+      "id": "rv_webhooks_list_intent",
+      "concept_uri": "rv:intent/webhooks.list",
+      "entity_type": "intent_hint",
+      "regex": "(?i)^list webhooks$",
+      "examples": [
+        "list webhooks"
+      ]
+    },
+    {
+      "id": "rv_webhooks_create_intent",
+      "concept_uri": "rv:intent/webhooks.create",
+      "entity_type": "intent_hint",
+      "regex": "(?i)^create webhooks$",
+      "examples": [
+        "create webhooks"
+      ]
+    },
+    {
+      "id": "rv_webhooks_delete-webhooks_intent",
+      "concept_uri": "rv:intent/webhooks.delete-webhooks",
+      "entity_type": "intent_hint",
+      "regex": "(?i)^delete webhooks webhooks$",
+      "examples": [
+        "delete webhooks webhooks"
+      ]
+    },
+    {
+      "id": "rv_webhooks_retrieve-webhooks_intent",
+      "concept_uri": "rv:intent/webhooks.retrieve-webhooks",
+      "entity_type": "intent_hint",
+      "regex": "(?i)^retrieve webhooks webhooks$",
+      "examples": [
+        "retrieve webhooks webhooks"
+      ]
+    },
+    {
+      "id": "rv_webhooks_update-webhooks_intent",
+      "concept_uri": "rv:intent/webhooks.update-webhooks",
+      "entity_type": "intent_hint",
+      "regex": "(?i)^update webhooks webhooks$",
+      "examples": [
+        "update webhooks webhooks"
+      ]
+    },
+    {
+      "id": "rv_webhooks_create-rotate-signing-secret_intent",
+      "concept_uri": "rv:intent/webhooks.create-rotate-signing-secret",
+      "entity_type": "intent_hint",
+      "regex": "(?i)^create rotate signing secret webhooks$",
+      "examples": [
+        "create rotate signing secret webhooks"
+      ]
+    }
+  ]
+}

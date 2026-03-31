@@ -1,0 +1,36 @@
+{
+  "schema_version": "0.1",
+  "generated_at_utc": "2026-03-31T00:09:35.831Z",
+  "source_url": "https://raw.githubusercontent.com/revolut-engineering/revolut-openapi/master/yaml/merchant-2025-12-04.yaml",
+  "source_sha256": "49040535f7390cf16caddb3ba615d0808f17e18d48931dace51fa422958fb9b0",
+  "source_bytes": 503161,
+  "source_etag": "\"a5ffc6710ac0db3939b31976c2979402e956f36fdd13451e0e69dd23de4ce76e\"",
+  "extraction_profile": "revolut-openapi-wide-seed-v1",
+  "selected_resources": [
+    "apple-pay",
+    "locations",
+    "report-runs",
+    "synchronous-webhooks",
+    "terminals",
+    "webhooks"
+  ],
+  "operation_identifiers_count": 20,
+  "operation_identifiers_sample": [
+    "revolut.merchant.apple_pay.create_register.v1",
+    "revolut.merchant.apple_pay.create_unregister.v1",
+    "revolut.merchant.locations.list.v1",
+    "revolut.merchant.locations.create.v1",
+    "revolut.merchant.locations.delete_locations.v1",
+    "revolut.merchant.locations.retrieve_locations.v1",
+    "revolut.merchant.locations.update_locations.v1",
+    "revolut.merchant.report_runs.create.v1",
+    "revolut.merchant.report_runs.retrieve_report_runs.v1",
+    "revolut.merchant.report_runs.list_file.v1",
+    "revolut.merchant.synchronous_webhooks.list.v1",
+    "revolut.merchant.synchronous_webhooks.create.v1"
+  ],
+  "source_policy": {
+    "api_keys_used": false,
+    "runtime_model": "closed-world"
+  }
+}

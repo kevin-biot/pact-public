@@ -1,0 +1,679 @@
+{
+  "schema_version": "1.0",
+  "domain": "revolut-merchant-customer-subscription-surface",
+  "pack_id": "revolut-merchant-customer-subscription-surface-0.1.0",
+  "version": "0.1.0",
+  "out_of_scope_behavior": "escalate",
+  "state_model": {
+    "states": [
+      "ingress",
+      "validated",
+      "executed",
+      "failed",
+      "escalated"
+    ],
+    "initial_state": "ingress",
+    "terminal_states": [
+      "executed",
+      "failed",
+      "escalated"
+    ]
+  },
+  "admissible_intents": [
+    {
+      "intent_class": "revolut.merchant.customers.list.v1",
+      "allowed_states": [
+        "ingress",
+        "validated"
+      ],
+      "required_fact_types": [
+        "revolut_operation"
+      ],
+      "transition_ids": [
+        "validate_customers_list",
+        "execute_customers_list"
+      ]
+    },
+    {
+      "intent_class": "revolut.merchant.customers.create.v1",
+      "allowed_states": [
+        "ingress",
+        "validated"
+      ],
+      "required_fact_types": [
+        "revolut_operation"
+      ],
+      "transition_ids": [
+        "validate_customers_create",
+        "execute_customers_create"
+      ]
+    },
+    {
+      "intent_class": "revolut.merchant.customers.delete_customers.v1",
+      "allowed_states": [
+        "ingress",
+        "validated"
+      ],
+      "required_fact_types": [
+        "revolut_operation"
+      ],
+      "transition_ids": [
+        "validate_customers_delete-customers",
+        "execute_customers_delete-customers"
+      ]
+    },
+    {
+      "intent_class": "revolut.merchant.customers.retrieve_customers.v1",
+      "allowed_states": [
+        "ingress",
+        "validated"
+      ],
+      "required_fact_types": [
+        "revolut_operation"
+      ],
+      "transition_ids": [
+        "validate_customers_retrieve-customers",
+        "execute_customers_retrieve-customers"
+      ]
+    },
+    {
+      "intent_class": "revolut.merchant.customers.update_customers.v1",
+      "allowed_states": [
+        "ingress",
+        "validated"
+      ],
+      "required_fact_types": [
+        "revolut_operation"
+      ],
+      "transition_ids": [
+        "validate_customers_update-customers",
+        "execute_customers_update-customers"
+      ]
+    },
+    {
+      "intent_class": "revolut.merchant.customers.list_payment_methods.v1",
+      "allowed_states": [
+        "ingress",
+        "validated"
+      ],
+      "required_fact_types": [
+        "revolut_operation"
+      ],
+      "transition_ids": [
+        "validate_customers_list-payment-methods",
+        "execute_customers_list-payment-methods"
+      ]
+    },
+    {
+      "intent_class": "revolut.merchant.customers.delete_payment_methods.v1",
+      "allowed_states": [
+        "ingress",
+        "validated"
+      ],
+      "required_fact_types": [
+        "revolut_operation"
+      ],
+      "transition_ids": [
+        "validate_customers_delete-payment-methods",
+        "execute_customers_delete-payment-methods"
+      ]
+    },
+    {
+      "intent_class": "revolut.merchant.customers.retrieve_payment_methods.v1",
+      "allowed_states": [
+        "ingress",
+        "validated"
+      ],
+      "required_fact_types": [
+        "revolut_operation"
+      ],
+      "transition_ids": [
+        "validate_customers_retrieve-payment-methods",
+        "execute_customers_retrieve-payment-methods"
+      ]
+    },
+    {
+      "intent_class": "revolut.merchant.customers.update_payment_methods.v1",
+      "allowed_states": [
+        "ingress",
+        "validated"
+      ],
+      "required_fact_types": [
+        "revolut_operation"
+      ],
+      "transition_ids": [
+        "validate_customers_update-payment-methods",
+        "execute_customers_update-payment-methods"
+      ]
+    },
+    {
+      "intent_class": "revolut.merchant.subscription_plans.list.v1",
+      "allowed_states": [
+        "ingress",
+        "validated"
+      ],
+      "required_fact_types": [
+        "revolut_operation"
+      ],
+      "transition_ids": [
+        "validate_subscription-plans_list",
+        "execute_subscription-plans_list"
+      ]
+    },
+    {
+      "intent_class": "revolut.merchant.subscription_plans.create.v1",
+      "allowed_states": [
+        "ingress",
+        "validated"
+      ],
+      "required_fact_types": [
+        "revolut_operation"
+      ],
+      "transition_ids": [
+        "validate_subscription-plans_create",
+        "execute_subscription-plans_create"
+      ]
+    },
+    {
+      "intent_class": "revolut.merchant.subscription_plans.retrieve_subscription_plans.v1",
+      "allowed_states": [
+        "ingress",
+        "validated"
+      ],
+      "required_fact_types": [
+        "revolut_operation"
+      ],
+      "transition_ids": [
+        "validate_subscription-plans_retrieve-subscription-plans",
+        "execute_subscription-plans_retrieve-subscription-plans"
+      ]
+    },
+    {
+      "intent_class": "revolut.merchant.subscriptions.list.v1",
+      "allowed_states": [
+        "ingress",
+        "validated"
+      ],
+      "required_fact_types": [
+        "revolut_operation"
+      ],
+      "transition_ids": [
+        "validate_subscriptions_list",
+        "execute_subscriptions_list"
+      ]
+    },
+    {
+      "intent_class": "revolut.merchant.subscriptions.create.v1",
+      "allowed_states": [
+        "ingress",
+        "validated"
+      ],
+      "required_fact_types": [
+        "revolut_operation"
+      ],
+      "transition_ids": [
+        "validate_subscriptions_create",
+        "execute_subscriptions_create"
+      ]
+    },
+    {
+      "intent_class": "revolut.merchant.subscriptions.retrieve_subscriptions.v1",
+      "allowed_states": [
+        "ingress",
+        "validated"
+      ],
+      "required_fact_types": [
+        "revolut_operation"
+      ],
+      "transition_ids": [
+        "validate_subscriptions_retrieve-subscriptions",
+        "execute_subscriptions_retrieve-subscriptions"
+      ]
+    },
+    {
+      "intent_class": "revolut.merchant.subscriptions.update_subscriptions.v1",
+      "allowed_states": [
+        "ingress",
+        "validated"
+      ],
+      "required_fact_types": [
+        "revolut_operation"
+      ],
+      "transition_ids": [
+        "validate_subscriptions_update-subscriptions",
+        "execute_subscriptions_update-subscriptions"
+      ]
+    },
+    {
+      "intent_class": "revolut.merchant.subscriptions.create_cancel.v1",
+      "allowed_states": [
+        "ingress",
+        "validated"
+      ],
+      "required_fact_types": [
+        "revolut_operation"
+      ],
+      "transition_ids": [
+        "validate_subscriptions_create-cancel",
+        "execute_subscriptions_create-cancel"
+      ]
+    },
+    {
+      "intent_class": "revolut.merchant.subscriptions.list_cycles.v1",
+      "allowed_states": [
+        "ingress",
+        "validated"
+      ],
+      "required_fact_types": [
+        "revolut_operation"
+      ],
+      "transition_ids": [
+        "validate_subscriptions_list-cycles",
+        "execute_subscriptions_list-cycles"
+      ]
+    },
+    {
+      "intent_class": "revolut.merchant.subscriptions.retrieve_cycles.v1",
+      "allowed_states": [
+        "ingress",
+        "validated"
+      ],
+      "required_fact_types": [
+        "revolut_operation"
+      ],
+      "transition_ids": [
+        "validate_subscriptions_retrieve-cycles",
+        "execute_subscriptions_retrieve-cycles"
+      ]
+    }
+  ],
+  "admissible_facts": [
+    {
+      "fact_type": "revolut_operation",
+      "schema_ref": "urn:revolut:merchant:revolut-merchant-customer-subscription-surface:v1",
+      "additional_properties": "allow",
+      "field_constraints": [
+        {
+          "path": "api.resource",
+          "datatype": "string",
+          "required": true,
+          "pattern": "^(customers|subscription-plans|subscriptions)$"
+        },
+        {
+          "path": "api.action",
+          "datatype": "string",
+          "required": true
+        },
+        {
+          "path": "api.method",
+          "datatype": "string",
+          "required": true,
+          "pattern": "^(GET|POST|PATCH|DELETE|PUT)$"
+        }
+      ]
+    }
+  ],
+  "admissible_transitions": [
+    {
+      "id": "validate_customers_list",
+      "from_state": "ingress",
+      "intent_class": "revolut.merchant.customers.list.v1",
+      "to_state": "validated",
+      "guard_refs": [
+        "guard:payload_valid"
+      ]
+    },
+    {
+      "id": "execute_customers_list",
+      "from_state": "validated",
+      "intent_class": "revolut.merchant.customers.list.v1",
+      "to_state": "executed",
+      "guard_refs": [
+        "guard:operation_allowed"
+      ]
+    },
+    {
+      "id": "validate_customers_create",
+      "from_state": "ingress",
+      "intent_class": "revolut.merchant.customers.create.v1",
+      "to_state": "validated",
+      "guard_refs": [
+        "guard:payload_valid"
+      ]
+    },
+    {
+      "id": "execute_customers_create",
+      "from_state": "validated",
+      "intent_class": "revolut.merchant.customers.create.v1",
+      "to_state": "executed",
+      "guard_refs": [
+        "guard:operation_allowed"
+      ]
+    },
+    {
+      "id": "validate_customers_delete-customers",
+      "from_state": "ingress",
+      "intent_class": "revolut.merchant.customers.delete_customers.v1",
+      "to_state": "validated",
+      "guard_refs": [
+        "guard:payload_valid"
+      ]
+    },
+    {
+      "id": "execute_customers_delete-customers",
+      "from_state": "validated",
+      "intent_class": "revolut.merchant.customers.delete_customers.v1",
+      "to_state": "executed",
+      "guard_refs": [
+        "guard:operation_allowed"
+      ]
+    },
+    {
+      "id": "validate_customers_retrieve-customers",
+      "from_state": "ingress",
+      "intent_class": "revolut.merchant.customers.retrieve_customers.v1",
+      "to_state": "validated",
+      "guard_refs": [
+        "guard:payload_valid"
+      ]
+    },
+    {
+      "id": "execute_customers_retrieve-customers",
+      "from_state": "validated",
+      "intent_class": "revolut.merchant.customers.retrieve_customers.v1",
+      "to_state": "executed",
+      "guard_refs": [
+        "guard:operation_allowed"
+      ]
+    },
+    {
+      "id": "validate_customers_update-customers",
+      "from_state": "ingress",
+      "intent_class": "revolut.merchant.customers.update_customers.v1",
+      "to_state": "validated",
+      "guard_refs": [
+        "guard:payload_valid"
+      ]
+    },
+    {
+      "id": "execute_customers_update-customers",
+      "from_state": "validated",
+      "intent_class": "revolut.merchant.customers.update_customers.v1",
+      "to_state": "executed",
+      "guard_refs": [
+        "guard:operation_allowed"
+      ]
+    },
+    {
+      "id": "validate_customers_list-payment-methods",
+      "from_state": "ingress",
+      "intent_class": "revolut.merchant.customers.list_payment_methods.v1",
+      "to_state": "validated",
+      "guard_refs": [
+        "guard:payload_valid"
+      ]
+    },
+    {
+      "id": "execute_customers_list-payment-methods",
+      "from_state": "validated",
+      "intent_class": "revolut.merchant.customers.list_payment_methods.v1",
+      "to_state": "executed",
+      "guard_refs": [
+        "guard:operation_allowed"
+      ]
+    },
+    {
+      "id": "validate_customers_delete-payment-methods",
+      "from_state": "ingress",
+      "intent_class": "revolut.merchant.customers.delete_payment_methods.v1",
+      "to_state": "validated",
+      "guard_refs": [
+        "guard:payload_valid"
+      ]
+    },
+    {
+      "id": "execute_customers_delete-payment-methods",
+      "from_state": "validated",
+      "intent_class": "revolut.merchant.customers.delete_payment_methods.v1",
+      "to_state": "executed",
+      "guard_refs": [
+        "guard:operation_allowed"
+      ]
+    },
+    {
+      "id": "validate_customers_retrieve-payment-methods",
+      "from_state": "ingress",
+      "intent_class": "revolut.merchant.customers.retrieve_payment_methods.v1",
+      "to_state": "validated",
+      "guard_refs": [
+        "guard:payload_valid"
+      ]
+    },
+    {
+      "id": "execute_customers_retrieve-payment-methods",
+      "from_state": "validated",
+      "intent_class": "revolut.merchant.customers.retrieve_payment_methods.v1",
+      "to_state": "executed",
+      "guard_refs": [
+        "guard:operation_allowed"
+      ]
+    },
+    {
+      "id": "validate_customers_update-payment-methods",
+      "from_state": "ingress",
+      "intent_class": "revolut.merchant.customers.update_payment_methods.v1",
+      "to_state": "validated",
+      "guard_refs": [
+        "guard:payload_valid"
+      ]
+    },
+    {
+      "id": "execute_customers_update-payment-methods",
+      "from_state": "validated",
+      "intent_class": "revolut.merchant.customers.update_payment_methods.v1",
+      "to_state": "executed",
+      "guard_refs": [
+        "guard:operation_allowed"
+      ]
+    },
+    {
+      "id": "validate_subscription-plans_list",
+      "from_state": "ingress",
+      "intent_class": "revolut.merchant.subscription_plans.list.v1",
+      "to_state": "validated",
+      "guard_refs": [
+        "guard:payload_valid"
+      ]
+    },
+    {
+      "id": "execute_subscription-plans_list",
+      "from_state": "validated",
+      "intent_class": "revolut.merchant.subscription_plans.list.v1",
+      "to_state": "executed",
+      "guard_refs": [
+        "guard:operation_allowed"
+      ]
+    },
+    {
+      "id": "validate_subscription-plans_create",
+      "from_state": "ingress",
+      "intent_class": "revolut.merchant.subscription_plans.create.v1",
+      "to_state": "validated",
+      "guard_refs": [
+        "guard:payload_valid"
+      ]
+    },
+    {
+      "id": "execute_subscription-plans_create",
+      "from_state": "validated",
+      "intent_class": "revolut.merchant.subscription_plans.create.v1",
+      "to_state": "executed",
+      "guard_refs": [
+        "guard:operation_allowed"
+      ]
+    },
+    {
+      "id": "validate_subscription-plans_retrieve-subscription-plans",
+      "from_state": "ingress",
+      "intent_class": "revolut.merchant.subscription_plans.retrieve_subscription_plans.v1",
+      "to_state": "validated",
+      "guard_refs": [
+        "guard:payload_valid"
+      ]
+    },
+    {
+      "id": "execute_subscription-plans_retrieve-subscription-plans",
+      "from_state": "validated",
+      "intent_class": "revolut.merchant.subscription_plans.retrieve_subscription_plans.v1",
+      "to_state": "executed",
+      "guard_refs": [
+        "guard:operation_allowed"
+      ]
+    },
+    {
+      "id": "validate_subscriptions_list",
+      "from_state": "ingress",
+      "intent_class": "revolut.merchant.subscriptions.list.v1",
+      "to_state": "validated",
+      "guard_refs": [
+        "guard:payload_valid"
+      ]
+    },
+    {
+      "id": "execute_subscriptions_list",
+      "from_state": "validated",
+      "intent_class": "revolut.merchant.subscriptions.list.v1",
+      "to_state": "executed",
+      "guard_refs": [
+        "guard:operation_allowed"
+      ]
+    },
+    {
+      "id": "validate_subscriptions_create",
+      "from_state": "ingress",
+      "intent_class": "revolut.merchant.subscriptions.create.v1",
+      "to_state": "validated",
+      "guard_refs": [
+        "guard:payload_valid"
+      ]
+    },
+    {
+      "id": "execute_subscriptions_create",
+      "from_state": "validated",
+      "intent_class": "revolut.merchant.subscriptions.create.v1",
+      "to_state": "executed",
+      "guard_refs": [
+        "guard:operation_allowed"
+      ]
+    },
+    {
+      "id": "validate_subscriptions_retrieve-subscriptions",
+      "from_state": "ingress",
+      "intent_class": "revolut.merchant.subscriptions.retrieve_subscriptions.v1",
+      "to_state": "validated",
+      "guard_refs": [
+        "guard:payload_valid"
+      ]
+    },
+    {
+      "id": "execute_subscriptions_retrieve-subscriptions",
+      "from_state": "validated",
+      "intent_class": "revolut.merchant.subscriptions.retrieve_subscriptions.v1",
+      "to_state": "executed",
+      "guard_refs": [
+        "guard:operation_allowed"
+      ]
+    },
+    {
+      "id": "validate_subscriptions_update-subscriptions",
+      "from_state": "ingress",
+      "intent_class": "revolut.merchant.subscriptions.update_subscriptions.v1",
+      "to_state": "validated",
+      "guard_refs": [
+        "guard:payload_valid"
+      ]
+    },
+    {
+      "id": "execute_subscriptions_update-subscriptions",
+      "from_state": "validated",
+      "intent_class": "revolut.merchant.subscriptions.update_subscriptions.v1",
+      "to_state": "executed",
+      "guard_refs": [
+        "guard:operation_allowed"
+      ]
+    },
+    {
+      "id": "validate_subscriptions_create-cancel",
+      "from_state": "ingress",
+      "intent_class": "revolut.merchant.subscriptions.create_cancel.v1",
+      "to_state": "validated",
+      "guard_refs": [
+        "guard:payload_valid"
+      ]
+    },
+    {
+      "id": "execute_subscriptions_create-cancel",
+      "from_state": "validated",
+      "intent_class": "revolut.merchant.subscriptions.create_cancel.v1",
+      "to_state": "executed",
+      "guard_refs": [
+        "guard:operation_allowed"
+      ]
+    },
+    {
+      "id": "validate_subscriptions_list-cycles",
+      "from_state": "ingress",
+      "intent_class": "revolut.merchant.subscriptions.list_cycles.v1",
+      "to_state": "validated",
+      "guard_refs": [
+        "guard:payload_valid"
+      ]
+    },
+    {
+      "id": "execute_subscriptions_list-cycles",
+      "from_state": "validated",
+      "intent_class": "revolut.merchant.subscriptions.list_cycles.v1",
+      "to_state": "executed",
+      "guard_refs": [
+        "guard:operation_allowed"
+      ]
+    },
+    {
+      "id": "validate_subscriptions_retrieve-cycles",
+      "from_state": "ingress",
+      "intent_class": "revolut.merchant.subscriptions.retrieve_cycles.v1",
+      "to_state": "validated",
+      "guard_refs": [
+        "guard:payload_valid"
+      ]
+    },
+    {
+      "id": "execute_subscriptions_retrieve-cycles",
+      "from_state": "validated",
+      "intent_class": "revolut.merchant.subscriptions.retrieve_cycles.v1",
+      "to_state": "executed",
+      "guard_refs": [
+        "guard:operation_allowed"
+      ]
+    },
+    {
+      "id": "escalate_unknown_revolut_operation",
+      "from_state": "ingress",
+      "intent_class": "revolut.merchant.customers.list.v1",
+      "to_state": "escalated",
+      "guard_refs": [
+        "guard:operation_unmapped"
+      ],
+      "deontic": "must",
+      "source_ref": "revolut:governance:unknown_operation:v1"
+    }
+  ],
+  "escalation_predicates": [
+    {
+      "predicate_id": "epsilon_1",
+      "trigger": "unclassifiable_activity",
+      "description": "Operation cannot be mapped to allowed Revolut merchant scope.",
+      "routing": "escalate"
+    }
+  ]
+}

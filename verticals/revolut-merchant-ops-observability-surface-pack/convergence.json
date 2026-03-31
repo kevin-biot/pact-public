@@ -1,0 +1,82 @@
+{
+  "schema_version": "1.0",
+  "domain": "revolut-merchant-ops-observability-surface",
+  "thresholds": {
+    "overall_min_pass_rate": 1,
+    "require_critical_pass": true
+  },
+  "cases": [
+    {
+      "id": "rv_case_01",
+      "phrase": "create register apple pay",
+      "expect": "revolut.merchant.apple_pay.create_register.v1",
+      "critical": true
+    },
+    {
+      "id": "rv_case_02",
+      "phrase": "create unregister apple pay",
+      "expect": "revolut.merchant.apple_pay.create_unregister.v1",
+      "critical": true
+    },
+    {
+      "id": "rv_case_03",
+      "phrase": "list locations",
+      "expect": "revolut.merchant.locations.list.v1",
+      "critical": true
+    },
+    {
+      "id": "rv_case_04",
+      "phrase": "create locations",
+      "expect": "revolut.merchant.locations.create.v1",
+      "critical": true
+    },
+    {
+      "id": "rv_case_05",
+      "phrase": "delete locations locations",
+      "expect": "revolut.merchant.locations.delete_locations.v1",
+      "critical": true
+    },
+    {
+      "id": "rv_case_06",
+      "phrase": "retrieve locations locations",
+      "expect": "revolut.merchant.locations.retrieve_locations.v1",
+      "critical": true
+    },
+    {
+      "id": "rv_case_07",
+      "phrase": "update locations locations",
+      "expect": "revolut.merchant.locations.update_locations.v1",
+      "critical": true
+    },
+    {
+      "id": "rv_case_08",
+      "phrase": "create report runs",
+      "expect": "revolut.merchant.report_runs.create.v1",
+      "critical": true
+    },
+    {
+      "id": "rv_case_09",
+      "phrase": "retrieve report runs report runs",
+      "expect": "revolut.merchant.report_runs.retrieve_report_runs.v1",
+      "critical": true
+    },
+    {
+      "id": "rv_case_10",
+      "phrase": "list file report runs",
+      "expect": "revolut.merchant.report_runs.list_file.v1",
+      "critical": true
+    },
+    {
+      "id": "rv_case_11",
+      "phrase": "list synchronous webhooks",
+      "expect": "revolut.merchant.synchronous_webhooks.list.v1",
+      "critical": true
+    },
+    {
+      "id": "rv_case_12",
+      "phrase": "create synchronous webhooks",
+      "expect": "revolut.merchant.synchronous_webhooks.create.v1",
+      "critical": true
+    }
+  ]
+}

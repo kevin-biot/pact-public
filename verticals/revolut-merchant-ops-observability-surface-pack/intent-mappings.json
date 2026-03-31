@@ -1,0 +1,106 @@
+{
+  "schema_version": "1.0",
+  "domain": "revolut-merchant-ops-observability-surface",
+  "mappings": [
+    {
+      "concept_uri": "rv:intent/apple-pay.create-register",
+      "intent_class": "revolut.merchant.apple_pay.create_register.v1",
+      "confidence_floor": 0.75
+    },
+    {
+      "concept_uri": "rv:intent/apple-pay.create-unregister",
+      "intent_class": "revolut.merchant.apple_pay.create_unregister.v1",
+      "confidence_floor": 0.75
+    },
+    {
+      "concept_uri": "rv:intent/locations.list",
+      "intent_class": "revolut.merchant.locations.list.v1",
+      "confidence_floor": 0.75
+    },
+    {
+      "concept_uri": "rv:intent/locations.create",
+      "intent_class": "revolut.merchant.locations.create.v1",
+      "confidence_floor": 0.75
+    },
+    {
+      "concept_uri": "rv:intent/locations.delete-locations",
+      "intent_class": "revolut.merchant.locations.delete_locations.v1",
+      "confidence_floor": 0.75
+    },
+    {
+      "concept_uri": "rv:intent/locations.retrieve-locations",
+      "intent_class": "revolut.merchant.locations.retrieve_locations.v1",
+      "confidence_floor": 0.75
+    },
+    {
+      "concept_uri": "rv:intent/locations.update-locations",
+      "intent_class": "revolut.merchant.locations.update_locations.v1",
+      "confidence_floor": 0.75
+    },
+    {
+      "concept_uri": "rv:intent/report-runs.create",
+      "intent_class": "revolut.merchant.report_runs.create.v1",
+      "confidence_floor": 0.75
+    },
+    {
+      "concept_uri": "rv:intent/report-runs.retrieve-report-runs",
+      "intent_class": "revolut.merchant.report_runs.retrieve_report_runs.v1",
+      "confidence_floor": 0.75
+    },
+    {
+      "concept_uri": "rv:intent/report-runs.list-file",
+      "intent_class": "revolut.merchant.report_runs.list_file.v1",
+      "confidence_floor": 0.75
+    },
+    {
+      "concept_uri": "rv:intent/synchronous-webhooks.list",
+      "intent_class": "revolut.merchant.synchronous_webhooks.list.v1",
+      "confidence_floor": 0.75
+    },
+    {
+      "concept_uri": "rv:intent/synchronous-webhooks.create",
+      "intent_class": "revolut.merchant.synchronous_webhooks.create.v1",
+      "confidence_floor": 0.75
+    },
+    {
+      "concept_uri": "rv:intent/synchronous-webhooks.delete-synchronous-webhooks",
+      "intent_class": "revolut.merchant.synchronous_webhooks.delete_synchronous_webhooks.v1",
+      "confidence_floor": 0.75
+    },
+    {
+      "concept_uri": "rv:intent/terminals.list",
+      "intent_class": "revolut.merchant.terminals.list.v1",
+      "confidence_floor": 0.75
+    },
+    {
+      "concept_uri": "rv:intent/webhooks.list",
+      "intent_class": "revolut.merchant.webhooks.list.v1",
+      "confidence_floor": 0.75
+    },
+    {
+      "concept_uri": "rv:intent/webhooks.create",
+      "intent_class": "revolut.merchant.webhooks.create.v1",
+      "confidence_floor": 0.75
+    },
+    {
+      "concept_uri": "rv:intent/webhooks.delete-webhooks",
+      "intent_class": "revolut.merchant.webhooks.delete_webhooks.v1",
+      "confidence_floor": 0.75
+    },
+    {
+      "concept_uri": "rv:intent/webhooks.retrieve-webhooks",
+      "intent_class": "revolut.merchant.webhooks.retrieve_webhooks.v1",
+      "confidence_floor": 0.75
+    },
+    {
+      "concept_uri": "rv:intent/webhooks.update-webhooks",
+      "intent_class": "revolut.merchant.webhooks.update_webhooks.v1",
+      "confidence_floor": 0.75
+    },
+    {
+      "concept_uri": "rv:intent/webhooks.create-rotate-signing-secret",
+      "intent_class": "revolut.merchant.webhooks.create_rotate_signing_secret.v1",
+      "confidence_floor": 0.75
+    }
+  ]
+}

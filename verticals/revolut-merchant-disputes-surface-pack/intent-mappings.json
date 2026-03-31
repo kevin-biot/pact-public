@@ -1,0 +1,31 @@
+{
+  "schema_version": "1.0",
+  "domain": "revolut-merchant-disputes-surface",
+  "mappings": [
+    {
+      "concept_uri": "rv:intent/disputes.list",
+      "intent_class": "revolut.merchant.disputes.list.v1",
+      "confidence_floor": 0.75
+    },
+    {
+      "concept_uri": "rv:intent/disputes.retrieve-disputes",
+      "intent_class": "revolut.merchant.disputes.retrieve_disputes.v1",
+      "confidence_floor": 0.75
+    },
+    {
+      "concept_uri": "rv:intent/disputes.create-accept",
+      "intent_class": "revolut.merchant.disputes.create_accept.v1",
+      "confidence_floor": 0.75
+    },
+    {
+      "concept_uri": "rv:intent/disputes.create-challenge",
+      "intent_class": "revolut.merchant.disputes.create_challenge.v1",
+      "confidence_floor": 0.75
+    },
+    {
+      "concept_uri": "rv:intent/disputes.create-evidences",
+      "intent_class": "revolut.merchant.disputes.create_evidences.v1",
+      "confidence_floor": 0.75
+    }
+  ]
+}

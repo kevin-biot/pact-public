@@ -1,0 +1,140 @@
+{
+  "@context": {
+    "rv": "https://lane2.example/ontology/revolut/merchant/"
+  },
+  "entries": [
+    {
+      "label": "list customers",
+      "alt": [
+        "get /api/customers"
+      ],
+      "concept_id": "rv:intent/customers.list"
+    },
+    {
+      "label": "create customers",
+      "alt": [
+        "post /api/customers"
+      ],
+      "concept_id": "rv:intent/customers.create"
+    },
+    {
+      "label": "delete customers customers",
+      "alt": [
+        "delete /api/customers/{customer_id}"
+      ],
+      "concept_id": "rv:intent/customers.delete-customers"
+    },
+    {
+      "label": "retrieve customers customers",
+      "alt": [
+        "get /api/customers/{customer_id}"
+      ],
+      "concept_id": "rv:intent/customers.retrieve-customers"
+    },
+    {
+      "label": "update customers customers",
+      "alt": [
+        "patch /api/customers/{customer_id}"
+      ],
+      "concept_id": "rv:intent/customers.update-customers"
+    },
+    {
+      "label": "list payment methods customers",
+      "alt": [
+        "get /api/customers/{customer_id}/payment-methods"
+      ],
+      "concept_id": "rv:intent/customers.list-payment-methods"
+    },
+    {
+      "label": "delete payment methods customers",
+      "alt": [
+        "delete /api/customers/{customer_id}/payment-methods/{payment_method_id}"
+      ],
+      "concept_id": "rv:intent/customers.delete-payment-methods"
+    },
+    {
+      "label": "retrieve payment methods customers",
+      "alt": [
+        "get /api/customers/{customer_id}/payment-methods/{payment_method_id}"
+      ],
+      "concept_id": "rv:intent/customers.retrieve-payment-methods"
+    },
+    {
+      "label": "update payment methods customers",
+      "alt": [
+        "patch /api/customers/{customer_id}/payment-methods/{payment_method_id}"
+      ],
+      "concept_id": "rv:intent/customers.update-payment-methods"
+    },
+    {
+      "label": "list subscription plans",
+      "alt": [
+        "get /api/subscription-plans"
+      ],
+      "concept_id": "rv:intent/subscription-plans.list"
+    },
+    {
+      "label": "create subscription plans",
+      "alt": [
+        "post /api/subscription-plans"
+      ],
+      "concept_id": "rv:intent/subscription-plans.create"
+    },
+    {
+      "label": "retrieve subscription plans subscription plans",
+      "alt": [
+        "get /api/subscription-plans/{subscription_plan_id}"
+      ],
+      "concept_id": "rv:intent/subscription-plans.retrieve-subscription-plans"
+    },
+    {
+      "label": "list subscriptions",
+      "alt": [
+        "get /api/subscriptions"
+      ],
+      "concept_id": "rv:intent/subscriptions.list"
+    },
+    {
+      "label": "create subscriptions",
+      "alt": [
+        "post /api/subscriptions"
+      ],
+      "concept_id": "rv:intent/subscriptions.create"
+    },
+    {
+      "label": "retrieve subscriptions subscriptions",
+      "alt": [
+        "get /api/subscriptions/{subscription_id}"
+      ],
+      "concept_id": "rv:intent/subscriptions.retrieve-subscriptions"
+    },
+    {
+      "label": "update subscriptions subscriptions",
+      "alt": [
+        "patch /api/subscriptions/{subscription_id}"
+      ],
+      "concept_id": "rv:intent/subscriptions.update-subscriptions"
+    },
+    {
+      "label": "create cancel subscriptions",
+      "alt": [
+        "post /api/subscriptions/{subscription_id}/cancel"
+      ],
+      "concept_id": "rv:intent/subscriptions.create-cancel"
+    },
+    {
+      "label": "list cycles subscriptions",
+      "alt": [
+        "get /api/subscriptions/{subscription_id}/cycles"
+      ],
+      "concept_id": "rv:intent/subscriptions.list-cycles"
+    },
+    {
+      "label": "retrieve cycles subscriptions",
+      "alt": [
+        "get /api/subscriptions/{subscription_id}/cycles/{cycle_id}"
+      ],
+      "concept_id": "rv:intent/subscriptions.retrieve-cycles"
+    }
+  ]
+}

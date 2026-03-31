@@ -1,0 +1,105 @@
+{
+  "@context": {
+    "rv": "https://lane2.example/ontology/revolut/merchant/"
+  },
+  "entries": [
+    {
+      "label": "list orders",
+      "alt": [
+        "get /api/orders"
+      ],
+      "concept_id": "rv:intent/orders.list"
+    },
+    {
+      "label": "create orders",
+      "alt": [
+        "post /api/orders"
+      ],
+      "concept_id": "rv:intent/orders.create"
+    },
+    {
+      "label": "retrieve orders orders",
+      "alt": [
+        "get /api/orders/{order_id}"
+      ],
+      "concept_id": "rv:intent/orders.retrieve-orders"
+    },
+    {
+      "label": "update orders orders",
+      "alt": [
+        "patch /api/orders/{order_id}"
+      ],
+      "concept_id": "rv:intent/orders.update-orders"
+    },
+    {
+      "label": "create cancel orders",
+      "alt": [
+        "post /api/orders/{order_id}/cancel"
+      ],
+      "concept_id": "rv:intent/orders.create-cancel"
+    },
+    {
+      "label": "create capture orders",
+      "alt": [
+        "post /api/orders/{order_id}/capture"
+      ],
+      "concept_id": "rv:intent/orders.create-capture"
+    },
+    {
+      "label": "create increment authorisation orders",
+      "alt": [
+        "post /api/orders/{order_id}/increment-authorisation"
+      ],
+      "concept_id": "rv:intent/orders.create-increment-authorisation"
+    },
+    {
+      "label": "create payment intents orders",
+      "alt": [
+        "post /api/orders/{order_id}/payment-intents"
+      ],
+      "concept_id": "rv:intent/orders.create-payment-intents"
+    },
+    {
+      "label": "list payments orders",
+      "alt": [
+        "get /api/orders/{order_id}/payments"
+      ],
+      "concept_id": "rv:intent/orders.list-payments"
+    },
+    {
+      "label": "create payments orders",
+      "alt": [
+        "post /api/orders/{order_id}/payments"
+      ],
+      "concept_id": "rv:intent/orders.create-payments"
+    },
+    {
+      "label": "create refund orders",
+      "alt": [
+        "post /api/orders/{order_id}/refund"
+      ],
+      "concept_id": "rv:intent/orders.create-refund"
+    },
+    {
+      "label": "retrieve payment intents payment intents",
+      "alt": [
+        "get /api/payment-intents/{payment_intent_id}"
+      ],
+      "concept_id": "rv:intent/payment-intents.retrieve-payment-intents"
+    },
+    {
+      "label": "create cancel payment intents",
+      "alt": [
+        "post /api/payment-intents/{payment_intent_id}/cancel"
+      ],
+      "concept_id": "rv:intent/payment-intents.create-cancel"
+    },
+    {
+      "label": "retrieve payments payments",
+      "alt": [
+        "get /api/payments/{payment_id}"
+      ],
+      "concept_id": "rv:intent/payments.retrieve-payments"
+    }
+  ]
+}

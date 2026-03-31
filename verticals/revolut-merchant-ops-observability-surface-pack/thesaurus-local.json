@@ -1,0 +1,347 @@
+{
+  "schema_version": "1.0",
+  "domain": "revolut-merchant-ops-observability-surface",
+  "last_modified": "2026-03-31",
+  "concepts": [
+    {
+      "concept_id": "rv:intent/apple-pay.create-register",
+      "preferred_term": "create register apple pay",
+      "synonyms": [
+        "post /api/apple-pay/domains/register"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "rv:resource/apple-pay",
+      "narrower": [],
+      "source_refs": [
+        "Revolut Merchant API",
+        "Revolut OpenAPI"
+      ],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "rv:intent/apple-pay.create-unregister",
+      "preferred_term": "create unregister apple pay",
+      "synonyms": [
+        "post /api/apple-pay/domains/unregister"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "rv:resource/apple-pay",
+      "narrower": [],
+      "source_refs": [
+        "Revolut Merchant API",
+        "Revolut OpenAPI"
+      ],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "rv:intent/locations.list",
+      "preferred_term": "list locations",
+      "synonyms": [
+        "get /api/locations"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "rv:resource/locations",
+      "narrower": [],
+      "source_refs": [
+        "Revolut Merchant API",
+        "Revolut OpenAPI"
+      ],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "rv:intent/locations.create",
+      "preferred_term": "create locations",
+      "synonyms": [
+        "post /api/locations"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "rv:resource/locations",
+      "narrower": [],
+      "source_refs": [
+        "Revolut Merchant API",
+        "Revolut OpenAPI"
+      ],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "rv:intent/locations.delete-locations",
+      "preferred_term": "delete locations locations",
+      "synonyms": [
+        "delete /api/locations/{location_id}"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "rv:resource/locations",
+      "narrower": [],
+      "source_refs": [
+        "Revolut Merchant API",
+        "Revolut OpenAPI"
+      ],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "rv:intent/locations.retrieve-locations",
+      "preferred_term": "retrieve locations locations",
+      "synonyms": [
+        "get /api/locations/{location_id}"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "rv:resource/locations",
+      "narrower": [],
+      "source_refs": [
+        "Revolut Merchant API",
+        "Revolut OpenAPI"
+      ],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "rv:intent/locations.update-locations",
+      "preferred_term": "update locations locations",
+      "synonyms": [
+        "patch /api/locations/{location_id}"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "rv:resource/locations",
+      "narrower": [],
+      "source_refs": [
+        "Revolut Merchant API",
+        "Revolut OpenAPI"
+      ],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "rv:intent/report-runs.create",
+      "preferred_term": "create report runs",
+      "synonyms": [
+        "post /api/report-runs"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "rv:resource/report-runs",
+      "narrower": [],
+      "source_refs": [
+        "Revolut Merchant API",
+        "Revolut OpenAPI"
+      ],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "rv:intent/report-runs.retrieve-report-runs",
+      "preferred_term": "retrieve report runs report runs",
+      "synonyms": [
+        "get /api/report-runs/{report_run_id}"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "rv:resource/report-runs",
+      "narrower": [],
+      "source_refs": [
+        "Revolut Merchant API",
+        "Revolut OpenAPI"
+      ],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "rv:intent/report-runs.list-file",
+      "preferred_term": "list file report runs",
+      "synonyms": [
+        "get /api/report-runs/{report_run_id}/file"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "rv:resource/report-runs",
+      "narrower": [],
+      "source_refs": [
+        "Revolut Merchant API",
+        "Revolut OpenAPI"
+      ],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "rv:intent/synchronous-webhooks.list",
+      "preferred_term": "list synchronous webhooks",
+      "synonyms": [
+        "get /api/synchronous-webhooks"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "rv:resource/synchronous-webhooks",
+      "narrower": [],
+      "source_refs": [
+        "Revolut Merchant API",
+        "Revolut OpenAPI"
+      ],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "rv:intent/synchronous-webhooks.create",
+      "preferred_term": "create synchronous webhooks",
+      "synonyms": [
+        "post /api/synchronous-webhooks"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "rv:resource/synchronous-webhooks",
+      "narrower": [],
+      "source_refs": [
+        "Revolut Merchant API",
+        "Revolut OpenAPI"
+      ],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "rv:intent/synchronous-webhooks.delete-synchronous-webhooks",
+      "preferred_term": "delete synchronous webhooks synchronous webhooks",
+      "synonyms": [
+        "delete /api/synchronous-webhooks/{synchronous_webhook_id}"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "rv:resource/synchronous-webhooks",
+      "narrower": [],
+      "source_refs": [
+        "Revolut Merchant API",
+        "Revolut OpenAPI"
+      ],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "rv:intent/terminals.list",
+      "preferred_term": "list terminals",
+      "synonyms": [
+        "get /api/terminals"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "rv:resource/terminals",
+      "narrower": [],
+      "source_refs": [
+        "Revolut Merchant API",
+        "Revolut OpenAPI"
+      ],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "rv:intent/webhooks.list",
+      "preferred_term": "list webhooks",
+      "synonyms": [
+        "get /api/webhooks"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "rv:resource/webhooks",
+      "narrower": [],
+      "source_refs": [
+        "Revolut Merchant API",
+        "Revolut OpenAPI"
+      ],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "rv:intent/webhooks.create",
+      "preferred_term": "create webhooks",
+      "synonyms": [
+        "post /api/webhooks"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "rv:resource/webhooks",
+      "narrower": [],
+      "source_refs": [
+        "Revolut Merchant API",
+        "Revolut OpenAPI"
+      ],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "rv:intent/webhooks.delete-webhooks",
+      "preferred_term": "delete webhooks webhooks",
+      "synonyms": [
+        "delete /api/webhooks/{webhook_id}"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "rv:resource/webhooks",
+      "narrower": [],
+      "source_refs": [
+        "Revolut Merchant API",
+        "Revolut OpenAPI"
+      ],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "rv:intent/webhooks.retrieve-webhooks",
+      "preferred_term": "retrieve webhooks webhooks",
+      "synonyms": [
+        "get /api/webhooks/{webhook_id}"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "rv:resource/webhooks",
+      "narrower": [],
+      "source_refs": [
+        "Revolut Merchant API",
+        "Revolut OpenAPI"
+      ],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "rv:intent/webhooks.update-webhooks",
+      "preferred_term": "update webhooks webhooks",
+      "synonyms": [
+        "patch /api/webhooks/{webhook_id}"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "rv:resource/webhooks",
+      "narrower": [],
+      "source_refs": [
+        "Revolut Merchant API",
+        "Revolut OpenAPI"
+      ],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "rv:intent/webhooks.create-rotate-signing-secret",
+      "preferred_term": "create rotate signing secret webhooks",
+      "synonyms": [
+        "post /api/webhooks/{webhook_id}/rotate-signing-secret"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "rv:resource/webhooks",
+      "narrower": [],
+      "source_refs": [
+        "Revolut Merchant API",
+        "Revolut OpenAPI"
+      ],
+      "ner_provenance": null
+    }
+  ]
+}

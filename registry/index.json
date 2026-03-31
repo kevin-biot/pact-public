@@ -1,38 +1,6 @@
 {
   "packs": [
     {
-      "snapshot_id": "ontology:test-fixture:v0.1.0",
-      "domain": "test-fixture",
-      "provider_id": "ontology:pact-fixtures",
-      "trust_tier": "Tier1",
-      "version": "v0.1.0",
-      "path": "fixtures/oci1/valid/minimal"
-    },
-    {
-      "snapshot_id": "ontology:telco-reference:v0.1.0",
-      "domain": "telco-reference",
-      "provider_id": "ontology:pact-reference",
-      "trust_tier": "Tier1",
-      "version": "v0.1.0",
-      "path": "verticals/telco-reference-pack"
-    },
-    {
-      "snapshot_id": "ontology:policy-reference:v0.1.0",
-      "domain": "policy-reference",
-      "provider_id": "ontology:pact-reference",
-      "trust_tier": "Tier1",
-      "version": "v0.1.0",
-      "path": "verticals/policy-reference-pack"
-    },
-    {
-      "snapshot_id": "ontology:iso20022:v1.0.0",
-      "domain": "iso20022",
-      "provider_id": "ontology:lane2:iso20022",
-      "trust_tier": "Tier0",
-      "version": "v1.0.0",
-      "path": "verticals/iso20022-reference-pack"
-    },
-    {
       "snapshot_id": "ontology:iso20022-authored-demo:v0.1.0",
       "domain": "iso20022-authored-demo",
       "provider_id": "ontology:lane2:iso20022-authored-demo",
@@ -47,6 +15,14 @@
       "trust_tier": "Tier1",
       "version": "0.2.0",
       "path": "verticals/iso20022-canonical-demo-pack"
+    },
+    {
+      "snapshot_id": "ontology:iso20022:v1.0.0",
+      "domain": "iso20022",
+      "provider_id": "ontology:lane2:iso20022",
+      "trust_tier": "Tier0",
+      "version": "v1.0.0",
+      "path": "verticals/iso20022-reference-pack"
     },
     {
       "snapshot_id": "ontology:openbanking-ais-read-demo:v0.1.0",
@@ -71,6 +47,70 @@
       "trust_tier": "Tier1",
       "version": "0.1.0",
       "path": "verticals/openbanking-payment-initiation-demo-pack"
+    },
+    {
+      "snapshot_id": "ontology:policy-reference:v0.1.0",
+      "domain": "policy-reference",
+      "provider_id": "ontology:pact-reference",
+      "trust_tier": "Tier1",
+      "version": "v0.1.0",
+      "path": "verticals/policy-reference-pack"
+    },
+    {
+      "snapshot_id": "ontology:revolut-merchant-core-seed:v0.1.0",
+      "domain": "revolut-merchant-core-seed",
+      "provider_id": "ontology:lane2:revolut-merchant-core-seed",
+      "trust_tier": "Tier1",
+      "version": "0.1.0",
+      "path": "verticals/revolut-merchant-core-seed-pack"
+    },
+    {
+      "snapshot_id": "ontology:revolut-merchant-customer-subscription-surface:v0.1.0",
+      "domain": "revolut-merchant-customer-subscription-surface",
+      "provider_id": "ontology:lane2:revolut-merchant-customer-subscription-surface",
+      "trust_tier": "Tier1",
+      "version": "0.1.0",
+      "path": "verticals/revolut-merchant-customer-subscription-surface-pack"
+    },
+    {
+      "snapshot_id": "ontology:revolut-merchant-disputes-surface:v0.1.0",
+      "domain": "revolut-merchant-disputes-surface",
+      "provider_id": "ontology:lane2:revolut-merchant-disputes-surface",
+      "trust_tier": "Tier1",
+      "version": "0.1.0",
+      "path": "verticals/revolut-merchant-disputes-surface-pack"
+    },
+    {
+      "snapshot_id": "ontology:revolut-merchant-ops-observability-surface:v0.1.0",
+      "domain": "revolut-merchant-ops-observability-surface",
+      "provider_id": "ontology:lane2:revolut-merchant-ops-observability-surface",
+      "trust_tier": "Tier1",
+      "version": "0.1.0",
+      "path": "verticals/revolut-merchant-ops-observability-surface-pack"
+    },
+    {
+      "snapshot_id": "ontology:revolut-merchant-order-payment-surface:v0.1.0",
+      "domain": "revolut-merchant-order-payment-surface",
+      "provider_id": "ontology:lane2:revolut-merchant-order-payment-surface",
+      "trust_tier": "Tier1",
+      "version": "0.1.0",
+      "path": "verticals/revolut-merchant-order-payment-surface-pack"
+    },
+    {
+      "snapshot_id": "ontology:telco-reference:v0.1.0",
+      "domain": "telco-reference",
+      "provider_id": "ontology:pact-reference",
+      "trust_tier": "Tier1",
+      "version": "v0.1.0",
+      "path": "verticals/telco-reference-pack"
+    },
+    {
+      "snapshot_id": "ontology:test-fixture:v0.1.0",
+      "domain": "test-fixture",
+      "provider_id": "ontology:pact-fixtures",
+      "trust_tier": "Tier1",
+      "version": "v0.1.0",
+      "path": "fixtures/oci1/valid/minimal"
     }
   ]
 }

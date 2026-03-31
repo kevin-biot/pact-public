@@ -1,0 +1,147 @@
+{
+  "@context": {
+    "rv": "https://lane2.example/ontology/revolut/merchant/"
+  },
+  "entries": [
+    {
+      "label": "create register apple pay",
+      "alt": [
+        "post /api/apple-pay/domains/register"
+      ],
+      "concept_id": "rv:intent/apple-pay.create-register"
+    },
+    {
+      "label": "create unregister apple pay",
+      "alt": [
+        "post /api/apple-pay/domains/unregister"
+      ],
+      "concept_id": "rv:intent/apple-pay.create-unregister"
+    },
+    {
+      "label": "list locations",
+      "alt": [
+        "get /api/locations"
+      ],
+      "concept_id": "rv:intent/locations.list"
+    },
+    {
+      "label": "create locations",
+      "alt": [
+        "post /api/locations"
+      ],
+      "concept_id": "rv:intent/locations.create"
+    },
+    {
+      "label": "delete locations locations",
+      "alt": [
+        "delete /api/locations/{location_id}"
+      ],
+      "concept_id": "rv:intent/locations.delete-locations"
+    },
+    {
+      "label": "retrieve locations locations",
+      "alt": [
+        "get /api/locations/{location_id}"
+      ],
+      "concept_id": "rv:intent/locations.retrieve-locations"
+    },
+    {
+      "label": "update locations locations",
+      "alt": [
+        "patch /api/locations/{location_id}"
+      ],
+      "concept_id": "rv:intent/locations.update-locations"
+    },
+    {
+      "label": "create report runs",
+      "alt": [
+        "post /api/report-runs"
+      ],
+      "concept_id": "rv:intent/report-runs.create"
+    },
+    {
+      "label": "retrieve report runs report runs",
+      "alt": [
+        "get /api/report-runs/{report_run_id}"
+      ],
+      "concept_id": "rv:intent/report-runs.retrieve-report-runs"
+    },
+    {
+      "label": "list file report runs",
+      "alt": [
+        "get /api/report-runs/{report_run_id}/file"
+      ],
+      "concept_id": "rv:intent/report-runs.list-file"
+    },
+    {
+      "label": "list synchronous webhooks",
+      "alt": [
+        "get /api/synchronous-webhooks"
+      ],
+      "concept_id": "rv:intent/synchronous-webhooks.list"
+    },
+    {
+      "label": "create synchronous webhooks",
+      "alt": [
+        "post /api/synchronous-webhooks"
+      ],
+      "concept_id": "rv:intent/synchronous-webhooks.create"
+    },
+    {
+      "label": "delete synchronous webhooks synchronous webhooks",
+      "alt": [
+        "delete /api/synchronous-webhooks/{synchronous_webhook_id}"
+      ],
+      "concept_id": "rv:intent/synchronous-webhooks.delete-synchronous-webhooks"
+    },
+    {
+      "label": "list terminals",
+      "alt": [
+        "get /api/terminals"
+      ],
+      "concept_id": "rv:intent/terminals.list"
+    },
+    {
+      "label": "list webhooks",
+      "alt": [
+        "get /api/webhooks"
+      ],
+      "concept_id": "rv:intent/webhooks.list"
+    },
+    {
+      "label": "create webhooks",
+      "alt": [
+        "post /api/webhooks"
+      ],
+      "concept_id": "rv:intent/webhooks.create"
+    },
+    {
+      "label": "delete webhooks webhooks",
+      "alt": [
+        "delete /api/webhooks/{webhook_id}"
+      ],
+      "concept_id": "rv:intent/webhooks.delete-webhooks"
+    },
+    {
+      "label": "retrieve webhooks webhooks",
+      "alt": [
+        "get /api/webhooks/{webhook_id}"
+      ],
+      "concept_id": "rv:intent/webhooks.retrieve-webhooks"
+    },
+    {
+      "label": "update webhooks webhooks",
+      "alt": [
+        "patch /api/webhooks/{webhook_id}"
+      ],
+      "concept_id": "rv:intent/webhooks.update-webhooks"
+    },
+    {
+      "label": "create rotate signing secret webhooks",
+      "alt": [
+        "post /api/webhooks/{webhook_id}/rotate-signing-secret"
+      ],
+      "concept_id": "rv:intent/webhooks.create-rotate-signing-secret"
+    }
+  ]
+}

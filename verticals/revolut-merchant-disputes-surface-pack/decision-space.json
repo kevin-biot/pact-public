@@ -1,0 +1,231 @@
+{
+  "schema_version": "1.0",
+  "domain": "revolut-merchant-disputes-surface",
+  "pack_id": "revolut-merchant-disputes-surface-0.1.0",
+  "version": "0.1.0",
+  "out_of_scope_behavior": "escalate",
+  "state_model": {
+    "states": [
+      "ingress",
+      "validated",
+      "executed",
+      "failed",
+      "escalated"
+    ],
+    "initial_state": "ingress",
+    "terminal_states": [
+      "executed",
+      "failed",
+      "escalated"
+    ]
+  },
+  "admissible_intents": [
+    {
+      "intent_class": "revolut.merchant.disputes.list.v1",
+      "allowed_states": [
+        "ingress",
+        "validated"
+      ],
+      "required_fact_types": [
+        "revolut_operation"
+      ],
+      "transition_ids": [
+        "validate_disputes_list",
+        "execute_disputes_list"
+      ]
+    },
+    {
+      "intent_class": "revolut.merchant.disputes.retrieve_disputes.v1",
+      "allowed_states": [
+        "ingress",
+        "validated"
+      ],
+      "required_fact_types": [
+        "revolut_operation"
+      ],
+      "transition_ids": [
+        "validate_disputes_retrieve-disputes",
+        "execute_disputes_retrieve-disputes"
+      ]
+    },
+    {
+      "intent_class": "revolut.merchant.disputes.create_accept.v1",
+      "allowed_states": [
+        "ingress",
+        "validated"
+      ],
+      "required_fact_types": [
+        "revolut_operation"
+      ],
+      "transition_ids": [
+        "validate_disputes_create-accept",
+        "execute_disputes_create-accept"
+      ]
+    },
+    {
+      "intent_class": "revolut.merchant.disputes.create_challenge.v1",
+      "allowed_states": [
+        "ingress",
+        "validated"
+      ],
+      "required_fact_types": [
+        "revolut_operation"
+      ],
+      "transition_ids": [
+        "validate_disputes_create-challenge",
+        "execute_disputes_create-challenge"
+      ]
+    },
+    {
+      "intent_class": "revolut.merchant.disputes.create_evidences.v1",
+      "allowed_states": [
+        "ingress",
+        "validated"
+      ],
+      "required_fact_types": [
+        "revolut_operation"
+      ],
+      "transition_ids": [
+        "validate_disputes_create-evidences",
+        "execute_disputes_create-evidences"
+      ]
+    }
+  ],
+  "admissible_facts": [
+    {
+      "fact_type": "revolut_operation",
+      "schema_ref": "urn:revolut:merchant:revolut-merchant-disputes-surface:v1",
+      "additional_properties": "allow",
+      "field_constraints": [
+        {
+          "path": "api.resource",
+          "datatype": "string",
+          "required": true,
+          "pattern": "^(disputes)$"
+        },
+        {
+          "path": "api.action",
+          "datatype": "string",
+          "required": true
+        },
+        {
+          "path": "api.method",
+          "datatype": "string",
+          "required": true,
+          "pattern": "^(GET|POST|PATCH|DELETE|PUT)$"
+        }
+      ]
+    }
+  ],
+  "admissible_transitions": [
+    {
+      "id": "validate_disputes_list",
+      "from_state": "ingress",
+      "intent_class": "revolut.merchant.disputes.list.v1",
+      "to_state": "validated",
+      "guard_refs": [
+        "guard:payload_valid"
+      ]
+    },
+    {
+      "id": "execute_disputes_list",
+      "from_state": "validated",
+      "intent_class": "revolut.merchant.disputes.list.v1",
+      "to_state": "executed",
+      "guard_refs": [
+        "guard:operation_allowed"
+      ]
+    },
+    {
+      "id": "validate_disputes_retrieve-disputes",
+      "from_state": "ingress",
+      "intent_class": "revolut.merchant.disputes.retrieve_disputes.v1",
+      "to_state": "validated",
+      "guard_refs": [
+        "guard:payload_valid"
+      ]
+    },
+    {
+      "id": "execute_disputes_retrieve-disputes",
+      "from_state": "validated",
+      "intent_class": "revolut.merchant.disputes.retrieve_disputes.v1",
+      "to_state": "executed",
+      "guard_refs": [
+        "guard:operation_allowed"
+      ]
+    },
+    {
+      "id": "validate_disputes_create-accept",
+      "from_state": "ingress",
+      "intent_class": "revolut.merchant.disputes.create_accept.v1",
+      "to_state": "validated",
+      "guard_refs": [
+        "guard:payload_valid"
+      ]
+    },
+    {
+      "id": "execute_disputes_create-accept",
+      "from_state": "validated",
+      "intent_class": "revolut.merchant.disputes.create_accept.v1",
+      "to_state": "executed",
+      "guard_refs": [
+        "guard:operation_allowed"
+      ]
+    },
+    {
+      "id": "validate_disputes_create-challenge",
+      "from_state": "ingress",
+      "intent_class": "revolut.merchant.disputes.create_challenge.v1",
+      "to_state": "validated",
+      "guard_refs": [
+        "guard:payload_valid"
+      ]
+    },
+    {
+      "id": "execute_disputes_create-challenge",
+      "from_state": "validated",
+      "intent_class": "revolut.merchant.disputes.create_challenge.v1",
+      "to_state": "executed",
+      "guard_refs": [
+        "guard:operation_allowed"
+      ]
+    },
+    {
+      "id": "validate_disputes_create-evidences",
+      "from_state": "ingress",
+      "intent_class": "revolut.merchant.disputes.create_evidences.v1",
+      "to_state": "validated",
+      "guard_refs": [
+        "guard:payload_valid"
+      ]
+    },
+    {
+      "id": "execute_disputes_create-evidences",
+      "from_state": "validated",
+      "intent_class": "revolut.merchant.disputes.create_evidences.v1",
+      "to_state": "executed",
+      "guard_refs": [
+        "guard:operation_allowed"
+      ]
+    },
+    {
+      "id": "escalate_unknown_revolut_operation",
+      "from_state": "ingress",
+      "intent_class": "revolut.merchant.disputes.list.v1",
+      "to_state": "escalated",
+      "guard_refs": [
+        "guard:operation_unmapped"
+      ],
+      "deontic": "must",
+      "source_ref": "revolut:governance:unknown_operation:v1"
+    }
+  ],
+  "escalation_predicates": [
+    {
+      "predicate_id": "epsilon_1",
+      "trigger": "unclassifiable_activity",
+      "description": "Operation cannot be mapped to allowed Revolut merchant scope.",
+      "routing": "escalate"
+    }
+  ]
+}

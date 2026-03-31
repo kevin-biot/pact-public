@@ -1,0 +1,35 @@
+{
+  "schema_version": "0.1",
+  "generated_at_utc": "2026-03-31T00:09:35.831Z",
+  "domain": "revolut-merchant-ops-observability-surface",
+  "operation_identifiers": [
+    "revolut.merchant.apple_pay.create_register.v1",
+    "revolut.merchant.apple_pay.create_unregister.v1",
+    "revolut.merchant.locations.list.v1",
+    "revolut.merchant.locations.create.v1",
+    "revolut.merchant.locations.delete_locations.v1",
+    "revolut.merchant.locations.retrieve_locations.v1",
+    "revolut.merchant.locations.update_locations.v1",
+    "revolut.merchant.report_runs.create.v1",
+    "revolut.merchant.report_runs.retrieve_report_runs.v1",
+    "revolut.merchant.report_runs.list_file.v1",
+    "revolut.merchant.synchronous_webhooks.list.v1",
+    "revolut.merchant.synchronous_webhooks.create.v1",
+    "revolut.merchant.synchronous_webhooks.delete_synchronous_webhooks.v1",
+    "revolut.merchant.terminals.list.v1",
+    "revolut.merchant.webhooks.list.v1",
+    "revolut.merchant.webhooks.create.v1",
+    "revolut.merchant.webhooks.delete_webhooks.v1",
+    "revolut.merchant.webhooks.retrieve_webhooks.v1",
+    "revolut.merchant.webhooks.update_webhooks.v1",
+    "revolut.merchant.webhooks.create_rotate_signing_secret.v1"
+  ],
+  "resource_families": [
+    "apple-pay",
+    "locations",
+    "report-runs",
+    "synchronous-webhooks",
+    "terminals",
+    "webhooks"
+  ]
+}

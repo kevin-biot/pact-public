@@ -1,0 +1,245 @@
+{
+  "schema_version": "1.0",
+  "domain": "revolut-merchant-order-payment-surface",
+  "last_modified": "2026-03-31",
+  "concepts": [
+    {
+      "concept_id": "rv:intent/orders.list",
+      "preferred_term": "list orders",
+      "synonyms": [
+        "get /api/orders"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "rv:resource/orders",
+      "narrower": [],
+      "source_refs": [
+        "Revolut Merchant API",
+        "Revolut OpenAPI"
+      ],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "rv:intent/orders.create",
+      "preferred_term": "create orders",
+      "synonyms": [
+        "post /api/orders"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "rv:resource/orders",
+      "narrower": [],
+      "source_refs": [
+        "Revolut Merchant API",
+        "Revolut OpenAPI"
+      ],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "rv:intent/orders.retrieve-orders",
+      "preferred_term": "retrieve orders orders",
+      "synonyms": [
+        "get /api/orders/{order_id}"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "rv:resource/orders",
+      "narrower": [],
+      "source_refs": [
+        "Revolut Merchant API",
+        "Revolut OpenAPI"
+      ],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "rv:intent/orders.update-orders",
+      "preferred_term": "update orders orders",
+      "synonyms": [
+        "patch /api/orders/{order_id}"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "rv:resource/orders",
+      "narrower": [],
+      "source_refs": [
+        "Revolut Merchant API",
+        "Revolut OpenAPI"
+      ],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "rv:intent/orders.create-cancel",
+      "preferred_term": "create cancel orders",
+      "synonyms": [
+        "post /api/orders/{order_id}/cancel"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "rv:resource/orders",
+      "narrower": [],
+      "source_refs": [
+        "Revolut Merchant API",
+        "Revolut OpenAPI"
+      ],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "rv:intent/orders.create-capture",
+      "preferred_term": "create capture orders",
+      "synonyms": [
+        "post /api/orders/{order_id}/capture"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "rv:resource/orders",
+      "narrower": [],
+      "source_refs": [
+        "Revolut Merchant API",
+        "Revolut OpenAPI"
+      ],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "rv:intent/orders.create-increment-authorisation",
+      "preferred_term": "create increment authorisation orders",
+      "synonyms": [
+        "post /api/orders/{order_id}/increment-authorisation"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "rv:resource/orders",
+      "narrower": [],
+      "source_refs": [
+        "Revolut Merchant API",
+        "Revolut OpenAPI"
+      ],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "rv:intent/orders.create-payment-intents",
+      "preferred_term": "create payment intents orders",
+      "synonyms": [
+        "post /api/orders/{order_id}/payment-intents"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "rv:resource/orders",
+      "narrower": [],
+      "source_refs": [
+        "Revolut Merchant API",
+        "Revolut OpenAPI"
+      ],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "rv:intent/orders.list-payments",
+      "preferred_term": "list payments orders",
+      "synonyms": [
+        "get /api/orders/{order_id}/payments"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "rv:resource/orders",
+      "narrower": [],
+      "source_refs": [
+        "Revolut Merchant API",
+        "Revolut OpenAPI"
+      ],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "rv:intent/orders.create-payments",
+      "preferred_term": "create payments orders",
+      "synonyms": [
+        "post /api/orders/{order_id}/payments"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "rv:resource/orders",
+      "narrower": [],
+      "source_refs": [
+        "Revolut Merchant API",
+        "Revolut OpenAPI"
+      ],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "rv:intent/orders.create-refund",
+      "preferred_term": "create refund orders",
+      "synonyms": [
+        "post /api/orders/{order_id}/refund"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "rv:resource/orders",
+      "narrower": [],
+      "source_refs": [
+        "Revolut Merchant API",
+        "Revolut OpenAPI"
+      ],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "rv:intent/payment-intents.retrieve-payment-intents",
+      "preferred_term": "retrieve payment intents payment intents",
+      "synonyms": [
+        "get /api/payment-intents/{payment_intent_id}"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "rv:resource/payment-intents",
+      "narrower": [],
+      "source_refs": [
+        "Revolut Merchant API",
+        "Revolut OpenAPI"
+      ],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "rv:intent/payment-intents.create-cancel",
+      "preferred_term": "create cancel payment intents",
+      "synonyms": [
+        "post /api/payment-intents/{payment_intent_id}/cancel"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "rv:resource/payment-intents",
+      "narrower": [],
+      "source_refs": [
+        "Revolut Merchant API",
+        "Revolut OpenAPI"
+      ],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "rv:intent/payments.retrieve-payments",
+      "preferred_term": "retrieve payments payments",
+      "synonyms": [
+        "get /api/payments/{payment_id}"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "rv:resource/payments",
+      "narrower": [],
+      "source_refs": [
+        "Revolut Merchant API",
+        "Revolut OpenAPI"
+      ],
+      "ner_provenance": null
+    }
+  ]
+}

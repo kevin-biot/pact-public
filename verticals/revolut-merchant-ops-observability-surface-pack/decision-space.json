@@ -1,0 +1,711 @@
+{
+  "schema_version": "1.0",
+  "domain": "revolut-merchant-ops-observability-surface",
+  "pack_id": "revolut-merchant-ops-observability-surface-0.1.0",
+  "version": "0.1.0",
+  "out_of_scope_behavior": "escalate",
+  "state_model": {
+    "states": [
+      "ingress",
+      "validated",
+      "executed",
+      "failed",
+      "escalated"
+    ],
+    "initial_state": "ingress",
+    "terminal_states": [
+      "executed",
+      "failed",
+      "escalated"
+    ]
+  },
+  "admissible_intents": [
+    {
+      "intent_class": "revolut.merchant.apple_pay.create_register.v1",
+      "allowed_states": [
+        "ingress",
+        "validated"
+      ],
+      "required_fact_types": [
+        "revolut_operation"
+      ],
+      "transition_ids": [
+        "validate_apple-pay_create-register",
+        "execute_apple-pay_create-register"
+      ]
+    },
+    {
+      "intent_class": "revolut.merchant.apple_pay.create_unregister.v1",
+      "allowed_states": [
+        "ingress",
+        "validated"
+      ],
+      "required_fact_types": [
+        "revolut_operation"
+      ],
+      "transition_ids": [
+        "validate_apple-pay_create-unregister",
+        "execute_apple-pay_create-unregister"
+      ]
+    },
+    {
+      "intent_class": "revolut.merchant.locations.list.v1",
+      "allowed_states": [
+        "ingress",
+        "validated"
+      ],
+      "required_fact_types": [
+        "revolut_operation"
+      ],
+      "transition_ids": [
+        "validate_locations_list",
+        "execute_locations_list"
+      ]
+    },
+    {
+      "intent_class": "revolut.merchant.locations.create.v1",
+      "allowed_states": [
+        "ingress",
+        "validated"
+      ],
+      "required_fact_types": [
+        "revolut_operation"
+      ],
+      "transition_ids": [
+        "validate_locations_create",
+        "execute_locations_create"
+      ]
+    },
+    {
+      "intent_class": "revolut.merchant.locations.delete_locations.v1",
+      "allowed_states": [
+        "ingress",
+        "validated"
+      ],
+      "required_fact_types": [
+        "revolut_operation"
+      ],
+      "transition_ids": [
+        "validate_locations_delete-locations",
+        "execute_locations_delete-locations"
+      ]
+    },
+    {
+      "intent_class": "revolut.merchant.locations.retrieve_locations.v1",
+      "allowed_states": [
+        "ingress",
+        "validated"
+      ],
+      "required_fact_types": [
+        "revolut_operation"
+      ],
+      "transition_ids": [
+        "validate_locations_retrieve-locations",
+        "execute_locations_retrieve-locations"
+      ]
+    },
+    {
+      "intent_class": "revolut.merchant.locations.update_locations.v1",
+      "allowed_states": [
+        "ingress",
+        "validated"
+      ],
+      "required_fact_types": [
+        "revolut_operation"
+      ],
+      "transition_ids": [
+        "validate_locations_update-locations",
+        "execute_locations_update-locations"
+      ]
+    },
+    {
+      "intent_class": "revolut.merchant.report_runs.create.v1",
+      "allowed_states": [
+        "ingress",
+        "validated"
+      ],
+      "required_fact_types": [
+        "revolut_operation"
+      ],
+      "transition_ids": [
+        "validate_report-runs_create",
+        "execute_report-runs_create"
+      ]
+    },
+    {
+      "intent_class": "revolut.merchant.report_runs.retrieve_report_runs.v1",
+      "allowed_states": [
+        "ingress",
+        "validated"
+      ],
+      "required_fact_types": [
+        "revolut_operation"
+      ],
+      "transition_ids": [
+        "validate_report-runs_retrieve-report-runs",
+        "execute_report-runs_retrieve-report-runs"
+      ]
+    },
+    {
+      "intent_class": "revolut.merchant.report_runs.list_file.v1",
+      "allowed_states": [
+        "ingress",
+        "validated"
+      ],
+      "required_fact_types": [
+        "revolut_operation"
+      ],
+      "transition_ids": [
+        "validate_report-runs_list-file",
+        "execute_report-runs_list-file"
+      ]
+    },
+    {
+      "intent_class": "revolut.merchant.synchronous_webhooks.list.v1",
+      "allowed_states": [
+        "ingress",
+        "validated"
+      ],
+      "required_fact_types": [
+        "revolut_operation"
+      ],
+      "transition_ids": [
+        "validate_synchronous-webhooks_list",
+        "execute_synchronous-webhooks_list"
+      ]
+    },
+    {
+      "intent_class": "revolut.merchant.synchronous_webhooks.create.v1",
+      "allowed_states": [
+        "ingress",
+        "validated"
+      ],
+      "required_fact_types": [
+        "revolut_operation"
+      ],
+      "transition_ids": [
+        "validate_synchronous-webhooks_create",
+        "execute_synchronous-webhooks_create"
+      ]
+    },
+    {
+      "intent_class": "revolut.merchant.synchronous_webhooks.delete_synchronous_webhooks.v1",
+      "allowed_states": [
+        "ingress",
+        "validated"
+      ],
+      "required_fact_types": [
+        "revolut_operation"
+      ],
+      "transition_ids": [
+        "validate_synchronous-webhooks_delete-synchronous-webhooks",
+        "execute_synchronous-webhooks_delete-synchronous-webhooks"
+      ]
+    },
+    {
+      "intent_class": "revolut.merchant.terminals.list.v1",
+      "allowed_states": [
+        "ingress",
+        "validated"
+      ],
+      "required_fact_types": [
+        "revolut_operation"
+      ],
+      "transition_ids": [
+        "validate_terminals_list",
+        "execute_terminals_list"
+      ]
+    },
+    {
+      "intent_class": "revolut.merchant.webhooks.list.v1",
+      "allowed_states": [
+        "ingress",
+        "validated"
+      ],
+      "required_fact_types": [
+        "revolut_operation"
+      ],
+      "transition_ids": [
+        "validate_webhooks_list",
+        "execute_webhooks_list"
+      ]
+    },
+    {
+      "intent_class": "revolut.merchant.webhooks.create.v1",
+      "allowed_states": [
+        "ingress",
+        "validated"
+      ],
+      "required_fact_types": [
+        "revolut_operation"
+      ],
+      "transition_ids": [
+        "validate_webhooks_create",
+        "execute_webhooks_create"
+      ]
+    },
+    {
+      "intent_class": "revolut.merchant.webhooks.delete_webhooks.v1",
+      "allowed_states": [
+        "ingress",
+        "validated"
+      ],
+      "required_fact_types": [
+        "revolut_operation"
+      ],
+      "transition_ids": [
+        "validate_webhooks_delete-webhooks",
+        "execute_webhooks_delete-webhooks"
+      ]
+    },
+    {
+      "intent_class": "revolut.merchant.webhooks.retrieve_webhooks.v1",
+      "allowed_states": [
+        "ingress",
+        "validated"
+      ],
+      "required_fact_types": [
+        "revolut_operation"
+      ],
+      "transition_ids": [
+        "validate_webhooks_retrieve-webhooks",
+        "execute_webhooks_retrieve-webhooks"
+      ]
+    },
+    {
+      "intent_class": "revolut.merchant.webhooks.update_webhooks.v1",
+      "allowed_states": [
+        "ingress",
+        "validated"
+      ],
+      "required_fact_types": [
+        "revolut_operation"
+      ],
+      "transition_ids": [
+        "validate_webhooks_update-webhooks",
+        "execute_webhooks_update-webhooks"
+      ]
+    },
+    {
+      "intent_class": "revolut.merchant.webhooks.create_rotate_signing_secret.v1",
+      "allowed_states": [
+        "ingress",
+        "validated"
+      ],
+      "required_fact_types": [
+        "revolut_operation"
+      ],
+      "transition_ids": [
+        "validate_webhooks_create-rotate-signing-secret",
+        "execute_webhooks_create-rotate-signing-secret"
+      ]
+    }
+  ],
+  "admissible_facts": [
+    {
+      "fact_type": "revolut_operation",
+      "schema_ref": "urn:revolut:merchant:revolut-merchant-ops-observability-surface:v1",
+      "additional_properties": "allow",
+      "field_constraints": [
+        {
+          "path": "api.resource",
+          "datatype": "string",
+          "required": true,
+          "pattern": "^(apple-pay|locations|report-runs|synchronous-webhooks|terminals|webhooks)$"
+        },
+        {
+          "path": "api.action",
+          "datatype": "string",
+          "required": true
+        },
+        {
+          "path": "api.method",
+          "datatype": "string",
+          "required": true,
+          "pattern": "^(GET|POST|PATCH|DELETE|PUT)$"
+        }
+      ]
+    }
+  ],
+  "admissible_transitions": [
+    {
+      "id": "validate_apple-pay_create-register",
+      "from_state": "ingress",
+      "intent_class": "revolut.merchant.apple_pay.create_register.v1",
+      "to_state": "validated",
+      "guard_refs": [
+        "guard:payload_valid"
+      ]
+    },
+    {
+      "id": "execute_apple-pay_create-register",
+      "from_state": "validated",
+      "intent_class": "revolut.merchant.apple_pay.create_register.v1",
+      "to_state": "executed",
+      "guard_refs": [
+        "guard:operation_allowed"
+      ]
+    },
+    {
+      "id": "validate_apple-pay_create-unregister",
+      "from_state": "ingress",
+      "intent_class": "revolut.merchant.apple_pay.create_unregister.v1",
+      "to_state": "validated",
+      "guard_refs": [
+        "guard:payload_valid"
+      ]
+    },
+    {
+      "id": "execute_apple-pay_create-unregister",
+      "from_state": "validated",
+      "intent_class": "revolut.merchant.apple_pay.create_unregister.v1",
+      "to_state": "executed",
+      "guard_refs": [
+        "guard:operation_allowed"
+      ]
+    },
+    {
+      "id": "validate_locations_list",
+      "from_state": "ingress",
+      "intent_class": "revolut.merchant.locations.list.v1",
+      "to_state": "validated",
+      "guard_refs": [
+        "guard:payload_valid"
+      ]
+    },
+    {
+      "id": "execute_locations_list",
+      "from_state": "validated",
+      "intent_class": "revolut.merchant.locations.list.v1",
+      "to_state": "executed",
+      "guard_refs": [
+        "guard:operation_allowed"
+      ]
+    },
+    {
+      "id": "validate_locations_create",
+      "from_state": "ingress",
+      "intent_class": "revolut.merchant.locations.create.v1",
+      "to_state": "validated",
+      "guard_refs": [
+        "guard:payload_valid"
+      ]
+    },
+    {
+      "id": "execute_locations_create",
+      "from_state": "validated",
+      "intent_class": "revolut.merchant.locations.create.v1",
+      "to_state": "executed",
+      "guard_refs": [
+        "guard:operation_allowed"
+      ]
+    },
+    {
+      "id": "validate_locations_delete-locations",
+      "from_state": "ingress",
+      "intent_class": "revolut.merchant.locations.delete_locations.v1",
+      "to_state": "validated",
+      "guard_refs": [
+        "guard:payload_valid"
+      ]
+    },
+    {
+      "id": "execute_locations_delete-locations",
+      "from_state": "validated",
+      "intent_class": "revolut.merchant.locations.delete_locations.v1",
+      "to_state": "executed",
+      "guard_refs": [
+        "guard:operation_allowed"
+      ]
+    },
+    {
+      "id": "validate_locations_retrieve-locations",
+      "from_state": "ingress",
+      "intent_class": "revolut.merchant.locations.retrieve_locations.v1",
+      "to_state": "validated",
+      "guard_refs": [
+        "guard:payload_valid"
+      ]
+    },
+    {
+      "id": "execute_locations_retrieve-locations",
+      "from_state": "validated",
+      "intent_class": "revolut.merchant.locations.retrieve_locations.v1",
+      "to_state": "executed",
+      "guard_refs": [
+        "guard:operation_allowed"
+      ]
+    },
+    {
+      "id": "validate_locations_update-locations",
+      "from_state": "ingress",
+      "intent_class": "revolut.merchant.locations.update_locations.v1",
+      "to_state": "validated",
+      "guard_refs": [
+        "guard:payload_valid"
+      ]
+    },
+    {
+      "id": "execute_locations_update-locations",
+      "from_state": "validated",
+      "intent_class": "revolut.merchant.locations.update_locations.v1",
+      "to_state": "executed",
+      "guard_refs": [
+        "guard:operation_allowed"
+      ]
+    },
+    {
+      "id": "validate_report-runs_create",
+      "from_state": "ingress",
+      "intent_class": "revolut.merchant.report_runs.create.v1",
+      "to_state": "validated",
+      "guard_refs": [
+        "guard:payload_valid"
+      ]
+    },
+    {
+      "id": "execute_report-runs_create",
+      "from_state": "validated",
+      "intent_class": "revolut.merchant.report_runs.create.v1",
+      "to_state": "executed",
+      "guard_refs": [
+        "guard:operation_allowed"
+      ]
+    },
+    {
+      "id": "validate_report-runs_retrieve-report-runs",
+      "from_state": "ingress",
+      "intent_class": "revolut.merchant.report_runs.retrieve_report_runs.v1",
+      "to_state": "validated",
+      "guard_refs": [
+        "guard:payload_valid"
+      ]
+    },
+    {
+      "id": "execute_report-runs_retrieve-report-runs",
+      "from_state": "validated",
+      "intent_class": "revolut.merchant.report_runs.retrieve_report_runs.v1",
+      "to_state": "executed",
+      "guard_refs": [
+        "guard:operation_allowed"
+      ]
+    },
+    {
+      "id": "validate_report-runs_list-file",
+      "from_state": "ingress",
+      "intent_class": "revolut.merchant.report_runs.list_file.v1",
+      "to_state": "validated",
+      "guard_refs": [
+        "guard:payload_valid"
+      ]
+    },
+    {
+      "id": "execute_report-runs_list-file",
+      "from_state": "validated",
+      "intent_class": "revolut.merchant.report_runs.list_file.v1",
+      "to_state": "executed",
+      "guard_refs": [
+        "guard:operation_allowed"
+      ]
+    },
+    {
+      "id": "validate_synchronous-webhooks_list",
+      "from_state": "ingress",
+      "intent_class": "revolut.merchant.synchronous_webhooks.list.v1",
+      "to_state": "validated",
+      "guard_refs": [
+        "guard:payload_valid"
+      ]
+    },
+    {
+      "id": "execute_synchronous-webhooks_list",
+      "from_state": "validated",
+      "intent_class": "revolut.merchant.synchronous_webhooks.list.v1",
+      "to_state": "executed",
+      "guard_refs": [
+        "guard:operation_allowed"
+      ]
+    },
+    {
+      "id": "validate_synchronous-webhooks_create",
+      "from_state": "ingress",
+      "intent_class": "revolut.merchant.synchronous_webhooks.create.v1",
+      "to_state": "validated",
+      "guard_refs": [
+        "guard:payload_valid"
+      ]
+    },
+    {
+      "id": "execute_synchronous-webhooks_create",
+      "from_state": "validated",
+      "intent_class": "revolut.merchant.synchronous_webhooks.create.v1",
+      "to_state": "executed",
+      "guard_refs": [
+        "guard:operation_allowed"
+      ]
+    },
+    {
+      "id": "validate_synchronous-webhooks_delete-synchronous-webhooks",
+      "from_state": "ingress",
+      "intent_class": "revolut.merchant.synchronous_webhooks.delete_synchronous_webhooks.v1",
+      "to_state": "validated",
+      "guard_refs": [
+        "guard:payload_valid"
+      ]
+    },
+    {
+      "id": "execute_synchronous-webhooks_delete-synchronous-webhooks",
+      "from_state": "validated",
+      "intent_class": "revolut.merchant.synchronous_webhooks.delete_synchronous_webhooks.v1",
+      "to_state": "executed",
+      "guard_refs": [
+        "guard:operation_allowed"
+      ]
+    },
+    {
+      "id": "validate_terminals_list",
+      "from_state": "ingress",
+      "intent_class": "revolut.merchant.terminals.list.v1",
+      "to_state": "validated",
+      "guard_refs": [
+        "guard:payload_valid"
+      ]
+    },
+    {
+      "id": "execute_terminals_list",
+      "from_state": "validated",
+      "intent_class": "revolut.merchant.terminals.list.v1",
+      "to_state": "executed",
+      "guard_refs": [
+        "guard:operation_allowed"
+      ]
+    },
+    {
+      "id": "validate_webhooks_list",
+      "from_state": "ingress",
+      "intent_class": "revolut.merchant.webhooks.list.v1",
+      "to_state": "validated",
+      "guard_refs": [
+        "guard:payload_valid"
+      ]
+    },
+    {
+      "id": "execute_webhooks_list",
+      "from_state": "validated",
+      "intent_class": "revolut.merchant.webhooks.list.v1",
+      "to_state": "executed",
+      "guard_refs": [
+        "guard:operation_allowed"
+      ]
+    },
+    {
+      "id": "validate_webhooks_create",
+      "from_state": "ingress",
+      "intent_class": "revolut.merchant.webhooks.create.v1",
+      "to_state": "validated",
+      "guard_refs": [
+        "guard:payload_valid"
+      ]
+    },
+    {
+      "id": "execute_webhooks_create",
+      "from_state": "validated",
+      "intent_class": "revolut.merchant.webhooks.create.v1",
+      "to_state": "executed",
+      "guard_refs": [
+        "guard:operation_allowed"
+      ]
+    },
+    {
+      "id": "validate_webhooks_delete-webhooks",
+      "from_state": "ingress",
+      "intent_class": "revolut.merchant.webhooks.delete_webhooks.v1",
+      "to_state": "validated",
+      "guard_refs": [
+        "guard:payload_valid"
+      ]
+    },
+    {
+      "id": "execute_webhooks_delete-webhooks",
+      "from_state": "validated",
+      "intent_class": "revolut.merchant.webhooks.delete_webhooks.v1",
+      "to_state": "executed",
+      "guard_refs": [
+        "guard:operation_allowed"
+      ]
+    },
+    {
+      "id": "validate_webhooks_retrieve-webhooks",
+      "from_state": "ingress",
+      "intent_class": "revolut.merchant.webhooks.retrieve_webhooks.v1",
+      "to_state": "validated",
+      "guard_refs": [
+        "guard:payload_valid"
+      ]
+    },
+    {
+      "id": "execute_webhooks_retrieve-webhooks",
+      "from_state": "validated",
+      "intent_class": "revolut.merchant.webhooks.retrieve_webhooks.v1",
+      "to_state": "executed",
+      "guard_refs": [
+        "guard:operation_allowed"
+      ]
+    },
+    {
+      "id": "validate_webhooks_update-webhooks",
+      "from_state": "ingress",
+      "intent_class": "revolut.merchant.webhooks.update_webhooks.v1",
+      "to_state": "validated",
+      "guard_refs": [
+        "guard:payload_valid"
+      ]
+    },
+    {
+      "id": "execute_webhooks_update-webhooks",
+      "from_state": "validated",
+      "intent_class": "revolut.merchant.webhooks.update_webhooks.v1",
+      "to_state": "executed",
+      "guard_refs": [
+        "guard:operation_allowed"
+      ]
+    },
+    {
+      "id": "validate_webhooks_create-rotate-signing-secret",
+      "from_state": "ingress",
+      "intent_class": "revolut.merchant.webhooks.create_rotate_signing_secret.v1",
+      "to_state": "validated",
+      "guard_refs": [
+        "guard:payload_valid"
+      ]
+    },
+    {
+      "id": "execute_webhooks_create-rotate-signing-secret",
+      "from_state": "validated",
+      "intent_class": "revolut.merchant.webhooks.create_rotate_signing_secret.v1",
+      "to_state": "executed",
+      "guard_refs": [
+        "guard:operation_allowed"
+      ]
+    },
+    {
+      "id": "escalate_unknown_revolut_operation",
+      "from_state": "ingress",
+      "intent_class": "revolut.merchant.apple_pay.create_register.v1",
+      "to_state": "escalated",
+      "guard_refs": [
+        "guard:operation_unmapped"
+      ],
+      "deontic": "must",
+      "source_ref": "revolut:governance:unknown_operation:v1"
+    }
+  ],
+  "escalation_predicates": [
+    {
+      "predicate_id": "epsilon_1",
+      "trigger": "unclassifiable_activity",
+      "description": "Operation cannot be mapped to allowed Revolut merchant scope.",
+      "routing": "escalate"
+    }
+  ]
+}

@@ -1,0 +1,92 @@
+{
+  "schema_version": "1.0",
+  "domain": "revolut-merchant-disputes-surface",
+  "last_modified": "2026-03-31",
+  "concepts": [
+    {
+      "concept_id": "rv:intent/disputes.list",
+      "preferred_term": "list disputes",
+      "synonyms": [
+        "get /api/disputes"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "rv:resource/disputes",
+      "narrower": [],
+      "source_refs": [
+        "Revolut Merchant API",
+        "Revolut OpenAPI"
+      ],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "rv:intent/disputes.retrieve-disputes",
+      "preferred_term": "retrieve disputes disputes",
+      "synonyms": [
+        "get /api/disputes/{dispute_id}"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "rv:resource/disputes",
+      "narrower": [],
+      "source_refs": [
+        "Revolut Merchant API",
+        "Revolut OpenAPI"
+      ],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "rv:intent/disputes.create-accept",
+      "preferred_term": "create accept disputes",
+      "synonyms": [
+        "post /api/disputes/{dispute_id}/accept"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "rv:resource/disputes",
+      "narrower": [],
+      "source_refs": [
+        "Revolut Merchant API",
+        "Revolut OpenAPI"
+      ],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "rv:intent/disputes.create-challenge",
+      "preferred_term": "create challenge disputes",
+      "synonyms": [
+        "post /api/disputes/{dispute_id}/challenge"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "rv:resource/disputes",
+      "narrower": [],
+      "source_refs": [
+        "Revolut Merchant API",
+        "Revolut OpenAPI"
+      ],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "rv:intent/disputes.create-evidences",
+      "preferred_term": "create evidences disputes",
+      "synonyms": [
+        "post /api/disputes/{dispute_id}/evidences"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "rv:resource/disputes",
+      "narrower": [],
+      "source_refs": [
+        "Revolut Merchant API",
+        "Revolut OpenAPI"
+      ],
+      "ner_provenance": null
+    }
+  ]
+}

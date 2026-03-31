@@ -1,0 +1,42 @@
+{
+  "@context": {
+    "rv": "https://lane2.example/ontology/revolut/merchant/"
+  },
+  "entries": [
+    {
+      "label": "list disputes",
+      "alt": [
+        "get /api/disputes"
+      ],
+      "concept_id": "rv:intent/disputes.list"
+    },
+    {
+      "label": "retrieve disputes disputes",
+      "alt": [
+        "get /api/disputes/{dispute_id}"
+      ],
+      "concept_id": "rv:intent/disputes.retrieve-disputes"
+    },
+    {
+      "label": "create accept disputes",
+      "alt": [
+        "post /api/disputes/{dispute_id}/accept"
+      ],
+      "concept_id": "rv:intent/disputes.create-accept"
+    },
+    {
+      "label": "create challenge disputes",
+      "alt": [
+        "post /api/disputes/{dispute_id}/challenge"
+      ],
+      "concept_id": "rv:intent/disputes.create-challenge"
+    },
+    {
+      "label": "create evidences disputes",
+      "alt": [
+        "post /api/disputes/{dispute_id}/evidences"
+      ],
+      "concept_id": "rv:intent/disputes.create-evidences"
+    }
+  ]
+}

@@ -1,0 +1,132 @@
+{
+  "schema_version": "1.0",
+  "domain": "revolut-merchant-order-payment-surface",
+  "patterns": [
+    {
+      "id": "rv_orders_list_intent",
+      "concept_uri": "rv:intent/orders.list",
+      "entity_type": "intent_hint",
+      "regex": "(?i)^list orders$",
+      "examples": [
+        "list orders"
+      ]
+    },
+    {
+      "id": "rv_orders_create_intent",
+      "concept_uri": "rv:intent/orders.create",
+      "entity_type": "intent_hint",
+      "regex": "(?i)^create orders$",
+      "examples": [
+        "create orders"
+      ]
+    },
+    {
+      "id": "rv_orders_retrieve-orders_intent",
+      "concept_uri": "rv:intent/orders.retrieve-orders",
+      "entity_type": "intent_hint",
+      "regex": "(?i)^retrieve orders orders$",
+      "examples": [
+        "retrieve orders orders"
+      ]
+    },
+    {
+      "id": "rv_orders_update-orders_intent",
+      "concept_uri": "rv:intent/orders.update-orders",
+      "entity_type": "intent_hint",
+      "regex": "(?i)^update orders orders$",
+      "examples": [
+        "update orders orders"
+      ]
+    },
+    {
+      "id": "rv_orders_create-cancel_intent",
+      "concept_uri": "rv:intent/orders.create-cancel",
+      "entity_type": "intent_hint",
+      "regex": "(?i)^create cancel orders$",
+      "examples": [
+        "create cancel orders"
+      ]
+    },
+    {
+      "id": "rv_orders_create-capture_intent",
+      "concept_uri": "rv:intent/orders.create-capture",
+      "entity_type": "intent_hint",
+      "regex": "(?i)^create capture orders$",
+      "examples": [
+        "create capture orders"
+      ]
+    },
+    {
+      "id": "rv_orders_create-increment-authorisation_intent",
+      "concept_uri": "rv:intent/orders.create-increment-authorisation",
+      "entity_type": "intent_hint",
+      "regex": "(?i)^create increment authorisation orders$",
+      "examples": [
+        "create increment authorisation orders"
+      ]
+    },
+    {
+      "id": "rv_orders_create-payment-intents_intent",
+      "concept_uri": "rv:intent/orders.create-payment-intents",
+      "entity_type": "intent_hint",
+      "regex": "(?i)^create payment intents orders$",
+      "examples": [
+        "create payment intents orders"
+      ]
+    },
+    {
+      "id": "rv_orders_list-payments_intent",
+      "concept_uri": "rv:intent/orders.list-payments",
+      "entity_type": "intent_hint",
+      "regex": "(?i)^list payments orders$",
+      "examples": [
+        "list payments orders"
+      ]
+    },
+    {
+      "id": "rv_orders_create-payments_intent",
+      "concept_uri": "rv:intent/orders.create-payments",
+      "entity_type": "intent_hint",
+      "regex": "(?i)^create payments orders$",
+      "examples": [
+        "create payments orders"
+      ]
+    },
+    {
+      "id": "rv_orders_create-refund_intent",
+      "concept_uri": "rv:intent/orders.create-refund",
+      "entity_type": "intent_hint",
+      "regex": "(?i)^create refund orders$",
+      "examples": [
+        "create refund orders"
+      ]
+    },
+    {
+      "id": "rv_payment-intents_retrieve-payment-intents_intent",
+      "concept_uri": "rv:intent/payment-intents.retrieve-payment-intents",
+      "entity_type": "intent_hint",
+      "regex": "(?i)^retrieve payment intents payment intents$",
+      "examples": [
+        "retrieve payment intents payment intents"
+      ]
+    },
+    {
+      "id": "rv_payment-intents_create-cancel_intent",
+      "concept_uri": "rv:intent/payment-intents.create-cancel",
+      "entity_type": "intent_hint",
+      "regex": "(?i)^create cancel payment intents$",
+      "examples": [
+        "create cancel payment intents"
+      ]
+    },
+    {
+      "id": "rv_payments_retrieve-payments_intent",
+      "concept_uri": "rv:intent/payments.retrieve-payments",
+      "entity_type": "intent_hint",
+      "regex": "(?i)^retrieve payments payments$",
+      "examples": [
+        "retrieve payments payments"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,51 @@
+{
+  "schema_version": "1.0",
+  "domain": "revolut-merchant-disputes-surface",
+  "patterns": [
+    {
+      "id": "rv_disputes_list_intent",
+      "concept_uri": "rv:intent/disputes.list",
+      "entity_type": "intent_hint",
+      "regex": "(?i)^list disputes$",
+      "examples": [
+        "list disputes"
+      ]
+    },
+    {
+      "id": "rv_disputes_retrieve-disputes_intent",
+      "concept_uri": "rv:intent/disputes.retrieve-disputes",
+      "entity_type": "intent_hint",
+      "regex": "(?i)^retrieve disputes disputes$",
+      "examples": [
+        "retrieve disputes disputes"
+      ]
+    },
+    {
+      "id": "rv_disputes_create-accept_intent",
+      "concept_uri": "rv:intent/disputes.create-accept",
+      "entity_type": "intent_hint",
+      "regex": "(?i)^create accept disputes$",
+      "examples": [
+        "create accept disputes"
+      ]
+    },
+    {
+      "id": "rv_disputes_create-challenge_intent",
+      "concept_uri": "rv:intent/disputes.create-challenge",
+      "entity_type": "intent_hint",
+      "regex": "(?i)^create challenge disputes$",
+      "examples": [
+        "create challenge disputes"
+      ]
+    },
+    {
+      "id": "rv_disputes_create-evidences_intent",
+      "concept_uri": "rv:intent/disputes.create-evidences",
+      "entity_type": "intent_hint",
+      "regex": "(?i)^create evidences disputes$",
+      "examples": [
+        "create evidences disputes"
+      ]
+    }
+  ]
+}

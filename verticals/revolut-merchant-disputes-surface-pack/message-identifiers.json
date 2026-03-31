@@ -1,0 +1,15 @@
+{
+  "schema_version": "0.1",
+  "generated_at_utc": "2026-03-31T00:09:35.830Z",
+  "domain": "revolut-merchant-disputes-surface",
+  "operation_identifiers": [
+    "revolut.merchant.disputes.list.v1",
+    "revolut.merchant.disputes.retrieve_disputes.v1",
+    "revolut.merchant.disputes.create_accept.v1",
+    "revolut.merchant.disputes.create_challenge.v1",
+    "revolut.merchant.disputes.create_evidences.v1"
+  ],
+  "resource_families": [
+    "disputes"
+  ]
+}

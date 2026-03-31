@@ -1,0 +1,171 @@
+{
+  "@context": {
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "rv": "https://lane2.example/ontology/revolut/merchant/"
+  },
+  "@graph": [
+    {
+      "@id": "rv:family/merchant",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "Revolut Merchant"
+    },
+    {
+      "@id": "rv:resource/orders",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "Orders",
+      "skos:broader": "rv:family/merchant"
+    },
+    {
+      "@id": "rv:resource/payment-intents",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "Payment Intents",
+      "skos:broader": "rv:family/merchant"
+    },
+    {
+      "@id": "rv:resource/payments",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "Payments",
+      "skos:broader": "rv:family/merchant"
+    },
+    {
+      "@id": "rv:intent/orders.list",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "List Orders",
+      "skos:altLabel": [
+        "list orders",
+        "get /api/orders"
+      ],
+      "skos:broader": "rv:resource/orders"
+    },
+    {
+      "@id": "rv:intent/orders.create",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "Create Orders",
+      "skos:altLabel": [
+        "create orders",
+        "post /api/orders"
+      ],
+      "skos:broader": "rv:resource/orders"
+    },
+    {
+      "@id": "rv:intent/orders.retrieve-orders",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "Retrieve Orders Orders",
+      "skos:altLabel": [
+        "retrieve orders orders",
+        "get /api/orders/{order_id}"
+      ],
+      "skos:broader": "rv:resource/orders"
+    },
+    {
+      "@id": "rv:intent/orders.update-orders",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "Update Orders Orders",
+      "skos:altLabel": [
+        "update orders orders",
+        "patch /api/orders/{order_id}"
+      ],
+      "skos:broader": "rv:resource/orders"
+    },
+    {
+      "@id": "rv:intent/orders.create-cancel",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "Create Cancel Orders",
+      "skos:altLabel": [
+        "create cancel orders",
+        "post /api/orders/{order_id}/cancel"
+      ],
+      "skos:broader": "rv:resource/orders"
+    },
+    {
+      "@id": "rv:intent/orders.create-capture",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "Create Capture Orders",
+      "skos:altLabel": [
+        "create capture orders",
+        "post /api/orders/{order_id}/capture"
+      ],
+      "skos:broader": "rv:resource/orders"
+    },
+    {
+      "@id": "rv:intent/orders.create-increment-authorisation",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "Create Increment Authorisation Orders",
+      "skos:altLabel": [
+        "create increment authorisation orders",
+        "post /api/orders/{order_id}/increment-authorisation"
+      ],
+      "skos:broader": "rv:resource/orders"
+    },
+    {
+      "@id": "rv:intent/orders.create-payment-intents",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "Create Payment Intents Orders",
+      "skos:altLabel": [
+        "create payment intents orders",
+        "post /api/orders/{order_id}/payment-intents"
+      ],
+      "skos:broader": "rv:resource/orders"
+    },
+    {
+      "@id": "rv:intent/orders.list-payments",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "List Payments Orders",
+      "skos:altLabel": [
+        "list payments orders",
+        "get /api/orders/{order_id}/payments"
+      ],
+      "skos:broader": "rv:resource/orders"
+    },
+    {
+      "@id": "rv:intent/orders.create-payments",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "Create Payments Orders",
+      "skos:altLabel": [
+        "create payments orders",
+        "post /api/orders/{order_id}/payments"
+      ],
+      "skos:broader": "rv:resource/orders"
+    },
+    {
+      "@id": "rv:intent/orders.create-refund",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "Create Refund Orders",
+      "skos:altLabel": [
+        "create refund orders",
+        "post /api/orders/{order_id}/refund"
+      ],
+      "skos:broader": "rv:resource/orders"
+    },
+    {
+      "@id": "rv:intent/payment-intents.retrieve-payment-intents",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "Retrieve Payment Intents Payment Intents",
+      "skos:altLabel": [
+        "retrieve payment intents payment intents",
+        "get /api/payment-intents/{payment_intent_id}"
+      ],
+      "skos:broader": "rv:resource/payment-intents"
+    },
+    {
+      "@id": "rv:intent/payment-intents.create-cancel",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "Create Cancel Payment Intents",
+      "skos:altLabel": [
+        "create cancel payment intents",
+        "post /api/payment-intents/{payment_intent_id}/cancel"
+      ],
+      "skos:broader": "rv:resource/payment-intents"
+    },
+    {
+      "@id": "rv:intent/payments.retrieve-payments",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "Retrieve Payments Payments",
+      "skos:altLabel": [
+        "retrieve payments payments",
+        "get /api/payments/{payment_id}"
+      ],
+      "skos:broader": "rv:resource/payments"
+    }
+  ]
+}

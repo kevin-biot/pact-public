@@ -1,0 +1,26 @@
+{
+  "schema_version": "0.1",
+  "generated_at_utc": "2026-03-31T00:09:35.828Z",
+  "domain": "revolut-merchant-order-payment-surface",
+  "operation_identifiers": [
+    "revolut.merchant.orders.list.v1",
+    "revolut.merchant.orders.create.v1",
+    "revolut.merchant.orders.retrieve_orders.v1",
+    "revolut.merchant.orders.update_orders.v1",
+    "revolut.merchant.orders.create_cancel.v1",
+    "revolut.merchant.orders.create_capture.v1",
+    "revolut.merchant.orders.create_increment_authorisation.v1",
+    "revolut.merchant.orders.create_payment_intents.v1",
+    "revolut.merchant.orders.list_payments.v1",
+    "revolut.merchant.orders.create_payments.v1",
+    "revolut.merchant.orders.create_refund.v1",
+    "revolut.merchant.payment_intents.retrieve_payment_intents.v1",
+    "revolut.merchant.payment_intents.create_cancel.v1",
+    "revolut.merchant.payments.retrieve_payments.v1"
+  ],
+  "resource_families": [
+    "orders",
+    "payment-intents",
+    "payments"
+  ]
+}

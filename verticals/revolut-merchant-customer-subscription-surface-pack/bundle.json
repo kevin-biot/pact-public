@@ -1,0 +1,24 @@
+{
+  "id": "revolut-merchant-customer-subscription-surface-0.1.0",
+  "domain": "revolut-merchant-customer-subscription-surface",
+  "version": "0.1.0",
+  "providerId": "ontology:lane2:revolut-merchant-customer-subscription-surface",
+  "trustTier": "Tier1",
+  "policySnapshotId": "sha256:de93910b5a55669504e880f862be54015b611d8410d8cc16f5d3c3ec974f5116",
+  "files": {
+    "context": "sha256:615439486ca3c788a513a7ffcd169e26de3639eee755975ee64c4ef42ba9e0ac",
+    "convergence": "sha256:f208aa26779c2c9d010d764cc5693f2cb4c09890ada36f769b99fa0a5ce2c7ff",
+    "decision_space": "sha256:0dd41a5e76067a1d33945859e13c582cacff713dd1d1118c02dcf4af123f960d",
+    "intent_mappings": "sha256:f746fdce8cc7993a8307fd62b400977926f2d80d48c6d6b13be0bfbc95d48d59",
+    "patterns": "sha256:6b9949204d90f207cbbd0ae508a225475fa368da8a8acf1fb2ed1e23217150de",
+    "shapes": "sha256:5c226b4a254ea6e688eb155b5dbb62c29cbe496cfea4dbcf65b0bff470d634b8",
+    "thesaurus": "sha256:a3d27a3797b858da312a272e9a95fef786c3a06399c9fd9832ca2e1967f5c125",
+    "thesaurus_local": "sha256:2cb69e97197f765fecf5390b36f3e266b07df9532f6e2f132bfc99154b1c3e79",
+    "vocab": "sha256:72fce7a2d0b6ee040e0ae51798ce4abb286c834369aeb45fe2b4fa4af513b528"
+  },
+  "precedence": [],
+  "denyWins": true,
+  "nbf": "2026-03-31T00:00:00Z",
+  "exp": "2030-03-31T00:00:00Z",
+  "revEpoch": 1
+}

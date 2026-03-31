@@ -1,0 +1,82 @@
+{
+  "schema_version": "1.0",
+  "domain": "revolut-merchant-order-payment-surface",
+  "thresholds": {
+    "overall_min_pass_rate": 1,
+    "require_critical_pass": true
+  },
+  "cases": [
+    {
+      "id": "rv_case_01",
+      "phrase": "list orders",
+      "expect": "revolut.merchant.orders.list.v1",
+      "critical": true
+    },
+    {
+      "id": "rv_case_02",
+      "phrase": "create orders",
+      "expect": "revolut.merchant.orders.create.v1",
+      "critical": true
+    },
+    {
+      "id": "rv_case_03",
+      "phrase": "retrieve orders orders",
+      "expect": "revolut.merchant.orders.retrieve_orders.v1",
+      "critical": true
+    },
+    {
+      "id": "rv_case_04",
+      "phrase": "update orders orders",
+      "expect": "revolut.merchant.orders.update_orders.v1",
+      "critical": true
+    },
+    {
+      "id": "rv_case_05",
+      "phrase": "create cancel orders",
+      "expect": "revolut.merchant.orders.create_cancel.v1",
+      "critical": true
+    },
+    {
+      "id": "rv_case_06",
+      "phrase": "create capture orders",
+      "expect": "revolut.merchant.orders.create_capture.v1",
+      "critical": true
+    },
+    {
+      "id": "rv_case_07",
+      "phrase": "create increment authorisation orders",
+      "expect": "revolut.merchant.orders.create_increment_authorisation.v1",
+      "critical": true
+    },
+    {
+      "id": "rv_case_08",
+      "phrase": "create payment intents orders",
+      "expect": "revolut.merchant.orders.create_payment_intents.v1",
+      "critical": true
+    },
+    {
+      "id": "rv_case_09",
+      "phrase": "list payments orders",
+      "expect": "revolut.merchant.orders.list_payments.v1",
+      "critical": true
+    },
+    {
+      "id": "rv_case_10",
+      "phrase": "create payments orders",
+      "expect": "revolut.merchant.orders.create_payments.v1",
+      "critical": true
+    },
+    {
+      "id": "rv_case_11",
+      "phrase": "create refund orders",
+      "expect": "revolut.merchant.orders.create_refund.v1",
+      "critical": true
+    },
+    {
+      "id": "rv_case_12",
+      "phrase": "retrieve payment intents payment intents",
+      "expect": "revolut.merchant.payment_intents.retrieve_payment_intents.v1",
+      "critical": true
+    }
+  ]
+}

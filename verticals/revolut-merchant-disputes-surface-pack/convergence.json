@@ -1,0 +1,40 @@
+{
+  "schema_version": "1.0",
+  "domain": "revolut-merchant-disputes-surface",
+  "thresholds": {
+    "overall_min_pass_rate": 1,
+    "require_critical_pass": true
+  },
+  "cases": [
+    {
+      "id": "rv_case_01",
+      "phrase": "list disputes",
+      "expect": "revolut.merchant.disputes.list.v1",
+      "critical": true
+    },
+    {
+      "id": "rv_case_02",
+      "phrase": "retrieve disputes disputes",
+      "expect": "revolut.merchant.disputes.retrieve_disputes.v1",
+      "critical": true
+    },
+    {
+      "id": "rv_case_03",
+      "phrase": "create accept disputes",
+      "expect": "revolut.merchant.disputes.create_accept.v1",
+      "critical": true
+    },
+    {
+      "id": "rv_case_04",
+      "phrase": "create challenge disputes",
+      "expect": "revolut.merchant.disputes.create_challenge.v1",
+      "critical": true
+    },
+    {
+      "id": "rv_case_05",
+      "phrase": "create evidences disputes",
+      "expect": "revolut.merchant.disputes.create_evidences.v1",
+      "critical": true
+    }
+  ]
+}

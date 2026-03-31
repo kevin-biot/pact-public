@@ -1,0 +1,31 @@
+{
+  "schema_version": "0.1",
+  "generated_at_utc": "2026-03-31T00:09:35.829Z",
+  "domain": "revolut-merchant-customer-subscription-surface",
+  "operation_identifiers": [
+    "revolut.merchant.customers.list.v1",
+    "revolut.merchant.customers.create.v1",
+    "revolut.merchant.customers.delete_customers.v1",
+    "revolut.merchant.customers.retrieve_customers.v1",
+    "revolut.merchant.customers.update_customers.v1",
+    "revolut.merchant.customers.list_payment_methods.v1",
+    "revolut.merchant.customers.delete_payment_methods.v1",
+    "revolut.merchant.customers.retrieve_payment_methods.v1",
+    "revolut.merchant.customers.update_payment_methods.v1",
+    "revolut.merchant.subscription_plans.list.v1",
+    "revolut.merchant.subscription_plans.create.v1",
+    "revolut.merchant.subscription_plans.retrieve_subscription_plans.v1",
+    "revolut.merchant.subscriptions.list.v1",
+    "revolut.merchant.subscriptions.create.v1",
+    "revolut.merchant.subscriptions.retrieve_subscriptions.v1",
+    "revolut.merchant.subscriptions.update_subscriptions.v1",
+    "revolut.merchant.subscriptions.create_cancel.v1",
+    "revolut.merchant.subscriptions.list_cycles.v1",
+    "revolut.merchant.subscriptions.retrieve_cycles.v1"
+  ],
+  "resource_families": [
+    "customers",
+    "subscription-plans",
+    "subscriptions"
+  ]
+}

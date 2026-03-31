@@ -1,0 +1,69 @@
+{
+  "@context": {
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "rv": "https://lane2.example/ontology/revolut/merchant/"
+  },
+  "@graph": [
+    {
+      "@id": "rv:family/merchant",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "Revolut Merchant"
+    },
+    {
+      "@id": "rv:resource/disputes",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "Disputes",
+      "skos:broader": "rv:family/merchant"
+    },
+    {
+      "@id": "rv:intent/disputes.list",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "List Disputes",
+      "skos:altLabel": [
+        "list disputes",
+        "get /api/disputes"
+      ],
+      "skos:broader": "rv:resource/disputes"
+    },
+    {
+      "@id": "rv:intent/disputes.retrieve-disputes",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "Retrieve Disputes Disputes",
+      "skos:altLabel": [
+        "retrieve disputes disputes",
+        "get /api/disputes/{dispute_id}"
+      ],
+      "skos:broader": "rv:resource/disputes"
+    },
+    {
+      "@id": "rv:intent/disputes.create-accept",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "Create Accept Disputes",
+      "skos:altLabel": [
+        "create accept disputes",
+        "post /api/disputes/{dispute_id}/accept"
+      ],
+      "skos:broader": "rv:resource/disputes"
+    },
+    {
+      "@id": "rv:intent/disputes.create-challenge",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "Create Challenge Disputes",
+      "skos:altLabel": [
+        "create challenge disputes",
+        "post /api/disputes/{dispute_id}/challenge"
+      ],
+      "skos:broader": "rv:resource/disputes"
+    },
+    {
+      "@id": "rv:intent/disputes.create-evidences",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "Create Evidences Disputes",
+      "skos:altLabel": [
+        "create evidences disputes",
+        "post /api/disputes/{dispute_id}/evidences"
+      ],
+      "skos:broader": "rv:resource/disputes"
+    }
+  ]
+}

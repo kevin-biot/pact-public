@@ -1,0 +1,24 @@
+{
+  "id": "revolut-merchant-disputes-surface-0.1.0",
+  "domain": "revolut-merchant-disputes-surface",
+  "version": "0.1.0",
+  "providerId": "ontology:lane2:revolut-merchant-disputes-surface",
+  "trustTier": "Tier1",
+  "policySnapshotId": "sha256:de93910b5a55669504e880f862be54015b611d8410d8cc16f5d3c3ec974f5116",
+  "files": {
+    "context": "sha256:615439486ca3c788a513a7ffcd169e26de3639eee755975ee64c4ef42ba9e0ac",
+    "convergence": "sha256:e053b629189d6681fc069a367509a0e129667285c3c7838c0b42f349777b8a72",
+    "decision_space": "sha256:e8c64bc9f7b8941476fd0413030e9dc6b94d570b4950b5b09f0010035eafd6c5",
+    "intent_mappings": "sha256:cebca74d753bddd4faea3551666d568adf02ff39480e1a59748f753397892174",
+    "patterns": "sha256:84aa4dbe0732de49518a153e074a6e76f4921e50d7f540beeaff3dbfe6f6aeaf",
+    "shapes": "sha256:5c226b4a254ea6e688eb155b5dbb62c29cbe496cfea4dbcf65b0bff470d634b8",
+    "thesaurus": "sha256:da60a5c64633195f826a36860d6098c540e6b43cdafe9870c0018b5df6de1f3b",
+    "thesaurus_local": "sha256:a0a2c704552a3b47a45ba10e2627d06a9582f8ea4e265eba19255674e107fd7d",
+    "vocab": "sha256:830478b468b9220092eb21dcf24abd34b8dfc44ba186b7cfbd15f530a6904f32"
+  },
+  "precedence": [],
+  "denyWins": true,
+  "nbf": "2026-03-31T00:00:00Z",
+  "exp": "2030-03-31T00:00:00Z",
+  "revEpoch": 1
+}

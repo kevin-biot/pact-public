@@ -1,0 +1,28 @@
+{
+  "schema_version": "0.2",
+  "domain": "revolut-merchant-disputes-surface",
+  "lane": "revolut-openapi-seed-surface",
+  "generated_at_utc": "2026-03-31T00:09:35.830Z",
+  "source_policy": {
+    "api_keys_used": false,
+    "runtime_model": "closed-world"
+  },
+  "sources": [
+    {
+      "standard": "Revolut Merchant API",
+      "artifact": "merchant-2025-12-04.yaml",
+      "url": "https://raw.githubusercontent.com/revolut-engineering/revolut-openapi/master/yaml/merchant-2025-12-04.yaml",
+      "sha256": "49040535f7390cf16caddb3ba615d0808f17e18d48931dace51fa422958fb9b0",
+      "bytes": 503161,
+      "etag": "\"a5ffc6710ac0db3939b31976c2979402e956f36fdd13451e0e69dd23de4ce76e\"",
+      "fetched_at_utc": "2026-03-30T23:54:44Z",
+      "role": "schema-reference"
+    }
+  ],
+  "selection": {
+    "resource_scope": [
+      "disputes"
+    ],
+    "intent_count": 5
+  }
+}

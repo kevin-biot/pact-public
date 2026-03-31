@@ -1,0 +1,34 @@
+{
+  "pack_schema": "1.0",
+  "id": "revolut-merchant-order-payment-surface-0.1.0",
+  "domain": "revolut-merchant-order-payment-surface",
+  "version": "0.1.0",
+  "key_name": "demo",
+  "provider_id": "ontology:lane2:revolut-merchant-order-payment-surface",
+  "trust_tier": "Tier1",
+  "nbf": "2026-03-31T00:00:00Z",
+  "exp": "2030-03-31T00:00:00Z",
+  "rev_epoch": 1,
+  "deny_wins": true,
+  "decision_authority": true,
+  "precedence": [],
+  "files": {
+    "context": "context.jsonld",
+    "vocab": "vocab.skos.jsonld",
+    "shapes": "shapes.ttl",
+    "thesaurus": "thesaurus.jsonld",
+    "thesaurus_local": "thesaurus-local.json",
+    "intent_mappings": "intent-mappings.json",
+    "patterns": "patterns.json",
+    "convergence": "convergence.json",
+    "decision_space": "decision-space.json"
+  },
+  "dc": {
+    "identifier": "ontology:revolut-merchant-order-payment-surface:v0.1.0",
+    "title": "Revolut Merchant Order Payment Surface Pack",
+    "creator": "Lane2 Ontology Team",
+    "issued": "2026-03-31",
+    "rights": "Internal demo",
+    "description": "Orders, payments, and payment intents semantic surface for deterministic routing."
+  }
+}

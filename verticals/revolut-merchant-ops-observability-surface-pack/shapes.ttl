@@ -1,0 +1,11 @@
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rv: <https://lane2.example/ontology/revolut/merchant/> .
+
+rv:MerchantOperationShape
+  a sh:NodeShape ;
+  sh:targetClass rv:MerchantOperation ;
+  sh:property [ sh:path rv:operationId ; sh:datatype xsd:string ; sh:minCount 1 ; sh:maxCount 1 ; ] ;
+  sh:property [ sh:path rv:resource ; sh:datatype xsd:string ; sh:minCount 1 ; sh:maxCount 1 ; ] ;
+  sh:property [ sh:path rv:action ; sh:datatype xsd:string ; sh:minCount 1 ; sh:maxCount 1 ; ] ;
+  sh:property [ sh:path rv:httpMethod ; sh:datatype xsd:string ; sh:minCount 1 ; sh:maxCount 1 ; ] .

@@ -1,0 +1,461 @@
+{
+  "@context": {
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "rv": "https://lane2.example/ontology/revolut/merchant/"
+  },
+  "@graph": [
+    {
+      "@id": "rv:family/merchant",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "Revolut Merchant"
+    },
+    {
+      "@id": "rv:resource/customers",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "Customers",
+      "skos:broader": "rv:family/merchant"
+    },
+    {
+      "@id": "rv:resource/disputes",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "Disputes",
+      "skos:broader": "rv:family/merchant"
+    },
+    {
+      "@id": "rv:resource/orders",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "Orders",
+      "skos:broader": "rv:family/merchant"
+    },
+    {
+      "@id": "rv:resource/payment-intents",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "Payment Intents",
+      "skos:broader": "rv:family/merchant"
+    },
+    {
+      "@id": "rv:resource/payments",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "Payments",
+      "skos:broader": "rv:family/merchant"
+    },
+    {
+      "@id": "rv:resource/payouts",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "Payouts",
+      "skos:broader": "rv:family/merchant"
+    },
+    {
+      "@id": "rv:resource/subscription-plans",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "Subscription Plans",
+      "skos:broader": "rv:family/merchant"
+    },
+    {
+      "@id": "rv:resource/subscriptions",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "Subscriptions",
+      "skos:broader": "rv:family/merchant"
+    },
+    {
+      "@id": "rv:intent/customers.list",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "List Customers",
+      "skos:altLabel": [
+        "list customers",
+        "get /api/customers"
+      ],
+      "skos:broader": "rv:resource/customers"
+    },
+    {
+      "@id": "rv:intent/customers.create",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "Create Customers",
+      "skos:altLabel": [
+        "create customers",
+        "post /api/customers"
+      ],
+      "skos:broader": "rv:resource/customers"
+    },
+    {
+      "@id": "rv:intent/customers.delete-customers",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "Delete Customers Customers",
+      "skos:altLabel": [
+        "delete customers customers",
+        "delete /api/customers/{customer_id}"
+      ],
+      "skos:broader": "rv:resource/customers"
+    },
+    {
+      "@id": "rv:intent/customers.retrieve-customers",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "Retrieve Customers Customers",
+      "skos:altLabel": [
+        "retrieve customers customers",
+        "get /api/customers/{customer_id}"
+      ],
+      "skos:broader": "rv:resource/customers"
+    },
+    {
+      "@id": "rv:intent/customers.update-customers",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "Update Customers Customers",
+      "skos:altLabel": [
+        "update customers customers",
+        "patch /api/customers/{customer_id}"
+      ],
+      "skos:broader": "rv:resource/customers"
+    },
+    {
+      "@id": "rv:intent/customers.list-payment-methods",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "List Payment Methods Customers",
+      "skos:altLabel": [
+        "list payment methods customers",
+        "get /api/customers/{customer_id}/payment-methods"
+      ],
+      "skos:broader": "rv:resource/customers"
+    },
+    {
+      "@id": "rv:intent/customers.delete-payment-methods",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "Delete Payment Methods Customers",
+      "skos:altLabel": [
+        "delete payment methods customers",
+        "delete /api/customers/{customer_id}/payment-methods/{payment_method_id}"
+      ],
+      "skos:broader": "rv:resource/customers"
+    },
+    {
+      "@id": "rv:intent/customers.retrieve-payment-methods",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "Retrieve Payment Methods Customers",
+      "skos:altLabel": [
+        "retrieve payment methods customers",
+        "get /api/customers/{customer_id}/payment-methods/{payment_method_id}"
+      ],
+      "skos:broader": "rv:resource/customers"
+    },
+    {
+      "@id": "rv:intent/customers.update-payment-methods",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "Update Payment Methods Customers",
+      "skos:altLabel": [
+        "update payment methods customers",
+        "patch /api/customers/{customer_id}/payment-methods/{payment_method_id}"
+      ],
+      "skos:broader": "rv:resource/customers"
+    },
+    {
+      "@id": "rv:intent/disputes.list",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "List Disputes",
+      "skos:altLabel": [
+        "list disputes",
+        "get /api/disputes"
+      ],
+      "skos:broader": "rv:resource/disputes"
+    },
+    {
+      "@id": "rv:intent/disputes.retrieve-disputes",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "Retrieve Disputes Disputes",
+      "skos:altLabel": [
+        "retrieve disputes disputes",
+        "get /api/disputes/{dispute_id}"
+      ],
+      "skos:broader": "rv:resource/disputes"
+    },
+    {
+      "@id": "rv:intent/disputes.create-accept",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "Create Accept Disputes",
+      "skos:altLabel": [
+        "create accept disputes",
+        "post /api/disputes/{dispute_id}/accept"
+      ],
+      "skos:broader": "rv:resource/disputes"
+    },
+    {
+      "@id": "rv:intent/disputes.create-challenge",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "Create Challenge Disputes",
+      "skos:altLabel": [
+        "create challenge disputes",
+        "post /api/disputes/{dispute_id}/challenge"
+      ],
+      "skos:broader": "rv:resource/disputes"
+    },
+    {
+      "@id": "rv:intent/disputes.create-evidences",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "Create Evidences Disputes",
+      "skos:altLabel": [
+        "create evidences disputes",
+        "post /api/disputes/{dispute_id}/evidences"
+      ],
+      "skos:broader": "rv:resource/disputes"
+    },
+    {
+      "@id": "rv:intent/orders.list",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "List Orders",
+      "skos:altLabel": [
+        "list orders",
+        "get /api/orders"
+      ],
+      "skos:broader": "rv:resource/orders"
+    },
+    {
+      "@id": "rv:intent/orders.create",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "Create Orders",
+      "skos:altLabel": [
+        "create orders",
+        "post /api/orders"
+      ],
+      "skos:broader": "rv:resource/orders"
+    },
+    {
+      "@id": "rv:intent/orders.retrieve-orders",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "Retrieve Orders Orders",
+      "skos:altLabel": [
+        "retrieve orders orders",
+        "get /api/orders/{order_id}"
+      ],
+      "skos:broader": "rv:resource/orders"
+    },
+    {
+      "@id": "rv:intent/orders.update-orders",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "Update Orders Orders",
+      "skos:altLabel": [
+        "update orders orders",
+        "patch /api/orders/{order_id}"
+      ],
+      "skos:broader": "rv:resource/orders"
+    },
+    {
+      "@id": "rv:intent/orders.create-cancel",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "Create Cancel Orders",
+      "skos:altLabel": [
+        "create cancel orders",
+        "post /api/orders/{order_id}/cancel"
+      ],
+      "skos:broader": "rv:resource/orders"
+    },
+    {
+      "@id": "rv:intent/orders.create-capture",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "Create Capture Orders",
+      "skos:altLabel": [
+        "create capture orders",
+        "post /api/orders/{order_id}/capture"
+      ],
+      "skos:broader": "rv:resource/orders"
+    },
+    {
+      "@id": "rv:intent/orders.create-increment-authorisation",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "Create Increment Authorisation Orders",
+      "skos:altLabel": [
+        "create increment authorisation orders",
+        "post /api/orders/{order_id}/increment-authorisation"
+      ],
+      "skos:broader": "rv:resource/orders"
+    },
+    {
+      "@id": "rv:intent/orders.create-payment-intents",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "Create Payment Intents Orders",
+      "skos:altLabel": [
+        "create payment intents orders",
+        "post /api/orders/{order_id}/payment-intents"
+      ],
+      "skos:broader": "rv:resource/orders"
+    },
+    {
+      "@id": "rv:intent/orders.list-payments",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "List Payments Orders",
+      "skos:altLabel": [
+        "list payments orders",
+        "get /api/orders/{order_id}/payments"
+      ],
+      "skos:broader": "rv:resource/orders"
+    },
+    {
+      "@id": "rv:intent/orders.create-payments",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "Create Payments Orders",
+      "skos:altLabel": [
+        "create payments orders",
+        "post /api/orders/{order_id}/payments"
+      ],
+      "skos:broader": "rv:resource/orders"
+    },
+    {
+      "@id": "rv:intent/orders.create-refund",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "Create Refund Orders",
+      "skos:altLabel": [
+        "create refund orders",
+        "post /api/orders/{order_id}/refund"
+      ],
+      "skos:broader": "rv:resource/orders"
+    },
+    {
+      "@id": "rv:intent/payment-intents.retrieve-payment-intents",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "Retrieve Payment Intents Payment Intents",
+      "skos:altLabel": [
+        "retrieve payment intents payment intents",
+        "get /api/payment-intents/{payment_intent_id}"
+      ],
+      "skos:broader": "rv:resource/payment-intents"
+    },
+    {
+      "@id": "rv:intent/payment-intents.create-cancel",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "Create Cancel Payment Intents",
+      "skos:altLabel": [
+        "create cancel payment intents",
+        "post /api/payment-intents/{payment_intent_id}/cancel"
+      ],
+      "skos:broader": "rv:resource/payment-intents"
+    },
+    {
+      "@id": "rv:intent/payments.retrieve-payments",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "Retrieve Payments Payments",
+      "skos:altLabel": [
+        "retrieve payments payments",
+        "get /api/payments/{payment_id}"
+      ],
+      "skos:broader": "rv:resource/payments"
+    },
+    {
+      "@id": "rv:intent/payouts.list",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "List Payouts",
+      "skos:altLabel": [
+        "list payouts",
+        "get /api/payouts"
+      ],
+      "skos:broader": "rv:resource/payouts"
+    },
+    {
+      "@id": "rv:intent/payouts.retrieve-payouts",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "Retrieve Payouts Payouts",
+      "skos:altLabel": [
+        "retrieve payouts payouts",
+        "get /api/payouts/{payout_id}"
+      ],
+      "skos:broader": "rv:resource/payouts"
+    },
+    {
+      "@id": "rv:intent/subscription-plans.list",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "List Subscription Plans",
+      "skos:altLabel": [
+        "list subscription plans",
+        "get /api/subscription-plans"
+      ],
+      "skos:broader": "rv:resource/subscription-plans"
+    },
+    {
+      "@id": "rv:intent/subscription-plans.create",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "Create Subscription Plans",
+      "skos:altLabel": [
+        "create subscription plans",
+        "post /api/subscription-plans"
+      ],
+      "skos:broader": "rv:resource/subscription-plans"
+    },
+    {
+      "@id": "rv:intent/subscription-plans.retrieve-subscription-plans",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "Retrieve Subscription Plans Subscription Plans",
+      "skos:altLabel": [
+        "retrieve subscription plans subscription plans",
+        "get /api/subscription-plans/{subscription_plan_id}"
+      ],
+      "skos:broader": "rv:resource/subscription-plans"
+    },
+    {
+      "@id": "rv:intent/subscriptions.list",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "List Subscriptions",
+      "skos:altLabel": [
+        "list subscriptions",
+        "get /api/subscriptions"
+      ],
+      "skos:broader": "rv:resource/subscriptions"
+    },
+    {
+      "@id": "rv:intent/subscriptions.create",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "Create Subscriptions",
+      "skos:altLabel": [
+        "create subscriptions",
+        "post /api/subscriptions"
+      ],
+      "skos:broader": "rv:resource/subscriptions"
+    },
+    {
+      "@id": "rv:intent/subscriptions.retrieve-subscriptions",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "Retrieve Subscriptions Subscriptions",
+      "skos:altLabel": [
+        "retrieve subscriptions subscriptions",
+        "get /api/subscriptions/{subscription_id}"
+      ],
+      "skos:broader": "rv:resource/subscriptions"
+    },
+    {
+      "@id": "rv:intent/subscriptions.update-subscriptions",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "Update Subscriptions Subscriptions",
+      "skos:altLabel": [
+        "update subscriptions subscriptions",
+        "patch /api/subscriptions/{subscription_id}"
+      ],
+      "skos:broader": "rv:resource/subscriptions"
+    },
+    {
+      "@id": "rv:intent/subscriptions.create-cancel",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "Create Cancel Subscriptions",
+      "skos:altLabel": [
+        "create cancel subscriptions",
+        "post /api/subscriptions/{subscription_id}/cancel"
+      ],
+      "skos:broader": "rv:resource/subscriptions"
+    },
+    {
+      "@id": "rv:intent/subscriptions.list-cycles",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "List Cycles Subscriptions",
+      "skos:altLabel": [
+        "list cycles subscriptions",
+        "get /api/subscriptions/{subscription_id}/cycles"
+      ],
+      "skos:broader": "rv:resource/subscriptions"
+    },
+    {
+      "@id": "rv:intent/subscriptions.retrieve-cycles",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "Retrieve Cycles Subscriptions",
+      "skos:altLabel": [
+        "retrieve cycles subscriptions",
+        "get /api/subscriptions/{subscription_id}/cycles/{cycle_id}"
+      ],
+      "skos:broader": "rv:resource/subscriptions"
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "id": "revolut-merchant-core-seed-0.1.0",
+  "domain": "revolut-merchant-core-seed",
+  "version": "0.1.0",
+  "providerId": "ontology:lane2:revolut-merchant-core-seed",
+  "trustTier": "Tier1",
+  "policySnapshotId": "sha256:de93910b5a55669504e880f862be54015b611d8410d8cc16f5d3c3ec974f5116",
+  "files": {
+    "context": "sha256:615439486ca3c788a513a7ffcd169e26de3639eee755975ee64c4ef42ba9e0ac",
+    "convergence": "sha256:728b823df09819c46a5c0119601704b815c9873fa2305b36e8435164c52bb400",
+    "decision_space": "sha256:8a9247ab5c350caf31d51efe55c485bc37368ccc6c29d2ea93bb864d32ad7dbd",
+    "intent_mappings": "sha256:7ff5a1aaf87dee3dc908291d0357c02b46bcd4673f0d3413dab83efd928e1305",
+    "patterns": "sha256:edf148a5344a87c544454e1804c3d06848decf31bef1595f1e09c7cce71ff8f0",
+    "shapes": "sha256:5c226b4a254ea6e688eb155b5dbb62c29cbe496cfea4dbcf65b0bff470d634b8",
+    "thesaurus": "sha256:96238d7ee6c3d86f600ad74a6e6a22c89c456de3591318be48fc9c5f2da642d3",
+    "thesaurus_local": "sha256:89cbe438c0ed62ad38fa8fdd70041771601b71203a05fc6c0e6f77b467aaf540",
+    "vocab": "sha256:f8fcea24ee93afc90df4d20e02dea69c615ec228a7e036dc9cec6460881326f8"
+  },
+  "precedence": [],
+  "denyWins": true,
+  "nbf": "2026-03-31T00:00:00Z",
+  "exp": "2030-03-31T00:00:00Z",
+  "revEpoch": 1
+}

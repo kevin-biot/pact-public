@@ -1,0 +1,206 @@
+{
+  "schema_version": "1.0",
+  "domain": "revolut-merchant-core-seed",
+  "mappings": [
+    {
+      "concept_uri": "rv:intent/customers.list",
+      "intent_class": "revolut.merchant.customers.list.v1",
+      "confidence_floor": 0.75
+    },
+    {
+      "concept_uri": "rv:intent/customers.create",
+      "intent_class": "revolut.merchant.customers.create.v1",
+      "confidence_floor": 0.75
+    },
+    {
+      "concept_uri": "rv:intent/customers.delete-customers",
+      "intent_class": "revolut.merchant.customers.delete_customers.v1",
+      "confidence_floor": 0.75
+    },
+    {
+      "concept_uri": "rv:intent/customers.retrieve-customers",
+      "intent_class": "revolut.merchant.customers.retrieve_customers.v1",
+      "confidence_floor": 0.75
+    },
+    {
+      "concept_uri": "rv:intent/customers.update-customers",
+      "intent_class": "revolut.merchant.customers.update_customers.v1",
+      "confidence_floor": 0.75
+    },
+    {
+      "concept_uri": "rv:intent/customers.list-payment-methods",
+      "intent_class": "revolut.merchant.customers.list_payment_methods.v1",
+      "confidence_floor": 0.75
+    },
+    {
+      "concept_uri": "rv:intent/customers.delete-payment-methods",
+      "intent_class": "revolut.merchant.customers.delete_payment_methods.v1",
+      "confidence_floor": 0.75
+    },
+    {
+      "concept_uri": "rv:intent/customers.retrieve-payment-methods",
+      "intent_class": "revolut.merchant.customers.retrieve_payment_methods.v1",
+      "confidence_floor": 0.75
+    },
+    {
+      "concept_uri": "rv:intent/customers.update-payment-methods",
+      "intent_class": "revolut.merchant.customers.update_payment_methods.v1",
+      "confidence_floor": 0.75
+    },
+    {
+      "concept_uri": "rv:intent/disputes.list",
+      "intent_class": "revolut.merchant.disputes.list.v1",
+      "confidence_floor": 0.75
+    },
+    {
+      "concept_uri": "rv:intent/disputes.retrieve-disputes",
+      "intent_class": "revolut.merchant.disputes.retrieve_disputes.v1",
+      "confidence_floor": 0.75
+    },
+    {
+      "concept_uri": "rv:intent/disputes.create-accept",
+      "intent_class": "revolut.merchant.disputes.create_accept.v1",
+      "confidence_floor": 0.75
+    },
+    {
+      "concept_uri": "rv:intent/disputes.create-challenge",
+      "intent_class": "revolut.merchant.disputes.create_challenge.v1",
+      "confidence_floor": 0.75
+    },
+    {
+      "concept_uri": "rv:intent/disputes.create-evidences",
+      "intent_class": "revolut.merchant.disputes.create_evidences.v1",
+      "confidence_floor": 0.75
+    },
+    {
+      "concept_uri": "rv:intent/orders.list",
+      "intent_class": "revolut.merchant.orders.list.v1",
+      "confidence_floor": 0.75
+    },
+    {
+      "concept_uri": "rv:intent/orders.create",
+      "intent_class": "revolut.merchant.orders.create.v1",
+      "confidence_floor": 0.75
+    },
+    {
+      "concept_uri": "rv:intent/orders.retrieve-orders",
+      "intent_class": "revolut.merchant.orders.retrieve_orders.v1",
+      "confidence_floor": 0.75
+    },
+    {
+      "concept_uri": "rv:intent/orders.update-orders",
+      "intent_class": "revolut.merchant.orders.update_orders.v1",
+      "confidence_floor": 0.75
+    },
+    {
+      "concept_uri": "rv:intent/orders.create-cancel",
+      "intent_class": "revolut.merchant.orders.create_cancel.v1",
+      "confidence_floor": 0.75
+    },
+    {
+      "concept_uri": "rv:intent/orders.create-capture",
+      "intent_class": "revolut.merchant.orders.create_capture.v1",
+      "confidence_floor": 0.75
+    },
+    {
+      "concept_uri": "rv:intent/orders.create-increment-authorisation",
+      "intent_class": "revolut.merchant.orders.create_increment_authorisation.v1",
+      "confidence_floor": 0.75
+    },
+    {
+      "concept_uri": "rv:intent/orders.create-payment-intents",
+      "intent_class": "revolut.merchant.orders.create_payment_intents.v1",
+      "confidence_floor": 0.75
+    },
+    {
+      "concept_uri": "rv:intent/orders.list-payments",
+      "intent_class": "revolut.merchant.orders.list_payments.v1",
+      "confidence_floor": 0.75
+    },
+    {
+      "concept_uri": "rv:intent/orders.create-payments",
+      "intent_class": "revolut.merchant.orders.create_payments.v1",
+      "confidence_floor": 0.75
+    },
+    {
+      "concept_uri": "rv:intent/orders.create-refund",
+      "intent_class": "revolut.merchant.orders.create_refund.v1",
+      "confidence_floor": 0.75
+    },
+    {
+      "concept_uri": "rv:intent/payment-intents.retrieve-payment-intents",
+      "intent_class": "revolut.merchant.payment_intents.retrieve_payment_intents.v1",
+      "confidence_floor": 0.75
+    },
+    {
+      "concept_uri": "rv:intent/payment-intents.create-cancel",
+      "intent_class": "revolut.merchant.payment_intents.create_cancel.v1",
+      "confidence_floor": 0.75
+    },
+    {
+      "concept_uri": "rv:intent/payments.retrieve-payments",
+      "intent_class": "revolut.merchant.payments.retrieve_payments.v1",
+      "confidence_floor": 0.75
+    },
+    {
+      "concept_uri": "rv:intent/payouts.list",
+      "intent_class": "revolut.merchant.payouts.list.v1",
+      "confidence_floor": 0.75
+    },
+    {
+      "concept_uri": "rv:intent/payouts.retrieve-payouts",
+      "intent_class": "revolut.merchant.payouts.retrieve_payouts.v1",
+      "confidence_floor": 0.75
+    },
+    {
+      "concept_uri": "rv:intent/subscription-plans.list",
+      "intent_class": "revolut.merchant.subscription_plans.list.v1",
+      "confidence_floor": 0.75
+    },
+    {
+      "concept_uri": "rv:intent/subscription-plans.create",
+      "intent_class": "revolut.merchant.subscription_plans.create.v1",
+      "confidence_floor": 0.75
+    },
+    {
+      "concept_uri": "rv:intent/subscription-plans.retrieve-subscription-plans",
+      "intent_class": "revolut.merchant.subscription_plans.retrieve_subscription_plans.v1",
+      "confidence_floor": 0.75
+    },
+    {
+      "concept_uri": "rv:intent/subscriptions.list",
+      "intent_class": "revolut.merchant.subscriptions.list.v1",
+      "confidence_floor": 0.75
+    },
+    {
+      "concept_uri": "rv:intent/subscriptions.create",
+      "intent_class": "revolut.merchant.subscriptions.create.v1",
+      "confidence_floor": 0.75
+    },
+    {
+      "concept_uri": "rv:intent/subscriptions.retrieve-subscriptions",
+      "intent_class": "revolut.merchant.subscriptions.retrieve_subscriptions.v1",
+      "confidence_floor": 0.75
+    },
+    {
+      "concept_uri": "rv:intent/subscriptions.update-subscriptions",
+      "intent_class": "revolut.merchant.subscriptions.update_subscriptions.v1",
+      "confidence_floor": 0.75
+    },
+    {
+      "concept_uri": "rv:intent/subscriptions.create-cancel",
+      "intent_class": "revolut.merchant.subscriptions.create_cancel.v1",
+      "confidence_floor": 0.75
+    },
+    {
+      "concept_uri": "rv:intent/subscriptions.list-cycles",
+      "intent_class": "revolut.merchant.subscriptions.list_cycles.v1",
+      "confidence_floor": 0.75
+    },
+    {
+      "concept_uri": "rv:intent/subscriptions.retrieve-cycles",
+      "intent_class": "revolut.merchant.subscriptions.retrieve_cycles.v1",
+      "confidence_floor": 0.75
+    }
+  ]
+}

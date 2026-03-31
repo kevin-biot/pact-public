@@ -1,0 +1,24 @@
+{
+  "id": "revolut-merchant-order-payment-surface-0.1.0",
+  "domain": "revolut-merchant-order-payment-surface",
+  "version": "0.1.0",
+  "providerId": "ontology:lane2:revolut-merchant-order-payment-surface",
+  "trustTier": "Tier1",
+  "policySnapshotId": "sha256:de93910b5a55669504e880f862be54015b611d8410d8cc16f5d3c3ec974f5116",
+  "files": {
+    "context": "sha256:615439486ca3c788a513a7ffcd169e26de3639eee755975ee64c4ef42ba9e0ac",
+    "convergence": "sha256:bbaf38179569e424abf3312774b8a942f56b54cb9cbc0392ae04075e54f93bf2",
+    "decision_space": "sha256:21cba9afbb7b701ddd2c52957202b72cd50bf5da9b277ad17260837d4d93883f",
+    "intent_mappings": "sha256:69cc843d6422dd518c5027f3764ef925f910b1848c718de5f8cc309f5af98f90",
+    "patterns": "sha256:0bc78d45e754396577dea6fa62c749188d32dd6ad010662d303a4fd7a3b2302a",
+    "shapes": "sha256:5c226b4a254ea6e688eb155b5dbb62c29cbe496cfea4dbcf65b0bff470d634b8",
+    "thesaurus": "sha256:a7c45fd2b79191c046cad5a17f5bcc103d5ef186e12e820b855bf844a10f721a",
+    "thesaurus_local": "sha256:2421f7556a8c75e6affd069ac84f8814cb37091bd7c38ba67317cea37667457f",
+    "vocab": "sha256:896368684cc4765bda6a398e451834aa87367e6d50affbb53e268f1518400f08"
+  },
+  "precedence": [],
+  "denyWins": true,
+  "nbf": "2026-03-31T00:00:00Z",
+  "exp": "2030-03-31T00:00:00Z",
+  "revEpoch": 1
+}

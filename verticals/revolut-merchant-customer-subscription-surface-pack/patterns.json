@@ -1,0 +1,177 @@
+{
+  "schema_version": "1.0",
+  "domain": "revolut-merchant-customer-subscription-surface",
+  "patterns": [
+    {
+      "id": "rv_customers_list_intent",
+      "concept_uri": "rv:intent/customers.list",
+      "entity_type": "intent_hint",
+      "regex": "(?i)^list customers$",
+      "examples": [
+        "list customers"
+      ]
+    },
+    {
+      "id": "rv_customers_create_intent",
+      "concept_uri": "rv:intent/customers.create",
+      "entity_type": "intent_hint",
+      "regex": "(?i)^create customers$",
+      "examples": [
+        "create customers"
+      ]
+    },
+    {
+      "id": "rv_customers_delete-customers_intent",
+      "concept_uri": "rv:intent/customers.delete-customers",
+      "entity_type": "intent_hint",
+      "regex": "(?i)^delete customers customers$",
+      "examples": [
+        "delete customers customers"
+      ]
+    },
+    {
+      "id": "rv_customers_retrieve-customers_intent",
+      "concept_uri": "rv:intent/customers.retrieve-customers",
+      "entity_type": "intent_hint",
+      "regex": "(?i)^retrieve customers customers$",
+      "examples": [
+        "retrieve customers customers"
+      ]
+    },
+    {
+      "id": "rv_customers_update-customers_intent",
+      "concept_uri": "rv:intent/customers.update-customers",
+      "entity_type": "intent_hint",
+      "regex": "(?i)^update customers customers$",
+      "examples": [
+        "update customers customers"
+      ]
+    },
+    {
+      "id": "rv_customers_list-payment-methods_intent",
+      "concept_uri": "rv:intent/customers.list-payment-methods",
+      "entity_type": "intent_hint",
+      "regex": "(?i)^list payment methods customers$",
+      "examples": [
+        "list payment methods customers"
+      ]
+    },
+    {
+      "id": "rv_customers_delete-payment-methods_intent",
+      "concept_uri": "rv:intent/customers.delete-payment-methods",
+      "entity_type": "intent_hint",
+      "regex": "(?i)^delete payment methods customers$",
+      "examples": [
+        "delete payment methods customers"
+      ]
+    },
+    {
+      "id": "rv_customers_retrieve-payment-methods_intent",
+      "concept_uri": "rv:intent/customers.retrieve-payment-methods",
+      "entity_type": "intent_hint",
+      "regex": "(?i)^retrieve payment methods customers$",
+      "examples": [
+        "retrieve payment methods customers"
+      ]
+    },
+    {
+      "id": "rv_customers_update-payment-methods_intent",
+      "concept_uri": "rv:intent/customers.update-payment-methods",
+      "entity_type": "intent_hint",
+      "regex": "(?i)^update payment methods customers$",
+      "examples": [
+        "update payment methods customers"
+      ]
+    },
+    {
+      "id": "rv_subscription-plans_list_intent",
+      "concept_uri": "rv:intent/subscription-plans.list",
+      "entity_type": "intent_hint",
+      "regex": "(?i)^list subscription plans$",
+      "examples": [
+        "list subscription plans"
+      ]
+    },
+    {
+      "id": "rv_subscription-plans_create_intent",
+      "concept_uri": "rv:intent/subscription-plans.create",
+      "entity_type": "intent_hint",
+      "regex": "(?i)^create subscription plans$",
+      "examples": [
+        "create subscription plans"
+      ]
+    },
+    {
+      "id": "rv_subscription-plans_retrieve-subscription-plans_intent",
+      "concept_uri": "rv:intent/subscription-plans.retrieve-subscription-plans",
+      "entity_type": "intent_hint",
+      "regex": "(?i)^retrieve subscription plans subscription plans$",
+      "examples": [
+        "retrieve subscription plans subscription plans"
+      ]
+    },
+    {
+      "id": "rv_subscriptions_list_intent",
+      "concept_uri": "rv:intent/subscriptions.list",
+      "entity_type": "intent_hint",
+      "regex": "(?i)^list subscriptions$",
+      "examples": [
+        "list subscriptions"
+      ]
+    },
+    {
+      "id": "rv_subscriptions_create_intent",
+      "concept_uri": "rv:intent/subscriptions.create",
+      "entity_type": "intent_hint",
+      "regex": "(?i)^create subscriptions$",
+      "examples": [
+        "create subscriptions"
+      ]
+    },
+    {
+      "id": "rv_subscriptions_retrieve-subscriptions_intent",
+      "concept_uri": "rv:intent/subscriptions.retrieve-subscriptions",
+      "entity_type": "intent_hint",
+      "regex": "(?i)^retrieve subscriptions subscriptions$",
+      "examples": [
+        "retrieve subscriptions subscriptions"
+      ]
+    },
+    {
+      "id": "rv_subscriptions_update-subscriptions_intent",
+      "concept_uri": "rv:intent/subscriptions.update-subscriptions",
+      "entity_type": "intent_hint",
+      "regex": "(?i)^update subscriptions subscriptions$",
+      "examples": [
+        "update subscriptions subscriptions"
+      ]
+    },
+    {
+      "id": "rv_subscriptions_create-cancel_intent",
+      "concept_uri": "rv:intent/subscriptions.create-cancel",
+      "entity_type": "intent_hint",
+      "regex": "(?i)^create cancel subscriptions$",
+      "examples": [
+        "create cancel subscriptions"
+      ]
+    },
+    {
+      "id": "rv_subscriptions_list-cycles_intent",
+      "concept_uri": "rv:intent/subscriptions.list-cycles",
+      "entity_type": "intent_hint",
+      "regex": "(?i)^list cycles subscriptions$",
+      "examples": [
+        "list cycles subscriptions"
+      ]
+    },
+    {
+      "id": "rv_subscriptions_retrieve-cycles_intent",
+      "concept_uri": "rv:intent/subscriptions.retrieve-cycles",
+      "entity_type": "intent_hint",
+      "regex": "(?i)^retrieve cycles subscriptions$",
+      "examples": [
+        "retrieve cycles subscriptions"
+      ]
+    }
+  ]
+}
