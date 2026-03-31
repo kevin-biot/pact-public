@@ -1,0 +1,1897 @@
+{
+  "schema_version": "1.0",
+  "domain": "tmf-resource-catalog-alarm-surface-demo",
+  "last_modified": "2026-03-31",
+  "concepts": [
+    {
+      "concept_id": "tmf:intent/tmf634/exportjob.createexportjob",
+      "preferred_term": "createexportjob",
+      "synonyms": [
+        "POST /exportJob",
+        "tmf.tmf634.exportjob.createexportjob.v1"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "tmf:resource/exportjob",
+      "narrower": [],
+      "source_refs": [
+        "TM Forum Open APIs",
+        "TMF634"
+      ],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "tmf:intent/tmf634/exportjob.deleteexportjob",
+      "preferred_term": "deleteexportjob",
+      "synonyms": [
+        "DELETE /exportJob/{id}",
+        "tmf.tmf634.exportjob.deleteexportjob.v1"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "tmf:resource/exportjob",
+      "narrower": [],
+      "source_refs": [
+        "TM Forum Open APIs",
+        "TMF634"
+      ],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "tmf:intent/tmf634/exportjob.listexportjob",
+      "preferred_term": "listexportjob",
+      "synonyms": [
+        "GET /exportJob",
+        "tmf.tmf634.exportjob.listexportjob.v1"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "tmf:resource/exportjob",
+      "narrower": [],
+      "source_refs": [
+        "TM Forum Open APIs",
+        "TMF634"
+      ],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "tmf:intent/tmf634/exportjob.retrieveexportjob",
+      "preferred_term": "retrieveexportjob",
+      "synonyms": [
+        "GET /exportJob/{id}",
+        "tmf.tmf634.exportjob.retrieveexportjob.v1"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "tmf:resource/exportjob",
+      "narrower": [],
+      "source_refs": [
+        "TM Forum Open APIs",
+        "TMF634"
+      ],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "tmf:intent/tmf634/hub.createhub",
+      "preferred_term": "createhub",
+      "synonyms": [
+        "POST /hub",
+        "tmf.tmf634.hub.createhub.v1"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "tmf:resource/hub",
+      "narrower": [],
+      "source_refs": [
+        "TM Forum Open APIs",
+        "TMF634"
+      ],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "tmf:intent/tmf634/hub.hubdelete",
+      "preferred_term": "hubdelete",
+      "synonyms": [
+        "DELETE /hub/{id}",
+        "tmf.tmf634.hub.hubdelete.v1"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "tmf:resource/hub",
+      "narrower": [],
+      "source_refs": [
+        "TM Forum Open APIs",
+        "TMF634"
+      ],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "tmf:intent/tmf634/importjob.createimportjob",
+      "preferred_term": "createimportjob",
+      "synonyms": [
+        "POST /importJob",
+        "tmf.tmf634.importjob.createimportjob.v1"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "tmf:resource/importjob",
+      "narrower": [],
+      "source_refs": [
+        "TM Forum Open APIs",
+        "TMF634"
+      ],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "tmf:intent/tmf634/importjob.deleteimportjob",
+      "preferred_term": "deleteimportjob",
+      "synonyms": [
+        "DELETE /importJob/{id}",
+        "tmf.tmf634.importjob.deleteimportjob.v1"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "tmf:resource/importjob",
+      "narrower": [],
+      "source_refs": [
+        "TM Forum Open APIs",
+        "TMF634"
+      ],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "tmf:intent/tmf634/importjob.listimportjob",
+      "preferred_term": "listimportjob",
+      "synonyms": [
+        "GET /importJob",
+        "tmf.tmf634.importjob.listimportjob.v1"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "tmf:resource/importjob",
+      "narrower": [],
+      "source_refs": [
+        "TM Forum Open APIs",
+        "TMF634"
+      ],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "tmf:intent/tmf634/importjob.retrieveimportjob",
+      "preferred_term": "retrieveimportjob",
+      "synonyms": [
+        "GET /importJob/{id}",
+        "tmf.tmf634.importjob.retrieveimportjob.v1"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "tmf:resource/importjob",
+      "narrower": [],
+      "source_refs": [
+        "TM Forum Open APIs",
+        "TMF634"
+      ],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "tmf:intent/tmf634/listener.exportjobcreateevent",
+      "preferred_term": "exportjobcreateevent listener",
+      "synonyms": [
+        "POST /listener/exportJobCreateEvent",
+        "tmf.tmf634.listener.exportjobcreateevent.v1"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "tmf:resource/listener",
+      "narrower": [],
+      "source_refs": [
+        "TM Forum Open APIs",
+        "TMF634"
+      ],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "tmf:intent/tmf634/listener.exportjobdeleteevent",
+      "preferred_term": "exportjobdeleteevent listener",
+      "synonyms": [
+        "POST /listener/exportJobDeleteEvent",
+        "tmf.tmf634.listener.exportjobdeleteevent.v1"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "tmf:resource/listener",
+      "narrower": [],
+      "source_refs": [
+        "TM Forum Open APIs",
+        "TMF634"
+      ],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "tmf:intent/tmf634/listener.exportjobstatechangeevent",
+      "preferred_term": "exportjobstatechangeevent listener",
+      "synonyms": [
+        "POST /listener/exportJobStateChangeEvent",
+        "tmf.tmf634.listener.exportjobstatechangeevent.v1"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "tmf:resource/listener",
+      "narrower": [],
+      "source_refs": [
+        "TM Forum Open APIs",
+        "TMF634"
+      ],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "tmf:intent/tmf634/listener.importjobcreateevent",
+      "preferred_term": "importjobcreateevent listener",
+      "synonyms": [
+        "POST /listener/importJobCreateEvent",
+        "tmf.tmf634.listener.importjobcreateevent.v1"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "tmf:resource/listener",
+      "narrower": [],
+      "source_refs": [
+        "TM Forum Open APIs",
+        "TMF634"
+      ],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "tmf:intent/tmf634/listener.importjobdeleteevent",
+      "preferred_term": "importjobdeleteevent listener",
+      "synonyms": [
+        "POST /listener/importJobDeleteEvent",
+        "tmf.tmf634.listener.importjobdeleteevent.v1"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "tmf:resource/listener",
+      "narrower": [],
+      "source_refs": [
+        "TM Forum Open APIs",
+        "TMF634"
+      ],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "tmf:intent/tmf634/listener.importjobstatechangeevent",
+      "preferred_term": "importjobstatechangeevent listener",
+      "synonyms": [
+        "POST /listener/importJobStateChangeEvent",
+        "tmf.tmf634.listener.importjobstatechangeevent.v1"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "tmf:resource/listener",
+      "narrower": [],
+      "source_refs": [
+        "TM Forum Open APIs",
+        "TMF634"
+      ],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "tmf:intent/tmf634/listener.resourcecandidateattributevaluechangeevent",
+      "preferred_term": "resourcecandidateattributevaluechangeevent listener",
+      "synonyms": [
+        "POST /listener/resourceCandidateAttributeValueChangeEvent",
+        "tmf.tmf634.listener.resourcecandidateattributevaluechangeevent.v1"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "tmf:resource/listener",
+      "narrower": [],
+      "source_refs": [
+        "TM Forum Open APIs",
+        "TMF634"
+      ],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "tmf:intent/tmf634/listener.resourcecandidatecreateevent",
+      "preferred_term": "resourcecandidatecreateevent listener",
+      "synonyms": [
+        "POST /listener/resourceCandidateCreateEvent",
+        "tmf.tmf634.listener.resourcecandidatecreateevent.v1"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "tmf:resource/listener",
+      "narrower": [],
+      "source_refs": [
+        "TM Forum Open APIs",
+        "TMF634"
+      ],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "tmf:intent/tmf634/listener.resourcecandidatedeleteevent",
+      "preferred_term": "resourcecandidatedeleteevent listener",
+      "synonyms": [
+        "POST /listener/resourceCandidateDeleteEvent",
+        "tmf.tmf634.listener.resourcecandidatedeleteevent.v1"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "tmf:resource/listener",
+      "narrower": [],
+      "source_refs": [
+        "TM Forum Open APIs",
+        "TMF634"
+      ],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "tmf:intent/tmf634/listener.resourcecandidatestatuschangeevent",
+      "preferred_term": "resourcecandidatestatuschangeevent listener",
+      "synonyms": [
+        "POST /listener/resourceCandidateStatusChangeEvent",
+        "tmf.tmf634.listener.resourcecandidatestatuschangeevent.v1"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "tmf:resource/listener",
+      "narrower": [],
+      "source_refs": [
+        "TM Forum Open APIs",
+        "TMF634"
+      ],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "tmf:intent/tmf634/listener.resourcecatalogattributevaluechangeevent",
+      "preferred_term": "resourcecatalogattributevaluechangeevent listener",
+      "synonyms": [
+        "POST /listener/resourceCatalogAttributeValueChangeEvent",
+        "tmf.tmf634.listener.resourcecatalogattributevaluechangeevent.v1"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "tmf:resource/listener",
+      "narrower": [],
+      "source_refs": [
+        "TM Forum Open APIs",
+        "TMF634"
+      ],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "tmf:intent/tmf634/listener.resourcecatalogcreateevent",
+      "preferred_term": "resourcecatalogcreateevent listener",
+      "synonyms": [
+        "POST /listener/resourceCatalogCreateEvent",
+        "tmf.tmf634.listener.resourcecatalogcreateevent.v1"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "tmf:resource/listener",
+      "narrower": [],
+      "source_refs": [
+        "TM Forum Open APIs",
+        "TMF634"
+      ],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "tmf:intent/tmf634/listener.resourcecatalogdeleteevent",
+      "preferred_term": "resourcecatalogdeleteevent listener",
+      "synonyms": [
+        "POST /listener/resourceCatalogDeleteEvent",
+        "tmf.tmf634.listener.resourcecatalogdeleteevent.v1"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "tmf:resource/listener",
+      "narrower": [],
+      "source_refs": [
+        "TM Forum Open APIs",
+        "TMF634"
+      ],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "tmf:intent/tmf634/listener.resourcecatalogstatuschangeevent",
+      "preferred_term": "resourcecatalogstatuschangeevent listener",
+      "synonyms": [
+        "POST /listener/resourceCatalogStatusChangeEvent",
+        "tmf.tmf634.listener.resourcecatalogstatuschangeevent.v1"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "tmf:resource/listener",
+      "narrower": [],
+      "source_refs": [
+        "TM Forum Open APIs",
+        "TMF634"
+      ],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "tmf:intent/tmf634/listener.resourcecategoryattributevaluechangeevent",
+      "preferred_term": "resourcecategoryattributevaluechangeevent listener",
+      "synonyms": [
+        "POST /listener/resourceCategoryAttributeValueChangeEvent",
+        "tmf.tmf634.listener.resourcecategoryattributevaluechangeevent.v1"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "tmf:resource/listener",
+      "narrower": [],
+      "source_refs": [
+        "TM Forum Open APIs",
+        "TMF634"
+      ],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "tmf:intent/tmf634/listener.resourcecategorycreateevent",
+      "preferred_term": "resourcecategorycreateevent listener",
+      "synonyms": [
+        "POST /listener/resourceCategoryCreateEvent",
+        "tmf.tmf634.listener.resourcecategorycreateevent.v1"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "tmf:resource/listener",
+      "narrower": [],
+      "source_refs": [
+        "TM Forum Open APIs",
+        "TMF634"
+      ],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "tmf:intent/tmf634/listener.resourcecategorydeleteevent",
+      "preferred_term": "resourcecategorydeleteevent listener",
+      "synonyms": [
+        "POST /listener/resourceCategoryDeleteEvent",
+        "tmf.tmf634.listener.resourcecategorydeleteevent.v1"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "tmf:resource/listener",
+      "narrower": [],
+      "source_refs": [
+        "TM Forum Open APIs",
+        "TMF634"
+      ],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "tmf:intent/tmf634/listener.resourcecategorystatuschangeevent",
+      "preferred_term": "resourcecategorystatuschangeevent listener",
+      "synonyms": [
+        "POST /listener/resourceCategoryStatusChangeEvent",
+        "tmf.tmf634.listener.resourcecategorystatuschangeevent.v1"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "tmf:resource/listener",
+      "narrower": [],
+      "source_refs": [
+        "TM Forum Open APIs",
+        "TMF634"
+      ],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "tmf:intent/tmf634/listener.resourcespecificationattributevaluechangeevent",
+      "preferred_term": "resourcespecificationattributevaluechangeevent listener",
+      "synonyms": [
+        "POST /listener/resourceSpecificationAttributeValueChangeEvent",
+        "tmf.tmf634.listener.resourcespecificationattributevaluechangeevent.v1"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "tmf:resource/listener",
+      "narrower": [],
+      "source_refs": [
+        "TM Forum Open APIs",
+        "TMF634"
+      ],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "tmf:intent/tmf634/listener.resourcespecificationcreateevent",
+      "preferred_term": "resourcespecificationcreateevent listener",
+      "synonyms": [
+        "POST /listener/resourceSpecificationCreateEvent",
+        "tmf.tmf634.listener.resourcespecificationcreateevent.v1"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "tmf:resource/listener",
+      "narrower": [],
+      "source_refs": [
+        "TM Forum Open APIs",
+        "TMF634"
+      ],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "tmf:intent/tmf634/listener.resourcespecificationdeleteevent",
+      "preferred_term": "resourcespecificationdeleteevent listener",
+      "synonyms": [
+        "POST /listener/resourceSpecificationDeleteEvent",
+        "tmf.tmf634.listener.resourcespecificationdeleteevent.v1"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "tmf:resource/listener",
+      "narrower": [],
+      "source_refs": [
+        "TM Forum Open APIs",
+        "TMF634"
+      ],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "tmf:intent/tmf634/listener.resourcespecificationstatuschangeevent",
+      "preferred_term": "resourcespecificationstatuschangeevent listener",
+      "synonyms": [
+        "POST /listener/resourceSpecificationStatusChangeEvent",
+        "tmf.tmf634.listener.resourcespecificationstatuschangeevent.v1"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "tmf:resource/listener",
+      "narrower": [],
+      "source_refs": [
+        "TM Forum Open APIs",
+        "TMF634"
+      ],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "tmf:intent/tmf634/resourcecandidate.createresourcecandidate",
+      "preferred_term": "createresourcecandidate",
+      "synonyms": [
+        "POST /resourceCandidate",
+        "tmf.tmf634.resourcecandidate.createresourcecandidate.v1"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "tmf:resource/resourcecandidate",
+      "narrower": [],
+      "source_refs": [
+        "TM Forum Open APIs",
+        "TMF634"
+      ],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "tmf:intent/tmf634/resourcecandidate.deleteresourcecandidate",
+      "preferred_term": "deleteresourcecandidate",
+      "synonyms": [
+        "DELETE /resourceCandidate/{id}",
+        "tmf.tmf634.resourcecandidate.deleteresourcecandidate.v1"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "tmf:resource/resourcecandidate",
+      "narrower": [],
+      "source_refs": [
+        "TM Forum Open APIs",
+        "TMF634"
+      ],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "tmf:intent/tmf634/resourcecandidate.listresourcecandidate",
+      "preferred_term": "listresourcecandidate",
+      "synonyms": [
+        "GET /resourceCandidate",
+        "tmf.tmf634.resourcecandidate.listresourcecandidate.v1"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "tmf:resource/resourcecandidate",
+      "narrower": [],
+      "source_refs": [
+        "TM Forum Open APIs",
+        "TMF634"
+      ],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "tmf:intent/tmf634/resourcecandidate.patchresourcecandidate",
+      "preferred_term": "patchresourcecandidate",
+      "synonyms": [
+        "PATCH /resourceCandidate/{id}",
+        "tmf.tmf634.resourcecandidate.patchresourcecandidate.v1"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "tmf:resource/resourcecandidate",
+      "narrower": [],
+      "source_refs": [
+        "TM Forum Open APIs",
+        "TMF634"
+      ],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "tmf:intent/tmf634/resourcecandidate.retrieveresourcecandidate",
+      "preferred_term": "retrieveresourcecandidate",
+      "synonyms": [
+        "GET /resourceCandidate/{id}",
+        "tmf.tmf634.resourcecandidate.retrieveresourcecandidate.v1"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "tmf:resource/resourcecandidate",
+      "narrower": [],
+      "source_refs": [
+        "TM Forum Open APIs",
+        "TMF634"
+      ],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "tmf:intent/tmf634/resourcecatalog.createresourcecatalog",
+      "preferred_term": "createresourcecatalog",
+      "synonyms": [
+        "POST /resourceCatalog",
+        "tmf.tmf634.resourcecatalog.createresourcecatalog.v1"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "tmf:resource/resourcecatalog",
+      "narrower": [],
+      "source_refs": [
+        "TM Forum Open APIs",
+        "TMF634"
+      ],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "tmf:intent/tmf634/resourcecatalog.deleteresourcecatalog",
+      "preferred_term": "deleteresourcecatalog",
+      "synonyms": [
+        "DELETE /resourceCatalog/{id}",
+        "tmf.tmf634.resourcecatalog.deleteresourcecatalog.v1"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "tmf:resource/resourcecatalog",
+      "narrower": [],
+      "source_refs": [
+        "TM Forum Open APIs",
+        "TMF634"
+      ],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "tmf:intent/tmf634/resourcecatalog.listresourcecatalog",
+      "preferred_term": "listresourcecatalog",
+      "synonyms": [
+        "GET /resourceCatalog",
+        "tmf.tmf634.resourcecatalog.listresourcecatalog.v1"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "tmf:resource/resourcecatalog",
+      "narrower": [],
+      "source_refs": [
+        "TM Forum Open APIs",
+        "TMF634"
+      ],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "tmf:intent/tmf634/resourcecatalog.patchresourcecatalog",
+      "preferred_term": "patchresourcecatalog",
+      "synonyms": [
+        "PATCH /resourceCatalog/{id}",
+        "tmf.tmf634.resourcecatalog.patchresourcecatalog.v1"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "tmf:resource/resourcecatalog",
+      "narrower": [],
+      "source_refs": [
+        "TM Forum Open APIs",
+        "TMF634"
+      ],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "tmf:intent/tmf634/resourcecatalog.retrieveresourcecatalog",
+      "preferred_term": "retrieveresourcecatalog",
+      "synonyms": [
+        "GET /resourceCatalog/{id}",
+        "tmf.tmf634.resourcecatalog.retrieveresourcecatalog.v1"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "tmf:resource/resourcecatalog",
+      "narrower": [],
+      "source_refs": [
+        "TM Forum Open APIs",
+        "TMF634"
+      ],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "tmf:intent/tmf634/resourcecategory.createresourcecategory",
+      "preferred_term": "createresourcecategory",
+      "synonyms": [
+        "POST /resourceCategory",
+        "tmf.tmf634.resourcecategory.createresourcecategory.v1"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "tmf:resource/resourcecategory",
+      "narrower": [],
+      "source_refs": [
+        "TM Forum Open APIs",
+        "TMF634"
+      ],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "tmf:intent/tmf634/resourcecategory.deleteresourcecategory",
+      "preferred_term": "deleteresourcecategory",
+      "synonyms": [
+        "DELETE /resourceCategory/{id}",
+        "tmf.tmf634.resourcecategory.deleteresourcecategory.v1"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "tmf:resource/resourcecategory",
+      "narrower": [],
+      "source_refs": [
+        "TM Forum Open APIs",
+        "TMF634"
+      ],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "tmf:intent/tmf634/resourcecategory.listresourcecategory",
+      "preferred_term": "listresourcecategory",
+      "synonyms": [
+        "GET /resourceCategory",
+        "tmf.tmf634.resourcecategory.listresourcecategory.v1"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "tmf:resource/resourcecategory",
+      "narrower": [],
+      "source_refs": [
+        "TM Forum Open APIs",
+        "TMF634"
+      ],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "tmf:intent/tmf634/resourcecategory.patchresourcecategory",
+      "preferred_term": "patchresourcecategory",
+      "synonyms": [
+        "PATCH /resourceCategory/{id}",
+        "tmf.tmf634.resourcecategory.patchresourcecategory.v1"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "tmf:resource/resourcecategory",
+      "narrower": [],
+      "source_refs": [
+        "TM Forum Open APIs",
+        "TMF634"
+      ],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "tmf:intent/tmf634/resourcecategory.retrieveresourcecategory",
+      "preferred_term": "retrieveresourcecategory",
+      "synonyms": [
+        "GET /resourceCategory/{id}",
+        "tmf.tmf634.resourcecategory.retrieveresourcecategory.v1"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "tmf:resource/resourcecategory",
+      "narrower": [],
+      "source_refs": [
+        "TM Forum Open APIs",
+        "TMF634"
+      ],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "tmf:intent/tmf634/resourcespecification.createresourcespecification",
+      "preferred_term": "createresourcespecification",
+      "synonyms": [
+        "POST /resourceSpecification",
+        "tmf.tmf634.resourcespecification.createresourcespecification.v1"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "tmf:resource/resourcespecification",
+      "narrower": [],
+      "source_refs": [
+        "TM Forum Open APIs",
+        "TMF634"
+      ],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "tmf:intent/tmf634/resourcespecification.deleteresourcespecification",
+      "preferred_term": "deleteresourcespecification",
+      "synonyms": [
+        "DELETE /resourceSpecification/{id}",
+        "tmf.tmf634.resourcespecification.deleteresourcespecification.v1"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "tmf:resource/resourcespecification",
+      "narrower": [],
+      "source_refs": [
+        "TM Forum Open APIs",
+        "TMF634"
+      ],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "tmf:intent/tmf634/resourcespecification.listresourcespecification",
+      "preferred_term": "listresourcespecification",
+      "synonyms": [
+        "GET /resourceSpecification",
+        "tmf.tmf634.resourcespecification.listresourcespecification.v1"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "tmf:resource/resourcespecification",
+      "narrower": [],
+      "source_refs": [
+        "TM Forum Open APIs",
+        "TMF634"
+      ],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "tmf:intent/tmf634/resourcespecification.patchresourcespecification",
+      "preferred_term": "patchresourcespecification",
+      "synonyms": [
+        "PATCH /resourceSpecification/{id}",
+        "tmf.tmf634.resourcespecification.patchresourcespecification.v1"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "tmf:resource/resourcespecification",
+      "narrower": [],
+      "source_refs": [
+        "TM Forum Open APIs",
+        "TMF634"
+      ],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "tmf:intent/tmf634/resourcespecification.retrieveresourcespecification",
+      "preferred_term": "retrieveresourcespecification",
+      "synonyms": [
+        "GET /resourceSpecification/{id}",
+        "tmf.tmf634.resourcespecification.retrieveresourcespecification.v1"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "tmf:resource/resourcespecification",
+      "narrower": [],
+      "source_refs": [
+        "TM Forum Open APIs",
+        "TMF634"
+      ],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "tmf:intent/tmf639/hub.registerlistener",
+      "preferred_term": "registerlistener hub",
+      "synonyms": [
+        "POST /hub",
+        "tmf.tmf639.hub.registerlistener.v1"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "tmf:resource/hub",
+      "narrower": [],
+      "source_refs": [
+        "TM Forum Open APIs",
+        "TMF639"
+      ],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "tmf:intent/tmf639/hub.unregisterlistener",
+      "preferred_term": "unregisterlistener hub",
+      "synonyms": [
+        "DELETE /hub/{id}",
+        "tmf.tmf639.hub.unregisterlistener.v1"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "tmf:resource/hub",
+      "narrower": [],
+      "source_refs": [
+        "TM Forum Open APIs",
+        "TMF639"
+      ],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "tmf:intent/tmf639/listener.listentoresourceattributevaluechangeevent",
+      "preferred_term": "listentoresourceattributevaluechangeevent listener",
+      "synonyms": [
+        "POST /listener/resourceAttributeValueChangeEvent",
+        "tmf.tmf639.listener.listentoresourceattributevaluechangeevent.v1"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "tmf:resource/listener",
+      "narrower": [],
+      "source_refs": [
+        "TM Forum Open APIs",
+        "TMF639"
+      ],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "tmf:intent/tmf639/listener.listentoresourcecreateevent",
+      "preferred_term": "listentoresourcecreateevent listener",
+      "synonyms": [
+        "POST /listener/resourceCreateEvent",
+        "tmf.tmf639.listener.listentoresourcecreateevent.v1"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "tmf:resource/listener",
+      "narrower": [],
+      "source_refs": [
+        "TM Forum Open APIs",
+        "TMF639"
+      ],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "tmf:intent/tmf639/listener.listentoresourcedeleteevent",
+      "preferred_term": "listentoresourcedeleteevent listener",
+      "synonyms": [
+        "POST /listener/resourceDeleteEvent",
+        "tmf.tmf639.listener.listentoresourcedeleteevent.v1"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "tmf:resource/listener",
+      "narrower": [],
+      "source_refs": [
+        "TM Forum Open APIs",
+        "TMF639"
+      ],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "tmf:intent/tmf639/listener.listentoresourcestatechangeevent",
+      "preferred_term": "listentoresourcestatechangeevent listener",
+      "synonyms": [
+        "POST /listener/resourceStateChangeEvent",
+        "tmf.tmf639.listener.listentoresourcestatechangeevent.v1"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "tmf:resource/listener",
+      "narrower": [],
+      "source_refs": [
+        "TM Forum Open APIs",
+        "TMF639"
+      ],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "tmf:intent/tmf639/resource.createresource",
+      "preferred_term": "createresource",
+      "synonyms": [
+        "POST /resource",
+        "tmf.tmf639.resource.createresource.v1"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "tmf:resource/resource",
+      "narrower": [],
+      "source_refs": [
+        "TM Forum Open APIs",
+        "TMF639"
+      ],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "tmf:intent/tmf639/resource.deleteresource",
+      "preferred_term": "deleteresource",
+      "synonyms": [
+        "DELETE /resource/{id}",
+        "tmf.tmf639.resource.deleteresource.v1"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "tmf:resource/resource",
+      "narrower": [],
+      "source_refs": [
+        "TM Forum Open APIs",
+        "TMF639"
+      ],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "tmf:intent/tmf639/resource.listresource",
+      "preferred_term": "listresource",
+      "synonyms": [
+        "GET /resource",
+        "tmf.tmf639.resource.listresource.v1"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "tmf:resource/resource",
+      "narrower": [],
+      "source_refs": [
+        "TM Forum Open APIs",
+        "TMF639"
+      ],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "tmf:intent/tmf639/resource.patchresource",
+      "preferred_term": "patchresource",
+      "synonyms": [
+        "PATCH /resource/{id}",
+        "tmf.tmf639.resource.patchresource.v1"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "tmf:resource/resource",
+      "narrower": [],
+      "source_refs": [
+        "TM Forum Open APIs",
+        "TMF639"
+      ],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "tmf:intent/tmf639/resource.retrieveresource",
+      "preferred_term": "retrieveresource",
+      "synonyms": [
+        "GET /resource/{id}",
+        "tmf.tmf639.resource.retrieveresource.v1"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "tmf:resource/resource",
+      "narrower": [],
+      "source_refs": [
+        "TM Forum Open APIs",
+        "TMF639"
+      ],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "tmf:intent/tmf642/ackalarm.createackalarm",
+      "preferred_term": "createackalarm",
+      "synonyms": [
+        "POST /ackAlarm",
+        "tmf.tmf642.ackalarm.createackalarm.v1"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "tmf:resource/ackalarm",
+      "narrower": [],
+      "source_refs": [
+        "TM Forum Open APIs",
+        "TMF642"
+      ],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "tmf:intent/tmf642/ackalarm.listackalarm",
+      "preferred_term": "listackalarm",
+      "synonyms": [
+        "GET /ackAlarm",
+        "tmf.tmf642.ackalarm.listackalarm.v1"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "tmf:resource/ackalarm",
+      "narrower": [],
+      "source_refs": [
+        "TM Forum Open APIs",
+        "TMF642"
+      ],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "tmf:intent/tmf642/ackalarm.retrieveackalarm",
+      "preferred_term": "retrieveackalarm",
+      "synonyms": [
+        "GET /ackAlarm/{id}",
+        "tmf.tmf642.ackalarm.retrieveackalarm.v1"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "tmf:resource/ackalarm",
+      "narrower": [],
+      "source_refs": [
+        "TM Forum Open APIs",
+        "TMF642"
+      ],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "tmf:intent/tmf642/alarm.createalarm",
+      "preferred_term": "createalarm",
+      "synonyms": [
+        "POST /alarm",
+        "tmf.tmf642.alarm.createalarm.v1"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "tmf:resource/alarm",
+      "narrower": [],
+      "source_refs": [
+        "TM Forum Open APIs",
+        "TMF642"
+      ],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "tmf:intent/tmf642/alarm.deletealarm",
+      "preferred_term": "deletealarm",
+      "synonyms": [
+        "DELETE /alarm/{id}",
+        "tmf.tmf642.alarm.deletealarm.v1"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "tmf:resource/alarm",
+      "narrower": [],
+      "source_refs": [
+        "TM Forum Open APIs",
+        "TMF642"
+      ],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "tmf:intent/tmf642/alarm.listalarm",
+      "preferred_term": "listalarm",
+      "synonyms": [
+        "GET /alarm",
+        "tmf.tmf642.alarm.listalarm.v1"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "tmf:resource/alarm",
+      "narrower": [],
+      "source_refs": [
+        "TM Forum Open APIs",
+        "TMF642"
+      ],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "tmf:intent/tmf642/alarm.patchalarm",
+      "preferred_term": "patchalarm",
+      "synonyms": [
+        "PATCH /alarm/{id}",
+        "tmf.tmf642.alarm.patchalarm.v1"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "tmf:resource/alarm",
+      "narrower": [],
+      "source_refs": [
+        "TM Forum Open APIs",
+        "TMF642"
+      ],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "tmf:intent/tmf642/alarm.retrievealarm",
+      "preferred_term": "retrievealarm",
+      "synonyms": [
+        "GET /alarm/{id}",
+        "tmf.tmf642.alarm.retrievealarm.v1"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "tmf:resource/alarm",
+      "narrower": [],
+      "source_refs": [
+        "TM Forum Open APIs",
+        "TMF642"
+      ],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "tmf:intent/tmf642/clearalarm.createclearalarm",
+      "preferred_term": "createclearalarm",
+      "synonyms": [
+        "POST /clearAlarm",
+        "tmf.tmf642.clearalarm.createclearalarm.v1"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "tmf:resource/clearalarm",
+      "narrower": [],
+      "source_refs": [
+        "TM Forum Open APIs",
+        "TMF642"
+      ],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "tmf:intent/tmf642/clearalarm.listclearalarm",
+      "preferred_term": "listclearalarm",
+      "synonyms": [
+        "GET /clearAlarm",
+        "tmf.tmf642.clearalarm.listclearalarm.v1"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "tmf:resource/clearalarm",
+      "narrower": [],
+      "source_refs": [
+        "TM Forum Open APIs",
+        "TMF642"
+      ],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "tmf:intent/tmf642/clearalarm.retrieveclearalarm",
+      "preferred_term": "retrieveclearalarm",
+      "synonyms": [
+        "GET /clearAlarm/{id}",
+        "tmf.tmf642.clearalarm.retrieveclearalarm.v1"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "tmf:resource/clearalarm",
+      "narrower": [],
+      "source_refs": [
+        "TM Forum Open APIs",
+        "TMF642"
+      ],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "tmf:intent/tmf642/commentalarm.createcommentalarm",
+      "preferred_term": "createcommentalarm",
+      "synonyms": [
+        "POST /commentAlarm",
+        "tmf.tmf642.commentalarm.createcommentalarm.v1"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "tmf:resource/commentalarm",
+      "narrower": [],
+      "source_refs": [
+        "TM Forum Open APIs",
+        "TMF642"
+      ],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "tmf:intent/tmf642/commentalarm.listcommentalarm",
+      "preferred_term": "listcommentalarm",
+      "synonyms": [
+        "GET /commentAlarm",
+        "tmf.tmf642.commentalarm.listcommentalarm.v1"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "tmf:resource/commentalarm",
+      "narrower": [],
+      "source_refs": [
+        "TM Forum Open APIs",
+        "TMF642"
+      ],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "tmf:intent/tmf642/commentalarm.retrievecommentalarm",
+      "preferred_term": "retrievecommentalarm",
+      "synonyms": [
+        "GET /commentAlarm/{id}",
+        "tmf.tmf642.commentalarm.retrievecommentalarm.v1"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "tmf:resource/commentalarm",
+      "narrower": [],
+      "source_refs": [
+        "TM Forum Open APIs",
+        "TMF642"
+      ],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "tmf:intent/tmf642/groupalarm.creategroupalarm",
+      "preferred_term": "creategroupalarm",
+      "synonyms": [
+        "POST /groupAlarm",
+        "tmf.tmf642.groupalarm.creategroupalarm.v1"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "tmf:resource/groupalarm",
+      "narrower": [],
+      "source_refs": [
+        "TM Forum Open APIs",
+        "TMF642"
+      ],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "tmf:intent/tmf642/groupalarm.listgroupalarm",
+      "preferred_term": "listgroupalarm",
+      "synonyms": [
+        "GET /groupAlarm",
+        "tmf.tmf642.groupalarm.listgroupalarm.v1"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "tmf:resource/groupalarm",
+      "narrower": [],
+      "source_refs": [
+        "TM Forum Open APIs",
+        "TMF642"
+      ],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "tmf:intent/tmf642/groupalarm.retrievegroupalarm",
+      "preferred_term": "retrievegroupalarm",
+      "synonyms": [
+        "GET /groupAlarm/{id}",
+        "tmf.tmf642.groupalarm.retrievegroupalarm.v1"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "tmf:resource/groupalarm",
+      "narrower": [],
+      "source_refs": [
+        "TM Forum Open APIs",
+        "TMF642"
+      ],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "tmf:intent/tmf642/hub.createhub",
+      "preferred_term": "createhub",
+      "synonyms": [
+        "POST /hub",
+        "tmf.tmf642.hub.createhub.v1"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "tmf:resource/hub",
+      "narrower": [],
+      "source_refs": [
+        "TM Forum Open APIs",
+        "TMF642"
+      ],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "tmf:intent/tmf642/hub.hubdelete",
+      "preferred_term": "hubdelete",
+      "synonyms": [
+        "DELETE /hub/{id}",
+        "tmf.tmf642.hub.hubdelete.v1"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "tmf:resource/hub",
+      "narrower": [],
+      "source_refs": [
+        "TM Forum Open APIs",
+        "TMF642"
+      ],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "tmf:intent/tmf642/hub.hubget",
+      "preferred_term": "hubget",
+      "synonyms": [
+        "GET /hub/{id}",
+        "tmf.tmf642.hub.hubget.v1"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "tmf:resource/hub",
+      "narrower": [],
+      "source_refs": [
+        "TM Forum Open APIs",
+        "TMF642"
+      ],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "tmf:intent/tmf642/listener.ackalarmcreateevent",
+      "preferred_term": "ackalarmcreateevent listener",
+      "synonyms": [
+        "POST /listener/ackAlarmCreateEvent",
+        "tmf.tmf642.listener.ackalarmcreateevent.v1"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "tmf:resource/listener",
+      "narrower": [],
+      "source_refs": [
+        "TM Forum Open APIs",
+        "TMF642"
+      ],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "tmf:intent/tmf642/listener.ackalarmstatechangeevent",
+      "preferred_term": "ackalarmstatechangeevent listener",
+      "synonyms": [
+        "POST /listener/ackAlarmStateChangeEvent",
+        "tmf.tmf642.listener.ackalarmstatechangeevent.v1"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "tmf:resource/listener",
+      "narrower": [],
+      "source_refs": [
+        "TM Forum Open APIs",
+        "TMF642"
+      ],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "tmf:intent/tmf642/listener.alarmattributevaluechangeevent",
+      "preferred_term": "alarmattributevaluechangeevent listener",
+      "synonyms": [
+        "POST /listener/alarmAttributeValueChangeEvent",
+        "tmf.tmf642.listener.alarmattributevaluechangeevent.v1"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "tmf:resource/listener",
+      "narrower": [],
+      "source_refs": [
+        "TM Forum Open APIs",
+        "TMF642"
+      ],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "tmf:intent/tmf642/listener.alarmcreateevent",
+      "preferred_term": "alarmcreateevent listener",
+      "synonyms": [
+        "POST /listener/alarmCreateEvent",
+        "tmf.tmf642.listener.alarmcreateevent.v1"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "tmf:resource/listener",
+      "narrower": [],
+      "source_refs": [
+        "TM Forum Open APIs",
+        "TMF642"
+      ],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "tmf:intent/tmf642/listener.alarmdeleteevent",
+      "preferred_term": "alarmdeleteevent listener",
+      "synonyms": [
+        "POST /listener/alarmDeleteEvent",
+        "tmf.tmf642.listener.alarmdeleteevent.v1"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "tmf:resource/listener",
+      "narrower": [],
+      "source_refs": [
+        "TM Forum Open APIs",
+        "TMF642"
+      ],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "tmf:intent/tmf642/listener.alarmstatechangeevent",
+      "preferred_term": "alarmstatechangeevent listener",
+      "synonyms": [
+        "POST /listener/alarmStateChangeEvent",
+        "tmf.tmf642.listener.alarmstatechangeevent.v1"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "tmf:resource/listener",
+      "narrower": [],
+      "source_refs": [
+        "TM Forum Open APIs",
+        "TMF642"
+      ],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "tmf:intent/tmf642/listener.clearalarmcreateevent",
+      "preferred_term": "clearalarmcreateevent listener",
+      "synonyms": [
+        "POST /listener/clearAlarmCreateEvent",
+        "tmf.tmf642.listener.clearalarmcreateevent.v1"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "tmf:resource/listener",
+      "narrower": [],
+      "source_refs": [
+        "TM Forum Open APIs",
+        "TMF642"
+      ],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "tmf:intent/tmf642/listener.clearalarmstatechangeevent",
+      "preferred_term": "clearalarmstatechangeevent listener",
+      "synonyms": [
+        "POST /listener/clearAlarmStateChangeEvent",
+        "tmf.tmf642.listener.clearalarmstatechangeevent.v1"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "tmf:resource/listener",
+      "narrower": [],
+      "source_refs": [
+        "TM Forum Open APIs",
+        "TMF642"
+      ],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "tmf:intent/tmf642/listener.commentalarmcreateevent",
+      "preferred_term": "commentalarmcreateevent listener",
+      "synonyms": [
+        "POST /listener/commentAlarmCreateEvent",
+        "tmf.tmf642.listener.commentalarmcreateevent.v1"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "tmf:resource/listener",
+      "narrower": [],
+      "source_refs": [
+        "TM Forum Open APIs",
+        "TMF642"
+      ],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "tmf:intent/tmf642/listener.commentalarmstatechangeevent",
+      "preferred_term": "commentalarmstatechangeevent listener",
+      "synonyms": [
+        "POST /listener/commentAlarmStateChangeEvent",
+        "tmf.tmf642.listener.commentalarmstatechangeevent.v1"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "tmf:resource/listener",
+      "narrower": [],
+      "source_refs": [
+        "TM Forum Open APIs",
+        "TMF642"
+      ],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "tmf:intent/tmf642/listener.groupalarmcreateevent",
+      "preferred_term": "groupalarmcreateevent listener",
+      "synonyms": [
+        "POST /listener/groupAlarmCreateEvent",
+        "tmf.tmf642.listener.groupalarmcreateevent.v1"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "tmf:resource/listener",
+      "narrower": [],
+      "source_refs": [
+        "TM Forum Open APIs",
+        "TMF642"
+      ],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "tmf:intent/tmf642/listener.groupalarmstatechangeevent",
+      "preferred_term": "groupalarmstatechangeevent listener",
+      "synonyms": [
+        "POST /listener/groupAlarmStateChangeEvent",
+        "tmf.tmf642.listener.groupalarmstatechangeevent.v1"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "tmf:resource/listener",
+      "narrower": [],
+      "source_refs": [
+        "TM Forum Open APIs",
+        "TMF642"
+      ],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "tmf:intent/tmf642/listener.unackalarmcreateevent",
+      "preferred_term": "unackalarmcreateevent listener",
+      "synonyms": [
+        "POST /listener/unAckAlarmCreateEvent",
+        "tmf.tmf642.listener.unackalarmcreateevent.v1"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "tmf:resource/listener",
+      "narrower": [],
+      "source_refs": [
+        "TM Forum Open APIs",
+        "TMF642"
+      ],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "tmf:intent/tmf642/listener.unackalarmstatechangeevent",
+      "preferred_term": "unackalarmstatechangeevent listener",
+      "synonyms": [
+        "POST /listener/unAckAlarmStateChangeEvent",
+        "tmf.tmf642.listener.unackalarmstatechangeevent.v1"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "tmf:resource/listener",
+      "narrower": [],
+      "source_refs": [
+        "TM Forum Open APIs",
+        "TMF642"
+      ],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "tmf:intent/tmf642/listener.ungroupalarmcreateevent",
+      "preferred_term": "ungroupalarmcreateevent listener",
+      "synonyms": [
+        "POST /listener/unGroupAlarmCreateEvent",
+        "tmf.tmf642.listener.ungroupalarmcreateevent.v1"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "tmf:resource/listener",
+      "narrower": [],
+      "source_refs": [
+        "TM Forum Open APIs",
+        "TMF642"
+      ],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "tmf:intent/tmf642/listener.ungroupalarmstatechangeevent",
+      "preferred_term": "ungroupalarmstatechangeevent listener",
+      "synonyms": [
+        "POST /listener/unGroupAlarmStateChangeEvent",
+        "tmf.tmf642.listener.ungroupalarmstatechangeevent.v1"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "tmf:resource/listener",
+      "narrower": [],
+      "source_refs": [
+        "TM Forum Open APIs",
+        "TMF642"
+      ],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "tmf:intent/tmf642/unackalarm.createunackalarm",
+      "preferred_term": "createunackalarm",
+      "synonyms": [
+        "POST /unAckAlarm",
+        "tmf.tmf642.unackalarm.createunackalarm.v1"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "tmf:resource/unackalarm",
+      "narrower": [],
+      "source_refs": [
+        "TM Forum Open APIs",
+        "TMF642"
+      ],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "tmf:intent/tmf642/unackalarm.listunackalarm",
+      "preferred_term": "listunackalarm",
+      "synonyms": [
+        "GET /unAckAlarm",
+        "tmf.tmf642.unackalarm.listunackalarm.v1"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "tmf:resource/unackalarm",
+      "narrower": [],
+      "source_refs": [
+        "TM Forum Open APIs",
+        "TMF642"
+      ],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "tmf:intent/tmf642/unackalarm.retrieveunackalarm",
+      "preferred_term": "retrieveunackalarm",
+      "synonyms": [
+        "GET /unAckAlarm/{id}",
+        "tmf.tmf642.unackalarm.retrieveunackalarm.v1"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "tmf:resource/unackalarm",
+      "narrower": [],
+      "source_refs": [
+        "TM Forum Open APIs",
+        "TMF642"
+      ],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "tmf:intent/tmf642/ungroupalarm.createungroupalarm",
+      "preferred_term": "createungroupalarm",
+      "synonyms": [
+        "POST /unGroupAlarm",
+        "tmf.tmf642.ungroupalarm.createungroupalarm.v1"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "tmf:resource/ungroupalarm",
+      "narrower": [],
+      "source_refs": [
+        "TM Forum Open APIs",
+        "TMF642"
+      ],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "tmf:intent/tmf642/ungroupalarm.listungroupalarm",
+      "preferred_term": "listungroupalarm",
+      "synonyms": [
+        "GET /unGroupAlarm",
+        "tmf.tmf642.ungroupalarm.listungroupalarm.v1"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "tmf:resource/ungroupalarm",
+      "narrower": [],
+      "source_refs": [
+        "TM Forum Open APIs",
+        "TMF642"
+      ],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "tmf:intent/tmf642/ungroupalarm.retrieveungroupalarm",
+      "preferred_term": "retrieveungroupalarm",
+      "synonyms": [
+        "GET /unGroupAlarm/{id}",
+        "tmf.tmf642.ungroupalarm.retrieveungroupalarm.v1"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "tmf:resource/ungroupalarm",
+      "narrower": [],
+      "source_refs": [
+        "TM Forum Open APIs",
+        "TMF642"
+      ],
+      "ner_provenance": null
+    }
+  ]
+}

@@ -97,6 +97,38 @@
       "path": "verticals/revolut-merchant-order-payment-surface-pack"
     },
     {
+      "snapshot_id": "ontology:tmf-core-seed-demo:v0.1.0",
+      "domain": "tmf-core-seed-demo",
+      "provider_id": "ontology:lane2:tmf-core-seed-demo",
+      "trust_tier": "Tier1",
+      "version": "0.1.0",
+      "path": "verticals/tmf-core-seed-demo-pack"
+    },
+    {
+      "snapshot_id": "ontology:tmf-intent-policy-bridge-surface-demo:v0.1.0",
+      "domain": "tmf-intent-policy-bridge-surface-demo",
+      "provider_id": "ontology:lane2:tmf-intent-policy-bridge-surface-demo",
+      "trust_tier": "Tier1",
+      "version": "0.1.0",
+      "path": "verticals/tmf-intent-policy-bridge-surface-demo-pack"
+    },
+    {
+      "snapshot_id": "ontology:tmf-resource-catalog-alarm-surface-demo:v0.1.0",
+      "domain": "tmf-resource-catalog-alarm-surface-demo",
+      "provider_id": "ontology:lane2:tmf-resource-catalog-alarm-surface-demo",
+      "trust_tier": "Tier1",
+      "version": "0.1.0",
+      "path": "verticals/tmf-resource-catalog-alarm-surface-demo-pack"
+    },
+    {
+      "snapshot_id": "ontology:tmf-service-inventory-order-surface-demo:v0.1.0",
+      "domain": "tmf-service-inventory-order-surface-demo",
+      "provider_id": "ontology:lane2:tmf-service-inventory-order-surface-demo",
+      "trust_tier": "Tier1",
+      "version": "0.1.0",
+      "path": "verticals/tmf-service-inventory-order-surface-demo-pack"
+    },
+    {
       "snapshot_id": "ontology:telco-reference:v0.1.0",
       "domain": "telco-reference",
       "provider_id": "ontology:pact-reference",

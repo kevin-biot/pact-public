@@ -1,0 +1,24 @@
+{
+  "id": "tmf-intent-policy-bridge-surface-demo-0.1.0",
+  "domain": "tmf-intent-policy-bridge-surface-demo",
+  "version": "0.1.0",
+  "providerId": "ontology:lane2:tmf-intent-policy-bridge-surface-demo",
+  "trustTier": "Tier1",
+  "policySnapshotId": "sha256:de93910b5a55669504e880f862be54015b611d8410d8cc16f5d3c3ec974f5116",
+  "files": {
+    "context": "sha256:9ce9b8c6cda7bcf318499066197949720ad442acfd63b2dac76394a64b667361",
+    "convergence": "sha256:c87e1553830642d96a72d153331dd4c1ce1a943eb23b64024695eb89313deebf",
+    "decision_space": "sha256:72016f91838430a747916bf73bc5b357d0baecb2bac077020d54c73435f7729e",
+    "intent_mappings": "sha256:8ae39aeadb42e245573978b34c27a2aaad6d7e9a093967538ba7a03a6998939f",
+    "patterns": "sha256:0bbdb039e965fcd9641af11becf361d38f7bdcd4ad61adb36cb79b76a5beb58e",
+    "shapes": "sha256:0d7ca29d9659338773d7bd60c42cf52d4a4b1de21bb85d8f82a819a72e3abd8c",
+    "thesaurus": "sha256:90acabeb7d13aa5023cbbcea8cdbf9ad7b4b73ea6b5aa3ac6bb121ca4680edad",
+    "thesaurus_local": "sha256:90306110983be1bad1a76812f4b90697580a7362f06d7e66b9372173135ba39f",
+    "vocab": "sha256:798e653e473de6b8f50f1c8c70671766977e1dfd15fe1772b950b67bb1d28ffc"
+  },
+  "precedence": [],
+  "denyWins": true,
+  "nbf": "2026-03-31T00:00:00Z",
+  "exp": "2030-03-31T00:00:00Z",
+  "revEpoch": 1
+}

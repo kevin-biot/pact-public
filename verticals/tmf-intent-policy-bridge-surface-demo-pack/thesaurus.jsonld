@@ -1,0 +1,374 @@
+{
+  "@context": {
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "tmf": "https://lane2.example/ontology/tmf/",
+    "dct": "http://purl.org/dc/terms/",
+    "source": "dct:source"
+  },
+  "@graph": [
+    {
+      "@id": "tmf:intent/tmf921/hub.createhub",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "createhub",
+      "skos:altLabel": [
+        "POST /hub",
+        "tmf.tmf921.hub.createhub.v1"
+      ],
+      "skos:broader": "tmf:resource/hub",
+      "source": [
+        "TM Forum Open APIs",
+        "TMF921"
+      ]
+    },
+    {
+      "@id": "tmf:intent/tmf921/hub.hubdelete",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "hubdelete",
+      "skos:altLabel": [
+        "DELETE /hub/{id}",
+        "tmf.tmf921.hub.hubdelete.v1"
+      ],
+      "skos:broader": "tmf:resource/hub",
+      "source": [
+        "TM Forum Open APIs",
+        "TMF921"
+      ]
+    },
+    {
+      "@id": "tmf:intent/tmf921/intent.createintent",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "createintent",
+      "skos:altLabel": [
+        "POST /intent",
+        "tmf.tmf921.intent.createintent.v1"
+      ],
+      "skos:broader": "tmf:resource/intent",
+      "source": [
+        "TM Forum Open APIs",
+        "TMF921"
+      ]
+    },
+    {
+      "@id": "tmf:intent/tmf921/intent.deleteintent",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "deleteintent",
+      "skos:altLabel": [
+        "DELETE /intent/{id}",
+        "tmf.tmf921.intent.deleteintent.v1"
+      ],
+      "skos:broader": "tmf:resource/intent",
+      "source": [
+        "TM Forum Open APIs",
+        "TMF921"
+      ]
+    },
+    {
+      "@id": "tmf:intent/tmf921/intent.deleteintentintentreport",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "deleteintentintentreport",
+      "skos:altLabel": [
+        "DELETE /intent/{intentId}/intentReport/{id}",
+        "tmf.tmf921.intent.deleteintentintentreport.v1"
+      ],
+      "skos:broader": "tmf:resource/intent",
+      "source": [
+        "TM Forum Open APIs",
+        "TMF921"
+      ]
+    },
+    {
+      "@id": "tmf:intent/tmf921/intent.listintent",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "listintent",
+      "skos:altLabel": [
+        "GET /intent",
+        "tmf.tmf921.intent.listintent.v1"
+      ],
+      "skos:broader": "tmf:resource/intent",
+      "source": [
+        "TM Forum Open APIs",
+        "TMF921"
+      ]
+    },
+    {
+      "@id": "tmf:intent/tmf921/intent.listintentintentreport",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "listintentintentreport",
+      "skos:altLabel": [
+        "GET /intent/{intentId}/intentReport",
+        "tmf.tmf921.intent.listintentintentreport.v1"
+      ],
+      "skos:broader": "tmf:resource/intent",
+      "source": [
+        "TM Forum Open APIs",
+        "TMF921"
+      ]
+    },
+    {
+      "@id": "tmf:intent/tmf921/intent.patchintent",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "patchintent",
+      "skos:altLabel": [
+        "PATCH /intent/{id}",
+        "tmf.tmf921.intent.patchintent.v1"
+      ],
+      "skos:broader": "tmf:resource/intent",
+      "source": [
+        "TM Forum Open APIs",
+        "TMF921"
+      ]
+    },
+    {
+      "@id": "tmf:intent/tmf921/intent.retrieveintent",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "retrieveintent",
+      "skos:altLabel": [
+        "GET /intent/{id}",
+        "tmf.tmf921.intent.retrieveintent.v1"
+      ],
+      "skos:broader": "tmf:resource/intent",
+      "source": [
+        "TM Forum Open APIs",
+        "TMF921"
+      ]
+    },
+    {
+      "@id": "tmf:intent/tmf921/intent.retrieveintentintentreport",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "retrieveintentintentreport",
+      "skos:altLabel": [
+        "GET /intent/{intentId}/intentReport/{id}",
+        "tmf.tmf921.intent.retrieveintentintentreport.v1"
+      ],
+      "skos:broader": "tmf:resource/intent",
+      "source": [
+        "TM Forum Open APIs",
+        "TMF921"
+      ]
+    },
+    {
+      "@id": "tmf:intent/tmf921/intentspecification.createintentspecification",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "createintentspecification",
+      "skos:altLabel": [
+        "POST /intentSpecification",
+        "tmf.tmf921.intentspecification.createintentspecification.v1"
+      ],
+      "skos:broader": "tmf:resource/intentspecification",
+      "source": [
+        "TM Forum Open APIs",
+        "TMF921"
+      ]
+    },
+    {
+      "@id": "tmf:intent/tmf921/intentspecification.deleteintentspecification",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "deleteintentspecification",
+      "skos:altLabel": [
+        "DELETE /intentSpecification/{id}",
+        "tmf.tmf921.intentspecification.deleteintentspecification.v1"
+      ],
+      "skos:broader": "tmf:resource/intentspecification",
+      "source": [
+        "TM Forum Open APIs",
+        "TMF921"
+      ]
+    },
+    {
+      "@id": "tmf:intent/tmf921/intentspecification.listintentspecification",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "listintentspecification",
+      "skos:altLabel": [
+        "GET /intentSpecification",
+        "tmf.tmf921.intentspecification.listintentspecification.v1"
+      ],
+      "skos:broader": "tmf:resource/intentspecification",
+      "source": [
+        "TM Forum Open APIs",
+        "TMF921"
+      ]
+    },
+    {
+      "@id": "tmf:intent/tmf921/intentspecification.patchintentspecification",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "patchintentspecification",
+      "skos:altLabel": [
+        "PATCH /intentSpecification/{id}",
+        "tmf.tmf921.intentspecification.patchintentspecification.v1"
+      ],
+      "skos:broader": "tmf:resource/intentspecification",
+      "source": [
+        "TM Forum Open APIs",
+        "TMF921"
+      ]
+    },
+    {
+      "@id": "tmf:intent/tmf921/intentspecification.retrieveintentspecification",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "retrieveintentspecification",
+      "skos:altLabel": [
+        "GET /intentSpecification/{id}",
+        "tmf.tmf921.intentspecification.retrieveintentspecification.v1"
+      ],
+      "skos:broader": "tmf:resource/intentspecification",
+      "source": [
+        "TM Forum Open APIs",
+        "TMF921"
+      ]
+    },
+    {
+      "@id": "tmf:intent/tmf921/listener.intentattributevaluechangeevent",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "intentattributevaluechangeevent listener",
+      "skos:altLabel": [
+        "POST /listener/intentAttributeValueChangeEvent",
+        "tmf.tmf921.listener.intentattributevaluechangeevent.v1"
+      ],
+      "skos:broader": "tmf:resource/listener",
+      "source": [
+        "TM Forum Open APIs",
+        "TMF921"
+      ]
+    },
+    {
+      "@id": "tmf:intent/tmf921/listener.intentcreateevent",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "intentcreateevent listener",
+      "skos:altLabel": [
+        "POST /listener/intentCreateEvent",
+        "tmf.tmf921.listener.intentcreateevent.v1"
+      ],
+      "skos:broader": "tmf:resource/listener",
+      "source": [
+        "TM Forum Open APIs",
+        "TMF921"
+      ]
+    },
+    {
+      "@id": "tmf:intent/tmf921/listener.intentdeleteevent",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "intentdeleteevent listener",
+      "skos:altLabel": [
+        "POST /listener/intentDeleteEvent",
+        "tmf.tmf921.listener.intentdeleteevent.v1"
+      ],
+      "skos:broader": "tmf:resource/listener",
+      "source": [
+        "TM Forum Open APIs",
+        "TMF921"
+      ]
+    },
+    {
+      "@id": "tmf:intent/tmf921/listener.intentreportattributevaluechangeevent",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "intentreportattributevaluechangeevent listener",
+      "skos:altLabel": [
+        "POST /listener/intentReportAttributeValueChangeEvent",
+        "tmf.tmf921.listener.intentreportattributevaluechangeevent.v1"
+      ],
+      "skos:broader": "tmf:resource/listener",
+      "source": [
+        "TM Forum Open APIs",
+        "TMF921"
+      ]
+    },
+    {
+      "@id": "tmf:intent/tmf921/listener.intentreportcreateevent",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "intentreportcreateevent listener",
+      "skos:altLabel": [
+        "POST /listener/intentReportCreateEvent",
+        "tmf.tmf921.listener.intentreportcreateevent.v1"
+      ],
+      "skos:broader": "tmf:resource/listener",
+      "source": [
+        "TM Forum Open APIs",
+        "TMF921"
+      ]
+    },
+    {
+      "@id": "tmf:intent/tmf921/listener.intentreportdeleteevent",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "intentreportdeleteevent listener",
+      "skos:altLabel": [
+        "POST /listener/intentReportDeleteEvent",
+        "tmf.tmf921.listener.intentreportdeleteevent.v1"
+      ],
+      "skos:broader": "tmf:resource/listener",
+      "source": [
+        "TM Forum Open APIs",
+        "TMF921"
+      ]
+    },
+    {
+      "@id": "tmf:intent/tmf921/listener.intentspecificationattributevaluechangeevent",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "intentspecificationattributevaluechangeevent listener",
+      "skos:altLabel": [
+        "POST /listener/intentSpecificationAttributeValueChangeEvent",
+        "tmf.tmf921.listener.intentspecificationattributevaluechangeevent.v1"
+      ],
+      "skos:broader": "tmf:resource/listener",
+      "source": [
+        "TM Forum Open APIs",
+        "TMF921"
+      ]
+    },
+    {
+      "@id": "tmf:intent/tmf921/listener.intentspecificationcreateevent",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "intentspecificationcreateevent listener",
+      "skos:altLabel": [
+        "POST /listener/intentSpecificationCreateEvent",
+        "tmf.tmf921.listener.intentspecificationcreateevent.v1"
+      ],
+      "skos:broader": "tmf:resource/listener",
+      "source": [
+        "TM Forum Open APIs",
+        "TMF921"
+      ]
+    },
+    {
+      "@id": "tmf:intent/tmf921/listener.intentspecificationdeleteevent",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "intentspecificationdeleteevent listener",
+      "skos:altLabel": [
+        "POST /listener/intentSpecificationDeleteEvent",
+        "tmf.tmf921.listener.intentspecificationdeleteevent.v1"
+      ],
+      "skos:broader": "tmf:resource/listener",
+      "source": [
+        "TM Forum Open APIs",
+        "TMF921"
+      ]
+    },
+    {
+      "@id": "tmf:intent/tmf921/listener.intentspecificationstatuschangeevent",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "intentspecificationstatuschangeevent listener",
+      "skos:altLabel": [
+        "POST /listener/intentSpecificationStatusChangeEvent",
+        "tmf.tmf921.listener.intentspecificationstatuschangeevent.v1"
+      ],
+      "skos:broader": "tmf:resource/listener",
+      "source": [
+        "TM Forum Open APIs",
+        "TMF921"
+      ]
+    },
+    {
+      "@id": "tmf:intent/tmf921/listener.intentstatuschangeevent",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "intentstatuschangeevent listener",
+      "skos:altLabel": [
+        "POST /listener/intentStatusChangeEvent",
+        "tmf.tmf921.listener.intentstatuschangeevent.v1"
+      ],
+      "skos:broader": "tmf:resource/listener",
+      "source": [
+        "TM Forum Open APIs",
+        "TMF921"
+      ]
+    }
+  ]
+}

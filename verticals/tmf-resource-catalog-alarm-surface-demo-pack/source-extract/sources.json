@@ -1,0 +1,23 @@
+{
+  "domain": "tmf-resource-catalog-alarm-surface-demo",
+  "lane": "tmf-openapi-seed-surface",
+  "sources": [
+    {
+      "standard": "TM Forum Open APIs",
+      "tmf_id": "TMF634",
+      "file": "docs/tmf-apis/TMF634-Resource_Catalog_Management-v5.0.0.oas.yaml"
+    },
+    {
+      "standard": "TM Forum Open APIs",
+      "tmf_id": "TMF639",
+      "file": "docs/tmf-apis/TMF639.json"
+    },
+    {
+      "standard": "TM Forum Open APIs",
+      "tmf_id": "TMF642",
+      "file": "docs/tmf-apis/TMF642_Alarm_v5.0.1.oas.yaml"
+    }
+  ],
+  "synthesis_seed_ref": "docs/architecture/artifacts/schema-sets/telco/mappings/tmf-synthesis-seed.json",
+  "generated_at_utc": "2026-03-31T01:29:40Z"
+}

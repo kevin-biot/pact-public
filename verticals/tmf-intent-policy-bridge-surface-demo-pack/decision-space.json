@@ -1,0 +1,899 @@
+{
+  "schema_version": "1.0",
+  "domain": "tmf-intent-policy-bridge-surface-demo",
+  "pack_id": "tmf-intent-policy-bridge-surface-demo-0.1.0",
+  "version": "0.1.0",
+  "out_of_scope_behavior": "escalate",
+  "state_model": {
+    "states": [
+      "ingress",
+      "validated",
+      "executed",
+      "failed",
+      "escalated"
+    ],
+    "initial_state": "ingress",
+    "terminal_states": [
+      "executed",
+      "failed",
+      "escalated"
+    ]
+  },
+  "admissible_intents": [
+    {
+      "intent_class": "tmf.tmf921.hub.createhub.v1",
+      "allowed_states": [
+        "ingress",
+        "validated"
+      ],
+      "required_fact_types": [
+        "tmf_operation"
+      ],
+      "transition_ids": [
+        "validate_tmf921_hub_createhub",
+        "execute_tmf921_hub_createhub"
+      ]
+    },
+    {
+      "intent_class": "tmf.tmf921.hub.hubdelete.v1",
+      "allowed_states": [
+        "ingress",
+        "validated"
+      ],
+      "required_fact_types": [
+        "tmf_operation"
+      ],
+      "transition_ids": [
+        "validate_tmf921_hub_hubdelete",
+        "execute_tmf921_hub_hubdelete"
+      ]
+    },
+    {
+      "intent_class": "tmf.tmf921.intent.createintent.v1",
+      "allowed_states": [
+        "ingress",
+        "validated"
+      ],
+      "required_fact_types": [
+        "tmf_operation"
+      ],
+      "transition_ids": [
+        "validate_tmf921_intent_createintent",
+        "execute_tmf921_intent_createintent"
+      ]
+    },
+    {
+      "intent_class": "tmf.tmf921.intent.deleteintent.v1",
+      "allowed_states": [
+        "ingress",
+        "validated"
+      ],
+      "required_fact_types": [
+        "tmf_operation"
+      ],
+      "transition_ids": [
+        "validate_tmf921_intent_deleteintent",
+        "execute_tmf921_intent_deleteintent"
+      ]
+    },
+    {
+      "intent_class": "tmf.tmf921.intent.deleteintentintentreport.v1",
+      "allowed_states": [
+        "ingress",
+        "validated"
+      ],
+      "required_fact_types": [
+        "tmf_operation"
+      ],
+      "transition_ids": [
+        "validate_tmf921_intent_deleteintentintentreport",
+        "execute_tmf921_intent_deleteintentintentreport"
+      ]
+    },
+    {
+      "intent_class": "tmf.tmf921.intent.listintent.v1",
+      "allowed_states": [
+        "ingress",
+        "validated"
+      ],
+      "required_fact_types": [
+        "tmf_operation"
+      ],
+      "transition_ids": [
+        "validate_tmf921_intent_listintent",
+        "execute_tmf921_intent_listintent"
+      ]
+    },
+    {
+      "intent_class": "tmf.tmf921.intent.listintentintentreport.v1",
+      "allowed_states": [
+        "ingress",
+        "validated"
+      ],
+      "required_fact_types": [
+        "tmf_operation"
+      ],
+      "transition_ids": [
+        "validate_tmf921_intent_listintentintentreport",
+        "execute_tmf921_intent_listintentintentreport"
+      ]
+    },
+    {
+      "intent_class": "tmf.tmf921.intent.patchintent.v1",
+      "allowed_states": [
+        "ingress",
+        "validated"
+      ],
+      "required_fact_types": [
+        "tmf_operation"
+      ],
+      "transition_ids": [
+        "validate_tmf921_intent_patchintent",
+        "execute_tmf921_intent_patchintent"
+      ]
+    },
+    {
+      "intent_class": "tmf.tmf921.intent.retrieveintent.v1",
+      "allowed_states": [
+        "ingress",
+        "validated"
+      ],
+      "required_fact_types": [
+        "tmf_operation"
+      ],
+      "transition_ids": [
+        "validate_tmf921_intent_retrieveintent",
+        "execute_tmf921_intent_retrieveintent"
+      ]
+    },
+    {
+      "intent_class": "tmf.tmf921.intent.retrieveintentintentreport.v1",
+      "allowed_states": [
+        "ingress",
+        "validated"
+      ],
+      "required_fact_types": [
+        "tmf_operation"
+      ],
+      "transition_ids": [
+        "validate_tmf921_intent_retrieveintentintentreport",
+        "execute_tmf921_intent_retrieveintentintentreport"
+      ]
+    },
+    {
+      "intent_class": "tmf.tmf921.intentspecification.createintentspecification.v1",
+      "allowed_states": [
+        "ingress",
+        "validated"
+      ],
+      "required_fact_types": [
+        "tmf_operation"
+      ],
+      "transition_ids": [
+        "validate_tmf921_intentspecification_createintentspecification",
+        "execute_tmf921_intentspecification_createintentspecification"
+      ]
+    },
+    {
+      "intent_class": "tmf.tmf921.intentspecification.deleteintentspecification.v1",
+      "allowed_states": [
+        "ingress",
+        "validated"
+      ],
+      "required_fact_types": [
+        "tmf_operation"
+      ],
+      "transition_ids": [
+        "validate_tmf921_intentspecification_deleteintentspecification",
+        "execute_tmf921_intentspecification_deleteintentspecification"
+      ]
+    },
+    {
+      "intent_class": "tmf.tmf921.intentspecification.listintentspecification.v1",
+      "allowed_states": [
+        "ingress",
+        "validated"
+      ],
+      "required_fact_types": [
+        "tmf_operation"
+      ],
+      "transition_ids": [
+        "validate_tmf921_intentspecification_listintentspecification",
+        "execute_tmf921_intentspecification_listintentspecification"
+      ]
+    },
+    {
+      "intent_class": "tmf.tmf921.intentspecification.patchintentspecification.v1",
+      "allowed_states": [
+        "ingress",
+        "validated"
+      ],
+      "required_fact_types": [
+        "tmf_operation"
+      ],
+      "transition_ids": [
+        "validate_tmf921_intentspecification_patchintentspecification",
+        "execute_tmf921_intentspecification_patchintentspecification"
+      ]
+    },
+    {
+      "intent_class": "tmf.tmf921.intentspecification.retrieveintentspecification.v1",
+      "allowed_states": [
+        "ingress",
+        "validated"
+      ],
+      "required_fact_types": [
+        "tmf_operation"
+      ],
+      "transition_ids": [
+        "validate_tmf921_intentspecification_retrieveintentspecification",
+        "execute_tmf921_intentspecification_retrieveintentspecification"
+      ]
+    },
+    {
+      "intent_class": "tmf.tmf921.listener.intentattributevaluechangeevent.v1",
+      "allowed_states": [
+        "ingress",
+        "validated"
+      ],
+      "required_fact_types": [
+        "tmf_operation"
+      ],
+      "transition_ids": [
+        "validate_tmf921_listener_intentattributevaluechangeevent",
+        "execute_tmf921_listener_intentattributevaluechangeevent"
+      ]
+    },
+    {
+      "intent_class": "tmf.tmf921.listener.intentcreateevent.v1",
+      "allowed_states": [
+        "ingress",
+        "validated"
+      ],
+      "required_fact_types": [
+        "tmf_operation"
+      ],
+      "transition_ids": [
+        "validate_tmf921_listener_intentcreateevent",
+        "execute_tmf921_listener_intentcreateevent"
+      ]
+    },
+    {
+      "intent_class": "tmf.tmf921.listener.intentdeleteevent.v1",
+      "allowed_states": [
+        "ingress",
+        "validated"
+      ],
+      "required_fact_types": [
+        "tmf_operation"
+      ],
+      "transition_ids": [
+        "validate_tmf921_listener_intentdeleteevent",
+        "execute_tmf921_listener_intentdeleteevent"
+      ]
+    },
+    {
+      "intent_class": "tmf.tmf921.listener.intentreportattributevaluechangeevent.v1",
+      "allowed_states": [
+        "ingress",
+        "validated"
+      ],
+      "required_fact_types": [
+        "tmf_operation"
+      ],
+      "transition_ids": [
+        "validate_tmf921_listener_intentreportattributevaluechangeevent",
+        "execute_tmf921_listener_intentreportattributevaluechangeevent"
+      ]
+    },
+    {
+      "intent_class": "tmf.tmf921.listener.intentreportcreateevent.v1",
+      "allowed_states": [
+        "ingress",
+        "validated"
+      ],
+      "required_fact_types": [
+        "tmf_operation"
+      ],
+      "transition_ids": [
+        "validate_tmf921_listener_intentreportcreateevent",
+        "execute_tmf921_listener_intentreportcreateevent"
+      ]
+    },
+    {
+      "intent_class": "tmf.tmf921.listener.intentreportdeleteevent.v1",
+      "allowed_states": [
+        "ingress",
+        "validated"
+      ],
+      "required_fact_types": [
+        "tmf_operation"
+      ],
+      "transition_ids": [
+        "validate_tmf921_listener_intentreportdeleteevent",
+        "execute_tmf921_listener_intentreportdeleteevent"
+      ]
+    },
+    {
+      "intent_class": "tmf.tmf921.listener.intentspecificationattributevaluechangeevent.v1",
+      "allowed_states": [
+        "ingress",
+        "validated"
+      ],
+      "required_fact_types": [
+        "tmf_operation"
+      ],
+      "transition_ids": [
+        "validate_tmf921_listener_intentspecificationattributevaluechangeevent",
+        "execute_tmf921_listener_intentspecificationattributevaluechangeevent"
+      ]
+    },
+    {
+      "intent_class": "tmf.tmf921.listener.intentspecificationcreateevent.v1",
+      "allowed_states": [
+        "ingress",
+        "validated"
+      ],
+      "required_fact_types": [
+        "tmf_operation"
+      ],
+      "transition_ids": [
+        "validate_tmf921_listener_intentspecificationcreateevent",
+        "execute_tmf921_listener_intentspecificationcreateevent"
+      ]
+    },
+    {
+      "intent_class": "tmf.tmf921.listener.intentspecificationdeleteevent.v1",
+      "allowed_states": [
+        "ingress",
+        "validated"
+      ],
+      "required_fact_types": [
+        "tmf_operation"
+      ],
+      "transition_ids": [
+        "validate_tmf921_listener_intentspecificationdeleteevent",
+        "execute_tmf921_listener_intentspecificationdeleteevent"
+      ]
+    },
+    {
+      "intent_class": "tmf.tmf921.listener.intentspecificationstatuschangeevent.v1",
+      "allowed_states": [
+        "ingress",
+        "validated"
+      ],
+      "required_fact_types": [
+        "tmf_operation"
+      ],
+      "transition_ids": [
+        "validate_tmf921_listener_intentspecificationstatuschangeevent",
+        "execute_tmf921_listener_intentspecificationstatuschangeevent"
+      ]
+    },
+    {
+      "intent_class": "tmf.tmf921.listener.intentstatuschangeevent.v1",
+      "allowed_states": [
+        "ingress",
+        "validated"
+      ],
+      "required_fact_types": [
+        "tmf_operation"
+      ],
+      "transition_ids": [
+        "validate_tmf921_listener_intentstatuschangeevent",
+        "execute_tmf921_listener_intentstatuschangeevent"
+      ]
+    }
+  ],
+  "admissible_facts": [
+    {
+      "fact_type": "tmf_operation",
+      "schema_ref": "urn:tmf:tmf-intent-policy-bridge-surface-demo:v1",
+      "additional_properties": "allow",
+      "field_constraints": [
+        {
+          "path": "api.tmf_id",
+          "datatype": "string",
+          "required": true,
+          "pattern": "^TMF[0-9]{3}$"
+        },
+        {
+          "path": "api.resource",
+          "datatype": "string",
+          "required": true
+        },
+        {
+          "path": "api.action",
+          "datatype": "string",
+          "required": true
+        },
+        {
+          "path": "api.method",
+          "datatype": "string",
+          "required": true,
+          "pattern": "^(GET|POST|PUT|PATCH|DELETE|HEAD|OPTIONS)$"
+        }
+      ]
+    }
+  ],
+  "admissible_transitions": [
+    {
+      "id": "validate_tmf921_hub_createhub",
+      "from_state": "ingress",
+      "intent_class": "tmf.tmf921.hub.createhub.v1",
+      "to_state": "validated",
+      "guard_refs": [
+        "guard:payload_valid"
+      ]
+    },
+    {
+      "id": "execute_tmf921_hub_createhub",
+      "from_state": "validated",
+      "intent_class": "tmf.tmf921.hub.createhub.v1",
+      "to_state": "executed",
+      "guard_refs": [
+        "guard:policy_allow"
+      ]
+    },
+    {
+      "id": "validate_tmf921_hub_hubdelete",
+      "from_state": "ingress",
+      "intent_class": "tmf.tmf921.hub.hubdelete.v1",
+      "to_state": "validated",
+      "guard_refs": [
+        "guard:payload_valid"
+      ]
+    },
+    {
+      "id": "execute_tmf921_hub_hubdelete",
+      "from_state": "validated",
+      "intent_class": "tmf.tmf921.hub.hubdelete.v1",
+      "to_state": "executed",
+      "guard_refs": [
+        "guard:policy_allow"
+      ]
+    },
+    {
+      "id": "validate_tmf921_intent_createintent",
+      "from_state": "ingress",
+      "intent_class": "tmf.tmf921.intent.createintent.v1",
+      "to_state": "validated",
+      "guard_refs": [
+        "guard:payload_valid"
+      ]
+    },
+    {
+      "id": "execute_tmf921_intent_createintent",
+      "from_state": "validated",
+      "intent_class": "tmf.tmf921.intent.createintent.v1",
+      "to_state": "executed",
+      "guard_refs": [
+        "guard:policy_allow"
+      ]
+    },
+    {
+      "id": "validate_tmf921_intent_deleteintent",
+      "from_state": "ingress",
+      "intent_class": "tmf.tmf921.intent.deleteintent.v1",
+      "to_state": "validated",
+      "guard_refs": [
+        "guard:payload_valid"
+      ]
+    },
+    {
+      "id": "execute_tmf921_intent_deleteintent",
+      "from_state": "validated",
+      "intent_class": "tmf.tmf921.intent.deleteintent.v1",
+      "to_state": "executed",
+      "guard_refs": [
+        "guard:policy_allow"
+      ]
+    },
+    {
+      "id": "validate_tmf921_intent_deleteintentintentreport",
+      "from_state": "ingress",
+      "intent_class": "tmf.tmf921.intent.deleteintentintentreport.v1",
+      "to_state": "validated",
+      "guard_refs": [
+        "guard:payload_valid"
+      ]
+    },
+    {
+      "id": "execute_tmf921_intent_deleteintentintentreport",
+      "from_state": "validated",
+      "intent_class": "tmf.tmf921.intent.deleteintentintentreport.v1",
+      "to_state": "executed",
+      "guard_refs": [
+        "guard:policy_allow"
+      ]
+    },
+    {
+      "id": "validate_tmf921_intent_listintent",
+      "from_state": "ingress",
+      "intent_class": "tmf.tmf921.intent.listintent.v1",
+      "to_state": "validated",
+      "guard_refs": [
+        "guard:payload_valid"
+      ]
+    },
+    {
+      "id": "execute_tmf921_intent_listintent",
+      "from_state": "validated",
+      "intent_class": "tmf.tmf921.intent.listintent.v1",
+      "to_state": "executed",
+      "guard_refs": [
+        "guard:policy_allow"
+      ]
+    },
+    {
+      "id": "validate_tmf921_intent_listintentintentreport",
+      "from_state": "ingress",
+      "intent_class": "tmf.tmf921.intent.listintentintentreport.v1",
+      "to_state": "validated",
+      "guard_refs": [
+        "guard:payload_valid"
+      ]
+    },
+    {
+      "id": "execute_tmf921_intent_listintentintentreport",
+      "from_state": "validated",
+      "intent_class": "tmf.tmf921.intent.listintentintentreport.v1",
+      "to_state": "executed",
+      "guard_refs": [
+        "guard:policy_allow"
+      ]
+    },
+    {
+      "id": "validate_tmf921_intent_patchintent",
+      "from_state": "ingress",
+      "intent_class": "tmf.tmf921.intent.patchintent.v1",
+      "to_state": "validated",
+      "guard_refs": [
+        "guard:payload_valid"
+      ]
+    },
+    {
+      "id": "execute_tmf921_intent_patchintent",
+      "from_state": "validated",
+      "intent_class": "tmf.tmf921.intent.patchintent.v1",
+      "to_state": "executed",
+      "guard_refs": [
+        "guard:policy_allow"
+      ]
+    },
+    {
+      "id": "validate_tmf921_intent_retrieveintent",
+      "from_state": "ingress",
+      "intent_class": "tmf.tmf921.intent.retrieveintent.v1",
+      "to_state": "validated",
+      "guard_refs": [
+        "guard:payload_valid"
+      ]
+    },
+    {
+      "id": "execute_tmf921_intent_retrieveintent",
+      "from_state": "validated",
+      "intent_class": "tmf.tmf921.intent.retrieveintent.v1",
+      "to_state": "executed",
+      "guard_refs": [
+        "guard:policy_allow"
+      ]
+    },
+    {
+      "id": "validate_tmf921_intent_retrieveintentintentreport",
+      "from_state": "ingress",
+      "intent_class": "tmf.tmf921.intent.retrieveintentintentreport.v1",
+      "to_state": "validated",
+      "guard_refs": [
+        "guard:payload_valid"
+      ]
+    },
+    {
+      "id": "execute_tmf921_intent_retrieveintentintentreport",
+      "from_state": "validated",
+      "intent_class": "tmf.tmf921.intent.retrieveintentintentreport.v1",
+      "to_state": "executed",
+      "guard_refs": [
+        "guard:policy_allow"
+      ]
+    },
+    {
+      "id": "validate_tmf921_intentspecification_createintentspecification",
+      "from_state": "ingress",
+      "intent_class": "tmf.tmf921.intentspecification.createintentspecification.v1",
+      "to_state": "validated",
+      "guard_refs": [
+        "guard:payload_valid"
+      ]
+    },
+    {
+      "id": "execute_tmf921_intentspecification_createintentspecification",
+      "from_state": "validated",
+      "intent_class": "tmf.tmf921.intentspecification.createintentspecification.v1",
+      "to_state": "executed",
+      "guard_refs": [
+        "guard:policy_allow"
+      ]
+    },
+    {
+      "id": "validate_tmf921_intentspecification_deleteintentspecification",
+      "from_state": "ingress",
+      "intent_class": "tmf.tmf921.intentspecification.deleteintentspecification.v1",
+      "to_state": "validated",
+      "guard_refs": [
+        "guard:payload_valid"
+      ]
+    },
+    {
+      "id": "execute_tmf921_intentspecification_deleteintentspecification",
+      "from_state": "validated",
+      "intent_class": "tmf.tmf921.intentspecification.deleteintentspecification.v1",
+      "to_state": "executed",
+      "guard_refs": [
+        "guard:policy_allow"
+      ]
+    },
+    {
+      "id": "validate_tmf921_intentspecification_listintentspecification",
+      "from_state": "ingress",
+      "intent_class": "tmf.tmf921.intentspecification.listintentspecification.v1",
+      "to_state": "validated",
+      "guard_refs": [
+        "guard:payload_valid"
+      ]
+    },
+    {
+      "id": "execute_tmf921_intentspecification_listintentspecification",
+      "from_state": "validated",
+      "intent_class": "tmf.tmf921.intentspecification.listintentspecification.v1",
+      "to_state": "executed",
+      "guard_refs": [
+        "guard:policy_allow"
+      ]
+    },
+    {
+      "id": "validate_tmf921_intentspecification_patchintentspecification",
+      "from_state": "ingress",
+      "intent_class": "tmf.tmf921.intentspecification.patchintentspecification.v1",
+      "to_state": "validated",
+      "guard_refs": [
+        "guard:payload_valid"
+      ]
+    },
+    {
+      "id": "execute_tmf921_intentspecification_patchintentspecification",
+      "from_state": "validated",
+      "intent_class": "tmf.tmf921.intentspecification.patchintentspecification.v1",
+      "to_state": "executed",
+      "guard_refs": [
+        "guard:policy_allow"
+      ]
+    },
+    {
+      "id": "validate_tmf921_intentspecification_retrieveintentspecification",
+      "from_state": "ingress",
+      "intent_class": "tmf.tmf921.intentspecification.retrieveintentspecification.v1",
+      "to_state": "validated",
+      "guard_refs": [
+        "guard:payload_valid"
+      ]
+    },
+    {
+      "id": "execute_tmf921_intentspecification_retrieveintentspecification",
+      "from_state": "validated",
+      "intent_class": "tmf.tmf921.intentspecification.retrieveintentspecification.v1",
+      "to_state": "executed",
+      "guard_refs": [
+        "guard:policy_allow"
+      ]
+    },
+    {
+      "id": "validate_tmf921_listener_intentattributevaluechangeevent",
+      "from_state": "ingress",
+      "intent_class": "tmf.tmf921.listener.intentattributevaluechangeevent.v1",
+      "to_state": "validated",
+      "guard_refs": [
+        "guard:payload_valid"
+      ]
+    },
+    {
+      "id": "execute_tmf921_listener_intentattributevaluechangeevent",
+      "from_state": "validated",
+      "intent_class": "tmf.tmf921.listener.intentattributevaluechangeevent.v1",
+      "to_state": "executed",
+      "guard_refs": [
+        "guard:policy_allow"
+      ]
+    },
+    {
+      "id": "validate_tmf921_listener_intentcreateevent",
+      "from_state": "ingress",
+      "intent_class": "tmf.tmf921.listener.intentcreateevent.v1",
+      "to_state": "validated",
+      "guard_refs": [
+        "guard:payload_valid"
+      ]
+    },
+    {
+      "id": "execute_tmf921_listener_intentcreateevent",
+      "from_state": "validated",
+      "intent_class": "tmf.tmf921.listener.intentcreateevent.v1",
+      "to_state": "executed",
+      "guard_refs": [
+        "guard:policy_allow"
+      ]
+    },
+    {
+      "id": "validate_tmf921_listener_intentdeleteevent",
+      "from_state": "ingress",
+      "intent_class": "tmf.tmf921.listener.intentdeleteevent.v1",
+      "to_state": "validated",
+      "guard_refs": [
+        "guard:payload_valid"
+      ]
+    },
+    {
+      "id": "execute_tmf921_listener_intentdeleteevent",
+      "from_state": "validated",
+      "intent_class": "tmf.tmf921.listener.intentdeleteevent.v1",
+      "to_state": "executed",
+      "guard_refs": [
+        "guard:policy_allow"
+      ]
+    },
+    {
+      "id": "validate_tmf921_listener_intentreportattributevaluechangeevent",
+      "from_state": "ingress",
+      "intent_class": "tmf.tmf921.listener.intentreportattributevaluechangeevent.v1",
+      "to_state": "validated",
+      "guard_refs": [
+        "guard:payload_valid"
+      ]
+    },
+    {
+      "id": "execute_tmf921_listener_intentreportattributevaluechangeevent",
+      "from_state": "validated",
+      "intent_class": "tmf.tmf921.listener.intentreportattributevaluechangeevent.v1",
+      "to_state": "executed",
+      "guard_refs": [
+        "guard:policy_allow"
+      ]
+    },
+    {
+      "id": "validate_tmf921_listener_intentreportcreateevent",
+      "from_state": "ingress",
+      "intent_class": "tmf.tmf921.listener.intentreportcreateevent.v1",
+      "to_state": "validated",
+      "guard_refs": [
+        "guard:payload_valid"
+      ]
+    },
+    {
+      "id": "execute_tmf921_listener_intentreportcreateevent",
+      "from_state": "validated",
+      "intent_class": "tmf.tmf921.listener.intentreportcreateevent.v1",
+      "to_state": "executed",
+      "guard_refs": [
+        "guard:policy_allow"
+      ]
+    },
+    {
+      "id": "validate_tmf921_listener_intentreportdeleteevent",
+      "from_state": "ingress",
+      "intent_class": "tmf.tmf921.listener.intentreportdeleteevent.v1",
+      "to_state": "validated",
+      "guard_refs": [
+        "guard:payload_valid"
+      ]
+    },
+    {
+      "id": "execute_tmf921_listener_intentreportdeleteevent",
+      "from_state": "validated",
+      "intent_class": "tmf.tmf921.listener.intentreportdeleteevent.v1",
+      "to_state": "executed",
+      "guard_refs": [
+        "guard:policy_allow"
+      ]
+    },
+    {
+      "id": "validate_tmf921_listener_intentspecificationattributevaluechangeevent",
+      "from_state": "ingress",
+      "intent_class": "tmf.tmf921.listener.intentspecificationattributevaluechangeevent.v1",
+      "to_state": "validated",
+      "guard_refs": [
+        "guard:payload_valid"
+      ]
+    },
+    {
+      "id": "execute_tmf921_listener_intentspecificationattributevaluechangeevent",
+      "from_state": "validated",
+      "intent_class": "tmf.tmf921.listener.intentspecificationattributevaluechangeevent.v1",
+      "to_state": "executed",
+      "guard_refs": [
+        "guard:policy_allow"
+      ]
+    },
+    {
+      "id": "validate_tmf921_listener_intentspecificationcreateevent",
+      "from_state": "ingress",
+      "intent_class": "tmf.tmf921.listener.intentspecificationcreateevent.v1",
+      "to_state": "validated",
+      "guard_refs": [
+        "guard:payload_valid"
+      ]
+    },
+    {
+      "id": "execute_tmf921_listener_intentspecificationcreateevent",
+      "from_state": "validated",
+      "intent_class": "tmf.tmf921.listener.intentspecificationcreateevent.v1",
+      "to_state": "executed",
+      "guard_refs": [
+        "guard:policy_allow"
+      ]
+    },
+    {
+      "id": "validate_tmf921_listener_intentspecificationdeleteevent",
+      "from_state": "ingress",
+      "intent_class": "tmf.tmf921.listener.intentspecificationdeleteevent.v1",
+      "to_state": "validated",
+      "guard_refs": [
+        "guard:payload_valid"
+      ]
+    },
+    {
+      "id": "execute_tmf921_listener_intentspecificationdeleteevent",
+      "from_state": "validated",
+      "intent_class": "tmf.tmf921.listener.intentspecificationdeleteevent.v1",
+      "to_state": "executed",
+      "guard_refs": [
+        "guard:policy_allow"
+      ]
+    },
+    {
+      "id": "validate_tmf921_listener_intentspecificationstatuschangeevent",
+      "from_state": "ingress",
+      "intent_class": "tmf.tmf921.listener.intentspecificationstatuschangeevent.v1",
+      "to_state": "validated",
+      "guard_refs": [
+        "guard:payload_valid"
+      ]
+    },
+    {
+      "id": "execute_tmf921_listener_intentspecificationstatuschangeevent",
+      "from_state": "validated",
+      "intent_class": "tmf.tmf921.listener.intentspecificationstatuschangeevent.v1",
+      "to_state": "executed",
+      "guard_refs": [
+        "guard:policy_allow"
+      ]
+    },
+    {
+      "id": "validate_tmf921_listener_intentstatuschangeevent",
+      "from_state": "ingress",
+      "intent_class": "tmf.tmf921.listener.intentstatuschangeevent.v1",
+      "to_state": "validated",
+      "guard_refs": [
+        "guard:payload_valid"
+      ]
+    },
+    {
+      "id": "execute_tmf921_listener_intentstatuschangeevent",
+      "from_state": "validated",
+      "intent_class": "tmf.tmf921.listener.intentstatuschangeevent.v1",
+      "to_state": "executed",
+      "guard_refs": [
+        "guard:policy_allow"
+      ]
+    }
+  ],
+  "fallback_rules": [
+    {
+      "id": "escalate_unknown_tmf_operation",
+      "from_state": "ingress",
+      "intent_class": "tmf.tmf921.hub.createhub.v1",
+      "to_state": "escalated",
+      "source_ref": "tmf:governance:unknown_operation:v1",
+      "description": "Operation cannot be mapped to allowed TMF bounded scope."
+    }
+  ]
+}

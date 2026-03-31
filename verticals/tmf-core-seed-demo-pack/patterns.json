@@ -1,0 +1,1779 @@
+{
+  "schema_version": "1.0",
+  "domain": "tmf-core-seed-demo",
+  "patterns": [
+    {
+      "id": "tmf_tmf634_exportjob_createexportjob_intent",
+      "concept_uri": "tmf:intent/tmf634/exportjob.createexportjob",
+      "entity_type": "intent_hint",
+      "regex": "(?i)^createexportjob$",
+      "examples": [
+        "createexportjob"
+      ]
+    },
+    {
+      "id": "tmf_tmf634_exportjob_deleteexportjob_intent",
+      "concept_uri": "tmf:intent/tmf634/exportjob.deleteexportjob",
+      "entity_type": "intent_hint",
+      "regex": "(?i)^deleteexportjob$",
+      "examples": [
+        "deleteexportjob"
+      ]
+    },
+    {
+      "id": "tmf_tmf634_exportjob_listexportjob_intent",
+      "concept_uri": "tmf:intent/tmf634/exportjob.listexportjob",
+      "entity_type": "intent_hint",
+      "regex": "(?i)^listexportjob$",
+      "examples": [
+        "listexportjob"
+      ]
+    },
+    {
+      "id": "tmf_tmf634_exportjob_retrieveexportjob_intent",
+      "concept_uri": "tmf:intent/tmf634/exportjob.retrieveexportjob",
+      "entity_type": "intent_hint",
+      "regex": "(?i)^retrieveexportjob$",
+      "examples": [
+        "retrieveexportjob"
+      ]
+    },
+    {
+      "id": "tmf_tmf634_hub_createhub_intent",
+      "concept_uri": "tmf:intent/tmf634/hub.createhub",
+      "entity_type": "intent_hint",
+      "regex": "(?i)^createhub$",
+      "examples": [
+        "createhub"
+      ]
+    },
+    {
+      "id": "tmf_tmf634_hub_hubdelete_intent",
+      "concept_uri": "tmf:intent/tmf634/hub.hubdelete",
+      "entity_type": "intent_hint",
+      "regex": "(?i)^hubdelete$",
+      "examples": [
+        "hubdelete"
+      ]
+    },
+    {
+      "id": "tmf_tmf634_importjob_createimportjob_intent",
+      "concept_uri": "tmf:intent/tmf634/importjob.createimportjob",
+      "entity_type": "intent_hint",
+      "regex": "(?i)^createimportjob$",
+      "examples": [
+        "createimportjob"
+      ]
+    },
+    {
+      "id": "tmf_tmf634_importjob_deleteimportjob_intent",
+      "concept_uri": "tmf:intent/tmf634/importjob.deleteimportjob",
+      "entity_type": "intent_hint",
+      "regex": "(?i)^deleteimportjob$",
+      "examples": [
+        "deleteimportjob"
+      ]
+    },
+    {
+      "id": "tmf_tmf634_importjob_listimportjob_intent",
+      "concept_uri": "tmf:intent/tmf634/importjob.listimportjob",
+      "entity_type": "intent_hint",
+      "regex": "(?i)^listimportjob$",
+      "examples": [
+        "listimportjob"
+      ]
+    },
+    {
+      "id": "tmf_tmf634_importjob_retrieveimportjob_intent",
+      "concept_uri": "tmf:intent/tmf634/importjob.retrieveimportjob",
+      "entity_type": "intent_hint",
+      "regex": "(?i)^retrieveimportjob$",
+      "examples": [
+        "retrieveimportjob"
+      ]
+    },
+    {
+      "id": "tmf_tmf634_listener_exportjobcreateevent_intent",
+      "concept_uri": "tmf:intent/tmf634/listener.exportjobcreateevent",
+      "entity_type": "intent_hint",
+      "regex": "(?i)^exportjobcreateevent\\ listener$",
+      "examples": [
+        "exportjobcreateevent listener"
+      ]
+    },
+    {
+      "id": "tmf_tmf634_listener_exportjobdeleteevent_intent",
+      "concept_uri": "tmf:intent/tmf634/listener.exportjobdeleteevent",
+      "entity_type": "intent_hint",
+      "regex": "(?i)^exportjobdeleteevent\\ listener$",
+      "examples": [
+        "exportjobdeleteevent listener"
+      ]
+    },
+    {
+      "id": "tmf_tmf634_listener_exportjobstatechangeevent_intent",
+      "concept_uri": "tmf:intent/tmf634/listener.exportjobstatechangeevent",
+      "entity_type": "intent_hint",
+      "regex": "(?i)^exportjobstatechangeevent\\ listener$",
+      "examples": [
+        "exportjobstatechangeevent listener"
+      ]
+    },
+    {
+      "id": "tmf_tmf634_listener_importjobcreateevent_intent",
+      "concept_uri": "tmf:intent/tmf634/listener.importjobcreateevent",
+      "entity_type": "intent_hint",
+      "regex": "(?i)^importjobcreateevent\\ listener$",
+      "examples": [
+        "importjobcreateevent listener"
+      ]
+    },
+    {
+      "id": "tmf_tmf634_listener_importjobdeleteevent_intent",
+      "concept_uri": "tmf:intent/tmf634/listener.importjobdeleteevent",
+      "entity_type": "intent_hint",
+      "regex": "(?i)^importjobdeleteevent\\ listener$",
+      "examples": [
+        "importjobdeleteevent listener"
+      ]
+    },
+    {
+      "id": "tmf_tmf634_listener_importjobstatechangeevent_intent",
+      "concept_uri": "tmf:intent/tmf634/listener.importjobstatechangeevent",
+      "entity_type": "intent_hint",
+      "regex": "(?i)^importjobstatechangeevent\\ listener$",
+      "examples": [
+        "importjobstatechangeevent listener"
+      ]
+    },
+    {
+      "id": "tmf_tmf634_listener_resourcecandidateattributevaluechangeevent_intent",
+      "concept_uri": "tmf:intent/tmf634/listener.resourcecandidateattributevaluechangeevent",
+      "entity_type": "intent_hint",
+      "regex": "(?i)^resourcecandidateattributevaluechangeevent\\ listener$",
+      "examples": [
+        "resourcecandidateattributevaluechangeevent listener"
+      ]
+    },
+    {
+      "id": "tmf_tmf634_listener_resourcecandidatecreateevent_intent",
+      "concept_uri": "tmf:intent/tmf634/listener.resourcecandidatecreateevent",
+      "entity_type": "intent_hint",
+      "regex": "(?i)^resourcecandidatecreateevent\\ listener$",
+      "examples": [
+        "resourcecandidatecreateevent listener"
+      ]
+    },
+    {
+      "id": "tmf_tmf634_listener_resourcecandidatedeleteevent_intent",
+      "concept_uri": "tmf:intent/tmf634/listener.resourcecandidatedeleteevent",
+      "entity_type": "intent_hint",
+      "regex": "(?i)^resourcecandidatedeleteevent\\ listener$",
+      "examples": [
+        "resourcecandidatedeleteevent listener"
+      ]
+    },
+    {
+      "id": "tmf_tmf634_listener_resourcecandidatestatuschangeevent_intent",
+      "concept_uri": "tmf:intent/tmf634/listener.resourcecandidatestatuschangeevent",
+      "entity_type": "intent_hint",
+      "regex": "(?i)^resourcecandidatestatuschangeevent\\ listener$",
+      "examples": [
+        "resourcecandidatestatuschangeevent listener"
+      ]
+    },
+    {
+      "id": "tmf_tmf634_listener_resourcecatalogattributevaluechangeevent_intent",
+      "concept_uri": "tmf:intent/tmf634/listener.resourcecatalogattributevaluechangeevent",
+      "entity_type": "intent_hint",
+      "regex": "(?i)^resourcecatalogattributevaluechangeevent\\ listener$",
+      "examples": [
+        "resourcecatalogattributevaluechangeevent listener"
+      ]
+    },
+    {
+      "id": "tmf_tmf634_listener_resourcecatalogcreateevent_intent",
+      "concept_uri": "tmf:intent/tmf634/listener.resourcecatalogcreateevent",
+      "entity_type": "intent_hint",
+      "regex": "(?i)^resourcecatalogcreateevent\\ listener$",
+      "examples": [
+        "resourcecatalogcreateevent listener"
+      ]
+    },
+    {
+      "id": "tmf_tmf634_listener_resourcecatalogdeleteevent_intent",
+      "concept_uri": "tmf:intent/tmf634/listener.resourcecatalogdeleteevent",
+      "entity_type": "intent_hint",
+      "regex": "(?i)^resourcecatalogdeleteevent\\ listener$",
+      "examples": [
+        "resourcecatalogdeleteevent listener"
+      ]
+    },
+    {
+      "id": "tmf_tmf634_listener_resourcecatalogstatuschangeevent_intent",
+      "concept_uri": "tmf:intent/tmf634/listener.resourcecatalogstatuschangeevent",
+      "entity_type": "intent_hint",
+      "regex": "(?i)^resourcecatalogstatuschangeevent\\ listener$",
+      "examples": [
+        "resourcecatalogstatuschangeevent listener"
+      ]
+    },
+    {
+      "id": "tmf_tmf634_listener_resourcecategoryattributevaluechangeevent_intent",
+      "concept_uri": "tmf:intent/tmf634/listener.resourcecategoryattributevaluechangeevent",
+      "entity_type": "intent_hint",
+      "regex": "(?i)^resourcecategoryattributevaluechangeevent\\ listener$",
+      "examples": [
+        "resourcecategoryattributevaluechangeevent listener"
+      ]
+    },
+    {
+      "id": "tmf_tmf634_listener_resourcecategorycreateevent_intent",
+      "concept_uri": "tmf:intent/tmf634/listener.resourcecategorycreateevent",
+      "entity_type": "intent_hint",
+      "regex": "(?i)^resourcecategorycreateevent\\ listener$",
+      "examples": [
+        "resourcecategorycreateevent listener"
+      ]
+    },
+    {
+      "id": "tmf_tmf634_listener_resourcecategorydeleteevent_intent",
+      "concept_uri": "tmf:intent/tmf634/listener.resourcecategorydeleteevent",
+      "entity_type": "intent_hint",
+      "regex": "(?i)^resourcecategorydeleteevent\\ listener$",
+      "examples": [
+        "resourcecategorydeleteevent listener"
+      ]
+    },
+    {
+      "id": "tmf_tmf634_listener_resourcecategorystatuschangeevent_intent",
+      "concept_uri": "tmf:intent/tmf634/listener.resourcecategorystatuschangeevent",
+      "entity_type": "intent_hint",
+      "regex": "(?i)^resourcecategorystatuschangeevent\\ listener$",
+      "examples": [
+        "resourcecategorystatuschangeevent listener"
+      ]
+    },
+    {
+      "id": "tmf_tmf634_listener_resourcespecificationattributevaluechangeevent_intent",
+      "concept_uri": "tmf:intent/tmf634/listener.resourcespecificationattributevaluechangeevent",
+      "entity_type": "intent_hint",
+      "regex": "(?i)^resourcespecificationattributevaluechangeevent\\ listener$",
+      "examples": [
+        "resourcespecificationattributevaluechangeevent listener"
+      ]
+    },
+    {
+      "id": "tmf_tmf634_listener_resourcespecificationcreateevent_intent",
+      "concept_uri": "tmf:intent/tmf634/listener.resourcespecificationcreateevent",
+      "entity_type": "intent_hint",
+      "regex": "(?i)^resourcespecificationcreateevent\\ listener$",
+      "examples": [
+        "resourcespecificationcreateevent listener"
+      ]
+    },
+    {
+      "id": "tmf_tmf634_listener_resourcespecificationdeleteevent_intent",
+      "concept_uri": "tmf:intent/tmf634/listener.resourcespecificationdeleteevent",
+      "entity_type": "intent_hint",
+      "regex": "(?i)^resourcespecificationdeleteevent\\ listener$",
+      "examples": [
+        "resourcespecificationdeleteevent listener"
+      ]
+    },
+    {
+      "id": "tmf_tmf634_listener_resourcespecificationstatuschangeevent_intent",
+      "concept_uri": "tmf:intent/tmf634/listener.resourcespecificationstatuschangeevent",
+      "entity_type": "intent_hint",
+      "regex": "(?i)^resourcespecificationstatuschangeevent\\ listener$",
+      "examples": [
+        "resourcespecificationstatuschangeevent listener"
+      ]
+    },
+    {
+      "id": "tmf_tmf634_resourcecandidate_createresourcecandidate_intent",
+      "concept_uri": "tmf:intent/tmf634/resourcecandidate.createresourcecandidate",
+      "entity_type": "intent_hint",
+      "regex": "(?i)^createresourcecandidate$",
+      "examples": [
+        "createresourcecandidate"
+      ]
+    },
+    {
+      "id": "tmf_tmf634_resourcecandidate_deleteresourcecandidate_intent",
+      "concept_uri": "tmf:intent/tmf634/resourcecandidate.deleteresourcecandidate",
+      "entity_type": "intent_hint",
+      "regex": "(?i)^deleteresourcecandidate$",
+      "examples": [
+        "deleteresourcecandidate"
+      ]
+    },
+    {
+      "id": "tmf_tmf634_resourcecandidate_listresourcecandidate_intent",
+      "concept_uri": "tmf:intent/tmf634/resourcecandidate.listresourcecandidate",
+      "entity_type": "intent_hint",
+      "regex": "(?i)^listresourcecandidate$",
+      "examples": [
+        "listresourcecandidate"
+      ]
+    },
+    {
+      "id": "tmf_tmf634_resourcecandidate_patchresourcecandidate_intent",
+      "concept_uri": "tmf:intent/tmf634/resourcecandidate.patchresourcecandidate",
+      "entity_type": "intent_hint",
+      "regex": "(?i)^patchresourcecandidate$",
+      "examples": [
+        "patchresourcecandidate"
+      ]
+    },
+    {
+      "id": "tmf_tmf634_resourcecandidate_retrieveresourcecandidate_intent",
+      "concept_uri": "tmf:intent/tmf634/resourcecandidate.retrieveresourcecandidate",
+      "entity_type": "intent_hint",
+      "regex": "(?i)^retrieveresourcecandidate$",
+      "examples": [
+        "retrieveresourcecandidate"
+      ]
+    },
+    {
+      "id": "tmf_tmf634_resourcecatalog_createresourcecatalog_intent",
+      "concept_uri": "tmf:intent/tmf634/resourcecatalog.createresourcecatalog",
+      "entity_type": "intent_hint",
+      "regex": "(?i)^createresourcecatalog$",
+      "examples": [
+        "createresourcecatalog"
+      ]
+    },
+    {
+      "id": "tmf_tmf634_resourcecatalog_deleteresourcecatalog_intent",
+      "concept_uri": "tmf:intent/tmf634/resourcecatalog.deleteresourcecatalog",
+      "entity_type": "intent_hint",
+      "regex": "(?i)^deleteresourcecatalog$",
+      "examples": [
+        "deleteresourcecatalog"
+      ]
+    },
+    {
+      "id": "tmf_tmf634_resourcecatalog_listresourcecatalog_intent",
+      "concept_uri": "tmf:intent/tmf634/resourcecatalog.listresourcecatalog",
+      "entity_type": "intent_hint",
+      "regex": "(?i)^listresourcecatalog$",
+      "examples": [
+        "listresourcecatalog"
+      ]
+    },
+    {
+      "id": "tmf_tmf634_resourcecatalog_patchresourcecatalog_intent",
+      "concept_uri": "tmf:intent/tmf634/resourcecatalog.patchresourcecatalog",
+      "entity_type": "intent_hint",
+      "regex": "(?i)^patchresourcecatalog$",
+      "examples": [
+        "patchresourcecatalog"
+      ]
+    },
+    {
+      "id": "tmf_tmf634_resourcecatalog_retrieveresourcecatalog_intent",
+      "concept_uri": "tmf:intent/tmf634/resourcecatalog.retrieveresourcecatalog",
+      "entity_type": "intent_hint",
+      "regex": "(?i)^retrieveresourcecatalog$",
+      "examples": [
+        "retrieveresourcecatalog"
+      ]
+    },
+    {
+      "id": "tmf_tmf634_resourcecategory_createresourcecategory_intent",
+      "concept_uri": "tmf:intent/tmf634/resourcecategory.createresourcecategory",
+      "entity_type": "intent_hint",
+      "regex": "(?i)^createresourcecategory$",
+      "examples": [
+        "createresourcecategory"
+      ]
+    },
+    {
+      "id": "tmf_tmf634_resourcecategory_deleteresourcecategory_intent",
+      "concept_uri": "tmf:intent/tmf634/resourcecategory.deleteresourcecategory",
+      "entity_type": "intent_hint",
+      "regex": "(?i)^deleteresourcecategory$",
+      "examples": [
+        "deleteresourcecategory"
+      ]
+    },
+    {
+      "id": "tmf_tmf634_resourcecategory_listresourcecategory_intent",
+      "concept_uri": "tmf:intent/tmf634/resourcecategory.listresourcecategory",
+      "entity_type": "intent_hint",
+      "regex": "(?i)^listresourcecategory$",
+      "examples": [
+        "listresourcecategory"
+      ]
+    },
+    {
+      "id": "tmf_tmf634_resourcecategory_patchresourcecategory_intent",
+      "concept_uri": "tmf:intent/tmf634/resourcecategory.patchresourcecategory",
+      "entity_type": "intent_hint",
+      "regex": "(?i)^patchresourcecategory$",
+      "examples": [
+        "patchresourcecategory"
+      ]
+    },
+    {
+      "id": "tmf_tmf634_resourcecategory_retrieveresourcecategory_intent",
+      "concept_uri": "tmf:intent/tmf634/resourcecategory.retrieveresourcecategory",
+      "entity_type": "intent_hint",
+      "regex": "(?i)^retrieveresourcecategory$",
+      "examples": [
+        "retrieveresourcecategory"
+      ]
+    },
+    {
+      "id": "tmf_tmf634_resourcespecification_createresourcespecification_intent",
+      "concept_uri": "tmf:intent/tmf634/resourcespecification.createresourcespecification",
+      "entity_type": "intent_hint",
+      "regex": "(?i)^createresourcespecification$",
+      "examples": [
+        "createresourcespecification"
+      ]
+    },
+    {
+      "id": "tmf_tmf634_resourcespecification_deleteresourcespecification_intent",
+      "concept_uri": "tmf:intent/tmf634/resourcespecification.deleteresourcespecification",
+      "entity_type": "intent_hint",
+      "regex": "(?i)^deleteresourcespecification$",
+      "examples": [
+        "deleteresourcespecification"
+      ]
+    },
+    {
+      "id": "tmf_tmf634_resourcespecification_listresourcespecification_intent",
+      "concept_uri": "tmf:intent/tmf634/resourcespecification.listresourcespecification",
+      "entity_type": "intent_hint",
+      "regex": "(?i)^listresourcespecification$",
+      "examples": [
+        "listresourcespecification"
+      ]
+    },
+    {
+      "id": "tmf_tmf634_resourcespecification_patchresourcespecification_intent",
+      "concept_uri": "tmf:intent/tmf634/resourcespecification.patchresourcespecification",
+      "entity_type": "intent_hint",
+      "regex": "(?i)^patchresourcespecification$",
+      "examples": [
+        "patchresourcespecification"
+      ]
+    },
+    {
+      "id": "tmf_tmf634_resourcespecification_retrieveresourcespecification_intent",
+      "concept_uri": "tmf:intent/tmf634/resourcespecification.retrieveresourcespecification",
+      "entity_type": "intent_hint",
+      "regex": "(?i)^retrieveresourcespecification$",
+      "examples": [
+        "retrieveresourcespecification"
+      ]
+    },
+    {
+      "id": "tmf_tmf638_hub_createhub_intent",
+      "concept_uri": "tmf:intent/tmf638/hub.createhub",
+      "entity_type": "intent_hint",
+      "regex": "(?i)^createhub$",
+      "examples": [
+        "createhub"
+      ]
+    },
+    {
+      "id": "tmf_tmf638_hub_hubdelete_intent",
+      "concept_uri": "tmf:intent/tmf638/hub.hubdelete",
+      "entity_type": "intent_hint",
+      "regex": "(?i)^hubdelete$",
+      "examples": [
+        "hubdelete"
+      ]
+    },
+    {
+      "id": "tmf_tmf638_listener_serviceattributevaluechangeevent_intent",
+      "concept_uri": "tmf:intent/tmf638/listener.serviceattributevaluechangeevent",
+      "entity_type": "intent_hint",
+      "regex": "(?i)^serviceattributevaluechangeevent\\ listener$",
+      "examples": [
+        "serviceattributevaluechangeevent listener"
+      ]
+    },
+    {
+      "id": "tmf_tmf638_listener_servicecreateevent_intent",
+      "concept_uri": "tmf:intent/tmf638/listener.servicecreateevent",
+      "entity_type": "intent_hint",
+      "regex": "(?i)^servicecreateevent\\ listener$",
+      "examples": [
+        "servicecreateevent listener"
+      ]
+    },
+    {
+      "id": "tmf_tmf638_listener_servicedeleteevent_intent",
+      "concept_uri": "tmf:intent/tmf638/listener.servicedeleteevent",
+      "entity_type": "intent_hint",
+      "regex": "(?i)^servicedeleteevent\\ listener$",
+      "examples": [
+        "servicedeleteevent listener"
+      ]
+    },
+    {
+      "id": "tmf_tmf638_listener_serviceoperatingstatuschangeevent_intent",
+      "concept_uri": "tmf:intent/tmf638/listener.serviceoperatingstatuschangeevent",
+      "entity_type": "intent_hint",
+      "regex": "(?i)^serviceoperatingstatuschangeevent\\ listener$",
+      "examples": [
+        "serviceoperatingstatuschangeevent listener"
+      ]
+    },
+    {
+      "id": "tmf_tmf638_listener_servicestatechangeevent_intent",
+      "concept_uri": "tmf:intent/tmf638/listener.servicestatechangeevent",
+      "entity_type": "intent_hint",
+      "regex": "(?i)^servicestatechangeevent\\ listener$",
+      "examples": [
+        "servicestatechangeevent listener"
+      ]
+    },
+    {
+      "id": "tmf_tmf638_service_createservice_intent",
+      "concept_uri": "tmf:intent/tmf638/service.createservice",
+      "entity_type": "intent_hint",
+      "regex": "(?i)^createservice$",
+      "examples": [
+        "createservice"
+      ]
+    },
+    {
+      "id": "tmf_tmf638_service_deleteservice_intent",
+      "concept_uri": "tmf:intent/tmf638/service.deleteservice",
+      "entity_type": "intent_hint",
+      "regex": "(?i)^deleteservice$",
+      "examples": [
+        "deleteservice"
+      ]
+    },
+    {
+      "id": "tmf_tmf638_service_listservice_intent",
+      "concept_uri": "tmf:intent/tmf638/service.listservice",
+      "entity_type": "intent_hint",
+      "regex": "(?i)^listservice$",
+      "examples": [
+        "listservice"
+      ]
+    },
+    {
+      "id": "tmf_tmf638_service_patchservice_intent",
+      "concept_uri": "tmf:intent/tmf638/service.patchservice",
+      "entity_type": "intent_hint",
+      "regex": "(?i)^patchservice$",
+      "examples": [
+        "patchservice"
+      ]
+    },
+    {
+      "id": "tmf_tmf638_service_retrieveservice_intent",
+      "concept_uri": "tmf:intent/tmf638/service.retrieveservice",
+      "entity_type": "intent_hint",
+      "regex": "(?i)^retrieveservice$",
+      "examples": [
+        "retrieveservice"
+      ]
+    },
+    {
+      "id": "tmf_tmf639_hub_registerlistener_intent",
+      "concept_uri": "tmf:intent/tmf639/hub.registerlistener",
+      "entity_type": "intent_hint",
+      "regex": "(?i)^registerlistener\\ hub$",
+      "examples": [
+        "registerlistener hub"
+      ]
+    },
+    {
+      "id": "tmf_tmf639_hub_unregisterlistener_intent",
+      "concept_uri": "tmf:intent/tmf639/hub.unregisterlistener",
+      "entity_type": "intent_hint",
+      "regex": "(?i)^unregisterlistener\\ hub$",
+      "examples": [
+        "unregisterlistener hub"
+      ]
+    },
+    {
+      "id": "tmf_tmf639_listener_listentoresourceattributevaluechangeevent_intent",
+      "concept_uri": "tmf:intent/tmf639/listener.listentoresourceattributevaluechangeevent",
+      "entity_type": "intent_hint",
+      "regex": "(?i)^listentoresourceattributevaluechangeevent\\ listener$",
+      "examples": [
+        "listentoresourceattributevaluechangeevent listener"
+      ]
+    },
+    {
+      "id": "tmf_tmf639_listener_listentoresourcecreateevent_intent",
+      "concept_uri": "tmf:intent/tmf639/listener.listentoresourcecreateevent",
+      "entity_type": "intent_hint",
+      "regex": "(?i)^listentoresourcecreateevent\\ listener$",
+      "examples": [
+        "listentoresourcecreateevent listener"
+      ]
+    },
+    {
+      "id": "tmf_tmf639_listener_listentoresourcedeleteevent_intent",
+      "concept_uri": "tmf:intent/tmf639/listener.listentoresourcedeleteevent",
+      "entity_type": "intent_hint",
+      "regex": "(?i)^listentoresourcedeleteevent\\ listener$",
+      "examples": [
+        "listentoresourcedeleteevent listener"
+      ]
+    },
+    {
+      "id": "tmf_tmf639_listener_listentoresourcestatechangeevent_intent",
+      "concept_uri": "tmf:intent/tmf639/listener.listentoresourcestatechangeevent",
+      "entity_type": "intent_hint",
+      "regex": "(?i)^listentoresourcestatechangeevent\\ listener$",
+      "examples": [
+        "listentoresourcestatechangeevent listener"
+      ]
+    },
+    {
+      "id": "tmf_tmf639_resource_createresource_intent",
+      "concept_uri": "tmf:intent/tmf639/resource.createresource",
+      "entity_type": "intent_hint",
+      "regex": "(?i)^createresource$",
+      "examples": [
+        "createresource"
+      ]
+    },
+    {
+      "id": "tmf_tmf639_resource_deleteresource_intent",
+      "concept_uri": "tmf:intent/tmf639/resource.deleteresource",
+      "entity_type": "intent_hint",
+      "regex": "(?i)^deleteresource$",
+      "examples": [
+        "deleteresource"
+      ]
+    },
+    {
+      "id": "tmf_tmf639_resource_listresource_intent",
+      "concept_uri": "tmf:intent/tmf639/resource.listresource",
+      "entity_type": "intent_hint",
+      "regex": "(?i)^listresource$",
+      "examples": [
+        "listresource"
+      ]
+    },
+    {
+      "id": "tmf_tmf639_resource_patchresource_intent",
+      "concept_uri": "tmf:intent/tmf639/resource.patchresource",
+      "entity_type": "intent_hint",
+      "regex": "(?i)^patchresource$",
+      "examples": [
+        "patchresource"
+      ]
+    },
+    {
+      "id": "tmf_tmf639_resource_retrieveresource_intent",
+      "concept_uri": "tmf:intent/tmf639/resource.retrieveresource",
+      "entity_type": "intent_hint",
+      "regex": "(?i)^retrieveresource$",
+      "examples": [
+        "retrieveresource"
+      ]
+    },
+    {
+      "id": "tmf_tmf640_hub_registerlistener_intent",
+      "concept_uri": "tmf:intent/tmf640/hub.registerlistener",
+      "entity_type": "intent_hint",
+      "regex": "(?i)^registerlistener\\ hub$",
+      "examples": [
+        "registerlistener hub"
+      ]
+    },
+    {
+      "id": "tmf_tmf640_hub_unregisterlistener_intent",
+      "concept_uri": "tmf:intent/tmf640/hub.unregisterlistener",
+      "entity_type": "intent_hint",
+      "regex": "(?i)^unregisterlistener\\ hub$",
+      "examples": [
+        "unregisterlistener hub"
+      ]
+    },
+    {
+      "id": "tmf_tmf640_listener_listentomonitorattributevaluechangeevent_intent",
+      "concept_uri": "tmf:intent/tmf640/listener.listentomonitorattributevaluechangeevent",
+      "entity_type": "intent_hint",
+      "regex": "(?i)^listentomonitorattributevaluechangeevent\\ listener$",
+      "examples": [
+        "listentomonitorattributevaluechangeevent listener"
+      ]
+    },
+    {
+      "id": "tmf_tmf640_listener_listentomonitorcreateevent_intent",
+      "concept_uri": "tmf:intent/tmf640/listener.listentomonitorcreateevent",
+      "entity_type": "intent_hint",
+      "regex": "(?i)^listentomonitorcreateevent\\ listener$",
+      "examples": [
+        "listentomonitorcreateevent listener"
+      ]
+    },
+    {
+      "id": "tmf_tmf640_listener_listentomonitordeleteevent_intent",
+      "concept_uri": "tmf:intent/tmf640/listener.listentomonitordeleteevent",
+      "entity_type": "intent_hint",
+      "regex": "(?i)^listentomonitordeleteevent\\ listener$",
+      "examples": [
+        "listentomonitordeleteevent listener"
+      ]
+    },
+    {
+      "id": "tmf_tmf640_listener_listentomonitorstatechangeevent_intent",
+      "concept_uri": "tmf:intent/tmf640/listener.listentomonitorstatechangeevent",
+      "entity_type": "intent_hint",
+      "regex": "(?i)^listentomonitorstatechangeevent\\ listener$",
+      "examples": [
+        "listentomonitorstatechangeevent listener"
+      ]
+    },
+    {
+      "id": "tmf_tmf640_listener_listentoserviceattributevaluechangeevent_intent",
+      "concept_uri": "tmf:intent/tmf640/listener.listentoserviceattributevaluechangeevent",
+      "entity_type": "intent_hint",
+      "regex": "(?i)^listentoserviceattributevaluechangeevent\\ listener$",
+      "examples": [
+        "listentoserviceattributevaluechangeevent listener"
+      ]
+    },
+    {
+      "id": "tmf_tmf640_listener_listentoservicecreateevent_intent",
+      "concept_uri": "tmf:intent/tmf640/listener.listentoservicecreateevent",
+      "entity_type": "intent_hint",
+      "regex": "(?i)^listentoservicecreateevent\\ listener$",
+      "examples": [
+        "listentoservicecreateevent listener"
+      ]
+    },
+    {
+      "id": "tmf_tmf640_listener_listentoservicedeleteevent_intent",
+      "concept_uri": "tmf:intent/tmf640/listener.listentoservicedeleteevent",
+      "entity_type": "intent_hint",
+      "regex": "(?i)^listentoservicedeleteevent\\ listener$",
+      "examples": [
+        "listentoservicedeleteevent listener"
+      ]
+    },
+    {
+      "id": "tmf_tmf640_listener_listentoservicestatechangeevent_intent",
+      "concept_uri": "tmf:intent/tmf640/listener.listentoservicestatechangeevent",
+      "entity_type": "intent_hint",
+      "regex": "(?i)^listentoservicestatechangeevent\\ listener$",
+      "examples": [
+        "listentoservicestatechangeevent listener"
+      ]
+    },
+    {
+      "id": "tmf_tmf640_monitor_listmonitor_intent",
+      "concept_uri": "tmf:intent/tmf640/monitor.listmonitor",
+      "entity_type": "intent_hint",
+      "regex": "(?i)^listmonitor$",
+      "examples": [
+        "listmonitor"
+      ]
+    },
+    {
+      "id": "tmf_tmf640_monitor_retrievemonitor_intent",
+      "concept_uri": "tmf:intent/tmf640/monitor.retrievemonitor",
+      "entity_type": "intent_hint",
+      "regex": "(?i)^retrievemonitor$",
+      "examples": [
+        "retrievemonitor"
+      ]
+    },
+    {
+      "id": "tmf_tmf640_service_createservice_intent",
+      "concept_uri": "tmf:intent/tmf640/service.createservice",
+      "entity_type": "intent_hint",
+      "regex": "(?i)^createservice$",
+      "examples": [
+        "createservice"
+      ]
+    },
+    {
+      "id": "tmf_tmf640_service_deleteservice_intent",
+      "concept_uri": "tmf:intent/tmf640/service.deleteservice",
+      "entity_type": "intent_hint",
+      "regex": "(?i)^deleteservice$",
+      "examples": [
+        "deleteservice"
+      ]
+    },
+    {
+      "id": "tmf_tmf640_service_listservice_intent",
+      "concept_uri": "tmf:intent/tmf640/service.listservice",
+      "entity_type": "intent_hint",
+      "regex": "(?i)^listservice$",
+      "examples": [
+        "listservice"
+      ]
+    },
+    {
+      "id": "tmf_tmf640_service_patchservice_intent",
+      "concept_uri": "tmf:intent/tmf640/service.patchservice",
+      "entity_type": "intent_hint",
+      "regex": "(?i)^patchservice$",
+      "examples": [
+        "patchservice"
+      ]
+    },
+    {
+      "id": "tmf_tmf640_service_retrieveservice_intent",
+      "concept_uri": "tmf:intent/tmf640/service.retrieveservice",
+      "entity_type": "intent_hint",
+      "regex": "(?i)^retrieveservice$",
+      "examples": [
+        "retrieveservice"
+      ]
+    },
+    {
+      "id": "tmf_tmf641_cancelserviceorder_createcancelserviceorder_intent",
+      "concept_uri": "tmf:intent/tmf641/cancelserviceorder.createcancelserviceorder",
+      "entity_type": "intent_hint",
+      "regex": "(?i)^createcancelserviceorder$",
+      "examples": [
+        "createcancelserviceorder"
+      ]
+    },
+    {
+      "id": "tmf_tmf641_cancelserviceorder_listcancelserviceorder_intent",
+      "concept_uri": "tmf:intent/tmf641/cancelserviceorder.listcancelserviceorder",
+      "entity_type": "intent_hint",
+      "regex": "(?i)^listcancelserviceorder$",
+      "examples": [
+        "listcancelserviceorder"
+      ]
+    },
+    {
+      "id": "tmf_tmf641_cancelserviceorder_retrievecancelserviceorder_intent",
+      "concept_uri": "tmf:intent/tmf641/cancelserviceorder.retrievecancelserviceorder",
+      "entity_type": "intent_hint",
+      "regex": "(?i)^retrievecancelserviceorder$",
+      "examples": [
+        "retrievecancelserviceorder"
+      ]
+    },
+    {
+      "id": "tmf_tmf641_hub_registerlistener_intent",
+      "concept_uri": "tmf:intent/tmf641/hub.registerlistener",
+      "entity_type": "intent_hint",
+      "regex": "(?i)^registerlistener\\ hub$",
+      "examples": [
+        "registerlistener hub"
+      ]
+    },
+    {
+      "id": "tmf_tmf641_hub_unregisterlistener_intent",
+      "concept_uri": "tmf:intent/tmf641/hub.unregisterlistener",
+      "entity_type": "intent_hint",
+      "regex": "(?i)^unregisterlistener\\ hub$",
+      "examples": [
+        "unregisterlistener hub"
+      ]
+    },
+    {
+      "id": "tmf_tmf641_listener_listentocancelserviceordercreateevent_intent",
+      "concept_uri": "tmf:intent/tmf641/listener.listentocancelserviceordercreateevent",
+      "entity_type": "intent_hint",
+      "regex": "(?i)^listentocancelserviceordercreateevent\\ listener$",
+      "examples": [
+        "listentocancelserviceordercreateevent listener"
+      ]
+    },
+    {
+      "id": "tmf_tmf641_listener_listentocancelserviceorderinformationrequiredevent_intent",
+      "concept_uri": "tmf:intent/tmf641/listener.listentocancelserviceorderinformationrequiredevent",
+      "entity_type": "intent_hint",
+      "regex": "(?i)^listentocancelserviceorderinformationrequiredevent\\ listener$",
+      "examples": [
+        "listentocancelserviceorderinformationrequiredevent listener"
+      ]
+    },
+    {
+      "id": "tmf_tmf641_listener_listentocancelserviceorderstatechangeevent_intent",
+      "concept_uri": "tmf:intent/tmf641/listener.listentocancelserviceorderstatechangeevent",
+      "entity_type": "intent_hint",
+      "regex": "(?i)^listentocancelserviceorderstatechangeevent\\ listener$",
+      "examples": [
+        "listentocancelserviceorderstatechangeevent listener"
+      ]
+    },
+    {
+      "id": "tmf_tmf641_listener_listentoserviceorderattributevaluechangeevent_intent",
+      "concept_uri": "tmf:intent/tmf641/listener.listentoserviceorderattributevaluechangeevent",
+      "entity_type": "intent_hint",
+      "regex": "(?i)^listentoserviceorderattributevaluechangeevent\\ listener$",
+      "examples": [
+        "listentoserviceorderattributevaluechangeevent listener"
+      ]
+    },
+    {
+      "id": "tmf_tmf641_listener_listentoserviceordercreateevent_intent",
+      "concept_uri": "tmf:intent/tmf641/listener.listentoserviceordercreateevent",
+      "entity_type": "intent_hint",
+      "regex": "(?i)^listentoserviceordercreateevent\\ listener$",
+      "examples": [
+        "listentoserviceordercreateevent listener"
+      ]
+    },
+    {
+      "id": "tmf_tmf641_listener_listentoserviceorderdeleteevent_intent",
+      "concept_uri": "tmf:intent/tmf641/listener.listentoserviceorderdeleteevent",
+      "entity_type": "intent_hint",
+      "regex": "(?i)^listentoserviceorderdeleteevent\\ listener$",
+      "examples": [
+        "listentoserviceorderdeleteevent listener"
+      ]
+    },
+    {
+      "id": "tmf_tmf641_listener_listentoserviceorderinformationrequiredevent_intent",
+      "concept_uri": "tmf:intent/tmf641/listener.listentoserviceorderinformationrequiredevent",
+      "entity_type": "intent_hint",
+      "regex": "(?i)^listentoserviceorderinformationrequiredevent\\ listener$",
+      "examples": [
+        "listentoserviceorderinformationrequiredevent listener"
+      ]
+    },
+    {
+      "id": "tmf_tmf641_listener_listentoserviceorderjeopardyevent_intent",
+      "concept_uri": "tmf:intent/tmf641/listener.listentoserviceorderjeopardyevent",
+      "entity_type": "intent_hint",
+      "regex": "(?i)^listentoserviceorderjeopardyevent\\ listener$",
+      "examples": [
+        "listentoserviceorderjeopardyevent listener"
+      ]
+    },
+    {
+      "id": "tmf_tmf641_listener_listentoserviceordermilestoneevent_intent",
+      "concept_uri": "tmf:intent/tmf641/listener.listentoserviceordermilestoneevent",
+      "entity_type": "intent_hint",
+      "regex": "(?i)^listentoserviceordermilestoneevent\\ listener$",
+      "examples": [
+        "listentoserviceordermilestoneevent listener"
+      ]
+    },
+    {
+      "id": "tmf_tmf641_listener_listentoserviceorderstatechangeevent_intent",
+      "concept_uri": "tmf:intent/tmf641/listener.listentoserviceorderstatechangeevent",
+      "entity_type": "intent_hint",
+      "regex": "(?i)^listentoserviceorderstatechangeevent\\ listener$",
+      "examples": [
+        "listentoserviceorderstatechangeevent listener"
+      ]
+    },
+    {
+      "id": "tmf_tmf641_serviceorder_createserviceorder_intent",
+      "concept_uri": "tmf:intent/tmf641/serviceorder.createserviceorder",
+      "entity_type": "intent_hint",
+      "regex": "(?i)^createserviceorder$",
+      "examples": [
+        "createserviceorder"
+      ]
+    },
+    {
+      "id": "tmf_tmf641_serviceorder_deleteserviceorder_intent",
+      "concept_uri": "tmf:intent/tmf641/serviceorder.deleteserviceorder",
+      "entity_type": "intent_hint",
+      "regex": "(?i)^deleteserviceorder$",
+      "examples": [
+        "deleteserviceorder"
+      ]
+    },
+    {
+      "id": "tmf_tmf641_serviceorder_listserviceorder_intent",
+      "concept_uri": "tmf:intent/tmf641/serviceorder.listserviceorder",
+      "entity_type": "intent_hint",
+      "regex": "(?i)^listserviceorder$",
+      "examples": [
+        "listserviceorder"
+      ]
+    },
+    {
+      "id": "tmf_tmf641_serviceorder_patchserviceorder_intent",
+      "concept_uri": "tmf:intent/tmf641/serviceorder.patchserviceorder",
+      "entity_type": "intent_hint",
+      "regex": "(?i)^patchserviceorder$",
+      "examples": [
+        "patchserviceorder"
+      ]
+    },
+    {
+      "id": "tmf_tmf641_serviceorder_retrieveserviceorder_intent",
+      "concept_uri": "tmf:intent/tmf641/serviceorder.retrieveserviceorder",
+      "entity_type": "intent_hint",
+      "regex": "(?i)^retrieveserviceorder$",
+      "examples": [
+        "retrieveserviceorder"
+      ]
+    },
+    {
+      "id": "tmf_tmf642_ackalarm_createackalarm_intent",
+      "concept_uri": "tmf:intent/tmf642/ackalarm.createackalarm",
+      "entity_type": "intent_hint",
+      "regex": "(?i)^createackalarm$",
+      "examples": [
+        "createackalarm"
+      ]
+    },
+    {
+      "id": "tmf_tmf642_ackalarm_listackalarm_intent",
+      "concept_uri": "tmf:intent/tmf642/ackalarm.listackalarm",
+      "entity_type": "intent_hint",
+      "regex": "(?i)^listackalarm$",
+      "examples": [
+        "listackalarm"
+      ]
+    },
+    {
+      "id": "tmf_tmf642_ackalarm_retrieveackalarm_intent",
+      "concept_uri": "tmf:intent/tmf642/ackalarm.retrieveackalarm",
+      "entity_type": "intent_hint",
+      "regex": "(?i)^retrieveackalarm$",
+      "examples": [
+        "retrieveackalarm"
+      ]
+    },
+    {
+      "id": "tmf_tmf642_alarm_createalarm_intent",
+      "concept_uri": "tmf:intent/tmf642/alarm.createalarm",
+      "entity_type": "intent_hint",
+      "regex": "(?i)^createalarm$",
+      "examples": [
+        "createalarm"
+      ]
+    },
+    {
+      "id": "tmf_tmf642_alarm_deletealarm_intent",
+      "concept_uri": "tmf:intent/tmf642/alarm.deletealarm",
+      "entity_type": "intent_hint",
+      "regex": "(?i)^deletealarm$",
+      "examples": [
+        "deletealarm"
+      ]
+    },
+    {
+      "id": "tmf_tmf642_alarm_listalarm_intent",
+      "concept_uri": "tmf:intent/tmf642/alarm.listalarm",
+      "entity_type": "intent_hint",
+      "regex": "(?i)^listalarm$",
+      "examples": [
+        "listalarm"
+      ]
+    },
+    {
+      "id": "tmf_tmf642_alarm_patchalarm_intent",
+      "concept_uri": "tmf:intent/tmf642/alarm.patchalarm",
+      "entity_type": "intent_hint",
+      "regex": "(?i)^patchalarm$",
+      "examples": [
+        "patchalarm"
+      ]
+    },
+    {
+      "id": "tmf_tmf642_alarm_retrievealarm_intent",
+      "concept_uri": "tmf:intent/tmf642/alarm.retrievealarm",
+      "entity_type": "intent_hint",
+      "regex": "(?i)^retrievealarm$",
+      "examples": [
+        "retrievealarm"
+      ]
+    },
+    {
+      "id": "tmf_tmf642_clearalarm_createclearalarm_intent",
+      "concept_uri": "tmf:intent/tmf642/clearalarm.createclearalarm",
+      "entity_type": "intent_hint",
+      "regex": "(?i)^createclearalarm$",
+      "examples": [
+        "createclearalarm"
+      ]
+    },
+    {
+      "id": "tmf_tmf642_clearalarm_listclearalarm_intent",
+      "concept_uri": "tmf:intent/tmf642/clearalarm.listclearalarm",
+      "entity_type": "intent_hint",
+      "regex": "(?i)^listclearalarm$",
+      "examples": [
+        "listclearalarm"
+      ]
+    },
+    {
+      "id": "tmf_tmf642_clearalarm_retrieveclearalarm_intent",
+      "concept_uri": "tmf:intent/tmf642/clearalarm.retrieveclearalarm",
+      "entity_type": "intent_hint",
+      "regex": "(?i)^retrieveclearalarm$",
+      "examples": [
+        "retrieveclearalarm"
+      ]
+    },
+    {
+      "id": "tmf_tmf642_commentalarm_createcommentalarm_intent",
+      "concept_uri": "tmf:intent/tmf642/commentalarm.createcommentalarm",
+      "entity_type": "intent_hint",
+      "regex": "(?i)^createcommentalarm$",
+      "examples": [
+        "createcommentalarm"
+      ]
+    },
+    {
+      "id": "tmf_tmf642_commentalarm_listcommentalarm_intent",
+      "concept_uri": "tmf:intent/tmf642/commentalarm.listcommentalarm",
+      "entity_type": "intent_hint",
+      "regex": "(?i)^listcommentalarm$",
+      "examples": [
+        "listcommentalarm"
+      ]
+    },
+    {
+      "id": "tmf_tmf642_commentalarm_retrievecommentalarm_intent",
+      "concept_uri": "tmf:intent/tmf642/commentalarm.retrievecommentalarm",
+      "entity_type": "intent_hint",
+      "regex": "(?i)^retrievecommentalarm$",
+      "examples": [
+        "retrievecommentalarm"
+      ]
+    },
+    {
+      "id": "tmf_tmf642_groupalarm_creategroupalarm_intent",
+      "concept_uri": "tmf:intent/tmf642/groupalarm.creategroupalarm",
+      "entity_type": "intent_hint",
+      "regex": "(?i)^creategroupalarm$",
+      "examples": [
+        "creategroupalarm"
+      ]
+    },
+    {
+      "id": "tmf_tmf642_groupalarm_listgroupalarm_intent",
+      "concept_uri": "tmf:intent/tmf642/groupalarm.listgroupalarm",
+      "entity_type": "intent_hint",
+      "regex": "(?i)^listgroupalarm$",
+      "examples": [
+        "listgroupalarm"
+      ]
+    },
+    {
+      "id": "tmf_tmf642_groupalarm_retrievegroupalarm_intent",
+      "concept_uri": "tmf:intent/tmf642/groupalarm.retrievegroupalarm",
+      "entity_type": "intent_hint",
+      "regex": "(?i)^retrievegroupalarm$",
+      "examples": [
+        "retrievegroupalarm"
+      ]
+    },
+    {
+      "id": "tmf_tmf642_hub_createhub_intent",
+      "concept_uri": "tmf:intent/tmf642/hub.createhub",
+      "entity_type": "intent_hint",
+      "regex": "(?i)^createhub$",
+      "examples": [
+        "createhub"
+      ]
+    },
+    {
+      "id": "tmf_tmf642_hub_hubdelete_intent",
+      "concept_uri": "tmf:intent/tmf642/hub.hubdelete",
+      "entity_type": "intent_hint",
+      "regex": "(?i)^hubdelete$",
+      "examples": [
+        "hubdelete"
+      ]
+    },
+    {
+      "id": "tmf_tmf642_hub_hubget_intent",
+      "concept_uri": "tmf:intent/tmf642/hub.hubget",
+      "entity_type": "intent_hint",
+      "regex": "(?i)^hubget$",
+      "examples": [
+        "hubget"
+      ]
+    },
+    {
+      "id": "tmf_tmf642_listener_ackalarmcreateevent_intent",
+      "concept_uri": "tmf:intent/tmf642/listener.ackalarmcreateevent",
+      "entity_type": "intent_hint",
+      "regex": "(?i)^ackalarmcreateevent\\ listener$",
+      "examples": [
+        "ackalarmcreateevent listener"
+      ]
+    },
+    {
+      "id": "tmf_tmf642_listener_ackalarmstatechangeevent_intent",
+      "concept_uri": "tmf:intent/tmf642/listener.ackalarmstatechangeevent",
+      "entity_type": "intent_hint",
+      "regex": "(?i)^ackalarmstatechangeevent\\ listener$",
+      "examples": [
+        "ackalarmstatechangeevent listener"
+      ]
+    },
+    {
+      "id": "tmf_tmf642_listener_alarmattributevaluechangeevent_intent",
+      "concept_uri": "tmf:intent/tmf642/listener.alarmattributevaluechangeevent",
+      "entity_type": "intent_hint",
+      "regex": "(?i)^alarmattributevaluechangeevent\\ listener$",
+      "examples": [
+        "alarmattributevaluechangeevent listener"
+      ]
+    },
+    {
+      "id": "tmf_tmf642_listener_alarmcreateevent_intent",
+      "concept_uri": "tmf:intent/tmf642/listener.alarmcreateevent",
+      "entity_type": "intent_hint",
+      "regex": "(?i)^alarmcreateevent\\ listener$",
+      "examples": [
+        "alarmcreateevent listener"
+      ]
+    },
+    {
+      "id": "tmf_tmf642_listener_alarmdeleteevent_intent",
+      "concept_uri": "tmf:intent/tmf642/listener.alarmdeleteevent",
+      "entity_type": "intent_hint",
+      "regex": "(?i)^alarmdeleteevent\\ listener$",
+      "examples": [
+        "alarmdeleteevent listener"
+      ]
+    },
+    {
+      "id": "tmf_tmf642_listener_alarmstatechangeevent_intent",
+      "concept_uri": "tmf:intent/tmf642/listener.alarmstatechangeevent",
+      "entity_type": "intent_hint",
+      "regex": "(?i)^alarmstatechangeevent\\ listener$",
+      "examples": [
+        "alarmstatechangeevent listener"
+      ]
+    },
+    {
+      "id": "tmf_tmf642_listener_clearalarmcreateevent_intent",
+      "concept_uri": "tmf:intent/tmf642/listener.clearalarmcreateevent",
+      "entity_type": "intent_hint",
+      "regex": "(?i)^clearalarmcreateevent\\ listener$",
+      "examples": [
+        "clearalarmcreateevent listener"
+      ]
+    },
+    {
+      "id": "tmf_tmf642_listener_clearalarmstatechangeevent_intent",
+      "concept_uri": "tmf:intent/tmf642/listener.clearalarmstatechangeevent",
+      "entity_type": "intent_hint",
+      "regex": "(?i)^clearalarmstatechangeevent\\ listener$",
+      "examples": [
+        "clearalarmstatechangeevent listener"
+      ]
+    },
+    {
+      "id": "tmf_tmf642_listener_commentalarmcreateevent_intent",
+      "concept_uri": "tmf:intent/tmf642/listener.commentalarmcreateevent",
+      "entity_type": "intent_hint",
+      "regex": "(?i)^commentalarmcreateevent\\ listener$",
+      "examples": [
+        "commentalarmcreateevent listener"
+      ]
+    },
+    {
+      "id": "tmf_tmf642_listener_commentalarmstatechangeevent_intent",
+      "concept_uri": "tmf:intent/tmf642/listener.commentalarmstatechangeevent",
+      "entity_type": "intent_hint",
+      "regex": "(?i)^commentalarmstatechangeevent\\ listener$",
+      "examples": [
+        "commentalarmstatechangeevent listener"
+      ]
+    },
+    {
+      "id": "tmf_tmf642_listener_groupalarmcreateevent_intent",
+      "concept_uri": "tmf:intent/tmf642/listener.groupalarmcreateevent",
+      "entity_type": "intent_hint",
+      "regex": "(?i)^groupalarmcreateevent\\ listener$",
+      "examples": [
+        "groupalarmcreateevent listener"
+      ]
+    },
+    {
+      "id": "tmf_tmf642_listener_groupalarmstatechangeevent_intent",
+      "concept_uri": "tmf:intent/tmf642/listener.groupalarmstatechangeevent",
+      "entity_type": "intent_hint",
+      "regex": "(?i)^groupalarmstatechangeevent\\ listener$",
+      "examples": [
+        "groupalarmstatechangeevent listener"
+      ]
+    },
+    {
+      "id": "tmf_tmf642_listener_unackalarmcreateevent_intent",
+      "concept_uri": "tmf:intent/tmf642/listener.unackalarmcreateevent",
+      "entity_type": "intent_hint",
+      "regex": "(?i)^unackalarmcreateevent\\ listener$",
+      "examples": [
+        "unackalarmcreateevent listener"
+      ]
+    },
+    {
+      "id": "tmf_tmf642_listener_unackalarmstatechangeevent_intent",
+      "concept_uri": "tmf:intent/tmf642/listener.unackalarmstatechangeevent",
+      "entity_type": "intent_hint",
+      "regex": "(?i)^unackalarmstatechangeevent\\ listener$",
+      "examples": [
+        "unackalarmstatechangeevent listener"
+      ]
+    },
+    {
+      "id": "tmf_tmf642_listener_ungroupalarmcreateevent_intent",
+      "concept_uri": "tmf:intent/tmf642/listener.ungroupalarmcreateevent",
+      "entity_type": "intent_hint",
+      "regex": "(?i)^ungroupalarmcreateevent\\ listener$",
+      "examples": [
+        "ungroupalarmcreateevent listener"
+      ]
+    },
+    {
+      "id": "tmf_tmf642_listener_ungroupalarmstatechangeevent_intent",
+      "concept_uri": "tmf:intent/tmf642/listener.ungroupalarmstatechangeevent",
+      "entity_type": "intent_hint",
+      "regex": "(?i)^ungroupalarmstatechangeevent\\ listener$",
+      "examples": [
+        "ungroupalarmstatechangeevent listener"
+      ]
+    },
+    {
+      "id": "tmf_tmf642_unackalarm_createunackalarm_intent",
+      "concept_uri": "tmf:intent/tmf642/unackalarm.createunackalarm",
+      "entity_type": "intent_hint",
+      "regex": "(?i)^createunackalarm$",
+      "examples": [
+        "createunackalarm"
+      ]
+    },
+    {
+      "id": "tmf_tmf642_unackalarm_listunackalarm_intent",
+      "concept_uri": "tmf:intent/tmf642/unackalarm.listunackalarm",
+      "entity_type": "intent_hint",
+      "regex": "(?i)^listunackalarm$",
+      "examples": [
+        "listunackalarm"
+      ]
+    },
+    {
+      "id": "tmf_tmf642_unackalarm_retrieveunackalarm_intent",
+      "concept_uri": "tmf:intent/tmf642/unackalarm.retrieveunackalarm",
+      "entity_type": "intent_hint",
+      "regex": "(?i)^retrieveunackalarm$",
+      "examples": [
+        "retrieveunackalarm"
+      ]
+    },
+    {
+      "id": "tmf_tmf642_ungroupalarm_createungroupalarm_intent",
+      "concept_uri": "tmf:intent/tmf642/ungroupalarm.createungroupalarm",
+      "entity_type": "intent_hint",
+      "regex": "(?i)^createungroupalarm$",
+      "examples": [
+        "createungroupalarm"
+      ]
+    },
+    {
+      "id": "tmf_tmf642_ungroupalarm_listungroupalarm_intent",
+      "concept_uri": "tmf:intent/tmf642/ungroupalarm.listungroupalarm",
+      "entity_type": "intent_hint",
+      "regex": "(?i)^listungroupalarm$",
+      "examples": [
+        "listungroupalarm"
+      ]
+    },
+    {
+      "id": "tmf_tmf642_ungroupalarm_retrieveungroupalarm_intent",
+      "concept_uri": "tmf:intent/tmf642/ungroupalarm.retrieveungroupalarm",
+      "entity_type": "intent_hint",
+      "regex": "(?i)^retrieveungroupalarm$",
+      "examples": [
+        "retrieveungroupalarm"
+      ]
+    },
+    {
+      "id": "tmf_tmf921_hub_createhub_intent",
+      "concept_uri": "tmf:intent/tmf921/hub.createhub",
+      "entity_type": "intent_hint",
+      "regex": "(?i)^createhub$",
+      "examples": [
+        "createhub"
+      ]
+    },
+    {
+      "id": "tmf_tmf921_hub_hubdelete_intent",
+      "concept_uri": "tmf:intent/tmf921/hub.hubdelete",
+      "entity_type": "intent_hint",
+      "regex": "(?i)^hubdelete$",
+      "examples": [
+        "hubdelete"
+      ]
+    },
+    {
+      "id": "tmf_tmf921_intent_createintent_intent",
+      "concept_uri": "tmf:intent/tmf921/intent.createintent",
+      "entity_type": "intent_hint",
+      "regex": "(?i)^createintent$",
+      "examples": [
+        "createintent"
+      ]
+    },
+    {
+      "id": "tmf_tmf921_intent_deleteintent_intent",
+      "concept_uri": "tmf:intent/tmf921/intent.deleteintent",
+      "entity_type": "intent_hint",
+      "regex": "(?i)^deleteintent$",
+      "examples": [
+        "deleteintent"
+      ]
+    },
+    {
+      "id": "tmf_tmf921_intent_deleteintentintentreport_intent",
+      "concept_uri": "tmf:intent/tmf921/intent.deleteintentintentreport",
+      "entity_type": "intent_hint",
+      "regex": "(?i)^deleteintentintentreport$",
+      "examples": [
+        "deleteintentintentreport"
+      ]
+    },
+    {
+      "id": "tmf_tmf921_intent_listintent_intent",
+      "concept_uri": "tmf:intent/tmf921/intent.listintent",
+      "entity_type": "intent_hint",
+      "regex": "(?i)^listintent$",
+      "examples": [
+        "listintent"
+      ]
+    },
+    {
+      "id": "tmf_tmf921_intent_listintentintentreport_intent",
+      "concept_uri": "tmf:intent/tmf921/intent.listintentintentreport",
+      "entity_type": "intent_hint",
+      "regex": "(?i)^listintentintentreport$",
+      "examples": [
+        "listintentintentreport"
+      ]
+    },
+    {
+      "id": "tmf_tmf921_intent_patchintent_intent",
+      "concept_uri": "tmf:intent/tmf921/intent.patchintent",
+      "entity_type": "intent_hint",
+      "regex": "(?i)^patchintent$",
+      "examples": [
+        "patchintent"
+      ]
+    },
+    {
+      "id": "tmf_tmf921_intent_retrieveintent_intent",
+      "concept_uri": "tmf:intent/tmf921/intent.retrieveintent",
+      "entity_type": "intent_hint",
+      "regex": "(?i)^retrieveintent$",
+      "examples": [
+        "retrieveintent"
+      ]
+    },
+    {
+      "id": "tmf_tmf921_intent_retrieveintentintentreport_intent",
+      "concept_uri": "tmf:intent/tmf921/intent.retrieveintentintentreport",
+      "entity_type": "intent_hint",
+      "regex": "(?i)^retrieveintentintentreport$",
+      "examples": [
+        "retrieveintentintentreport"
+      ]
+    },
+    {
+      "id": "tmf_tmf921_intentspecification_createintentspecification_intent",
+      "concept_uri": "tmf:intent/tmf921/intentspecification.createintentspecification",
+      "entity_type": "intent_hint",
+      "regex": "(?i)^createintentspecification$",
+      "examples": [
+        "createintentspecification"
+      ]
+    },
+    {
+      "id": "tmf_tmf921_intentspecification_deleteintentspecification_intent",
+      "concept_uri": "tmf:intent/tmf921/intentspecification.deleteintentspecification",
+      "entity_type": "intent_hint",
+      "regex": "(?i)^deleteintentspecification$",
+      "examples": [
+        "deleteintentspecification"
+      ]
+    },
+    {
+      "id": "tmf_tmf921_intentspecification_listintentspecification_intent",
+      "concept_uri": "tmf:intent/tmf921/intentspecification.listintentspecification",
+      "entity_type": "intent_hint",
+      "regex": "(?i)^listintentspecification$",
+      "examples": [
+        "listintentspecification"
+      ]
+    },
+    {
+      "id": "tmf_tmf921_intentspecification_patchintentspecification_intent",
+      "concept_uri": "tmf:intent/tmf921/intentspecification.patchintentspecification",
+      "entity_type": "intent_hint",
+      "regex": "(?i)^patchintentspecification$",
+      "examples": [
+        "patchintentspecification"
+      ]
+    },
+    {
+      "id": "tmf_tmf921_intentspecification_retrieveintentspecification_intent",
+      "concept_uri": "tmf:intent/tmf921/intentspecification.retrieveintentspecification",
+      "entity_type": "intent_hint",
+      "regex": "(?i)^retrieveintentspecification$",
+      "examples": [
+        "retrieveintentspecification"
+      ]
+    },
+    {
+      "id": "tmf_tmf921_listener_intentattributevaluechangeevent_intent",
+      "concept_uri": "tmf:intent/tmf921/listener.intentattributevaluechangeevent",
+      "entity_type": "intent_hint",
+      "regex": "(?i)^intentattributevaluechangeevent\\ listener$",
+      "examples": [
+        "intentattributevaluechangeevent listener"
+      ]
+    },
+    {
+      "id": "tmf_tmf921_listener_intentcreateevent_intent",
+      "concept_uri": "tmf:intent/tmf921/listener.intentcreateevent",
+      "entity_type": "intent_hint",
+      "regex": "(?i)^intentcreateevent\\ listener$",
+      "examples": [
+        "intentcreateevent listener"
+      ]
+    },
+    {
+      "id": "tmf_tmf921_listener_intentdeleteevent_intent",
+      "concept_uri": "tmf:intent/tmf921/listener.intentdeleteevent",
+      "entity_type": "intent_hint",
+      "regex": "(?i)^intentdeleteevent\\ listener$",
+      "examples": [
+        "intentdeleteevent listener"
+      ]
+    },
+    {
+      "id": "tmf_tmf921_listener_intentreportattributevaluechangeevent_intent",
+      "concept_uri": "tmf:intent/tmf921/listener.intentreportattributevaluechangeevent",
+      "entity_type": "intent_hint",
+      "regex": "(?i)^intentreportattributevaluechangeevent\\ listener$",
+      "examples": [
+        "intentreportattributevaluechangeevent listener"
+      ]
+    },
+    {
+      "id": "tmf_tmf921_listener_intentreportcreateevent_intent",
+      "concept_uri": "tmf:intent/tmf921/listener.intentreportcreateevent",
+      "entity_type": "intent_hint",
+      "regex": "(?i)^intentreportcreateevent\\ listener$",
+      "examples": [
+        "intentreportcreateevent listener"
+      ]
+    },
+    {
+      "id": "tmf_tmf921_listener_intentreportdeleteevent_intent",
+      "concept_uri": "tmf:intent/tmf921/listener.intentreportdeleteevent",
+      "entity_type": "intent_hint",
+      "regex": "(?i)^intentreportdeleteevent\\ listener$",
+      "examples": [
+        "intentreportdeleteevent listener"
+      ]
+    },
+    {
+      "id": "tmf_tmf921_listener_intentspecificationattributevaluechangeevent_intent",
+      "concept_uri": "tmf:intent/tmf921/listener.intentspecificationattributevaluechangeevent",
+      "entity_type": "intent_hint",
+      "regex": "(?i)^intentspecificationattributevaluechangeevent\\ listener$",
+      "examples": [
+        "intentspecificationattributevaluechangeevent listener"
+      ]
+    },
+    {
+      "id": "tmf_tmf921_listener_intentspecificationcreateevent_intent",
+      "concept_uri": "tmf:intent/tmf921/listener.intentspecificationcreateevent",
+      "entity_type": "intent_hint",
+      "regex": "(?i)^intentspecificationcreateevent\\ listener$",
+      "examples": [
+        "intentspecificationcreateevent listener"
+      ]
+    },
+    {
+      "id": "tmf_tmf921_listener_intentspecificationdeleteevent_intent",
+      "concept_uri": "tmf:intent/tmf921/listener.intentspecificationdeleteevent",
+      "entity_type": "intent_hint",
+      "regex": "(?i)^intentspecificationdeleteevent\\ listener$",
+      "examples": [
+        "intentspecificationdeleteevent listener"
+      ]
+    },
+    {
+      "id": "tmf_tmf921_listener_intentspecificationstatuschangeevent_intent",
+      "concept_uri": "tmf:intent/tmf921/listener.intentspecificationstatuschangeevent",
+      "entity_type": "intent_hint",
+      "regex": "(?i)^intentspecificationstatuschangeevent\\ listener$",
+      "examples": [
+        "intentspecificationstatuschangeevent listener"
+      ]
+    },
+    {
+      "id": "tmf_tmf921_listener_intentstatuschangeevent_intent",
+      "concept_uri": "tmf:intent/tmf921/listener.intentstatuschangeevent",
+      "entity_type": "intent_hint",
+      "regex": "(?i)^intentstatuschangeevent\\ listener$",
+      "examples": [
+        "intentstatuschangeevent listener"
+      ]
+    },
+    {
+      "id": "tmf_tmf924_hub_registerlistener_intent",
+      "concept_uri": "tmf:intent/tmf924/hub.registerlistener",
+      "entity_type": "intent_hint",
+      "regex": "(?i)^registerlistener\\ hub$",
+      "examples": [
+        "registerlistener hub"
+      ]
+    },
+    {
+      "id": "tmf_tmf924_hub_unregisterlistener_intent",
+      "concept_uri": "tmf:intent/tmf924/hub.unregisterlistener",
+      "entity_type": "intent_hint",
+      "regex": "(?i)^unregisterlistener\\ hub$",
+      "examples": [
+        "unregisterlistener hub"
+      ]
+    },
+    {
+      "id": "tmf_tmf924_listener_listentomonitorattributevaluechangeevent_intent",
+      "concept_uri": "tmf:intent/tmf924/listener.listentomonitorattributevaluechangeevent",
+      "entity_type": "intent_hint",
+      "regex": "(?i)^listentomonitorattributevaluechangeevent\\ listener$",
+      "examples": [
+        "listentomonitorattributevaluechangeevent listener"
+      ]
+    },
+    {
+      "id": "tmf_tmf924_listener_listentomonitorcreateevent_intent",
+      "concept_uri": "tmf:intent/tmf924/listener.listentomonitorcreateevent",
+      "entity_type": "intent_hint",
+      "regex": "(?i)^listentomonitorcreateevent\\ listener$",
+      "examples": [
+        "listentomonitorcreateevent listener"
+      ]
+    },
+    {
+      "id": "tmf_tmf924_listener_listentomonitordeleteevent_intent",
+      "concept_uri": "tmf:intent/tmf924/listener.listentomonitordeleteevent",
+      "entity_type": "intent_hint",
+      "regex": "(?i)^listentomonitordeleteevent\\ listener$",
+      "examples": [
+        "listentomonitordeleteevent listener"
+      ]
+    },
+    {
+      "id": "tmf_tmf924_listener_listentomonitorstatechangeevent_intent",
+      "concept_uri": "tmf:intent/tmf924/listener.listentomonitorstatechangeevent",
+      "entity_type": "intent_hint",
+      "regex": "(?i)^listentomonitorstatechangeevent\\ listener$",
+      "examples": [
+        "listentomonitorstatechangeevent listener"
+      ]
+    },
+    {
+      "id": "tmf_tmf924_listener_listentoserviceattributevaluechangeevent_intent",
+      "concept_uri": "tmf:intent/tmf924/listener.listentoserviceattributevaluechangeevent",
+      "entity_type": "intent_hint",
+      "regex": "(?i)^listentoserviceattributevaluechangeevent\\ listener$",
+      "examples": [
+        "listentoserviceattributevaluechangeevent listener"
+      ]
+    },
+    {
+      "id": "tmf_tmf924_listener_listentoservicecreateevent_intent",
+      "concept_uri": "tmf:intent/tmf924/listener.listentoservicecreateevent",
+      "entity_type": "intent_hint",
+      "regex": "(?i)^listentoservicecreateevent\\ listener$",
+      "examples": [
+        "listentoservicecreateevent listener"
+      ]
+    },
+    {
+      "id": "tmf_tmf924_listener_listentoservicedeleteevent_intent",
+      "concept_uri": "tmf:intent/tmf924/listener.listentoservicedeleteevent",
+      "entity_type": "intent_hint",
+      "regex": "(?i)^listentoservicedeleteevent\\ listener$",
+      "examples": [
+        "listentoservicedeleteevent listener"
+      ]
+    },
+    {
+      "id": "tmf_tmf924_listener_listentoservicestatechangeevent_intent",
+      "concept_uri": "tmf:intent/tmf924/listener.listentoservicestatechangeevent",
+      "entity_type": "intent_hint",
+      "regex": "(?i)^listentoservicestatechangeevent\\ listener$",
+      "examples": [
+        "listentoservicestatechangeevent listener"
+      ]
+    },
+    {
+      "id": "tmf_tmf924_monitor_listmonitor_intent",
+      "concept_uri": "tmf:intent/tmf924/monitor.listmonitor",
+      "entity_type": "intent_hint",
+      "regex": "(?i)^listmonitor$",
+      "examples": [
+        "listmonitor"
+      ]
+    },
+    {
+      "id": "tmf_tmf924_monitor_retrievemonitor_intent",
+      "concept_uri": "tmf:intent/tmf924/monitor.retrievemonitor",
+      "entity_type": "intent_hint",
+      "regex": "(?i)^retrievemonitor$",
+      "examples": [
+        "retrievemonitor"
+      ]
+    },
+    {
+      "id": "tmf_tmf924_service_createservice_intent",
+      "concept_uri": "tmf:intent/tmf924/service.createservice",
+      "entity_type": "intent_hint",
+      "regex": "(?i)^createservice$",
+      "examples": [
+        "createservice"
+      ]
+    },
+    {
+      "id": "tmf_tmf924_service_deleteservice_intent",
+      "concept_uri": "tmf:intent/tmf924/service.deleteservice",
+      "entity_type": "intent_hint",
+      "regex": "(?i)^deleteservice$",
+      "examples": [
+        "deleteservice"
+      ]
+    },
+    {
+      "id": "tmf_tmf924_service_listservice_intent",
+      "concept_uri": "tmf:intent/tmf924/service.listservice",
+      "entity_type": "intent_hint",
+      "regex": "(?i)^listservice$",
+      "examples": [
+        "listservice"
+      ]
+    },
+    {
+      "id": "tmf_tmf924_service_patchservice_intent",
+      "concept_uri": "tmf:intent/tmf924/service.patchservice",
+      "entity_type": "intent_hint",
+      "regex": "(?i)^patchservice$",
+      "examples": [
+        "patchservice"
+      ]
+    },
+    {
+      "id": "tmf_tmf924_service_retrieveservice_intent",
+      "concept_uri": "tmf:intent/tmf924/service.retrieveservice",
+      "entity_type": "intent_hint",
+      "regex": "(?i)^retrieveservice$",
+      "examples": [
+        "retrieveservice"
+      ]
+    }
+  ]
+}

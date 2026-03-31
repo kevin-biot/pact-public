@@ -1,0 +1,9 @@
+{
+  "@context": {
+    "tmf": "https://lane2.example/ontology/tmf/",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "dc": "http://purl.org/dc/terms/",
+    "intent_class": "tmf:intentClass",
+    "confidence_floor": "tmf:confidenceFloor"
+  }
+}

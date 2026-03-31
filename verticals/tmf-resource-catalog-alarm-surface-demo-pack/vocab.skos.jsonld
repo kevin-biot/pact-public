@@ -1,0 +1,1264 @@
+{
+  "@context": {
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "tmf": "https://lane2.example/ontology/tmf/"
+  },
+  "@graph": [
+    {
+      "@id": "tmf:family/api",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "TM Forum API"
+    },
+    {
+      "@id": "tmf:resource/ackalarm",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "Ackalarm",
+      "skos:broader": "tmf:family/api"
+    },
+    {
+      "@id": "tmf:resource/alarm",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "Alarm",
+      "skos:broader": "tmf:family/api"
+    },
+    {
+      "@id": "tmf:resource/clearalarm",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "Clearalarm",
+      "skos:broader": "tmf:family/api"
+    },
+    {
+      "@id": "tmf:resource/commentalarm",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "Commentalarm",
+      "skos:broader": "tmf:family/api"
+    },
+    {
+      "@id": "tmf:resource/exportjob",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "Exportjob",
+      "skos:broader": "tmf:family/api"
+    },
+    {
+      "@id": "tmf:resource/groupalarm",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "Groupalarm",
+      "skos:broader": "tmf:family/api"
+    },
+    {
+      "@id": "tmf:resource/hub",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "Hub",
+      "skos:broader": "tmf:family/api"
+    },
+    {
+      "@id": "tmf:resource/importjob",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "Importjob",
+      "skos:broader": "tmf:family/api"
+    },
+    {
+      "@id": "tmf:resource/listener",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "Listener",
+      "skos:broader": "tmf:family/api"
+    },
+    {
+      "@id": "tmf:resource/resource",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "Resource",
+      "skos:broader": "tmf:family/api"
+    },
+    {
+      "@id": "tmf:resource/resourcecandidate",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "Resourcecandidate",
+      "skos:broader": "tmf:family/api"
+    },
+    {
+      "@id": "tmf:resource/resourcecatalog",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "Resourcecatalog",
+      "skos:broader": "tmf:family/api"
+    },
+    {
+      "@id": "tmf:resource/resourcecategory",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "Resourcecategory",
+      "skos:broader": "tmf:family/api"
+    },
+    {
+      "@id": "tmf:resource/resourcespecification",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "Resourcespecification",
+      "skos:broader": "tmf:family/api"
+    },
+    {
+      "@id": "tmf:resource/unackalarm",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "Unackalarm",
+      "skos:broader": "tmf:family/api"
+    },
+    {
+      "@id": "tmf:resource/ungroupalarm",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "Ungroupalarm",
+      "skos:broader": "tmf:family/api"
+    },
+    {
+      "@id": "tmf:intent/tmf634/exportjob.createexportjob",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "Createexportjob",
+      "skos:altLabel": [
+        "createexportjob",
+        "POST /exportJob",
+        "tmf.tmf634.exportjob.createexportjob.v1"
+      ],
+      "skos:broader": "tmf:resource/exportjob"
+    },
+    {
+      "@id": "tmf:intent/tmf634/exportjob.deleteexportjob",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "Deleteexportjob",
+      "skos:altLabel": [
+        "deleteexportjob",
+        "DELETE /exportJob/{id}",
+        "tmf.tmf634.exportjob.deleteexportjob.v1"
+      ],
+      "skos:broader": "tmf:resource/exportjob"
+    },
+    {
+      "@id": "tmf:intent/tmf634/exportjob.listexportjob",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "Listexportjob",
+      "skos:altLabel": [
+        "listexportjob",
+        "GET /exportJob",
+        "tmf.tmf634.exportjob.listexportjob.v1"
+      ],
+      "skos:broader": "tmf:resource/exportjob"
+    },
+    {
+      "@id": "tmf:intent/tmf634/exportjob.retrieveexportjob",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "Retrieveexportjob",
+      "skos:altLabel": [
+        "retrieveexportjob",
+        "GET /exportJob/{id}",
+        "tmf.tmf634.exportjob.retrieveexportjob.v1"
+      ],
+      "skos:broader": "tmf:resource/exportjob"
+    },
+    {
+      "@id": "tmf:intent/tmf634/hub.createhub",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "Createhub",
+      "skos:altLabel": [
+        "createhub",
+        "POST /hub",
+        "tmf.tmf634.hub.createhub.v1"
+      ],
+      "skos:broader": "tmf:resource/hub"
+    },
+    {
+      "@id": "tmf:intent/tmf634/hub.hubdelete",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "Hubdelete",
+      "skos:altLabel": [
+        "hubdelete",
+        "DELETE /hub/{id}",
+        "tmf.tmf634.hub.hubdelete.v1"
+      ],
+      "skos:broader": "tmf:resource/hub"
+    },
+    {
+      "@id": "tmf:intent/tmf634/importjob.createimportjob",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "Createimportjob",
+      "skos:altLabel": [
+        "createimportjob",
+        "POST /importJob",
+        "tmf.tmf634.importjob.createimportjob.v1"
+      ],
+      "skos:broader": "tmf:resource/importjob"
+    },
+    {
+      "@id": "tmf:intent/tmf634/importjob.deleteimportjob",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "Deleteimportjob",
+      "skos:altLabel": [
+        "deleteimportjob",
+        "DELETE /importJob/{id}",
+        "tmf.tmf634.importjob.deleteimportjob.v1"
+      ],
+      "skos:broader": "tmf:resource/importjob"
+    },
+    {
+      "@id": "tmf:intent/tmf634/importjob.listimportjob",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "Listimportjob",
+      "skos:altLabel": [
+        "listimportjob",
+        "GET /importJob",
+        "tmf.tmf634.importjob.listimportjob.v1"
+      ],
+      "skos:broader": "tmf:resource/importjob"
+    },
+    {
+      "@id": "tmf:intent/tmf634/importjob.retrieveimportjob",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "Retrieveimportjob",
+      "skos:altLabel": [
+        "retrieveimportjob",
+        "GET /importJob/{id}",
+        "tmf.tmf634.importjob.retrieveimportjob.v1"
+      ],
+      "skos:broader": "tmf:resource/importjob"
+    },
+    {
+      "@id": "tmf:intent/tmf634/listener.exportjobcreateevent",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "Exportjobcreateevent listener",
+      "skos:altLabel": [
+        "exportjobcreateevent listener",
+        "POST /listener/exportJobCreateEvent",
+        "tmf.tmf634.listener.exportjobcreateevent.v1"
+      ],
+      "skos:broader": "tmf:resource/listener"
+    },
+    {
+      "@id": "tmf:intent/tmf634/listener.exportjobdeleteevent",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "Exportjobdeleteevent listener",
+      "skos:altLabel": [
+        "exportjobdeleteevent listener",
+        "POST /listener/exportJobDeleteEvent",
+        "tmf.tmf634.listener.exportjobdeleteevent.v1"
+      ],
+      "skos:broader": "tmf:resource/listener"
+    },
+    {
+      "@id": "tmf:intent/tmf634/listener.exportjobstatechangeevent",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "Exportjobstatechangeevent listener",
+      "skos:altLabel": [
+        "exportjobstatechangeevent listener",
+        "POST /listener/exportJobStateChangeEvent",
+        "tmf.tmf634.listener.exportjobstatechangeevent.v1"
+      ],
+      "skos:broader": "tmf:resource/listener"
+    },
+    {
+      "@id": "tmf:intent/tmf634/listener.importjobcreateevent",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "Importjobcreateevent listener",
+      "skos:altLabel": [
+        "importjobcreateevent listener",
+        "POST /listener/importJobCreateEvent",
+        "tmf.tmf634.listener.importjobcreateevent.v1"
+      ],
+      "skos:broader": "tmf:resource/listener"
+    },
+    {
+      "@id": "tmf:intent/tmf634/listener.importjobdeleteevent",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "Importjobdeleteevent listener",
+      "skos:altLabel": [
+        "importjobdeleteevent listener",
+        "POST /listener/importJobDeleteEvent",
+        "tmf.tmf634.listener.importjobdeleteevent.v1"
+      ],
+      "skos:broader": "tmf:resource/listener"
+    },
+    {
+      "@id": "tmf:intent/tmf634/listener.importjobstatechangeevent",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "Importjobstatechangeevent listener",
+      "skos:altLabel": [
+        "importjobstatechangeevent listener",
+        "POST /listener/importJobStateChangeEvent",
+        "tmf.tmf634.listener.importjobstatechangeevent.v1"
+      ],
+      "skos:broader": "tmf:resource/listener"
+    },
+    {
+      "@id": "tmf:intent/tmf634/listener.resourcecandidateattributevaluechangeevent",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "Resourcecandidateattributevaluechangeevent listener",
+      "skos:altLabel": [
+        "resourcecandidateattributevaluechangeevent listener",
+        "POST /listener/resourceCandidateAttributeValueChangeEvent",
+        "tmf.tmf634.listener.resourcecandidateattributevaluechangeevent.v1"
+      ],
+      "skos:broader": "tmf:resource/listener"
+    },
+    {
+      "@id": "tmf:intent/tmf634/listener.resourcecandidatecreateevent",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "Resourcecandidatecreateevent listener",
+      "skos:altLabel": [
+        "resourcecandidatecreateevent listener",
+        "POST /listener/resourceCandidateCreateEvent",
+        "tmf.tmf634.listener.resourcecandidatecreateevent.v1"
+      ],
+      "skos:broader": "tmf:resource/listener"
+    },
+    {
+      "@id": "tmf:intent/tmf634/listener.resourcecandidatedeleteevent",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "Resourcecandidatedeleteevent listener",
+      "skos:altLabel": [
+        "resourcecandidatedeleteevent listener",
+        "POST /listener/resourceCandidateDeleteEvent",
+        "tmf.tmf634.listener.resourcecandidatedeleteevent.v1"
+      ],
+      "skos:broader": "tmf:resource/listener"
+    },
+    {
+      "@id": "tmf:intent/tmf634/listener.resourcecandidatestatuschangeevent",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "Resourcecandidatestatuschangeevent listener",
+      "skos:altLabel": [
+        "resourcecandidatestatuschangeevent listener",
+        "POST /listener/resourceCandidateStatusChangeEvent",
+        "tmf.tmf634.listener.resourcecandidatestatuschangeevent.v1"
+      ],
+      "skos:broader": "tmf:resource/listener"
+    },
+    {
+      "@id": "tmf:intent/tmf634/listener.resourcecatalogattributevaluechangeevent",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "Resourcecatalogattributevaluechangeevent listener",
+      "skos:altLabel": [
+        "resourcecatalogattributevaluechangeevent listener",
+        "POST /listener/resourceCatalogAttributeValueChangeEvent",
+        "tmf.tmf634.listener.resourcecatalogattributevaluechangeevent.v1"
+      ],
+      "skos:broader": "tmf:resource/listener"
+    },
+    {
+      "@id": "tmf:intent/tmf634/listener.resourcecatalogcreateevent",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "Resourcecatalogcreateevent listener",
+      "skos:altLabel": [
+        "resourcecatalogcreateevent listener",
+        "POST /listener/resourceCatalogCreateEvent",
+        "tmf.tmf634.listener.resourcecatalogcreateevent.v1"
+      ],
+      "skos:broader": "tmf:resource/listener"
+    },
+    {
+      "@id": "tmf:intent/tmf634/listener.resourcecatalogdeleteevent",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "Resourcecatalogdeleteevent listener",
+      "skos:altLabel": [
+        "resourcecatalogdeleteevent listener",
+        "POST /listener/resourceCatalogDeleteEvent",
+        "tmf.tmf634.listener.resourcecatalogdeleteevent.v1"
+      ],
+      "skos:broader": "tmf:resource/listener"
+    },
+    {
+      "@id": "tmf:intent/tmf634/listener.resourcecatalogstatuschangeevent",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "Resourcecatalogstatuschangeevent listener",
+      "skos:altLabel": [
+        "resourcecatalogstatuschangeevent listener",
+        "POST /listener/resourceCatalogStatusChangeEvent",
+        "tmf.tmf634.listener.resourcecatalogstatuschangeevent.v1"
+      ],
+      "skos:broader": "tmf:resource/listener"
+    },
+    {
+      "@id": "tmf:intent/tmf634/listener.resourcecategoryattributevaluechangeevent",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "Resourcecategoryattributevaluechangeevent listener",
+      "skos:altLabel": [
+        "resourcecategoryattributevaluechangeevent listener",
+        "POST /listener/resourceCategoryAttributeValueChangeEvent",
+        "tmf.tmf634.listener.resourcecategoryattributevaluechangeevent.v1"
+      ],
+      "skos:broader": "tmf:resource/listener"
+    },
+    {
+      "@id": "tmf:intent/tmf634/listener.resourcecategorycreateevent",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "Resourcecategorycreateevent listener",
+      "skos:altLabel": [
+        "resourcecategorycreateevent listener",
+        "POST /listener/resourceCategoryCreateEvent",
+        "tmf.tmf634.listener.resourcecategorycreateevent.v1"
+      ],
+      "skos:broader": "tmf:resource/listener"
+    },
+    {
+      "@id": "tmf:intent/tmf634/listener.resourcecategorydeleteevent",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "Resourcecategorydeleteevent listener",
+      "skos:altLabel": [
+        "resourcecategorydeleteevent listener",
+        "POST /listener/resourceCategoryDeleteEvent",
+        "tmf.tmf634.listener.resourcecategorydeleteevent.v1"
+      ],
+      "skos:broader": "tmf:resource/listener"
+    },
+    {
+      "@id": "tmf:intent/tmf634/listener.resourcecategorystatuschangeevent",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "Resourcecategorystatuschangeevent listener",
+      "skos:altLabel": [
+        "resourcecategorystatuschangeevent listener",
+        "POST /listener/resourceCategoryStatusChangeEvent",
+        "tmf.tmf634.listener.resourcecategorystatuschangeevent.v1"
+      ],
+      "skos:broader": "tmf:resource/listener"
+    },
+    {
+      "@id": "tmf:intent/tmf634/listener.resourcespecificationattributevaluechangeevent",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "Resourcespecificationattributevaluechangeevent listener",
+      "skos:altLabel": [
+        "resourcespecificationattributevaluechangeevent listener",
+        "POST /listener/resourceSpecificationAttributeValueChangeEvent",
+        "tmf.tmf634.listener.resourcespecificationattributevaluechangeevent.v1"
+      ],
+      "skos:broader": "tmf:resource/listener"
+    },
+    {
+      "@id": "tmf:intent/tmf634/listener.resourcespecificationcreateevent",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "Resourcespecificationcreateevent listener",
+      "skos:altLabel": [
+        "resourcespecificationcreateevent listener",
+        "POST /listener/resourceSpecificationCreateEvent",
+        "tmf.tmf634.listener.resourcespecificationcreateevent.v1"
+      ],
+      "skos:broader": "tmf:resource/listener"
+    },
+    {
+      "@id": "tmf:intent/tmf634/listener.resourcespecificationdeleteevent",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "Resourcespecificationdeleteevent listener",
+      "skos:altLabel": [
+        "resourcespecificationdeleteevent listener",
+        "POST /listener/resourceSpecificationDeleteEvent",
+        "tmf.tmf634.listener.resourcespecificationdeleteevent.v1"
+      ],
+      "skos:broader": "tmf:resource/listener"
+    },
+    {
+      "@id": "tmf:intent/tmf634/listener.resourcespecificationstatuschangeevent",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "Resourcespecificationstatuschangeevent listener",
+      "skos:altLabel": [
+        "resourcespecificationstatuschangeevent listener",
+        "POST /listener/resourceSpecificationStatusChangeEvent",
+        "tmf.tmf634.listener.resourcespecificationstatuschangeevent.v1"
+      ],
+      "skos:broader": "tmf:resource/listener"
+    },
+    {
+      "@id": "tmf:intent/tmf634/resourcecandidate.createresourcecandidate",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "Createresourcecandidate",
+      "skos:altLabel": [
+        "createresourcecandidate",
+        "POST /resourceCandidate",
+        "tmf.tmf634.resourcecandidate.createresourcecandidate.v1"
+      ],
+      "skos:broader": "tmf:resource/resourcecandidate"
+    },
+    {
+      "@id": "tmf:intent/tmf634/resourcecandidate.deleteresourcecandidate",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "Deleteresourcecandidate",
+      "skos:altLabel": [
+        "deleteresourcecandidate",
+        "DELETE /resourceCandidate/{id}",
+        "tmf.tmf634.resourcecandidate.deleteresourcecandidate.v1"
+      ],
+      "skos:broader": "tmf:resource/resourcecandidate"
+    },
+    {
+      "@id": "tmf:intent/tmf634/resourcecandidate.listresourcecandidate",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "Listresourcecandidate",
+      "skos:altLabel": [
+        "listresourcecandidate",
+        "GET /resourceCandidate",
+        "tmf.tmf634.resourcecandidate.listresourcecandidate.v1"
+      ],
+      "skos:broader": "tmf:resource/resourcecandidate"
+    },
+    {
+      "@id": "tmf:intent/tmf634/resourcecandidate.patchresourcecandidate",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "Patchresourcecandidate",
+      "skos:altLabel": [
+        "patchresourcecandidate",
+        "PATCH /resourceCandidate/{id}",
+        "tmf.tmf634.resourcecandidate.patchresourcecandidate.v1"
+      ],
+      "skos:broader": "tmf:resource/resourcecandidate"
+    },
+    {
+      "@id": "tmf:intent/tmf634/resourcecandidate.retrieveresourcecandidate",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "Retrieveresourcecandidate",
+      "skos:altLabel": [
+        "retrieveresourcecandidate",
+        "GET /resourceCandidate/{id}",
+        "tmf.tmf634.resourcecandidate.retrieveresourcecandidate.v1"
+      ],
+      "skos:broader": "tmf:resource/resourcecandidate"
+    },
+    {
+      "@id": "tmf:intent/tmf634/resourcecatalog.createresourcecatalog",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "Createresourcecatalog",
+      "skos:altLabel": [
+        "createresourcecatalog",
+        "POST /resourceCatalog",
+        "tmf.tmf634.resourcecatalog.createresourcecatalog.v1"
+      ],
+      "skos:broader": "tmf:resource/resourcecatalog"
+    },
+    {
+      "@id": "tmf:intent/tmf634/resourcecatalog.deleteresourcecatalog",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "Deleteresourcecatalog",
+      "skos:altLabel": [
+        "deleteresourcecatalog",
+        "DELETE /resourceCatalog/{id}",
+        "tmf.tmf634.resourcecatalog.deleteresourcecatalog.v1"
+      ],
+      "skos:broader": "tmf:resource/resourcecatalog"
+    },
+    {
+      "@id": "tmf:intent/tmf634/resourcecatalog.listresourcecatalog",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "Listresourcecatalog",
+      "skos:altLabel": [
+        "listresourcecatalog",
+        "GET /resourceCatalog",
+        "tmf.tmf634.resourcecatalog.listresourcecatalog.v1"
+      ],
+      "skos:broader": "tmf:resource/resourcecatalog"
+    },
+    {
+      "@id": "tmf:intent/tmf634/resourcecatalog.patchresourcecatalog",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "Patchresourcecatalog",
+      "skos:altLabel": [
+        "patchresourcecatalog",
+        "PATCH /resourceCatalog/{id}",
+        "tmf.tmf634.resourcecatalog.patchresourcecatalog.v1"
+      ],
+      "skos:broader": "tmf:resource/resourcecatalog"
+    },
+    {
+      "@id": "tmf:intent/tmf634/resourcecatalog.retrieveresourcecatalog",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "Retrieveresourcecatalog",
+      "skos:altLabel": [
+        "retrieveresourcecatalog",
+        "GET /resourceCatalog/{id}",
+        "tmf.tmf634.resourcecatalog.retrieveresourcecatalog.v1"
+      ],
+      "skos:broader": "tmf:resource/resourcecatalog"
+    },
+    {
+      "@id": "tmf:intent/tmf634/resourcecategory.createresourcecategory",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "Createresourcecategory",
+      "skos:altLabel": [
+        "createresourcecategory",
+        "POST /resourceCategory",
+        "tmf.tmf634.resourcecategory.createresourcecategory.v1"
+      ],
+      "skos:broader": "tmf:resource/resourcecategory"
+    },
+    {
+      "@id": "tmf:intent/tmf634/resourcecategory.deleteresourcecategory",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "Deleteresourcecategory",
+      "skos:altLabel": [
+        "deleteresourcecategory",
+        "DELETE /resourceCategory/{id}",
+        "tmf.tmf634.resourcecategory.deleteresourcecategory.v1"
+      ],
+      "skos:broader": "tmf:resource/resourcecategory"
+    },
+    {
+      "@id": "tmf:intent/tmf634/resourcecategory.listresourcecategory",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "Listresourcecategory",
+      "skos:altLabel": [
+        "listresourcecategory",
+        "GET /resourceCategory",
+        "tmf.tmf634.resourcecategory.listresourcecategory.v1"
+      ],
+      "skos:broader": "tmf:resource/resourcecategory"
+    },
+    {
+      "@id": "tmf:intent/tmf634/resourcecategory.patchresourcecategory",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "Patchresourcecategory",
+      "skos:altLabel": [
+        "patchresourcecategory",
+        "PATCH /resourceCategory/{id}",
+        "tmf.tmf634.resourcecategory.patchresourcecategory.v1"
+      ],
+      "skos:broader": "tmf:resource/resourcecategory"
+    },
+    {
+      "@id": "tmf:intent/tmf634/resourcecategory.retrieveresourcecategory",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "Retrieveresourcecategory",
+      "skos:altLabel": [
+        "retrieveresourcecategory",
+        "GET /resourceCategory/{id}",
+        "tmf.tmf634.resourcecategory.retrieveresourcecategory.v1"
+      ],
+      "skos:broader": "tmf:resource/resourcecategory"
+    },
+    {
+      "@id": "tmf:intent/tmf634/resourcespecification.createresourcespecification",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "Createresourcespecification",
+      "skos:altLabel": [
+        "createresourcespecification",
+        "POST /resourceSpecification",
+        "tmf.tmf634.resourcespecification.createresourcespecification.v1"
+      ],
+      "skos:broader": "tmf:resource/resourcespecification"
+    },
+    {
+      "@id": "tmf:intent/tmf634/resourcespecification.deleteresourcespecification",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "Deleteresourcespecification",
+      "skos:altLabel": [
+        "deleteresourcespecification",
+        "DELETE /resourceSpecification/{id}",
+        "tmf.tmf634.resourcespecification.deleteresourcespecification.v1"
+      ],
+      "skos:broader": "tmf:resource/resourcespecification"
+    },
+    {
+      "@id": "tmf:intent/tmf634/resourcespecification.listresourcespecification",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "Listresourcespecification",
+      "skos:altLabel": [
+        "listresourcespecification",
+        "GET /resourceSpecification",
+        "tmf.tmf634.resourcespecification.listresourcespecification.v1"
+      ],
+      "skos:broader": "tmf:resource/resourcespecification"
+    },
+    {
+      "@id": "tmf:intent/tmf634/resourcespecification.patchresourcespecification",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "Patchresourcespecification",
+      "skos:altLabel": [
+        "patchresourcespecification",
+        "PATCH /resourceSpecification/{id}",
+        "tmf.tmf634.resourcespecification.patchresourcespecification.v1"
+      ],
+      "skos:broader": "tmf:resource/resourcespecification"
+    },
+    {
+      "@id": "tmf:intent/tmf634/resourcespecification.retrieveresourcespecification",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "Retrieveresourcespecification",
+      "skos:altLabel": [
+        "retrieveresourcespecification",
+        "GET /resourceSpecification/{id}",
+        "tmf.tmf634.resourcespecification.retrieveresourcespecification.v1"
+      ],
+      "skos:broader": "tmf:resource/resourcespecification"
+    },
+    {
+      "@id": "tmf:intent/tmf639/hub.registerlistener",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "Registerlistener hub",
+      "skos:altLabel": [
+        "registerlistener hub",
+        "POST /hub",
+        "tmf.tmf639.hub.registerlistener.v1"
+      ],
+      "skos:broader": "tmf:resource/hub"
+    },
+    {
+      "@id": "tmf:intent/tmf639/hub.unregisterlistener",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "Unregisterlistener hub",
+      "skos:altLabel": [
+        "unregisterlistener hub",
+        "DELETE /hub/{id}",
+        "tmf.tmf639.hub.unregisterlistener.v1"
+      ],
+      "skos:broader": "tmf:resource/hub"
+    },
+    {
+      "@id": "tmf:intent/tmf639/listener.listentoresourceattributevaluechangeevent",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "Listentoresourceattributevaluechangeevent listener",
+      "skos:altLabel": [
+        "listentoresourceattributevaluechangeevent listener",
+        "POST /listener/resourceAttributeValueChangeEvent",
+        "tmf.tmf639.listener.listentoresourceattributevaluechangeevent.v1"
+      ],
+      "skos:broader": "tmf:resource/listener"
+    },
+    {
+      "@id": "tmf:intent/tmf639/listener.listentoresourcecreateevent",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "Listentoresourcecreateevent listener",
+      "skos:altLabel": [
+        "listentoresourcecreateevent listener",
+        "POST /listener/resourceCreateEvent",
+        "tmf.tmf639.listener.listentoresourcecreateevent.v1"
+      ],
+      "skos:broader": "tmf:resource/listener"
+    },
+    {
+      "@id": "tmf:intent/tmf639/listener.listentoresourcedeleteevent",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "Listentoresourcedeleteevent listener",
+      "skos:altLabel": [
+        "listentoresourcedeleteevent listener",
+        "POST /listener/resourceDeleteEvent",
+        "tmf.tmf639.listener.listentoresourcedeleteevent.v1"
+      ],
+      "skos:broader": "tmf:resource/listener"
+    },
+    {
+      "@id": "tmf:intent/tmf639/listener.listentoresourcestatechangeevent",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "Listentoresourcestatechangeevent listener",
+      "skos:altLabel": [
+        "listentoresourcestatechangeevent listener",
+        "POST /listener/resourceStateChangeEvent",
+        "tmf.tmf639.listener.listentoresourcestatechangeevent.v1"
+      ],
+      "skos:broader": "tmf:resource/listener"
+    },
+    {
+      "@id": "tmf:intent/tmf639/resource.createresource",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "Createresource",
+      "skos:altLabel": [
+        "createresource",
+        "POST /resource",
+        "tmf.tmf639.resource.createresource.v1"
+      ],
+      "skos:broader": "tmf:resource/resource"
+    },
+    {
+      "@id": "tmf:intent/tmf639/resource.deleteresource",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "Deleteresource",
+      "skos:altLabel": [
+        "deleteresource",
+        "DELETE /resource/{id}",
+        "tmf.tmf639.resource.deleteresource.v1"
+      ],
+      "skos:broader": "tmf:resource/resource"
+    },
+    {
+      "@id": "tmf:intent/tmf639/resource.listresource",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "Listresource",
+      "skos:altLabel": [
+        "listresource",
+        "GET /resource",
+        "tmf.tmf639.resource.listresource.v1"
+      ],
+      "skos:broader": "tmf:resource/resource"
+    },
+    {
+      "@id": "tmf:intent/tmf639/resource.patchresource",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "Patchresource",
+      "skos:altLabel": [
+        "patchresource",
+        "PATCH /resource/{id}",
+        "tmf.tmf639.resource.patchresource.v1"
+      ],
+      "skos:broader": "tmf:resource/resource"
+    },
+    {
+      "@id": "tmf:intent/tmf639/resource.retrieveresource",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "Retrieveresource",
+      "skos:altLabel": [
+        "retrieveresource",
+        "GET /resource/{id}",
+        "tmf.tmf639.resource.retrieveresource.v1"
+      ],
+      "skos:broader": "tmf:resource/resource"
+    },
+    {
+      "@id": "tmf:intent/tmf642/ackalarm.createackalarm",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "Createackalarm",
+      "skos:altLabel": [
+        "createackalarm",
+        "POST /ackAlarm",
+        "tmf.tmf642.ackalarm.createackalarm.v1"
+      ],
+      "skos:broader": "tmf:resource/ackalarm"
+    },
+    {
+      "@id": "tmf:intent/tmf642/ackalarm.listackalarm",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "Listackalarm",
+      "skos:altLabel": [
+        "listackalarm",
+        "GET /ackAlarm",
+        "tmf.tmf642.ackalarm.listackalarm.v1"
+      ],
+      "skos:broader": "tmf:resource/ackalarm"
+    },
+    {
+      "@id": "tmf:intent/tmf642/ackalarm.retrieveackalarm",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "Retrieveackalarm",
+      "skos:altLabel": [
+        "retrieveackalarm",
+        "GET /ackAlarm/{id}",
+        "tmf.tmf642.ackalarm.retrieveackalarm.v1"
+      ],
+      "skos:broader": "tmf:resource/ackalarm"
+    },
+    {
+      "@id": "tmf:intent/tmf642/alarm.createalarm",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "Createalarm",
+      "skos:altLabel": [
+        "createalarm",
+        "POST /alarm",
+        "tmf.tmf642.alarm.createalarm.v1"
+      ],
+      "skos:broader": "tmf:resource/alarm"
+    },
+    {
+      "@id": "tmf:intent/tmf642/alarm.deletealarm",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "Deletealarm",
+      "skos:altLabel": [
+        "deletealarm",
+        "DELETE /alarm/{id}",
+        "tmf.tmf642.alarm.deletealarm.v1"
+      ],
+      "skos:broader": "tmf:resource/alarm"
+    },
+    {
+      "@id": "tmf:intent/tmf642/alarm.listalarm",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "Listalarm",
+      "skos:altLabel": [
+        "listalarm",
+        "GET /alarm",
+        "tmf.tmf642.alarm.listalarm.v1"
+      ],
+      "skos:broader": "tmf:resource/alarm"
+    },
+    {
+      "@id": "tmf:intent/tmf642/alarm.patchalarm",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "Patchalarm",
+      "skos:altLabel": [
+        "patchalarm",
+        "PATCH /alarm/{id}",
+        "tmf.tmf642.alarm.patchalarm.v1"
+      ],
+      "skos:broader": "tmf:resource/alarm"
+    },
+    {
+      "@id": "tmf:intent/tmf642/alarm.retrievealarm",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "Retrievealarm",
+      "skos:altLabel": [
+        "retrievealarm",
+        "GET /alarm/{id}",
+        "tmf.tmf642.alarm.retrievealarm.v1"
+      ],
+      "skos:broader": "tmf:resource/alarm"
+    },
+    {
+      "@id": "tmf:intent/tmf642/clearalarm.createclearalarm",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "Createclearalarm",
+      "skos:altLabel": [
+        "createclearalarm",
+        "POST /clearAlarm",
+        "tmf.tmf642.clearalarm.createclearalarm.v1"
+      ],
+      "skos:broader": "tmf:resource/clearalarm"
+    },
+    {
+      "@id": "tmf:intent/tmf642/clearalarm.listclearalarm",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "Listclearalarm",
+      "skos:altLabel": [
+        "listclearalarm",
+        "GET /clearAlarm",
+        "tmf.tmf642.clearalarm.listclearalarm.v1"
+      ],
+      "skos:broader": "tmf:resource/clearalarm"
+    },
+    {
+      "@id": "tmf:intent/tmf642/clearalarm.retrieveclearalarm",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "Retrieveclearalarm",
+      "skos:altLabel": [
+        "retrieveclearalarm",
+        "GET /clearAlarm/{id}",
+        "tmf.tmf642.clearalarm.retrieveclearalarm.v1"
+      ],
+      "skos:broader": "tmf:resource/clearalarm"
+    },
+    {
+      "@id": "tmf:intent/tmf642/commentalarm.createcommentalarm",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "Createcommentalarm",
+      "skos:altLabel": [
+        "createcommentalarm",
+        "POST /commentAlarm",
+        "tmf.tmf642.commentalarm.createcommentalarm.v1"
+      ],
+      "skos:broader": "tmf:resource/commentalarm"
+    },
+    {
+      "@id": "tmf:intent/tmf642/commentalarm.listcommentalarm",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "Listcommentalarm",
+      "skos:altLabel": [
+        "listcommentalarm",
+        "GET /commentAlarm",
+        "tmf.tmf642.commentalarm.listcommentalarm.v1"
+      ],
+      "skos:broader": "tmf:resource/commentalarm"
+    },
+    {
+      "@id": "tmf:intent/tmf642/commentalarm.retrievecommentalarm",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "Retrievecommentalarm",
+      "skos:altLabel": [
+        "retrievecommentalarm",
+        "GET /commentAlarm/{id}",
+        "tmf.tmf642.commentalarm.retrievecommentalarm.v1"
+      ],
+      "skos:broader": "tmf:resource/commentalarm"
+    },
+    {
+      "@id": "tmf:intent/tmf642/groupalarm.creategroupalarm",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "Creategroupalarm",
+      "skos:altLabel": [
+        "creategroupalarm",
+        "POST /groupAlarm",
+        "tmf.tmf642.groupalarm.creategroupalarm.v1"
+      ],
+      "skos:broader": "tmf:resource/groupalarm"
+    },
+    {
+      "@id": "tmf:intent/tmf642/groupalarm.listgroupalarm",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "Listgroupalarm",
+      "skos:altLabel": [
+        "listgroupalarm",
+        "GET /groupAlarm",
+        "tmf.tmf642.groupalarm.listgroupalarm.v1"
+      ],
+      "skos:broader": "tmf:resource/groupalarm"
+    },
+    {
+      "@id": "tmf:intent/tmf642/groupalarm.retrievegroupalarm",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "Retrievegroupalarm",
+      "skos:altLabel": [
+        "retrievegroupalarm",
+        "GET /groupAlarm/{id}",
+        "tmf.tmf642.groupalarm.retrievegroupalarm.v1"
+      ],
+      "skos:broader": "tmf:resource/groupalarm"
+    },
+    {
+      "@id": "tmf:intent/tmf642/hub.createhub",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "Createhub",
+      "skos:altLabel": [
+        "createhub",
+        "POST /hub",
+        "tmf.tmf642.hub.createhub.v1"
+      ],
+      "skos:broader": "tmf:resource/hub"
+    },
+    {
+      "@id": "tmf:intent/tmf642/hub.hubdelete",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "Hubdelete",
+      "skos:altLabel": [
+        "hubdelete",
+        "DELETE /hub/{id}",
+        "tmf.tmf642.hub.hubdelete.v1"
+      ],
+      "skos:broader": "tmf:resource/hub"
+    },
+    {
+      "@id": "tmf:intent/tmf642/hub.hubget",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "Hubget",
+      "skos:altLabel": [
+        "hubget",
+        "GET /hub/{id}",
+        "tmf.tmf642.hub.hubget.v1"
+      ],
+      "skos:broader": "tmf:resource/hub"
+    },
+    {
+      "@id": "tmf:intent/tmf642/listener.ackalarmcreateevent",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "Ackalarmcreateevent listener",
+      "skos:altLabel": [
+        "ackalarmcreateevent listener",
+        "POST /listener/ackAlarmCreateEvent",
+        "tmf.tmf642.listener.ackalarmcreateevent.v1"
+      ],
+      "skos:broader": "tmf:resource/listener"
+    },
+    {
+      "@id": "tmf:intent/tmf642/listener.ackalarmstatechangeevent",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "Ackalarmstatechangeevent listener",
+      "skos:altLabel": [
+        "ackalarmstatechangeevent listener",
+        "POST /listener/ackAlarmStateChangeEvent",
+        "tmf.tmf642.listener.ackalarmstatechangeevent.v1"
+      ],
+      "skos:broader": "tmf:resource/listener"
+    },
+    {
+      "@id": "tmf:intent/tmf642/listener.alarmattributevaluechangeevent",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "Alarmattributevaluechangeevent listener",
+      "skos:altLabel": [
+        "alarmattributevaluechangeevent listener",
+        "POST /listener/alarmAttributeValueChangeEvent",
+        "tmf.tmf642.listener.alarmattributevaluechangeevent.v1"
+      ],
+      "skos:broader": "tmf:resource/listener"
+    },
+    {
+      "@id": "tmf:intent/tmf642/listener.alarmcreateevent",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "Alarmcreateevent listener",
+      "skos:altLabel": [
+        "alarmcreateevent listener",
+        "POST /listener/alarmCreateEvent",
+        "tmf.tmf642.listener.alarmcreateevent.v1"
+      ],
+      "skos:broader": "tmf:resource/listener"
+    },
+    {
+      "@id": "tmf:intent/tmf642/listener.alarmdeleteevent",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "Alarmdeleteevent listener",
+      "skos:altLabel": [
+        "alarmdeleteevent listener",
+        "POST /listener/alarmDeleteEvent",
+        "tmf.tmf642.listener.alarmdeleteevent.v1"
+      ],
+      "skos:broader": "tmf:resource/listener"
+    },
+    {
+      "@id": "tmf:intent/tmf642/listener.alarmstatechangeevent",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "Alarmstatechangeevent listener",
+      "skos:altLabel": [
+        "alarmstatechangeevent listener",
+        "POST /listener/alarmStateChangeEvent",
+        "tmf.tmf642.listener.alarmstatechangeevent.v1"
+      ],
+      "skos:broader": "tmf:resource/listener"
+    },
+    {
+      "@id": "tmf:intent/tmf642/listener.clearalarmcreateevent",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "Clearalarmcreateevent listener",
+      "skos:altLabel": [
+        "clearalarmcreateevent listener",
+        "POST /listener/clearAlarmCreateEvent",
+        "tmf.tmf642.listener.clearalarmcreateevent.v1"
+      ],
+      "skos:broader": "tmf:resource/listener"
+    },
+    {
+      "@id": "tmf:intent/tmf642/listener.clearalarmstatechangeevent",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "Clearalarmstatechangeevent listener",
+      "skos:altLabel": [
+        "clearalarmstatechangeevent listener",
+        "POST /listener/clearAlarmStateChangeEvent",
+        "tmf.tmf642.listener.clearalarmstatechangeevent.v1"
+      ],
+      "skos:broader": "tmf:resource/listener"
+    },
+    {
+      "@id": "tmf:intent/tmf642/listener.commentalarmcreateevent",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "Commentalarmcreateevent listener",
+      "skos:altLabel": [
+        "commentalarmcreateevent listener",
+        "POST /listener/commentAlarmCreateEvent",
+        "tmf.tmf642.listener.commentalarmcreateevent.v1"
+      ],
+      "skos:broader": "tmf:resource/listener"
+    },
+    {
+      "@id": "tmf:intent/tmf642/listener.commentalarmstatechangeevent",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "Commentalarmstatechangeevent listener",
+      "skos:altLabel": [
+        "commentalarmstatechangeevent listener",
+        "POST /listener/commentAlarmStateChangeEvent",
+        "tmf.tmf642.listener.commentalarmstatechangeevent.v1"
+      ],
+      "skos:broader": "tmf:resource/listener"
+    },
+    {
+      "@id": "tmf:intent/tmf642/listener.groupalarmcreateevent",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "Groupalarmcreateevent listener",
+      "skos:altLabel": [
+        "groupalarmcreateevent listener",
+        "POST /listener/groupAlarmCreateEvent",
+        "tmf.tmf642.listener.groupalarmcreateevent.v1"
+      ],
+      "skos:broader": "tmf:resource/listener"
+    },
+    {
+      "@id": "tmf:intent/tmf642/listener.groupalarmstatechangeevent",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "Groupalarmstatechangeevent listener",
+      "skos:altLabel": [
+        "groupalarmstatechangeevent listener",
+        "POST /listener/groupAlarmStateChangeEvent",
+        "tmf.tmf642.listener.groupalarmstatechangeevent.v1"
+      ],
+      "skos:broader": "tmf:resource/listener"
+    },
+    {
+      "@id": "tmf:intent/tmf642/listener.unackalarmcreateevent",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "Unackalarmcreateevent listener",
+      "skos:altLabel": [
+        "unackalarmcreateevent listener",
+        "POST /listener/unAckAlarmCreateEvent",
+        "tmf.tmf642.listener.unackalarmcreateevent.v1"
+      ],
+      "skos:broader": "tmf:resource/listener"
+    },
+    {
+      "@id": "tmf:intent/tmf642/listener.unackalarmstatechangeevent",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "Unackalarmstatechangeevent listener",
+      "skos:altLabel": [
+        "unackalarmstatechangeevent listener",
+        "POST /listener/unAckAlarmStateChangeEvent",
+        "tmf.tmf642.listener.unackalarmstatechangeevent.v1"
+      ],
+      "skos:broader": "tmf:resource/listener"
+    },
+    {
+      "@id": "tmf:intent/tmf642/listener.ungroupalarmcreateevent",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "Ungroupalarmcreateevent listener",
+      "skos:altLabel": [
+        "ungroupalarmcreateevent listener",
+        "POST /listener/unGroupAlarmCreateEvent",
+        "tmf.tmf642.listener.ungroupalarmcreateevent.v1"
+      ],
+      "skos:broader": "tmf:resource/listener"
+    },
+    {
+      "@id": "tmf:intent/tmf642/listener.ungroupalarmstatechangeevent",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "Ungroupalarmstatechangeevent listener",
+      "skos:altLabel": [
+        "ungroupalarmstatechangeevent listener",
+        "POST /listener/unGroupAlarmStateChangeEvent",
+        "tmf.tmf642.listener.ungroupalarmstatechangeevent.v1"
+      ],
+      "skos:broader": "tmf:resource/listener"
+    },
+    {
+      "@id": "tmf:intent/tmf642/unackalarm.createunackalarm",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "Createunackalarm",
+      "skos:altLabel": [
+        "createunackalarm",
+        "POST /unAckAlarm",
+        "tmf.tmf642.unackalarm.createunackalarm.v1"
+      ],
+      "skos:broader": "tmf:resource/unackalarm"
+    },
+    {
+      "@id": "tmf:intent/tmf642/unackalarm.listunackalarm",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "Listunackalarm",
+      "skos:altLabel": [
+        "listunackalarm",
+        "GET /unAckAlarm",
+        "tmf.tmf642.unackalarm.listunackalarm.v1"
+      ],
+      "skos:broader": "tmf:resource/unackalarm"
+    },
+    {
+      "@id": "tmf:intent/tmf642/unackalarm.retrieveunackalarm",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "Retrieveunackalarm",
+      "skos:altLabel": [
+        "retrieveunackalarm",
+        "GET /unAckAlarm/{id}",
+        "tmf.tmf642.unackalarm.retrieveunackalarm.v1"
+      ],
+      "skos:broader": "tmf:resource/unackalarm"
+    },
+    {
+      "@id": "tmf:intent/tmf642/ungroupalarm.createungroupalarm",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "Createungroupalarm",
+      "skos:altLabel": [
+        "createungroupalarm",
+        "POST /unGroupAlarm",
+        "tmf.tmf642.ungroupalarm.createungroupalarm.v1"
+      ],
+      "skos:broader": "tmf:resource/ungroupalarm"
+    },
+    {
+      "@id": "tmf:intent/tmf642/ungroupalarm.listungroupalarm",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "Listungroupalarm",
+      "skos:altLabel": [
+        "listungroupalarm",
+        "GET /unGroupAlarm",
+        "tmf.tmf642.ungroupalarm.listungroupalarm.v1"
+      ],
+      "skos:broader": "tmf:resource/ungroupalarm"
+    },
+    {
+      "@id": "tmf:intent/tmf642/ungroupalarm.retrieveungroupalarm",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "Retrieveungroupalarm",
+      "skos:altLabel": [
+        "retrieveungroupalarm",
+        "GET /unGroupAlarm/{id}",
+        "tmf.tmf642.ungroupalarm.retrieveungroupalarm.v1"
+      ],
+      "skos:broader": "tmf:resource/ungroupalarm"
+    }
+  ]
+}

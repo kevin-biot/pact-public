@@ -1,0 +1,1195 @@
+{
+  "schema_version": "1.0",
+  "domain": "tmf-service-inventory-order-surface-demo",
+  "last_modified": "2026-03-31",
+  "concepts": [
+    {
+      "concept_id": "tmf:intent/tmf638/hub.createhub",
+      "preferred_term": "createhub",
+      "synonyms": [
+        "POST /hub",
+        "tmf.tmf638.hub.createhub.v1"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "tmf:resource/hub",
+      "narrower": [],
+      "source_refs": [
+        "TM Forum Open APIs",
+        "TMF638"
+      ],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "tmf:intent/tmf638/hub.hubdelete",
+      "preferred_term": "hubdelete",
+      "synonyms": [
+        "DELETE /hub/{id}",
+        "tmf.tmf638.hub.hubdelete.v1"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "tmf:resource/hub",
+      "narrower": [],
+      "source_refs": [
+        "TM Forum Open APIs",
+        "TMF638"
+      ],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "tmf:intent/tmf638/listener.serviceattributevaluechangeevent",
+      "preferred_term": "serviceattributevaluechangeevent listener",
+      "synonyms": [
+        "POST /listener/serviceAttributeValueChangeEvent",
+        "tmf.tmf638.listener.serviceattributevaluechangeevent.v1"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "tmf:resource/listener",
+      "narrower": [],
+      "source_refs": [
+        "TM Forum Open APIs",
+        "TMF638"
+      ],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "tmf:intent/tmf638/listener.servicecreateevent",
+      "preferred_term": "servicecreateevent listener",
+      "synonyms": [
+        "POST /listener/serviceCreateEvent",
+        "tmf.tmf638.listener.servicecreateevent.v1"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "tmf:resource/listener",
+      "narrower": [],
+      "source_refs": [
+        "TM Forum Open APIs",
+        "TMF638"
+      ],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "tmf:intent/tmf638/listener.servicedeleteevent",
+      "preferred_term": "servicedeleteevent listener",
+      "synonyms": [
+        "POST /listener/serviceDeleteEvent",
+        "tmf.tmf638.listener.servicedeleteevent.v1"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "tmf:resource/listener",
+      "narrower": [],
+      "source_refs": [
+        "TM Forum Open APIs",
+        "TMF638"
+      ],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "tmf:intent/tmf638/listener.serviceoperatingstatuschangeevent",
+      "preferred_term": "serviceoperatingstatuschangeevent listener",
+      "synonyms": [
+        "POST /listener/serviceOperatingStatusChangeEvent",
+        "tmf.tmf638.listener.serviceoperatingstatuschangeevent.v1"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "tmf:resource/listener",
+      "narrower": [],
+      "source_refs": [
+        "TM Forum Open APIs",
+        "TMF638"
+      ],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "tmf:intent/tmf638/listener.servicestatechangeevent",
+      "preferred_term": "servicestatechangeevent listener",
+      "synonyms": [
+        "POST /listener/serviceStateChangeEvent",
+        "tmf.tmf638.listener.servicestatechangeevent.v1"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "tmf:resource/listener",
+      "narrower": [],
+      "source_refs": [
+        "TM Forum Open APIs",
+        "TMF638"
+      ],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "tmf:intent/tmf638/service.createservice",
+      "preferred_term": "createservice",
+      "synonyms": [
+        "POST /service",
+        "tmf.tmf638.service.createservice.v1"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "tmf:resource/service",
+      "narrower": [],
+      "source_refs": [
+        "TM Forum Open APIs",
+        "TMF638"
+      ],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "tmf:intent/tmf638/service.deleteservice",
+      "preferred_term": "deleteservice",
+      "synonyms": [
+        "DELETE /service/{id}",
+        "tmf.tmf638.service.deleteservice.v1"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "tmf:resource/service",
+      "narrower": [],
+      "source_refs": [
+        "TM Forum Open APIs",
+        "TMF638"
+      ],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "tmf:intent/tmf638/service.listservice",
+      "preferred_term": "listservice",
+      "synonyms": [
+        "GET /service",
+        "tmf.tmf638.service.listservice.v1"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "tmf:resource/service",
+      "narrower": [],
+      "source_refs": [
+        "TM Forum Open APIs",
+        "TMF638"
+      ],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "tmf:intent/tmf638/service.patchservice",
+      "preferred_term": "patchservice",
+      "synonyms": [
+        "PATCH /service/{id}",
+        "tmf.tmf638.service.patchservice.v1"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "tmf:resource/service",
+      "narrower": [],
+      "source_refs": [
+        "TM Forum Open APIs",
+        "TMF638"
+      ],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "tmf:intent/tmf638/service.retrieveservice",
+      "preferred_term": "retrieveservice",
+      "synonyms": [
+        "GET /service/{id}",
+        "tmf.tmf638.service.retrieveservice.v1"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "tmf:resource/service",
+      "narrower": [],
+      "source_refs": [
+        "TM Forum Open APIs",
+        "TMF638"
+      ],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "tmf:intent/tmf640/hub.registerlistener",
+      "preferred_term": "registerlistener hub",
+      "synonyms": [
+        "POST /hub",
+        "tmf.tmf640.hub.registerlistener.v1"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "tmf:resource/hub",
+      "narrower": [],
+      "source_refs": [
+        "TM Forum Open APIs",
+        "TMF640"
+      ],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "tmf:intent/tmf640/hub.unregisterlistener",
+      "preferred_term": "unregisterlistener hub",
+      "synonyms": [
+        "DELETE /hub/{id}",
+        "tmf.tmf640.hub.unregisterlistener.v1"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "tmf:resource/hub",
+      "narrower": [],
+      "source_refs": [
+        "TM Forum Open APIs",
+        "TMF640"
+      ],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "tmf:intent/tmf640/listener.listentomonitorattributevaluechangeevent",
+      "preferred_term": "listentomonitorattributevaluechangeevent listener",
+      "synonyms": [
+        "POST /listener/monitorAttributeValueChangeEvent",
+        "tmf.tmf640.listener.listentomonitorattributevaluechangeevent.v1"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "tmf:resource/listener",
+      "narrower": [],
+      "source_refs": [
+        "TM Forum Open APIs",
+        "TMF640"
+      ],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "tmf:intent/tmf640/listener.listentomonitorcreateevent",
+      "preferred_term": "listentomonitorcreateevent listener",
+      "synonyms": [
+        "POST /listener/monitorCreateEvent",
+        "tmf.tmf640.listener.listentomonitorcreateevent.v1"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "tmf:resource/listener",
+      "narrower": [],
+      "source_refs": [
+        "TM Forum Open APIs",
+        "TMF640"
+      ],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "tmf:intent/tmf640/listener.listentomonitordeleteevent",
+      "preferred_term": "listentomonitordeleteevent listener",
+      "synonyms": [
+        "POST /listener/monitorDeleteEvent",
+        "tmf.tmf640.listener.listentomonitordeleteevent.v1"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "tmf:resource/listener",
+      "narrower": [],
+      "source_refs": [
+        "TM Forum Open APIs",
+        "TMF640"
+      ],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "tmf:intent/tmf640/listener.listentomonitorstatechangeevent",
+      "preferred_term": "listentomonitorstatechangeevent listener",
+      "synonyms": [
+        "POST /listener/monitorStateChangeEvent",
+        "tmf.tmf640.listener.listentomonitorstatechangeevent.v1"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "tmf:resource/listener",
+      "narrower": [],
+      "source_refs": [
+        "TM Forum Open APIs",
+        "TMF640"
+      ],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "tmf:intent/tmf640/listener.listentoserviceattributevaluechangeevent",
+      "preferred_term": "listentoserviceattributevaluechangeevent listener",
+      "synonyms": [
+        "POST /listener/serviceAttributeValueChangeEvent",
+        "tmf.tmf640.listener.listentoserviceattributevaluechangeevent.v1"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "tmf:resource/listener",
+      "narrower": [],
+      "source_refs": [
+        "TM Forum Open APIs",
+        "TMF640"
+      ],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "tmf:intent/tmf640/listener.listentoservicecreateevent",
+      "preferred_term": "listentoservicecreateevent listener",
+      "synonyms": [
+        "POST /listener/serviceCreateEvent",
+        "tmf.tmf640.listener.listentoservicecreateevent.v1"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "tmf:resource/listener",
+      "narrower": [],
+      "source_refs": [
+        "TM Forum Open APIs",
+        "TMF640"
+      ],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "tmf:intent/tmf640/listener.listentoservicedeleteevent",
+      "preferred_term": "listentoservicedeleteevent listener",
+      "synonyms": [
+        "POST /listener/serviceDeleteEvent",
+        "tmf.tmf640.listener.listentoservicedeleteevent.v1"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "tmf:resource/listener",
+      "narrower": [],
+      "source_refs": [
+        "TM Forum Open APIs",
+        "TMF640"
+      ],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "tmf:intent/tmf640/listener.listentoservicestatechangeevent",
+      "preferred_term": "listentoservicestatechangeevent listener",
+      "synonyms": [
+        "POST /listener/serviceStateChangeEvent",
+        "tmf.tmf640.listener.listentoservicestatechangeevent.v1"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "tmf:resource/listener",
+      "narrower": [],
+      "source_refs": [
+        "TM Forum Open APIs",
+        "TMF640"
+      ],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "tmf:intent/tmf640/monitor.listmonitor",
+      "preferred_term": "listmonitor",
+      "synonyms": [
+        "GET /monitor",
+        "tmf.tmf640.monitor.listmonitor.v1"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "tmf:resource/monitor",
+      "narrower": [],
+      "source_refs": [
+        "TM Forum Open APIs",
+        "TMF640"
+      ],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "tmf:intent/tmf640/monitor.retrievemonitor",
+      "preferred_term": "retrievemonitor",
+      "synonyms": [
+        "GET /monitor/{id}",
+        "tmf.tmf640.monitor.retrievemonitor.v1"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "tmf:resource/monitor",
+      "narrower": [],
+      "source_refs": [
+        "TM Forum Open APIs",
+        "TMF640"
+      ],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "tmf:intent/tmf640/service.createservice",
+      "preferred_term": "createservice",
+      "synonyms": [
+        "POST /service",
+        "tmf.tmf640.service.createservice.v1"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "tmf:resource/service",
+      "narrower": [],
+      "source_refs": [
+        "TM Forum Open APIs",
+        "TMF640"
+      ],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "tmf:intent/tmf640/service.deleteservice",
+      "preferred_term": "deleteservice",
+      "synonyms": [
+        "DELETE /service/{id}",
+        "tmf.tmf640.service.deleteservice.v1"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "tmf:resource/service",
+      "narrower": [],
+      "source_refs": [
+        "TM Forum Open APIs",
+        "TMF640"
+      ],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "tmf:intent/tmf640/service.listservice",
+      "preferred_term": "listservice",
+      "synonyms": [
+        "GET /service",
+        "tmf.tmf640.service.listservice.v1"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "tmf:resource/service",
+      "narrower": [],
+      "source_refs": [
+        "TM Forum Open APIs",
+        "TMF640"
+      ],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "tmf:intent/tmf640/service.patchservice",
+      "preferred_term": "patchservice",
+      "synonyms": [
+        "PATCH /service/{id}",
+        "tmf.tmf640.service.patchservice.v1"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "tmf:resource/service",
+      "narrower": [],
+      "source_refs": [
+        "TM Forum Open APIs",
+        "TMF640"
+      ],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "tmf:intent/tmf640/service.retrieveservice",
+      "preferred_term": "retrieveservice",
+      "synonyms": [
+        "GET /service/{id}",
+        "tmf.tmf640.service.retrieveservice.v1"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "tmf:resource/service",
+      "narrower": [],
+      "source_refs": [
+        "TM Forum Open APIs",
+        "TMF640"
+      ],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "tmf:intent/tmf641/cancelserviceorder.createcancelserviceorder",
+      "preferred_term": "createcancelserviceorder",
+      "synonyms": [
+        "POST /cancelServiceOrder",
+        "tmf.tmf641.cancelserviceorder.createcancelserviceorder.v1"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "tmf:resource/cancelserviceorder",
+      "narrower": [],
+      "source_refs": [
+        "TM Forum Open APIs",
+        "TMF641"
+      ],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "tmf:intent/tmf641/cancelserviceorder.listcancelserviceorder",
+      "preferred_term": "listcancelserviceorder",
+      "synonyms": [
+        "GET /cancelServiceOrder",
+        "tmf.tmf641.cancelserviceorder.listcancelserviceorder.v1"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "tmf:resource/cancelserviceorder",
+      "narrower": [],
+      "source_refs": [
+        "TM Forum Open APIs",
+        "TMF641"
+      ],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "tmf:intent/tmf641/cancelserviceorder.retrievecancelserviceorder",
+      "preferred_term": "retrievecancelserviceorder",
+      "synonyms": [
+        "GET /cancelServiceOrder/{id}",
+        "tmf.tmf641.cancelserviceorder.retrievecancelserviceorder.v1"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "tmf:resource/cancelserviceorder",
+      "narrower": [],
+      "source_refs": [
+        "TM Forum Open APIs",
+        "TMF641"
+      ],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "tmf:intent/tmf641/hub.registerlistener",
+      "preferred_term": "registerlistener hub",
+      "synonyms": [
+        "POST /hub",
+        "tmf.tmf641.hub.registerlistener.v1"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "tmf:resource/hub",
+      "narrower": [],
+      "source_refs": [
+        "TM Forum Open APIs",
+        "TMF641"
+      ],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "tmf:intent/tmf641/hub.unregisterlistener",
+      "preferred_term": "unregisterlistener hub",
+      "synonyms": [
+        "DELETE /hub/{id}",
+        "tmf.tmf641.hub.unregisterlistener.v1"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "tmf:resource/hub",
+      "narrower": [],
+      "source_refs": [
+        "TM Forum Open APIs",
+        "TMF641"
+      ],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "tmf:intent/tmf641/listener.listentocancelserviceordercreateevent",
+      "preferred_term": "listentocancelserviceordercreateevent listener",
+      "synonyms": [
+        "POST /listener/cancelServiceOrderCreateEvent",
+        "tmf.tmf641.listener.listentocancelserviceordercreateevent.v1"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "tmf:resource/listener",
+      "narrower": [],
+      "source_refs": [
+        "TM Forum Open APIs",
+        "TMF641"
+      ],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "tmf:intent/tmf641/listener.listentocancelserviceorderinformationrequiredevent",
+      "preferred_term": "listentocancelserviceorderinformationrequiredevent listener",
+      "synonyms": [
+        "POST /listener/cancelServiceOrderInformationRequiredEvent",
+        "tmf.tmf641.listener.listentocancelserviceorderinformationrequiredevent.v1"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "tmf:resource/listener",
+      "narrower": [],
+      "source_refs": [
+        "TM Forum Open APIs",
+        "TMF641"
+      ],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "tmf:intent/tmf641/listener.listentocancelserviceorderstatechangeevent",
+      "preferred_term": "listentocancelserviceorderstatechangeevent listener",
+      "synonyms": [
+        "POST /listener/cancelServiceOrderStateChangeEvent",
+        "tmf.tmf641.listener.listentocancelserviceorderstatechangeevent.v1"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "tmf:resource/listener",
+      "narrower": [],
+      "source_refs": [
+        "TM Forum Open APIs",
+        "TMF641"
+      ],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "tmf:intent/tmf641/listener.listentoserviceorderattributevaluechangeevent",
+      "preferred_term": "listentoserviceorderattributevaluechangeevent listener",
+      "synonyms": [
+        "POST /listener/serviceOrderAttributeValueChangeEvent",
+        "tmf.tmf641.listener.listentoserviceorderattributevaluechangeevent.v1"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "tmf:resource/listener",
+      "narrower": [],
+      "source_refs": [
+        "TM Forum Open APIs",
+        "TMF641"
+      ],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "tmf:intent/tmf641/listener.listentoserviceordercreateevent",
+      "preferred_term": "listentoserviceordercreateevent listener",
+      "synonyms": [
+        "POST /listener/serviceOrderCreateEvent",
+        "tmf.tmf641.listener.listentoserviceordercreateevent.v1"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "tmf:resource/listener",
+      "narrower": [],
+      "source_refs": [
+        "TM Forum Open APIs",
+        "TMF641"
+      ],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "tmf:intent/tmf641/listener.listentoserviceorderdeleteevent",
+      "preferred_term": "listentoserviceorderdeleteevent listener",
+      "synonyms": [
+        "POST /listener/serviceOrderDeleteEvent",
+        "tmf.tmf641.listener.listentoserviceorderdeleteevent.v1"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "tmf:resource/listener",
+      "narrower": [],
+      "source_refs": [
+        "TM Forum Open APIs",
+        "TMF641"
+      ],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "tmf:intent/tmf641/listener.listentoserviceorderinformationrequiredevent",
+      "preferred_term": "listentoserviceorderinformationrequiredevent listener",
+      "synonyms": [
+        "POST /listener/serviceOrderInformationRequiredEvent",
+        "tmf.tmf641.listener.listentoserviceorderinformationrequiredevent.v1"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "tmf:resource/listener",
+      "narrower": [],
+      "source_refs": [
+        "TM Forum Open APIs",
+        "TMF641"
+      ],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "tmf:intent/tmf641/listener.listentoserviceorderjeopardyevent",
+      "preferred_term": "listentoserviceorderjeopardyevent listener",
+      "synonyms": [
+        "POST /listener/serviceOrderJeopardyEvent",
+        "tmf.tmf641.listener.listentoserviceorderjeopardyevent.v1"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "tmf:resource/listener",
+      "narrower": [],
+      "source_refs": [
+        "TM Forum Open APIs",
+        "TMF641"
+      ],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "tmf:intent/tmf641/listener.listentoserviceordermilestoneevent",
+      "preferred_term": "listentoserviceordermilestoneevent listener",
+      "synonyms": [
+        "POST /listener/serviceOrderMilestoneEvent",
+        "tmf.tmf641.listener.listentoserviceordermilestoneevent.v1"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "tmf:resource/listener",
+      "narrower": [],
+      "source_refs": [
+        "TM Forum Open APIs",
+        "TMF641"
+      ],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "tmf:intent/tmf641/listener.listentoserviceorderstatechangeevent",
+      "preferred_term": "listentoserviceorderstatechangeevent listener",
+      "synonyms": [
+        "POST /listener/serviceOrderStateChangeEvent",
+        "tmf.tmf641.listener.listentoserviceorderstatechangeevent.v1"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "tmf:resource/listener",
+      "narrower": [],
+      "source_refs": [
+        "TM Forum Open APIs",
+        "TMF641"
+      ],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "tmf:intent/tmf641/serviceorder.createserviceorder",
+      "preferred_term": "createserviceorder",
+      "synonyms": [
+        "POST /serviceOrder",
+        "tmf.tmf641.serviceorder.createserviceorder.v1"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "tmf:resource/serviceorder",
+      "narrower": [],
+      "source_refs": [
+        "TM Forum Open APIs",
+        "TMF641"
+      ],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "tmf:intent/tmf641/serviceorder.deleteserviceorder",
+      "preferred_term": "deleteserviceorder",
+      "synonyms": [
+        "DELETE /serviceOrder/{id}",
+        "tmf.tmf641.serviceorder.deleteserviceorder.v1"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "tmf:resource/serviceorder",
+      "narrower": [],
+      "source_refs": [
+        "TM Forum Open APIs",
+        "TMF641"
+      ],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "tmf:intent/tmf641/serviceorder.listserviceorder",
+      "preferred_term": "listserviceorder",
+      "synonyms": [
+        "GET /serviceOrder",
+        "tmf.tmf641.serviceorder.listserviceorder.v1"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "tmf:resource/serviceorder",
+      "narrower": [],
+      "source_refs": [
+        "TM Forum Open APIs",
+        "TMF641"
+      ],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "tmf:intent/tmf641/serviceorder.patchserviceorder",
+      "preferred_term": "patchserviceorder",
+      "synonyms": [
+        "PATCH /serviceOrder/{id}",
+        "tmf.tmf641.serviceorder.patchserviceorder.v1"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "tmf:resource/serviceorder",
+      "narrower": [],
+      "source_refs": [
+        "TM Forum Open APIs",
+        "TMF641"
+      ],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "tmf:intent/tmf641/serviceorder.retrieveserviceorder",
+      "preferred_term": "retrieveserviceorder",
+      "synonyms": [
+        "GET /serviceOrder/{id}",
+        "tmf.tmf641.serviceorder.retrieveserviceorder.v1"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "tmf:resource/serviceorder",
+      "narrower": [],
+      "source_refs": [
+        "TM Forum Open APIs",
+        "TMF641"
+      ],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "tmf:intent/tmf924/hub.registerlistener",
+      "preferred_term": "registerlistener hub",
+      "synonyms": [
+        "POST /hub",
+        "tmf.tmf924.hub.registerlistener.v1"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "tmf:resource/hub",
+      "narrower": [],
+      "source_refs": [
+        "TM Forum Open APIs",
+        "TMF924"
+      ],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "tmf:intent/tmf924/hub.unregisterlistener",
+      "preferred_term": "unregisterlistener hub",
+      "synonyms": [
+        "DELETE /hub/{id}",
+        "tmf.tmf924.hub.unregisterlistener.v1"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "tmf:resource/hub",
+      "narrower": [],
+      "source_refs": [
+        "TM Forum Open APIs",
+        "TMF924"
+      ],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "tmf:intent/tmf924/listener.listentomonitorattributevaluechangeevent",
+      "preferred_term": "listentomonitorattributevaluechangeevent listener",
+      "synonyms": [
+        "POST /listener/monitorAttributeValueChangeEvent",
+        "tmf.tmf924.listener.listentomonitorattributevaluechangeevent.v1"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "tmf:resource/listener",
+      "narrower": [],
+      "source_refs": [
+        "TM Forum Open APIs",
+        "TMF924"
+      ],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "tmf:intent/tmf924/listener.listentomonitorcreateevent",
+      "preferred_term": "listentomonitorcreateevent listener",
+      "synonyms": [
+        "POST /listener/monitorCreateEvent",
+        "tmf.tmf924.listener.listentomonitorcreateevent.v1"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "tmf:resource/listener",
+      "narrower": [],
+      "source_refs": [
+        "TM Forum Open APIs",
+        "TMF924"
+      ],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "tmf:intent/tmf924/listener.listentomonitordeleteevent",
+      "preferred_term": "listentomonitordeleteevent listener",
+      "synonyms": [
+        "POST /listener/monitorDeleteEvent",
+        "tmf.tmf924.listener.listentomonitordeleteevent.v1"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "tmf:resource/listener",
+      "narrower": [],
+      "source_refs": [
+        "TM Forum Open APIs",
+        "TMF924"
+      ],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "tmf:intent/tmf924/listener.listentomonitorstatechangeevent",
+      "preferred_term": "listentomonitorstatechangeevent listener",
+      "synonyms": [
+        "POST /listener/monitorStateChangeEvent",
+        "tmf.tmf924.listener.listentomonitorstatechangeevent.v1"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "tmf:resource/listener",
+      "narrower": [],
+      "source_refs": [
+        "TM Forum Open APIs",
+        "TMF924"
+      ],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "tmf:intent/tmf924/listener.listentoserviceattributevaluechangeevent",
+      "preferred_term": "listentoserviceattributevaluechangeevent listener",
+      "synonyms": [
+        "POST /listener/serviceAttributeValueChangeEvent",
+        "tmf.tmf924.listener.listentoserviceattributevaluechangeevent.v1"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "tmf:resource/listener",
+      "narrower": [],
+      "source_refs": [
+        "TM Forum Open APIs",
+        "TMF924"
+      ],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "tmf:intent/tmf924/listener.listentoservicecreateevent",
+      "preferred_term": "listentoservicecreateevent listener",
+      "synonyms": [
+        "POST /listener/serviceCreateEvent",
+        "tmf.tmf924.listener.listentoservicecreateevent.v1"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "tmf:resource/listener",
+      "narrower": [],
+      "source_refs": [
+        "TM Forum Open APIs",
+        "TMF924"
+      ],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "tmf:intent/tmf924/listener.listentoservicedeleteevent",
+      "preferred_term": "listentoservicedeleteevent listener",
+      "synonyms": [
+        "POST /listener/serviceDeleteEvent",
+        "tmf.tmf924.listener.listentoservicedeleteevent.v1"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "tmf:resource/listener",
+      "narrower": [],
+      "source_refs": [
+        "TM Forum Open APIs",
+        "TMF924"
+      ],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "tmf:intent/tmf924/listener.listentoservicestatechangeevent",
+      "preferred_term": "listentoservicestatechangeevent listener",
+      "synonyms": [
+        "POST /listener/serviceStateChangeEvent",
+        "tmf.tmf924.listener.listentoservicestatechangeevent.v1"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "tmf:resource/listener",
+      "narrower": [],
+      "source_refs": [
+        "TM Forum Open APIs",
+        "TMF924"
+      ],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "tmf:intent/tmf924/monitor.listmonitor",
+      "preferred_term": "listmonitor",
+      "synonyms": [
+        "GET /monitor",
+        "tmf.tmf924.monitor.listmonitor.v1"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "tmf:resource/monitor",
+      "narrower": [],
+      "source_refs": [
+        "TM Forum Open APIs",
+        "TMF924"
+      ],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "tmf:intent/tmf924/monitor.retrievemonitor",
+      "preferred_term": "retrievemonitor",
+      "synonyms": [
+        "GET /monitor/{id}",
+        "tmf.tmf924.monitor.retrievemonitor.v1"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "tmf:resource/monitor",
+      "narrower": [],
+      "source_refs": [
+        "TM Forum Open APIs",
+        "TMF924"
+      ],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "tmf:intent/tmf924/service.createservice",
+      "preferred_term": "createservice",
+      "synonyms": [
+        "POST /service",
+        "tmf.tmf924.service.createservice.v1"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "tmf:resource/service",
+      "narrower": [],
+      "source_refs": [
+        "TM Forum Open APIs",
+        "TMF924"
+      ],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "tmf:intent/tmf924/service.deleteservice",
+      "preferred_term": "deleteservice",
+      "synonyms": [
+        "DELETE /service/{id}",
+        "tmf.tmf924.service.deleteservice.v1"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "tmf:resource/service",
+      "narrower": [],
+      "source_refs": [
+        "TM Forum Open APIs",
+        "TMF924"
+      ],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "tmf:intent/tmf924/service.listservice",
+      "preferred_term": "listservice",
+      "synonyms": [
+        "GET /service",
+        "tmf.tmf924.service.listservice.v1"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "tmf:resource/service",
+      "narrower": [],
+      "source_refs": [
+        "TM Forum Open APIs",
+        "TMF924"
+      ],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "tmf:intent/tmf924/service.patchservice",
+      "preferred_term": "patchservice",
+      "synonyms": [
+        "PATCH /service/{id}",
+        "tmf.tmf924.service.patchservice.v1"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "tmf:resource/service",
+      "narrower": [],
+      "source_refs": [
+        "TM Forum Open APIs",
+        "TMF924"
+      ],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "tmf:intent/tmf924/service.retrieveservice",
+      "preferred_term": "retrieveservice",
+      "synonyms": [
+        "GET /service/{id}",
+        "tmf.tmf924.service.retrieveservice.v1"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "tmf:resource/service",
+      "narrower": [],
+      "source_refs": [
+        "TM Forum Open APIs",
+        "TMF924"
+      ],
+      "ner_provenance": null
+    }
+  ]
+}

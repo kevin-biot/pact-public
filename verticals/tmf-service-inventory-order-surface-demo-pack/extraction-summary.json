@@ -1,0 +1,51 @@
+{
+  "schema_version": "0.1",
+  "generated_at_utc": "2026-03-31T01:29:40Z",
+  "source_profile": "tmf-openapi-wide-surface-v1",
+  "source_view": "tmf-service-inventory-order",
+  "synthesis_seed_ref": "docs/architecture/artifacts/schema-sets/telco/mappings/tmf-synthesis-seed.json",
+  "source_catalog_ref": "docs/architecture/artifacts/schema-sets/telco/mappings/tmf-api-catalog.json",
+  "tmf_ids": [
+    "TMF638",
+    "TMF640",
+    "TMF641",
+    "TMF924"
+  ],
+  "operation_identifiers_count": 66,
+  "resource_family_count": 6,
+  "resource_families": [
+    "cancelserviceorder",
+    "hub",
+    "listener",
+    "monitor",
+    "service",
+    "serviceorder"
+  ],
+  "operation_identifiers_sample": [
+    "tmf.tmf638.hub.createhub.v1",
+    "tmf.tmf638.hub.hubdelete.v1",
+    "tmf.tmf638.listener.serviceattributevaluechangeevent.v1",
+    "tmf.tmf638.listener.servicecreateevent.v1",
+    "tmf.tmf638.listener.servicedeleteevent.v1",
+    "tmf.tmf638.listener.serviceoperatingstatuschangeevent.v1",
+    "tmf.tmf638.listener.servicestatechangeevent.v1",
+    "tmf.tmf638.service.createservice.v1",
+    "tmf.tmf638.service.deleteservice.v1",
+    "tmf.tmf638.service.listservice.v1",
+    "tmf.tmf638.service.patchservice.v1",
+    "tmf.tmf638.service.retrieveservice.v1",
+    "tmf.tmf640.hub.registerlistener.v1",
+    "tmf.tmf640.hub.unregisterlistener.v1",
+    "tmf.tmf640.listener.listentomonitorattributevaluechangeevent.v1",
+    "tmf.tmf640.listener.listentomonitorcreateevent.v1",
+    "tmf.tmf640.listener.listentomonitordeleteevent.v1",
+    "tmf.tmf640.listener.listentomonitorstatechangeevent.v1",
+    "tmf.tmf640.listener.listentoserviceattributevaluechangeevent.v1",
+    "tmf.tmf640.listener.listentoservicecreateevent.v1",
+    "tmf.tmf640.listener.listentoservicedeleteevent.v1",
+    "tmf.tmf640.listener.listentoservicestatechangeevent.v1",
+    "tmf.tmf640.monitor.listmonitor.v1",
+    "tmf.tmf640.monitor.retrievemonitor.v1",
+    "tmf.tmf640.service.createservice.v1"
+  ]
+}

@@ -1,0 +1,80 @@
+{
+  "schema_version": "1.0",
+  "profile_id": "tmf-authoring-synthesis-v1",
+  "status": "active",
+  "updated_at_utc": "2026-03-31T00:00:00Z",
+  "description": "Authoring-time synthesis profile that combines TMF API schemas, SID extracts, and existing crosswalks into a seed surface for ontology pack creation.",
+  "constraints": {
+    "runtime_coupling": "forbidden",
+    "usage_scope": "authoring_only",
+    "notes": [
+      "Do not hard-couple runtime policy decisions directly to this synthesis artifact.",
+      "Use generated outputs as candidate input for pack authoring and review."
+    ]
+  },
+  "inputs": {
+    "api_catalog": "docs/architecture/artifacts/schema-sets/telco/mappings/tmf-api-catalog.json",
+    "api_crosswalk": "docs/architecture/artifacts/schema-sets/telco/mappings/tmf-api-to-ontology-crosswalk.json",
+    "sid_manifest": "docs/architecture/artifacts/schema-sets/telco/mappings/tmf-sid-v25/manifest.json",
+    "field_crosswalks": [
+      "docs/architecture/artifacts/schema-sets/telco/mappings/tmf638-service-field-crosswalk.json"
+    ]
+  },
+  "selection": {
+    "tmf_ids": [
+      "TMF634",
+      "TMF638",
+      "TMF639",
+      "TMF640",
+      "TMF641",
+      "TMF642",
+      "TMF921",
+      "TMF924"
+    ],
+    "confidence_levels": [
+      "high",
+      "medium",
+      "low"
+    ],
+    "sid_sheets": [
+      "Service",
+      "Resource",
+      "All Domains"
+    ],
+    "max_seed_concepts_per_pack": 30
+  },
+  "candidate_pack_views": [
+    {
+      "pack_focus_id": "tmf-service-inventory-order",
+      "description": "Service inventory/order/activation slice seeded from TMF638/TMF640/TMF641/TMF924.",
+      "tmf_ids": [
+        "TMF638",
+        "TMF640",
+        "TMF641",
+        "TMF924"
+      ],
+      "priority": "high"
+    },
+    {
+      "pack_focus_id": "tmf-resource-catalog-alarm",
+      "description": "Resource catalog/inventory/alarm slice seeded from TMF634/TMF639/TMF642.",
+      "tmf_ids": [
+        "TMF634",
+        "TMF639",
+        "TMF642"
+      ],
+      "priority": "high"
+    },
+    {
+      "pack_focus_id": "tmf-intent-policy-bridge",
+      "description": "Intent/policy bridge slice seeded from TMF921.",
+      "tmf_ids": [
+        "TMF921"
+      ],
+      "priority": "medium"
+    }
+  ],
+  "output": {
+    "seed_artifact": "docs/architecture/artifacts/schema-sets/telco/mappings/tmf-synthesis-seed.json"
+  }
+}

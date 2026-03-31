@@ -1,0 +1,475 @@
+{
+  "schema_version": "1.0",
+  "domain": "tmf-intent-policy-bridge-surface-demo",
+  "last_modified": "2026-03-31",
+  "concepts": [
+    {
+      "concept_id": "tmf:intent/tmf921/hub.createhub",
+      "preferred_term": "createhub",
+      "synonyms": [
+        "POST /hub",
+        "tmf.tmf921.hub.createhub.v1"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "tmf:resource/hub",
+      "narrower": [],
+      "source_refs": [
+        "TM Forum Open APIs",
+        "TMF921"
+      ],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "tmf:intent/tmf921/hub.hubdelete",
+      "preferred_term": "hubdelete",
+      "synonyms": [
+        "DELETE /hub/{id}",
+        "tmf.tmf921.hub.hubdelete.v1"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "tmf:resource/hub",
+      "narrower": [],
+      "source_refs": [
+        "TM Forum Open APIs",
+        "TMF921"
+      ],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "tmf:intent/tmf921/intent.createintent",
+      "preferred_term": "createintent",
+      "synonyms": [
+        "POST /intent",
+        "tmf.tmf921.intent.createintent.v1"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "tmf:resource/intent",
+      "narrower": [],
+      "source_refs": [
+        "TM Forum Open APIs",
+        "TMF921"
+      ],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "tmf:intent/tmf921/intent.deleteintent",
+      "preferred_term": "deleteintent",
+      "synonyms": [
+        "DELETE /intent/{id}",
+        "tmf.tmf921.intent.deleteintent.v1"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "tmf:resource/intent",
+      "narrower": [],
+      "source_refs": [
+        "TM Forum Open APIs",
+        "TMF921"
+      ],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "tmf:intent/tmf921/intent.deleteintentintentreport",
+      "preferred_term": "deleteintentintentreport",
+      "synonyms": [
+        "DELETE /intent/{intentId}/intentReport/{id}",
+        "tmf.tmf921.intent.deleteintentintentreport.v1"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "tmf:resource/intent",
+      "narrower": [],
+      "source_refs": [
+        "TM Forum Open APIs",
+        "TMF921"
+      ],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "tmf:intent/tmf921/intent.listintent",
+      "preferred_term": "listintent",
+      "synonyms": [
+        "GET /intent",
+        "tmf.tmf921.intent.listintent.v1"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "tmf:resource/intent",
+      "narrower": [],
+      "source_refs": [
+        "TM Forum Open APIs",
+        "TMF921"
+      ],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "tmf:intent/tmf921/intent.listintentintentreport",
+      "preferred_term": "listintentintentreport",
+      "synonyms": [
+        "GET /intent/{intentId}/intentReport",
+        "tmf.tmf921.intent.listintentintentreport.v1"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "tmf:resource/intent",
+      "narrower": [],
+      "source_refs": [
+        "TM Forum Open APIs",
+        "TMF921"
+      ],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "tmf:intent/tmf921/intent.patchintent",
+      "preferred_term": "patchintent",
+      "synonyms": [
+        "PATCH /intent/{id}",
+        "tmf.tmf921.intent.patchintent.v1"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "tmf:resource/intent",
+      "narrower": [],
+      "source_refs": [
+        "TM Forum Open APIs",
+        "TMF921"
+      ],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "tmf:intent/tmf921/intent.retrieveintent",
+      "preferred_term": "retrieveintent",
+      "synonyms": [
+        "GET /intent/{id}",
+        "tmf.tmf921.intent.retrieveintent.v1"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "tmf:resource/intent",
+      "narrower": [],
+      "source_refs": [
+        "TM Forum Open APIs",
+        "TMF921"
+      ],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "tmf:intent/tmf921/intent.retrieveintentintentreport",
+      "preferred_term": "retrieveintentintentreport",
+      "synonyms": [
+        "GET /intent/{intentId}/intentReport/{id}",
+        "tmf.tmf921.intent.retrieveintentintentreport.v1"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "tmf:resource/intent",
+      "narrower": [],
+      "source_refs": [
+        "TM Forum Open APIs",
+        "TMF921"
+      ],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "tmf:intent/tmf921/intentspecification.createintentspecification",
+      "preferred_term": "createintentspecification",
+      "synonyms": [
+        "POST /intentSpecification",
+        "tmf.tmf921.intentspecification.createintentspecification.v1"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "tmf:resource/intentspecification",
+      "narrower": [],
+      "source_refs": [
+        "TM Forum Open APIs",
+        "TMF921"
+      ],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "tmf:intent/tmf921/intentspecification.deleteintentspecification",
+      "preferred_term": "deleteintentspecification",
+      "synonyms": [
+        "DELETE /intentSpecification/{id}",
+        "tmf.tmf921.intentspecification.deleteintentspecification.v1"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "tmf:resource/intentspecification",
+      "narrower": [],
+      "source_refs": [
+        "TM Forum Open APIs",
+        "TMF921"
+      ],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "tmf:intent/tmf921/intentspecification.listintentspecification",
+      "preferred_term": "listintentspecification",
+      "synonyms": [
+        "GET /intentSpecification",
+        "tmf.tmf921.intentspecification.listintentspecification.v1"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "tmf:resource/intentspecification",
+      "narrower": [],
+      "source_refs": [
+        "TM Forum Open APIs",
+        "TMF921"
+      ],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "tmf:intent/tmf921/intentspecification.patchintentspecification",
+      "preferred_term": "patchintentspecification",
+      "synonyms": [
+        "PATCH /intentSpecification/{id}",
+        "tmf.tmf921.intentspecification.patchintentspecification.v1"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "tmf:resource/intentspecification",
+      "narrower": [],
+      "source_refs": [
+        "TM Forum Open APIs",
+        "TMF921"
+      ],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "tmf:intent/tmf921/intentspecification.retrieveintentspecification",
+      "preferred_term": "retrieveintentspecification",
+      "synonyms": [
+        "GET /intentSpecification/{id}",
+        "tmf.tmf921.intentspecification.retrieveintentspecification.v1"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "tmf:resource/intentspecification",
+      "narrower": [],
+      "source_refs": [
+        "TM Forum Open APIs",
+        "TMF921"
+      ],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "tmf:intent/tmf921/listener.intentattributevaluechangeevent",
+      "preferred_term": "intentattributevaluechangeevent listener",
+      "synonyms": [
+        "POST /listener/intentAttributeValueChangeEvent",
+        "tmf.tmf921.listener.intentattributevaluechangeevent.v1"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "tmf:resource/listener",
+      "narrower": [],
+      "source_refs": [
+        "TM Forum Open APIs",
+        "TMF921"
+      ],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "tmf:intent/tmf921/listener.intentcreateevent",
+      "preferred_term": "intentcreateevent listener",
+      "synonyms": [
+        "POST /listener/intentCreateEvent",
+        "tmf.tmf921.listener.intentcreateevent.v1"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "tmf:resource/listener",
+      "narrower": [],
+      "source_refs": [
+        "TM Forum Open APIs",
+        "TMF921"
+      ],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "tmf:intent/tmf921/listener.intentdeleteevent",
+      "preferred_term": "intentdeleteevent listener",
+      "synonyms": [
+        "POST /listener/intentDeleteEvent",
+        "tmf.tmf921.listener.intentdeleteevent.v1"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "tmf:resource/listener",
+      "narrower": [],
+      "source_refs": [
+        "TM Forum Open APIs",
+        "TMF921"
+      ],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "tmf:intent/tmf921/listener.intentreportattributevaluechangeevent",
+      "preferred_term": "intentreportattributevaluechangeevent listener",
+      "synonyms": [
+        "POST /listener/intentReportAttributeValueChangeEvent",
+        "tmf.tmf921.listener.intentreportattributevaluechangeevent.v1"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "tmf:resource/listener",
+      "narrower": [],
+      "source_refs": [
+        "TM Forum Open APIs",
+        "TMF921"
+      ],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "tmf:intent/tmf921/listener.intentreportcreateevent",
+      "preferred_term": "intentreportcreateevent listener",
+      "synonyms": [
+        "POST /listener/intentReportCreateEvent",
+        "tmf.tmf921.listener.intentreportcreateevent.v1"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "tmf:resource/listener",
+      "narrower": [],
+      "source_refs": [
+        "TM Forum Open APIs",
+        "TMF921"
+      ],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "tmf:intent/tmf921/listener.intentreportdeleteevent",
+      "preferred_term": "intentreportdeleteevent listener",
+      "synonyms": [
+        "POST /listener/intentReportDeleteEvent",
+        "tmf.tmf921.listener.intentreportdeleteevent.v1"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "tmf:resource/listener",
+      "narrower": [],
+      "source_refs": [
+        "TM Forum Open APIs",
+        "TMF921"
+      ],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "tmf:intent/tmf921/listener.intentspecificationattributevaluechangeevent",
+      "preferred_term": "intentspecificationattributevaluechangeevent listener",
+      "synonyms": [
+        "POST /listener/intentSpecificationAttributeValueChangeEvent",
+        "tmf.tmf921.listener.intentspecificationattributevaluechangeevent.v1"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "tmf:resource/listener",
+      "narrower": [],
+      "source_refs": [
+        "TM Forum Open APIs",
+        "TMF921"
+      ],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "tmf:intent/tmf921/listener.intentspecificationcreateevent",
+      "preferred_term": "intentspecificationcreateevent listener",
+      "synonyms": [
+        "POST /listener/intentSpecificationCreateEvent",
+        "tmf.tmf921.listener.intentspecificationcreateevent.v1"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "tmf:resource/listener",
+      "narrower": [],
+      "source_refs": [
+        "TM Forum Open APIs",
+        "TMF921"
+      ],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "tmf:intent/tmf921/listener.intentspecificationdeleteevent",
+      "preferred_term": "intentspecificationdeleteevent listener",
+      "synonyms": [
+        "POST /listener/intentSpecificationDeleteEvent",
+        "tmf.tmf921.listener.intentspecificationdeleteevent.v1"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "tmf:resource/listener",
+      "narrower": [],
+      "source_refs": [
+        "TM Forum Open APIs",
+        "TMF921"
+      ],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "tmf:intent/tmf921/listener.intentspecificationstatuschangeevent",
+      "preferred_term": "intentspecificationstatuschangeevent listener",
+      "synonyms": [
+        "POST /listener/intentSpecificationStatusChangeEvent",
+        "tmf.tmf921.listener.intentspecificationstatuschangeevent.v1"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "tmf:resource/listener",
+      "narrower": [],
+      "source_refs": [
+        "TM Forum Open APIs",
+        "TMF921"
+      ],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "tmf:intent/tmf921/listener.intentstatuschangeevent",
+      "preferred_term": "intentstatuschangeevent listener",
+      "synonyms": [
+        "POST /listener/intentStatusChangeEvent",
+        "tmf.tmf921.listener.intentstatuschangeevent.v1"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "tmf:resource/listener",
+      "narrower": [],
+      "source_refs": [
+        "TM Forum Open APIs",
+        "TMF921"
+      ],
+      "ner_provenance": null
+    }
+  ]
+}

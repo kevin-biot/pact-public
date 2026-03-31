@@ -1,0 +1,23 @@
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix tmf: <https://lane2.example/ontology/tmf/> .
+
+tmf:OperationNodeShape a sh:NodeShape ;
+  sh:targetClass tmf:Operation ;
+  sh:property [
+    sh:path tmf:intentClass ;
+    sh:datatype xsd:string ;
+    sh:minCount 1 ;
+  ] ;
+  sh:property [
+    sh:path tmf:tmfId ;
+    sh:datatype xsd:string ;
+    sh:pattern "^TMF[0-9]{3}$" ;
+    sh:minCount 1 ;
+  ] ;
+  sh:property [
+    sh:path tmf:httpMethod ;
+    sh:datatype xsd:string ;
+    sh:pattern "^(GET|POST|PUT|PATCH|DELETE|HEAD|OPTIONS)$" ;
+    sh:minCount 1 ;
+  ] .

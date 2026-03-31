@@ -1,0 +1,250 @@
+{
+  "schema_version": "1.0",
+  "domain": "tmf-service-inventory-order-surface-demo",
+  "thresholds": {
+    "overall_min_pass_rate": 1,
+    "require_critical_pass": true
+  },
+  "cases": [
+    {
+      "id": "tmf_case_001",
+      "phrase": "createhub",
+      "expect": "tmf.tmf638.hub.createhub.v1",
+      "critical": true
+    },
+    {
+      "id": "tmf_case_002",
+      "phrase": "hubdelete",
+      "expect": "tmf.tmf638.hub.hubdelete.v1",
+      "critical": true
+    },
+    {
+      "id": "tmf_case_003",
+      "phrase": "serviceattributevaluechangeevent listener",
+      "expect": "tmf.tmf638.listener.serviceattributevaluechangeevent.v1",
+      "critical": true
+    },
+    {
+      "id": "tmf_case_004",
+      "phrase": "servicecreateevent listener",
+      "expect": "tmf.tmf638.listener.servicecreateevent.v1",
+      "critical": true
+    },
+    {
+      "id": "tmf_case_005",
+      "phrase": "servicedeleteevent listener",
+      "expect": "tmf.tmf638.listener.servicedeleteevent.v1",
+      "critical": true
+    },
+    {
+      "id": "tmf_case_006",
+      "phrase": "serviceoperatingstatuschangeevent listener",
+      "expect": "tmf.tmf638.listener.serviceoperatingstatuschangeevent.v1",
+      "critical": true
+    },
+    {
+      "id": "tmf_case_007",
+      "phrase": "servicestatechangeevent listener",
+      "expect": "tmf.tmf638.listener.servicestatechangeevent.v1",
+      "critical": true
+    },
+    {
+      "id": "tmf_case_008",
+      "phrase": "createservice",
+      "expect": "tmf.tmf638.service.createservice.v1",
+      "critical": true
+    },
+    {
+      "id": "tmf_case_009",
+      "phrase": "deleteservice",
+      "expect": "tmf.tmf638.service.deleteservice.v1",
+      "critical": true
+    },
+    {
+      "id": "tmf_case_010",
+      "phrase": "listservice",
+      "expect": "tmf.tmf638.service.listservice.v1",
+      "critical": true
+    },
+    {
+      "id": "tmf_case_011",
+      "phrase": "patchservice",
+      "expect": "tmf.tmf638.service.patchservice.v1",
+      "critical": true
+    },
+    {
+      "id": "tmf_case_012",
+      "phrase": "retrieveservice",
+      "expect": "tmf.tmf638.service.retrieveservice.v1",
+      "critical": true
+    },
+    {
+      "id": "tmf_case_013",
+      "phrase": "registerlistener hub",
+      "expect": "tmf.tmf640.hub.registerlistener.v1",
+      "critical": true
+    },
+    {
+      "id": "tmf_case_014",
+      "phrase": "unregisterlistener hub",
+      "expect": "tmf.tmf640.hub.unregisterlistener.v1",
+      "critical": true
+    },
+    {
+      "id": "tmf_case_015",
+      "phrase": "listentomonitorattributevaluechangeevent listener",
+      "expect": "tmf.tmf640.listener.listentomonitorattributevaluechangeevent.v1",
+      "critical": true
+    },
+    {
+      "id": "tmf_case_016",
+      "phrase": "listentomonitorcreateevent listener",
+      "expect": "tmf.tmf640.listener.listentomonitorcreateevent.v1",
+      "critical": true
+    },
+    {
+      "id": "tmf_case_017",
+      "phrase": "listentomonitordeleteevent listener",
+      "expect": "tmf.tmf640.listener.listentomonitordeleteevent.v1",
+      "critical": true
+    },
+    {
+      "id": "tmf_case_018",
+      "phrase": "listentomonitorstatechangeevent listener",
+      "expect": "tmf.tmf640.listener.listentomonitorstatechangeevent.v1",
+      "critical": true
+    },
+    {
+      "id": "tmf_case_019",
+      "phrase": "listentoserviceattributevaluechangeevent listener",
+      "expect": "tmf.tmf640.listener.listentoserviceattributevaluechangeevent.v1",
+      "critical": true
+    },
+    {
+      "id": "tmf_case_020",
+      "phrase": "listentoservicecreateevent listener",
+      "expect": "tmf.tmf640.listener.listentoservicecreateevent.v1",
+      "critical": true
+    },
+    {
+      "id": "tmf_case_021",
+      "phrase": "listentoservicedeleteevent listener",
+      "expect": "tmf.tmf640.listener.listentoservicedeleteevent.v1",
+      "critical": true
+    },
+    {
+      "id": "tmf_case_022",
+      "phrase": "listentoservicestatechangeevent listener",
+      "expect": "tmf.tmf640.listener.listentoservicestatechangeevent.v1",
+      "critical": true
+    },
+    {
+      "id": "tmf_case_023",
+      "phrase": "listmonitor",
+      "expect": "tmf.tmf640.monitor.listmonitor.v1",
+      "critical": true
+    },
+    {
+      "id": "tmf_case_024",
+      "phrase": "retrievemonitor",
+      "expect": "tmf.tmf640.monitor.retrievemonitor.v1",
+      "critical": true
+    },
+    {
+      "id": "tmf_case_025",
+      "phrase": "createservice",
+      "expect": "tmf.tmf640.service.createservice.v1",
+      "critical": true
+    },
+    {
+      "id": "tmf_case_026",
+      "phrase": "deleteservice",
+      "expect": "tmf.tmf640.service.deleteservice.v1",
+      "critical": true
+    },
+    {
+      "id": "tmf_case_027",
+      "phrase": "listservice",
+      "expect": "tmf.tmf640.service.listservice.v1",
+      "critical": true
+    },
+    {
+      "id": "tmf_case_028",
+      "phrase": "patchservice",
+      "expect": "tmf.tmf640.service.patchservice.v1",
+      "critical": true
+    },
+    {
+      "id": "tmf_case_029",
+      "phrase": "retrieveservice",
+      "expect": "tmf.tmf640.service.retrieveservice.v1",
+      "critical": true
+    },
+    {
+      "id": "tmf_case_030",
+      "phrase": "createcancelserviceorder",
+      "expect": "tmf.tmf641.cancelserviceorder.createcancelserviceorder.v1",
+      "critical": true
+    },
+    {
+      "id": "tmf_case_031",
+      "phrase": "listcancelserviceorder",
+      "expect": "tmf.tmf641.cancelserviceorder.listcancelserviceorder.v1",
+      "critical": true
+    },
+    {
+      "id": "tmf_case_032",
+      "phrase": "retrievecancelserviceorder",
+      "expect": "tmf.tmf641.cancelserviceorder.retrievecancelserviceorder.v1",
+      "critical": true
+    },
+    {
+      "id": "tmf_case_033",
+      "phrase": "registerlistener hub",
+      "expect": "tmf.tmf641.hub.registerlistener.v1",
+      "critical": true
+    },
+    {
+      "id": "tmf_case_034",
+      "phrase": "unregisterlistener hub",
+      "expect": "tmf.tmf641.hub.unregisterlistener.v1",
+      "critical": true
+    },
+    {
+      "id": "tmf_case_035",
+      "phrase": "listentocancelserviceordercreateevent listener",
+      "expect": "tmf.tmf641.listener.listentocancelserviceordercreateevent.v1",
+      "critical": true
+    },
+    {
+      "id": "tmf_case_036",
+      "phrase": "listentocancelserviceorderinformationrequiredevent listener",
+      "expect": "tmf.tmf641.listener.listentocancelserviceorderinformationrequiredevent.v1",
+      "critical": true
+    },
+    {
+      "id": "tmf_case_037",
+      "phrase": "listentocancelserviceorderstatechangeevent listener",
+      "expect": "tmf.tmf641.listener.listentocancelserviceorderstatechangeevent.v1",
+      "critical": true
+    },
+    {
+      "id": "tmf_case_038",
+      "phrase": "listentoserviceorderattributevaluechangeevent listener",
+      "expect": "tmf.tmf641.listener.listentoserviceorderattributevaluechangeevent.v1",
+      "critical": true
+    },
+    {
+      "id": "tmf_case_039",
+      "phrase": "listentoserviceordercreateevent listener",
+      "expect": "tmf.tmf641.listener.listentoserviceordercreateevent.v1",
+      "critical": true
+    },
+    {
+      "id": "tmf_case_040",
+      "phrase": "listentoserviceorderdeleteevent listener",
+      "expect": "tmf.tmf641.listener.listentoserviceorderdeleteevent.v1",
+      "critical": true
+    }
+  ]
+}

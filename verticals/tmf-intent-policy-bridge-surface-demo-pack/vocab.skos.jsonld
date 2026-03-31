@@ -1,0 +1,323 @@
+{
+  "@context": {
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "tmf": "https://lane2.example/ontology/tmf/"
+  },
+  "@graph": [
+    {
+      "@id": "tmf:family/api",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "TM Forum API"
+    },
+    {
+      "@id": "tmf:resource/hub",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "Hub",
+      "skos:broader": "tmf:family/api"
+    },
+    {
+      "@id": "tmf:resource/intent",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "Intent",
+      "skos:broader": "tmf:family/api"
+    },
+    {
+      "@id": "tmf:resource/intentspecification",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "Intentspecification",
+      "skos:broader": "tmf:family/api"
+    },
+    {
+      "@id": "tmf:resource/listener",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "Listener",
+      "skos:broader": "tmf:family/api"
+    },
+    {
+      "@id": "tmf:intent/tmf921/hub.createhub",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "Createhub",
+      "skos:altLabel": [
+        "createhub",
+        "POST /hub",
+        "tmf.tmf921.hub.createhub.v1"
+      ],
+      "skos:broader": "tmf:resource/hub"
+    },
+    {
+      "@id": "tmf:intent/tmf921/hub.hubdelete",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "Hubdelete",
+      "skos:altLabel": [
+        "hubdelete",
+        "DELETE /hub/{id}",
+        "tmf.tmf921.hub.hubdelete.v1"
+      ],
+      "skos:broader": "tmf:resource/hub"
+    },
+    {
+      "@id": "tmf:intent/tmf921/intent.createintent",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "Createintent",
+      "skos:altLabel": [
+        "createintent",
+        "POST /intent",
+        "tmf.tmf921.intent.createintent.v1"
+      ],
+      "skos:broader": "tmf:resource/intent"
+    },
+    {
+      "@id": "tmf:intent/tmf921/intent.deleteintent",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "Deleteintent",
+      "skos:altLabel": [
+        "deleteintent",
+        "DELETE /intent/{id}",
+        "tmf.tmf921.intent.deleteintent.v1"
+      ],
+      "skos:broader": "tmf:resource/intent"
+    },
+    {
+      "@id": "tmf:intent/tmf921/intent.deleteintentintentreport",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "Deleteintentintentreport",
+      "skos:altLabel": [
+        "deleteintentintentreport",
+        "DELETE /intent/{intentId}/intentReport/{id}",
+        "tmf.tmf921.intent.deleteintentintentreport.v1"
+      ],
+      "skos:broader": "tmf:resource/intent"
+    },
+    {
+      "@id": "tmf:intent/tmf921/intent.listintent",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "Listintent",
+      "skos:altLabel": [
+        "listintent",
+        "GET /intent",
+        "tmf.tmf921.intent.listintent.v1"
+      ],
+      "skos:broader": "tmf:resource/intent"
+    },
+    {
+      "@id": "tmf:intent/tmf921/intent.listintentintentreport",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "Listintentintentreport",
+      "skos:altLabel": [
+        "listintentintentreport",
+        "GET /intent/{intentId}/intentReport",
+        "tmf.tmf921.intent.listintentintentreport.v1"
+      ],
+      "skos:broader": "tmf:resource/intent"
+    },
+    {
+      "@id": "tmf:intent/tmf921/intent.patchintent",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "Patchintent",
+      "skos:altLabel": [
+        "patchintent",
+        "PATCH /intent/{id}",
+        "tmf.tmf921.intent.patchintent.v1"
+      ],
+      "skos:broader": "tmf:resource/intent"
+    },
+    {
+      "@id": "tmf:intent/tmf921/intent.retrieveintent",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "Retrieveintent",
+      "skos:altLabel": [
+        "retrieveintent",
+        "GET /intent/{id}",
+        "tmf.tmf921.intent.retrieveintent.v1"
+      ],
+      "skos:broader": "tmf:resource/intent"
+    },
+    {
+      "@id": "tmf:intent/tmf921/intent.retrieveintentintentreport",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "Retrieveintentintentreport",
+      "skos:altLabel": [
+        "retrieveintentintentreport",
+        "GET /intent/{intentId}/intentReport/{id}",
+        "tmf.tmf921.intent.retrieveintentintentreport.v1"
+      ],
+      "skos:broader": "tmf:resource/intent"
+    },
+    {
+      "@id": "tmf:intent/tmf921/intentspecification.createintentspecification",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "Createintentspecification",
+      "skos:altLabel": [
+        "createintentspecification",
+        "POST /intentSpecification",
+        "tmf.tmf921.intentspecification.createintentspecification.v1"
+      ],
+      "skos:broader": "tmf:resource/intentspecification"
+    },
+    {
+      "@id": "tmf:intent/tmf921/intentspecification.deleteintentspecification",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "Deleteintentspecification",
+      "skos:altLabel": [
+        "deleteintentspecification",
+        "DELETE /intentSpecification/{id}",
+        "tmf.tmf921.intentspecification.deleteintentspecification.v1"
+      ],
+      "skos:broader": "tmf:resource/intentspecification"
+    },
+    {
+      "@id": "tmf:intent/tmf921/intentspecification.listintentspecification",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "Listintentspecification",
+      "skos:altLabel": [
+        "listintentspecification",
+        "GET /intentSpecification",
+        "tmf.tmf921.intentspecification.listintentspecification.v1"
+      ],
+      "skos:broader": "tmf:resource/intentspecification"
+    },
+    {
+      "@id": "tmf:intent/tmf921/intentspecification.patchintentspecification",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "Patchintentspecification",
+      "skos:altLabel": [
+        "patchintentspecification",
+        "PATCH /intentSpecification/{id}",
+        "tmf.tmf921.intentspecification.patchintentspecification.v1"
+      ],
+      "skos:broader": "tmf:resource/intentspecification"
+    },
+    {
+      "@id": "tmf:intent/tmf921/intentspecification.retrieveintentspecification",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "Retrieveintentspecification",
+      "skos:altLabel": [
+        "retrieveintentspecification",
+        "GET /intentSpecification/{id}",
+        "tmf.tmf921.intentspecification.retrieveintentspecification.v1"
+      ],
+      "skos:broader": "tmf:resource/intentspecification"
+    },
+    {
+      "@id": "tmf:intent/tmf921/listener.intentattributevaluechangeevent",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "Intentattributevaluechangeevent listener",
+      "skos:altLabel": [
+        "intentattributevaluechangeevent listener",
+        "POST /listener/intentAttributeValueChangeEvent",
+        "tmf.tmf921.listener.intentattributevaluechangeevent.v1"
+      ],
+      "skos:broader": "tmf:resource/listener"
+    },
+    {
+      "@id": "tmf:intent/tmf921/listener.intentcreateevent",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "Intentcreateevent listener",
+      "skos:altLabel": [
+        "intentcreateevent listener",
+        "POST /listener/intentCreateEvent",
+        "tmf.tmf921.listener.intentcreateevent.v1"
+      ],
+      "skos:broader": "tmf:resource/listener"
+    },
+    {
+      "@id": "tmf:intent/tmf921/listener.intentdeleteevent",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "Intentdeleteevent listener",
+      "skos:altLabel": [
+        "intentdeleteevent listener",
+        "POST /listener/intentDeleteEvent",
+        "tmf.tmf921.listener.intentdeleteevent.v1"
+      ],
+      "skos:broader": "tmf:resource/listener"
+    },
+    {
+      "@id": "tmf:intent/tmf921/listener.intentreportattributevaluechangeevent",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "Intentreportattributevaluechangeevent listener",
+      "skos:altLabel": [
+        "intentreportattributevaluechangeevent listener",
+        "POST /listener/intentReportAttributeValueChangeEvent",
+        "tmf.tmf921.listener.intentreportattributevaluechangeevent.v1"
+      ],
+      "skos:broader": "tmf:resource/listener"
+    },
+    {
+      "@id": "tmf:intent/tmf921/listener.intentreportcreateevent",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "Intentreportcreateevent listener",
+      "skos:altLabel": [
+        "intentreportcreateevent listener",
+        "POST /listener/intentReportCreateEvent",
+        "tmf.tmf921.listener.intentreportcreateevent.v1"
+      ],
+      "skos:broader": "tmf:resource/listener"
+    },
+    {
+      "@id": "tmf:intent/tmf921/listener.intentreportdeleteevent",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "Intentreportdeleteevent listener",
+      "skos:altLabel": [
+        "intentreportdeleteevent listener",
+        "POST /listener/intentReportDeleteEvent",
+        "tmf.tmf921.listener.intentreportdeleteevent.v1"
+      ],
+      "skos:broader": "tmf:resource/listener"
+    },
+    {
+      "@id": "tmf:intent/tmf921/listener.intentspecificationattributevaluechangeevent",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "Intentspecificationattributevaluechangeevent listener",
+      "skos:altLabel": [
+        "intentspecificationattributevaluechangeevent listener",
+        "POST /listener/intentSpecificationAttributeValueChangeEvent",
+        "tmf.tmf921.listener.intentspecificationattributevaluechangeevent.v1"
+      ],
+      "skos:broader": "tmf:resource/listener"
+    },
+    {
+      "@id": "tmf:intent/tmf921/listener.intentspecificationcreateevent",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "Intentspecificationcreateevent listener",
+      "skos:altLabel": [
+        "intentspecificationcreateevent listener",
+        "POST /listener/intentSpecificationCreateEvent",
+        "tmf.tmf921.listener.intentspecificationcreateevent.v1"
+      ],
+      "skos:broader": "tmf:resource/listener"
+    },
+    {
+      "@id": "tmf:intent/tmf921/listener.intentspecificationdeleteevent",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "Intentspecificationdeleteevent listener",
+      "skos:altLabel": [
+        "intentspecificationdeleteevent listener",
+        "POST /listener/intentSpecificationDeleteEvent",
+        "tmf.tmf921.listener.intentspecificationdeleteevent.v1"
+      ],
+      "skos:broader": "tmf:resource/listener"
+    },
+    {
+      "@id": "tmf:intent/tmf921/listener.intentspecificationstatuschangeevent",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "Intentspecificationstatuschangeevent listener",
+      "skos:altLabel": [
+        "intentspecificationstatuschangeevent listener",
+        "POST /listener/intentSpecificationStatusChangeEvent",
+        "tmf.tmf921.listener.intentspecificationstatuschangeevent.v1"
+      ],
+      "skos:broader": "tmf:resource/listener"
+    },
+    {
+      "@id": "tmf:intent/tmf921/listener.intentstatuschangeevent",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "Intentstatuschangeevent listener",
+      "skos:altLabel": [
+        "intentstatuschangeevent listener",
+        "POST /listener/intentStatusChangeEvent",
+        "tmf.tmf921.listener.intentstatuschangeevent.v1"
+      ],
+      "skos:broader": "tmf:resource/listener"
+    }
+  ]
+}

@@ -1,0 +1,250 @@
+{
+  "schema_version": "1.0",
+  "domain": "tmf-core-seed-demo",
+  "thresholds": {
+    "overall_min_pass_rate": 1,
+    "require_critical_pass": true
+  },
+  "cases": [
+    {
+      "id": "tmf_case_001",
+      "phrase": "createexportjob",
+      "expect": "tmf.tmf634.exportjob.createexportjob.v1",
+      "critical": true
+    },
+    {
+      "id": "tmf_case_002",
+      "phrase": "deleteexportjob",
+      "expect": "tmf.tmf634.exportjob.deleteexportjob.v1",
+      "critical": true
+    },
+    {
+      "id": "tmf_case_003",
+      "phrase": "listexportjob",
+      "expect": "tmf.tmf634.exportjob.listexportjob.v1",
+      "critical": true
+    },
+    {
+      "id": "tmf_case_004",
+      "phrase": "retrieveexportjob",
+      "expect": "tmf.tmf634.exportjob.retrieveexportjob.v1",
+      "critical": true
+    },
+    {
+      "id": "tmf_case_005",
+      "phrase": "createhub",
+      "expect": "tmf.tmf634.hub.createhub.v1",
+      "critical": true
+    },
+    {
+      "id": "tmf_case_006",
+      "phrase": "hubdelete",
+      "expect": "tmf.tmf634.hub.hubdelete.v1",
+      "critical": true
+    },
+    {
+      "id": "tmf_case_007",
+      "phrase": "createimportjob",
+      "expect": "tmf.tmf634.importjob.createimportjob.v1",
+      "critical": true
+    },
+    {
+      "id": "tmf_case_008",
+      "phrase": "deleteimportjob",
+      "expect": "tmf.tmf634.importjob.deleteimportjob.v1",
+      "critical": true
+    },
+    {
+      "id": "tmf_case_009",
+      "phrase": "listimportjob",
+      "expect": "tmf.tmf634.importjob.listimportjob.v1",
+      "critical": true
+    },
+    {
+      "id": "tmf_case_010",
+      "phrase": "retrieveimportjob",
+      "expect": "tmf.tmf634.importjob.retrieveimportjob.v1",
+      "critical": true
+    },
+    {
+      "id": "tmf_case_011",
+      "phrase": "exportjobcreateevent listener",
+      "expect": "tmf.tmf634.listener.exportjobcreateevent.v1",
+      "critical": true
+    },
+    {
+      "id": "tmf_case_012",
+      "phrase": "exportjobdeleteevent listener",
+      "expect": "tmf.tmf634.listener.exportjobdeleteevent.v1",
+      "critical": true
+    },
+    {
+      "id": "tmf_case_013",
+      "phrase": "exportjobstatechangeevent listener",
+      "expect": "tmf.tmf634.listener.exportjobstatechangeevent.v1",
+      "critical": true
+    },
+    {
+      "id": "tmf_case_014",
+      "phrase": "importjobcreateevent listener",
+      "expect": "tmf.tmf634.listener.importjobcreateevent.v1",
+      "critical": true
+    },
+    {
+      "id": "tmf_case_015",
+      "phrase": "importjobdeleteevent listener",
+      "expect": "tmf.tmf634.listener.importjobdeleteevent.v1",
+      "critical": true
+    },
+    {
+      "id": "tmf_case_016",
+      "phrase": "importjobstatechangeevent listener",
+      "expect": "tmf.tmf634.listener.importjobstatechangeevent.v1",
+      "critical": true
+    },
+    {
+      "id": "tmf_case_017",
+      "phrase": "resourcecandidateattributevaluechangeevent listener",
+      "expect": "tmf.tmf634.listener.resourcecandidateattributevaluechangeevent.v1",
+      "critical": true
+    },
+    {
+      "id": "tmf_case_018",
+      "phrase": "resourcecandidatecreateevent listener",
+      "expect": "tmf.tmf634.listener.resourcecandidatecreateevent.v1",
+      "critical": true
+    },
+    {
+      "id": "tmf_case_019",
+      "phrase": "resourcecandidatedeleteevent listener",
+      "expect": "tmf.tmf634.listener.resourcecandidatedeleteevent.v1",
+      "critical": true
+    },
+    {
+      "id": "tmf_case_020",
+      "phrase": "resourcecandidatestatuschangeevent listener",
+      "expect": "tmf.tmf634.listener.resourcecandidatestatuschangeevent.v1",
+      "critical": true
+    },
+    {
+      "id": "tmf_case_021",
+      "phrase": "resourcecatalogattributevaluechangeevent listener",
+      "expect": "tmf.tmf634.listener.resourcecatalogattributevaluechangeevent.v1",
+      "critical": true
+    },
+    {
+      "id": "tmf_case_022",
+      "phrase": "resourcecatalogcreateevent listener",
+      "expect": "tmf.tmf634.listener.resourcecatalogcreateevent.v1",
+      "critical": true
+    },
+    {
+      "id": "tmf_case_023",
+      "phrase": "resourcecatalogdeleteevent listener",
+      "expect": "tmf.tmf634.listener.resourcecatalogdeleteevent.v1",
+      "critical": true
+    },
+    {
+      "id": "tmf_case_024",
+      "phrase": "resourcecatalogstatuschangeevent listener",
+      "expect": "tmf.tmf634.listener.resourcecatalogstatuschangeevent.v1",
+      "critical": true
+    },
+    {
+      "id": "tmf_case_025",
+      "phrase": "resourcecategoryattributevaluechangeevent listener",
+      "expect": "tmf.tmf634.listener.resourcecategoryattributevaluechangeevent.v1",
+      "critical": true
+    },
+    {
+      "id": "tmf_case_026",
+      "phrase": "resourcecategorycreateevent listener",
+      "expect": "tmf.tmf634.listener.resourcecategorycreateevent.v1",
+      "critical": true
+    },
+    {
+      "id": "tmf_case_027",
+      "phrase": "resourcecategorydeleteevent listener",
+      "expect": "tmf.tmf634.listener.resourcecategorydeleteevent.v1",
+      "critical": true
+    },
+    {
+      "id": "tmf_case_028",
+      "phrase": "resourcecategorystatuschangeevent listener",
+      "expect": "tmf.tmf634.listener.resourcecategorystatuschangeevent.v1",
+      "critical": true
+    },
+    {
+      "id": "tmf_case_029",
+      "phrase": "resourcespecificationattributevaluechangeevent listener",
+      "expect": "tmf.tmf634.listener.resourcespecificationattributevaluechangeevent.v1",
+      "critical": true
+    },
+    {
+      "id": "tmf_case_030",
+      "phrase": "resourcespecificationcreateevent listener",
+      "expect": "tmf.tmf634.listener.resourcespecificationcreateevent.v1",
+      "critical": true
+    },
+    {
+      "id": "tmf_case_031",
+      "phrase": "resourcespecificationdeleteevent listener",
+      "expect": "tmf.tmf634.listener.resourcespecificationdeleteevent.v1",
+      "critical": true
+    },
+    {
+      "id": "tmf_case_032",
+      "phrase": "resourcespecificationstatuschangeevent listener",
+      "expect": "tmf.tmf634.listener.resourcespecificationstatuschangeevent.v1",
+      "critical": true
+    },
+    {
+      "id": "tmf_case_033",
+      "phrase": "createresourcecandidate",
+      "expect": "tmf.tmf634.resourcecandidate.createresourcecandidate.v1",
+      "critical": true
+    },
+    {
+      "id": "tmf_case_034",
+      "phrase": "deleteresourcecandidate",
+      "expect": "tmf.tmf634.resourcecandidate.deleteresourcecandidate.v1",
+      "critical": true
+    },
+    {
+      "id": "tmf_case_035",
+      "phrase": "listresourcecandidate",
+      "expect": "tmf.tmf634.resourcecandidate.listresourcecandidate.v1",
+      "critical": true
+    },
+    {
+      "id": "tmf_case_036",
+      "phrase": "patchresourcecandidate",
+      "expect": "tmf.tmf634.resourcecandidate.patchresourcecandidate.v1",
+      "critical": true
+    },
+    {
+      "id": "tmf_case_037",
+      "phrase": "retrieveresourcecandidate",
+      "expect": "tmf.tmf634.resourcecandidate.retrieveresourcecandidate.v1",
+      "critical": true
+    },
+    {
+      "id": "tmf_case_038",
+      "phrase": "createresourcecatalog",
+      "expect": "tmf.tmf634.resourcecatalog.createresourcecatalog.v1",
+      "critical": true
+    },
+    {
+      "id": "tmf_case_039",
+      "phrase": "deleteresourcecatalog",
+      "expect": "tmf.tmf634.resourcecatalog.deleteresourcecatalog.v1",
+      "critical": true
+    },
+    {
+      "id": "tmf_case_040",
+      "phrase": "listresourcecatalog",
+      "expect": "tmf.tmf634.resourcecatalog.listresourcecatalog.v1",
+      "critical": true
+    }
+  ]
+}

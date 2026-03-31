@@ -1,0 +1,46 @@
+{
+  "schema_version": "0.1",
+  "generated_at_utc": "2026-03-31T01:29:40Z",
+  "source_profile": "tmf-openapi-wide-surface-v1",
+  "source_view": "tmf-intent-policy-bridge",
+  "synthesis_seed_ref": "docs/architecture/artifacts/schema-sets/telco/mappings/tmf-synthesis-seed.json",
+  "source_catalog_ref": "docs/architecture/artifacts/schema-sets/telco/mappings/tmf-api-catalog.json",
+  "tmf_ids": [
+    "TMF921"
+  ],
+  "operation_identifiers_count": 26,
+  "resource_family_count": 4,
+  "resource_families": [
+    "hub",
+    "intent",
+    "intentspecification",
+    "listener"
+  ],
+  "operation_identifiers_sample": [
+    "tmf.tmf921.hub.createhub.v1",
+    "tmf.tmf921.hub.hubdelete.v1",
+    "tmf.tmf921.intent.createintent.v1",
+    "tmf.tmf921.intent.deleteintent.v1",
+    "tmf.tmf921.intent.deleteintentintentreport.v1",
+    "tmf.tmf921.intent.listintent.v1",
+    "tmf.tmf921.intent.listintentintentreport.v1",
+    "tmf.tmf921.intent.patchintent.v1",
+    "tmf.tmf921.intent.retrieveintent.v1",
+    "tmf.tmf921.intent.retrieveintentintentreport.v1",
+    "tmf.tmf921.intentspecification.createintentspecification.v1",
+    "tmf.tmf921.intentspecification.deleteintentspecification.v1",
+    "tmf.tmf921.intentspecification.listintentspecification.v1",
+    "tmf.tmf921.intentspecification.patchintentspecification.v1",
+    "tmf.tmf921.intentspecification.retrieveintentspecification.v1",
+    "tmf.tmf921.listener.intentattributevaluechangeevent.v1",
+    "tmf.tmf921.listener.intentcreateevent.v1",
+    "tmf.tmf921.listener.intentdeleteevent.v1",
+    "tmf.tmf921.listener.intentreportattributevaluechangeevent.v1",
+    "tmf.tmf921.listener.intentreportcreateevent.v1",
+    "tmf.tmf921.listener.intentreportdeleteevent.v1",
+    "tmf.tmf921.listener.intentspecificationattributevaluechangeevent.v1",
+    "tmf.tmf921.listener.intentspecificationcreateevent.v1",
+    "tmf.tmf921.listener.intentspecificationdeleteevent.v1",
+    "tmf.tmf921.listener.intentspecificationstatuschangeevent.v1"
+  ]
+}

@@ -1,0 +1,3427 @@
+{
+  "schema_version": "1.0",
+  "domain": "tmf-resource-catalog-alarm-surface-demo",
+  "pack_id": "tmf-resource-catalog-alarm-surface-demo-0.1.0",
+  "version": "0.1.0",
+  "out_of_scope_behavior": "escalate",
+  "state_model": {
+    "states": [
+      "ingress",
+      "validated",
+      "executed",
+      "failed",
+      "escalated"
+    ],
+    "initial_state": "ingress",
+    "terminal_states": [
+      "executed",
+      "failed",
+      "escalated"
+    ]
+  },
+  "admissible_intents": [
+    {
+      "intent_class": "tmf.tmf634.exportjob.createexportjob.v1",
+      "allowed_states": [
+        "ingress",
+        "validated"
+      ],
+      "required_fact_types": [
+        "tmf_operation"
+      ],
+      "transition_ids": [
+        "validate_tmf634_exportjob_createexportjob",
+        "execute_tmf634_exportjob_createexportjob"
+      ]
+    },
+    {
+      "intent_class": "tmf.tmf634.exportjob.deleteexportjob.v1",
+      "allowed_states": [
+        "ingress",
+        "validated"
+      ],
+      "required_fact_types": [
+        "tmf_operation"
+      ],
+      "transition_ids": [
+        "validate_tmf634_exportjob_deleteexportjob",
+        "execute_tmf634_exportjob_deleteexportjob"
+      ]
+    },
+    {
+      "intent_class": "tmf.tmf634.exportjob.listexportjob.v1",
+      "allowed_states": [
+        "ingress",
+        "validated"
+      ],
+      "required_fact_types": [
+        "tmf_operation"
+      ],
+      "transition_ids": [
+        "validate_tmf634_exportjob_listexportjob",
+        "execute_tmf634_exportjob_listexportjob"
+      ]
+    },
+    {
+      "intent_class": "tmf.tmf634.exportjob.retrieveexportjob.v1",
+      "allowed_states": [
+        "ingress",
+        "validated"
+      ],
+      "required_fact_types": [
+        "tmf_operation"
+      ],
+      "transition_ids": [
+        "validate_tmf634_exportjob_retrieveexportjob",
+        "execute_tmf634_exportjob_retrieveexportjob"
+      ]
+    },
+    {
+      "intent_class": "tmf.tmf634.hub.createhub.v1",
+      "allowed_states": [
+        "ingress",
+        "validated"
+      ],
+      "required_fact_types": [
+        "tmf_operation"
+      ],
+      "transition_ids": [
+        "validate_tmf634_hub_createhub",
+        "execute_tmf634_hub_createhub"
+      ]
+    },
+    {
+      "intent_class": "tmf.tmf634.hub.hubdelete.v1",
+      "allowed_states": [
+        "ingress",
+        "validated"
+      ],
+      "required_fact_types": [
+        "tmf_operation"
+      ],
+      "transition_ids": [
+        "validate_tmf634_hub_hubdelete",
+        "execute_tmf634_hub_hubdelete"
+      ]
+    },
+    {
+      "intent_class": "tmf.tmf634.importjob.createimportjob.v1",
+      "allowed_states": [
+        "ingress",
+        "validated"
+      ],
+      "required_fact_types": [
+        "tmf_operation"
+      ],
+      "transition_ids": [
+        "validate_tmf634_importjob_createimportjob",
+        "execute_tmf634_importjob_createimportjob"
+      ]
+    },
+    {
+      "intent_class": "tmf.tmf634.importjob.deleteimportjob.v1",
+      "allowed_states": [
+        "ingress",
+        "validated"
+      ],
+      "required_fact_types": [
+        "tmf_operation"
+      ],
+      "transition_ids": [
+        "validate_tmf634_importjob_deleteimportjob",
+        "execute_tmf634_importjob_deleteimportjob"
+      ]
+    },
+    {
+      "intent_class": "tmf.tmf634.importjob.listimportjob.v1",
+      "allowed_states": [
+        "ingress",
+        "validated"
+      ],
+      "required_fact_types": [
+        "tmf_operation"
+      ],
+      "transition_ids": [
+        "validate_tmf634_importjob_listimportjob",
+        "execute_tmf634_importjob_listimportjob"
+      ]
+    },
+    {
+      "intent_class": "tmf.tmf634.importjob.retrieveimportjob.v1",
+      "allowed_states": [
+        "ingress",
+        "validated"
+      ],
+      "required_fact_types": [
+        "tmf_operation"
+      ],
+      "transition_ids": [
+        "validate_tmf634_importjob_retrieveimportjob",
+        "execute_tmf634_importjob_retrieveimportjob"
+      ]
+    },
+    {
+      "intent_class": "tmf.tmf634.listener.exportjobcreateevent.v1",
+      "allowed_states": [
+        "ingress",
+        "validated"
+      ],
+      "required_fact_types": [
+        "tmf_operation"
+      ],
+      "transition_ids": [
+        "validate_tmf634_listener_exportjobcreateevent",
+        "execute_tmf634_listener_exportjobcreateevent"
+      ]
+    },
+    {
+      "intent_class": "tmf.tmf634.listener.exportjobdeleteevent.v1",
+      "allowed_states": [
+        "ingress",
+        "validated"
+      ],
+      "required_fact_types": [
+        "tmf_operation"
+      ],
+      "transition_ids": [
+        "validate_tmf634_listener_exportjobdeleteevent",
+        "execute_tmf634_listener_exportjobdeleteevent"
+      ]
+    },
+    {
+      "intent_class": "tmf.tmf634.listener.exportjobstatechangeevent.v1",
+      "allowed_states": [
+        "ingress",
+        "validated"
+      ],
+      "required_fact_types": [
+        "tmf_operation"
+      ],
+      "transition_ids": [
+        "validate_tmf634_listener_exportjobstatechangeevent",
+        "execute_tmf634_listener_exportjobstatechangeevent"
+      ]
+    },
+    {
+      "intent_class": "tmf.tmf634.listener.importjobcreateevent.v1",
+      "allowed_states": [
+        "ingress",
+        "validated"
+      ],
+      "required_fact_types": [
+        "tmf_operation"
+      ],
+      "transition_ids": [
+        "validate_tmf634_listener_importjobcreateevent",
+        "execute_tmf634_listener_importjobcreateevent"
+      ]
+    },
+    {
+      "intent_class": "tmf.tmf634.listener.importjobdeleteevent.v1",
+      "allowed_states": [
+        "ingress",
+        "validated"
+      ],
+      "required_fact_types": [
+        "tmf_operation"
+      ],
+      "transition_ids": [
+        "validate_tmf634_listener_importjobdeleteevent",
+        "execute_tmf634_listener_importjobdeleteevent"
+      ]
+    },
+    {
+      "intent_class": "tmf.tmf634.listener.importjobstatechangeevent.v1",
+      "allowed_states": [
+        "ingress",
+        "validated"
+      ],
+      "required_fact_types": [
+        "tmf_operation"
+      ],
+      "transition_ids": [
+        "validate_tmf634_listener_importjobstatechangeevent",
+        "execute_tmf634_listener_importjobstatechangeevent"
+      ]
+    },
+    {
+      "intent_class": "tmf.tmf634.listener.resourcecandidateattributevaluechangeevent.v1",
+      "allowed_states": [
+        "ingress",
+        "validated"
+      ],
+      "required_fact_types": [
+        "tmf_operation"
+      ],
+      "transition_ids": [
+        "validate_tmf634_listener_resourcecandidateattributevaluechangeevent",
+        "execute_tmf634_listener_resourcecandidateattributevaluechangeevent"
+      ]
+    },
+    {
+      "intent_class": "tmf.tmf634.listener.resourcecandidatecreateevent.v1",
+      "allowed_states": [
+        "ingress",
+        "validated"
+      ],
+      "required_fact_types": [
+        "tmf_operation"
+      ],
+      "transition_ids": [
+        "validate_tmf634_listener_resourcecandidatecreateevent",
+        "execute_tmf634_listener_resourcecandidatecreateevent"
+      ]
+    },
+    {
+      "intent_class": "tmf.tmf634.listener.resourcecandidatedeleteevent.v1",
+      "allowed_states": [
+        "ingress",
+        "validated"
+      ],
+      "required_fact_types": [
+        "tmf_operation"
+      ],
+      "transition_ids": [
+        "validate_tmf634_listener_resourcecandidatedeleteevent",
+        "execute_tmf634_listener_resourcecandidatedeleteevent"
+      ]
+    },
+    {
+      "intent_class": "tmf.tmf634.listener.resourcecandidatestatuschangeevent.v1",
+      "allowed_states": [
+        "ingress",
+        "validated"
+      ],
+      "required_fact_types": [
+        "tmf_operation"
+      ],
+      "transition_ids": [
+        "validate_tmf634_listener_resourcecandidatestatuschangeevent",
+        "execute_tmf634_listener_resourcecandidatestatuschangeevent"
+      ]
+    },
+    {
+      "intent_class": "tmf.tmf634.listener.resourcecatalogattributevaluechangeevent.v1",
+      "allowed_states": [
+        "ingress",
+        "validated"
+      ],
+      "required_fact_types": [
+        "tmf_operation"
+      ],
+      "transition_ids": [
+        "validate_tmf634_listener_resourcecatalogattributevaluechangeevent",
+        "execute_tmf634_listener_resourcecatalogattributevaluechangeevent"
+      ]
+    },
+    {
+      "intent_class": "tmf.tmf634.listener.resourcecatalogcreateevent.v1",
+      "allowed_states": [
+        "ingress",
+        "validated"
+      ],
+      "required_fact_types": [
+        "tmf_operation"
+      ],
+      "transition_ids": [
+        "validate_tmf634_listener_resourcecatalogcreateevent",
+        "execute_tmf634_listener_resourcecatalogcreateevent"
+      ]
+    },
+    {
+      "intent_class": "tmf.tmf634.listener.resourcecatalogdeleteevent.v1",
+      "allowed_states": [
+        "ingress",
+        "validated"
+      ],
+      "required_fact_types": [
+        "tmf_operation"
+      ],
+      "transition_ids": [
+        "validate_tmf634_listener_resourcecatalogdeleteevent",
+        "execute_tmf634_listener_resourcecatalogdeleteevent"
+      ]
+    },
+    {
+      "intent_class": "tmf.tmf634.listener.resourcecatalogstatuschangeevent.v1",
+      "allowed_states": [
+        "ingress",
+        "validated"
+      ],
+      "required_fact_types": [
+        "tmf_operation"
+      ],
+      "transition_ids": [
+        "validate_tmf634_listener_resourcecatalogstatuschangeevent",
+        "execute_tmf634_listener_resourcecatalogstatuschangeevent"
+      ]
+    },
+    {
+      "intent_class": "tmf.tmf634.listener.resourcecategoryattributevaluechangeevent.v1",
+      "allowed_states": [
+        "ingress",
+        "validated"
+      ],
+      "required_fact_types": [
+        "tmf_operation"
+      ],
+      "transition_ids": [
+        "validate_tmf634_listener_resourcecategoryattributevaluechangeevent",
+        "execute_tmf634_listener_resourcecategoryattributevaluechangeevent"
+      ]
+    },
+    {
+      "intent_class": "tmf.tmf634.listener.resourcecategorycreateevent.v1",
+      "allowed_states": [
+        "ingress",
+        "validated"
+      ],
+      "required_fact_types": [
+        "tmf_operation"
+      ],
+      "transition_ids": [
+        "validate_tmf634_listener_resourcecategorycreateevent",
+        "execute_tmf634_listener_resourcecategorycreateevent"
+      ]
+    },
+    {
+      "intent_class": "tmf.tmf634.listener.resourcecategorydeleteevent.v1",
+      "allowed_states": [
+        "ingress",
+        "validated"
+      ],
+      "required_fact_types": [
+        "tmf_operation"
+      ],
+      "transition_ids": [
+        "validate_tmf634_listener_resourcecategorydeleteevent",
+        "execute_tmf634_listener_resourcecategorydeleteevent"
+      ]
+    },
+    {
+      "intent_class": "tmf.tmf634.listener.resourcecategorystatuschangeevent.v1",
+      "allowed_states": [
+        "ingress",
+        "validated"
+      ],
+      "required_fact_types": [
+        "tmf_operation"
+      ],
+      "transition_ids": [
+        "validate_tmf634_listener_resourcecategorystatuschangeevent",
+        "execute_tmf634_listener_resourcecategorystatuschangeevent"
+      ]
+    },
+    {
+      "intent_class": "tmf.tmf634.listener.resourcespecificationattributevaluechangeevent.v1",
+      "allowed_states": [
+        "ingress",
+        "validated"
+      ],
+      "required_fact_types": [
+        "tmf_operation"
+      ],
+      "transition_ids": [
+        "validate_tmf634_listener_resourcespecificationattributevaluechangeevent",
+        "execute_tmf634_listener_resourcespecificationattributevaluechangeevent"
+      ]
+    },
+    {
+      "intent_class": "tmf.tmf634.listener.resourcespecificationcreateevent.v1",
+      "allowed_states": [
+        "ingress",
+        "validated"
+      ],
+      "required_fact_types": [
+        "tmf_operation"
+      ],
+      "transition_ids": [
+        "validate_tmf634_listener_resourcespecificationcreateevent",
+        "execute_tmf634_listener_resourcespecificationcreateevent"
+      ]
+    },
+    {
+      "intent_class": "tmf.tmf634.listener.resourcespecificationdeleteevent.v1",
+      "allowed_states": [
+        "ingress",
+        "validated"
+      ],
+      "required_fact_types": [
+        "tmf_operation"
+      ],
+      "transition_ids": [
+        "validate_tmf634_listener_resourcespecificationdeleteevent",
+        "execute_tmf634_listener_resourcespecificationdeleteevent"
+      ]
+    },
+    {
+      "intent_class": "tmf.tmf634.listener.resourcespecificationstatuschangeevent.v1",
+      "allowed_states": [
+        "ingress",
+        "validated"
+      ],
+      "required_fact_types": [
+        "tmf_operation"
+      ],
+      "transition_ids": [
+        "validate_tmf634_listener_resourcespecificationstatuschangeevent",
+        "execute_tmf634_listener_resourcespecificationstatuschangeevent"
+      ]
+    },
+    {
+      "intent_class": "tmf.tmf634.resourcecandidate.createresourcecandidate.v1",
+      "allowed_states": [
+        "ingress",
+        "validated"
+      ],
+      "required_fact_types": [
+        "tmf_operation"
+      ],
+      "transition_ids": [
+        "validate_tmf634_resourcecandidate_createresourcecandidate",
+        "execute_tmf634_resourcecandidate_createresourcecandidate"
+      ]
+    },
+    {
+      "intent_class": "tmf.tmf634.resourcecandidate.deleteresourcecandidate.v1",
+      "allowed_states": [
+        "ingress",
+        "validated"
+      ],
+      "required_fact_types": [
+        "tmf_operation"
+      ],
+      "transition_ids": [
+        "validate_tmf634_resourcecandidate_deleteresourcecandidate",
+        "execute_tmf634_resourcecandidate_deleteresourcecandidate"
+      ]
+    },
+    {
+      "intent_class": "tmf.tmf634.resourcecandidate.listresourcecandidate.v1",
+      "allowed_states": [
+        "ingress",
+        "validated"
+      ],
+      "required_fact_types": [
+        "tmf_operation"
+      ],
+      "transition_ids": [
+        "validate_tmf634_resourcecandidate_listresourcecandidate",
+        "execute_tmf634_resourcecandidate_listresourcecandidate"
+      ]
+    },
+    {
+      "intent_class": "tmf.tmf634.resourcecandidate.patchresourcecandidate.v1",
+      "allowed_states": [
+        "ingress",
+        "validated"
+      ],
+      "required_fact_types": [
+        "tmf_operation"
+      ],
+      "transition_ids": [
+        "validate_tmf634_resourcecandidate_patchresourcecandidate",
+        "execute_tmf634_resourcecandidate_patchresourcecandidate"
+      ]
+    },
+    {
+      "intent_class": "tmf.tmf634.resourcecandidate.retrieveresourcecandidate.v1",
+      "allowed_states": [
+        "ingress",
+        "validated"
+      ],
+      "required_fact_types": [
+        "tmf_operation"
+      ],
+      "transition_ids": [
+        "validate_tmf634_resourcecandidate_retrieveresourcecandidate",
+        "execute_tmf634_resourcecandidate_retrieveresourcecandidate"
+      ]
+    },
+    {
+      "intent_class": "tmf.tmf634.resourcecatalog.createresourcecatalog.v1",
+      "allowed_states": [
+        "ingress",
+        "validated"
+      ],
+      "required_fact_types": [
+        "tmf_operation"
+      ],
+      "transition_ids": [
+        "validate_tmf634_resourcecatalog_createresourcecatalog",
+        "execute_tmf634_resourcecatalog_createresourcecatalog"
+      ]
+    },
+    {
+      "intent_class": "tmf.tmf634.resourcecatalog.deleteresourcecatalog.v1",
+      "allowed_states": [
+        "ingress",
+        "validated"
+      ],
+      "required_fact_types": [
+        "tmf_operation"
+      ],
+      "transition_ids": [
+        "validate_tmf634_resourcecatalog_deleteresourcecatalog",
+        "execute_tmf634_resourcecatalog_deleteresourcecatalog"
+      ]
+    },
+    {
+      "intent_class": "tmf.tmf634.resourcecatalog.listresourcecatalog.v1",
+      "allowed_states": [
+        "ingress",
+        "validated"
+      ],
+      "required_fact_types": [
+        "tmf_operation"
+      ],
+      "transition_ids": [
+        "validate_tmf634_resourcecatalog_listresourcecatalog",
+        "execute_tmf634_resourcecatalog_listresourcecatalog"
+      ]
+    },
+    {
+      "intent_class": "tmf.tmf634.resourcecatalog.patchresourcecatalog.v1",
+      "allowed_states": [
+        "ingress",
+        "validated"
+      ],
+      "required_fact_types": [
+        "tmf_operation"
+      ],
+      "transition_ids": [
+        "validate_tmf634_resourcecatalog_patchresourcecatalog",
+        "execute_tmf634_resourcecatalog_patchresourcecatalog"
+      ]
+    },
+    {
+      "intent_class": "tmf.tmf634.resourcecatalog.retrieveresourcecatalog.v1",
+      "allowed_states": [
+        "ingress",
+        "validated"
+      ],
+      "required_fact_types": [
+        "tmf_operation"
+      ],
+      "transition_ids": [
+        "validate_tmf634_resourcecatalog_retrieveresourcecatalog",
+        "execute_tmf634_resourcecatalog_retrieveresourcecatalog"
+      ]
+    },
+    {
+      "intent_class": "tmf.tmf634.resourcecategory.createresourcecategory.v1",
+      "allowed_states": [
+        "ingress",
+        "validated"
+      ],
+      "required_fact_types": [
+        "tmf_operation"
+      ],
+      "transition_ids": [
+        "validate_tmf634_resourcecategory_createresourcecategory",
+        "execute_tmf634_resourcecategory_createresourcecategory"
+      ]
+    },
+    {
+      "intent_class": "tmf.tmf634.resourcecategory.deleteresourcecategory.v1",
+      "allowed_states": [
+        "ingress",
+        "validated"
+      ],
+      "required_fact_types": [
+        "tmf_operation"
+      ],
+      "transition_ids": [
+        "validate_tmf634_resourcecategory_deleteresourcecategory",
+        "execute_tmf634_resourcecategory_deleteresourcecategory"
+      ]
+    },
+    {
+      "intent_class": "tmf.tmf634.resourcecategory.listresourcecategory.v1",
+      "allowed_states": [
+        "ingress",
+        "validated"
+      ],
+      "required_fact_types": [
+        "tmf_operation"
+      ],
+      "transition_ids": [
+        "validate_tmf634_resourcecategory_listresourcecategory",
+        "execute_tmf634_resourcecategory_listresourcecategory"
+      ]
+    },
+    {
+      "intent_class": "tmf.tmf634.resourcecategory.patchresourcecategory.v1",
+      "allowed_states": [
+        "ingress",
+        "validated"
+      ],
+      "required_fact_types": [
+        "tmf_operation"
+      ],
+      "transition_ids": [
+        "validate_tmf634_resourcecategory_patchresourcecategory",
+        "execute_tmf634_resourcecategory_patchresourcecategory"
+      ]
+    },
+    {
+      "intent_class": "tmf.tmf634.resourcecategory.retrieveresourcecategory.v1",
+      "allowed_states": [
+        "ingress",
+        "validated"
+      ],
+      "required_fact_types": [
+        "tmf_operation"
+      ],
+      "transition_ids": [
+        "validate_tmf634_resourcecategory_retrieveresourcecategory",
+        "execute_tmf634_resourcecategory_retrieveresourcecategory"
+      ]
+    },
+    {
+      "intent_class": "tmf.tmf634.resourcespecification.createresourcespecification.v1",
+      "allowed_states": [
+        "ingress",
+        "validated"
+      ],
+      "required_fact_types": [
+        "tmf_operation"
+      ],
+      "transition_ids": [
+        "validate_tmf634_resourcespecification_createresourcespecification",
+        "execute_tmf634_resourcespecification_createresourcespecification"
+      ]
+    },
+    {
+      "intent_class": "tmf.tmf634.resourcespecification.deleteresourcespecification.v1",
+      "allowed_states": [
+        "ingress",
+        "validated"
+      ],
+      "required_fact_types": [
+        "tmf_operation"
+      ],
+      "transition_ids": [
+        "validate_tmf634_resourcespecification_deleteresourcespecification",
+        "execute_tmf634_resourcespecification_deleteresourcespecification"
+      ]
+    },
+    {
+      "intent_class": "tmf.tmf634.resourcespecification.listresourcespecification.v1",
+      "allowed_states": [
+        "ingress",
+        "validated"
+      ],
+      "required_fact_types": [
+        "tmf_operation"
+      ],
+      "transition_ids": [
+        "validate_tmf634_resourcespecification_listresourcespecification",
+        "execute_tmf634_resourcespecification_listresourcespecification"
+      ]
+    },
+    {
+      "intent_class": "tmf.tmf634.resourcespecification.patchresourcespecification.v1",
+      "allowed_states": [
+        "ingress",
+        "validated"
+      ],
+      "required_fact_types": [
+        "tmf_operation"
+      ],
+      "transition_ids": [
+        "validate_tmf634_resourcespecification_patchresourcespecification",
+        "execute_tmf634_resourcespecification_patchresourcespecification"
+      ]
+    },
+    {
+      "intent_class": "tmf.tmf634.resourcespecification.retrieveresourcespecification.v1",
+      "allowed_states": [
+        "ingress",
+        "validated"
+      ],
+      "required_fact_types": [
+        "tmf_operation"
+      ],
+      "transition_ids": [
+        "validate_tmf634_resourcespecification_retrieveresourcespecification",
+        "execute_tmf634_resourcespecification_retrieveresourcespecification"
+      ]
+    },
+    {
+      "intent_class": "tmf.tmf639.hub.registerlistener.v1",
+      "allowed_states": [
+        "ingress",
+        "validated"
+      ],
+      "required_fact_types": [
+        "tmf_operation"
+      ],
+      "transition_ids": [
+        "validate_tmf639_hub_registerlistener",
+        "execute_tmf639_hub_registerlistener"
+      ]
+    },
+    {
+      "intent_class": "tmf.tmf639.hub.unregisterlistener.v1",
+      "allowed_states": [
+        "ingress",
+        "validated"
+      ],
+      "required_fact_types": [
+        "tmf_operation"
+      ],
+      "transition_ids": [
+        "validate_tmf639_hub_unregisterlistener",
+        "execute_tmf639_hub_unregisterlistener"
+      ]
+    },
+    {
+      "intent_class": "tmf.tmf639.listener.listentoresourceattributevaluechangeevent.v1",
+      "allowed_states": [
+        "ingress",
+        "validated"
+      ],
+      "required_fact_types": [
+        "tmf_operation"
+      ],
+      "transition_ids": [
+        "validate_tmf639_listener_listentoresourceattributevaluechangeevent",
+        "execute_tmf639_listener_listentoresourceattributevaluechangeevent"
+      ]
+    },
+    {
+      "intent_class": "tmf.tmf639.listener.listentoresourcecreateevent.v1",
+      "allowed_states": [
+        "ingress",
+        "validated"
+      ],
+      "required_fact_types": [
+        "tmf_operation"
+      ],
+      "transition_ids": [
+        "validate_tmf639_listener_listentoresourcecreateevent",
+        "execute_tmf639_listener_listentoresourcecreateevent"
+      ]
+    },
+    {
+      "intent_class": "tmf.tmf639.listener.listentoresourcedeleteevent.v1",
+      "allowed_states": [
+        "ingress",
+        "validated"
+      ],
+      "required_fact_types": [
+        "tmf_operation"
+      ],
+      "transition_ids": [
+        "validate_tmf639_listener_listentoresourcedeleteevent",
+        "execute_tmf639_listener_listentoresourcedeleteevent"
+      ]
+    },
+    {
+      "intent_class": "tmf.tmf639.listener.listentoresourcestatechangeevent.v1",
+      "allowed_states": [
+        "ingress",
+        "validated"
+      ],
+      "required_fact_types": [
+        "tmf_operation"
+      ],
+      "transition_ids": [
+        "validate_tmf639_listener_listentoresourcestatechangeevent",
+        "execute_tmf639_listener_listentoresourcestatechangeevent"
+      ]
+    },
+    {
+      "intent_class": "tmf.tmf639.resource.createresource.v1",
+      "allowed_states": [
+        "ingress",
+        "validated"
+      ],
+      "required_fact_types": [
+        "tmf_operation"
+      ],
+      "transition_ids": [
+        "validate_tmf639_resource_createresource",
+        "execute_tmf639_resource_createresource"
+      ]
+    },
+    {
+      "intent_class": "tmf.tmf639.resource.deleteresource.v1",
+      "allowed_states": [
+        "ingress",
+        "validated"
+      ],
+      "required_fact_types": [
+        "tmf_operation"
+      ],
+      "transition_ids": [
+        "validate_tmf639_resource_deleteresource",
+        "execute_tmf639_resource_deleteresource"
+      ]
+    },
+    {
+      "intent_class": "tmf.tmf639.resource.listresource.v1",
+      "allowed_states": [
+        "ingress",
+        "validated"
+      ],
+      "required_fact_types": [
+        "tmf_operation"
+      ],
+      "transition_ids": [
+        "validate_tmf639_resource_listresource",
+        "execute_tmf639_resource_listresource"
+      ]
+    },
+    {
+      "intent_class": "tmf.tmf639.resource.patchresource.v1",
+      "allowed_states": [
+        "ingress",
+        "validated"
+      ],
+      "required_fact_types": [
+        "tmf_operation"
+      ],
+      "transition_ids": [
+        "validate_tmf639_resource_patchresource",
+        "execute_tmf639_resource_patchresource"
+      ]
+    },
+    {
+      "intent_class": "tmf.tmf639.resource.retrieveresource.v1",
+      "allowed_states": [
+        "ingress",
+        "validated"
+      ],
+      "required_fact_types": [
+        "tmf_operation"
+      ],
+      "transition_ids": [
+        "validate_tmf639_resource_retrieveresource",
+        "execute_tmf639_resource_retrieveresource"
+      ]
+    },
+    {
+      "intent_class": "tmf.tmf642.ackalarm.createackalarm.v1",
+      "allowed_states": [
+        "ingress",
+        "validated"
+      ],
+      "required_fact_types": [
+        "tmf_operation"
+      ],
+      "transition_ids": [
+        "validate_tmf642_ackalarm_createackalarm",
+        "execute_tmf642_ackalarm_createackalarm"
+      ]
+    },
+    {
+      "intent_class": "tmf.tmf642.ackalarm.listackalarm.v1",
+      "allowed_states": [
+        "ingress",
+        "validated"
+      ],
+      "required_fact_types": [
+        "tmf_operation"
+      ],
+      "transition_ids": [
+        "validate_tmf642_ackalarm_listackalarm",
+        "execute_tmf642_ackalarm_listackalarm"
+      ]
+    },
+    {
+      "intent_class": "tmf.tmf642.ackalarm.retrieveackalarm.v1",
+      "allowed_states": [
+        "ingress",
+        "validated"
+      ],
+      "required_fact_types": [
+        "tmf_operation"
+      ],
+      "transition_ids": [
+        "validate_tmf642_ackalarm_retrieveackalarm",
+        "execute_tmf642_ackalarm_retrieveackalarm"
+      ]
+    },
+    {
+      "intent_class": "tmf.tmf642.alarm.createalarm.v1",
+      "allowed_states": [
+        "ingress",
+        "validated"
+      ],
+      "required_fact_types": [
+        "tmf_operation"
+      ],
+      "transition_ids": [
+        "validate_tmf642_alarm_createalarm",
+        "execute_tmf642_alarm_createalarm"
+      ]
+    },
+    {
+      "intent_class": "tmf.tmf642.alarm.deletealarm.v1",
+      "allowed_states": [
+        "ingress",
+        "validated"
+      ],
+      "required_fact_types": [
+        "tmf_operation"
+      ],
+      "transition_ids": [
+        "validate_tmf642_alarm_deletealarm",
+        "execute_tmf642_alarm_deletealarm"
+      ]
+    },
+    {
+      "intent_class": "tmf.tmf642.alarm.listalarm.v1",
+      "allowed_states": [
+        "ingress",
+        "validated"
+      ],
+      "required_fact_types": [
+        "tmf_operation"
+      ],
+      "transition_ids": [
+        "validate_tmf642_alarm_listalarm",
+        "execute_tmf642_alarm_listalarm"
+      ]
+    },
+    {
+      "intent_class": "tmf.tmf642.alarm.patchalarm.v1",
+      "allowed_states": [
+        "ingress",
+        "validated"
+      ],
+      "required_fact_types": [
+        "tmf_operation"
+      ],
+      "transition_ids": [
+        "validate_tmf642_alarm_patchalarm",
+        "execute_tmf642_alarm_patchalarm"
+      ]
+    },
+    {
+      "intent_class": "tmf.tmf642.alarm.retrievealarm.v1",
+      "allowed_states": [
+        "ingress",
+        "validated"
+      ],
+      "required_fact_types": [
+        "tmf_operation"
+      ],
+      "transition_ids": [
+        "validate_tmf642_alarm_retrievealarm",
+        "execute_tmf642_alarm_retrievealarm"
+      ]
+    },
+    {
+      "intent_class": "tmf.tmf642.clearalarm.createclearalarm.v1",
+      "allowed_states": [
+        "ingress",
+        "validated"
+      ],
+      "required_fact_types": [
+        "tmf_operation"
+      ],
+      "transition_ids": [
+        "validate_tmf642_clearalarm_createclearalarm",
+        "execute_tmf642_clearalarm_createclearalarm"
+      ]
+    },
+    {
+      "intent_class": "tmf.tmf642.clearalarm.listclearalarm.v1",
+      "allowed_states": [
+        "ingress",
+        "validated"
+      ],
+      "required_fact_types": [
+        "tmf_operation"
+      ],
+      "transition_ids": [
+        "validate_tmf642_clearalarm_listclearalarm",
+        "execute_tmf642_clearalarm_listclearalarm"
+      ]
+    },
+    {
+      "intent_class": "tmf.tmf642.clearalarm.retrieveclearalarm.v1",
+      "allowed_states": [
+        "ingress",
+        "validated"
+      ],
+      "required_fact_types": [
+        "tmf_operation"
+      ],
+      "transition_ids": [
+        "validate_tmf642_clearalarm_retrieveclearalarm",
+        "execute_tmf642_clearalarm_retrieveclearalarm"
+      ]
+    },
+    {
+      "intent_class": "tmf.tmf642.commentalarm.createcommentalarm.v1",
+      "allowed_states": [
+        "ingress",
+        "validated"
+      ],
+      "required_fact_types": [
+        "tmf_operation"
+      ],
+      "transition_ids": [
+        "validate_tmf642_commentalarm_createcommentalarm",
+        "execute_tmf642_commentalarm_createcommentalarm"
+      ]
+    },
+    {
+      "intent_class": "tmf.tmf642.commentalarm.listcommentalarm.v1",
+      "allowed_states": [
+        "ingress",
+        "validated"
+      ],
+      "required_fact_types": [
+        "tmf_operation"
+      ],
+      "transition_ids": [
+        "validate_tmf642_commentalarm_listcommentalarm",
+        "execute_tmf642_commentalarm_listcommentalarm"
+      ]
+    },
+    {
+      "intent_class": "tmf.tmf642.commentalarm.retrievecommentalarm.v1",
+      "allowed_states": [
+        "ingress",
+        "validated"
+      ],
+      "required_fact_types": [
+        "tmf_operation"
+      ],
+      "transition_ids": [
+        "validate_tmf642_commentalarm_retrievecommentalarm",
+        "execute_tmf642_commentalarm_retrievecommentalarm"
+      ]
+    },
+    {
+      "intent_class": "tmf.tmf642.groupalarm.creategroupalarm.v1",
+      "allowed_states": [
+        "ingress",
+        "validated"
+      ],
+      "required_fact_types": [
+        "tmf_operation"
+      ],
+      "transition_ids": [
+        "validate_tmf642_groupalarm_creategroupalarm",
+        "execute_tmf642_groupalarm_creategroupalarm"
+      ]
+    },
+    {
+      "intent_class": "tmf.tmf642.groupalarm.listgroupalarm.v1",
+      "allowed_states": [
+        "ingress",
+        "validated"
+      ],
+      "required_fact_types": [
+        "tmf_operation"
+      ],
+      "transition_ids": [
+        "validate_tmf642_groupalarm_listgroupalarm",
+        "execute_tmf642_groupalarm_listgroupalarm"
+      ]
+    },
+    {
+      "intent_class": "tmf.tmf642.groupalarm.retrievegroupalarm.v1",
+      "allowed_states": [
+        "ingress",
+        "validated"
+      ],
+      "required_fact_types": [
+        "tmf_operation"
+      ],
+      "transition_ids": [
+        "validate_tmf642_groupalarm_retrievegroupalarm",
+        "execute_tmf642_groupalarm_retrievegroupalarm"
+      ]
+    },
+    {
+      "intent_class": "tmf.tmf642.hub.createhub.v1",
+      "allowed_states": [
+        "ingress",
+        "validated"
+      ],
+      "required_fact_types": [
+        "tmf_operation"
+      ],
+      "transition_ids": [
+        "validate_tmf642_hub_createhub",
+        "execute_tmf642_hub_createhub"
+      ]
+    },
+    {
+      "intent_class": "tmf.tmf642.hub.hubdelete.v1",
+      "allowed_states": [
+        "ingress",
+        "validated"
+      ],
+      "required_fact_types": [
+        "tmf_operation"
+      ],
+      "transition_ids": [
+        "validate_tmf642_hub_hubdelete",
+        "execute_tmf642_hub_hubdelete"
+      ]
+    },
+    {
+      "intent_class": "tmf.tmf642.hub.hubget.v1",
+      "allowed_states": [
+        "ingress",
+        "validated"
+      ],
+      "required_fact_types": [
+        "tmf_operation"
+      ],
+      "transition_ids": [
+        "validate_tmf642_hub_hubget",
+        "execute_tmf642_hub_hubget"
+      ]
+    },
+    {
+      "intent_class": "tmf.tmf642.listener.ackalarmcreateevent.v1",
+      "allowed_states": [
+        "ingress",
+        "validated"
+      ],
+      "required_fact_types": [
+        "tmf_operation"
+      ],
+      "transition_ids": [
+        "validate_tmf642_listener_ackalarmcreateevent",
+        "execute_tmf642_listener_ackalarmcreateevent"
+      ]
+    },
+    {
+      "intent_class": "tmf.tmf642.listener.ackalarmstatechangeevent.v1",
+      "allowed_states": [
+        "ingress",
+        "validated"
+      ],
+      "required_fact_types": [
+        "tmf_operation"
+      ],
+      "transition_ids": [
+        "validate_tmf642_listener_ackalarmstatechangeevent",
+        "execute_tmf642_listener_ackalarmstatechangeevent"
+      ]
+    },
+    {
+      "intent_class": "tmf.tmf642.listener.alarmattributevaluechangeevent.v1",
+      "allowed_states": [
+        "ingress",
+        "validated"
+      ],
+      "required_fact_types": [
+        "tmf_operation"
+      ],
+      "transition_ids": [
+        "validate_tmf642_listener_alarmattributevaluechangeevent",
+        "execute_tmf642_listener_alarmattributevaluechangeevent"
+      ]
+    },
+    {
+      "intent_class": "tmf.tmf642.listener.alarmcreateevent.v1",
+      "allowed_states": [
+        "ingress",
+        "validated"
+      ],
+      "required_fact_types": [
+        "tmf_operation"
+      ],
+      "transition_ids": [
+        "validate_tmf642_listener_alarmcreateevent",
+        "execute_tmf642_listener_alarmcreateevent"
+      ]
+    },
+    {
+      "intent_class": "tmf.tmf642.listener.alarmdeleteevent.v1",
+      "allowed_states": [
+        "ingress",
+        "validated"
+      ],
+      "required_fact_types": [
+        "tmf_operation"
+      ],
+      "transition_ids": [
+        "validate_tmf642_listener_alarmdeleteevent",
+        "execute_tmf642_listener_alarmdeleteevent"
+      ]
+    },
+    {
+      "intent_class": "tmf.tmf642.listener.alarmstatechangeevent.v1",
+      "allowed_states": [
+        "ingress",
+        "validated"
+      ],
+      "required_fact_types": [
+        "tmf_operation"
+      ],
+      "transition_ids": [
+        "validate_tmf642_listener_alarmstatechangeevent",
+        "execute_tmf642_listener_alarmstatechangeevent"
+      ]
+    },
+    {
+      "intent_class": "tmf.tmf642.listener.clearalarmcreateevent.v1",
+      "allowed_states": [
+        "ingress",
+        "validated"
+      ],
+      "required_fact_types": [
+        "tmf_operation"
+      ],
+      "transition_ids": [
+        "validate_tmf642_listener_clearalarmcreateevent",
+        "execute_tmf642_listener_clearalarmcreateevent"
+      ]
+    },
+    {
+      "intent_class": "tmf.tmf642.listener.clearalarmstatechangeevent.v1",
+      "allowed_states": [
+        "ingress",
+        "validated"
+      ],
+      "required_fact_types": [
+        "tmf_operation"
+      ],
+      "transition_ids": [
+        "validate_tmf642_listener_clearalarmstatechangeevent",
+        "execute_tmf642_listener_clearalarmstatechangeevent"
+      ]
+    },
+    {
+      "intent_class": "tmf.tmf642.listener.commentalarmcreateevent.v1",
+      "allowed_states": [
+        "ingress",
+        "validated"
+      ],
+      "required_fact_types": [
+        "tmf_operation"
+      ],
+      "transition_ids": [
+        "validate_tmf642_listener_commentalarmcreateevent",
+        "execute_tmf642_listener_commentalarmcreateevent"
+      ]
+    },
+    {
+      "intent_class": "tmf.tmf642.listener.commentalarmstatechangeevent.v1",
+      "allowed_states": [
+        "ingress",
+        "validated"
+      ],
+      "required_fact_types": [
+        "tmf_operation"
+      ],
+      "transition_ids": [
+        "validate_tmf642_listener_commentalarmstatechangeevent",
+        "execute_tmf642_listener_commentalarmstatechangeevent"
+      ]
+    },
+    {
+      "intent_class": "tmf.tmf642.listener.groupalarmcreateevent.v1",
+      "allowed_states": [
+        "ingress",
+        "validated"
+      ],
+      "required_fact_types": [
+        "tmf_operation"
+      ],
+      "transition_ids": [
+        "validate_tmf642_listener_groupalarmcreateevent",
+        "execute_tmf642_listener_groupalarmcreateevent"
+      ]
+    },
+    {
+      "intent_class": "tmf.tmf642.listener.groupalarmstatechangeevent.v1",
+      "allowed_states": [
+        "ingress",
+        "validated"
+      ],
+      "required_fact_types": [
+        "tmf_operation"
+      ],
+      "transition_ids": [
+        "validate_tmf642_listener_groupalarmstatechangeevent",
+        "execute_tmf642_listener_groupalarmstatechangeevent"
+      ]
+    },
+    {
+      "intent_class": "tmf.tmf642.listener.unackalarmcreateevent.v1",
+      "allowed_states": [
+        "ingress",
+        "validated"
+      ],
+      "required_fact_types": [
+        "tmf_operation"
+      ],
+      "transition_ids": [
+        "validate_tmf642_listener_unackalarmcreateevent",
+        "execute_tmf642_listener_unackalarmcreateevent"
+      ]
+    },
+    {
+      "intent_class": "tmf.tmf642.listener.unackalarmstatechangeevent.v1",
+      "allowed_states": [
+        "ingress",
+        "validated"
+      ],
+      "required_fact_types": [
+        "tmf_operation"
+      ],
+      "transition_ids": [
+        "validate_tmf642_listener_unackalarmstatechangeevent",
+        "execute_tmf642_listener_unackalarmstatechangeevent"
+      ]
+    },
+    {
+      "intent_class": "tmf.tmf642.listener.ungroupalarmcreateevent.v1",
+      "allowed_states": [
+        "ingress",
+        "validated"
+      ],
+      "required_fact_types": [
+        "tmf_operation"
+      ],
+      "transition_ids": [
+        "validate_tmf642_listener_ungroupalarmcreateevent",
+        "execute_tmf642_listener_ungroupalarmcreateevent"
+      ]
+    },
+    {
+      "intent_class": "tmf.tmf642.listener.ungroupalarmstatechangeevent.v1",
+      "allowed_states": [
+        "ingress",
+        "validated"
+      ],
+      "required_fact_types": [
+        "tmf_operation"
+      ],
+      "transition_ids": [
+        "validate_tmf642_listener_ungroupalarmstatechangeevent",
+        "execute_tmf642_listener_ungroupalarmstatechangeevent"
+      ]
+    },
+    {
+      "intent_class": "tmf.tmf642.unackalarm.createunackalarm.v1",
+      "allowed_states": [
+        "ingress",
+        "validated"
+      ],
+      "required_fact_types": [
+        "tmf_operation"
+      ],
+      "transition_ids": [
+        "validate_tmf642_unackalarm_createunackalarm",
+        "execute_tmf642_unackalarm_createunackalarm"
+      ]
+    },
+    {
+      "intent_class": "tmf.tmf642.unackalarm.listunackalarm.v1",
+      "allowed_states": [
+        "ingress",
+        "validated"
+      ],
+      "required_fact_types": [
+        "tmf_operation"
+      ],
+      "transition_ids": [
+        "validate_tmf642_unackalarm_listunackalarm",
+        "execute_tmf642_unackalarm_listunackalarm"
+      ]
+    },
+    {
+      "intent_class": "tmf.tmf642.unackalarm.retrieveunackalarm.v1",
+      "allowed_states": [
+        "ingress",
+        "validated"
+      ],
+      "required_fact_types": [
+        "tmf_operation"
+      ],
+      "transition_ids": [
+        "validate_tmf642_unackalarm_retrieveunackalarm",
+        "execute_tmf642_unackalarm_retrieveunackalarm"
+      ]
+    },
+    {
+      "intent_class": "tmf.tmf642.ungroupalarm.createungroupalarm.v1",
+      "allowed_states": [
+        "ingress",
+        "validated"
+      ],
+      "required_fact_types": [
+        "tmf_operation"
+      ],
+      "transition_ids": [
+        "validate_tmf642_ungroupalarm_createungroupalarm",
+        "execute_tmf642_ungroupalarm_createungroupalarm"
+      ]
+    },
+    {
+      "intent_class": "tmf.tmf642.ungroupalarm.listungroupalarm.v1",
+      "allowed_states": [
+        "ingress",
+        "validated"
+      ],
+      "required_fact_types": [
+        "tmf_operation"
+      ],
+      "transition_ids": [
+        "validate_tmf642_ungroupalarm_listungroupalarm",
+        "execute_tmf642_ungroupalarm_listungroupalarm"
+      ]
+    },
+    {
+      "intent_class": "tmf.tmf642.ungroupalarm.retrieveungroupalarm.v1",
+      "allowed_states": [
+        "ingress",
+        "validated"
+      ],
+      "required_fact_types": [
+        "tmf_operation"
+      ],
+      "transition_ids": [
+        "validate_tmf642_ungroupalarm_retrieveungroupalarm",
+        "execute_tmf642_ungroupalarm_retrieveungroupalarm"
+      ]
+    }
+  ],
+  "admissible_facts": [
+    {
+      "fact_type": "tmf_operation",
+      "schema_ref": "urn:tmf:tmf-resource-catalog-alarm-surface-demo:v1",
+      "additional_properties": "allow",
+      "field_constraints": [
+        {
+          "path": "api.tmf_id",
+          "datatype": "string",
+          "required": true,
+          "pattern": "^TMF[0-9]{3}$"
+        },
+        {
+          "path": "api.resource",
+          "datatype": "string",
+          "required": true
+        },
+        {
+          "path": "api.action",
+          "datatype": "string",
+          "required": true
+        },
+        {
+          "path": "api.method",
+          "datatype": "string",
+          "required": true,
+          "pattern": "^(GET|POST|PUT|PATCH|DELETE|HEAD|OPTIONS)$"
+        }
+      ]
+    }
+  ],
+  "admissible_transitions": [
+    {
+      "id": "validate_tmf634_exportjob_createexportjob",
+      "from_state": "ingress",
+      "intent_class": "tmf.tmf634.exportjob.createexportjob.v1",
+      "to_state": "validated",
+      "guard_refs": [
+        "guard:payload_valid"
+      ]
+    },
+    {
+      "id": "execute_tmf634_exportjob_createexportjob",
+      "from_state": "validated",
+      "intent_class": "tmf.tmf634.exportjob.createexportjob.v1",
+      "to_state": "executed",
+      "guard_refs": [
+        "guard:policy_allow"
+      ]
+    },
+    {
+      "id": "validate_tmf634_exportjob_deleteexportjob",
+      "from_state": "ingress",
+      "intent_class": "tmf.tmf634.exportjob.deleteexportjob.v1",
+      "to_state": "validated",
+      "guard_refs": [
+        "guard:payload_valid"
+      ]
+    },
+    {
+      "id": "execute_tmf634_exportjob_deleteexportjob",
+      "from_state": "validated",
+      "intent_class": "tmf.tmf634.exportjob.deleteexportjob.v1",
+      "to_state": "executed",
+      "guard_refs": [
+        "guard:policy_allow"
+      ]
+    },
+    {
+      "id": "validate_tmf634_exportjob_listexportjob",
+      "from_state": "ingress",
+      "intent_class": "tmf.tmf634.exportjob.listexportjob.v1",
+      "to_state": "validated",
+      "guard_refs": [
+        "guard:payload_valid"
+      ]
+    },
+    {
+      "id": "execute_tmf634_exportjob_listexportjob",
+      "from_state": "validated",
+      "intent_class": "tmf.tmf634.exportjob.listexportjob.v1",
+      "to_state": "executed",
+      "guard_refs": [
+        "guard:policy_allow"
+      ]
+    },
+    {
+      "id": "validate_tmf634_exportjob_retrieveexportjob",
+      "from_state": "ingress",
+      "intent_class": "tmf.tmf634.exportjob.retrieveexportjob.v1",
+      "to_state": "validated",
+      "guard_refs": [
+        "guard:payload_valid"
+      ]
+    },
+    {
+      "id": "execute_tmf634_exportjob_retrieveexportjob",
+      "from_state": "validated",
+      "intent_class": "tmf.tmf634.exportjob.retrieveexportjob.v1",
+      "to_state": "executed",
+      "guard_refs": [
+        "guard:policy_allow"
+      ]
+    },
+    {
+      "id": "validate_tmf634_hub_createhub",
+      "from_state": "ingress",
+      "intent_class": "tmf.tmf634.hub.createhub.v1",
+      "to_state": "validated",
+      "guard_refs": [
+        "guard:payload_valid"
+      ]
+    },
+    {
+      "id": "execute_tmf634_hub_createhub",
+      "from_state": "validated",
+      "intent_class": "tmf.tmf634.hub.createhub.v1",
+      "to_state": "executed",
+      "guard_refs": [
+        "guard:policy_allow"
+      ]
+    },
+    {
+      "id": "validate_tmf634_hub_hubdelete",
+      "from_state": "ingress",
+      "intent_class": "tmf.tmf634.hub.hubdelete.v1",
+      "to_state": "validated",
+      "guard_refs": [
+        "guard:payload_valid"
+      ]
+    },
+    {
+      "id": "execute_tmf634_hub_hubdelete",
+      "from_state": "validated",
+      "intent_class": "tmf.tmf634.hub.hubdelete.v1",
+      "to_state": "executed",
+      "guard_refs": [
+        "guard:policy_allow"
+      ]
+    },
+    {
+      "id": "validate_tmf634_importjob_createimportjob",
+      "from_state": "ingress",
+      "intent_class": "tmf.tmf634.importjob.createimportjob.v1",
+      "to_state": "validated",
+      "guard_refs": [
+        "guard:payload_valid"
+      ]
+    },
+    {
+      "id": "execute_tmf634_importjob_createimportjob",
+      "from_state": "validated",
+      "intent_class": "tmf.tmf634.importjob.createimportjob.v1",
+      "to_state": "executed",
+      "guard_refs": [
+        "guard:policy_allow"
+      ]
+    },
+    {
+      "id": "validate_tmf634_importjob_deleteimportjob",
+      "from_state": "ingress",
+      "intent_class": "tmf.tmf634.importjob.deleteimportjob.v1",
+      "to_state": "validated",
+      "guard_refs": [
+        "guard:payload_valid"
+      ]
+    },
+    {
+      "id": "execute_tmf634_importjob_deleteimportjob",
+      "from_state": "validated",
+      "intent_class": "tmf.tmf634.importjob.deleteimportjob.v1",
+      "to_state": "executed",
+      "guard_refs": [
+        "guard:policy_allow"
+      ]
+    },
+    {
+      "id": "validate_tmf634_importjob_listimportjob",
+      "from_state": "ingress",
+      "intent_class": "tmf.tmf634.importjob.listimportjob.v1",
+      "to_state": "validated",
+      "guard_refs": [
+        "guard:payload_valid"
+      ]
+    },
+    {
+      "id": "execute_tmf634_importjob_listimportjob",
+      "from_state": "validated",
+      "intent_class": "tmf.tmf634.importjob.listimportjob.v1",
+      "to_state": "executed",
+      "guard_refs": [
+        "guard:policy_allow"
+      ]
+    },
+    {
+      "id": "validate_tmf634_importjob_retrieveimportjob",
+      "from_state": "ingress",
+      "intent_class": "tmf.tmf634.importjob.retrieveimportjob.v1",
+      "to_state": "validated",
+      "guard_refs": [
+        "guard:payload_valid"
+      ]
+    },
+    {
+      "id": "execute_tmf634_importjob_retrieveimportjob",
+      "from_state": "validated",
+      "intent_class": "tmf.tmf634.importjob.retrieveimportjob.v1",
+      "to_state": "executed",
+      "guard_refs": [
+        "guard:policy_allow"
+      ]
+    },
+    {
+      "id": "validate_tmf634_listener_exportjobcreateevent",
+      "from_state": "ingress",
+      "intent_class": "tmf.tmf634.listener.exportjobcreateevent.v1",
+      "to_state": "validated",
+      "guard_refs": [
+        "guard:payload_valid"
+      ]
+    },
+    {
+      "id": "execute_tmf634_listener_exportjobcreateevent",
+      "from_state": "validated",
+      "intent_class": "tmf.tmf634.listener.exportjobcreateevent.v1",
+      "to_state": "executed",
+      "guard_refs": [
+        "guard:policy_allow"
+      ]
+    },
+    {
+      "id": "validate_tmf634_listener_exportjobdeleteevent",
+      "from_state": "ingress",
+      "intent_class": "tmf.tmf634.listener.exportjobdeleteevent.v1",
+      "to_state": "validated",
+      "guard_refs": [
+        "guard:payload_valid"
+      ]
+    },
+    {
+      "id": "execute_tmf634_listener_exportjobdeleteevent",
+      "from_state": "validated",
+      "intent_class": "tmf.tmf634.listener.exportjobdeleteevent.v1",
+      "to_state": "executed",
+      "guard_refs": [
+        "guard:policy_allow"
+      ]
+    },
+    {
+      "id": "validate_tmf634_listener_exportjobstatechangeevent",
+      "from_state": "ingress",
+      "intent_class": "tmf.tmf634.listener.exportjobstatechangeevent.v1",
+      "to_state": "validated",
+      "guard_refs": [
+        "guard:payload_valid"
+      ]
+    },
+    {
+      "id": "execute_tmf634_listener_exportjobstatechangeevent",
+      "from_state": "validated",
+      "intent_class": "tmf.tmf634.listener.exportjobstatechangeevent.v1",
+      "to_state": "executed",
+      "guard_refs": [
+        "guard:policy_allow"
+      ]
+    },
+    {
+      "id": "validate_tmf634_listener_importjobcreateevent",
+      "from_state": "ingress",
+      "intent_class": "tmf.tmf634.listener.importjobcreateevent.v1",
+      "to_state": "validated",
+      "guard_refs": [
+        "guard:payload_valid"
+      ]
+    },
+    {
+      "id": "execute_tmf634_listener_importjobcreateevent",
+      "from_state": "validated",
+      "intent_class": "tmf.tmf634.listener.importjobcreateevent.v1",
+      "to_state": "executed",
+      "guard_refs": [
+        "guard:policy_allow"
+      ]
+    },
+    {
+      "id": "validate_tmf634_listener_importjobdeleteevent",
+      "from_state": "ingress",
+      "intent_class": "tmf.tmf634.listener.importjobdeleteevent.v1",
+      "to_state": "validated",
+      "guard_refs": [
+        "guard:payload_valid"
+      ]
+    },
+    {
+      "id": "execute_tmf634_listener_importjobdeleteevent",
+      "from_state": "validated",
+      "intent_class": "tmf.tmf634.listener.importjobdeleteevent.v1",
+      "to_state": "executed",
+      "guard_refs": [
+        "guard:policy_allow"
+      ]
+    },
+    {
+      "id": "validate_tmf634_listener_importjobstatechangeevent",
+      "from_state": "ingress",
+      "intent_class": "tmf.tmf634.listener.importjobstatechangeevent.v1",
+      "to_state": "validated",
+      "guard_refs": [
+        "guard:payload_valid"
+      ]
+    },
+    {
+      "id": "execute_tmf634_listener_importjobstatechangeevent",
+      "from_state": "validated",
+      "intent_class": "tmf.tmf634.listener.importjobstatechangeevent.v1",
+      "to_state": "executed",
+      "guard_refs": [
+        "guard:policy_allow"
+      ]
+    },
+    {
+      "id": "validate_tmf634_listener_resourcecandidateattributevaluechangeevent",
+      "from_state": "ingress",
+      "intent_class": "tmf.tmf634.listener.resourcecandidateattributevaluechangeevent.v1",
+      "to_state": "validated",
+      "guard_refs": [
+        "guard:payload_valid"
+      ]
+    },
+    {
+      "id": "execute_tmf634_listener_resourcecandidateattributevaluechangeevent",
+      "from_state": "validated",
+      "intent_class": "tmf.tmf634.listener.resourcecandidateattributevaluechangeevent.v1",
+      "to_state": "executed",
+      "guard_refs": [
+        "guard:policy_allow"
+      ]
+    },
+    {
+      "id": "validate_tmf634_listener_resourcecandidatecreateevent",
+      "from_state": "ingress",
+      "intent_class": "tmf.tmf634.listener.resourcecandidatecreateevent.v1",
+      "to_state": "validated",
+      "guard_refs": [
+        "guard:payload_valid"
+      ]
+    },
+    {
+      "id": "execute_tmf634_listener_resourcecandidatecreateevent",
+      "from_state": "validated",
+      "intent_class": "tmf.tmf634.listener.resourcecandidatecreateevent.v1",
+      "to_state": "executed",
+      "guard_refs": [
+        "guard:policy_allow"
+      ]
+    },
+    {
+      "id": "validate_tmf634_listener_resourcecandidatedeleteevent",
+      "from_state": "ingress",
+      "intent_class": "tmf.tmf634.listener.resourcecandidatedeleteevent.v1",
+      "to_state": "validated",
+      "guard_refs": [
+        "guard:payload_valid"
+      ]
+    },
+    {
+      "id": "execute_tmf634_listener_resourcecandidatedeleteevent",
+      "from_state": "validated",
+      "intent_class": "tmf.tmf634.listener.resourcecandidatedeleteevent.v1",
+      "to_state": "executed",
+      "guard_refs": [
+        "guard:policy_allow"
+      ]
+    },
+    {
+      "id": "validate_tmf634_listener_resourcecandidatestatuschangeevent",
+      "from_state": "ingress",
+      "intent_class": "tmf.tmf634.listener.resourcecandidatestatuschangeevent.v1",
+      "to_state": "validated",
+      "guard_refs": [
+        "guard:payload_valid"
+      ]
+    },
+    {
+      "id": "execute_tmf634_listener_resourcecandidatestatuschangeevent",
+      "from_state": "validated",
+      "intent_class": "tmf.tmf634.listener.resourcecandidatestatuschangeevent.v1",
+      "to_state": "executed",
+      "guard_refs": [
+        "guard:policy_allow"
+      ]
+    },
+    {
+      "id": "validate_tmf634_listener_resourcecatalogattributevaluechangeevent",
+      "from_state": "ingress",
+      "intent_class": "tmf.tmf634.listener.resourcecatalogattributevaluechangeevent.v1",
+      "to_state": "validated",
+      "guard_refs": [
+        "guard:payload_valid"
+      ]
+    },
+    {
+      "id": "execute_tmf634_listener_resourcecatalogattributevaluechangeevent",
+      "from_state": "validated",
+      "intent_class": "tmf.tmf634.listener.resourcecatalogattributevaluechangeevent.v1",
+      "to_state": "executed",
+      "guard_refs": [
+        "guard:policy_allow"
+      ]
+    },
+    {
+      "id": "validate_tmf634_listener_resourcecatalogcreateevent",
+      "from_state": "ingress",
+      "intent_class": "tmf.tmf634.listener.resourcecatalogcreateevent.v1",
+      "to_state": "validated",
+      "guard_refs": [
+        "guard:payload_valid"
+      ]
+    },
+    {
+      "id": "execute_tmf634_listener_resourcecatalogcreateevent",
+      "from_state": "validated",
+      "intent_class": "tmf.tmf634.listener.resourcecatalogcreateevent.v1",
+      "to_state": "executed",
+      "guard_refs": [
+        "guard:policy_allow"
+      ]
+    },
+    {
+      "id": "validate_tmf634_listener_resourcecatalogdeleteevent",
+      "from_state": "ingress",
+      "intent_class": "tmf.tmf634.listener.resourcecatalogdeleteevent.v1",
+      "to_state": "validated",
+      "guard_refs": [
+        "guard:payload_valid"
+      ]
+    },
+    {
+      "id": "execute_tmf634_listener_resourcecatalogdeleteevent",
+      "from_state": "validated",
+      "intent_class": "tmf.tmf634.listener.resourcecatalogdeleteevent.v1",
+      "to_state": "executed",
+      "guard_refs": [
+        "guard:policy_allow"
+      ]
+    },
+    {
+      "id": "validate_tmf634_listener_resourcecatalogstatuschangeevent",
+      "from_state": "ingress",
+      "intent_class": "tmf.tmf634.listener.resourcecatalogstatuschangeevent.v1",
+      "to_state": "validated",
+      "guard_refs": [
+        "guard:payload_valid"
+      ]
+    },
+    {
+      "id": "execute_tmf634_listener_resourcecatalogstatuschangeevent",
+      "from_state": "validated",
+      "intent_class": "tmf.tmf634.listener.resourcecatalogstatuschangeevent.v1",
+      "to_state": "executed",
+      "guard_refs": [
+        "guard:policy_allow"
+      ]
+    },
+    {
+      "id": "validate_tmf634_listener_resourcecategoryattributevaluechangeevent",
+      "from_state": "ingress",
+      "intent_class": "tmf.tmf634.listener.resourcecategoryattributevaluechangeevent.v1",
+      "to_state": "validated",
+      "guard_refs": [
+        "guard:payload_valid"
+      ]
+    },
+    {
+      "id": "execute_tmf634_listener_resourcecategoryattributevaluechangeevent",
+      "from_state": "validated",
+      "intent_class": "tmf.tmf634.listener.resourcecategoryattributevaluechangeevent.v1",
+      "to_state": "executed",
+      "guard_refs": [
+        "guard:policy_allow"
+      ]
+    },
+    {
+      "id": "validate_tmf634_listener_resourcecategorycreateevent",
+      "from_state": "ingress",
+      "intent_class": "tmf.tmf634.listener.resourcecategorycreateevent.v1",
+      "to_state": "validated",
+      "guard_refs": [
+        "guard:payload_valid"
+      ]
+    },
+    {
+      "id": "execute_tmf634_listener_resourcecategorycreateevent",
+      "from_state": "validated",
+      "intent_class": "tmf.tmf634.listener.resourcecategorycreateevent.v1",
+      "to_state": "executed",
+      "guard_refs": [
+        "guard:policy_allow"
+      ]
+    },
+    {
+      "id": "validate_tmf634_listener_resourcecategorydeleteevent",
+      "from_state": "ingress",
+      "intent_class": "tmf.tmf634.listener.resourcecategorydeleteevent.v1",
+      "to_state": "validated",
+      "guard_refs": [
+        "guard:payload_valid"
+      ]
+    },
+    {
+      "id": "execute_tmf634_listener_resourcecategorydeleteevent",
+      "from_state": "validated",
+      "intent_class": "tmf.tmf634.listener.resourcecategorydeleteevent.v1",
+      "to_state": "executed",
+      "guard_refs": [
+        "guard:policy_allow"
+      ]
+    },
+    {
+      "id": "validate_tmf634_listener_resourcecategorystatuschangeevent",
+      "from_state": "ingress",
+      "intent_class": "tmf.tmf634.listener.resourcecategorystatuschangeevent.v1",
+      "to_state": "validated",
+      "guard_refs": [
+        "guard:payload_valid"
+      ]
+    },
+    {
+      "id": "execute_tmf634_listener_resourcecategorystatuschangeevent",
+      "from_state": "validated",
+      "intent_class": "tmf.tmf634.listener.resourcecategorystatuschangeevent.v1",
+      "to_state": "executed",
+      "guard_refs": [
+        "guard:policy_allow"
+      ]
+    },
+    {
+      "id": "validate_tmf634_listener_resourcespecificationattributevaluechangeevent",
+      "from_state": "ingress",
+      "intent_class": "tmf.tmf634.listener.resourcespecificationattributevaluechangeevent.v1",
+      "to_state": "validated",
+      "guard_refs": [
+        "guard:payload_valid"
+      ]
+    },
+    {
+      "id": "execute_tmf634_listener_resourcespecificationattributevaluechangeevent",
+      "from_state": "validated",
+      "intent_class": "tmf.tmf634.listener.resourcespecificationattributevaluechangeevent.v1",
+      "to_state": "executed",
+      "guard_refs": [
+        "guard:policy_allow"
+      ]
+    },
+    {
+      "id": "validate_tmf634_listener_resourcespecificationcreateevent",
+      "from_state": "ingress",
+      "intent_class": "tmf.tmf634.listener.resourcespecificationcreateevent.v1",
+      "to_state": "validated",
+      "guard_refs": [
+        "guard:payload_valid"
+      ]
+    },
+    {
+      "id": "execute_tmf634_listener_resourcespecificationcreateevent",
+      "from_state": "validated",
+      "intent_class": "tmf.tmf634.listener.resourcespecificationcreateevent.v1",
+      "to_state": "executed",
+      "guard_refs": [
+        "guard:policy_allow"
+      ]
+    },
+    {
+      "id": "validate_tmf634_listener_resourcespecificationdeleteevent",
+      "from_state": "ingress",
+      "intent_class": "tmf.tmf634.listener.resourcespecificationdeleteevent.v1",
+      "to_state": "validated",
+      "guard_refs": [
+        "guard:payload_valid"
+      ]
+    },
+    {
+      "id": "execute_tmf634_listener_resourcespecificationdeleteevent",
+      "from_state": "validated",
+      "intent_class": "tmf.tmf634.listener.resourcespecificationdeleteevent.v1",
+      "to_state": "executed",
+      "guard_refs": [
+        "guard:policy_allow"
+      ]
+    },
+    {
+      "id": "validate_tmf634_listener_resourcespecificationstatuschangeevent",
+      "from_state": "ingress",
+      "intent_class": "tmf.tmf634.listener.resourcespecificationstatuschangeevent.v1",
+      "to_state": "validated",
+      "guard_refs": [
+        "guard:payload_valid"
+      ]
+    },
+    {
+      "id": "execute_tmf634_listener_resourcespecificationstatuschangeevent",
+      "from_state": "validated",
+      "intent_class": "tmf.tmf634.listener.resourcespecificationstatuschangeevent.v1",
+      "to_state": "executed",
+      "guard_refs": [
+        "guard:policy_allow"
+      ]
+    },
+    {
+      "id": "validate_tmf634_resourcecandidate_createresourcecandidate",
+      "from_state": "ingress",
+      "intent_class": "tmf.tmf634.resourcecandidate.createresourcecandidate.v1",
+      "to_state": "validated",
+      "guard_refs": [
+        "guard:payload_valid"
+      ]
+    },
+    {
+      "id": "execute_tmf634_resourcecandidate_createresourcecandidate",
+      "from_state": "validated",
+      "intent_class": "tmf.tmf634.resourcecandidate.createresourcecandidate.v1",
+      "to_state": "executed",
+      "guard_refs": [
+        "guard:policy_allow"
+      ]
+    },
+    {
+      "id": "validate_tmf634_resourcecandidate_deleteresourcecandidate",
+      "from_state": "ingress",
+      "intent_class": "tmf.tmf634.resourcecandidate.deleteresourcecandidate.v1",
+      "to_state": "validated",
+      "guard_refs": [
+        "guard:payload_valid"
+      ]
+    },
+    {
+      "id": "execute_tmf634_resourcecandidate_deleteresourcecandidate",
+      "from_state": "validated",
+      "intent_class": "tmf.tmf634.resourcecandidate.deleteresourcecandidate.v1",
+      "to_state": "executed",
+      "guard_refs": [
+        "guard:policy_allow"
+      ]
+    },
+    {
+      "id": "validate_tmf634_resourcecandidate_listresourcecandidate",
+      "from_state": "ingress",
+      "intent_class": "tmf.tmf634.resourcecandidate.listresourcecandidate.v1",
+      "to_state": "validated",
+      "guard_refs": [
+        "guard:payload_valid"
+      ]
+    },
+    {
+      "id": "execute_tmf634_resourcecandidate_listresourcecandidate",
+      "from_state": "validated",
+      "intent_class": "tmf.tmf634.resourcecandidate.listresourcecandidate.v1",
+      "to_state": "executed",
+      "guard_refs": [
+        "guard:policy_allow"
+      ]
+    },
+    {
+      "id": "validate_tmf634_resourcecandidate_patchresourcecandidate",
+      "from_state": "ingress",
+      "intent_class": "tmf.tmf634.resourcecandidate.patchresourcecandidate.v1",
+      "to_state": "validated",
+      "guard_refs": [
+        "guard:payload_valid"
+      ]
+    },
+    {
+      "id": "execute_tmf634_resourcecandidate_patchresourcecandidate",
+      "from_state": "validated",
+      "intent_class": "tmf.tmf634.resourcecandidate.patchresourcecandidate.v1",
+      "to_state": "executed",
+      "guard_refs": [
+        "guard:policy_allow"
+      ]
+    },
+    {
+      "id": "validate_tmf634_resourcecandidate_retrieveresourcecandidate",
+      "from_state": "ingress",
+      "intent_class": "tmf.tmf634.resourcecandidate.retrieveresourcecandidate.v1",
+      "to_state": "validated",
+      "guard_refs": [
+        "guard:payload_valid"
+      ]
+    },
+    {
+      "id": "execute_tmf634_resourcecandidate_retrieveresourcecandidate",
+      "from_state": "validated",
+      "intent_class": "tmf.tmf634.resourcecandidate.retrieveresourcecandidate.v1",
+      "to_state": "executed",
+      "guard_refs": [
+        "guard:policy_allow"
+      ]
+    },
+    {
+      "id": "validate_tmf634_resourcecatalog_createresourcecatalog",
+      "from_state": "ingress",
+      "intent_class": "tmf.tmf634.resourcecatalog.createresourcecatalog.v1",
+      "to_state": "validated",
+      "guard_refs": [
+        "guard:payload_valid"
+      ]
+    },
+    {
+      "id": "execute_tmf634_resourcecatalog_createresourcecatalog",
+      "from_state": "validated",
+      "intent_class": "tmf.tmf634.resourcecatalog.createresourcecatalog.v1",
+      "to_state": "executed",
+      "guard_refs": [
+        "guard:policy_allow"
+      ]
+    },
+    {
+      "id": "validate_tmf634_resourcecatalog_deleteresourcecatalog",
+      "from_state": "ingress",
+      "intent_class": "tmf.tmf634.resourcecatalog.deleteresourcecatalog.v1",
+      "to_state": "validated",
+      "guard_refs": [
+        "guard:payload_valid"
+      ]
+    },
+    {
+      "id": "execute_tmf634_resourcecatalog_deleteresourcecatalog",
+      "from_state": "validated",
+      "intent_class": "tmf.tmf634.resourcecatalog.deleteresourcecatalog.v1",
+      "to_state": "executed",
+      "guard_refs": [
+        "guard:policy_allow"
+      ]
+    },
+    {
+      "id": "validate_tmf634_resourcecatalog_listresourcecatalog",
+      "from_state": "ingress",
+      "intent_class": "tmf.tmf634.resourcecatalog.listresourcecatalog.v1",
+      "to_state": "validated",
+      "guard_refs": [
+        "guard:payload_valid"
+      ]
+    },
+    {
+      "id": "execute_tmf634_resourcecatalog_listresourcecatalog",
+      "from_state": "validated",
+      "intent_class": "tmf.tmf634.resourcecatalog.listresourcecatalog.v1",
+      "to_state": "executed",
+      "guard_refs": [
+        "guard:policy_allow"
+      ]
+    },
+    {
+      "id": "validate_tmf634_resourcecatalog_patchresourcecatalog",
+      "from_state": "ingress",
+      "intent_class": "tmf.tmf634.resourcecatalog.patchresourcecatalog.v1",
+      "to_state": "validated",
+      "guard_refs": [
+        "guard:payload_valid"
+      ]
+    },
+    {
+      "id": "execute_tmf634_resourcecatalog_patchresourcecatalog",
+      "from_state": "validated",
+      "intent_class": "tmf.tmf634.resourcecatalog.patchresourcecatalog.v1",
+      "to_state": "executed",
+      "guard_refs": [
+        "guard:policy_allow"
+      ]
+    },
+    {
+      "id": "validate_tmf634_resourcecatalog_retrieveresourcecatalog",
+      "from_state": "ingress",
+      "intent_class": "tmf.tmf634.resourcecatalog.retrieveresourcecatalog.v1",
+      "to_state": "validated",
+      "guard_refs": [
+        "guard:payload_valid"
+      ]
+    },
+    {
+      "id": "execute_tmf634_resourcecatalog_retrieveresourcecatalog",
+      "from_state": "validated",
+      "intent_class": "tmf.tmf634.resourcecatalog.retrieveresourcecatalog.v1",
+      "to_state": "executed",
+      "guard_refs": [
+        "guard:policy_allow"
+      ]
+    },
+    {
+      "id": "validate_tmf634_resourcecategory_createresourcecategory",
+      "from_state": "ingress",
+      "intent_class": "tmf.tmf634.resourcecategory.createresourcecategory.v1",
+      "to_state": "validated",
+      "guard_refs": [
+        "guard:payload_valid"
+      ]
+    },
+    {
+      "id": "execute_tmf634_resourcecategory_createresourcecategory",
+      "from_state": "validated",
+      "intent_class": "tmf.tmf634.resourcecategory.createresourcecategory.v1",
+      "to_state": "executed",
+      "guard_refs": [
+        "guard:policy_allow"
+      ]
+    },
+    {
+      "id": "validate_tmf634_resourcecategory_deleteresourcecategory",
+      "from_state": "ingress",
+      "intent_class": "tmf.tmf634.resourcecategory.deleteresourcecategory.v1",
+      "to_state": "validated",
+      "guard_refs": [
+        "guard:payload_valid"
+      ]
+    },
+    {
+      "id": "execute_tmf634_resourcecategory_deleteresourcecategory",
+      "from_state": "validated",
+      "intent_class": "tmf.tmf634.resourcecategory.deleteresourcecategory.v1",
+      "to_state": "executed",
+      "guard_refs": [
+        "guard:policy_allow"
+      ]
+    },
+    {
+      "id": "validate_tmf634_resourcecategory_listresourcecategory",
+      "from_state": "ingress",
+      "intent_class": "tmf.tmf634.resourcecategory.listresourcecategory.v1",
+      "to_state": "validated",
+      "guard_refs": [
+        "guard:payload_valid"
+      ]
+    },
+    {
+      "id": "execute_tmf634_resourcecategory_listresourcecategory",
+      "from_state": "validated",
+      "intent_class": "tmf.tmf634.resourcecategory.listresourcecategory.v1",
+      "to_state": "executed",
+      "guard_refs": [
+        "guard:policy_allow"
+      ]
+    },
+    {
+      "id": "validate_tmf634_resourcecategory_patchresourcecategory",
+      "from_state": "ingress",
+      "intent_class": "tmf.tmf634.resourcecategory.patchresourcecategory.v1",
+      "to_state": "validated",
+      "guard_refs": [
+        "guard:payload_valid"
+      ]
+    },
+    {
+      "id": "execute_tmf634_resourcecategory_patchresourcecategory",
+      "from_state": "validated",
+      "intent_class": "tmf.tmf634.resourcecategory.patchresourcecategory.v1",
+      "to_state": "executed",
+      "guard_refs": [
+        "guard:policy_allow"
+      ]
+    },
+    {
+      "id": "validate_tmf634_resourcecategory_retrieveresourcecategory",
+      "from_state": "ingress",
+      "intent_class": "tmf.tmf634.resourcecategory.retrieveresourcecategory.v1",
+      "to_state": "validated",
+      "guard_refs": [
+        "guard:payload_valid"
+      ]
+    },
+    {
+      "id": "execute_tmf634_resourcecategory_retrieveresourcecategory",
+      "from_state": "validated",
+      "intent_class": "tmf.tmf634.resourcecategory.retrieveresourcecategory.v1",
+      "to_state": "executed",
+      "guard_refs": [
+        "guard:policy_allow"
+      ]
+    },
+    {
+      "id": "validate_tmf634_resourcespecification_createresourcespecification",
+      "from_state": "ingress",
+      "intent_class": "tmf.tmf634.resourcespecification.createresourcespecification.v1",
+      "to_state": "validated",
+      "guard_refs": [
+        "guard:payload_valid"
+      ]
+    },
+    {
+      "id": "execute_tmf634_resourcespecification_createresourcespecification",
+      "from_state": "validated",
+      "intent_class": "tmf.tmf634.resourcespecification.createresourcespecification.v1",
+      "to_state": "executed",
+      "guard_refs": [
+        "guard:policy_allow"
+      ]
+    },
+    {
+      "id": "validate_tmf634_resourcespecification_deleteresourcespecification",
+      "from_state": "ingress",
+      "intent_class": "tmf.tmf634.resourcespecification.deleteresourcespecification.v1",
+      "to_state": "validated",
+      "guard_refs": [
+        "guard:payload_valid"
+      ]
+    },
+    {
+      "id": "execute_tmf634_resourcespecification_deleteresourcespecification",
+      "from_state": "validated",
+      "intent_class": "tmf.tmf634.resourcespecification.deleteresourcespecification.v1",
+      "to_state": "executed",
+      "guard_refs": [
+        "guard:policy_allow"
+      ]
+    },
+    {
+      "id": "validate_tmf634_resourcespecification_listresourcespecification",
+      "from_state": "ingress",
+      "intent_class": "tmf.tmf634.resourcespecification.listresourcespecification.v1",
+      "to_state": "validated",
+      "guard_refs": [
+        "guard:payload_valid"
+      ]
+    },
+    {
+      "id": "execute_tmf634_resourcespecification_listresourcespecification",
+      "from_state": "validated",
+      "intent_class": "tmf.tmf634.resourcespecification.listresourcespecification.v1",
+      "to_state": "executed",
+      "guard_refs": [
+        "guard:policy_allow"
+      ]
+    },
+    {
+      "id": "validate_tmf634_resourcespecification_patchresourcespecification",
+      "from_state": "ingress",
+      "intent_class": "tmf.tmf634.resourcespecification.patchresourcespecification.v1",
+      "to_state": "validated",
+      "guard_refs": [
+        "guard:payload_valid"
+      ]
+    },
+    {
+      "id": "execute_tmf634_resourcespecification_patchresourcespecification",
+      "from_state": "validated",
+      "intent_class": "tmf.tmf634.resourcespecification.patchresourcespecification.v1",
+      "to_state": "executed",
+      "guard_refs": [
+        "guard:policy_allow"
+      ]
+    },
+    {
+      "id": "validate_tmf634_resourcespecification_retrieveresourcespecification",
+      "from_state": "ingress",
+      "intent_class": "tmf.tmf634.resourcespecification.retrieveresourcespecification.v1",
+      "to_state": "validated",
+      "guard_refs": [
+        "guard:payload_valid"
+      ]
+    },
+    {
+      "id": "execute_tmf634_resourcespecification_retrieveresourcespecification",
+      "from_state": "validated",
+      "intent_class": "tmf.tmf634.resourcespecification.retrieveresourcespecification.v1",
+      "to_state": "executed",
+      "guard_refs": [
+        "guard:policy_allow"
+      ]
+    },
+    {
+      "id": "validate_tmf639_hub_registerlistener",
+      "from_state": "ingress",
+      "intent_class": "tmf.tmf639.hub.registerlistener.v1",
+      "to_state": "validated",
+      "guard_refs": [
+        "guard:payload_valid"
+      ]
+    },
+    {
+      "id": "execute_tmf639_hub_registerlistener",
+      "from_state": "validated",
+      "intent_class": "tmf.tmf639.hub.registerlistener.v1",
+      "to_state": "executed",
+      "guard_refs": [
+        "guard:policy_allow"
+      ]
+    },
+    {
+      "id": "validate_tmf639_hub_unregisterlistener",
+      "from_state": "ingress",
+      "intent_class": "tmf.tmf639.hub.unregisterlistener.v1",
+      "to_state": "validated",
+      "guard_refs": [
+        "guard:payload_valid"
+      ]
+    },
+    {
+      "id": "execute_tmf639_hub_unregisterlistener",
+      "from_state": "validated",
+      "intent_class": "tmf.tmf639.hub.unregisterlistener.v1",
+      "to_state": "executed",
+      "guard_refs": [
+        "guard:policy_allow"
+      ]
+    },
+    {
+      "id": "validate_tmf639_listener_listentoresourceattributevaluechangeevent",
+      "from_state": "ingress",
+      "intent_class": "tmf.tmf639.listener.listentoresourceattributevaluechangeevent.v1",
+      "to_state": "validated",
+      "guard_refs": [
+        "guard:payload_valid"
+      ]
+    },
+    {
+      "id": "execute_tmf639_listener_listentoresourceattributevaluechangeevent",
+      "from_state": "validated",
+      "intent_class": "tmf.tmf639.listener.listentoresourceattributevaluechangeevent.v1",
+      "to_state": "executed",
+      "guard_refs": [
+        "guard:policy_allow"
+      ]
+    },
+    {
+      "id": "validate_tmf639_listener_listentoresourcecreateevent",
+      "from_state": "ingress",
+      "intent_class": "tmf.tmf639.listener.listentoresourcecreateevent.v1",
+      "to_state": "validated",
+      "guard_refs": [
+        "guard:payload_valid"
+      ]
+    },
+    {
+      "id": "execute_tmf639_listener_listentoresourcecreateevent",
+      "from_state": "validated",
+      "intent_class": "tmf.tmf639.listener.listentoresourcecreateevent.v1",
+      "to_state": "executed",
+      "guard_refs": [
+        "guard:policy_allow"
+      ]
+    },
+    {
+      "id": "validate_tmf639_listener_listentoresourcedeleteevent",
+      "from_state": "ingress",
+      "intent_class": "tmf.tmf639.listener.listentoresourcedeleteevent.v1",
+      "to_state": "validated",
+      "guard_refs": [
+        "guard:payload_valid"
+      ]
+    },
+    {
+      "id": "execute_tmf639_listener_listentoresourcedeleteevent",
+      "from_state": "validated",
+      "intent_class": "tmf.tmf639.listener.listentoresourcedeleteevent.v1",
+      "to_state": "executed",
+      "guard_refs": [
+        "guard:policy_allow"
+      ]
+    },
+    {
+      "id": "validate_tmf639_listener_listentoresourcestatechangeevent",
+      "from_state": "ingress",
+      "intent_class": "tmf.tmf639.listener.listentoresourcestatechangeevent.v1",
+      "to_state": "validated",
+      "guard_refs": [
+        "guard:payload_valid"
+      ]
+    },
+    {
+      "id": "execute_tmf639_listener_listentoresourcestatechangeevent",
+      "from_state": "validated",
+      "intent_class": "tmf.tmf639.listener.listentoresourcestatechangeevent.v1",
+      "to_state": "executed",
+      "guard_refs": [
+        "guard:policy_allow"
+      ]
+    },
+    {
+      "id": "validate_tmf639_resource_createresource",
+      "from_state": "ingress",
+      "intent_class": "tmf.tmf639.resource.createresource.v1",
+      "to_state": "validated",
+      "guard_refs": [
+        "guard:payload_valid"
+      ]
+    },
+    {
+      "id": "execute_tmf639_resource_createresource",
+      "from_state": "validated",
+      "intent_class": "tmf.tmf639.resource.createresource.v1",
+      "to_state": "executed",
+      "guard_refs": [
+        "guard:policy_allow"
+      ]
+    },
+    {
+      "id": "validate_tmf639_resource_deleteresource",
+      "from_state": "ingress",
+      "intent_class": "tmf.tmf639.resource.deleteresource.v1",
+      "to_state": "validated",
+      "guard_refs": [
+        "guard:payload_valid"
+      ]
+    },
+    {
+      "id": "execute_tmf639_resource_deleteresource",
+      "from_state": "validated",
+      "intent_class": "tmf.tmf639.resource.deleteresource.v1",
+      "to_state": "executed",
+      "guard_refs": [
+        "guard:policy_allow"
+      ]
+    },
+    {
+      "id": "validate_tmf639_resource_listresource",
+      "from_state": "ingress",
+      "intent_class": "tmf.tmf639.resource.listresource.v1",
+      "to_state": "validated",
+      "guard_refs": [
+        "guard:payload_valid"
+      ]
+    },
+    {
+      "id": "execute_tmf639_resource_listresource",
+      "from_state": "validated",
+      "intent_class": "tmf.tmf639.resource.listresource.v1",
+      "to_state": "executed",
+      "guard_refs": [
+        "guard:policy_allow"
+      ]
+    },
+    {
+      "id": "validate_tmf639_resource_patchresource",
+      "from_state": "ingress",
+      "intent_class": "tmf.tmf639.resource.patchresource.v1",
+      "to_state": "validated",
+      "guard_refs": [
+        "guard:payload_valid"
+      ]
+    },
+    {
+      "id": "execute_tmf639_resource_patchresource",
+      "from_state": "validated",
+      "intent_class": "tmf.tmf639.resource.patchresource.v1",
+      "to_state": "executed",
+      "guard_refs": [
+        "guard:policy_allow"
+      ]
+    },
+    {
+      "id": "validate_tmf639_resource_retrieveresource",
+      "from_state": "ingress",
+      "intent_class": "tmf.tmf639.resource.retrieveresource.v1",
+      "to_state": "validated",
+      "guard_refs": [
+        "guard:payload_valid"
+      ]
+    },
+    {
+      "id": "execute_tmf639_resource_retrieveresource",
+      "from_state": "validated",
+      "intent_class": "tmf.tmf639.resource.retrieveresource.v1",
+      "to_state": "executed",
+      "guard_refs": [
+        "guard:policy_allow"
+      ]
+    },
+    {
+      "id": "validate_tmf642_ackalarm_createackalarm",
+      "from_state": "ingress",
+      "intent_class": "tmf.tmf642.ackalarm.createackalarm.v1",
+      "to_state": "validated",
+      "guard_refs": [
+        "guard:payload_valid"
+      ]
+    },
+    {
+      "id": "execute_tmf642_ackalarm_createackalarm",
+      "from_state": "validated",
+      "intent_class": "tmf.tmf642.ackalarm.createackalarm.v1",
+      "to_state": "executed",
+      "guard_refs": [
+        "guard:policy_allow"
+      ]
+    },
+    {
+      "id": "validate_tmf642_ackalarm_listackalarm",
+      "from_state": "ingress",
+      "intent_class": "tmf.tmf642.ackalarm.listackalarm.v1",
+      "to_state": "validated",
+      "guard_refs": [
+        "guard:payload_valid"
+      ]
+    },
+    {
+      "id": "execute_tmf642_ackalarm_listackalarm",
+      "from_state": "validated",
+      "intent_class": "tmf.tmf642.ackalarm.listackalarm.v1",
+      "to_state": "executed",
+      "guard_refs": [
+        "guard:policy_allow"
+      ]
+    },
+    {
+      "id": "validate_tmf642_ackalarm_retrieveackalarm",
+      "from_state": "ingress",
+      "intent_class": "tmf.tmf642.ackalarm.retrieveackalarm.v1",
+      "to_state": "validated",
+      "guard_refs": [
+        "guard:payload_valid"
+      ]
+    },
+    {
+      "id": "execute_tmf642_ackalarm_retrieveackalarm",
+      "from_state": "validated",
+      "intent_class": "tmf.tmf642.ackalarm.retrieveackalarm.v1",
+      "to_state": "executed",
+      "guard_refs": [
+        "guard:policy_allow"
+      ]
+    },
+    {
+      "id": "validate_tmf642_alarm_createalarm",
+      "from_state": "ingress",
+      "intent_class": "tmf.tmf642.alarm.createalarm.v1",
+      "to_state": "validated",
+      "guard_refs": [
+        "guard:payload_valid"
+      ]
+    },
+    {
+      "id": "execute_tmf642_alarm_createalarm",
+      "from_state": "validated",
+      "intent_class": "tmf.tmf642.alarm.createalarm.v1",
+      "to_state": "executed",
+      "guard_refs": [
+        "guard:policy_allow"
+      ]
+    },
+    {
+      "id": "validate_tmf642_alarm_deletealarm",
+      "from_state": "ingress",
+      "intent_class": "tmf.tmf642.alarm.deletealarm.v1",
+      "to_state": "validated",
+      "guard_refs": [
+        "guard:payload_valid"
+      ]
+    },
+    {
+      "id": "execute_tmf642_alarm_deletealarm",
+      "from_state": "validated",
+      "intent_class": "tmf.tmf642.alarm.deletealarm.v1",
+      "to_state": "executed",
+      "guard_refs": [
+        "guard:policy_allow"
+      ]
+    },
+    {
+      "id": "validate_tmf642_alarm_listalarm",
+      "from_state": "ingress",
+      "intent_class": "tmf.tmf642.alarm.listalarm.v1",
+      "to_state": "validated",
+      "guard_refs": [
+        "guard:payload_valid"
+      ]
+    },
+    {
+      "id": "execute_tmf642_alarm_listalarm",
+      "from_state": "validated",
+      "intent_class": "tmf.tmf642.alarm.listalarm.v1",
+      "to_state": "executed",
+      "guard_refs": [
+        "guard:policy_allow"
+      ]
+    },
+    {
+      "id": "validate_tmf642_alarm_patchalarm",
+      "from_state": "ingress",
+      "intent_class": "tmf.tmf642.alarm.patchalarm.v1",
+      "to_state": "validated",
+      "guard_refs": [
+        "guard:payload_valid"
+      ]
+    },
+    {
+      "id": "execute_tmf642_alarm_patchalarm",
+      "from_state": "validated",
+      "intent_class": "tmf.tmf642.alarm.patchalarm.v1",
+      "to_state": "executed",
+      "guard_refs": [
+        "guard:policy_allow"
+      ]
+    },
+    {
+      "id": "validate_tmf642_alarm_retrievealarm",
+      "from_state": "ingress",
+      "intent_class": "tmf.tmf642.alarm.retrievealarm.v1",
+      "to_state": "validated",
+      "guard_refs": [
+        "guard:payload_valid"
+      ]
+    },
+    {
+      "id": "execute_tmf642_alarm_retrievealarm",
+      "from_state": "validated",
+      "intent_class": "tmf.tmf642.alarm.retrievealarm.v1",
+      "to_state": "executed",
+      "guard_refs": [
+        "guard:policy_allow"
+      ]
+    },
+    {
+      "id": "validate_tmf642_clearalarm_createclearalarm",
+      "from_state": "ingress",
+      "intent_class": "tmf.tmf642.clearalarm.createclearalarm.v1",
+      "to_state": "validated",
+      "guard_refs": [
+        "guard:payload_valid"
+      ]
+    },
+    {
+      "id": "execute_tmf642_clearalarm_createclearalarm",
+      "from_state": "validated",
+      "intent_class": "tmf.tmf642.clearalarm.createclearalarm.v1",
+      "to_state": "executed",
+      "guard_refs": [
+        "guard:policy_allow"
+      ]
+    },
+    {
+      "id": "validate_tmf642_clearalarm_listclearalarm",
+      "from_state": "ingress",
+      "intent_class": "tmf.tmf642.clearalarm.listclearalarm.v1",
+      "to_state": "validated",
+      "guard_refs": [
+        "guard:payload_valid"
+      ]
+    },
+    {
+      "id": "execute_tmf642_clearalarm_listclearalarm",
+      "from_state": "validated",
+      "intent_class": "tmf.tmf642.clearalarm.listclearalarm.v1",
+      "to_state": "executed",
+      "guard_refs": [
+        "guard:policy_allow"
+      ]
+    },
+    {
+      "id": "validate_tmf642_clearalarm_retrieveclearalarm",
+      "from_state": "ingress",
+      "intent_class": "tmf.tmf642.clearalarm.retrieveclearalarm.v1",
+      "to_state": "validated",
+      "guard_refs": [
+        "guard:payload_valid"
+      ]
+    },
+    {
+      "id": "execute_tmf642_clearalarm_retrieveclearalarm",
+      "from_state": "validated",
+      "intent_class": "tmf.tmf642.clearalarm.retrieveclearalarm.v1",
+      "to_state": "executed",
+      "guard_refs": [
+        "guard:policy_allow"
+      ]
+    },
+    {
+      "id": "validate_tmf642_commentalarm_createcommentalarm",
+      "from_state": "ingress",
+      "intent_class": "tmf.tmf642.commentalarm.createcommentalarm.v1",
+      "to_state": "validated",
+      "guard_refs": [
+        "guard:payload_valid"
+      ]
+    },
+    {
+      "id": "execute_tmf642_commentalarm_createcommentalarm",
+      "from_state": "validated",
+      "intent_class": "tmf.tmf642.commentalarm.createcommentalarm.v1",
+      "to_state": "executed",
+      "guard_refs": [
+        "guard:policy_allow"
+      ]
+    },
+    {
+      "id": "validate_tmf642_commentalarm_listcommentalarm",
+      "from_state": "ingress",
+      "intent_class": "tmf.tmf642.commentalarm.listcommentalarm.v1",
+      "to_state": "validated",
+      "guard_refs": [
+        "guard:payload_valid"
+      ]
+    },
+    {
+      "id": "execute_tmf642_commentalarm_listcommentalarm",
+      "from_state": "validated",
+      "intent_class": "tmf.tmf642.commentalarm.listcommentalarm.v1",
+      "to_state": "executed",
+      "guard_refs": [
+        "guard:policy_allow"
+      ]
+    },
+    {
+      "id": "validate_tmf642_commentalarm_retrievecommentalarm",
+      "from_state": "ingress",
+      "intent_class": "tmf.tmf642.commentalarm.retrievecommentalarm.v1",
+      "to_state": "validated",
+      "guard_refs": [
+        "guard:payload_valid"
+      ]
+    },
+    {
+      "id": "execute_tmf642_commentalarm_retrievecommentalarm",
+      "from_state": "validated",
+      "intent_class": "tmf.tmf642.commentalarm.retrievecommentalarm.v1",
+      "to_state": "executed",
+      "guard_refs": [
+        "guard:policy_allow"
+      ]
+    },
+    {
+      "id": "validate_tmf642_groupalarm_creategroupalarm",
+      "from_state": "ingress",
+      "intent_class": "tmf.tmf642.groupalarm.creategroupalarm.v1",
+      "to_state": "validated",
+      "guard_refs": [
+        "guard:payload_valid"
+      ]
+    },
+    {
+      "id": "execute_tmf642_groupalarm_creategroupalarm",
+      "from_state": "validated",
+      "intent_class": "tmf.tmf642.groupalarm.creategroupalarm.v1",
+      "to_state": "executed",
+      "guard_refs": [
+        "guard:policy_allow"
+      ]
+    },
+    {
+      "id": "validate_tmf642_groupalarm_listgroupalarm",
+      "from_state": "ingress",
+      "intent_class": "tmf.tmf642.groupalarm.listgroupalarm.v1",
+      "to_state": "validated",
+      "guard_refs": [
+        "guard:payload_valid"
+      ]
+    },
+    {
+      "id": "execute_tmf642_groupalarm_listgroupalarm",
+      "from_state": "validated",
+      "intent_class": "tmf.tmf642.groupalarm.listgroupalarm.v1",
+      "to_state": "executed",
+      "guard_refs": [
+        "guard:policy_allow"
+      ]
+    },
+    {
+      "id": "validate_tmf642_groupalarm_retrievegroupalarm",
+      "from_state": "ingress",
+      "intent_class": "tmf.tmf642.groupalarm.retrievegroupalarm.v1",
+      "to_state": "validated",
+      "guard_refs": [
+        "guard:payload_valid"
+      ]
+    },
+    {
+      "id": "execute_tmf642_groupalarm_retrievegroupalarm",
+      "from_state": "validated",
+      "intent_class": "tmf.tmf642.groupalarm.retrievegroupalarm.v1",
+      "to_state": "executed",
+      "guard_refs": [
+        "guard:policy_allow"
+      ]
+    },
+    {
+      "id": "validate_tmf642_hub_createhub",
+      "from_state": "ingress",
+      "intent_class": "tmf.tmf642.hub.createhub.v1",
+      "to_state": "validated",
+      "guard_refs": [
+        "guard:payload_valid"
+      ]
+    },
+    {
+      "id": "execute_tmf642_hub_createhub",
+      "from_state": "validated",
+      "intent_class": "tmf.tmf642.hub.createhub.v1",
+      "to_state": "executed",
+      "guard_refs": [
+        "guard:policy_allow"
+      ]
+    },
+    {
+      "id": "validate_tmf642_hub_hubdelete",
+      "from_state": "ingress",
+      "intent_class": "tmf.tmf642.hub.hubdelete.v1",
+      "to_state": "validated",
+      "guard_refs": [
+        "guard:payload_valid"
+      ]
+    },
+    {
+      "id": "execute_tmf642_hub_hubdelete",
+      "from_state": "validated",
+      "intent_class": "tmf.tmf642.hub.hubdelete.v1",
+      "to_state": "executed",
+      "guard_refs": [
+        "guard:policy_allow"
+      ]
+    },
+    {
+      "id": "validate_tmf642_hub_hubget",
+      "from_state": "ingress",
+      "intent_class": "tmf.tmf642.hub.hubget.v1",
+      "to_state": "validated",
+      "guard_refs": [
+        "guard:payload_valid"
+      ]
+    },
+    {
+      "id": "execute_tmf642_hub_hubget",
+      "from_state": "validated",
+      "intent_class": "tmf.tmf642.hub.hubget.v1",
+      "to_state": "executed",
+      "guard_refs": [
+        "guard:policy_allow"
+      ]
+    },
+    {
+      "id": "validate_tmf642_listener_ackalarmcreateevent",
+      "from_state": "ingress",
+      "intent_class": "tmf.tmf642.listener.ackalarmcreateevent.v1",
+      "to_state": "validated",
+      "guard_refs": [
+        "guard:payload_valid"
+      ]
+    },
+    {
+      "id": "execute_tmf642_listener_ackalarmcreateevent",
+      "from_state": "validated",
+      "intent_class": "tmf.tmf642.listener.ackalarmcreateevent.v1",
+      "to_state": "executed",
+      "guard_refs": [
+        "guard:policy_allow"
+      ]
+    },
+    {
+      "id": "validate_tmf642_listener_ackalarmstatechangeevent",
+      "from_state": "ingress",
+      "intent_class": "tmf.tmf642.listener.ackalarmstatechangeevent.v1",
+      "to_state": "validated",
+      "guard_refs": [
+        "guard:payload_valid"
+      ]
+    },
+    {
+      "id": "execute_tmf642_listener_ackalarmstatechangeevent",
+      "from_state": "validated",
+      "intent_class": "tmf.tmf642.listener.ackalarmstatechangeevent.v1",
+      "to_state": "executed",
+      "guard_refs": [
+        "guard:policy_allow"
+      ]
+    },
+    {
+      "id": "validate_tmf642_listener_alarmattributevaluechangeevent",
+      "from_state": "ingress",
+      "intent_class": "tmf.tmf642.listener.alarmattributevaluechangeevent.v1",
+      "to_state": "validated",
+      "guard_refs": [
+        "guard:payload_valid"
+      ]
+    },
+    {
+      "id": "execute_tmf642_listener_alarmattributevaluechangeevent",
+      "from_state": "validated",
+      "intent_class": "tmf.tmf642.listener.alarmattributevaluechangeevent.v1",
+      "to_state": "executed",
+      "guard_refs": [
+        "guard:policy_allow"
+      ]
+    },
+    {
+      "id": "validate_tmf642_listener_alarmcreateevent",
+      "from_state": "ingress",
+      "intent_class": "tmf.tmf642.listener.alarmcreateevent.v1",
+      "to_state": "validated",
+      "guard_refs": [
+        "guard:payload_valid"
+      ]
+    },
+    {
+      "id": "execute_tmf642_listener_alarmcreateevent",
+      "from_state": "validated",
+      "intent_class": "tmf.tmf642.listener.alarmcreateevent.v1",
+      "to_state": "executed",
+      "guard_refs": [
+        "guard:policy_allow"
+      ]
+    },
+    {
+      "id": "validate_tmf642_listener_alarmdeleteevent",
+      "from_state": "ingress",
+      "intent_class": "tmf.tmf642.listener.alarmdeleteevent.v1",
+      "to_state": "validated",
+      "guard_refs": [
+        "guard:payload_valid"
+      ]
+    },
+    {
+      "id": "execute_tmf642_listener_alarmdeleteevent",
+      "from_state": "validated",
+      "intent_class": "tmf.tmf642.listener.alarmdeleteevent.v1",
+      "to_state": "executed",
+      "guard_refs": [
+        "guard:policy_allow"
+      ]
+    },
+    {
+      "id": "validate_tmf642_listener_alarmstatechangeevent",
+      "from_state": "ingress",
+      "intent_class": "tmf.tmf642.listener.alarmstatechangeevent.v1",
+      "to_state": "validated",
+      "guard_refs": [
+        "guard:payload_valid"
+      ]
+    },
+    {
+      "id": "execute_tmf642_listener_alarmstatechangeevent",
+      "from_state": "validated",
+      "intent_class": "tmf.tmf642.listener.alarmstatechangeevent.v1",
+      "to_state": "executed",
+      "guard_refs": [
+        "guard:policy_allow"
+      ]
+    },
+    {
+      "id": "validate_tmf642_listener_clearalarmcreateevent",
+      "from_state": "ingress",
+      "intent_class": "tmf.tmf642.listener.clearalarmcreateevent.v1",
+      "to_state": "validated",
+      "guard_refs": [
+        "guard:payload_valid"
+      ]
+    },
+    {
+      "id": "execute_tmf642_listener_clearalarmcreateevent",
+      "from_state": "validated",
+      "intent_class": "tmf.tmf642.listener.clearalarmcreateevent.v1",
+      "to_state": "executed",
+      "guard_refs": [
+        "guard:policy_allow"
+      ]
+    },
+    {
+      "id": "validate_tmf642_listener_clearalarmstatechangeevent",
+      "from_state": "ingress",
+      "intent_class": "tmf.tmf642.listener.clearalarmstatechangeevent.v1",
+      "to_state": "validated",
+      "guard_refs": [
+        "guard:payload_valid"
+      ]
+    },
+    {
+      "id": "execute_tmf642_listener_clearalarmstatechangeevent",
+      "from_state": "validated",
+      "intent_class": "tmf.tmf642.listener.clearalarmstatechangeevent.v1",
+      "to_state": "executed",
+      "guard_refs": [
+        "guard:policy_allow"
+      ]
+    },
+    {
+      "id": "validate_tmf642_listener_commentalarmcreateevent",
+      "from_state": "ingress",
+      "intent_class": "tmf.tmf642.listener.commentalarmcreateevent.v1",
+      "to_state": "validated",
+      "guard_refs": [
+        "guard:payload_valid"
+      ]
+    },
+    {
+      "id": "execute_tmf642_listener_commentalarmcreateevent",
+      "from_state": "validated",
+      "intent_class": "tmf.tmf642.listener.commentalarmcreateevent.v1",
+      "to_state": "executed",
+      "guard_refs": [
+        "guard:policy_allow"
+      ]
+    },
+    {
+      "id": "validate_tmf642_listener_commentalarmstatechangeevent",
+      "from_state": "ingress",
+      "intent_class": "tmf.tmf642.listener.commentalarmstatechangeevent.v1",
+      "to_state": "validated",
+      "guard_refs": [
+        "guard:payload_valid"
+      ]
+    },
+    {
+      "id": "execute_tmf642_listener_commentalarmstatechangeevent",
+      "from_state": "validated",
+      "intent_class": "tmf.tmf642.listener.commentalarmstatechangeevent.v1",
+      "to_state": "executed",
+      "guard_refs": [
+        "guard:policy_allow"
+      ]
+    },
+    {
+      "id": "validate_tmf642_listener_groupalarmcreateevent",
+      "from_state": "ingress",
+      "intent_class": "tmf.tmf642.listener.groupalarmcreateevent.v1",
+      "to_state": "validated",
+      "guard_refs": [
+        "guard:payload_valid"
+      ]
+    },
+    {
+      "id": "execute_tmf642_listener_groupalarmcreateevent",
+      "from_state": "validated",
+      "intent_class": "tmf.tmf642.listener.groupalarmcreateevent.v1",
+      "to_state": "executed",
+      "guard_refs": [
+        "guard:policy_allow"
+      ]
+    },
+    {
+      "id": "validate_tmf642_listener_groupalarmstatechangeevent",
+      "from_state": "ingress",
+      "intent_class": "tmf.tmf642.listener.groupalarmstatechangeevent.v1",
+      "to_state": "validated",
+      "guard_refs": [
+        "guard:payload_valid"
+      ]
+    },
+    {
+      "id": "execute_tmf642_listener_groupalarmstatechangeevent",
+      "from_state": "validated",
+      "intent_class": "tmf.tmf642.listener.groupalarmstatechangeevent.v1",
+      "to_state": "executed",
+      "guard_refs": [
+        "guard:policy_allow"
+      ]
+    },
+    {
+      "id": "validate_tmf642_listener_unackalarmcreateevent",
+      "from_state": "ingress",
+      "intent_class": "tmf.tmf642.listener.unackalarmcreateevent.v1",
+      "to_state": "validated",
+      "guard_refs": [
+        "guard:payload_valid"
+      ]
+    },
+    {
+      "id": "execute_tmf642_listener_unackalarmcreateevent",
+      "from_state": "validated",
+      "intent_class": "tmf.tmf642.listener.unackalarmcreateevent.v1",
+      "to_state": "executed",
+      "guard_refs": [
+        "guard:policy_allow"
+      ]
+    },
+    {
+      "id": "validate_tmf642_listener_unackalarmstatechangeevent",
+      "from_state": "ingress",
+      "intent_class": "tmf.tmf642.listener.unackalarmstatechangeevent.v1",
+      "to_state": "validated",
+      "guard_refs": [
+        "guard:payload_valid"
+      ]
+    },
+    {
+      "id": "execute_tmf642_listener_unackalarmstatechangeevent",
+      "from_state": "validated",
+      "intent_class": "tmf.tmf642.listener.unackalarmstatechangeevent.v1",
+      "to_state": "executed",
+      "guard_refs": [
+        "guard:policy_allow"
+      ]
+    },
+    {
+      "id": "validate_tmf642_listener_ungroupalarmcreateevent",
+      "from_state": "ingress",
+      "intent_class": "tmf.tmf642.listener.ungroupalarmcreateevent.v1",
+      "to_state": "validated",
+      "guard_refs": [
+        "guard:payload_valid"
+      ]
+    },
+    {
+      "id": "execute_tmf642_listener_ungroupalarmcreateevent",
+      "from_state": "validated",
+      "intent_class": "tmf.tmf642.listener.ungroupalarmcreateevent.v1",
+      "to_state": "executed",
+      "guard_refs": [
+        "guard:policy_allow"
+      ]
+    },
+    {
+      "id": "validate_tmf642_listener_ungroupalarmstatechangeevent",
+      "from_state": "ingress",
+      "intent_class": "tmf.tmf642.listener.ungroupalarmstatechangeevent.v1",
+      "to_state": "validated",
+      "guard_refs": [
+        "guard:payload_valid"
+      ]
+    },
+    {
+      "id": "execute_tmf642_listener_ungroupalarmstatechangeevent",
+      "from_state": "validated",
+      "intent_class": "tmf.tmf642.listener.ungroupalarmstatechangeevent.v1",
+      "to_state": "executed",
+      "guard_refs": [
+        "guard:policy_allow"
+      ]
+    },
+    {
+      "id": "validate_tmf642_unackalarm_createunackalarm",
+      "from_state": "ingress",
+      "intent_class": "tmf.tmf642.unackalarm.createunackalarm.v1",
+      "to_state": "validated",
+      "guard_refs": [
+        "guard:payload_valid"
+      ]
+    },
+    {
+      "id": "execute_tmf642_unackalarm_createunackalarm",
+      "from_state": "validated",
+      "intent_class": "tmf.tmf642.unackalarm.createunackalarm.v1",
+      "to_state": "executed",
+      "guard_refs": [
+        "guard:policy_allow"
+      ]
+    },
+    {
+      "id": "validate_tmf642_unackalarm_listunackalarm",
+      "from_state": "ingress",
+      "intent_class": "tmf.tmf642.unackalarm.listunackalarm.v1",
+      "to_state": "validated",
+      "guard_refs": [
+        "guard:payload_valid"
+      ]
+    },
+    {
+      "id": "execute_tmf642_unackalarm_listunackalarm",
+      "from_state": "validated",
+      "intent_class": "tmf.tmf642.unackalarm.listunackalarm.v1",
+      "to_state": "executed",
+      "guard_refs": [
+        "guard:policy_allow"
+      ]
+    },
+    {
+      "id": "validate_tmf642_unackalarm_retrieveunackalarm",
+      "from_state": "ingress",
+      "intent_class": "tmf.tmf642.unackalarm.retrieveunackalarm.v1",
+      "to_state": "validated",
+      "guard_refs": [
+        "guard:payload_valid"
+      ]
+    },
+    {
+      "id": "execute_tmf642_unackalarm_retrieveunackalarm",
+      "from_state": "validated",
+      "intent_class": "tmf.tmf642.unackalarm.retrieveunackalarm.v1",
+      "to_state": "executed",
+      "guard_refs": [
+        "guard:policy_allow"
+      ]
+    },
+    {
+      "id": "validate_tmf642_ungroupalarm_createungroupalarm",
+      "from_state": "ingress",
+      "intent_class": "tmf.tmf642.ungroupalarm.createungroupalarm.v1",
+      "to_state": "validated",
+      "guard_refs": [
+        "guard:payload_valid"
+      ]
+    },
+    {
+      "id": "execute_tmf642_ungroupalarm_createungroupalarm",
+      "from_state": "validated",
+      "intent_class": "tmf.tmf642.ungroupalarm.createungroupalarm.v1",
+      "to_state": "executed",
+      "guard_refs": [
+        "guard:policy_allow"
+      ]
+    },
+    {
+      "id": "validate_tmf642_ungroupalarm_listungroupalarm",
+      "from_state": "ingress",
+      "intent_class": "tmf.tmf642.ungroupalarm.listungroupalarm.v1",
+      "to_state": "validated",
+      "guard_refs": [
+        "guard:payload_valid"
+      ]
+    },
+    {
+      "id": "execute_tmf642_ungroupalarm_listungroupalarm",
+      "from_state": "validated",
+      "intent_class": "tmf.tmf642.ungroupalarm.listungroupalarm.v1",
+      "to_state": "executed",
+      "guard_refs": [
+        "guard:policy_allow"
+      ]
+    },
+    {
+      "id": "validate_tmf642_ungroupalarm_retrieveungroupalarm",
+      "from_state": "ingress",
+      "intent_class": "tmf.tmf642.ungroupalarm.retrieveungroupalarm.v1",
+      "to_state": "validated",
+      "guard_refs": [
+        "guard:payload_valid"
+      ]
+    },
+    {
+      "id": "execute_tmf642_ungroupalarm_retrieveungroupalarm",
+      "from_state": "validated",
+      "intent_class": "tmf.tmf642.ungroupalarm.retrieveungroupalarm.v1",
+      "to_state": "executed",
+      "guard_refs": [
+        "guard:policy_allow"
+      ]
+    }
+  ],
+  "fallback_rules": [
+    {
+      "id": "escalate_unknown_tmf_operation",
+      "from_state": "ingress",
+      "intent_class": "tmf.tmf634.exportjob.createexportjob.v1",
+      "to_state": "escalated",
+      "source_ref": "tmf:governance:unknown_operation:v1",
+      "description": "Operation cannot be mapped to allowed TMF bounded scope."
+    }
+  ]
+}

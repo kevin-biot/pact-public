@@ -1,0 +1,447 @@
+{
+  "schema_version": "1.0",
+  "generated_at_utc": "2026-03-02T01:53:40Z",
+  "source": {
+    "tmf_openapi": "/Users/kevinbrown/ontology/docs/tmf-apis/TMF638-Service_Inventory_Management-v5.0.0.oas.yaml",
+    "sid_extract": "/Users/kevinbrown/ontology/docs/architecture/artifacts/schema-sets/telco/mappings/tmf-sid-v25/service.json"
+  },
+  "notes": [
+    "Field-level mapping for TMF638 Service resource; source traces are resolved against the local OpenAPI file.",
+    "SID references use service sheet row references when available; unresolved references remain explicit as sid_status=unresolved."
+  ],
+  "summary": {
+    "field_count": 17,
+    "sid_unresolved_count": 0
+  },
+  "items": [
+    {
+      "tmf_api": "TMF638",
+      "resource": "Service",
+      "field": "id",
+      "source_scope": "addressable_inherited",
+      "source_pointer": "components.schemas.Addressable.properties.id",
+      "source_trace": {
+        "found": true,
+        "line": 341,
+        "artifact": "/Users/kevinbrown/ontology/docs/tmf-apis/TMF638-Service_Inventory_Management-v5.0.0.oas.yaml"
+      },
+      "ontology_concept_id": "telco-service-inventory-order.service.id",
+      "sid_references": [
+        {
+          "sheet": "service",
+          "row": 292,
+          "domain_or_abe": "Service Domain.Service ABE",
+          "entity": "Service",
+          "attribute": "ID"
+        }
+      ],
+      "sid_status": "mapped",
+      "confidence": "high"
+    },
+    {
+      "tmf_api": "TMF638",
+      "resource": "Service",
+      "field": "href",
+      "source_scope": "addressable_inherited",
+      "source_pointer": "components.schemas.Addressable.properties.href",
+      "source_trace": {
+        "found": true,
+        "line": 338,
+        "artifact": "/Users/kevinbrown/ontology/docs/tmf-apis/TMF638-Service_Inventory_Management-v5.0.0.oas.yaml"
+      },
+      "ontology_concept_id": "telco-service-inventory-order.service.href",
+      "sid_references": [
+        {
+          "sheet": "service",
+          "row": 292,
+          "domain_or_abe": "Service Domain.Service ABE",
+          "entity": "Service",
+          "attribute": "ID"
+        }
+      ],
+      "sid_status": "mapped",
+      "confidence": "medium"
+    },
+    {
+      "tmf_api": "TMF638",
+      "resource": "Service",
+      "field": "name",
+      "source_scope": "service_properties",
+      "source_pointer": "components.schemas.Service.allOf[1].properties.name",
+      "source_trace": {
+        "found": true,
+        "line": 5642,
+        "artifact": "/Users/kevinbrown/ontology/docs/tmf-apis/TMF638-Service_Inventory_Management-v5.0.0.oas.yaml"
+      },
+      "ontology_concept_id": "telco-service-inventory-order.service.name",
+      "sid_references": [
+        {
+          "sheet": "service",
+          "row": 293,
+          "domain_or_abe": "Service Domain.Service ABE",
+          "entity": "Service",
+          "attribute": "name"
+        }
+      ],
+      "sid_status": "mapped",
+      "confidence": "high"
+    },
+    {
+      "tmf_api": "TMF638",
+      "resource": "Service",
+      "field": "description",
+      "source_scope": "service_properties",
+      "source_pointer": "components.schemas.Service.allOf[1].properties.description",
+      "source_trace": {
+        "found": true,
+        "line": 5595,
+        "artifact": "/Users/kevinbrown/ontology/docs/tmf-apis/TMF638-Service_Inventory_Management-v5.0.0.oas.yaml"
+      },
+      "ontology_concept_id": "telco-service-inventory-order.service.description",
+      "sid_references": [
+        {
+          "sheet": "service",
+          "row": 291,
+          "domain_or_abe": "Service Domain.Service ABE",
+          "entity": "Service",
+          "attribute": "description"
+        }
+      ],
+      "sid_status": "mapped",
+      "confidence": "high"
+    },
+    {
+      "tmf_api": "TMF638",
+      "resource": "Service",
+      "field": "isServiceEnabled",
+      "source_scope": "service_properties",
+      "source_pointer": "components.schemas.Service.allOf[1].properties.isServiceEnabled",
+      "source_trace": {
+        "found": true,
+        "line": 5598,
+        "artifact": "/Users/kevinbrown/ontology/docs/tmf-apis/TMF638-Service_Inventory_Management-v5.0.0.oas.yaml"
+      },
+      "ontology_concept_id": "telco-service-inventory-order.service.is-service-enabled",
+      "sid_references": [
+        {
+          "sheet": "service",
+          "row": 288,
+          "domain_or_abe": "Service Domain.Service ABE",
+          "entity": "Service",
+          "attribute": "isServiceEnabled"
+        }
+      ],
+      "sid_status": "mapped",
+      "confidence": "high"
+    },
+    {
+      "tmf_api": "TMF638",
+      "resource": "Service",
+      "field": "hasStarted",
+      "source_scope": "service_properties",
+      "source_pointer": "components.schemas.Service.allOf[1].properties.hasStarted",
+      "source_trace": {
+        "found": true,
+        "line": 5603,
+        "artifact": "/Users/kevinbrown/ontology/docs/tmf-apis/TMF638-Service_Inventory_Management-v5.0.0.oas.yaml"
+      },
+      "ontology_concept_id": "telco-service-inventory-order.service.has-started",
+      "sid_references": [
+        {
+          "sheet": "service",
+          "row": 286,
+          "domain_or_abe": "Service Domain.Service ABE",
+          "entity": "Service",
+          "attribute": "hasStarted"
+        }
+      ],
+      "sid_status": "mapped",
+      "confidence": "high"
+    },
+    {
+      "tmf_api": "TMF638",
+      "resource": "Service",
+      "field": "startMode",
+      "source_scope": "service_properties",
+      "source_pointer": "components.schemas.Service.allOf[1].properties.startMode",
+      "source_trace": {
+        "found": true,
+        "line": 5606,
+        "artifact": "/Users/kevinbrown/ontology/docs/tmf-apis/TMF638-Service_Inventory_Management-v5.0.0.oas.yaml"
+      },
+      "ontology_concept_id": "telco-service-inventory-order.service.start-mode",
+      "sid_references": [
+        {
+          "sheet": "service",
+          "row": 290,
+          "domain_or_abe": "Service Domain.Service ABE",
+          "entity": "Service",
+          "attribute": "startMode"
+        }
+      ],
+      "sid_status": "mapped",
+      "confidence": "high"
+    },
+    {
+      "tmf_api": "TMF638",
+      "resource": "Service",
+      "field": "serviceType",
+      "source_scope": "service_properties",
+      "source_pointer": "components.schemas.Service.allOf[1].properties.serviceType",
+      "source_trace": {
+        "found": true,
+        "line": 5634,
+        "artifact": "/Users/kevinbrown/ontology/docs/tmf-apis/TMF638-Service_Inventory_Management-v5.0.0.oas.yaml"
+      },
+      "ontology_concept_id": "telco-service-inventory-order.service.service-type",
+      "sid_references": [
+        {
+          "sheet": "service",
+          "row": 64,
+          "domain_or_abe": "Service Domain.Service Specification ABE",
+          "entity": "ServiceSpecificationType",
+          "attribute": "name"
+        }
+      ],
+      "sid_status": "mapped",
+      "confidence": "medium"
+    },
+    {
+      "tmf_api": "TMF638",
+      "resource": "Service",
+      "field": "state",
+      "source_scope": "service_properties",
+      "source_pointer": "components.schemas.Service.allOf[1].properties.state",
+      "source_trace": {
+        "found": true,
+        "line": 5705,
+        "artifact": "/Users/kevinbrown/ontology/docs/tmf-apis/TMF638-Service_Inventory_Management-v5.0.0.oas.yaml"
+      },
+      "ontology_concept_id": "telco-service-inventory-order.service.state",
+      "sid_references": [
+        {
+          "sheet": "service",
+          "row": 405,
+          "domain_or_abe": "Service ABE.Resource Facing Service ABE",
+          "entity": "ResourceFacingService",
+          "attribute": "rfsStatus"
+        }
+      ],
+      "sid_status": "mapped",
+      "confidence": "medium"
+    },
+    {
+      "tmf_api": "TMF638",
+      "resource": "Service",
+      "field": "serviceDate",
+      "source_scope": "service_properties",
+      "source_pointer": "components.schemas.Service.allOf[1].properties.serviceDate",
+      "source_trace": {
+        "found": true,
+        "line": 5713,
+        "artifact": "/Users/kevinbrown/ontology/docs/tmf-apis/TMF638-Service_Inventory_Management-v5.0.0.oas.yaml"
+      },
+      "ontology_concept_id": "telco-service-inventory-order.service.service-date",
+      "sid_references": [
+        {
+          "sheet": "service",
+          "row": 285,
+          "domain_or_abe": "Service Domain.Service ABE",
+          "entity": "Service",
+          "attribute": null
+        }
+      ],
+      "sid_status": "mapped",
+      "confidence": "low"
+    },
+    {
+      "tmf_api": "TMF638",
+      "resource": "Service",
+      "field": "serviceCharacteristic",
+      "source_scope": "service_properties",
+      "source_pointer": "components.schemas.Service.allOf[1].properties.serviceCharacteristic",
+      "source_trace": {
+        "found": true,
+        "line": 5663,
+        "artifact": "/Users/kevinbrown/ontology/docs/tmf-apis/TMF638-Service_Inventory_Management-v5.0.0.oas.yaml"
+      },
+      "ontology_concept_id": "telco-service-inventory-order.service.characteristic",
+      "sid_references": [
+        {
+          "sheet": "service",
+          "row": 294,
+          "domain_or_abe": "Service Domain.Service ABE",
+          "entity": "ServiceCharacteristicValue",
+          "attribute": null
+        },
+        {
+          "sheet": "service",
+          "row": 296,
+          "domain_or_abe": "Service Domain.Service ABE",
+          "entity": "ServiceCharacteristicValue",
+          "attribute": "value"
+        }
+      ],
+      "sid_status": "mapped",
+      "confidence": "high"
+    },
+    {
+      "tmf_api": "TMF638",
+      "resource": "Service",
+      "field": "serviceRelationship",
+      "source_scope": "service_properties",
+      "source_pointer": "components.schemas.Service.allOf[1].properties.serviceRelationship",
+      "source_trace": {
+        "found": true,
+        "line": 5670,
+        "artifact": "/Users/kevinbrown/ontology/docs/tmf-apis/TMF638-Service_Inventory_Management-v5.0.0.oas.yaml"
+      },
+      "ontology_concept_id": "telco-service-inventory-order.service.relationship",
+      "sid_references": [
+        {
+          "sheet": "service",
+          "row": 302,
+          "domain_or_abe": "Service Domain.Service ABE",
+          "entity": "ServiceRelationship",
+          "attribute": null
+        },
+        {
+          "sheet": "service",
+          "row": 303,
+          "domain_or_abe": "Service Domain.Service ABE",
+          "entity": "ServiceRelationship",
+          "attribute": "type"
+        }
+      ],
+      "sid_status": "mapped",
+      "confidence": "high"
+    },
+    {
+      "tmf_api": "TMF638",
+      "resource": "Service",
+      "field": "supportingService",
+      "source_scope": "service_properties",
+      "source_pointer": "components.schemas.Service.allOf[1].properties.supportingService",
+      "source_trace": {
+        "found": true,
+        "line": 5677,
+        "artifact": "/Users/kevinbrown/ontology/docs/tmf-apis/TMF638-Service_Inventory_Management-v5.0.0.oas.yaml"
+      },
+      "ontology_concept_id": "telco-service-inventory-order.service.supporting-service",
+      "sid_references": [
+        {
+          "sheet": "service",
+          "row": 285,
+          "domain_or_abe": "Service Domain.Service ABE",
+          "entity": "Service",
+          "attribute": null
+        }
+      ],
+      "sid_status": "mapped",
+      "confidence": "medium"
+    },
+    {
+      "tmf_api": "TMF638",
+      "resource": "Service",
+      "field": "supportingResource",
+      "source_scope": "service_properties",
+      "source_pointer": "components.schemas.Service.allOf[1].properties.supportingResource",
+      "source_trace": {
+        "found": true,
+        "line": 5684,
+        "artifact": "/Users/kevinbrown/ontology/docs/tmf-apis/TMF638-Service_Inventory_Management-v5.0.0.oas.yaml"
+      },
+      "ontology_concept_id": "telco-service-inventory-order.service.supporting-resource",
+      "sid_references": [
+        {
+          "sheet": "service",
+          "row": 404,
+          "domain_or_abe": "Service ABE.Resource Facing Service ABE",
+          "entity": "ResourceFacingService",
+          "attribute": null
+        }
+      ],
+      "sid_status": "mapped",
+      "confidence": "medium"
+    },
+    {
+      "tmf_api": "TMF638",
+      "resource": "Service",
+      "field": "relatedParty",
+      "source_scope": "service_properties",
+      "source_pointer": "components.schemas.Service.allOf[1].properties.relatedParty",
+      "source_trace": {
+        "found": true,
+        "line": 5691,
+        "artifact": "/Users/kevinbrown/ontology/docs/tmf-apis/TMF638-Service_Inventory_Management-v5.0.0.oas.yaml"
+      },
+      "ontology_concept_id": "telco-service-inventory-order.service.related-party",
+      "sid_references": [
+        {
+          "sheet": "service",
+          "row": 305,
+          "domain_or_abe": "Service Domain.Service ABE",
+          "entity": "ServiceRole",
+          "attribute": null
+        }
+      ],
+      "sid_status": "mapped",
+      "confidence": "medium"
+    },
+    {
+      "tmf_api": "TMF638",
+      "resource": "Service",
+      "field": "place",
+      "source_scope": "service_properties",
+      "source_pointer": "components.schemas.Service.allOf[1].properties.place",
+      "source_trace": {
+        "found": true,
+        "line": 5698,
+        "artifact": "/Users/kevinbrown/ontology/docs/tmf-apis/TMF638-Service_Inventory_Management-v5.0.0.oas.yaml"
+      },
+      "ontology_concept_id": "telco-service-inventory-order.service.place",
+      "sid_references": [
+        {
+          "sheet": "service",
+          "row": 297,
+          "domain_or_abe": "Service Domain.Service ABE",
+          "entity": "ServicePlaceDetails",
+          "attribute": null
+        }
+      ],
+      "sid_status": "mapped",
+      "confidence": "medium"
+    },
+    {
+      "tmf_api": "TMF638",
+      "resource": "Service",
+      "field": "serviceSpecification",
+      "source_scope": "service_properties",
+      "source_pointer": "components.schemas.Service.allOf[1].properties.serviceSpecification",
+      "source_trace": {
+        "found": true,
+        "line": 5711,
+        "artifact": "/Users/kevinbrown/ontology/docs/tmf-apis/TMF638-Service_Inventory_Management-v5.0.0.oas.yaml"
+      },
+      "ontology_concept_id": "telco-service-inventory-order.service.specification-ref",
+      "sid_references": [
+        {
+          "sheet": "service",
+          "row": 52,
+          "domain_or_abe": "Service Domain.Service Specification ABE",
+          "entity": "ServiceSpecification",
+          "attribute": null
+        },
+        {
+          "sheet": "service",
+          "row": 56,
+          "domain_or_abe": "Service Domain.Service Specification ABE",
+          "entity": "ServiceSpecification",
+          "attribute": "ID"
+        }
+      ],
+      "sid_status": "mapped",
+      "confidence": "high"
+    }
+  ]
+}

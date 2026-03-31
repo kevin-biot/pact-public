@@ -1,0 +1,24 @@
+{
+  "id": "tmf-resource-catalog-alarm-surface-demo-0.1.0",
+  "domain": "tmf-resource-catalog-alarm-surface-demo",
+  "version": "0.1.0",
+  "providerId": "ontology:lane2:tmf-resource-catalog-alarm-surface-demo",
+  "trustTier": "Tier1",
+  "policySnapshotId": "sha256:de93910b5a55669504e880f862be54015b611d8410d8cc16f5d3c3ec974f5116",
+  "files": {
+    "context": "sha256:9ce9b8c6cda7bcf318499066197949720ad442acfd63b2dac76394a64b667361",
+    "convergence": "sha256:1e19adde54b67ce1375d6ee8d950ea69250c535229d95931aaa2bf67ae0d4ff8",
+    "decision_space": "sha256:c9fba74f348459a4d3bfba65d69220ff141d19fcea56c85df0e1609dbee279c7",
+    "intent_mappings": "sha256:cf0d91142949198e25ac41c226fa134a93ed9c22c1df41e941837af8eeb29456",
+    "patterns": "sha256:d256ba0aa14e6c34e97446ed19a3c5aeb3f8955d5ddeddea0280fe0f49dc6016",
+    "shapes": "sha256:0d7ca29d9659338773d7bd60c42cf52d4a4b1de21bb85d8f82a819a72e3abd8c",
+    "thesaurus": "sha256:7addc72d9e3b372f61f47ce2446915a91c53f0a9c17cfdda31342a462d293287",
+    "thesaurus_local": "sha256:ba3f82939182947331d2c03c2dc38ecce29b2b3d4bb52ad6c02a4fad551374b8",
+    "vocab": "sha256:32615900809b8e5690f8876a808eb2fee7acf89a5bc0fc46aeeb17399b4cdc92"
+  },
+  "precedence": [],
+  "denyWins": true,
+  "nbf": "2026-03-31T00:00:00Z",
+  "exp": "2030-03-31T00:00:00Z",
+  "revEpoch": 1
+}

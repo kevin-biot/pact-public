@@ -1,0 +1,240 @@
+{
+  "schema_version": "1.0",
+  "domain": "tmf-intent-policy-bridge-surface-demo",
+  "patterns": [
+    {
+      "id": "tmf_tmf921_hub_createhub_intent",
+      "concept_uri": "tmf:intent/tmf921/hub.createhub",
+      "entity_type": "intent_hint",
+      "regex": "(?i)^createhub$",
+      "examples": [
+        "createhub"
+      ]
+    },
+    {
+      "id": "tmf_tmf921_hub_hubdelete_intent",
+      "concept_uri": "tmf:intent/tmf921/hub.hubdelete",
+      "entity_type": "intent_hint",
+      "regex": "(?i)^hubdelete$",
+      "examples": [
+        "hubdelete"
+      ]
+    },
+    {
+      "id": "tmf_tmf921_intent_createintent_intent",
+      "concept_uri": "tmf:intent/tmf921/intent.createintent",
+      "entity_type": "intent_hint",
+      "regex": "(?i)^createintent$",
+      "examples": [
+        "createintent"
+      ]
+    },
+    {
+      "id": "tmf_tmf921_intent_deleteintent_intent",
+      "concept_uri": "tmf:intent/tmf921/intent.deleteintent",
+      "entity_type": "intent_hint",
+      "regex": "(?i)^deleteintent$",
+      "examples": [
+        "deleteintent"
+      ]
+    },
+    {
+      "id": "tmf_tmf921_intent_deleteintentintentreport_intent",
+      "concept_uri": "tmf:intent/tmf921/intent.deleteintentintentreport",
+      "entity_type": "intent_hint",
+      "regex": "(?i)^deleteintentintentreport$",
+      "examples": [
+        "deleteintentintentreport"
+      ]
+    },
+    {
+      "id": "tmf_tmf921_intent_listintent_intent",
+      "concept_uri": "tmf:intent/tmf921/intent.listintent",
+      "entity_type": "intent_hint",
+      "regex": "(?i)^listintent$",
+      "examples": [
+        "listintent"
+      ]
+    },
+    {
+      "id": "tmf_tmf921_intent_listintentintentreport_intent",
+      "concept_uri": "tmf:intent/tmf921/intent.listintentintentreport",
+      "entity_type": "intent_hint",
+      "regex": "(?i)^listintentintentreport$",
+      "examples": [
+        "listintentintentreport"
+      ]
+    },
+    {
+      "id": "tmf_tmf921_intent_patchintent_intent",
+      "concept_uri": "tmf:intent/tmf921/intent.patchintent",
+      "entity_type": "intent_hint",
+      "regex": "(?i)^patchintent$",
+      "examples": [
+        "patchintent"
+      ]
+    },
+    {
+      "id": "tmf_tmf921_intent_retrieveintent_intent",
+      "concept_uri": "tmf:intent/tmf921/intent.retrieveintent",
+      "entity_type": "intent_hint",
+      "regex": "(?i)^retrieveintent$",
+      "examples": [
+        "retrieveintent"
+      ]
+    },
+    {
+      "id": "tmf_tmf921_intent_retrieveintentintentreport_intent",
+      "concept_uri": "tmf:intent/tmf921/intent.retrieveintentintentreport",
+      "entity_type": "intent_hint",
+      "regex": "(?i)^retrieveintentintentreport$",
+      "examples": [
+        "retrieveintentintentreport"
+      ]
+    },
+    {
+      "id": "tmf_tmf921_intentspecification_createintentspecification_intent",
+      "concept_uri": "tmf:intent/tmf921/intentspecification.createintentspecification",
+      "entity_type": "intent_hint",
+      "regex": "(?i)^createintentspecification$",
+      "examples": [
+        "createintentspecification"
+      ]
+    },
+    {
+      "id": "tmf_tmf921_intentspecification_deleteintentspecification_intent",
+      "concept_uri": "tmf:intent/tmf921/intentspecification.deleteintentspecification",
+      "entity_type": "intent_hint",
+      "regex": "(?i)^deleteintentspecification$",
+      "examples": [
+        "deleteintentspecification"
+      ]
+    },
+    {
+      "id": "tmf_tmf921_intentspecification_listintentspecification_intent",
+      "concept_uri": "tmf:intent/tmf921/intentspecification.listintentspecification",
+      "entity_type": "intent_hint",
+      "regex": "(?i)^listintentspecification$",
+      "examples": [
+        "listintentspecification"
+      ]
+    },
+    {
+      "id": "tmf_tmf921_intentspecification_patchintentspecification_intent",
+      "concept_uri": "tmf:intent/tmf921/intentspecification.patchintentspecification",
+      "entity_type": "intent_hint",
+      "regex": "(?i)^patchintentspecification$",
+      "examples": [
+        "patchintentspecification"
+      ]
+    },
+    {
+      "id": "tmf_tmf921_intentspecification_retrieveintentspecification_intent",
+      "concept_uri": "tmf:intent/tmf921/intentspecification.retrieveintentspecification",
+      "entity_type": "intent_hint",
+      "regex": "(?i)^retrieveintentspecification$",
+      "examples": [
+        "retrieveintentspecification"
+      ]
+    },
+    {
+      "id": "tmf_tmf921_listener_intentattributevaluechangeevent_intent",
+      "concept_uri": "tmf:intent/tmf921/listener.intentattributevaluechangeevent",
+      "entity_type": "intent_hint",
+      "regex": "(?i)^intentattributevaluechangeevent\\ listener$",
+      "examples": [
+        "intentattributevaluechangeevent listener"
+      ]
+    },
+    {
+      "id": "tmf_tmf921_listener_intentcreateevent_intent",
+      "concept_uri": "tmf:intent/tmf921/listener.intentcreateevent",
+      "entity_type": "intent_hint",
+      "regex": "(?i)^intentcreateevent\\ listener$",
+      "examples": [
+        "intentcreateevent listener"
+      ]
+    },
+    {
+      "id": "tmf_tmf921_listener_intentdeleteevent_intent",
+      "concept_uri": "tmf:intent/tmf921/listener.intentdeleteevent",
+      "entity_type": "intent_hint",
+      "regex": "(?i)^intentdeleteevent\\ listener$",
+      "examples": [
+        "intentdeleteevent listener"
+      ]
+    },
+    {
+      "id": "tmf_tmf921_listener_intentreportattributevaluechangeevent_intent",
+      "concept_uri": "tmf:intent/tmf921/listener.intentreportattributevaluechangeevent",
+      "entity_type": "intent_hint",
+      "regex": "(?i)^intentreportattributevaluechangeevent\\ listener$",
+      "examples": [
+        "intentreportattributevaluechangeevent listener"
+      ]
+    },
+    {
+      "id": "tmf_tmf921_listener_intentreportcreateevent_intent",
+      "concept_uri": "tmf:intent/tmf921/listener.intentreportcreateevent",
+      "entity_type": "intent_hint",
+      "regex": "(?i)^intentreportcreateevent\\ listener$",
+      "examples": [
+        "intentreportcreateevent listener"
+      ]
+    },
+    {
+      "id": "tmf_tmf921_listener_intentreportdeleteevent_intent",
+      "concept_uri": "tmf:intent/tmf921/listener.intentreportdeleteevent",
+      "entity_type": "intent_hint",
+      "regex": "(?i)^intentreportdeleteevent\\ listener$",
+      "examples": [
+        "intentreportdeleteevent listener"
+      ]
+    },
+    {
+      "id": "tmf_tmf921_listener_intentspecificationattributevaluechangeevent_intent",
+      "concept_uri": "tmf:intent/tmf921/listener.intentspecificationattributevaluechangeevent",
+      "entity_type": "intent_hint",
+      "regex": "(?i)^intentspecificationattributevaluechangeevent\\ listener$",
+      "examples": [
+        "intentspecificationattributevaluechangeevent listener"
+      ]
+    },
+    {
+      "id": "tmf_tmf921_listener_intentspecificationcreateevent_intent",
+      "concept_uri": "tmf:intent/tmf921/listener.intentspecificationcreateevent",
+      "entity_type": "intent_hint",
+      "regex": "(?i)^intentspecificationcreateevent\\ listener$",
+      "examples": [
+        "intentspecificationcreateevent listener"
+      ]
+    },
+    {
+      "id": "tmf_tmf921_listener_intentspecificationdeleteevent_intent",
+      "concept_uri": "tmf:intent/tmf921/listener.intentspecificationdeleteevent",
+      "entity_type": "intent_hint",
+      "regex": "(?i)^intentspecificationdeleteevent\\ listener$",
+      "examples": [
+        "intentspecificationdeleteevent listener"
+      ]
+    },
+    {
+      "id": "tmf_tmf921_listener_intentspecificationstatuschangeevent_intent",
+      "concept_uri": "tmf:intent/tmf921/listener.intentspecificationstatuschangeevent",
+      "entity_type": "intent_hint",
+      "regex": "(?i)^intentspecificationstatuschangeevent\\ listener$",
+      "examples": [
+        "intentspecificationstatuschangeevent listener"
+      ]
+    },
+    {
+      "id": "tmf_tmf921_listener_intentstatuschangeevent_intent",
+      "concept_uri": "tmf:intent/tmf921/listener.intentstatuschangeevent",
+      "entity_type": "intent_hint",
+      "regex": "(?i)^intentstatuschangeevent\\ listener$",
+      "examples": [
+        "intentstatuschangeevent listener"
+      ]
+    }
+  ]
+}

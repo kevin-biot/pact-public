@@ -1,0 +1,166 @@
+{
+  "schema_version": "1.0",
+  "domain": "tmf-intent-policy-bridge-surface-demo",
+  "thresholds": {
+    "overall_min_pass_rate": 1,
+    "require_critical_pass": true
+  },
+  "cases": [
+    {
+      "id": "tmf_case_001",
+      "phrase": "createhub",
+      "expect": "tmf.tmf921.hub.createhub.v1",
+      "critical": true
+    },
+    {
+      "id": "tmf_case_002",
+      "phrase": "hubdelete",
+      "expect": "tmf.tmf921.hub.hubdelete.v1",
+      "critical": true
+    },
+    {
+      "id": "tmf_case_003",
+      "phrase": "createintent",
+      "expect": "tmf.tmf921.intent.createintent.v1",
+      "critical": true
+    },
+    {
+      "id": "tmf_case_004",
+      "phrase": "deleteintent",
+      "expect": "tmf.tmf921.intent.deleteintent.v1",
+      "critical": true
+    },
+    {
+      "id": "tmf_case_005",
+      "phrase": "deleteintentintentreport",
+      "expect": "tmf.tmf921.intent.deleteintentintentreport.v1",
+      "critical": true
+    },
+    {
+      "id": "tmf_case_006",
+      "phrase": "listintent",
+      "expect": "tmf.tmf921.intent.listintent.v1",
+      "critical": true
+    },
+    {
+      "id": "tmf_case_007",
+      "phrase": "listintentintentreport",
+      "expect": "tmf.tmf921.intent.listintentintentreport.v1",
+      "critical": true
+    },
+    {
+      "id": "tmf_case_008",
+      "phrase": "patchintent",
+      "expect": "tmf.tmf921.intent.patchintent.v1",
+      "critical": true
+    },
+    {
+      "id": "tmf_case_009",
+      "phrase": "retrieveintent",
+      "expect": "tmf.tmf921.intent.retrieveintent.v1",
+      "critical": true
+    },
+    {
+      "id": "tmf_case_010",
+      "phrase": "retrieveintentintentreport",
+      "expect": "tmf.tmf921.intent.retrieveintentintentreport.v1",
+      "critical": true
+    },
+    {
+      "id": "tmf_case_011",
+      "phrase": "createintentspecification",
+      "expect": "tmf.tmf921.intentspecification.createintentspecification.v1",
+      "critical": true
+    },
+    {
+      "id": "tmf_case_012",
+      "phrase": "deleteintentspecification",
+      "expect": "tmf.tmf921.intentspecification.deleteintentspecification.v1",
+      "critical": true
+    },
+    {
+      "id": "tmf_case_013",
+      "phrase": "listintentspecification",
+      "expect": "tmf.tmf921.intentspecification.listintentspecification.v1",
+      "critical": true
+    },
+    {
+      "id": "tmf_case_014",
+      "phrase": "patchintentspecification",
+      "expect": "tmf.tmf921.intentspecification.patchintentspecification.v1",
+      "critical": true
+    },
+    {
+      "id": "tmf_case_015",
+      "phrase": "retrieveintentspecification",
+      "expect": "tmf.tmf921.intentspecification.retrieveintentspecification.v1",
+      "critical": true
+    },
+    {
+      "id": "tmf_case_016",
+      "phrase": "intentattributevaluechangeevent listener",
+      "expect": "tmf.tmf921.listener.intentattributevaluechangeevent.v1",
+      "critical": true
+    },
+    {
+      "id": "tmf_case_017",
+      "phrase": "intentcreateevent listener",
+      "expect": "tmf.tmf921.listener.intentcreateevent.v1",
+      "critical": true
+    },
+    {
+      "id": "tmf_case_018",
+      "phrase": "intentdeleteevent listener",
+      "expect": "tmf.tmf921.listener.intentdeleteevent.v1",
+      "critical": true
+    },
+    {
+      "id": "tmf_case_019",
+      "phrase": "intentreportattributevaluechangeevent listener",
+      "expect": "tmf.tmf921.listener.intentreportattributevaluechangeevent.v1",
+      "critical": true
+    },
+    {
+      "id": "tmf_case_020",
+      "phrase": "intentreportcreateevent listener",
+      "expect": "tmf.tmf921.listener.intentreportcreateevent.v1",
+      "critical": true
+    },
+    {
+      "id": "tmf_case_021",
+      "phrase": "intentreportdeleteevent listener",
+      "expect": "tmf.tmf921.listener.intentreportdeleteevent.v1",
+      "critical": true
+    },
+    {
+      "id": "tmf_case_022",
+      "phrase": "intentspecificationattributevaluechangeevent listener",
+      "expect": "tmf.tmf921.listener.intentspecificationattributevaluechangeevent.v1",
+      "critical": true
+    },
+    {
+      "id": "tmf_case_023",
+      "phrase": "intentspecificationcreateevent listener",
+      "expect": "tmf.tmf921.listener.intentspecificationcreateevent.v1",
+      "critical": true
+    },
+    {
+      "id": "tmf_case_024",
+      "phrase": "intentspecificationdeleteevent listener",
+      "expect": "tmf.tmf921.listener.intentspecificationdeleteevent.v1",
+      "critical": true
+    },
+    {
+      "id": "tmf_case_025",
+      "phrase": "intentspecificationstatuschangeevent listener",
+      "expect": "tmf.tmf921.listener.intentspecificationstatuschangeevent.v1",
+      "critical": true
+    },
+    {
+      "id": "tmf_case_026",
+      "phrase": "intentstatuschangeevent listener",
+      "expect": "tmf.tmf921.listener.intentstatuschangeevent.v1",
+      "critical": true
+    }
+  ]
+}

@@ -1,0 +1,934 @@
+{
+  "@context": {
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "tmf": "https://lane2.example/ontology/tmf/",
+    "dct": "http://purl.org/dc/terms/",
+    "source": "dct:source"
+  },
+  "@graph": [
+    {
+      "@id": "tmf:intent/tmf638/hub.createhub",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "createhub",
+      "skos:altLabel": [
+        "POST /hub",
+        "tmf.tmf638.hub.createhub.v1"
+      ],
+      "skos:broader": "tmf:resource/hub",
+      "source": [
+        "TM Forum Open APIs",
+        "TMF638"
+      ]
+    },
+    {
+      "@id": "tmf:intent/tmf638/hub.hubdelete",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "hubdelete",
+      "skos:altLabel": [
+        "DELETE /hub/{id}",
+        "tmf.tmf638.hub.hubdelete.v1"
+      ],
+      "skos:broader": "tmf:resource/hub",
+      "source": [
+        "TM Forum Open APIs",
+        "TMF638"
+      ]
+    },
+    {
+      "@id": "tmf:intent/tmf638/listener.serviceattributevaluechangeevent",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "serviceattributevaluechangeevent listener",
+      "skos:altLabel": [
+        "POST /listener/serviceAttributeValueChangeEvent",
+        "tmf.tmf638.listener.serviceattributevaluechangeevent.v1"
+      ],
+      "skos:broader": "tmf:resource/listener",
+      "source": [
+        "TM Forum Open APIs",
+        "TMF638"
+      ]
+    },
+    {
+      "@id": "tmf:intent/tmf638/listener.servicecreateevent",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "servicecreateevent listener",
+      "skos:altLabel": [
+        "POST /listener/serviceCreateEvent",
+        "tmf.tmf638.listener.servicecreateevent.v1"
+      ],
+      "skos:broader": "tmf:resource/listener",
+      "source": [
+        "TM Forum Open APIs",
+        "TMF638"
+      ]
+    },
+    {
+      "@id": "tmf:intent/tmf638/listener.servicedeleteevent",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "servicedeleteevent listener",
+      "skos:altLabel": [
+        "POST /listener/serviceDeleteEvent",
+        "tmf.tmf638.listener.servicedeleteevent.v1"
+      ],
+      "skos:broader": "tmf:resource/listener",
+      "source": [
+        "TM Forum Open APIs",
+        "TMF638"
+      ]
+    },
+    {
+      "@id": "tmf:intent/tmf638/listener.serviceoperatingstatuschangeevent",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "serviceoperatingstatuschangeevent listener",
+      "skos:altLabel": [
+        "POST /listener/serviceOperatingStatusChangeEvent",
+        "tmf.tmf638.listener.serviceoperatingstatuschangeevent.v1"
+      ],
+      "skos:broader": "tmf:resource/listener",
+      "source": [
+        "TM Forum Open APIs",
+        "TMF638"
+      ]
+    },
+    {
+      "@id": "tmf:intent/tmf638/listener.servicestatechangeevent",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "servicestatechangeevent listener",
+      "skos:altLabel": [
+        "POST /listener/serviceStateChangeEvent",
+        "tmf.tmf638.listener.servicestatechangeevent.v1"
+      ],
+      "skos:broader": "tmf:resource/listener",
+      "source": [
+        "TM Forum Open APIs",
+        "TMF638"
+      ]
+    },
+    {
+      "@id": "tmf:intent/tmf638/service.createservice",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "createservice",
+      "skos:altLabel": [
+        "POST /service",
+        "tmf.tmf638.service.createservice.v1"
+      ],
+      "skos:broader": "tmf:resource/service",
+      "source": [
+        "TM Forum Open APIs",
+        "TMF638"
+      ]
+    },
+    {
+      "@id": "tmf:intent/tmf638/service.deleteservice",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "deleteservice",
+      "skos:altLabel": [
+        "DELETE /service/{id}",
+        "tmf.tmf638.service.deleteservice.v1"
+      ],
+      "skos:broader": "tmf:resource/service",
+      "source": [
+        "TM Forum Open APIs",
+        "TMF638"
+      ]
+    },
+    {
+      "@id": "tmf:intent/tmf638/service.listservice",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "listservice",
+      "skos:altLabel": [
+        "GET /service",
+        "tmf.tmf638.service.listservice.v1"
+      ],
+      "skos:broader": "tmf:resource/service",
+      "source": [
+        "TM Forum Open APIs",
+        "TMF638"
+      ]
+    },
+    {
+      "@id": "tmf:intent/tmf638/service.patchservice",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "patchservice",
+      "skos:altLabel": [
+        "PATCH /service/{id}",
+        "tmf.tmf638.service.patchservice.v1"
+      ],
+      "skos:broader": "tmf:resource/service",
+      "source": [
+        "TM Forum Open APIs",
+        "TMF638"
+      ]
+    },
+    {
+      "@id": "tmf:intent/tmf638/service.retrieveservice",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "retrieveservice",
+      "skos:altLabel": [
+        "GET /service/{id}",
+        "tmf.tmf638.service.retrieveservice.v1"
+      ],
+      "skos:broader": "tmf:resource/service",
+      "source": [
+        "TM Forum Open APIs",
+        "TMF638"
+      ]
+    },
+    {
+      "@id": "tmf:intent/tmf640/hub.registerlistener",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "registerlistener hub",
+      "skos:altLabel": [
+        "POST /hub",
+        "tmf.tmf640.hub.registerlistener.v1"
+      ],
+      "skos:broader": "tmf:resource/hub",
+      "source": [
+        "TM Forum Open APIs",
+        "TMF640"
+      ]
+    },
+    {
+      "@id": "tmf:intent/tmf640/hub.unregisterlistener",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "unregisterlistener hub",
+      "skos:altLabel": [
+        "DELETE /hub/{id}",
+        "tmf.tmf640.hub.unregisterlistener.v1"
+      ],
+      "skos:broader": "tmf:resource/hub",
+      "source": [
+        "TM Forum Open APIs",
+        "TMF640"
+      ]
+    },
+    {
+      "@id": "tmf:intent/tmf640/listener.listentomonitorattributevaluechangeevent",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "listentomonitorattributevaluechangeevent listener",
+      "skos:altLabel": [
+        "POST /listener/monitorAttributeValueChangeEvent",
+        "tmf.tmf640.listener.listentomonitorattributevaluechangeevent.v1"
+      ],
+      "skos:broader": "tmf:resource/listener",
+      "source": [
+        "TM Forum Open APIs",
+        "TMF640"
+      ]
+    },
+    {
+      "@id": "tmf:intent/tmf640/listener.listentomonitorcreateevent",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "listentomonitorcreateevent listener",
+      "skos:altLabel": [
+        "POST /listener/monitorCreateEvent",
+        "tmf.tmf640.listener.listentomonitorcreateevent.v1"
+      ],
+      "skos:broader": "tmf:resource/listener",
+      "source": [
+        "TM Forum Open APIs",
+        "TMF640"
+      ]
+    },
+    {
+      "@id": "tmf:intent/tmf640/listener.listentomonitordeleteevent",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "listentomonitordeleteevent listener",
+      "skos:altLabel": [
+        "POST /listener/monitorDeleteEvent",
+        "tmf.tmf640.listener.listentomonitordeleteevent.v1"
+      ],
+      "skos:broader": "tmf:resource/listener",
+      "source": [
+        "TM Forum Open APIs",
+        "TMF640"
+      ]
+    },
+    {
+      "@id": "tmf:intent/tmf640/listener.listentomonitorstatechangeevent",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "listentomonitorstatechangeevent listener",
+      "skos:altLabel": [
+        "POST /listener/monitorStateChangeEvent",
+        "tmf.tmf640.listener.listentomonitorstatechangeevent.v1"
+      ],
+      "skos:broader": "tmf:resource/listener",
+      "source": [
+        "TM Forum Open APIs",
+        "TMF640"
+      ]
+    },
+    {
+      "@id": "tmf:intent/tmf640/listener.listentoserviceattributevaluechangeevent",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "listentoserviceattributevaluechangeevent listener",
+      "skos:altLabel": [
+        "POST /listener/serviceAttributeValueChangeEvent",
+        "tmf.tmf640.listener.listentoserviceattributevaluechangeevent.v1"
+      ],
+      "skos:broader": "tmf:resource/listener",
+      "source": [
+        "TM Forum Open APIs",
+        "TMF640"
+      ]
+    },
+    {
+      "@id": "tmf:intent/tmf640/listener.listentoservicecreateevent",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "listentoservicecreateevent listener",
+      "skos:altLabel": [
+        "POST /listener/serviceCreateEvent",
+        "tmf.tmf640.listener.listentoservicecreateevent.v1"
+      ],
+      "skos:broader": "tmf:resource/listener",
+      "source": [
+        "TM Forum Open APIs",
+        "TMF640"
+      ]
+    },
+    {
+      "@id": "tmf:intent/tmf640/listener.listentoservicedeleteevent",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "listentoservicedeleteevent listener",
+      "skos:altLabel": [
+        "POST /listener/serviceDeleteEvent",
+        "tmf.tmf640.listener.listentoservicedeleteevent.v1"
+      ],
+      "skos:broader": "tmf:resource/listener",
+      "source": [
+        "TM Forum Open APIs",
+        "TMF640"
+      ]
+    },
+    {
+      "@id": "tmf:intent/tmf640/listener.listentoservicestatechangeevent",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "listentoservicestatechangeevent listener",
+      "skos:altLabel": [
+        "POST /listener/serviceStateChangeEvent",
+        "tmf.tmf640.listener.listentoservicestatechangeevent.v1"
+      ],
+      "skos:broader": "tmf:resource/listener",
+      "source": [
+        "TM Forum Open APIs",
+        "TMF640"
+      ]
+    },
+    {
+      "@id": "tmf:intent/tmf640/monitor.listmonitor",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "listmonitor",
+      "skos:altLabel": [
+        "GET /monitor",
+        "tmf.tmf640.monitor.listmonitor.v1"
+      ],
+      "skos:broader": "tmf:resource/monitor",
+      "source": [
+        "TM Forum Open APIs",
+        "TMF640"
+      ]
+    },
+    {
+      "@id": "tmf:intent/tmf640/monitor.retrievemonitor",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "retrievemonitor",
+      "skos:altLabel": [
+        "GET /monitor/{id}",
+        "tmf.tmf640.monitor.retrievemonitor.v1"
+      ],
+      "skos:broader": "tmf:resource/monitor",
+      "source": [
+        "TM Forum Open APIs",
+        "TMF640"
+      ]
+    },
+    {
+      "@id": "tmf:intent/tmf640/service.createservice",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "createservice",
+      "skos:altLabel": [
+        "POST /service",
+        "tmf.tmf640.service.createservice.v1"
+      ],
+      "skos:broader": "tmf:resource/service",
+      "source": [
+        "TM Forum Open APIs",
+        "TMF640"
+      ]
+    },
+    {
+      "@id": "tmf:intent/tmf640/service.deleteservice",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "deleteservice",
+      "skos:altLabel": [
+        "DELETE /service/{id}",
+        "tmf.tmf640.service.deleteservice.v1"
+      ],
+      "skos:broader": "tmf:resource/service",
+      "source": [
+        "TM Forum Open APIs",
+        "TMF640"
+      ]
+    },
+    {
+      "@id": "tmf:intent/tmf640/service.listservice",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "listservice",
+      "skos:altLabel": [
+        "GET /service",
+        "tmf.tmf640.service.listservice.v1"
+      ],
+      "skos:broader": "tmf:resource/service",
+      "source": [
+        "TM Forum Open APIs",
+        "TMF640"
+      ]
+    },
+    {
+      "@id": "tmf:intent/tmf640/service.patchservice",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "patchservice",
+      "skos:altLabel": [
+        "PATCH /service/{id}",
+        "tmf.tmf640.service.patchservice.v1"
+      ],
+      "skos:broader": "tmf:resource/service",
+      "source": [
+        "TM Forum Open APIs",
+        "TMF640"
+      ]
+    },
+    {
+      "@id": "tmf:intent/tmf640/service.retrieveservice",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "retrieveservice",
+      "skos:altLabel": [
+        "GET /service/{id}",
+        "tmf.tmf640.service.retrieveservice.v1"
+      ],
+      "skos:broader": "tmf:resource/service",
+      "source": [
+        "TM Forum Open APIs",
+        "TMF640"
+      ]
+    },
+    {
+      "@id": "tmf:intent/tmf641/cancelserviceorder.createcancelserviceorder",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "createcancelserviceorder",
+      "skos:altLabel": [
+        "POST /cancelServiceOrder",
+        "tmf.tmf641.cancelserviceorder.createcancelserviceorder.v1"
+      ],
+      "skos:broader": "tmf:resource/cancelserviceorder",
+      "source": [
+        "TM Forum Open APIs",
+        "TMF641"
+      ]
+    },
+    {
+      "@id": "tmf:intent/tmf641/cancelserviceorder.listcancelserviceorder",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "listcancelserviceorder",
+      "skos:altLabel": [
+        "GET /cancelServiceOrder",
+        "tmf.tmf641.cancelserviceorder.listcancelserviceorder.v1"
+      ],
+      "skos:broader": "tmf:resource/cancelserviceorder",
+      "source": [
+        "TM Forum Open APIs",
+        "TMF641"
+      ]
+    },
+    {
+      "@id": "tmf:intent/tmf641/cancelserviceorder.retrievecancelserviceorder",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "retrievecancelserviceorder",
+      "skos:altLabel": [
+        "GET /cancelServiceOrder/{id}",
+        "tmf.tmf641.cancelserviceorder.retrievecancelserviceorder.v1"
+      ],
+      "skos:broader": "tmf:resource/cancelserviceorder",
+      "source": [
+        "TM Forum Open APIs",
+        "TMF641"
+      ]
+    },
+    {
+      "@id": "tmf:intent/tmf641/hub.registerlistener",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "registerlistener hub",
+      "skos:altLabel": [
+        "POST /hub",
+        "tmf.tmf641.hub.registerlistener.v1"
+      ],
+      "skos:broader": "tmf:resource/hub",
+      "source": [
+        "TM Forum Open APIs",
+        "TMF641"
+      ]
+    },
+    {
+      "@id": "tmf:intent/tmf641/hub.unregisterlistener",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "unregisterlistener hub",
+      "skos:altLabel": [
+        "DELETE /hub/{id}",
+        "tmf.tmf641.hub.unregisterlistener.v1"
+      ],
+      "skos:broader": "tmf:resource/hub",
+      "source": [
+        "TM Forum Open APIs",
+        "TMF641"
+      ]
+    },
+    {
+      "@id": "tmf:intent/tmf641/listener.listentocancelserviceordercreateevent",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "listentocancelserviceordercreateevent listener",
+      "skos:altLabel": [
+        "POST /listener/cancelServiceOrderCreateEvent",
+        "tmf.tmf641.listener.listentocancelserviceordercreateevent.v1"
+      ],
+      "skos:broader": "tmf:resource/listener",
+      "source": [
+        "TM Forum Open APIs",
+        "TMF641"
+      ]
+    },
+    {
+      "@id": "tmf:intent/tmf641/listener.listentocancelserviceorderinformationrequiredevent",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "listentocancelserviceorderinformationrequiredevent listener",
+      "skos:altLabel": [
+        "POST /listener/cancelServiceOrderInformationRequiredEvent",
+        "tmf.tmf641.listener.listentocancelserviceorderinformationrequiredevent.v1"
+      ],
+      "skos:broader": "tmf:resource/listener",
+      "source": [
+        "TM Forum Open APIs",
+        "TMF641"
+      ]
+    },
+    {
+      "@id": "tmf:intent/tmf641/listener.listentocancelserviceorderstatechangeevent",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "listentocancelserviceorderstatechangeevent listener",
+      "skos:altLabel": [
+        "POST /listener/cancelServiceOrderStateChangeEvent",
+        "tmf.tmf641.listener.listentocancelserviceorderstatechangeevent.v1"
+      ],
+      "skos:broader": "tmf:resource/listener",
+      "source": [
+        "TM Forum Open APIs",
+        "TMF641"
+      ]
+    },
+    {
+      "@id": "tmf:intent/tmf641/listener.listentoserviceorderattributevaluechangeevent",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "listentoserviceorderattributevaluechangeevent listener",
+      "skos:altLabel": [
+        "POST /listener/serviceOrderAttributeValueChangeEvent",
+        "tmf.tmf641.listener.listentoserviceorderattributevaluechangeevent.v1"
+      ],
+      "skos:broader": "tmf:resource/listener",
+      "source": [
+        "TM Forum Open APIs",
+        "TMF641"
+      ]
+    },
+    {
+      "@id": "tmf:intent/tmf641/listener.listentoserviceordercreateevent",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "listentoserviceordercreateevent listener",
+      "skos:altLabel": [
+        "POST /listener/serviceOrderCreateEvent",
+        "tmf.tmf641.listener.listentoserviceordercreateevent.v1"
+      ],
+      "skos:broader": "tmf:resource/listener",
+      "source": [
+        "TM Forum Open APIs",
+        "TMF641"
+      ]
+    },
+    {
+      "@id": "tmf:intent/tmf641/listener.listentoserviceorderdeleteevent",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "listentoserviceorderdeleteevent listener",
+      "skos:altLabel": [
+        "POST /listener/serviceOrderDeleteEvent",
+        "tmf.tmf641.listener.listentoserviceorderdeleteevent.v1"
+      ],
+      "skos:broader": "tmf:resource/listener",
+      "source": [
+        "TM Forum Open APIs",
+        "TMF641"
+      ]
+    },
+    {
+      "@id": "tmf:intent/tmf641/listener.listentoserviceorderinformationrequiredevent",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "listentoserviceorderinformationrequiredevent listener",
+      "skos:altLabel": [
+        "POST /listener/serviceOrderInformationRequiredEvent",
+        "tmf.tmf641.listener.listentoserviceorderinformationrequiredevent.v1"
+      ],
+      "skos:broader": "tmf:resource/listener",
+      "source": [
+        "TM Forum Open APIs",
+        "TMF641"
+      ]
+    },
+    {
+      "@id": "tmf:intent/tmf641/listener.listentoserviceorderjeopardyevent",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "listentoserviceorderjeopardyevent listener",
+      "skos:altLabel": [
+        "POST /listener/serviceOrderJeopardyEvent",
+        "tmf.tmf641.listener.listentoserviceorderjeopardyevent.v1"
+      ],
+      "skos:broader": "tmf:resource/listener",
+      "source": [
+        "TM Forum Open APIs",
+        "TMF641"
+      ]
+    },
+    {
+      "@id": "tmf:intent/tmf641/listener.listentoserviceordermilestoneevent",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "listentoserviceordermilestoneevent listener",
+      "skos:altLabel": [
+        "POST /listener/serviceOrderMilestoneEvent",
+        "tmf.tmf641.listener.listentoserviceordermilestoneevent.v1"
+      ],
+      "skos:broader": "tmf:resource/listener",
+      "source": [
+        "TM Forum Open APIs",
+        "TMF641"
+      ]
+    },
+    {
+      "@id": "tmf:intent/tmf641/listener.listentoserviceorderstatechangeevent",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "listentoserviceorderstatechangeevent listener",
+      "skos:altLabel": [
+        "POST /listener/serviceOrderStateChangeEvent",
+        "tmf.tmf641.listener.listentoserviceorderstatechangeevent.v1"
+      ],
+      "skos:broader": "tmf:resource/listener",
+      "source": [
+        "TM Forum Open APIs",
+        "TMF641"
+      ]
+    },
+    {
+      "@id": "tmf:intent/tmf641/serviceorder.createserviceorder",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "createserviceorder",
+      "skos:altLabel": [
+        "POST /serviceOrder",
+        "tmf.tmf641.serviceorder.createserviceorder.v1"
+      ],
+      "skos:broader": "tmf:resource/serviceorder",
+      "source": [
+        "TM Forum Open APIs",
+        "TMF641"
+      ]
+    },
+    {
+      "@id": "tmf:intent/tmf641/serviceorder.deleteserviceorder",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "deleteserviceorder",
+      "skos:altLabel": [
+        "DELETE /serviceOrder/{id}",
+        "tmf.tmf641.serviceorder.deleteserviceorder.v1"
+      ],
+      "skos:broader": "tmf:resource/serviceorder",
+      "source": [
+        "TM Forum Open APIs",
+        "TMF641"
+      ]
+    },
+    {
+      "@id": "tmf:intent/tmf641/serviceorder.listserviceorder",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "listserviceorder",
+      "skos:altLabel": [
+        "GET /serviceOrder",
+        "tmf.tmf641.serviceorder.listserviceorder.v1"
+      ],
+      "skos:broader": "tmf:resource/serviceorder",
+      "source": [
+        "TM Forum Open APIs",
+        "TMF641"
+      ]
+    },
+    {
+      "@id": "tmf:intent/tmf641/serviceorder.patchserviceorder",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "patchserviceorder",
+      "skos:altLabel": [
+        "PATCH /serviceOrder/{id}",
+        "tmf.tmf641.serviceorder.patchserviceorder.v1"
+      ],
+      "skos:broader": "tmf:resource/serviceorder",
+      "source": [
+        "TM Forum Open APIs",
+        "TMF641"
+      ]
+    },
+    {
+      "@id": "tmf:intent/tmf641/serviceorder.retrieveserviceorder",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "retrieveserviceorder",
+      "skos:altLabel": [
+        "GET /serviceOrder/{id}",
+        "tmf.tmf641.serviceorder.retrieveserviceorder.v1"
+      ],
+      "skos:broader": "tmf:resource/serviceorder",
+      "source": [
+        "TM Forum Open APIs",
+        "TMF641"
+      ]
+    },
+    {
+      "@id": "tmf:intent/tmf924/hub.registerlistener",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "registerlistener hub",
+      "skos:altLabel": [
+        "POST /hub",
+        "tmf.tmf924.hub.registerlistener.v1"
+      ],
+      "skos:broader": "tmf:resource/hub",
+      "source": [
+        "TM Forum Open APIs",
+        "TMF924"
+      ]
+    },
+    {
+      "@id": "tmf:intent/tmf924/hub.unregisterlistener",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "unregisterlistener hub",
+      "skos:altLabel": [
+        "DELETE /hub/{id}",
+        "tmf.tmf924.hub.unregisterlistener.v1"
+      ],
+      "skos:broader": "tmf:resource/hub",
+      "source": [
+        "TM Forum Open APIs",
+        "TMF924"
+      ]
+    },
+    {
+      "@id": "tmf:intent/tmf924/listener.listentomonitorattributevaluechangeevent",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "listentomonitorattributevaluechangeevent listener",
+      "skos:altLabel": [
+        "POST /listener/monitorAttributeValueChangeEvent",
+        "tmf.tmf924.listener.listentomonitorattributevaluechangeevent.v1"
+      ],
+      "skos:broader": "tmf:resource/listener",
+      "source": [
+        "TM Forum Open APIs",
+        "TMF924"
+      ]
+    },
+    {
+      "@id": "tmf:intent/tmf924/listener.listentomonitorcreateevent",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "listentomonitorcreateevent listener",
+      "skos:altLabel": [
+        "POST /listener/monitorCreateEvent",
+        "tmf.tmf924.listener.listentomonitorcreateevent.v1"
+      ],
+      "skos:broader": "tmf:resource/listener",
+      "source": [
+        "TM Forum Open APIs",
+        "TMF924"
+      ]
+    },
+    {
+      "@id": "tmf:intent/tmf924/listener.listentomonitordeleteevent",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "listentomonitordeleteevent listener",
+      "skos:altLabel": [
+        "POST /listener/monitorDeleteEvent",
+        "tmf.tmf924.listener.listentomonitordeleteevent.v1"
+      ],
+      "skos:broader": "tmf:resource/listener",
+      "source": [
+        "TM Forum Open APIs",
+        "TMF924"
+      ]
+    },
+    {
+      "@id": "tmf:intent/tmf924/listener.listentomonitorstatechangeevent",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "listentomonitorstatechangeevent listener",
+      "skos:altLabel": [
+        "POST /listener/monitorStateChangeEvent",
+        "tmf.tmf924.listener.listentomonitorstatechangeevent.v1"
+      ],
+      "skos:broader": "tmf:resource/listener",
+      "source": [
+        "TM Forum Open APIs",
+        "TMF924"
+      ]
+    },
+    {
+      "@id": "tmf:intent/tmf924/listener.listentoserviceattributevaluechangeevent",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "listentoserviceattributevaluechangeevent listener",
+      "skos:altLabel": [
+        "POST /listener/serviceAttributeValueChangeEvent",
+        "tmf.tmf924.listener.listentoserviceattributevaluechangeevent.v1"
+      ],
+      "skos:broader": "tmf:resource/listener",
+      "source": [
+        "TM Forum Open APIs",
+        "TMF924"
+      ]
+    },
+    {
+      "@id": "tmf:intent/tmf924/listener.listentoservicecreateevent",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "listentoservicecreateevent listener",
+      "skos:altLabel": [
+        "POST /listener/serviceCreateEvent",
+        "tmf.tmf924.listener.listentoservicecreateevent.v1"
+      ],
+      "skos:broader": "tmf:resource/listener",
+      "source": [
+        "TM Forum Open APIs",
+        "TMF924"
+      ]
+    },
+    {
+      "@id": "tmf:intent/tmf924/listener.listentoservicedeleteevent",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "listentoservicedeleteevent listener",
+      "skos:altLabel": [
+        "POST /listener/serviceDeleteEvent",
+        "tmf.tmf924.listener.listentoservicedeleteevent.v1"
+      ],
+      "skos:broader": "tmf:resource/listener",
+      "source": [
+        "TM Forum Open APIs",
+        "TMF924"
+      ]
+    },
+    {
+      "@id": "tmf:intent/tmf924/listener.listentoservicestatechangeevent",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "listentoservicestatechangeevent listener",
+      "skos:altLabel": [
+        "POST /listener/serviceStateChangeEvent",
+        "tmf.tmf924.listener.listentoservicestatechangeevent.v1"
+      ],
+      "skos:broader": "tmf:resource/listener",
+      "source": [
+        "TM Forum Open APIs",
+        "TMF924"
+      ]
+    },
+    {
+      "@id": "tmf:intent/tmf924/monitor.listmonitor",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "listmonitor",
+      "skos:altLabel": [
+        "GET /monitor",
+        "tmf.tmf924.monitor.listmonitor.v1"
+      ],
+      "skos:broader": "tmf:resource/monitor",
+      "source": [
+        "TM Forum Open APIs",
+        "TMF924"
+      ]
+    },
+    {
+      "@id": "tmf:intent/tmf924/monitor.retrievemonitor",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "retrievemonitor",
+      "skos:altLabel": [
+        "GET /monitor/{id}",
+        "tmf.tmf924.monitor.retrievemonitor.v1"
+      ],
+      "skos:broader": "tmf:resource/monitor",
+      "source": [
+        "TM Forum Open APIs",
+        "TMF924"
+      ]
+    },
+    {
+      "@id": "tmf:intent/tmf924/service.createservice",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "createservice",
+      "skos:altLabel": [
+        "POST /service",
+        "tmf.tmf924.service.createservice.v1"
+      ],
+      "skos:broader": "tmf:resource/service",
+      "source": [
+        "TM Forum Open APIs",
+        "TMF924"
+      ]
+    },
+    {
+      "@id": "tmf:intent/tmf924/service.deleteservice",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "deleteservice",
+      "skos:altLabel": [
+        "DELETE /service/{id}",
+        "tmf.tmf924.service.deleteservice.v1"
+      ],
+      "skos:broader": "tmf:resource/service",
+      "source": [
+        "TM Forum Open APIs",
+        "TMF924"
+      ]
+    },
+    {
+      "@id": "tmf:intent/tmf924/service.listservice",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "listservice",
+      "skos:altLabel": [
+        "GET /service",
+        "tmf.tmf924.service.listservice.v1"
+      ],
+      "skos:broader": "tmf:resource/service",
+      "source": [
+        "TM Forum Open APIs",
+        "TMF924"
+      ]
+    },
+    {
+      "@id": "tmf:intent/tmf924/service.patchservice",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "patchservice",
+      "skos:altLabel": [
+        "PATCH /service/{id}",
+        "tmf.tmf924.service.patchservice.v1"
+      ],
+      "skos:broader": "tmf:resource/service",
+      "source": [
+        "TM Forum Open APIs",
+        "TMF924"
+      ]
+    },
+    {
+      "@id": "tmf:intent/tmf924/service.retrieveservice",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "retrieveservice",
+      "skos:altLabel": [
+        "GET /service/{id}",
+        "tmf.tmf924.service.retrieveservice.v1"
+      ],
+      "skos:broader": "tmf:resource/service",
+      "source": [
+        "TM Forum Open APIs",
+        "TMF924"
+      ]
+    }
+  ]
+}

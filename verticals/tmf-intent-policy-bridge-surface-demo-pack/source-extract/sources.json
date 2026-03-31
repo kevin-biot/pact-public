@@ -1,0 +1,13 @@
+{
+  "domain": "tmf-intent-policy-bridge-surface-demo",
+  "lane": "tmf-openapi-seed-surface",
+  "sources": [
+    {
+      "standard": "TM Forum Open APIs",
+      "tmf_id": "TMF921",
+      "file": "docs/tmf-apis/TMF921_Intent_Management_v5.0.0.oas.yaml"
+    }
+  ],
+  "synthesis_seed_ref": "docs/architecture/artifacts/schema-sets/telco/mappings/tmf-synthesis-seed.json",
+  "generated_at_utc": "2026-03-31T01:29:40Z"
+}

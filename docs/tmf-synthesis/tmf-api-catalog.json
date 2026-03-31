@@ -1,0 +1,184 @@
+{
+  "schema_version": "1.0",
+  "generated_at_utc": "2026-03-02T01:12:55Z",
+  "source_dir": "docs/tmf-apis",
+  "api_count": 8,
+  "apis": [
+    {
+      "tmf_id": "TMF634",
+      "api_name": "Resource Catalog Management",
+      "api_version": "5.0.0",
+      "spec_format": "3.0.1",
+      "domain_family": "Resource APIs",
+      "file": "docs/tmf-apis/TMF634-Resource_Catalog_Management-v5.0.0.oas.yaml",
+      "path_count": 36,
+      "operation_count": 52,
+      "crosswalk": {
+        "ontology_slices": [
+          "telco-ran-identity",
+          "telco-core-5gc-nrm"
+        ],
+        "sid_entities": [
+          "ResourceCatalog",
+          "ResourceSpecification",
+          "ResourceSpecCharacteristic"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "tmf_id": "TMF638",
+      "api_name": "Service Inventory Management",
+      "api_version": "5.0.0",
+      "spec_format": "3.0.1",
+      "domain_family": "Service APIs",
+      "file": "docs/tmf-apis/TMF638-Service_Inventory_Management-v5.0.0.oas.yaml",
+      "path_count": 9,
+      "operation_count": 12,
+      "crosswalk": {
+        "ontology_slices": [
+          "telco-core-5gc-nrm",
+          "telco-slicing-nrm"
+        ],
+        "sid_entities": [
+          "Service",
+          "ResourceFacingService",
+          "ServiceSpecification"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "tmf_id": "TMF639",
+      "api_name": "API Resource Inventory Management",
+      "api_version": "4.0.0",
+      "spec_format": "2.0",
+      "domain_family": "Resource APIs",
+      "file": "docs/tmf-apis/TMF639.json",
+      "path_count": 8,
+      "operation_count": 11,
+      "crosswalk": {
+        "ontology_slices": [
+          "telco-ran-identity",
+          "telco-core-5gc-nrm"
+        ],
+        "sid_entities": [
+          "Resource",
+          "LogicalResource",
+          "ResourceRelationship"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "tmf_id": "TMF640",
+      "api_name": "API Service Activation and Configuration",
+      "api_version": "4.0.0",
+      "spec_format": "2.0",
+      "domain_family": "Service APIs",
+      "file": "docs/tmf-apis/TMF640.json",
+      "path_count": 14,
+      "operation_count": 17,
+      "crosswalk": {
+        "ontology_slices": [
+          "telco-core-5gc-nrm",
+          "telco-slicing-nrm"
+        ],
+        "sid_entities": [
+          "Service",
+          "ResourceFacingService",
+          "ServiceConfiguration"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "tmf_id": "TMF641",
+      "api_name": "API ServiceOrdering",
+      "api_version": "4.1.0",
+      "spec_format": "2.0",
+      "domain_family": "Service APIs",
+      "file": "docs/tmf-apis/TMF641.json",
+      "path_count": 16,
+      "operation_count": 20,
+      "crosswalk": {
+        "ontology_slices": [
+          "telco-core-5gc-nrm",
+          "telco-slicing-nrm"
+        ],
+        "sid_entities": [
+          "ServiceOrder",
+          "ServiceOrderItem",
+          "Service"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "tmf_id": "TMF642",
+      "api_name": "Alarm",
+      "api_version": "5.0.1",
+      "spec_format": "3.0.1",
+      "domain_family": "Resource APIs",
+      "file": "docs/tmf-apis/TMF642_Alarm_v5.0.1.oas.yaml",
+      "path_count": 32,
+      "operation_count": 42,
+      "crosswalk": {
+        "ontology_slices": [
+          "telco-ran-identity",
+          "telco-core-5gc-nrm"
+        ],
+        "sid_entities": [
+          "ResourceAlarm",
+          "Resource",
+          "ResourceStateInfo"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "tmf_id": "TMF921",
+      "api_name": "Intent Management",
+      "api_version": "5.0.0",
+      "spec_format": "3.0.1",
+      "domain_family": "Common APIs",
+      "file": "docs/tmf-apis/TMF921_Intent_Management_v5.0.0.oas.yaml",
+      "path_count": 19,
+      "operation_count": 26,
+      "crosswalk": {
+        "ontology_slices": [
+          "telco-slicing-nrm",
+          "telco-core-5gc-nrm"
+        ],
+        "sid_entities": [
+          "Intent",
+          "Policy",
+          "ResourceFacingServiceSpec"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "tmf_id": "TMF924",
+      "api_name": "5G Slice Service Activation and Configuration",
+      "api_version": "1.0",
+      "spec_format": "2.0",
+      "domain_family": "Service APIs",
+      "file": "docs/tmf-apis/TMF924.json",
+      "path_count": 14,
+      "operation_count": 17,
+      "crosswalk": {
+        "ontology_slices": [
+          "telco-slicing-nrm",
+          "telco-core-5gc-nrm"
+        ],
+        "sid_entities": [
+          "Service",
+          "ResourceFacingService",
+          "ServiceConfiguration"
+        ],
+        "confidence": "medium"
+      }
+    }
+  ]
+}

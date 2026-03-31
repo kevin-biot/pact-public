@@ -1,0 +1,136 @@
+{
+  "schema_version": "1.0",
+  "domain": "tmf-intent-policy-bridge-surface-demo",
+  "mappings": [
+    {
+      "concept_uri": "tmf:intent/tmf921/hub.createhub",
+      "intent_class": "tmf.tmf921.hub.createhub.v1",
+      "confidence_floor": 0.7
+    },
+    {
+      "concept_uri": "tmf:intent/tmf921/hub.hubdelete",
+      "intent_class": "tmf.tmf921.hub.hubdelete.v1",
+      "confidence_floor": 0.7
+    },
+    {
+      "concept_uri": "tmf:intent/tmf921/intent.createintent",
+      "intent_class": "tmf.tmf921.intent.createintent.v1",
+      "confidence_floor": 0.7
+    },
+    {
+      "concept_uri": "tmf:intent/tmf921/intent.deleteintent",
+      "intent_class": "tmf.tmf921.intent.deleteintent.v1",
+      "confidence_floor": 0.7
+    },
+    {
+      "concept_uri": "tmf:intent/tmf921/intent.deleteintentintentreport",
+      "intent_class": "tmf.tmf921.intent.deleteintentintentreport.v1",
+      "confidence_floor": 0.7
+    },
+    {
+      "concept_uri": "tmf:intent/tmf921/intent.listintent",
+      "intent_class": "tmf.tmf921.intent.listintent.v1",
+      "confidence_floor": 0.7
+    },
+    {
+      "concept_uri": "tmf:intent/tmf921/intent.listintentintentreport",
+      "intent_class": "tmf.tmf921.intent.listintentintentreport.v1",
+      "confidence_floor": 0.7
+    },
+    {
+      "concept_uri": "tmf:intent/tmf921/intent.patchintent",
+      "intent_class": "tmf.tmf921.intent.patchintent.v1",
+      "confidence_floor": 0.7
+    },
+    {
+      "concept_uri": "tmf:intent/tmf921/intent.retrieveintent",
+      "intent_class": "tmf.tmf921.intent.retrieveintent.v1",
+      "confidence_floor": 0.7
+    },
+    {
+      "concept_uri": "tmf:intent/tmf921/intent.retrieveintentintentreport",
+      "intent_class": "tmf.tmf921.intent.retrieveintentintentreport.v1",
+      "confidence_floor": 0.7
+    },
+    {
+      "concept_uri": "tmf:intent/tmf921/intentspecification.createintentspecification",
+      "intent_class": "tmf.tmf921.intentspecification.createintentspecification.v1",
+      "confidence_floor": 0.7
+    },
+    {
+      "concept_uri": "tmf:intent/tmf921/intentspecification.deleteintentspecification",
+      "intent_class": "tmf.tmf921.intentspecification.deleteintentspecification.v1",
+      "confidence_floor": 0.7
+    },
+    {
+      "concept_uri": "tmf:intent/tmf921/intentspecification.listintentspecification",
+      "intent_class": "tmf.tmf921.intentspecification.listintentspecification.v1",
+      "confidence_floor": 0.7
+    },
+    {
+      "concept_uri": "tmf:intent/tmf921/intentspecification.patchintentspecification",
+      "intent_class": "tmf.tmf921.intentspecification.patchintentspecification.v1",
+      "confidence_floor": 0.7
+    },
+    {
+      "concept_uri": "tmf:intent/tmf921/intentspecification.retrieveintentspecification",
+      "intent_class": "tmf.tmf921.intentspecification.retrieveintentspecification.v1",
+      "confidence_floor": 0.7
+    },
+    {
+      "concept_uri": "tmf:intent/tmf921/listener.intentattributevaluechangeevent",
+      "intent_class": "tmf.tmf921.listener.intentattributevaluechangeevent.v1",
+      "confidence_floor": 0.7
+    },
+    {
+      "concept_uri": "tmf:intent/tmf921/listener.intentcreateevent",
+      "intent_class": "tmf.tmf921.listener.intentcreateevent.v1",
+      "confidence_floor": 0.7
+    },
+    {
+      "concept_uri": "tmf:intent/tmf921/listener.intentdeleteevent",
+      "intent_class": "tmf.tmf921.listener.intentdeleteevent.v1",
+      "confidence_floor": 0.7
+    },
+    {
+      "concept_uri": "tmf:intent/tmf921/listener.intentreportattributevaluechangeevent",
+      "intent_class": "tmf.tmf921.listener.intentreportattributevaluechangeevent.v1",
+      "confidence_floor": 0.7
+    },
+    {
+      "concept_uri": "tmf:intent/tmf921/listener.intentreportcreateevent",
+      "intent_class": "tmf.tmf921.listener.intentreportcreateevent.v1",
+      "confidence_floor": 0.7
+    },
+    {
+      "concept_uri": "tmf:intent/tmf921/listener.intentreportdeleteevent",
+      "intent_class": "tmf.tmf921.listener.intentreportdeleteevent.v1",
+      "confidence_floor": 0.7
+    },
+    {
+      "concept_uri": "tmf:intent/tmf921/listener.intentspecificationattributevaluechangeevent",
+      "intent_class": "tmf.tmf921.listener.intentspecificationattributevaluechangeevent.v1",
+      "confidence_floor": 0.7
+    },
+    {
+      "concept_uri": "tmf:intent/tmf921/listener.intentspecificationcreateevent",
+      "intent_class": "tmf.tmf921.listener.intentspecificationcreateevent.v1",
+      "confidence_floor": 0.7
+    },
+    {
+      "concept_uri": "tmf:intent/tmf921/listener.intentspecificationdeleteevent",
+      "intent_class": "tmf.tmf921.listener.intentspecificationdeleteevent.v1",
+      "confidence_floor": 0.7
+    },
+    {
+      "concept_uri": "tmf:intent/tmf921/listener.intentspecificationstatuschangeevent",
+      "intent_class": "tmf.tmf921.listener.intentspecificationstatuschangeevent.v1",
+      "confidence_floor": 0.7
+    },
+    {
+      "concept_uri": "tmf:intent/tmf921/listener.intentstatuschangeevent",
+      "intent_class": "tmf.tmf921.listener.intentstatuschangeevent.v1",
+      "confidence_floor": 0.7
+    }
+  ]
+}
