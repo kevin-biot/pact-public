@@ -1,0 +1,24 @@
+{
+  "schema_version": "0.1",
+  "generated_at_utc": "2026-03-31T01:43:20Z",
+  "source_profile": "shopify-functions-latest-surface-v1",
+  "version_channel": "latest",
+  "version_observed": "2026-01",
+  "source_entrypoint": "https://shopify.dev/docs/api/functions/latest",
+  "api_count": 1,
+  "apis": [
+    "Discount"
+  ],
+  "target_count": 4,
+  "resource_family_count": 2,
+  "resource_families": [
+    "delivery-options",
+    "lines"
+  ],
+  "target_sample": [
+    "cart.delivery-options.discounts.generate.fetch",
+    "cart.delivery-options.discounts.generate.run",
+    "cart.lines.discounts.generate.fetch",
+    "cart.lines.discounts.generate.run"
+  ]
+}

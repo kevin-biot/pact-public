@@ -1,0 +1,16 @@
+{
+  "schema_version": "1.0",
+  "domain": "shopify-functions-payment-surface-demo",
+  "thresholds": {
+    "overall_min_pass_rate": 1,
+    "require_critical_pass": true
+  },
+  "cases": [
+    {
+      "id": "sf_case_001",
+      "phrase": "cart payment methods transform run",
+      "expect": "shopify.functions.cart.payment-methods.transform.run.v1",
+      "critical": true
+    }
+  ]
+}

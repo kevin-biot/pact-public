@@ -1,0 +1,26 @@
+{
+  "schema_version": "1.0",
+  "domain": "shopify-functions-discount-surface-demo",
+  "mappings": [
+    {
+      "concept_uri": "sf:intent/cart.delivery-options.discounts.generate.fetch",
+      "intent_class": "shopify.functions.cart.delivery-options.discounts.generate.fetch.v1",
+      "confidence_floor": 0.75
+    },
+    {
+      "concept_uri": "sf:intent/cart.delivery-options.discounts.generate.run",
+      "intent_class": "shopify.functions.cart.delivery-options.discounts.generate.run.v1",
+      "confidence_floor": 0.75
+    },
+    {
+      "concept_uri": "sf:intent/cart.lines.discounts.generate.fetch",
+      "intent_class": "shopify.functions.cart.lines.discounts.generate.fetch.v1",
+      "confidence_floor": 0.75
+    },
+    {
+      "concept_uri": "sf:intent/cart.lines.discounts.generate.run",
+      "intent_class": "shopify.functions.cart.lines.discounts.generate.run.v1",
+      "confidence_floor": 0.75
+    }
+  ]
+}

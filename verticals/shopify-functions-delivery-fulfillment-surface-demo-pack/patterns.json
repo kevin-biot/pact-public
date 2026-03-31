@@ -1,0 +1,33 @@
+{
+  "schema_version": "1.0",
+  "domain": "shopify-functions-delivery-fulfillment-surface-demo",
+  "patterns": [
+    {
+      "id": "sf_cart-delivery-options-transform-run_intent",
+      "concept_uri": "sf:intent/cart.delivery-options.transform.run",
+      "entity_type": "intent_hint",
+      "regex": "(?i)^cart\\ delivery\\ options\\ transform\\ run$",
+      "examples": [
+        "cart delivery options transform run"
+      ]
+    },
+    {
+      "id": "sf_cart-fulfillment-constraints-generate-run_intent",
+      "concept_uri": "sf:intent/cart.fulfillment-constraints.generate.run",
+      "entity_type": "intent_hint",
+      "regex": "(?i)^cart\\ fulfillment\\ constraints\\ generate\\ run$",
+      "examples": [
+        "cart fulfillment constraints generate run"
+      ]
+    },
+    {
+      "id": "sf_cart-fulfillment-groups-location-rankings-generate-run_intent",
+      "concept_uri": "sf:intent/cart.fulfillment-groups.location-rankings.generate.run",
+      "entity_type": "intent_hint",
+      "regex": "(?i)^cart\\ fulfillment\\ groups\\ location\\ rankings\\ generate\\ run$",
+      "examples": [
+        "cart fulfillment groups location rankings generate run"
+      ]
+    }
+  ]
+}

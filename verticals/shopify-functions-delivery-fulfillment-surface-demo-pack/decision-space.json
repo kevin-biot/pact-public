@@ -1,0 +1,156 @@
+{
+  "schema_version": "1.0",
+  "domain": "shopify-functions-delivery-fulfillment-surface-demo",
+  "pack_id": "shopify-functions-delivery-fulfillment-surface-demo-0.1.0",
+  "version": "0.1.0",
+  "out_of_scope_behavior": "escalate",
+  "state_model": {
+    "states": [
+      "ingress",
+      "validated",
+      "executed",
+      "failed",
+      "escalated"
+    ],
+    "initial_state": "ingress",
+    "terminal_states": [
+      "executed",
+      "failed",
+      "escalated"
+    ]
+  },
+  "admissible_intents": [
+    {
+      "intent_class": "shopify.functions.cart.delivery-options.transform.run.v1",
+      "allowed_states": [
+        "ingress",
+        "validated"
+      ],
+      "required_fact_types": [
+        "shopify_function_target"
+      ],
+      "transition_ids": [
+        "validate_cart-delivery-options-transform-run",
+        "execute_cart-delivery-options-transform-run"
+      ]
+    },
+    {
+      "intent_class": "shopify.functions.cart.fulfillment-constraints.generate.run.v1",
+      "allowed_states": [
+        "ingress",
+        "validated"
+      ],
+      "required_fact_types": [
+        "shopify_function_target"
+      ],
+      "transition_ids": [
+        "validate_cart-fulfillment-constraints-generate-run",
+        "execute_cart-fulfillment-constraints-generate-run"
+      ]
+    },
+    {
+      "intent_class": "shopify.functions.cart.fulfillment-groups.location-rankings.generate.run.v1",
+      "allowed_states": [
+        "ingress",
+        "validated"
+      ],
+      "required_fact_types": [
+        "shopify_function_target"
+      ],
+      "transition_ids": [
+        "validate_cart-fulfillment-groups-location-rankings-generate-run",
+        "execute_cart-fulfillment-groups-location-rankings-generate-run"
+      ]
+    }
+  ],
+  "admissible_facts": [
+    {
+      "fact_type": "shopify_function_target",
+      "schema_ref": "urn:shopify:functions:shopify-functions-delivery-fulfillment-surface-demo:v1",
+      "additional_properties": "allow",
+      "field_constraints": [
+        {
+          "path": "target",
+          "datatype": "string",
+          "required": true
+        },
+        {
+          "path": "api",
+          "datatype": "string",
+          "required": true
+        },
+        {
+          "path": "version",
+          "datatype": "string",
+          "required": true
+        }
+      ]
+    }
+  ],
+  "admissible_transitions": [
+    {
+      "id": "validate_cart-delivery-options-transform-run",
+      "from_state": "ingress",
+      "intent_class": "shopify.functions.cart.delivery-options.transform.run.v1",
+      "to_state": "validated",
+      "guard_refs": [
+        "guard:payload_valid"
+      ]
+    },
+    {
+      "id": "execute_cart-delivery-options-transform-run",
+      "from_state": "validated",
+      "intent_class": "shopify.functions.cart.delivery-options.transform.run.v1",
+      "to_state": "executed",
+      "guard_refs": [
+        "guard:policy_allow"
+      ]
+    },
+    {
+      "id": "validate_cart-fulfillment-constraints-generate-run",
+      "from_state": "ingress",
+      "intent_class": "shopify.functions.cart.fulfillment-constraints.generate.run.v1",
+      "to_state": "validated",
+      "guard_refs": [
+        "guard:payload_valid"
+      ]
+    },
+    {
+      "id": "execute_cart-fulfillment-constraints-generate-run",
+      "from_state": "validated",
+      "intent_class": "shopify.functions.cart.fulfillment-constraints.generate.run.v1",
+      "to_state": "executed",
+      "guard_refs": [
+        "guard:policy_allow"
+      ]
+    },
+    {
+      "id": "validate_cart-fulfillment-groups-location-rankings-generate-run",
+      "from_state": "ingress",
+      "intent_class": "shopify.functions.cart.fulfillment-groups.location-rankings.generate.run.v1",
+      "to_state": "validated",
+      "guard_refs": [
+        "guard:payload_valid"
+      ]
+    },
+    {
+      "id": "execute_cart-fulfillment-groups-location-rankings-generate-run",
+      "from_state": "validated",
+      "intent_class": "shopify.functions.cart.fulfillment-groups.location-rankings.generate.run.v1",
+      "to_state": "executed",
+      "guard_refs": [
+        "guard:policy_allow"
+      ]
+    }
+  ],
+  "fallback_rules": [
+    {
+      "id": "escalate_unknown_shopify_target",
+      "from_state": "ingress",
+      "intent_class": "shopify.functions.cart.delivery-options.transform.run.v1",
+      "to_state": "escalated",
+      "source_ref": "shopify:functions:governance:unknown_target:v1",
+      "description": "Function target is not in the bounded approved scope."
+    }
+  ]
+}

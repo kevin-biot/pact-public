@@ -1,0 +1,76 @@
+{
+  "schema_version": "1.0",
+  "domain": "shopify-functions-core-seed-demo",
+  "thresholds": {
+    "overall_min_pass_rate": 1,
+    "require_critical_pass": true
+  },
+  "cases": [
+    {
+      "id": "sf_case_001",
+      "phrase": "cart transform run",
+      "expect": "shopify.functions.cart.transform.run.v1",
+      "critical": true
+    },
+    {
+      "id": "sf_case_002",
+      "phrase": "cart validations generate fetch",
+      "expect": "shopify.functions.cart.validations.generate.fetch.v1",
+      "critical": true
+    },
+    {
+      "id": "sf_case_003",
+      "phrase": "cart validations generate run",
+      "expect": "shopify.functions.cart.validations.generate.run.v1",
+      "critical": true
+    },
+    {
+      "id": "sf_case_004",
+      "phrase": "cart delivery options transform run",
+      "expect": "shopify.functions.cart.delivery-options.transform.run.v1",
+      "critical": true
+    },
+    {
+      "id": "sf_case_005",
+      "phrase": "cart delivery options discounts generate fetch",
+      "expect": "shopify.functions.cart.delivery-options.discounts.generate.fetch.v1",
+      "critical": true
+    },
+    {
+      "id": "sf_case_006",
+      "phrase": "cart delivery options discounts generate run",
+      "expect": "shopify.functions.cart.delivery-options.discounts.generate.run.v1",
+      "critical": true
+    },
+    {
+      "id": "sf_case_007",
+      "phrase": "cart lines discounts generate fetch",
+      "expect": "shopify.functions.cart.lines.discounts.generate.fetch.v1",
+      "critical": true
+    },
+    {
+      "id": "sf_case_008",
+      "phrase": "cart lines discounts generate run",
+      "expect": "shopify.functions.cart.lines.discounts.generate.run.v1",
+      "critical": true
+    },
+    {
+      "id": "sf_case_009",
+      "phrase": "cart fulfillment constraints generate run",
+      "expect": "shopify.functions.cart.fulfillment-constraints.generate.run.v1",
+      "critical": true
+    },
+    {
+      "id": "sf_case_010",
+      "phrase": "cart fulfillment groups location rankings generate run",
+      "expect": "shopify.functions.cart.fulfillment-groups.location-rankings.generate.run.v1",
+      "critical": true
+    },
+    {
+      "id": "sf_case_011",
+      "phrase": "cart payment methods transform run",
+      "expect": "shopify.functions.cart.payment-methods.transform.run.v1",
+      "critical": true
+    }
+  ]
+}

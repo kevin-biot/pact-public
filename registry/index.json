@@ -97,6 +97,54 @@
       "path": "verticals/revolut-merchant-order-payment-surface-pack"
     },
     {
+      "snapshot_id": "ontology:shopify-functions-cart-transform-surface-demo:v0.1.0",
+      "domain": "shopify-functions-cart-transform-surface-demo",
+      "provider_id": "ontology:lane2:shopify-functions-cart-transform-surface-demo",
+      "trust_tier": "Tier1",
+      "version": "0.1.0",
+      "path": "verticals/shopify-functions-cart-transform-surface-demo-pack"
+    },
+    {
+      "snapshot_id": "ontology:shopify-functions-core-seed-demo:v0.1.0",
+      "domain": "shopify-functions-core-seed-demo",
+      "provider_id": "ontology:lane2:shopify-functions-core-seed-demo",
+      "trust_tier": "Tier1",
+      "version": "0.1.0",
+      "path": "verticals/shopify-functions-core-seed-demo-pack"
+    },
+    {
+      "snapshot_id": "ontology:shopify-functions-delivery-fulfillment-surface-demo:v0.1.0",
+      "domain": "shopify-functions-delivery-fulfillment-surface-demo",
+      "provider_id": "ontology:lane2:shopify-functions-delivery-fulfillment-surface-demo",
+      "trust_tier": "Tier1",
+      "version": "0.1.0",
+      "path": "verticals/shopify-functions-delivery-fulfillment-surface-demo-pack"
+    },
+    {
+      "snapshot_id": "ontology:shopify-functions-discount-surface-demo:v0.1.0",
+      "domain": "shopify-functions-discount-surface-demo",
+      "provider_id": "ontology:lane2:shopify-functions-discount-surface-demo",
+      "trust_tier": "Tier1",
+      "version": "0.1.0",
+      "path": "verticals/shopify-functions-discount-surface-demo-pack"
+    },
+    {
+      "snapshot_id": "ontology:shopify-functions-payment-surface-demo:v0.1.0",
+      "domain": "shopify-functions-payment-surface-demo",
+      "provider_id": "ontology:lane2:shopify-functions-payment-surface-demo",
+      "trust_tier": "Tier1",
+      "version": "0.1.0",
+      "path": "verticals/shopify-functions-payment-surface-demo-pack"
+    },
+    {
+      "snapshot_id": "ontology:shopify-functions-validation-surface-demo:v0.1.0",
+      "domain": "shopify-functions-validation-surface-demo",
+      "provider_id": "ontology:lane2:shopify-functions-validation-surface-demo",
+      "trust_tier": "Tier1",
+      "version": "0.1.0",
+      "path": "verticals/shopify-functions-validation-surface-demo-pack"
+    },
+    {
       "snapshot_id": "ontology:tmf-core-seed-demo:v0.1.0",
       "domain": "tmf-core-seed-demo",
       "provider_id": "ontology:lane2:tmf-core-seed-demo",

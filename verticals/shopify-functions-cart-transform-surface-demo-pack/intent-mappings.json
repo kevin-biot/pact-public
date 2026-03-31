@@ -1,0 +1,11 @@
+{
+  "schema_version": "1.0",
+  "domain": "shopify-functions-cart-transform-surface-demo",
+  "mappings": [
+    {
+      "concept_uri": "sf:intent/cart.transform.run",
+      "intent_class": "shopify.functions.cart.transform.run.v1",
+      "confidence_floor": 0.75
+    }
+  ]
+}

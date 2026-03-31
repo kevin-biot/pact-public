@@ -1,0 +1,21 @@
+{
+  "schema_version": "1.0",
+  "domain": "shopify-functions-delivery-fulfillment-surface-demo",
+  "mappings": [
+    {
+      "concept_uri": "sf:intent/cart.delivery-options.transform.run",
+      "intent_class": "shopify.functions.cart.delivery-options.transform.run.v1",
+      "confidence_floor": 0.75
+    },
+    {
+      "concept_uri": "sf:intent/cart.fulfillment-constraints.generate.run",
+      "intent_class": "shopify.functions.cart.fulfillment-constraints.generate.run.v1",
+      "confidence_floor": 0.75
+    },
+    {
+      "concept_uri": "sf:intent/cart.fulfillment-groups.location-rankings.generate.run",
+      "intent_class": "shopify.functions.cart.fulfillment-groups.location-rankings.generate.run.v1",
+      "confidence_floor": 0.75
+    }
+  ]
+}

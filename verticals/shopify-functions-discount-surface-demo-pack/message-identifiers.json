@@ -1,0 +1,21 @@
+{
+  "schema_version": "0.1",
+  "generated_at_utc": "2026-03-31T01:43:20Z",
+  "domain": "shopify-functions-discount-surface-demo",
+  "function_targets": [
+    "cart.delivery-options.discounts.generate.fetch",
+    "cart.delivery-options.discounts.generate.run",
+    "cart.lines.discounts.generate.fetch",
+    "cart.lines.discounts.generate.run"
+  ],
+  "intent_classes": [
+    "shopify.functions.cart.delivery-options.discounts.generate.fetch.v1",
+    "shopify.functions.cart.delivery-options.discounts.generate.run.v1",
+    "shopify.functions.cart.lines.discounts.generate.fetch.v1",
+    "shopify.functions.cart.lines.discounts.generate.run.v1"
+  ],
+  "resource_families": [
+    "delivery-options",
+    "lines"
+  ]
+}

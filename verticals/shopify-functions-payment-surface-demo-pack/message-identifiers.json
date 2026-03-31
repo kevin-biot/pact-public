@@ -1,0 +1,14 @@
+{
+  "schema_version": "0.1",
+  "generated_at_utc": "2026-03-31T01:43:20Z",
+  "domain": "shopify-functions-payment-surface-demo",
+  "function_targets": [
+    "cart.payment-methods.transform.run"
+  ],
+  "intent_classes": [
+    "shopify.functions.cart.payment-methods.transform.run.v1"
+  ],
+  "resource_families": [
+    "payment-methods"
+  ]
+}

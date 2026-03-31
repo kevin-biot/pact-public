@@ -1,0 +1,65 @@
+{
+  "domain": "shopify-functions-core-seed-demo",
+  "lane": "shopify-functions-latest-surface",
+  "source_entrypoint": "https://shopify.dev/docs/api/functions/latest",
+  "version_channel": "latest",
+  "version_observed": "2026-01",
+  "sources": [
+    {
+      "api": "Cart Transform",
+      "page": "https://shopify.dev/docs/api/functions/latest/cart-transform",
+      "target": "cart.transform.run"
+    },
+    {
+      "api": "Cart and Checkout Validation",
+      "page": "https://shopify.dev/docs/api/functions/latest/cart-and-checkout-validation",
+      "target": "cart.validations.generate.fetch"
+    },
+    {
+      "api": "Cart and Checkout Validation",
+      "page": "https://shopify.dev/docs/api/functions/latest/cart-and-checkout-validation",
+      "target": "cart.validations.generate.run"
+    },
+    {
+      "api": "Delivery Customization",
+      "page": "https://shopify.dev/docs/api/functions/latest/delivery-customization",
+      "target": "cart.delivery-options.transform.run"
+    },
+    {
+      "api": "Discount",
+      "page": "https://shopify.dev/docs/api/functions/latest/discount",
+      "target": "cart.delivery-options.discounts.generate.fetch"
+    },
+    {
+      "api": "Discount",
+      "page": "https://shopify.dev/docs/api/functions/latest/discount",
+      "target": "cart.delivery-options.discounts.generate.run"
+    },
+    {
+      "api": "Discount",
+      "page": "https://shopify.dev/docs/api/functions/latest/discount",
+      "target": "cart.lines.discounts.generate.fetch"
+    },
+    {
+      "api": "Discount",
+      "page": "https://shopify.dev/docs/api/functions/latest/discount",
+      "target": "cart.lines.discounts.generate.run"
+    },
+    {
+      "api": "Fulfillment Constraints",
+      "page": "https://shopify.dev/docs/api/functions/latest/fulfillment-constraints",
+      "target": "cart.fulfillment-constraints.generate.run"
+    },
+    {
+      "api": "Order Routing Location Rule",
+      "page": "https://shopify.dev/docs/api/functions/latest/order-routing-location-rule",
+      "target": "cart.fulfillment-groups.location-rankings.generate.run"
+    },
+    {
+      "api": "Payment Customization",
+      "page": "https://shopify.dev/docs/api/functions/latest/payment-customization",
+      "target": "cart.payment-methods.transform.run"
+    }
+  ],
+  "generated_at_utc": "2026-03-31T01:43:20Z"
+}

@@ -1,0 +1,105 @@
+{
+  "schema_version": "1.0",
+  "domain": "shopify-functions-core-seed-demo",
+  "patterns": [
+    {
+      "id": "sf_cart-transform-run_intent",
+      "concept_uri": "sf:intent/cart.transform.run",
+      "entity_type": "intent_hint",
+      "regex": "(?i)^cart\\ transform\\ run$",
+      "examples": [
+        "cart transform run"
+      ]
+    },
+    {
+      "id": "sf_cart-validations-generate-fetch_intent",
+      "concept_uri": "sf:intent/cart.validations.generate.fetch",
+      "entity_type": "intent_hint",
+      "regex": "(?i)^cart\\ validations\\ generate\\ fetch$",
+      "examples": [
+        "cart validations generate fetch"
+      ]
+    },
+    {
+      "id": "sf_cart-validations-generate-run_intent",
+      "concept_uri": "sf:intent/cart.validations.generate.run",
+      "entity_type": "intent_hint",
+      "regex": "(?i)^cart\\ validations\\ generate\\ run$",
+      "examples": [
+        "cart validations generate run"
+      ]
+    },
+    {
+      "id": "sf_cart-delivery-options-transform-run_intent",
+      "concept_uri": "sf:intent/cart.delivery-options.transform.run",
+      "entity_type": "intent_hint",
+      "regex": "(?i)^cart\\ delivery\\ options\\ transform\\ run$",
+      "examples": [
+        "cart delivery options transform run"
+      ]
+    },
+    {
+      "id": "sf_cart-delivery-options-discounts-generate-fetch_intent",
+      "concept_uri": "sf:intent/cart.delivery-options.discounts.generate.fetch",
+      "entity_type": "intent_hint",
+      "regex": "(?i)^cart\\ delivery\\ options\\ discounts\\ generate\\ fetch$",
+      "examples": [
+        "cart delivery options discounts generate fetch"
+      ]
+    },
+    {
+      "id": "sf_cart-delivery-options-discounts-generate-run_intent",
+      "concept_uri": "sf:intent/cart.delivery-options.discounts.generate.run",
+      "entity_type": "intent_hint",
+      "regex": "(?i)^cart\\ delivery\\ options\\ discounts\\ generate\\ run$",
+      "examples": [
+        "cart delivery options discounts generate run"
+      ]
+    },
+    {
+      "id": "sf_cart-lines-discounts-generate-fetch_intent",
+      "concept_uri": "sf:intent/cart.lines.discounts.generate.fetch",
+      "entity_type": "intent_hint",
+      "regex": "(?i)^cart\\ lines\\ discounts\\ generate\\ fetch$",
+      "examples": [
+        "cart lines discounts generate fetch"
+      ]
+    },
+    {
+      "id": "sf_cart-lines-discounts-generate-run_intent",
+      "concept_uri": "sf:intent/cart.lines.discounts.generate.run",
+      "entity_type": "intent_hint",
+      "regex": "(?i)^cart\\ lines\\ discounts\\ generate\\ run$",
+      "examples": [
+        "cart lines discounts generate run"
+      ]
+    },
+    {
+      "id": "sf_cart-fulfillment-constraints-generate-run_intent",
+      "concept_uri": "sf:intent/cart.fulfillment-constraints.generate.run",
+      "entity_type": "intent_hint",
+      "regex": "(?i)^cart\\ fulfillment\\ constraints\\ generate\\ run$",
+      "examples": [
+        "cart fulfillment constraints generate run"
+      ]
+    },
+    {
+      "id": "sf_cart-fulfillment-groups-location-rankings-generate-run_intent",
+      "concept_uri": "sf:intent/cart.fulfillment-groups.location-rankings.generate.run",
+      "entity_type": "intent_hint",
+      "regex": "(?i)^cart\\ fulfillment\\ groups\\ location\\ rankings\\ generate\\ run$",
+      "examples": [
+        "cart fulfillment groups location rankings generate run"
+      ]
+    },
+    {
+      "id": "sf_cart-payment-methods-transform-run_intent",
+      "concept_uri": "sf:intent/cart.payment-methods.transform.run",
+      "entity_type": "intent_hint",
+      "regex": "(?i)^cart\\ payment\\ methods\\ transform\\ run$",
+      "examples": [
+        "cart payment methods transform run"
+      ]
+    }
+  ]
+}

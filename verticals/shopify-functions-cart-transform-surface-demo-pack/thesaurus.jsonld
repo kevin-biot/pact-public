@@ -1,0 +1,24 @@
+{
+  "@context": {
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "sf": "https://lane2.example/ontology/shopify/functions/",
+    "dct": "http://purl.org/dc/terms/",
+    "source": "dct:source"
+  },
+  "@graph": [
+    {
+      "@id": "sf:intent/cart.transform.run",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "cart transform run",
+      "skos:altLabel": [
+        "cart.transform.run",
+        "shopify.functions.cart.transform.run.v1"
+      ],
+      "skos:broader": "sf:resource/transform",
+      "source": [
+        "Shopify Functions",
+        "Cart Transform"
+      ]
+    }
+  ]
+}

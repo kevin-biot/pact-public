@@ -1,0 +1,42 @@
+{
+  "schema_version": "0.1",
+  "generated_at_utc": "2026-03-31T01:43:20Z",
+  "source_profile": "shopify-functions-latest-surface-v1",
+  "version_channel": "latest",
+  "version_observed": "2026-01",
+  "source_entrypoint": "https://shopify.dev/docs/api/functions/latest",
+  "api_count": 7,
+  "apis": [
+    "Cart Transform",
+    "Cart and Checkout Validation",
+    "Delivery Customization",
+    "Discount",
+    "Fulfillment Constraints",
+    "Order Routing Location Rule",
+    "Payment Customization"
+  ],
+  "target_count": 11,
+  "resource_family_count": 7,
+  "resource_families": [
+    "delivery-options",
+    "fulfillment-constraints",
+    "fulfillment-groups",
+    "lines",
+    "payment-methods",
+    "transform",
+    "validations"
+  ],
+  "target_sample": [
+    "cart.transform.run",
+    "cart.validations.generate.fetch",
+    "cart.validations.generate.run",
+    "cart.delivery-options.transform.run",
+    "cart.delivery-options.discounts.generate.fetch",
+    "cart.delivery-options.discounts.generate.run",
+    "cart.lines.discounts.generate.fetch",
+    "cart.lines.discounts.generate.run",
+    "cart.fulfillment-constraints.generate.run",
+    "cart.fulfillment-groups.location-rankings.generate.run",
+    "cart.payment-methods.transform.run"
+  ]
+}

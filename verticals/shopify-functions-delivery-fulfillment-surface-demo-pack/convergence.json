@@ -1,0 +1,28 @@
+{
+  "schema_version": "1.0",
+  "domain": "shopify-functions-delivery-fulfillment-surface-demo",
+  "thresholds": {
+    "overall_min_pass_rate": 1,
+    "require_critical_pass": true
+  },
+  "cases": [
+    {
+      "id": "sf_case_001",
+      "phrase": "cart delivery options transform run",
+      "expect": "shopify.functions.cart.delivery-options.transform.run.v1",
+      "critical": true
+    },
+    {
+      "id": "sf_case_002",
+      "phrase": "cart fulfillment constraints generate run",
+      "expect": "shopify.functions.cart.fulfillment-constraints.generate.run.v1",
+      "critical": true
+    },
+    {
+      "id": "sf_case_003",
+      "phrase": "cart fulfillment groups location rankings generate run",
+      "expect": "shopify.functions.cart.fulfillment-groups.location-rankings.generate.run.v1",
+      "critical": true
+    }
+  ]
+}

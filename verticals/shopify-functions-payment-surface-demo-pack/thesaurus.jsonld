@@ -1,0 +1,24 @@
+{
+  "@context": {
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "sf": "https://lane2.example/ontology/shopify/functions/",
+    "dct": "http://purl.org/dc/terms/",
+    "source": "dct:source"
+  },
+  "@graph": [
+    {
+      "@id": "sf:intent/cart.payment-methods.transform.run",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "cart payment methods transform run",
+      "skos:altLabel": [
+        "cart.payment-methods.transform.run",
+        "shopify.functions.cart.payment-methods.transform.run.v1"
+      ],
+      "skos:broader": "sf:resource/payment-methods",
+      "source": [
+        "Shopify Functions",
+        "Payment Customization"
+      ]
+    }
+  ]
+}

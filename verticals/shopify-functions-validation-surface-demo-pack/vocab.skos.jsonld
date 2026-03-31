@@ -1,0 +1,39 @@
+{
+  "@context": {
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "sf": "https://lane2.example/ontology/shopify/functions/"
+  },
+  "@graph": [
+    {
+      "@id": "sf:family/functions",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "Shopify Functions"
+    },
+    {
+      "@id": "sf:resource/validations",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "Validations",
+      "skos:broader": "sf:family/functions"
+    },
+    {
+      "@id": "sf:intent/cart.validations.generate.fetch",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "Cart validations generate fetch",
+      "skos:altLabel": [
+        "cart.validations.generate.fetch",
+        "shopify.functions.cart.validations.generate.fetch.v1"
+      ],
+      "skos:broader": "sf:resource/validations"
+    },
+    {
+      "@id": "sf:intent/cart.validations.generate.run",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "Cart validations generate run",
+      "skos:altLabel": [
+        "cart.validations.generate.run",
+        "shopify.functions.cart.validations.generate.run.v1"
+      ],
+      "skos:broader": "sf:resource/validations"
+    }
+  ]
+}

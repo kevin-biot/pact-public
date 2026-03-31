@@ -1,0 +1,61 @@
+{
+  "@context": {
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "sf": "https://lane2.example/ontology/shopify/functions/"
+  },
+  "@graph": [
+    {
+      "@id": "sf:family/functions",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "Shopify Functions"
+    },
+    {
+      "@id": "sf:resource/delivery-options",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "Delivery Options",
+      "skos:broader": "sf:family/functions"
+    },
+    {
+      "@id": "sf:resource/fulfillment-constraints",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "Fulfillment Constraints",
+      "skos:broader": "sf:family/functions"
+    },
+    {
+      "@id": "sf:resource/fulfillment-groups",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "Fulfillment Groups",
+      "skos:broader": "sf:family/functions"
+    },
+    {
+      "@id": "sf:intent/cart.delivery-options.transform.run",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "Cart delivery options transform run",
+      "skos:altLabel": [
+        "cart.delivery-options.transform.run",
+        "shopify.functions.cart.delivery-options.transform.run.v1"
+      ],
+      "skos:broader": "sf:resource/delivery-options"
+    },
+    {
+      "@id": "sf:intent/cart.fulfillment-constraints.generate.run",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "Cart fulfillment constraints generate run",
+      "skos:altLabel": [
+        "cart.fulfillment-constraints.generate.run",
+        "shopify.functions.cart.fulfillment-constraints.generate.run.v1"
+      ],
+      "skos:broader": "sf:resource/fulfillment-constraints"
+    },
+    {
+      "@id": "sf:intent/cart.fulfillment-groups.location-rankings.generate.run",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "Cart fulfillment groups location rankings generate run",
+      "skos:altLabel": [
+        "cart.fulfillment-groups.location-rankings.generate.run",
+        "shopify.functions.cart.fulfillment-groups.location-rankings.generate.run.v1"
+      ],
+      "skos:broader": "sf:resource/fulfillment-groups"
+    }
+  ]
+}

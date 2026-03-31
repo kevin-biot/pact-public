@@ -1,0 +1,164 @@
+{
+  "@context": {
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "sf": "https://lane2.example/ontology/shopify/functions/",
+    "dct": "http://purl.org/dc/terms/",
+    "source": "dct:source"
+  },
+  "@graph": [
+    {
+      "@id": "sf:intent/cart.transform.run",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "cart transform run",
+      "skos:altLabel": [
+        "cart.transform.run",
+        "shopify.functions.cart.transform.run.v1"
+      ],
+      "skos:broader": "sf:resource/transform",
+      "source": [
+        "Shopify Functions",
+        "Cart Transform"
+      ]
+    },
+    {
+      "@id": "sf:intent/cart.validations.generate.fetch",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "cart validations generate fetch",
+      "skos:altLabel": [
+        "cart.validations.generate.fetch",
+        "shopify.functions.cart.validations.generate.fetch.v1"
+      ],
+      "skos:broader": "sf:resource/validations",
+      "source": [
+        "Shopify Functions",
+        "Cart and Checkout Validation"
+      ]
+    },
+    {
+      "@id": "sf:intent/cart.validations.generate.run",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "cart validations generate run",
+      "skos:altLabel": [
+        "cart.validations.generate.run",
+        "shopify.functions.cart.validations.generate.run.v1"
+      ],
+      "skos:broader": "sf:resource/validations",
+      "source": [
+        "Shopify Functions",
+        "Cart and Checkout Validation"
+      ]
+    },
+    {
+      "@id": "sf:intent/cart.delivery-options.transform.run",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "cart delivery options transform run",
+      "skos:altLabel": [
+        "cart.delivery-options.transform.run",
+        "shopify.functions.cart.delivery-options.transform.run.v1"
+      ],
+      "skos:broader": "sf:resource/delivery-options",
+      "source": [
+        "Shopify Functions",
+        "Delivery Customization"
+      ]
+    },
+    {
+      "@id": "sf:intent/cart.delivery-options.discounts.generate.fetch",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "cart delivery options discounts generate fetch",
+      "skos:altLabel": [
+        "cart.delivery-options.discounts.generate.fetch",
+        "shopify.functions.cart.delivery-options.discounts.generate.fetch.v1"
+      ],
+      "skos:broader": "sf:resource/delivery-options",
+      "source": [
+        "Shopify Functions",
+        "Discount"
+      ]
+    },
+    {
+      "@id": "sf:intent/cart.delivery-options.discounts.generate.run",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "cart delivery options discounts generate run",
+      "skos:altLabel": [
+        "cart.delivery-options.discounts.generate.run",
+        "shopify.functions.cart.delivery-options.discounts.generate.run.v1"
+      ],
+      "skos:broader": "sf:resource/delivery-options",
+      "source": [
+        "Shopify Functions",
+        "Discount"
+      ]
+    },
+    {
+      "@id": "sf:intent/cart.lines.discounts.generate.fetch",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "cart lines discounts generate fetch",
+      "skos:altLabel": [
+        "cart.lines.discounts.generate.fetch",
+        "shopify.functions.cart.lines.discounts.generate.fetch.v1"
+      ],
+      "skos:broader": "sf:resource/lines",
+      "source": [
+        "Shopify Functions",
+        "Discount"
+      ]
+    },
+    {
+      "@id": "sf:intent/cart.lines.discounts.generate.run",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "cart lines discounts generate run",
+      "skos:altLabel": [
+        "cart.lines.discounts.generate.run",
+        "shopify.functions.cart.lines.discounts.generate.run.v1"
+      ],
+      "skos:broader": "sf:resource/lines",
+      "source": [
+        "Shopify Functions",
+        "Discount"
+      ]
+    },
+    {
+      "@id": "sf:intent/cart.fulfillment-constraints.generate.run",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "cart fulfillment constraints generate run",
+      "skos:altLabel": [
+        "cart.fulfillment-constraints.generate.run",
+        "shopify.functions.cart.fulfillment-constraints.generate.run.v1"
+      ],
+      "skos:broader": "sf:resource/fulfillment-constraints",
+      "source": [
+        "Shopify Functions",
+        "Fulfillment Constraints"
+      ]
+    },
+    {
+      "@id": "sf:intent/cart.fulfillment-groups.location-rankings.generate.run",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "cart fulfillment groups location rankings generate run",
+      "skos:altLabel": [
+        "cart.fulfillment-groups.location-rankings.generate.run",
+        "shopify.functions.cart.fulfillment-groups.location-rankings.generate.run.v1"
+      ],
+      "skos:broader": "sf:resource/fulfillment-groups",
+      "source": [
+        "Shopify Functions",
+        "Order Routing Location Rule"
+      ]
+    },
+    {
+      "@id": "sf:intent/cart.payment-methods.transform.run",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "cart payment methods transform run",
+      "skos:altLabel": [
+        "cart.payment-methods.transform.run",
+        "shopify.functions.cart.payment-methods.transform.run.v1"
+      ],
+      "skos:broader": "sf:resource/payment-methods",
+      "source": [
+        "Shopify Functions",
+        "Payment Customization"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "id": "shopify-functions-delivery-fulfillment-surface-demo-0.1.0",
+  "domain": "shopify-functions-delivery-fulfillment-surface-demo",
+  "version": "0.1.0",
+  "providerId": "ontology:lane2:shopify-functions-delivery-fulfillment-surface-demo",
+  "trustTier": "Tier1",
+  "policySnapshotId": "sha256:de93910b5a55669504e880f862be54015b611d8410d8cc16f5d3c3ec974f5116",
+  "files": {
+    "context": "sha256:7450ddbbc08b07fc520bbf4491e094b826a0f8678c6de4841c3b16e6b6a4fd11",
+    "convergence": "sha256:50c915b606853cbe839af9315760aafef3749a35f687e4aff60fdb81647daf4a",
+    "decision_space": "sha256:9d80f18669d9b4b8a46096f364a33504ed18089f708aeaa98c0b7cd69436f232",
+    "intent_mappings": "sha256:095b7d2a2126e7a1e8b9dbb3d060eeb5fedb5b2149a2fa546fedd9556c55aedd",
+    "patterns": "sha256:faa154b2108fc5d01b5057ce261f86df0fd1936ff6612cc758b2ef73166a13c3",
+    "shapes": "sha256:efe583b9f8118d2a7b7c1a7f67658c23e522a7f30cd1e6ad7dec57d15b8a87f8",
+    "thesaurus": "sha256:539b92f0ee41f793bef5984ec0ce9fa2c2243deec1c49a8e2b757793dc50602d",
+    "thesaurus_local": "sha256:8d5d9c504e52a4ef255f3f35f7164bd5eba1a02fa2cddce12c7c9d52cb3448cc",
+    "vocab": "sha256:64d2223c1b94833a07daf0a74d565f745b4c5f22b7cb70156c335c310470dc33"
+  },
+  "precedence": [],
+  "denyWins": true,
+  "nbf": "2026-03-31T00:00:00Z",
+  "exp": "2030-03-31T00:00:00Z",
+  "revEpoch": 1
+}

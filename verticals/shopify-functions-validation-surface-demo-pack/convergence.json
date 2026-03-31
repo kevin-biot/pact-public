@@ -1,0 +1,22 @@
+{
+  "schema_version": "1.0",
+  "domain": "shopify-functions-validation-surface-demo",
+  "thresholds": {
+    "overall_min_pass_rate": 1,
+    "require_critical_pass": true
+  },
+  "cases": [
+    {
+      "id": "sf_case_001",
+      "phrase": "cart validations generate fetch",
+      "expect": "shopify.functions.cart.validations.generate.fetch.v1",
+      "critical": true
+    },
+    {
+      "id": "sf_case_002",
+      "phrase": "cart validations generate run",
+      "expect": "shopify.functions.cart.validations.generate.run.v1",
+      "critical": true
+    }
+  ]
+}

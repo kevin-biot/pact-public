@@ -1,0 +1,15 @@
+{
+  "domain": "shopify-functions-payment-surface-demo",
+  "lane": "shopify-functions-latest-surface",
+  "source_entrypoint": "https://shopify.dev/docs/api/functions/latest",
+  "version_channel": "latest",
+  "version_observed": "2026-01",
+  "sources": [
+    {
+      "api": "Payment Customization",
+      "page": "https://shopify.dev/docs/api/functions/latest/payment-customization",
+      "target": "cart.payment-methods.transform.run"
+    }
+  ],
+  "generated_at_utc": "2026-03-31T01:43:20Z"
+}

@@ -1,0 +1,42 @@
+{
+  "schema_version": "1.0",
+  "domain": "shopify-functions-discount-surface-demo",
+  "patterns": [
+    {
+      "id": "sf_cart-delivery-options-discounts-generate-fetch_intent",
+      "concept_uri": "sf:intent/cart.delivery-options.discounts.generate.fetch",
+      "entity_type": "intent_hint",
+      "regex": "(?i)^cart\\ delivery\\ options\\ discounts\\ generate\\ fetch$",
+      "examples": [
+        "cart delivery options discounts generate fetch"
+      ]
+    },
+    {
+      "id": "sf_cart-delivery-options-discounts-generate-run_intent",
+      "concept_uri": "sf:intent/cart.delivery-options.discounts.generate.run",
+      "entity_type": "intent_hint",
+      "regex": "(?i)^cart\\ delivery\\ options\\ discounts\\ generate\\ run$",
+      "examples": [
+        "cart delivery options discounts generate run"
+      ]
+    },
+    {
+      "id": "sf_cart-lines-discounts-generate-fetch_intent",
+      "concept_uri": "sf:intent/cart.lines.discounts.generate.fetch",
+      "entity_type": "intent_hint",
+      "regex": "(?i)^cart\\ lines\\ discounts\\ generate\\ fetch$",
+      "examples": [
+        "cart lines discounts generate fetch"
+      ]
+    },
+    {
+      "id": "sf_cart-lines-discounts-generate-run_intent",
+      "concept_uri": "sf:intent/cart.lines.discounts.generate.run",
+      "entity_type": "intent_hint",
+      "regex": "(?i)^cart\\ lines\\ discounts\\ generate\\ run$",
+      "examples": [
+        "cart lines discounts generate run"
+      ]
+    }
+  ]
+}

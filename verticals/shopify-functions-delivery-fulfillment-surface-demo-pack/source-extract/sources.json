@@ -1,0 +1,25 @@
+{
+  "domain": "shopify-functions-delivery-fulfillment-surface-demo",
+  "lane": "shopify-functions-latest-surface",
+  "source_entrypoint": "https://shopify.dev/docs/api/functions/latest",
+  "version_channel": "latest",
+  "version_observed": "2026-01",
+  "sources": [
+    {
+      "api": "Delivery Customization",
+      "page": "https://shopify.dev/docs/api/functions/latest/delivery-customization",
+      "target": "cart.delivery-options.transform.run"
+    },
+    {
+      "api": "Fulfillment Constraints",
+      "page": "https://shopify.dev/docs/api/functions/latest/fulfillment-constraints",
+      "target": "cart.fulfillment-constraints.generate.run"
+    },
+    {
+      "api": "Order Routing Location Rule",
+      "page": "https://shopify.dev/docs/api/functions/latest/order-routing-location-rule",
+      "target": "cart.fulfillment-groups.location-rankings.generate.run"
+    }
+  ],
+  "generated_at_utc": "2026-03-31T01:43:20Z"
+}

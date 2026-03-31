@@ -1,0 +1,15 @@
+{
+  "schema_version": "1.0",
+  "domain": "shopify-functions-payment-surface-demo",
+  "patterns": [
+    {
+      "id": "sf_cart-payment-methods-transform-run_intent",
+      "concept_uri": "sf:intent/cart.payment-methods.transform.run",
+      "entity_type": "intent_hint",
+      "regex": "(?i)^cart\\ payment\\ methods\\ transform\\ run$",
+      "examples": [
+        "cart payment methods transform run"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "schema_version": "1.0",
+  "domain": "shopify-functions-payment-surface-demo",
+  "last_modified": "2026-03-31",
+  "concepts": [
+    {
+      "concept_id": "sf:intent/cart.payment-methods.transform.run",
+      "preferred_term": "cart payment methods transform run",
+      "synonyms": [
+        "cart.payment-methods.transform.run",
+        "shopify.functions.cart.payment-methods.transform.run.v1"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "sf:resource/payment-methods",
+      "narrower": [],
+      "source_refs": [
+        "Shopify Functions",
+        "Payment Customization"
+      ],
+      "ner_provenance": null
+    }
+  ]
+}

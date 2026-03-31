@@ -1,0 +1,16 @@
+{
+  "schema_version": "0.1",
+  "generated_at_utc": "2026-03-31T01:43:20Z",
+  "domain": "shopify-functions-validation-surface-demo",
+  "function_targets": [
+    "cart.validations.generate.fetch",
+    "cart.validations.generate.run"
+  ],
+  "intent_classes": [
+    "shopify.functions.cart.validations.generate.fetch.v1",
+    "shopify.functions.cart.validations.generate.run.v1"
+  ],
+  "resource_families": [
+    "validations"
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "@context": {
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "sf": "https://lane2.example/ontology/shopify/functions/",
+    "dct": "http://purl.org/dc/terms/",
+    "source": "dct:source"
+  },
+  "@graph": [
+    {
+      "@id": "sf:intent/cart.delivery-options.transform.run",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "cart delivery options transform run",
+      "skos:altLabel": [
+        "cart.delivery-options.transform.run",
+        "shopify.functions.cart.delivery-options.transform.run.v1"
+      ],
+      "skos:broader": "sf:resource/delivery-options",
+      "source": [
+        "Shopify Functions",
+        "Delivery Customization"
+      ]
+    },
+    {
+      "@id": "sf:intent/cart.fulfillment-constraints.generate.run",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "cart fulfillment constraints generate run",
+      "skos:altLabel": [
+        "cart.fulfillment-constraints.generate.run",
+        "shopify.functions.cart.fulfillment-constraints.generate.run.v1"
+      ],
+      "skos:broader": "sf:resource/fulfillment-constraints",
+      "source": [
+        "Shopify Functions",
+        "Fulfillment Constraints"
+      ]
+    },
+    {
+      "@id": "sf:intent/cart.fulfillment-groups.location-rankings.generate.run",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "cart fulfillment groups location rankings generate run",
+      "skos:altLabel": [
+        "cart.fulfillment-groups.location-rankings.generate.run",
+        "shopify.functions.cart.fulfillment-groups.location-rankings.generate.run.v1"
+      ],
+      "skos:broader": "sf:resource/fulfillment-groups",
+      "source": [
+        "Shopify Functions",
+        "Order Routing Location Rule"
+      ]
+    }
+  ]
+}

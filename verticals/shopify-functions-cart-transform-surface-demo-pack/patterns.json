@@ -1,0 +1,15 @@
+{
+  "schema_version": "1.0",
+  "domain": "shopify-functions-cart-transform-surface-demo",
+  "patterns": [
+    {
+      "id": "sf_cart-transform-run_intent",
+      "concept_uri": "sf:intent/cart.transform.run",
+      "entity_type": "intent_hint",
+      "regex": "(?i)^cart\\ transform\\ run$",
+      "examples": [
+        "cart transform run"
+      ]
+    }
+  ]
+}

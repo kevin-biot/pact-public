@@ -1,0 +1,40 @@
+{
+  "schema_version": "0.1",
+  "generated_at_utc": "2026-03-31T01:43:20Z",
+  "domain": "shopify-functions-core-seed-demo",
+  "function_targets": [
+    "cart.transform.run",
+    "cart.validations.generate.fetch",
+    "cart.validations.generate.run",
+    "cart.delivery-options.transform.run",
+    "cart.delivery-options.discounts.generate.fetch",
+    "cart.delivery-options.discounts.generate.run",
+    "cart.lines.discounts.generate.fetch",
+    "cart.lines.discounts.generate.run",
+    "cart.fulfillment-constraints.generate.run",
+    "cart.fulfillment-groups.location-rankings.generate.run",
+    "cart.payment-methods.transform.run"
+  ],
+  "intent_classes": [
+    "shopify.functions.cart.transform.run.v1",
+    "shopify.functions.cart.validations.generate.fetch.v1",
+    "shopify.functions.cart.validations.generate.run.v1",
+    "shopify.functions.cart.delivery-options.transform.run.v1",
+    "shopify.functions.cart.delivery-options.discounts.generate.fetch.v1",
+    "shopify.functions.cart.delivery-options.discounts.generate.run.v1",
+    "shopify.functions.cart.lines.discounts.generate.fetch.v1",
+    "shopify.functions.cart.lines.discounts.generate.run.v1",
+    "shopify.functions.cart.fulfillment-constraints.generate.run.v1",
+    "shopify.functions.cart.fulfillment-groups.location-rankings.generate.run.v1",
+    "shopify.functions.cart.payment-methods.transform.run.v1"
+  ],
+  "resource_families": [
+    "delivery-options",
+    "fulfillment-constraints",
+    "fulfillment-groups",
+    "lines",
+    "payment-methods",
+    "transform",
+    "validations"
+  ]
+}

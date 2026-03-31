@@ -1,0 +1,66 @@
+{
+  "@context": {
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "sf": "https://lane2.example/ontology/shopify/functions/",
+    "dct": "http://purl.org/dc/terms/",
+    "source": "dct:source"
+  },
+  "@graph": [
+    {
+      "@id": "sf:intent/cart.delivery-options.discounts.generate.fetch",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "cart delivery options discounts generate fetch",
+      "skos:altLabel": [
+        "cart.delivery-options.discounts.generate.fetch",
+        "shopify.functions.cart.delivery-options.discounts.generate.fetch.v1"
+      ],
+      "skos:broader": "sf:resource/delivery-options",
+      "source": [
+        "Shopify Functions",
+        "Discount"
+      ]
+    },
+    {
+      "@id": "sf:intent/cart.delivery-options.discounts.generate.run",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "cart delivery options discounts generate run",
+      "skos:altLabel": [
+        "cart.delivery-options.discounts.generate.run",
+        "shopify.functions.cart.delivery-options.discounts.generate.run.v1"
+      ],
+      "skos:broader": "sf:resource/delivery-options",
+      "source": [
+        "Shopify Functions",
+        "Discount"
+      ]
+    },
+    {
+      "@id": "sf:intent/cart.lines.discounts.generate.fetch",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "cart lines discounts generate fetch",
+      "skos:altLabel": [
+        "cart.lines.discounts.generate.fetch",
+        "shopify.functions.cart.lines.discounts.generate.fetch.v1"
+      ],
+      "skos:broader": "sf:resource/lines",
+      "source": [
+        "Shopify Functions",
+        "Discount"
+      ]
+    },
+    {
+      "@id": "sf:intent/cart.lines.discounts.generate.run",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "cart lines discounts generate run",
+      "skos:altLabel": [
+        "cart.lines.discounts.generate.run",
+        "shopify.functions.cart.lines.discounts.generate.run.v1"
+      ],
+      "skos:broader": "sf:resource/lines",
+      "source": [
+        "Shopify Functions",
+        "Discount"
+      ]
+    }
+  ]
+}

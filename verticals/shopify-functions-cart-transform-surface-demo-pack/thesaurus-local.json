@@ -1,0 +1,25 @@
+{
+  "schema_version": "1.0",
+  "domain": "shopify-functions-cart-transform-surface-demo",
+  "last_modified": "2026-03-31",
+  "concepts": [
+    {
+      "concept_id": "sf:intent/cart.transform.run",
+      "preferred_term": "cart transform run",
+      "synonyms": [
+        "cart.transform.run",
+        "shopify.functions.cart.transform.run.v1"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "sf:resource/transform",
+      "narrower": [],
+      "source_refs": [
+        "Shopify Functions",
+        "Cart Transform"
+      ],
+      "ner_provenance": null
+    }
+  ]
+}

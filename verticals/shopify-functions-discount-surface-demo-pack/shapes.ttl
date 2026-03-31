@@ -1,0 +1,16 @@
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix sf: <https://lane2.example/ontology/shopify/functions/> .
+
+sf:FunctionTargetNodeShape a sh:NodeShape ;
+  sh:targetClass sf:FunctionTarget ;
+  sh:property [
+    sh:path sf:target ;
+    sh:datatype xsd:string ;
+    sh:minCount 1 ;
+  ] ;
+  sh:property [
+    sh:path sf:intentClass ;
+    sh:datatype xsd:string ;
+    sh:minCount 1 ;
+  ] .

@@ -242,18 +242,24 @@ This repository includes:
 14. `verticals/revolut-merchant-disputes-surface-pack/`
 15. `verticals/revolut-merchant-order-payment-surface-pack/`
 16. `verticals/revolut-merchant-ops-observability-surface-pack/`
-17. `verticals/tmf-core-seed-demo-pack/`
-18. `verticals/tmf-service-inventory-order-surface-demo-pack/`
-19. `verticals/tmf-resource-catalog-alarm-surface-demo-pack/`
-20. `verticals/tmf-intent-policy-bridge-surface-demo-pack/`
-21. `verticals/telco-reference-pack/`
-22. `verticals/telco-retail-demo-pack/`
-23. `verticals/telco-fault-diagnosis-demo-pack/`
-24. `verticals/telco-ran-core-slice-demo-pack/`
-25. `verticals/travel-air-shopping-demo-pack/`
-26. `verticals/travel-hotel-booking-demo-pack/`
-27. `verticals/travel-air-order-lifecycle-demo-pack/`
-28. `verticals/travel-itinerary-fusion-demo-pack/`
+17. `verticals/shopify-functions-core-seed-demo-pack/`
+18. `verticals/shopify-functions-discount-surface-demo-pack/`
+19. `verticals/shopify-functions-validation-surface-demo-pack/`
+20. `verticals/shopify-functions-delivery-fulfillment-surface-demo-pack/`
+21. `verticals/shopify-functions-payment-surface-demo-pack/`
+22. `verticals/shopify-functions-cart-transform-surface-demo-pack/`
+23. `verticals/tmf-core-seed-demo-pack/`
+24. `verticals/tmf-service-inventory-order-surface-demo-pack/`
+25. `verticals/tmf-resource-catalog-alarm-surface-demo-pack/`
+26. `verticals/tmf-intent-policy-bridge-surface-demo-pack/`
+27. `verticals/telco-reference-pack/`
+28. `verticals/telco-retail-demo-pack/`
+29. `verticals/telco-fault-diagnosis-demo-pack/`
+30. `verticals/telco-ran-core-slice-demo-pack/`
+31. `verticals/travel-air-shopping-demo-pack/`
+32. `verticals/travel-hotel-booking-demo-pack/`
+33. `verticals/travel-air-order-lifecycle-demo-pack/`
+34. `verticals/travel-itinerary-fusion-demo-pack/`
 
 This telco pack is a non-normative example vertical profile demonstrating PACT extension mechanics.
 It does not define TM Forum standards and does not replace IG1453.
@@ -266,6 +272,7 @@ The FHIR encounter transitions pack provides a stepwise surface for transfer, wa
 The open banking demo packs provide separate bounded surfaces for AIS read, consent lifecycle, and payment initiation.
 The ISO 20022 authored/canonical demo packs provide comparative Route A/Route B surfaces alongside the reference pack.
 The Revolut merchant surface packs provide candidate bounded domains for seed, order/payment, disputes, subscriptions, and ops observability.
+The Shopify Functions demo packs provide bounded surfaces across core checkout function targets (cart transform, discounts, validation, delivery/fulfillment/routing, and payment customization), with source catalog under `docs/shopify-functions/`.
 The TM Forum demo surface packs provide high-coverage bounded routing surfaces for core, service/order, resource/alarm, and intent/policy API domains, with synthesis evidence published under `docs/tmf-synthesis/`.
 
 The policy reference pack is a non-normative base-policy example demonstrating cross-domain policy semantics independent of telco standards.

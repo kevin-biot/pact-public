@@ -1,0 +1,20 @@
+{
+  "schema_version": "0.1",
+  "generated_at_utc": "2026-03-31T01:43:20Z",
+  "source_profile": "shopify-functions-latest-surface-v1",
+  "version_channel": "latest",
+  "version_observed": "2026-01",
+  "source_entrypoint": "https://shopify.dev/docs/api/functions/latest",
+  "api_count": 1,
+  "apis": [
+    "Payment Customization"
+  ],
+  "target_count": 1,
+  "resource_family_count": 1,
+  "resource_families": [
+    "payment-methods"
+  ],
+  "target_sample": [
+    "cart.payment-methods.transform.run"
+  ]
+}

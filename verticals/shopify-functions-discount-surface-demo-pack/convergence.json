@@ -1,0 +1,34 @@
+{
+  "schema_version": "1.0",
+  "domain": "shopify-functions-discount-surface-demo",
+  "thresholds": {
+    "overall_min_pass_rate": 1,
+    "require_critical_pass": true
+  },
+  "cases": [
+    {
+      "id": "sf_case_001",
+      "phrase": "cart delivery options discounts generate fetch",
+      "expect": "shopify.functions.cart.delivery-options.discounts.generate.fetch.v1",
+      "critical": true
+    },
+    {
+      "id": "sf_case_002",
+      "phrase": "cart delivery options discounts generate run",
+      "expect": "shopify.functions.cart.delivery-options.discounts.generate.run.v1",
+      "critical": true
+    },
+    {
+      "id": "sf_case_003",
+      "phrase": "cart lines discounts generate fetch",
+      "expect": "shopify.functions.cart.lines.discounts.generate.fetch.v1",
+      "critical": true
+    },
+    {
+      "id": "sf_case_004",
+      "phrase": "cart lines discounts generate run",
+      "expect": "shopify.functions.cart.lines.discounts.generate.run.v1",
+      "critical": true
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "schema_version": "1.0",
+  "domain": "shopify-functions-validation-surface-demo",
+  "mappings": [
+    {
+      "concept_uri": "sf:intent/cart.validations.generate.fetch",
+      "intent_class": "shopify.functions.cart.validations.generate.fetch.v1",
+      "confidence_floor": 0.75
+    },
+    {
+      "concept_uri": "sf:intent/cart.validations.generate.run",
+      "intent_class": "shopify.functions.cart.validations.generate.run.v1",
+      "confidence_floor": 0.75
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "schema_version": "1.0",
+  "domain": "shopify-functions-validation-surface-demo",
+  "last_modified": "2026-03-31",
+  "concepts": [
+    {
+      "concept_id": "sf:intent/cart.validations.generate.fetch",
+      "preferred_term": "cart validations generate fetch",
+      "synonyms": [
+        "cart.validations.generate.fetch",
+        "shopify.functions.cart.validations.generate.fetch.v1"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "sf:resource/validations",
+      "narrower": [],
+      "source_refs": [
+        "Shopify Functions",
+        "Cart and Checkout Validation"
+      ],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "sf:intent/cart.validations.generate.run",
+      "preferred_term": "cart validations generate run",
+      "synonyms": [
+        "cart.validations.generate.run",
+        "shopify.functions.cart.validations.generate.run.v1"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "sf:resource/validations",
+      "narrower": [],
+      "source_refs": [
+        "Shopify Functions",
+        "Cart and Checkout Validation"
+      ],
+      "ner_provenance": null
+    }
+  ]
+}

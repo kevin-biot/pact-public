@@ -1,0 +1,61 @@
+{
+  "schema_version": "1.0",
+  "domain": "shopify-functions-delivery-fulfillment-surface-demo",
+  "last_modified": "2026-03-31",
+  "concepts": [
+    {
+      "concept_id": "sf:intent/cart.delivery-options.transform.run",
+      "preferred_term": "cart delivery options transform run",
+      "synonyms": [
+        "cart.delivery-options.transform.run",
+        "shopify.functions.cart.delivery-options.transform.run.v1"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "sf:resource/delivery-options",
+      "narrower": [],
+      "source_refs": [
+        "Shopify Functions",
+        "Delivery Customization"
+      ],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "sf:intent/cart.fulfillment-constraints.generate.run",
+      "preferred_term": "cart fulfillment constraints generate run",
+      "synonyms": [
+        "cart.fulfillment-constraints.generate.run",
+        "shopify.functions.cart.fulfillment-constraints.generate.run.v1"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "sf:resource/fulfillment-constraints",
+      "narrower": [],
+      "source_refs": [
+        "Shopify Functions",
+        "Fulfillment Constraints"
+      ],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "sf:intent/cart.fulfillment-groups.location-rankings.generate.run",
+      "preferred_term": "cart fulfillment groups location rankings generate run",
+      "synonyms": [
+        "cart.fulfillment-groups.location-rankings.generate.run",
+        "shopify.functions.cart.fulfillment-groups.location-rankings.generate.run.v1"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "sf:resource/fulfillment-groups",
+      "narrower": [],
+      "source_refs": [
+        "Shopify Functions",
+        "Order Routing Location Rule"
+      ],
+      "ner_provenance": null
+    }
+  ]
+}

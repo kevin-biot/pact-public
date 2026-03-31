@@ -1,0 +1,24 @@
+{
+  "schema_version": "1.0",
+  "domain": "shopify-functions-validation-surface-demo",
+  "patterns": [
+    {
+      "id": "sf_cart-validations-generate-fetch_intent",
+      "concept_uri": "sf:intent/cart.validations.generate.fetch",
+      "entity_type": "intent_hint",
+      "regex": "(?i)^cart\\ validations\\ generate\\ fetch$",
+      "examples": [
+        "cart validations generate fetch"
+      ]
+    },
+    {
+      "id": "sf_cart-validations-generate-run_intent",
+      "concept_uri": "sf:intent/cart.validations.generate.run",
+      "entity_type": "intent_hint",
+      "regex": "(?i)^cart\\ validations\\ generate\\ run$",
+      "examples": [
+        "cart validations generate run"
+      ]
+    }
+  ]
+}
