@@ -1,0 +1,16 @@
+{
+  "@context": {
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "fhiret": "https://lane2.example/ontology/fhir-encounter-transitions/"
+  },
+  "concepts": [
+    {"id": "fhiret:EncounterTransfer", "prefLabel": "Encounter Transfer", "broader": "fhiret:EncounterTransition"},
+    {"id": "fhiret:EncounterStepDown", "prefLabel": "Encounter Step-Down", "broader": "fhiret:EncounterTransition"},
+    {"id": "fhiret:EncounterDischarge", "prefLabel": "Encounter Discharge", "broader": "fhiret:EncounterTransition"},
+    {"id": "fhiret:EncounterHistoryQuery", "prefLabel": "Encounter History Query", "broader": "fhiret:EncounterTransition"},
+    {"id": "fhiret:EncounterTransitionSubscribe", "prefLabel": "Encounter Transition Subscribe", "broader": "fhiret:TransitionNotification"},
+    {"id": "fhiret:EncounterTransitionNotify", "prefLabel": "Encounter Transition Notify", "broader": "fhiret:TransitionNotification"},
+    {"id": "fhiret:EncounterTransition", "prefLabel": "Encounter Transition"},
+    {"id": "fhiret:TransitionNotification", "prefLabel": "Transition Notification"}
+  ]
+}

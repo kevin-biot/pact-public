@@ -1,0 +1,10 @@
+{
+  "schema_version": "0.1",
+  "generated_at_utc": "2026-03-31T00:00:00Z",
+  "profile": "fhir-encounter-transitions-demo-pack",
+  "domain": "fhir-encounter-transitions",
+  "source_spec": "HL7 FHIR R5 Encounter + EncounterHistory",
+  "source_artifact_count": 3,
+  "transition_step_count": 5,
+  "note": "Curated transition workflow profile for transfer, step-down, discharge, history, and notifications."
+}

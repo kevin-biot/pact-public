@@ -1,0 +1,11 @@
+{
+  "bundleId": "sha256:7cd8fcbe684019c6cde2cfd40af3c1741e4fdf74c3fab84897308fce577afc78",
+  "decision": {
+    "type": "FHIREncounterTransitionIntent",
+    "intent_class": "fhir.encounter.transfer.v1",
+    "resourceType": "Encounter",
+    "encounterRef": "Encounter/enc-1001",
+    "encounterStatus": "in-progress",
+    "fromLocation": "Ward-A"
+  }
+}

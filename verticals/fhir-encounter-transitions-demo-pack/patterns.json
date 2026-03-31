@@ -1,0 +1,12 @@
+{
+  "schema_version": "1.0",
+  "domain": "fhir-encounter-transitions",
+  "patterns": [
+    {"id": "transfer", "concept_uri": "fhir.encounter.transfer.v1", "entity_type": "intent_hint", "regex": "(?i)\\b(ward\\s+transfer|patient\\s+transfer|move\\s+patient\\s+ward)\\b", "examples": ["ward transfer"]},
+    {"id": "step_down", "concept_uri": "fhir.encounter.step_down.v1", "entity_type": "intent_hint", "regex": "(?i)\\b(step[- ]down|icu\\s+to\\s+ward|lower\\s+acuity\\s+transfer)\\b", "examples": ["step-down"]},
+    {"id": "discharge", "concept_uri": "fhir.encounter.discharge.v1", "entity_type": "intent_hint", "regex": "(?i)\\b(discharge\\s+patient|patient\\s+discharge|encounter\\s+discharge)\\b", "examples": ["patient discharge"]},
+    {"id": "history", "concept_uri": "fhir.encounter.history.query.v1", "entity_type": "intent_hint", "regex": "(?i)\\b(encounter\\s+history|transition\\s+timeline)\\b", "examples": ["encounter history"]},
+    {"id": "subscribe", "concept_uri": "fhir.encounter.transition.subscribe.v1", "entity_type": "intent_hint", "regex": "(?i)\\b(subscribe\\s+encounter\\s+transitions|transition\\s+subscription)\\b", "examples": ["subscribe encounter transitions"]},
+    {"id": "notify", "concept_uri": "fhir.encounter.transition.notify.v1", "entity_type": "intent_hint", "regex": "(?i)\\b(transition\\s+notification|adt\\s+transition\\s+message)\\b", "examples": ["transition notification"]}
+  ]
+}

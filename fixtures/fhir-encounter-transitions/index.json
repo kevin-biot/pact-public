@@ -1,0 +1,37 @@
+{
+  "schema_version": "1.0",
+  "generated_at_utc": "2026-03-31T00:00:00Z",
+  "pack_path": "verticals/fhir-encounter-transitions-demo-pack",
+  "cases": [
+    {
+      "id": "FHIR-ENC-VALID-001",
+      "path": "fixtures/fhir-encounter-transitions/cases/valid-transfer.json",
+      "expected": {"status": "pass", "code": "PASS"}
+    },
+    {
+      "id": "FHIR-ENC-VALID-002",
+      "path": "fixtures/fhir-encounter-transitions/cases/valid-discharge.json",
+      "expected": {"status": "pass", "code": "PASS"}
+    },
+    {
+      "id": "FHIR-ENC-VALID-003",
+      "path": "fixtures/fhir-encounter-transitions/cases/valid-subscribe.json",
+      "expected": {"status": "pass", "code": "PASS"}
+    },
+    {
+      "id": "FHIR-ENC-FAIL-001",
+      "path": "fixtures/fhir-encounter-transitions/cases/fail-missing-required-field.json",
+      "expected": {"status": "fail", "code": "CIC_REQUIRED_FIELD_MISSING"}
+    },
+    {
+      "id": "FHIR-ENC-FAIL-002",
+      "path": "fixtures/fhir-encounter-transitions/cases/fail-out-of-scope-intent.json",
+      "expected": {"status": "fail", "code": "ESCALATE_OUT_OF_SCOPE_INTENT"}
+    },
+    {
+      "id": "FHIR-ENC-FAIL-003",
+      "path": "fixtures/fhir-encounter-transitions/cases/fail-bundle-commit-mismatch.json",
+      "expected": {"status": "fail", "code": "PSC_BUNDLE_COMMIT_MISMATCH"}
+    }
+  ]
+}

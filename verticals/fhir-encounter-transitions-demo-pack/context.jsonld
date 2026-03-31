@@ -1,0 +1,12 @@
+{
+  "@context": {
+    "fhiret": "https://lane2.example/ontology/fhir-encounter-transitions/",
+    "intentClass": "fhiret:intentClass",
+    "resourceType": "fhiret:resourceType",
+    "encounterRef": "fhiret:encounterRef",
+    "encounterStatus": "fhiret:encounterStatus",
+    "fromLocation": "fhiret:fromLocation",
+    "toLocation": "fhiret:toLocation",
+    "dischargeDisposition": "fhiret:dischargeDisposition"
+  }
+}

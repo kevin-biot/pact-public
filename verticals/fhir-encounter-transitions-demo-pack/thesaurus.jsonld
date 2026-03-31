@@ -1,0 +1,27 @@
+{
+  "@context": {
+    "fhiret": "https://lane2.example/ontology/fhir-encounter-transitions/"
+  },
+  "entries": [
+    {
+      "label": "Ward Transfer",
+      "alt": ["patient transfer", "move patient ward"],
+      "properties": {"entity_type": "intent_hint", "description": "Encounter location transfer during active stay."}
+    },
+    {
+      "label": "Ward Step-Down",
+      "alt": ["step down care level", "icu to ward transfer"],
+      "properties": {"entity_type": "intent_hint", "description": "Encounter transition to lower acuity location/class."}
+    },
+    {
+      "label": "Discharge",
+      "alt": ["patient discharge", "discharge encounter"],
+      "properties": {"entity_type": "intent_hint", "description": "Encounter discharge workflow transition."}
+    },
+    {
+      "label": "Encounter History",
+      "alt": ["encounter timeline", "transition history"],
+      "properties": {"entity_type": "intent_hint", "description": "Query historical encounter transitions."}
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "id": "fhir-encounter-transitions-demo-0.1.0",
+  "domain": "fhir-encounter-transitions",
+  "version": "0.1.0",
+  "providerId": "ontology:pact-public:fhir",
+  "trustTier": "Tier1",
+  "policySnapshotId": "sha256:88a688d02da3bdcc23b8a0791d29edb91a1f80e782991e13b9e01daa1cc5ad5d",
+  "files": {
+    "context": "sha256:15ebe59cb50e56c6f9efdbd85bebf65ff34f8f9800ab7e16a51dd4bb4141f5e1",
+    "vocab": "sha256:7a0c0e27c282fc5ae2d9d4b666464f48e26062dd5af5414dfdd260aee098327e",
+    "shapes": "sha256:9989fc6a09af0428f817fba27adbf7e802d1e9942062672e1c2b1ddd07b5a343",
+    "thesaurus": "sha256:3a105ffda2b3760de8dd82b9278139fe4db60c0e95c949e5d08061e2432bb845",
+    "thesaurus_local": "sha256:aa7e9e17be2bccf58c15c5ec2a1e230636e1ed12364080cab00b684f09508e19",
+    "patterns": "sha256:2dabe2c76857c0c359fdd49235ee44062b99cb0d0a49729eccca7f663152e737",
+    "intent_mappings": "sha256:da4f964a9b08cb50a957f50b871a4d49f4073e424baf57c9f841dc863f99ce3c",
+    "convergence": "sha256:716461524675dbee050a4d7698324ff8b504d52a2de9f0a4afcdc0478b785b5a",
+    "decision_space": "sha256:4147d84fb750950adf6db627837249e192550f44f484ea8fc8a7cd4349404dd2",
+    "source_extract": "sha256:e8e754edee1ec141737743daec55cc16e6bbf4fbef311d6805ff506639279a09"
+  },
+  "precedence": [],
+  "denyWins": true,
+  "nbf": "2026-03-31T00:00:00Z",
+  "exp": "2030-03-31T00:00:00Z",
+  "revEpoch": 1
+}

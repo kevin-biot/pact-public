@@ -1,0 +1,79 @@
+{
+  "schema_version": "1.0",
+  "domain": "fhir-encounter-transitions",
+  "last_modified": "2026-03-31",
+  "concepts": [
+    {
+      "concept_id": "fhir.encounter.transfer.v1",
+      "preferred_term": "Encounter Transfer",
+      "synonyms": ["ward transfer", "patient transfer", "move patient ward"],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "EncounterTransition",
+      "narrower": [],
+      "source_refs": ["hl7-fhir-r5-encounter"],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "fhir.encounter.step_down.v1",
+      "preferred_term": "Encounter Step-Down",
+      "synonyms": ["step down care level", "icu to ward transfer"],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "EncounterTransition",
+      "narrower": [],
+      "source_refs": ["hl7-fhir-r5-encounter"],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "fhir.encounter.discharge.v1",
+      "preferred_term": "Encounter Discharge",
+      "synonyms": ["patient discharge", "discharge encounter"],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "EncounterTransition",
+      "narrower": [],
+      "source_refs": ["hl7-fhir-r5-encounter"],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "fhir.encounter.history.query.v1",
+      "preferred_term": "Encounter History Query",
+      "synonyms": ["encounter timeline", "transition history"],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "EncounterTransition",
+      "narrower": [],
+      "source_refs": ["hl7-fhir-r5-encounterhistory"],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "fhir.encounter.transition.subscribe.v1",
+      "preferred_term": "Encounter Transition Subscribe",
+      "synonyms": ["transition subscription", "encounter transition alerts"],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "TransitionNotification",
+      "narrower": [],
+      "source_refs": ["hl7-fhir-r5-patient-administration-module"],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "fhir.encounter.transition.notify.v1",
+      "preferred_term": "Encounter Transition Notify",
+      "synonyms": ["transition notification", "ADT-style transition message"],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "TransitionNotification",
+      "narrower": [],
+      "source_refs": ["hl7-fhir-r5-patient-administration-module"],
+      "ner_provenance": null
+    }
+  ]
+}

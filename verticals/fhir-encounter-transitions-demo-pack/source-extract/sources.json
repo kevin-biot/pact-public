@@ -1,0 +1,31 @@
+{
+  "schema_version": "1.0",
+  "generated_at_utc": "2026-03-31T00:00:00Z",
+  "sources": [
+    {
+      "id": "hl7-fhir-r5-encounter",
+      "title": "FHIR R5 Encounter",
+      "url": "https://www.hl7.org/fhir/encounter.html",
+      "accessed_utc": "2026-03-31T00:00:00Z",
+      "notes": [
+        "Encounter lifecycle includes admission, stay, transfer, and discharge.",
+        "Encounter.status supports discharged and completed states."
+      ]
+    },
+    {
+      "id": "hl7-fhir-r5-encounterhistory",
+      "title": "FHIR R5 EncounterHistory",
+      "url": "https://www.hl7.org/fhir/encounterhistory.html",
+      "accessed_utc": "2026-03-31T00:00:00Z",
+      "notes": [
+        "EncounterHistory provides status/class/location history over time."
+      ]
+    },
+    {
+      "id": "hl7-fhir-r5-patient-administration-module",
+      "title": "FHIR R5 Patient Administration Module",
+      "url": "https://www.hl7.org/fhir/patient-administration-module.html",
+      "accessed_utc": "2026-03-31T00:00:00Z"
+    }
+  ]
+}

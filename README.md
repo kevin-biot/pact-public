@@ -198,6 +198,12 @@ Run the FHIR reconciliation+allergy companion fixture harness:
 node tools/run-fhir-med-reconciliation-allergy-fixtures.mjs
 ```
 
+Run the FHIR encounter transitions fixture harness:
+
+```bash
+node tools/run-fhir-encounter-transitions-fixtures.mjs
+```
+
 Run the reference policy CIC+PSC fixture harness:
 
 ```bash
@@ -232,6 +238,7 @@ This repository includes:
 10. `verticals/telco-ran-core-slice-demo-pack/`
 11. `verticals/fhir-medications-module-demo-pack/`
 12. `verticals/fhir-med-reconciliation-allergy-demo-pack/`
+13. `verticals/fhir-encounter-transitions-demo-pack/`
 
 This telco pack is a non-normative example vertical profile demonstrating PACT extension mechanics.
 It does not define TM Forum standards and does not replace IG1453.
@@ -240,6 +247,7 @@ The telco retail demo pack provides a broader six-intent public candidate surfac
 The telco fault-diagnosis and RAN/core/slice demo packs provide focused candidate surfaces with dedicated fixture harnesses.
 The FHIR medications module demo pack provides a healthcare candidate surface grounded to HL7 FHIR R5 medications resources.
 The FHIR reconciliation+allergy companion pack extends healthcare coverage for medication list reconciliation and allergy safety records.
+The FHIR encounter transitions pack provides a stepwise surface for transfer, ward step-down, discharge, history, and transition notifications.
 
 The policy reference pack is a non-normative base-policy example demonstrating cross-domain policy semantics independent of telco standards.
 It includes a minimal jurisdiction overlay deny-wins composition example.

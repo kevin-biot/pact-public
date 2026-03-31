@@ -1,0 +1,12 @@
+{
+  "schema_version": "1.0",
+  "domain": "fhir-encounter-transitions",
+  "thresholds": {"overall_min_pass_rate": 1.0, "require_critical_pass": true},
+  "cases": [
+    {"id": "transfer", "phrase": "transfer patient to ward B", "expect": "fhir.encounter.transfer.v1", "critical": true},
+    {"id": "step_down", "phrase": "step down from ICU to ward", "expect": "fhir.encounter.step_down.v1", "critical": true},
+    {"id": "discharge", "phrase": "discharge patient today", "expect": "fhir.encounter.discharge.v1", "critical": true},
+    {"id": "subscribe", "phrase": "subscribe encounter transitions", "expect": "fhir.encounter.transition.subscribe.v1", "critical": true},
+    {"id": "out_scope", "phrase": "submit medication request", "expect": "fhir.medication.request.v1", "critical": false}
+  ]
+}

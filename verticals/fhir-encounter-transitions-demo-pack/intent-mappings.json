@@ -1,0 +1,12 @@
+{
+  "schema_version": "1.0",
+  "domain": "fhir-encounter-transitions",
+  "mappings": [
+    {"concept_uri": "fhiret:EncounterTransfer", "intent_class": "fhir.encounter.transfer.v1", "confidence_floor": 0.75},
+    {"concept_uri": "fhiret:EncounterStepDown", "intent_class": "fhir.encounter.step_down.v1", "confidence_floor": 0.75},
+    {"concept_uri": "fhiret:EncounterDischarge", "intent_class": "fhir.encounter.discharge.v1", "confidence_floor": 0.75},
+    {"concept_uri": "fhiret:EncounterHistoryQuery", "intent_class": "fhir.encounter.history.query.v1", "confidence_floor": 0.72},
+    {"concept_uri": "fhiret:EncounterTransitionSubscribe", "intent_class": "fhir.encounter.transition.subscribe.v1", "confidence_floor": 0.72},
+    {"concept_uri": "fhiret:EncounterTransitionNotify", "intent_class": "fhir.encounter.transition.notify.v1", "confidence_floor": 0.72}
+  ]
+}

@@ -26,13 +26,13 @@ Increase public pack credibility and breadth using candidate demo packs with exe
 
 ## Healthcare Snapshot
 
-| Dimension | fhir-medications-module-demo-pack | fhir-med-reconciliation-allergy-demo-pack |
-|---|---:|---:|
-| Source grounding | HL7 FHIR R5 Medications Module | FHIR Medications + List + AllergyIntolerance + MedicationStatement |
-| Resource index coverage | 10 module resources | 4 companion resources |
-| Full-shape companion files | Yes | Yes |
-| Fixture runner | Yes (`run-fhir-medications-fixtures`) | Yes (`run-fhir-med-reconciliation-allergy-fixtures`) |
-| Baseline OCI signed set | Yes | Yes |
+| Dimension | fhir-medications-module-demo-pack | fhir-med-reconciliation-allergy-demo-pack | fhir-encounter-transitions-demo-pack |
+|---|---:|---:|---:|
+| Source grounding | HL7 FHIR R5 Medications Module | FHIR Medications + List + AllergyIntolerance + MedicationStatement | FHIR Encounter + EncounterHistory + Patient Administration module |
+| Resource index coverage | 10 module resources | 4 companion resources | 5 transition steps |
+| Full-shape companion files | Yes | Yes | Yes |
+| Fixture runner | Yes (`run-fhir-medications-fixtures`) | Yes (`run-fhir-med-reconciliation-allergy-fixtures`) | Yes (`run-fhir-encounter-transitions-fixtures`) |
+| Baseline OCI signed set | Yes | Yes | Yes |
 
 ## Recommended Next Promotions
 

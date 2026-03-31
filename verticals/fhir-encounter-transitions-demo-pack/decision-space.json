@@ -1,0 +1,28 @@
+{
+  "schema_version": "1.0",
+  "domain": "fhir-encounter-transitions",
+  "pack_id": "fhir-encounter-transitions-demo-0.1.0",
+  "version": "0.1.0",
+  "out_of_scope_behavior": "escalate",
+  "state_model": {
+    "states": ["ingress", "validated", "classified", "responded", "rejected", "escalated"],
+    "initial_state": "ingress",
+    "terminal_states": ["responded", "rejected", "escalated"]
+  },
+  "intent_resource_map": {
+    "fhir.encounter.transfer.v1": ["Encounter"],
+    "fhir.encounter.step_down.v1": ["Encounter"],
+    "fhir.encounter.discharge.v1": ["Encounter"],
+    "fhir.encounter.history.query.v1": ["EncounterHistory"],
+    "fhir.encounter.transition.subscribe.v1": ["SubscriptionTopic"],
+    "fhir.encounter.transition.notify.v1": ["Bundle"]
+  },
+  "required_fields_by_intent": {
+    "fhir.encounter.transfer.v1": ["encounterRef", "encounterStatus", "fromLocation", "toLocation"],
+    "fhir.encounter.step_down.v1": ["encounterRef", "encounterStatus", "fromLocation", "toLocation", "careLevelFrom", "careLevelTo"],
+    "fhir.encounter.discharge.v1": ["encounterRef", "encounterStatus", "dischargeDisposition", "destination"],
+    "fhir.encounter.history.query.v1": ["encounterRef", "historyWindowStart", "historyWindowEnd"],
+    "fhir.encounter.transition.subscribe.v1": ["topicUrl", "channelType", "endpoint"],
+    "fhir.encounter.transition.notify.v1": ["eventCode", "encounterRef", "notificationTimestamp"]
+  }
+}

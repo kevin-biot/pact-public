@@ -1,0 +1,9 @@
+{
+  "bundleId": "sha256:7cd8fcbe684019c6cde2cfd40af3c1741e4fdf74c3fab84897308fce577afc78",
+  "decision": {
+    "type": "FHIREncounterTransitionIntent",
+    "intent_class": "fhir.medication.request.v1",
+    "resourceType": "MedicationRequest",
+    "encounterRef": "Encounter/enc-1001"
+  }
+}
