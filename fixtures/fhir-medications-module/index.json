@@ -1,0 +1,32 @@
+{
+  "schema_version": "1.0",
+  "generated_at_utc": "2026-03-31T00:00:00Z",
+  "pack_path": "verticals/fhir-medications-module-demo-pack",
+  "cases": [
+    {
+      "id": "FHIR-MED-VALID-001",
+      "path": "fixtures/fhir-medications-module/cases/valid-medication-request.json",
+      "expected": {"status": "pass", "code": "PASS"}
+    },
+    {
+      "id": "FHIR-MED-VALID-002",
+      "path": "fixtures/fhir-medications-module/cases/valid-immunization-record.json",
+      "expected": {"status": "pass", "code": "PASS"}
+    },
+    {
+      "id": "FHIR-MED-FAIL-001",
+      "path": "fixtures/fhir-medications-module/cases/fail-missing-required-field.json",
+      "expected": {"status": "fail", "code": "CIC_REQUIRED_FIELD_MISSING"}
+    },
+    {
+      "id": "FHIR-MED-FAIL-002",
+      "path": "fixtures/fhir-medications-module/cases/fail-out-of-scope-intent.json",
+      "expected": {"status": "fail", "code": "ESCALATE_OUT_OF_SCOPE_INTENT"}
+    },
+    {
+      "id": "FHIR-MED-FAIL-003",
+      "path": "fixtures/fhir-medications-module/cases/fail-bundle-commit-mismatch.json",
+      "expected": {"status": "fail", "code": "PSC_BUNDLE_COMMIT_MISMATCH"}
+    }
+  ]
+}

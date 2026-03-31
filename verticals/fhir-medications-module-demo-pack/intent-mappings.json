@@ -1,0 +1,15 @@
+{
+  "schema_version": "1.0",
+  "domain": "fhir-medications-module",
+  "mappings": [
+    {"concept_uri": "fhirmed:MedicationRequest", "intent_class": "fhir.medication.request.v1", "confidence_floor": 0.75},
+    {"concept_uri": "fhirmed:MedicationDispense", "intent_class": "fhir.medication.dispense.v1", "confidence_floor": 0.75},
+    {"concept_uri": "fhirmed:MedicationAdministration", "intent_class": "fhir.medication.administration.v1", "confidence_floor": 0.75},
+    {"concept_uri": "fhirmed:MedicationStatement", "intent_class": "fhir.medication.statement.v1", "confidence_floor": 0.75},
+    {"concept_uri": "fhirmed:MedicationKnowledge", "intent_class": "fhir.medication.knowledge.query.v1", "confidence_floor": 0.72},
+    {"concept_uri": "fhirmed:FormularyItem", "intent_class": "fhir.medication.knowledge.query.v1", "confidence_floor": 0.70},
+    {"concept_uri": "fhirmed:Immunization", "intent_class": "fhir.immunization.record.v1", "confidence_floor": 0.75},
+    {"concept_uri": "fhirmed:ImmunizationEvaluation", "intent_class": "fhir.immunization.evaluation.v1", "confidence_floor": 0.72},
+    {"concept_uri": "fhirmed:ImmunizationRecommendation", "intent_class": "fhir.immunization.recommendation.v1", "confidence_floor": 0.72}
+  ]
+}

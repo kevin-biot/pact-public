@@ -1,0 +1,11 @@
+{
+  "bundleId": "sha256:7c8f66ffcdb3631003fd246689f162069878af54873fd5032f1644e9123fc14a",
+  "decision": {
+    "type": "FHIRMedicationModuleIntent",
+    "intent_class": "fhir.immunization.record.v1",
+    "resourceType": "Immunization",
+    "patientRef": "Patient/123",
+    "vaccineCode": "CVX:208",
+    "occurrenceDateTime": "2026-03-31T09:30:00Z"
+  }
+}

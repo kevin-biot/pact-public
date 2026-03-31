@@ -24,8 +24,18 @@ Increase public pack credibility and breadth using candidate demo packs with exe
 | Fixture triplet (happy/adversarial/out-of-scope) | Yes | Yes | Yes | Yes |
 | Public example status | Published | Published | Published | Published |
 
+## Healthcare Snapshot
+
+| Dimension | fhir-medications-module-demo-pack |
+|---|---:|
+| Source grounding | HL7 FHIR R5 Medications Module |
+| Resource index coverage | 10 module resources |
+| Full-shape companion files | Yes |
+| Fixture runner | Yes (`run-fhir-medications-fixtures`) |
+| Baseline OCI signed set | Yes |
+
 ## Recommended Next Promotions
 
 1. Add CI job to run all vertical fixture harnesses (`telco-reference`, `telco-retail`, `telco-fault-diagnosis`, `telco-ran-core-slice`, `policy-reference`).
-2. Add reviewer guides for each telco candidate pack with promotion criteria and traceability references.
-3. Add cross-pack deterministic replay report for the five telco harnesses.
+2. Add healthcare reviewer guides with FHIR profile constraints and conformance scope notes.
+3. Add cross-pack deterministic replay report for telco + healthcare harnesses.

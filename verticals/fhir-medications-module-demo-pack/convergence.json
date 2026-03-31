@@ -1,0 +1,11 @@
+{
+  "schema_version": "1.0",
+  "domain": "fhir-medications-module",
+  "thresholds": {"overall_min_pass_rate": 1.0, "require_critical_pass": true},
+  "cases": [
+    {"id": "med_request", "phrase": "create medication request", "expect": "fhir.medication.request.v1", "critical": true},
+    {"id": "med_dispense", "phrase": "record medication dispense", "expect": "fhir.medication.dispense.v1", "critical": true},
+    {"id": "imm_record", "phrase": "record immunization", "expect": "fhir.immunization.record.v1", "critical": true},
+    {"id": "out_of_scope", "phrase": "submit radiology report", "expect": "fhir.radiology.report.v1", "critical": false}
+  ]
+}

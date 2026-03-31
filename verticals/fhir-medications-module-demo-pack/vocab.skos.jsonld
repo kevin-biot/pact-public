@@ -1,0 +1,18 @@
+{
+  "@context": {
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "fhirmed": "https://lane2.example/ontology/fhir-medications/"
+  },
+  "concepts": [
+    {"id": "fhirmed:MedicationRequest", "prefLabel": "MedicationRequest", "broader": "fhirmed:MedicationWorkflow"},
+    {"id": "fhirmed:MedicationDispense", "prefLabel": "MedicationDispense", "broader": "fhirmed:MedicationWorkflow"},
+    {"id": "fhirmed:MedicationAdministration", "prefLabel": "MedicationAdministration", "broader": "fhirmed:MedicationWorkflow"},
+    {"id": "fhirmed:MedicationStatement", "prefLabel": "MedicationStatement", "broader": "fhirmed:MedicationWorkflow"},
+    {"id": "fhirmed:Medication", "prefLabel": "Medication", "broader": "fhirmed:MedicationKnowledge"},
+    {"id": "fhirmed:MedicationKnowledge", "prefLabel": "MedicationKnowledge", "broader": "fhirmed:MedicationKnowledge"},
+    {"id": "fhirmed:FormularyItem", "prefLabel": "FormularyItem", "broader": "fhirmed:MedicationKnowledge"},
+    {"id": "fhirmed:Immunization", "prefLabel": "Immunization", "broader": "fhirmed:ImmunizationWorkflow"},
+    {"id": "fhirmed:ImmunizationEvaluation", "prefLabel": "ImmunizationEvaluation", "broader": "fhirmed:ImmunizationWorkflow"},
+    {"id": "fhirmed:ImmunizationRecommendation", "prefLabel": "ImmunizationRecommendation", "broader": "fhirmed:ImmunizationWorkflow"}
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "@context": {
+    "fhirmed": "https://lane2.example/ontology/fhir-medications/",
+    "intentClass": "fhirmed:intentClass",
+    "resourceType": "fhirmed:resourceType",
+    "patientRef": "fhirmed:patientRef",
+    "medicationCode": "fhirmed:medicationCode"
+  }
+}

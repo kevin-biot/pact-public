@@ -1,0 +1,19 @@
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix fhirmed: <https://lane2.example/ontology/fhir-medications/> .
+
+fhirmed:IntentShape
+  a sh:NodeShape ;
+  sh:targetClass fhirmed:Intention ;
+  sh:property [
+    sh:path fhirmed:intentClass ;
+    sh:datatype xsd:string ;
+    sh:minCount 1 ;
+    sh:message "intentClass is required"
+  ] ;
+  sh:property [
+    sh:path fhirmed:resourceType ;
+    sh:datatype xsd:string ;
+    sh:minCount 1 ;
+    sh:message "resourceType is required"
+  ] .

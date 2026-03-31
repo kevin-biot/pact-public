@@ -1,0 +1,103 @@
+{
+  "schema_version": "1.0",
+  "domain": "fhir-medications-module",
+  "last_modified": "2026-03-31",
+  "concepts": [
+    {
+      "concept_id": "fhir.medication.request.v1",
+      "preferred_term": "MedicationRequest",
+      "synonyms": ["prescription order", "medication order"],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "MedicationWorkflow",
+      "narrower": [],
+      "source_refs": ["hl7-fhir-r5-medications-module"],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "fhir.medication.dispense.v1",
+      "preferred_term": "MedicationDispense",
+      "synonyms": ["dispense medication", "pharmacy dispense"],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "MedicationWorkflow",
+      "narrower": [],
+      "source_refs": ["hl7-fhir-r5-medications-module"],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "fhir.medication.administration.v1",
+      "preferred_term": "MedicationAdministration",
+      "synonyms": ["medication administration", "drug administered"],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "MedicationWorkflow",
+      "narrower": [],
+      "source_refs": ["hl7-fhir-r5-medications-module"],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "fhir.medication.statement.v1",
+      "preferred_term": "MedicationStatement",
+      "synonyms": ["medication history", "current medications statement"],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "MedicationWorkflow",
+      "narrower": [],
+      "source_refs": ["hl7-fhir-r5-medications-module"],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "fhir.medication.knowledge.query.v1",
+      "preferred_term": "MedicationKnowledge",
+      "synonyms": ["drug knowledge", "medication knowledge"],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "MedicationKnowledge",
+      "narrower": [],
+      "source_refs": ["hl7-fhir-r5-medications-module"],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "fhir.immunization.record.v1",
+      "preferred_term": "Immunization",
+      "synonyms": ["vaccine administration", "vaccination event"],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "ImmunizationWorkflow",
+      "narrower": [],
+      "source_refs": ["hl7-fhir-r5-medications-module"],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "fhir.immunization.evaluation.v1",
+      "preferred_term": "ImmunizationEvaluation",
+      "synonyms": ["vaccine evaluation"],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "ImmunizationWorkflow",
+      "narrower": [],
+      "source_refs": ["hl7-fhir-r5-medications-module"],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "fhir.immunization.recommendation.v1",
+      "preferred_term": "ImmunizationRecommendation",
+      "synonyms": ["vaccine recommendation", "immunization forecast"],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "ImmunizationWorkflow",
+      "narrower": [],
+      "source_refs": ["hl7-fhir-r5-medications-module"],
+      "ner_provenance": null
+    }
+  ]
+}

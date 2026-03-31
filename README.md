@@ -186,6 +186,12 @@ Run the telco RAN/Core/Slice demo fixture harness:
 node tools/run-telco-ran-core-slice-fixtures.mjs
 ```
 
+Run the FHIR medications module demo fixture harness:
+
+```bash
+node tools/run-fhir-medications-fixtures.mjs
+```
+
 Run the reference policy CIC+PSC fixture harness:
 
 ```bash
@@ -218,12 +224,14 @@ This repository includes:
 8. `verticals/telco-retail-demo-pack/`
 9. `verticals/telco-fault-diagnosis-demo-pack/`
 10. `verticals/telco-ran-core-slice-demo-pack/`
+11. `verticals/fhir-medications-module-demo-pack/`
 
 This telco pack is a non-normative example vertical profile demonstrating PACT extension mechanics.
 It does not define TM Forum standards and does not replace IG1453.
 An expanded public-review companion surface is also available at `verticals/telco-reference-pack/extended-retail/`.
 The telco retail demo pack provides a broader six-intent public candidate surface at `verticals/telco-retail-demo-pack/`.
 The telco fault-diagnosis and RAN/core/slice demo packs provide focused candidate surfaces with dedicated fixture harnesses.
+The FHIR medications module demo pack provides a healthcare candidate surface grounded to HL7 FHIR R5 medications resources.
 
 The policy reference pack is a non-normative base-policy example demonstrating cross-domain policy semantics independent of telco standards.
 It includes a minimal jurisdiction overlay deny-wins composition example.

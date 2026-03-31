@@ -1,0 +1,12 @@
+{
+  "schema_version": "1.0",
+  "domain": "fhir-medications-module",
+  "patterns": [
+    {"id": "med_request", "concept_uri": "fhir.medication.request.v1", "entity_type": "intent_hint", "regex": "(?i)\\b(medication\\s+request|prescription\\s+order|medication\\s+order)\\b", "examples": ["medication request"]},
+    {"id": "med_dispense", "concept_uri": "fhir.medication.dispense.v1", "entity_type": "intent_hint", "regex": "(?i)\\b(medication\\s+dispense|pharmacy\\s+dispense)\\b", "examples": ["medication dispense"]},
+    {"id": "med_admin", "concept_uri": "fhir.medication.administration.v1", "entity_type": "intent_hint", "regex": "(?i)\\b(medication\\s+administration|drug\\s+administered)\\b", "examples": ["medication administration"]},
+    {"id": "med_statement", "concept_uri": "fhir.medication.statement.v1", "entity_type": "intent_hint", "regex": "(?i)\\b(medication\\s+statement|medication\\s+history)\\b", "examples": ["medication statement"]},
+    {"id": "med_knowledge", "concept_uri": "fhir.medication.knowledge.query.v1", "entity_type": "intent_hint", "regex": "(?i)\\b(medication\\s+knowledge|drug\\s+knowledge|formulary\\s+item)\\b", "examples": ["drug knowledge"]},
+    {"id": "imm_record", "concept_uri": "fhir.immunization.record.v1", "entity_type": "intent_hint", "regex": "(?i)\\b(immunization|vaccination\\s+event|vaccine\\s+administration)\\b", "examples": ["immunization"]}
+  ]
+}

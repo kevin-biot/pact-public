@@ -1,0 +1,25 @@
+{
+  "id": "fhir-medications-module-demo-0.1.0",
+  "domain": "fhir-medications-module",
+  "version": "0.1.0",
+  "providerId": "ontology:pact-public:fhir",
+  "trustTier": "Tier1",
+  "policySnapshotId": "sha256:3e72e41815d7fa0bb7d0c54c7772dde1fd690499c46c36b1df85479d4082f036",
+  "files": {
+    "context": "sha256:6de04180972a919955431bb80bedac9c2178b05369f2a30d3b5e55db7d0f7df7",
+    "vocab": "sha256:6dbf7b4fdf7313d1c4cd40ec5751f25b6b31c5e5fc5306900aea59a95d28018e",
+    "shapes": "sha256:9115c78aa3a4c03419688466b9366299238304aac199827f4e1cf880fa48633e",
+    "thesaurus": "sha256:c910256ef715f0c9fa8a8e59a7ad13773753cf78766acd9d3c142dec5f737dc2",
+    "thesaurus_local": "sha256:1d677cbd8868d3bff4b36f6529e33a5612848666c1e2cae9f4a17d00d51f79e1",
+    "patterns": "sha256:fe497a8a9df0dc9bfa286fd1af0a6735dad993604f7317ba342fe539bd446db9",
+    "intent_mappings": "sha256:413af093c94561de3c9ea95e5138a83b66402ba54ab7b55989f24409cc410ac5",
+    "convergence": "sha256:89fbd0388ec774ec9611590850e0bfbe130906a36cd88f0ab853064db8c1aa3a",
+    "decision_space": "sha256:8fee0f199bc87b61f8a9e5668a5db78ca22329b15205afdf4e38397f7d367a88",
+    "source_extract": "sha256:ed6cd6f4fc8976ab4fbd6f2f828591152ed3c0b2472e11ad5b0badea16041d8b"
+  },
+  "precedence": [],
+  "denyWins": true,
+  "nbf": "2026-03-31T00:00:00Z",
+  "exp": "2030-03-31T00:00:00Z",
+  "revEpoch": 1
+}

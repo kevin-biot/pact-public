@@ -1,0 +1,32 @@
+{
+  "schema_version": "1.0",
+  "domain": "fhir-medications-module",
+  "pack_id": "fhir-medications-module-demo-0.1.0",
+  "version": "0.1.0",
+  "out_of_scope_behavior": "escalate",
+  "state_model": {
+    "states": ["ingress", "validated", "classified", "responded", "rejected", "escalated"],
+    "initial_state": "ingress",
+    "terminal_states": ["responded", "rejected", "escalated"]
+  },
+  "intent_resource_map": {
+    "fhir.medication.request.v1": ["MedicationRequest"],
+    "fhir.medication.dispense.v1": ["MedicationDispense"],
+    "fhir.medication.administration.v1": ["MedicationAdministration"],
+    "fhir.medication.statement.v1": ["MedicationStatement"],
+    "fhir.medication.knowledge.query.v1": ["Medication", "MedicationKnowledge", "FormularyItem"],
+    "fhir.immunization.record.v1": ["Immunization"],
+    "fhir.immunization.evaluation.v1": ["ImmunizationEvaluation"],
+    "fhir.immunization.recommendation.v1": ["ImmunizationRecommendation"]
+  },
+  "required_fields_by_intent": {
+    "fhir.medication.request.v1": ["patientRef", "medicationCode", "authoredOn"],
+    "fhir.medication.dispense.v1": ["patientRef", "medicationCode", "whenHandedOver"],
+    "fhir.medication.administration.v1": ["patientRef", "medicationCode", "occurrenceDateTime"],
+    "fhir.medication.statement.v1": ["patientRef", "medicationCode", "effectiveDateTime"],
+    "fhir.medication.knowledge.query.v1": ["medicationCode"],
+    "fhir.immunization.record.v1": ["patientRef", "vaccineCode", "occurrenceDateTime"],
+    "fhir.immunization.evaluation.v1": ["patientRef", "immunizationRef", "doseStatus"],
+    "fhir.immunization.recommendation.v1": ["patientRef", "recommendationDate"]
+  }
+}

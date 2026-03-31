@@ -1,0 +1,10 @@
+{
+  "schema_version": "0.1",
+  "generated_at_utc": "2026-03-31T00:00:00Z",
+  "profile": "fhir-medications-module-demo-pack",
+  "domain": "fhir-medications-module",
+  "source_spec": "HL7 FHIR R5 Medications Module",
+  "source_artifact_count": 1,
+  "resource_index_count": 10,
+  "note": "Curated demo extraction from FHIR module-level resource index and use-case descriptions."
+}

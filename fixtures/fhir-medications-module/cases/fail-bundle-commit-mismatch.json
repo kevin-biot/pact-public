@@ -1,0 +1,11 @@
+{
+  "bundleId": "sha256:ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+  "decision": {
+    "type": "FHIRMedicationModuleIntent",
+    "intent_class": "fhir.medication.request.v1",
+    "resourceType": "MedicationRequest",
+    "patientRef": "Patient/123",
+    "medicationCode": "RxNorm:860975",
+    "authoredOn": "2026-03-31"
+  }
+}

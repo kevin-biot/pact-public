@@ -1,0 +1,31 @@
+{
+  "@context": {
+    "fhirmed": "https://lane2.example/ontology/fhir-medications/"
+  },
+  "entries": [
+    {
+      "label": "Medication Request",
+      "alt": ["prescription order", "medication order"],
+      "properties": {
+        "entity_type": "intent_hint",
+        "description": "Instruction for medication administration/dispense workflow."
+      }
+    },
+    {
+      "label": "Medication Dispense",
+      "alt": ["dispense medication", "pharmacy dispense"],
+      "properties": {
+        "entity_type": "intent_hint",
+        "description": "Record of medication supply to patient."
+      }
+    },
+    {
+      "label": "Immunization",
+      "alt": ["vaccine administration", "vaccination event"],
+      "properties": {
+        "entity_type": "intent_hint",
+        "description": "Record of vaccine administration status."
+      }
+    }
+  ]
+}
