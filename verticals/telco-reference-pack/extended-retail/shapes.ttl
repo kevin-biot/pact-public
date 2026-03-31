@@ -1,0 +1,19 @@
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix telco: <https://lane2.example/ontology/telco/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+telco:IntentShape
+  a sh:NodeShape ;
+  sh:targetClass telco:Intention ;
+  sh:property [
+    sh:path telco:intentClass ;
+    sh:datatype xsd:string ;
+    sh:minCount 1 ;
+    sh:message "intentClass is required"
+  ] ;
+  sh:property [
+    sh:path telco:subscriberId ;
+    sh:datatype xsd:string ;
+    sh:minCount 1 ;
+    sh:message "subscriberId is required"
+  ] .

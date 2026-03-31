@@ -1,0 +1,55 @@
+{
+  "@context": {
+    "telco": "https://lane2.example/ontology/telco/"
+  },
+  "entries": [
+    {
+      "label": "SIM Swap Request",
+      "alt": ["sim swap", "replace sim", "swap my sim"],
+      "properties": {
+        "entity_type": "intent_hint",
+        "description": "Signals subscriber request to replace current SIM with same number."
+      }
+    },
+    {
+      "label": "Port In Request",
+      "alt": ["port in", "bring my number", "number portability"],
+      "properties": {
+        "entity_type": "intent_hint",
+        "description": "Signals request to move phone number from external carrier."
+      }
+    },
+    {
+      "label": "Top Up Request",
+      "alt": ["top up", "recharge", "add credit"],
+      "properties": {
+        "entity_type": "intent_hint",
+        "description": "Signals prepaid account credit purchase."
+      }
+    },
+    {
+      "label": "Plan Upgrade Request",
+      "alt": ["upgrade plan", "switch plan", "more data"],
+      "properties": {
+        "entity_type": "intent_hint",
+        "description": "Signals change to a higher subscription package."
+      }
+    },
+    {
+      "label": "MSISDN",
+      "alt": ["phone number", "mobile number"],
+      "properties": {
+        "entity_type": "msisdn",
+        "description": "Subscriber mobile station ISDN number."
+      }
+    },
+    {
+      "label": "ICCID",
+      "alt": ["sim serial", "sim card number"],
+      "properties": {
+        "entity_type": "iccid",
+        "description": "Integrated circuit card identifier for SIM inventory."
+      }
+    }
+  ]
+}

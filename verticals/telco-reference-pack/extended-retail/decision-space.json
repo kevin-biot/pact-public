@@ -1,0 +1,96 @@
+{
+  "schema_version": "1.0",
+  "domain": "telco",
+  "profile": "telco-retail-extended-companion",
+  "out_of_scope_behavior": "escalate",
+  "state_model": {
+    "states": ["ingress", "validated", "classified", "responded", "rejected", "escalated"],
+    "initial_state": "ingress",
+    "terminal_states": ["responded", "rejected", "escalated"]
+  },
+  "admissible_intents": [
+    {
+      "intent_class": "telco.retail.sim_swap.v1",
+      "allowed_states": ["ingress", "validated", "classified"],
+      "required_fact_types": ["telco_retail_request"],
+      "transition_ids": ["validate_request", "classify_request", "respond_request"]
+    },
+    {
+      "intent_class": "telco.retail.port_in.v1",
+      "allowed_states": ["ingress", "validated", "classified"],
+      "required_fact_types": ["telco_retail_request"],
+      "transition_ids": ["validate_request", "classify_request", "respond_request"]
+    },
+    {
+      "intent_class": "telco.retail.top_up.v1",
+      "allowed_states": ["ingress", "validated", "classified"],
+      "required_fact_types": ["telco_retail_request"],
+      "transition_ids": ["validate_request", "classify_request", "respond_request"]
+    },
+    {
+      "intent_class": "telco.retail.plan_upgrade.v1",
+      "allowed_states": ["ingress", "validated", "classified"],
+      "required_fact_types": ["telco_retail_request"],
+      "transition_ids": ["validate_request", "classify_request", "respond_request"]
+    },
+    {
+      "intent_class": "telco.retail.balance_check.v1",
+      "allowed_states": ["ingress", "validated", "classified"],
+      "required_fact_types": ["telco_retail_request"],
+      "transition_ids": ["validate_request", "classify_request", "respond_request"]
+    },
+    {
+      "intent_class": "telco.retail.kyc_verify.v1",
+      "allowed_states": ["ingress", "validated", "classified"],
+      "required_fact_types": ["telco_retail_request"],
+      "transition_ids": ["validate_request", "classify_request", "respond_request"]
+    }
+  ],
+  "admissible_facts": [
+    {
+      "fact_type": "telco_retail_request",
+      "schema_ref": "urn:telco:retail:request:v1",
+      "additional_properties": "allow",
+      "field_constraints": [
+        {
+          "path": "subscriber_id",
+          "datatype": "string",
+          "required": true
+        },
+        {
+          "path": "jurisdiction",
+          "datatype": "string",
+          "required": false,
+          "pattern": "^(EU|OM).*$"
+        }
+      ]
+    }
+  ],
+  "admissible_transitions": [
+    {
+      "id": "validate_request",
+      "from_state": "ingress",
+      "to_state": "validated",
+      "guard_refs": ["guard:payload_valid"]
+    },
+    {
+      "id": "classify_request",
+      "from_state": "validated",
+      "to_state": "classified",
+      "guard_refs": ["guard:intent_mapped"]
+    },
+    {
+      "id": "respond_request",
+      "from_state": "classified",
+      "to_state": "responded",
+      "guard_refs": ["guard:policy_permitted"]
+    },
+    {
+      "id": "handle_out_of_scope",
+      "from_state": "ingress",
+      "to_state": "escalated",
+      "guard_refs": ["guard:intent_out_of_scope"],
+      "deontic": "must"
+    }
+  ]
+}

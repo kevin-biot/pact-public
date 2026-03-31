@@ -1,0 +1,104 @@
+{
+  "@context": {
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "telco": "https://lane2.example/ontology/telco/"
+  },
+  "@graph": [
+    {
+      "@id": "telco:sim.swap",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "telco.retail.sim_swap.v1",
+      "skos:altLabel": [
+        "sim swap",
+        "swap my sim",
+        "replace sim",
+        "sim replacement",
+        "new sim same number"
+      ]
+    },
+    {
+      "@id": "telco:port.in",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "telco.retail.port_in.v1",
+      "skos:altLabel": [
+        "port in",
+        "bring my number",
+        "number portability",
+        "move my number",
+        "transfer number in"
+      ]
+    },
+    {
+      "@id": "telco:top.up",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "telco.retail.top_up.v1",
+      "skos:altLabel": [
+        "top up",
+        "recharge",
+        "add credit",
+        "buy prepaid credit",
+        "reload balance"
+      ]
+    },
+    {
+      "@id": "telco:plan.upgrade",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "telco.retail.plan_upgrade.v1",
+      "skos:altLabel": [
+        "plan upgrade",
+        "upgrade my plan",
+        "change my plan",
+        "switch to a better plan",
+        "need more data"
+      ]
+    },
+    {
+      "@id": "telco:balance.check",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "telco.retail.balance_check.v1",
+      "skos:altLabel": [
+        "check balance",
+        "what is my balance",
+        "remaining credit",
+        "show my balance",
+        "how much data do i have left"
+      ]
+    },
+    {
+      "@id": "telco:kyc.verify",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "telco.retail.kyc_verify.v1",
+      "skos:altLabel": [
+        "kyc verification",
+        "verify my identity",
+        "verify my id",
+        "identity verification",
+        "check my documents"
+      ]
+    },
+    {
+      "@id": "telco:entity.subscriber",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "telco.entity.subscriber.v1",
+      "skos:altLabel": ["subscriber", "customer", "line holder", "account holder"]
+    },
+    {
+      "@id": "telco:entity.msisdn",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "telco.entity.msisdn.v1",
+      "skos:altLabel": ["msisdn", "phone number", "mobile number"]
+    },
+    {
+      "@id": "telco:entity.iccid",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "telco.entity.iccid.v1",
+      "skos:altLabel": ["iccid", "sim card", "sim number"]
+    },
+    {
+      "@id": "telco:entity.plan",
+      "@type": "skos:Concept",
+      "skos:prefLabel": "telco.entity.plan.v1",
+      "skos:altLabel": ["plan", "package", "tariff", "subscription"]
+    }
+  ]
+}

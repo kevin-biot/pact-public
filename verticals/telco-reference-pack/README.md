@@ -30,6 +30,15 @@ It is a reference profile for deterministic governance behavior.
 
 Overlay deny-wins composition is intentionally not included in this first reference slice.
 
+## Extended Companion Surface
+
+For a richer public review surface aligned with the private ontology registry work, see:
+
+1. `verticals/telco-reference-pack/extended-retail/`
+
+This companion includes retail intent convergence, patterns, thesaurus artifacts, overlays, and a candidate decision-space profile.
+It is intentionally non-normative and does not change the signed minimal baseline artifacts in this folder.
+
 ## Source Lineage (High-Level)
 
 This reference profile is derived at a high level from:

@@ -1,0 +1,814 @@
+{
+  "schema_version": "1.0",
+  "domain": "telco",
+  "last_modified": "2026-03-25T23:30:00Z",
+  "concepts": [
+    {
+      "concept_id": "telco_retail_sim_swap_v1",
+      "preferred_term": "telco.retail.sim_swap.v1",
+      "synonyms": [
+        "sim swap",
+        "swap my sim",
+        "replace sim",
+        "sim replacement",
+        "new sim same number"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": null,
+      "narrower": [],
+      "source_refs": [],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "telco_retail_port_in_v1",
+      "preferred_term": "telco.retail.port_in.v1",
+      "synonyms": [
+        "port in",
+        "bring my number",
+        "number portability",
+        "move my number",
+        "transfer number in"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": null,
+      "narrower": [],
+      "source_refs": [],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "telco_retail_top_up_v1",
+      "preferred_term": "telco.retail.top_up.v1",
+      "synonyms": [
+        "top up",
+        "recharge",
+        "add credit",
+        "buy prepaid credit",
+        "reload balance"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": null,
+      "narrower": [],
+      "source_refs": [],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "telco_retail_plan_upgrade_v1",
+      "preferred_term": "telco.retail.plan_upgrade.v1",
+      "synonyms": [
+        "plan upgrade",
+        "upgrade my plan",
+        "change my plan",
+        "switch to a better plan",
+        "need more data"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": null,
+      "narrower": [],
+      "source_refs": [],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "telco_retail_balance_check_v1",
+      "preferred_term": "telco.retail.balance_check.v1",
+      "synonyms": [
+        "check balance",
+        "what is my balance",
+        "remaining credit",
+        "show my balance",
+        "how much data do i have left"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": null,
+      "narrower": [],
+      "source_refs": [],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "telco_retail_kyc_verify_v1",
+      "preferred_term": "telco.retail.kyc_verify.v1",
+      "synonyms": [
+        "kyc verification",
+        "verify my identity",
+        "verify my id",
+        "identity verification",
+        "check my documents"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": null,
+      "narrower": [],
+      "source_refs": [],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "telco_entity_subscriber_v1",
+      "preferred_term": "telco.entity.subscriber.v1",
+      "synonyms": [
+        "subscriber",
+        "customer",
+        "line holder",
+        "account holder"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": null,
+      "narrower": [],
+      "source_refs": [],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "telco_entity_msisdn_v1",
+      "preferred_term": "telco.entity.msisdn.v1",
+      "synonyms": [
+        "msisdn",
+        "phone number",
+        "mobile number"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": null,
+      "narrower": [],
+      "source_refs": [],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "telco_entity_iccid_v1",
+      "preferred_term": "telco.entity.iccid.v1",
+      "synonyms": [
+        "iccid",
+        "sim card",
+        "sim number"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": null,
+      "narrower": [],
+      "source_refs": [],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "telco_entity_plan_v1",
+      "preferred_term": "telco.entity.plan.v1",
+      "synonyms": [
+        "plan",
+        "package",
+        "tariff",
+        "subscription"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": null,
+      "narrower": [],
+      "source_refs": [],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "sim_swap_request",
+      "preferred_term": "SIM Swap Request",
+      "synonyms": [
+        "sim swap",
+        "replace sim",
+        "swap my sim"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": null,
+      "narrower": [],
+      "source_refs": [],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "port_in_request",
+      "preferred_term": "Port In Request",
+      "synonyms": [
+        "port in",
+        "bring my number",
+        "number portability"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": null,
+      "narrower": [],
+      "source_refs": [],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "top_up_request",
+      "preferred_term": "Top Up Request",
+      "synonyms": [
+        "top up",
+        "recharge",
+        "add credit"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": null,
+      "narrower": [],
+      "source_refs": [],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "plan_upgrade_request",
+      "preferred_term": "Plan Upgrade Request",
+      "synonyms": [
+        "upgrade plan",
+        "switch plan",
+        "more data"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": null,
+      "narrower": [],
+      "source_refs": [],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "msisdn",
+      "preferred_term": "MSISDN",
+      "synonyms": [
+        "phone number",
+        "mobile number"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": null,
+      "narrower": [],
+      "source_refs": [],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "iccid",
+      "preferred_term": "ICCID",
+      "synonyms": [
+        "sim serial",
+        "sim card number"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": null,
+      "narrower": [],
+      "source_refs": [],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "gnb",
+      "preferred_term": "gNB",
+      "synonyms": [
+        "gNodeB",
+        "next generation Node B",
+        "5G base station"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": null,
+      "narrower": [],
+      "source_refs": [
+        "3gpp:ts38.300"
+      ],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "gnb_du",
+      "preferred_term": "gNB-DU",
+      "synonyms": [
+        "distributed unit",
+        "DU",
+        "gNB distributed unit"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": null,
+      "narrower": [],
+      "source_refs": [
+        "3gpp:ts38.401"
+      ],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "gnb_cu",
+      "preferred_term": "gNB-CU",
+      "synonyms": [
+        "centralized unit",
+        "CU",
+        "gNB central unit"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": null,
+      "narrower": [],
+      "source_refs": [
+        "3gpp:ts38.401"
+      ],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "amf",
+      "preferred_term": "AMF",
+      "synonyms": [
+        "Access and Mobility Management Function",
+        "mobility management"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": null,
+      "narrower": [],
+      "source_refs": [
+        "3gpp:ts23.501"
+      ],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "smf",
+      "preferred_term": "SMF",
+      "synonyms": [
+        "Session Management Function",
+        "session management"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": null,
+      "narrower": [],
+      "source_refs": [
+        "3gpp:ts23.501"
+      ],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "upf",
+      "preferred_term": "UPF",
+      "synonyms": [
+        "User Plane Function",
+        "user plane",
+        "data plane function"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": null,
+      "narrower": [],
+      "source_refs": [
+        "3gpp:ts23.501"
+      ],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "nrf",
+      "preferred_term": "NRF",
+      "synonyms": [
+        "Network Repository Function",
+        "network function repository"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": null,
+      "narrower": [],
+      "source_refs": [
+        "3gpp:ts23.501"
+      ],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "nssf",
+      "preferred_term": "NSSF",
+      "synonyms": [
+        "Network Slice Selection Function",
+        "slice selection"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": null,
+      "narrower": [],
+      "source_refs": [
+        "3gpp:ts23.501"
+      ],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "pcf",
+      "preferred_term": "PCF",
+      "synonyms": [
+        "Policy Control Function",
+        "policy control"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": null,
+      "narrower": [],
+      "source_refs": [
+        "3gpp:ts23.501"
+      ],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "udm",
+      "preferred_term": "UDM",
+      "synonyms": [
+        "Unified Data Management",
+        "subscriber data management"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": null,
+      "narrower": [],
+      "source_refs": [
+        "3gpp:ts23.501"
+      ],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "ausf",
+      "preferred_term": "AUSF",
+      "synonyms": [
+        "Authentication Server Function",
+        "authentication function"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": null,
+      "narrower": [],
+      "source_refs": [
+        "3gpp:ts23.501"
+      ],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "network_slice",
+      "preferred_term": "network slice",
+      "synonyms": [
+        "slice",
+        "network slice instance",
+        "NSI"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": null,
+      "narrower": [],
+      "source_refs": [
+        "3gpp:ts28.530"
+      ],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "s_nssai",
+      "preferred_term": "S-NSSAI",
+      "synonyms": [
+        "Single Network Slice Selection Assistance Information",
+        "slice identifier"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": null,
+      "narrower": [],
+      "source_refs": [
+        "3gpp:ts23.501"
+      ],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "nssai",
+      "preferred_term": "NSSAI",
+      "synonyms": [
+        "Network Slice Selection Assistance Information"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": null,
+      "narrower": [],
+      "source_refs": [
+        "3gpp:ts23.501"
+      ],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "nr_cell",
+      "preferred_term": "NR Cell",
+      "synonyms": [
+        "New Radio cell",
+        "5G cell",
+        "NR cell"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": null,
+      "narrower": [],
+      "source_refs": [
+        "3gpp:ts38.300"
+      ],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "ssb",
+      "preferred_term": "SSB",
+      "synonyms": [
+        "Synchronization Signal Block",
+        "SS block",
+        "sync signal"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": null,
+      "narrower": [],
+      "source_refs": [
+        "3gpp:ts38.211"
+      ],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "bwp",
+      "preferred_term": "BWP",
+      "synonyms": [
+        "Bandwidth Part",
+        "bandwidth partition"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": null,
+      "narrower": [],
+      "source_refs": [
+        "3gpp:ts38.211"
+      ],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "harq",
+      "preferred_term": "HARQ",
+      "synonyms": [
+        "Hybrid Automatic Repeat Request",
+        "hybrid ARQ"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": null,
+      "narrower": [],
+      "source_refs": [
+        "3gpp:ts38.212"
+      ],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "mimo",
+      "preferred_term": "MIMO",
+      "synonyms": [
+        "Multiple Input Multiple Output",
+        "multi-antenna",
+        "spatial multiplexing"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": null,
+      "narrower": [],
+      "source_refs": [
+        "3gpp:ts38.214"
+      ],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "beamforming",
+      "preferred_term": "beamforming",
+      "synonyms": [
+        "beam management",
+        "beam sweeping",
+        "directional transmission"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": null,
+      "narrower": [],
+      "source_refs": [
+        "3gpp:ts38.214"
+      ],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "o_ran",
+      "preferred_term": "O-RAN",
+      "synonyms": [
+        "Open RAN",
+        "open radio access network"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": null,
+      "narrower": [],
+      "source_refs": [
+        "o-ran:architecture"
+      ],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "ric",
+      "preferred_term": "RIC",
+      "synonyms": [
+        "RAN Intelligent Controller",
+        "intelligent controller"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": null,
+      "narrower": [],
+      "source_refs": [
+        "o-ran:architecture"
+      ],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "xapp",
+      "preferred_term": "xApp",
+      "synonyms": [
+        "extended application",
+        "RIC application"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": null,
+      "narrower": [],
+      "source_refs": [
+        "o-ran:architecture"
+      ],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "rapp",
+      "preferred_term": "rApp",
+      "synonyms": [
+        "RIC application",
+        "non-real-time RIC application"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": null,
+      "narrower": [],
+      "source_refs": [
+        "o-ran:architecture"
+      ],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "intent",
+      "preferred_term": "intent",
+      "synonyms": [
+        "intent-driven management",
+        "declarative intent"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": null,
+      "narrower": [],
+      "source_refs": [
+        "3gpp:ts28.312"
+      ],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "closed_loop",
+      "preferred_term": "closed-loop",
+      "synonyms": [
+        "closed-loop automation",
+        "autonomous closed loop",
+        "CLA"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": null,
+      "narrower": [],
+      "source_refs": [
+        "3gpp:ts28.535"
+      ],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "mda",
+      "preferred_term": "MDA",
+      "synonyms": [
+        "Management Data Analytics",
+        "analytics function"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": null,
+      "narrower": [],
+      "source_refs": [
+        "3gpp:ts28.104"
+      ],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "csp",
+      "preferred_term": "CSP",
+      "synonyms": [
+        "Communications Service Provider",
+        "service provider",
+        "telco operator"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": null,
+      "narrower": [],
+      "source_refs": [
+        "tmf:sid"
+      ],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "sla",
+      "preferred_term": "SLA",
+      "synonyms": [
+        "Service Level Agreement",
+        "service agreement",
+        "QoS agreement"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": null,
+      "narrower": [],
+      "source_refs": [
+        "tmf:sid"
+      ],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "bss",
+      "preferred_term": "BSS",
+      "synonyms": [
+        "Business Support System",
+        "business system"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": null,
+      "narrower": [],
+      "source_refs": [
+        "tmf:sid"
+      ],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "oss",
+      "preferred_term": "OSS",
+      "synonyms": [
+        "Operations Support System",
+        "operations system",
+        "network management"
+      ],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": null,
+      "narrower": [],
+      "source_refs": [
+        "tmf:sid"
+      ],
+      "ner_provenance": null
+    }
+  ]
+}

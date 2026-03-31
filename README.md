@@ -200,6 +200,7 @@ This repository includes:
 
 This telco pack is a non-normative example vertical profile demonstrating PACT extension mechanics.
 It does not define TM Forum standards and does not replace IG1453.
+An expanded public-review companion surface is also available at `verticals/telco-reference-pack/extended-retail/`.
 
 The policy reference pack is a non-normative base-policy example demonstrating cross-domain policy semantics independent of telco standards.
 It includes a minimal jurisdiction overlay deny-wins composition example.

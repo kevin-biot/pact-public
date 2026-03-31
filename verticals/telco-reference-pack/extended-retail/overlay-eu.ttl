@@ -1,0 +1,11 @@
+@prefix telco: <https://lane2.example/ontology/telco/> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+
+telco:EUCorridorOverlay
+  a sh:NodeShape ;
+  sh:targetClass telco:Intention ;
+  sh:property [
+    sh:path telco:jurisdiction ;
+    sh:pattern "^EU" ;
+    sh:message "EU overlay requires telco jurisdiction to begin with EU"
+  ] .
