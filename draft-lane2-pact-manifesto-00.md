@@ -76,22 +76,11 @@ Ontology defines the semantic space within which authorized operations exist. On
 
 **PACT-REQ-002:** Authority MUST flow from law through policy to execution. Ontology semantics MUST NOT be treated as implicit authority grants.
 
-### 3.1 Runtime Layer Model
+### 3.1 Governance Gate Position
 
-PACT is positioned as the semantic governance layer in a regulated agent runtime stack:
+PACT operates as a pre-execution governance gate. Upstream layers (reasoning, tooling, transport, policy) may propose and evaluate candidate actions. PACT gates execution admission through canonicalization, commitment, overlay, and fail-closed checks. Execution proceeds only after PACT admission succeeds.
 
-1. Reasoning Layer
-2. Tooling Layer
-3. Transport Layer
-4. Policy Engine Layer
-5. Semantic Governance Layer (PACT)
-6. Execution Layer
-
-Interpretation rule:
-
-1. Layers 1-4 may propose, route, and evaluate candidate actions.
-2. Layer 5 (PACT) gates execution admission through canonicalization, commitment, overlay, and fail-closed checks.
-3. Layer 6 executes only after Layer 5 admission succeeds.
+PACT does not prescribe the architecture of surrounding layers. Implementations position the governance gate according to their own runtime design.
 
 ---
 

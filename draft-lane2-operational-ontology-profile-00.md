@@ -77,8 +77,7 @@ Before execution, runtime systems should verify:
 1. active pack signature validity;
 2. `pack_hash` match to manifest;
 3. `effective_window` validity;
-4. `rev_epoch` freshness;
-5. applicable action/constraint compatibility.
+4. `rev_epoch` freshness.
 
 ONTO-OPR-REQ-040: Any verification mismatch **MUST** deny execution (fail closed).
 
@@ -94,7 +93,8 @@ This profile uses governance and conformance gates from:
 - `draft-lane2-ontology-pack-authoring-and-approval-workflow-00.md`
 
 ## 10. Implementation Notes
-Recommended implementation pattern:
-- use open-world layer for authoring/discovery assistance;
-- compile to operational pack artifacts for runtime;
-- enforce pack hash pinning in execution services.
+Recommended authoring pattern:
+- use open-world layer for authoring and discovery assistance;
+- compile to operational pack artifacts for runtime consumption.
+
+Runtime consumers MUST enforce pack hash pinning per ONTO-OPR-REQ-040.
