@@ -1,0 +1,89 @@
+{
+  "schema_version": "1.0",
+  "generated_at_utc": "2026-04-06T13:55:00Z",
+  "vertical": "economic-measurement-drift-demo",
+  "bundle_id": "economic-groundtruth-2026-04-06",
+  "distribution_note": "Large PDF binaries were pulled during authoring but are intentionally excluded from public git history; use source URLs for re-fetch.",
+  "sources": [
+    {
+      "id": "unsd-sna-2008",
+      "title": "System of National Accounts 2008",
+      "url": "https://unstats.un.org/unsd/nationalaccount/docs/SNA2008.pdf",
+      "accessed_utc": "2026-04-06T13:46:00Z",
+      "local_path": "groundtruth/2026-04-06/sna-2008.pdf",
+      "sha256": "854883ffc5769747480561c78ba4099ec40257ca8f44d91a85f654b5e715a9b6",
+      "type": "standard_pdf",
+      "status": "pulled"
+    },
+    {
+      "id": "unsd-sna-2025-overview",
+      "title": "System of National Accounts 2025 Overview",
+      "url": "https://unstats.un.org/unsd/nationalaccount/sna2025.asp",
+      "accessed_utc": "2026-04-06T13:46:00Z",
+      "local_path": "groundtruth/2026-04-06/sna-2025-overview.html",
+      "sha256": "00bef59f38f14c847fa88a53068ef561ee559731d7a29192e386b35b38f826fc",
+      "type": "standards_page",
+      "status": "pulled"
+    },
+    {
+      "id": "unsd-sna-2025-pre-edit",
+      "title": "System of National Accounts 2025 Pre-edit",
+      "url": "https://unstats.un.org/unsd/nationalaccount/docs/2025_SNA_Pre-edit.pdf",
+      "accessed_utc": "2026-04-06T13:46:00Z",
+      "local_path": "groundtruth/2026-04-06/sna-2025-pre-edit.pdf",
+      "sha256": "5778ffe0350e634954473a59e9f85e2cb33da8f280b43de2a725847424ebcdb6",
+      "type": "standard_pdf",
+      "status": "pulled"
+    },
+    {
+      "id": "wb-icp-reports-index",
+      "title": "World Bank ICP Reports Index",
+      "url": "https://www.worldbank.org/en/programs/icp/brief/reports",
+      "accessed_utc": "2026-04-06T13:46:00Z",
+      "local_path": "groundtruth/2026-04-06/icp-reports.html",
+      "sha256": "0d6b72705a449118f7343f64e22101c9ea9099e67a84aabe4bb3200e342e5fbb",
+      "type": "program_reports_page",
+      "status": "pulled",
+      "notes": [
+        "Contains official links and release notes for ICP 2011, ICP 2017, and ICP 2021 outputs."
+      ]
+    },
+    {
+      "id": "wb-icp-2017-global-report",
+      "title": "Purchasing Power Parities and the Size of World Economies: Results from the 2017 International Comparison Program",
+      "url": "https://documents.worldbank.org/curated/en/539081589915285374/pdf/Purchasing-Power-Parities-and-the-Real-Size-of-World-Economies-Results-from-the-2017-International-Comparison-Program.pdf",
+      "accessed_utc": "2026-04-06T13:48:00Z",
+      "local_path": "groundtruth/2026-04-06/icp-2017-global-report.pdf",
+      "sha256": "ebc84c5c425ecc0df330e7214a6f8f19d4dce7cfe20367364f9440f2a188728f",
+      "type": "global_report_pdf",
+      "status": "pulled",
+      "notes": [
+        "Includes revised 2011 results according to the ICP reports index notes."
+      ]
+    },
+    {
+      "id": "wb-icp-2021-methodology",
+      "title": "ICP 2021 Methodology",
+      "url": "https://www.worldbank.org/en/programs/icp/brief/ICP2021_Methodology_PPP",
+      "accessed_utc": "2026-04-06T13:48:00Z",
+      "local_path": "groundtruth/2026-04-06/icp-2021-methodology.html",
+      "sha256": "589677e07754ac19e660b19bccf4d4b66b0cec6236c2897e9a6699534f150c3b",
+      "type": "methodology_page",
+      "status": "pulled"
+    },
+    {
+      "id": "wb-icp-2011-global-report-link",
+      "title": "ICP 2011 Purchasing Power Parities and the Real Size of World Economies (link reference)",
+      "url": "https://pubdocs.worldbank.org/en/711001503680105564/ICP2011-Global-Report.pdf",
+      "accessed_utc": "2026-04-06T13:47:00Z",
+      "type": "global_report_pdf",
+      "status": "link_observed_not_downloaded",
+      "http_status": 404,
+      "evidence_source_id": "wb-icp-reports-index",
+      "notes": [
+        "Link appears in the official ICP reports index page but returned 404 from this environment.",
+        "Crosswalk entries depending on ICP 2011 details remain provisional until a downloadable mirror is captured."
+      ]
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "bundleId": "__AUTO_BUNDLE_ID__",
+  "decision": {
+    "type": "EconomicMeasurementIntent",
+    "intent_class": "economic.monetary.policy.optimize.v1",
+    "resourceType": "EconomicMeasurementDecision",
+    "intentClass": "economic.monetary.policy.optimize.v1",
+    "baselineStandard": "SNA2008",
+    "currentStandard": "SNA2025",
+    "driftVector": "V1=0.20",
+    "v1": 0.2,
+    "v2": 0.1,
+    "v3": 0.05
+  }
+}

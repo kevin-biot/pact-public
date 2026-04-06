@@ -1,0 +1,20 @@
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix emd: <https://pact.example/ontology/economic-measurement-drift/> .
+@prefix dop: <https://pact.example/ontology/drift/> .
+
+emd:MeasurementDriftScheme a skos:ConceptScheme ;
+  dct:title "Economic Measurement Drift Mapping Concepts" ;
+  dct:description "Synthetic cross-version drift model for governance and replay safety demonstrations." .
+
+emd:GDPDefinitionSNA2008 skos:closeMatch emd:GDPDefinitionSNA2025 .
+emd:PPPMethodICP2011 skos:closeMatch emd:PPPMethodICP2017 .
+emd:PPPMethodICP2017 skos:closeMatch emd:PPPMethodICP2021 .
+
+emd:GDPAtPPP_2019 dop:definitionDrift emd:GDPAtPPP_2026 .
+emd:GDPDefinitionSNA2025 dop:componentReclassified emd:DigitalServicesOutput .
+emd:GDPDefinitionSNA2025 dop:componentReclassified emd:ImputedRentTreatment .
+emd:PPPMethodICP2021 dop:componentAdded emd:InterpolatedTimeSeriesPPPs .
+emd:PPPMethodICP2021 dop:componentAdded emd:ReferencePPPBasicHeadings .
+
+emd:GDPAtPPP_2026 skos:scopeNote "Composite quantity is influenced by both GDP-definition updates and PPP-cycle methodology updates; policy replay should bind a versioned evidence envelope." .

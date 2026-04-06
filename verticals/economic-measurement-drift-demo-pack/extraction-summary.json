@@ -1,0 +1,11 @@
+{
+  "schema_version": "0.1",
+  "generated_at_utc": "2026-04-06T15:20:00Z",
+  "profile": "economic-measurement-drift-demo-pack",
+  "domain": "economic-measurement-drift",
+  "source_spec": "UN SNA 2008/2025 + World Bank ICP 2011/2017/2021 references",
+  "source_artifact_count": 7,
+  "crosswalk_mapping_count": 4,
+  "stability_vector_count": 3,
+  "note": "Synthetic governance demo pack grounded in public standards documents; mappings remain candidate-level until review."
+}

@@ -1,0 +1,19 @@
+target_id: gdp-definition-stability-v1
+domain: economic-measurement-drift
+vector: V1_definition_structural_drift
+description: Monitors structural drift in GDP concept definition between referenced and current SNA versions.
+baseline:
+  standard: SNA2008
+current:
+  standard: SNA2025
+thresholds:
+  green_max: 0.15
+  amber_max: 0.35
+  red_min: 0.36
+signals:
+  - component_reclassified
+  - component_added
+  - scope_note_delta
+actions:
+  amber: escalate_for_human_review
+  red: block_automated_policy_replay

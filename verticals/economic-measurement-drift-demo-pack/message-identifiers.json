@@ -1,0 +1,9 @@
+{
+  "schema_version": "0.1",
+  "generated_at_utc": "2026-04-06T15:20:00Z",
+  "profile": "economic-measurement-drift-demo-pack",
+  "domain": "economic-measurement-drift",
+  "message_identifiers": [],
+  "message_types": [],
+  "note": "No transport-level message identifiers for this synthetic economic governance demo pack."
+}

@@ -1,0 +1,37 @@
+{
+  "schema_version": "1.0",
+  "generated_at_utc": "2026-04-06T15:30:00Z",
+  "pack_path": "verticals/economic-measurement-drift-demo-pack",
+  "cases": [
+    {
+      "id": "ECON-DRIFT-VALID-001",
+      "path": "fixtures/economic-measurement-drift/cases/valid-gdp-ppp-amber.json",
+      "expected": {"status": "pass", "code": "PASS"}
+    },
+    {
+      "id": "ECON-DRIFT-VALID-002",
+      "path": "fixtures/economic-measurement-drift/cases/valid-coverage-green.json",
+      "expected": {"status": "pass", "code": "PASS"}
+    },
+    {
+      "id": "ECON-DRIFT-FAIL-001",
+      "path": "fixtures/economic-measurement-drift/cases/fail-missing-required-field.json",
+      "expected": {"status": "fail", "code": "CIC_REQUIRED_FIELD_MISSING"}
+    },
+    {
+      "id": "ECON-DRIFT-FAIL-002",
+      "path": "fixtures/economic-measurement-drift/cases/fail-out-of-scope-intent.json",
+      "expected": {"status": "fail", "code": "ESCALATE_OUT_OF_SCOPE_INTENT"}
+    },
+    {
+      "id": "ECON-DRIFT-FAIL-003",
+      "path": "fixtures/economic-measurement-drift/cases/fail-bundle-commit-mismatch.json",
+      "expected": {"status": "fail", "code": "PSC_BUNDLE_COMMIT_MISMATCH"}
+    },
+    {
+      "id": "ECON-DRIFT-FAIL-004",
+      "path": "fixtures/economic-measurement-drift/cases/fail-invalid-drift-vector.json",
+      "expected": {"status": "fail", "code": "CIC_CANONICAL_VALUE_INVALID"}
+    }
+  ]
+}

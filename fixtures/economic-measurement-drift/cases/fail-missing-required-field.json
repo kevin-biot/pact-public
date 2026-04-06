@@ -1,0 +1,16 @@
+{
+  "bundleId": "__AUTO_BUNDLE_ID__",
+  "decision": {
+    "type": "EconomicMeasurementIntent",
+    "intent_class": "economic.gdp_ppp.threshold_assessment.v1",
+    "resourceType": "EconomicMeasurementDecision",
+    "intentClass": "economic.gdp_ppp.threshold_assessment.v1",
+    "measurementProfile": "GDP_PPP_COMPOSITE",
+    "baselineStandard": "SNA2008+ICP2017",
+    "driftVector": "V1=0.34;V2=0.28;V3=0.12",
+    "thresholdPolicy": "treaty_trigger_120pct",
+    "v1": 0.34,
+    "v2": 0.28,
+    "v3": 0.12
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "bundleId": "__AUTO_BUNDLE_ID__",
+  "decision": {
+    "type": "EconomicMeasurementIntent",
+    "intent_class": "economic.classification_drift.assess.v1",
+    "resourceType": "ClassificationDriftAssessment",
+    "intentClass": "economic.classification_drift.assess.v1",
+    "baselineStandard": "SNA2008",
+    "currentStandard": "SNA2025",
+    "driftVector": "V2=1.42",
+    "v1": 0.24,
+    "v2": 1.42,
+    "v3": 0.09
+  }
+}

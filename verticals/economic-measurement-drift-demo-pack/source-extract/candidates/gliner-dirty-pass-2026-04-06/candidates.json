@@ -1,0 +1,104 @@
+{
+  "schema_version": "1.0",
+  "tool": "extract_candidates",
+  "run_id": "emd-gliner-dirty-pass-2026-04-06",
+  "review_status": "candidate",
+  "candidates": [
+    {
+      "candidate_id": "EMD-CAND-001",
+      "surface_form": "System of National Accounts 2025",
+      "label": "STANDARD_VERSION",
+      "confidence": 0.95,
+      "review_status": "candidate",
+      "span": {"start": 0, "end": 31},
+      "source_ref": {
+        "path": "source-extract/groundtruth/2026-04-06/sna-2025-overview.html",
+        "line_start": 90,
+        "line_end": 90
+      }
+    },
+    {
+      "candidate_id": "EMD-CAND-002",
+      "surface_form": "digitalization",
+      "label": "DRIFT_SIGNAL",
+      "confidence": 0.83,
+      "review_status": "candidate",
+      "span": {"start": 0, "end": 14},
+      "source_ref": {
+        "path": "source-extract/groundtruth/2026-04-06/sna-2025-overview.html",
+        "line_start": 91,
+        "line_end": 91
+      }
+    },
+    {
+      "candidate_id": "EMD-CAND-003",
+      "surface_form": "revised data for the reference year 2017",
+      "label": "METHODOLOGY",
+      "confidence": 0.88,
+      "review_status": "candidate",
+      "span": {"start": 0, "end": 39},
+      "source_ref": {
+        "path": "source-extract/groundtruth/2026-04-06/icp-reports.html",
+        "line_start": 880,
+        "line_end": 880
+      }
+    },
+    {
+      "candidate_id": "EMD-CAND-004",
+      "surface_form": "Revised results for the preceding reference year 2011",
+      "label": "METHODOLOGY",
+      "confidence": 0.9,
+      "review_status": "candidate",
+      "span": {"start": 0, "end": 53},
+      "source_ref": {
+        "path": "source-extract/groundtruth/2026-04-06/icp-reports.html",
+        "line_start": 894,
+        "line_end": 894
+      }
+    },
+    {
+      "candidate_id": "EMD-CAND-005",
+      "surface_form": "Reference PPPs",
+      "label": "ECONOMIC_CONCEPT",
+      "confidence": 0.84,
+      "review_status": "candidate",
+      "span": {"start": 0, "end": 14},
+      "source_ref": {
+        "path": "source-extract/groundtruth/2026-04-06/icp-2021-methodology.html",
+        "line_start": 873,
+        "line_end": 873
+      }
+    },
+    {
+      "candidate_id": "EMD-CAND-006",
+      "surface_form": "Interpolated time series PPPs",
+      "label": "METHODOLOGY",
+      "confidence": 0.82,
+      "review_status": "candidate",
+      "span": {"start": 0, "end": 29},
+      "source_ref": {
+        "path": "source-extract/groundtruth/2026-04-06/icp-2021-methodology.html",
+        "line_start": 1000,
+        "line_end": 1000
+      }
+    }
+  ],
+  "provenance": {
+    "run_id": "emd-gliner-dirty-pass-2026-04-06",
+    "model_id": "urchade/gliner_medium-v2.1",
+    "config_digest": "sha256:aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+    "source_digest": "sha256:bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+    "output_digest": "sha256:cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc",
+    "created_at": "2026-04-06T15:20:00Z"
+  },
+  "summary": {
+    "candidate_count": 6,
+    "labels_used": [
+      "ECONOMIC_CONCEPT",
+      "METHODOLOGY",
+      "STANDARD_VERSION",
+      "DRIFT_SIGNAL"
+    ],
+    "processing_time_ms": 612
+  }
+}

@@ -220,6 +220,12 @@ Run the FHIR encounter transitions fixture harness:
 node tools/run-fhir-encounter-transitions-fixtures.mjs
 ```
 
+Run the economic measurement drift demo fixture harness:
+
+```bash
+node tools/run-economic-measurement-drift-fixtures.mjs
+```
+
 Run the reference policy CIC+PSC fixture harness:
 
 ```bash
@@ -240,7 +246,7 @@ Fixture signing keys are test-only and must not be used in production systems.
 
 ## Reference Vertical Packs
 
-This repository currently publishes 35 reference/demo packs across healthcare, commerce, payments, open banking, telco, travel, and policy.
+This repository currently publishes 36 reference/demo packs across healthcare, commerce, payments, open banking, telco, travel, policy, and economic measurement governance.
 
 This repository includes:
 
@@ -279,6 +285,7 @@ This repository includes:
 33. `verticals/travel-hotel-booking-demo-pack/`
 34. `verticals/travel-air-order-lifecycle-demo-pack/`
 35. `verticals/travel-itinerary-fusion-demo-pack/`
+36. `verticals/economic-measurement-drift-demo-pack/`
 
 This telco pack is a non-normative example vertical profile demonstrating PACT extension mechanics.
 It does not define TM Forum standards and does not replace IG1453.
@@ -301,6 +308,8 @@ It includes a minimal jurisdiction overlay deny-wins composition example.
 The ISO 20022 reference pack is a review-candidate payments ontology artifact bundle for external interoperability and governance review.
 
 The travel demo packs are grounded example ontology bundles for air shopping, hotel booking, air order lifecycle, and itinerary fusion.
+The economic measurement drift demo pack provides a synthetic governance surface for SNA/ICP concept-drift detection and threshold-impact review workflows.
+Detailed pack documentation is available at `verticals/economic-measurement-drift-demo-pack/README.md`.
 
 ## Real-World Deployment View
 

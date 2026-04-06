@@ -1,0 +1,12 @@
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix emd: <https://pact.example/ontology/economic-measurement-drift/> .
+
+emd:ICP2017Scheme a skos:ConceptScheme ;
+  dct:title "ICP 2017 Synthetic PPP Concepts" ;
+  dct:source <https://openknowledge.worldbank.org/bitstream/handle/10986/33623/9781464815300.pdf> .
+
+emd:PPPMethodICP2017 a skos:Concept ;
+  skos:inScheme emd:ICP2017Scheme ;
+  skos:prefLabel "PPP methodology (ICP 2017 cycle)" ;
+  skos:scopeNote "Includes revised 2011 reference-year results and methodological continuity cues for subsequent cycles." .

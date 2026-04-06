@@ -1,0 +1,13 @@
+{
+  "@context": {
+    "emd": "https://pact.example/ontology/economic-measurement-drift/",
+    "dop": "https://pact.example/ontology/drift/",
+    "intentClass": "emd:intentClass",
+    "measurementProfile": "emd:measurementProfile",
+    "baselineStandard": "emd:baselineStandard",
+    "currentStandard": "emd:currentStandard",
+    "driftVector": "emd:driftVector",
+    "thresholdPolicy": "emd:thresholdPolicy",
+    "evidenceEnvelopeRef": "emd:evidenceEnvelopeRef"
+  }
+}

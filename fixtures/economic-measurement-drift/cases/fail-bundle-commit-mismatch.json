@@ -1,0 +1,15 @@
+{
+  "bundleId": "sha256:0000000000000000000000000000000000000000000000000000000000000000",
+  "decision": {
+    "type": "EconomicMeasurementIntent",
+    "intent_class": "economic.definition_drift.assess.v1",
+    "resourceType": "DefinitionDriftAssessment",
+    "intentClass": "economic.definition_drift.assess.v1",
+    "baselineStandard": "SNA2008",
+    "currentStandard": "SNA2025",
+    "driftVector": "V1=0.36",
+    "v1": 0.36,
+    "v2": 0.19,
+    "v3": 0.11
+  }
+}

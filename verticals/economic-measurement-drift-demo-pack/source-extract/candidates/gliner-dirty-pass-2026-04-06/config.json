@@ -1,0 +1,19 @@
+{
+  "schema_version": "1.0",
+  "adapter": "gliner",
+  "model_id": "urchade/gliner_medium-v2.1",
+  "model_hash": "sha256:1111111111111111111111111111111111111111111111111111111111111111",
+  "threshold": 0.35,
+  "labels": [
+    "ECONOMIC_CONCEPT",
+    "METHODOLOGY",
+    "STANDARD_VERSION",
+    "DRIFT_SIGNAL"
+  ],
+  "review_status": "candidate",
+  "authoritative": false,
+  "notes": [
+    "Synthetic dirty-pass extraction for demo only.",
+    "No claims in this folder are authoritative until human-reviewed."
+  ]
+}

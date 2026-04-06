@@ -1,0 +1,12 @@
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix emd: <https://pact.example/ontology/economic-measurement-drift/> .
+
+emd:SNA2025Scheme a skos:ConceptScheme ;
+  dct:title "SNA 2025 Synthetic GDP Concepts" ;
+  dct:source <https://unstats.un.org/unsd/nationalaccount/sna2025.asp> .
+
+emd:GDPDefinitionSNA2025 a skos:Concept ;
+  skos:inScheme emd:SNA2025Scheme ;
+  skos:prefLabel "Gross Domestic Product definition (SNA 2025)" ;
+  skos:scopeNote "SNA 2025 retains core framework while introducing updated treatments for digitalization, globalization, and informal economy coverage." .

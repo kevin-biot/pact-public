@@ -1,0 +1,67 @@
+{
+  "schema_version": "1.0",
+  "domain": "economic-measurement-drift",
+  "last_modified": "2026-04-06",
+  "concepts": [
+    {
+      "concept_id": "economic.gdp_ppp.threshold_assessment.v1",
+      "preferred_term": "GDP at PPP Threshold Assessment",
+      "synonyms": ["GDP PPP threshold check", "treaty GDP PPP trigger review"],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "EconomicMeasurementDecision",
+      "narrower": [],
+      "source_refs": ["unsd-sna-2025-overview", "wb-icp-2021-methodology"],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "economic.definition_drift.assess.v1",
+      "preferred_term": "Definition Drift Assessment",
+      "synonyms": ["semantic drift check", "definition continuity check"],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "EconomicMeasurementDecision",
+      "narrower": [],
+      "source_refs": ["unsd-sna-2008", "unsd-sna-2025-overview"],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "economic.classification_drift.assess.v1",
+      "preferred_term": "Classification Drift Assessment",
+      "synonyms": ["classification continuity check", "taxonomy drift check"],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "EconomicMeasurementDecision",
+      "narrower": [],
+      "source_refs": ["unsd-sna-2025-pre-edit", "wb-icp-2017-global-report"],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "economic.coverage_drift.assess.v1",
+      "preferred_term": "Coverage Drift Assessment",
+      "synonyms": ["coverage comparability check", "collection methodology drift"],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "EconomicMeasurementDecision",
+      "narrower": [],
+      "source_refs": ["wb-icp-2021-methodology", "wb-icp-reports-index"],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "economic.stability.review_recommendation.v1",
+      "preferred_term": "Stability Review Recommendation",
+      "synonyms": ["policy threshold review", "semantic stability recommendation"],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "EconomicMeasurementDecision",
+      "narrower": [],
+      "source_refs": ["unsd-sna-2025-overview", "wb-icp-2021-methodology"],
+      "ner_provenance": null
+    }
+  ]
+}

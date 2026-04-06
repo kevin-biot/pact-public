@@ -1,0 +1,4 @@
+.DS_Store
+
+# Keep local heavyweight source binaries out of the public git history.
+/verticals/economic-measurement-drift-demo-pack/source-extract/groundtruth/**/*.pdf

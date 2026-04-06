@@ -1,0 +1,23 @@
+rubric_id: definition-consistency-v1
+title: Definition Consistency Rubric
+objective: Evaluate whether a term referenced by policy retains materially equivalent meaning under current standards.
+inputs:
+  - baseline_standard
+  - current_standard
+  - crosswalk_mappings
+  - candidate_component_deltas
+scoring:
+  green:
+    range: [0.00, 0.15]
+    interpretation: Definition continuity is strong; replay risk is low.
+  amber:
+    range: [0.16, 0.35]
+    interpretation: Material definition movement detected; human review recommended.
+  red:
+    range: [0.36, 1.00]
+    interpretation: Definition changed significantly; replay without review is unsafe.
+output_fields:
+  - vector_id
+  - score
+  - status
+  - rationale

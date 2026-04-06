@@ -1,0 +1,31 @@
+{
+  "schema_version": "1.0",
+  "domain": "economic-measurement-drift",
+  "mappings": [
+    {
+      "concept_uri": "emd:GDPAtPPP",
+      "intent_class": "economic.gdp_ppp.threshold_assessment.v1",
+      "confidence_floor": 0.72
+    },
+    {
+      "concept_uri": "emd:DefinitionDrift",
+      "intent_class": "economic.definition_drift.assess.v1",
+      "confidence_floor": 0.72
+    },
+    {
+      "concept_uri": "emd:ClassificationDrift",
+      "intent_class": "economic.classification_drift.assess.v1",
+      "confidence_floor": 0.72
+    },
+    {
+      "concept_uri": "emd:CoverageDrift",
+      "intent_class": "economic.coverage_drift.assess.v1",
+      "confidence_floor": 0.72
+    },
+    {
+      "concept_uri": "emd:ThresholdImpactAssessment",
+      "intent_class": "economic.stability.review_recommendation.v1",
+      "confidence_floor": 0.7
+    }
+  ]
+}

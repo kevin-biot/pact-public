@@ -1,0 +1,39 @@
+{
+  "@context": {
+    "emd": "https://pact.example/ontology/economic-measurement-drift/"
+  },
+  "entries": [
+    {
+      "label": "GDP at PPP",
+      "alt": ["PPP-adjusted GDP", "GDP purchasing power parity"],
+      "properties": {
+        "entity_type": "intent_hint",
+        "description": "Composite economic measure sensitive to both GDP definition and PPP methodology updates."
+      }
+    },
+    {
+      "label": "Definition drift",
+      "alt": ["semantic definition change", "concept drift"],
+      "properties": {
+        "entity_type": "drift_signal",
+        "description": "Change in formal meaning of a referenced economic concept across standards versions."
+      }
+    },
+    {
+      "label": "Classification drift",
+      "alt": ["reclassification change", "taxonomy drift"],
+      "properties": {
+        "entity_type": "drift_signal",
+        "description": "Change in categorization rules affecting comparability of reported quantities."
+      }
+    },
+    {
+      "label": "Coverage drift",
+      "alt": ["measurement coverage change", "method coverage shift"],
+      "properties": {
+        "entity_type": "drift_signal",
+        "description": "Change in coverage or estimation procedure that alters comparability over time."
+      }
+    }
+  ]
+}

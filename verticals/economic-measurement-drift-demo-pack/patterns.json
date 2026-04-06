@@ -1,0 +1,41 @@
+{
+  "schema_version": "1.0",
+  "domain": "economic-measurement-drift",
+  "patterns": [
+    {
+      "id": "gdp_ppp_threshold_assessment",
+      "concept_uri": "economic.gdp_ppp.threshold_assessment.v1",
+      "entity_type": "intent_hint",
+      "regex": "(?i)\\b(gdp\\s*at\\s*ppp|ppp-adjusted\\s*gdp|gdp\\(ppp\\))\\b",
+      "examples": ["GDP at PPP threshold trigger"]
+    },
+    {
+      "id": "definition_drift_assessment",
+      "concept_uri": "economic.definition_drift.assess.v1",
+      "entity_type": "intent_hint",
+      "regex": "(?i)\\b(definition\\s+drift|semantic\\s+drift|term\\s+meaning\\s+changed)\\b",
+      "examples": ["check definition drift"]
+    },
+    {
+      "id": "classification_drift_assessment",
+      "concept_uri": "economic.classification_drift.assess.v1",
+      "entity_type": "intent_hint",
+      "regex": "(?i)\\b(classification\\s+drift|reclassification|taxonomy\\s+shift)\\b",
+      "examples": ["assess classification drift"]
+    },
+    {
+      "id": "coverage_drift_assessment",
+      "concept_uri": "economic.coverage_drift.assess.v1",
+      "entity_type": "intent_hint",
+      "regex": "(?i)\\b(coverage\\s+drift|collection\\s+methodology\\s+change|survey\\s+coverage\\s+change)\\b",
+      "examples": ["coverage drift evaluation"]
+    },
+    {
+      "id": "stability_review_recommendation",
+      "concept_uri": "economic.stability.review_recommendation.v1",
+      "entity_type": "intent_hint",
+      "regex": "(?i)\\b(recommend\\s+review|non-binding\\s+review|threshold\\s+review)\\b",
+      "examples": ["recommend threshold review"]
+    }
+  ]
+}

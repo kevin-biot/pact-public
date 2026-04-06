@@ -1,0 +1,15 @@
+{
+  "bundleId": "__AUTO_BUNDLE_ID__",
+  "decision": {
+    "type": "EconomicMeasurementIntent",
+    "intent_class": "economic.coverage_drift.assess.v1",
+    "resourceType": "CoverageDriftAssessment",
+    "intentClass": "economic.coverage_drift.assess.v1",
+    "baselineStandard": "ICP2017",
+    "currentStandard": "ICP2021",
+    "driftVector": "V3=0.10",
+    "v1": 0.08,
+    "v2": 0.12,
+    "v3": 0.1
+  }
+}

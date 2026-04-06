@@ -1,0 +1,19 @@
+target_id: ppp-methodology-stability-v1
+domain: economic-measurement-drift
+vector: V3_coverage_drift
+description: Monitors comparability drift introduced by PPP methodology updates across ICP cycles.
+baseline:
+  standard: ICP2017
+current:
+  standard: ICP2021
+thresholds:
+  green_max: 0.14
+  amber_max: 0.30
+  red_min: 0.31
+signals:
+  - reference_ppp_change
+  - interpolation_method_change
+  - basic_heading_coverage_change
+actions:
+  amber: publish_non_binding_review_recommendation
+  red: require_policy_threshold_recalibration

@@ -1,0 +1,159 @@
+{
+  "schema_version": "1.0",
+  "generated_at_utc": "2026-04-06T13:56:00Z",
+  "crosswalk_id": "economic-measurement-drift-crosswalk-v1",
+  "status": "provisional_grounded_seed",
+  "review_required": true,
+  "scope": {
+    "domain": "economic-measurement-drift-demo",
+    "from_standards": [
+      "SNA2008",
+      "ICP2017"
+    ],
+    "to_standards": [
+      "SNA2025",
+      "ICP2021"
+    ]
+  },
+  "mappings": [
+    {
+      "id": "XW-EMD-001",
+      "label": "GDP concept continuity",
+      "relation": "skos:closeMatch",
+      "from": {
+        "standard": "SNA2008",
+        "concept": "gross-domestic-product"
+      },
+      "to": {
+        "standard": "SNA2025",
+        "concept": "gross-domestic-product"
+      },
+      "assertion_scope": "grounded_high_level",
+      "confidence": "medium",
+      "evidence_source_ids": [
+        "unsd-sna-2008",
+        "unsd-sna-2025-overview",
+        "unsd-sna-2025-pre-edit"
+      ],
+      "notes": [
+        "Term continuity is grounded; component-level methodology deltas require chapter-level extraction and review."
+      ]
+    },
+    {
+      "id": "XW-EMD-002",
+      "label": "PPP cycle continuity",
+      "relation": "skos:closeMatch",
+      "from": {
+        "standard": "ICP2017",
+        "concept": "purchasing-power-parities-methodology"
+      },
+      "to": {
+        "standard": "ICP2021",
+        "concept": "purchasing-power-parities-methodology"
+      },
+      "assertion_scope": "grounded_high_level",
+      "confidence": "medium",
+      "evidence_source_ids": [
+        "wb-icp-2017-global-report",
+        "wb-icp-2021-methodology",
+        "wb-icp-reports-index"
+      ],
+      "notes": [
+        "Same measurement family across cycles; methodology updates imply drift-sensitive comparability checks."
+      ]
+    },
+    {
+      "id": "XW-EMD-003",
+      "label": "GDP at PPP composite dependency",
+      "relation": "dop:definitionDrift",
+      "from": {
+        "standard": "SNA2008+ICP2017",
+        "concept": "gdp-at-ppp"
+      },
+      "to": {
+        "standard": "SNA2025+ICP2021",
+        "concept": "gdp-at-ppp"
+      },
+      "assertion_scope": "synthetic_scenario_seed",
+      "confidence": "low",
+      "evidence_source_ids": [
+        "unsd-sna-2025-overview",
+        "wb-icp-reports-index",
+        "wb-icp-2021-methodology"
+      ],
+      "notes": [
+        "Composite metric comparability is sensitive to both national-accounts-definition updates and PPP methodology cycle updates.",
+        "Quantitative impact bounds must remain illustrative until detailed component extraction is completed."
+      ],
+      "proposed_component_relations": [
+        "dop:componentAdded",
+        "dop:componentRemoved",
+        "dop:componentReclassified"
+      ]
+    },
+    {
+      "id": "XW-EMD-004",
+      "label": "ICP 2011 lineage bridge",
+      "relation": "skos:closeMatch",
+      "from": {
+        "standard": "ICP2011",
+        "concept": "ppp-reference-cycle"
+      },
+      "to": {
+        "standard": "ICP2017",
+        "concept": "ppp-reference-cycle"
+      },
+      "assertion_scope": "grounded_high_level",
+      "confidence": "medium",
+      "evidence_source_ids": [
+        "wb-icp-reports-index",
+        "wb-icp-2017-global-report",
+        "wb-icp-2011-global-report-link"
+      ],
+      "notes": [
+        "ICP reports index states revised 2011 results are provided in the 2017 global report context.",
+        "Direct 2011 PDF content extraction is pending because the public link currently returns 404 from this environment."
+      ]
+    }
+  ],
+  "stability_seed_targets": {
+    "v1_definition_structural_drift": {
+      "status": "declared",
+      "source_mapping_ids": [
+        "XW-EMD-001",
+        "XW-EMD-003"
+      ]
+    },
+    "v2_classification_drift": {
+      "status": "declared",
+      "source_mapping_ids": [
+        "XW-EMD-001",
+        "XW-EMD-003"
+      ]
+    },
+    "v3_coverage_drift": {
+      "status": "declared",
+      "source_mapping_ids": [
+        "XW-EMD-002",
+        "XW-EMD-004"
+      ]
+    }
+  },
+  "open_items": [
+    {
+      "id": "OI-EMD-001",
+      "title": "Recover downloadable ICP 2011 global report artifact",
+      "priority": "P1"
+    },
+    {
+      "id": "OI-EMD-002",
+      "title": "Extract chapter/paragraph-level SNA2008 vs SNA2025 concept deltas",
+      "priority": "P1"
+    },
+    {
+      "id": "OI-EMD-003",
+      "title": "Convert provisional dop:* relations into validated component-level assertions",
+      "priority": "P2"
+    }
+  ]
+}

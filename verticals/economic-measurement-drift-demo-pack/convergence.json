@@ -1,0 +1,46 @@
+{
+  "schema_version": "1.0",
+  "domain": "economic-measurement-drift",
+  "thresholds": {
+    "overall_min_pass_rate": 1.0,
+    "require_critical_pass": true
+  },
+  "cases": [
+    {
+      "id": "gdp_ppp",
+      "phrase": "evaluate treaty trigger using GDP at PPP",
+      "expect": "economic.gdp_ppp.threshold_assessment.v1",
+      "critical": true
+    },
+    {
+      "id": "def_drift",
+      "phrase": "check whether gdp definition drifted since 2019",
+      "expect": "economic.definition_drift.assess.v1",
+      "critical": true
+    },
+    {
+      "id": "class_drift",
+      "phrase": "assess classification drift for digital services",
+      "expect": "economic.classification_drift.assess.v1",
+      "critical": true
+    },
+    {
+      "id": "coverage_drift",
+      "phrase": "review coverage drift in ppp methodology",
+      "expect": "economic.coverage_drift.assess.v1",
+      "critical": true
+    },
+    {
+      "id": "recommend",
+      "phrase": "issue non binding stability review recommendation",
+      "expect": "economic.stability.review_recommendation.v1",
+      "critical": true
+    },
+    {
+      "id": "out_scope",
+      "phrase": "compute sovereign bond pricing",
+      "expect": "economic.market.pricing.compute.v1",
+      "critical": false
+    }
+  ]
+}

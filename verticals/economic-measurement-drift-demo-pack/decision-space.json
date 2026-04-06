@@ -1,0 +1,65 @@
+{
+  "schema_version": "1.0",
+  "domain": "economic-measurement-drift",
+  "pack_id": "economic-measurement-drift-demo-0.1.0",
+  "version": "0.1.0",
+  "out_of_scope_behavior": "escalate",
+  "state_model": {
+    "states": [
+      "ingress",
+      "validated",
+      "classified",
+      "scored",
+      "responded",
+      "rejected",
+      "escalated"
+    ],
+    "initial_state": "ingress",
+    "terminal_states": [
+      "responded",
+      "rejected",
+      "escalated"
+    ]
+  },
+  "intent_resource_map": {
+    "economic.gdp_ppp.threshold_assessment.v1": ["EconomicMeasurementDecision"],
+    "economic.definition_drift.assess.v1": ["DefinitionDriftAssessment"],
+    "economic.classification_drift.assess.v1": ["ClassificationDriftAssessment"],
+    "economic.coverage_drift.assess.v1": ["CoverageDriftAssessment"],
+    "economic.stability.review_recommendation.v1": ["StabilityRecommendation"]
+  },
+  "required_fields_by_intent": {
+    "economic.gdp_ppp.threshold_assessment.v1": [
+      "intentClass",
+      "measurementProfile",
+      "baselineStandard",
+      "currentStandard",
+      "driftVector",
+      "thresholdPolicy"
+    ],
+    "economic.definition_drift.assess.v1": [
+      "intentClass",
+      "baselineStandard",
+      "currentStandard",
+      "driftVector"
+    ],
+    "economic.classification_drift.assess.v1": [
+      "intentClass",
+      "baselineStandard",
+      "currentStandard",
+      "driftVector"
+    ],
+    "economic.coverage_drift.assess.v1": [
+      "intentClass",
+      "baselineStandard",
+      "currentStandard",
+      "driftVector"
+    ],
+    "economic.stability.review_recommendation.v1": [
+      "intentClass",
+      "driftVector",
+      "thresholdPolicy",
+      "evidenceEnvelopeRef"
+    ]
+  }
+}

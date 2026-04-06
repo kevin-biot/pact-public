@@ -1,0 +1,63 @@
+{
+  "schema_version": "1.0",
+  "plan_id": "economic-measurement-drift-demo-plan-v1",
+  "created_at_utc": "2026-04-06T15:20:00Z",
+  "mutable": false,
+  "stages": [
+    {
+      "stage_id": "EMD-001",
+      "title": "Scope and target shape lock",
+      "status": "done",
+      "done_at_utc": "2026-04-06T15:00:00Z",
+      "notes": "Pack name and artifact shape aligned to public demo conventions."
+    },
+    {
+      "stage_id": "EMD-002",
+      "title": "Groundtruth source pull",
+      "status": "done",
+      "done_at_utc": "2026-04-06T15:00:00Z",
+      "notes": "UN SNA and WB ICP source bundle pulled with hashes in sources.json."
+    },
+    {
+      "stage_id": "EMD-003",
+      "title": "Crosswalk seed",
+      "status": "done",
+      "done_at_utc": "2026-04-06T15:00:00Z",
+      "notes": "Provisional grounded crosswalk authored in source-extract/crosswalk/."
+    },
+    {
+      "stage_id": "EMD-004",
+      "title": "GLiNER dirty pass candidates",
+      "status": "done",
+      "done_at_utc": "2026-04-06T15:20:00Z",
+      "notes": "Candidate-only artifacts produced with review_status=candidate."
+    },
+    {
+      "stage_id": "EMD-005",
+      "title": "Ontology and drift pack authoring",
+      "status": "done",
+      "done_at_utc": "2026-04-06T15:20:00Z",
+      "notes": "Core pack files and ontology/rubrics/stability assets authored."
+    },
+    {
+      "stage_id": "EMD-006",
+      "title": "Fixture harness",
+      "status": "done",
+      "done_at_utc": "2026-04-06T15:35:00Z",
+      "notes": "Synthetic fixture index/cases and dedicated runner added; local run passed (6/6)."
+    },
+    {
+      "stage_id": "EMD-007",
+      "title": "Repository integration",
+      "status": "done",
+      "done_at_utc": "2026-04-06T15:36:00Z",
+      "notes": "Root README updated with fixture command and new vertical inventory entry."
+    },
+    {
+      "stage_id": "EMD-008",
+      "title": "Commit and push",
+      "status": "next",
+      "notes": "Stage files and commit/push once human review confirms candidate surface."
+    }
+  ]
+}

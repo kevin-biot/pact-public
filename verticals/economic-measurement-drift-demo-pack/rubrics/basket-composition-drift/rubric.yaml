@@ -1,0 +1,23 @@
+rubric_id: basket-composition-drift-v1
+title: Basket Composition Drift Rubric
+objective: Detect comparability risk when measurement baskets or weighting methods change across methodology cycles.
+inputs:
+  - baseline_ppp_cycle
+  - current_ppp_cycle
+  - reference_ppp_rules
+  - weighting_method_notes
+scoring:
+  green:
+    range: [0.00, 0.14]
+    interpretation: Basket and weighting continuity adequate for direct comparison.
+  amber:
+    range: [0.15, 0.30]
+    interpretation: Moderate methodological drift; quantify threshold sensitivity.
+  red:
+    range: [0.31, 1.00]
+    interpretation: High comparability risk; decision thresholds should be reviewed.
+output_fields:
+  - vector_id
+  - score
+  - status
+  - rationale

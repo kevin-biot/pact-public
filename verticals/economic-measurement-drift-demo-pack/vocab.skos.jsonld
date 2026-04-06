@@ -1,0 +1,20 @@
+{
+  "@context": {
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "emd": "https://pact.example/ontology/economic-measurement-drift/"
+  },
+  "concepts": [
+    {"id": "emd:EconomicMeasurementDecision", "prefLabel": "Economic Measurement Decision"},
+    {"id": "emd:GDPAtPPP", "prefLabel": "GDP at PPP", "broader": "emd:EconomicMeasurementDecision"},
+    {"id": "emd:GDPDefinitionSNA2008", "prefLabel": "GDP Definition (SNA 2008)", "broader": "emd:GDPAtPPP"},
+    {"id": "emd:GDPDefinitionSNA2025", "prefLabel": "GDP Definition (SNA 2025)", "broader": "emd:GDPAtPPP"},
+    {"id": "emd:PPPMethodICP2011", "prefLabel": "PPP Methodology (ICP 2011)", "broader": "emd:GDPAtPPP"},
+    {"id": "emd:PPPMethodICP2017", "prefLabel": "PPP Methodology (ICP 2017)", "broader": "emd:GDPAtPPP"},
+    {"id": "emd:PPPMethodICP2021", "prefLabel": "PPP Methodology (ICP 2021)", "broader": "emd:GDPAtPPP"},
+    {"id": "emd:DefinitionDrift", "prefLabel": "Definition Structural Drift", "broader": "emd:EconomicMeasurementDecision"},
+    {"id": "emd:ClassificationDrift", "prefLabel": "Classification Drift", "broader": "emd:EconomicMeasurementDecision"},
+    {"id": "emd:CoverageDrift", "prefLabel": "Coverage Drift", "broader": "emd:EconomicMeasurementDecision"},
+    {"id": "emd:ThresholdImpactAssessment", "prefLabel": "Threshold Impact Assessment", "broader": "emd:EconomicMeasurementDecision"},
+    {"id": "emd:EvidenceEnvelope", "prefLabel": "Evidence Envelope", "broader": "emd:EconomicMeasurementDecision"}
+  ]
+}

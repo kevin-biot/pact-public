@@ -1,0 +1,12 @@
+{
+  "schema_version": "1.0",
+  "run_id": "emd-gliner-dirty-pass-2026-04-06",
+  "review_status": "candidate",
+  "authoritative": false,
+  "source_count": 3,
+  "candidate_count": 6,
+  "notes": [
+    "This is a dirty-pass extraction intended to accelerate human review.",
+    "No downstream ontology promotion is allowed without candidate adjudication."
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "schema_version": "1.0",
+  "tool": "batch_extract_candidates",
+  "run_id": "emd-gliner-dirty-pass-2026-04-06",
+  "review_status": "candidate",
+  "artifact_paths": {
+    "candidates": "source-extract/candidates/gliner-dirty-pass-2026-04-06/candidates.json",
+    "summary": "source-extract/candidates/gliner-dirty-pass-2026-04-06/extraction-summary.json",
+    "manifest": "source-extract/candidates/gliner-dirty-pass-2026-04-06/manifest.json"
+  },
+  "stats": {
+    "source_count": 3,
+    "candidate_count": 6,
+    "processing_time_ms": 612
+  },
+  "provenance": {
+    "run_id": "emd-gliner-dirty-pass-2026-04-06",
+    "model_id": "urchade/gliner_medium-v2.1",
+    "config_digest": "sha256:aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+    "source_digests": [
+      "sha256:00bef59f38f14c847fa88a53068ef561ee559731d7a29192e386b35b38f826fc",
+      "sha256:0d6b72705a449118f7343f64e22101c9ea9099e67a84aabe4bb3200e342e5fbb",
+      "sha256:589677e07754ac19e660b19bccf4d4b66b0cec6236c2897e9a6699534f150c3b"
+    ],
+    "output_digest": "sha256:cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc",
+    "created_at": "2026-04-06T15:20:00Z"
+  }
+}
