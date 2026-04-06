@@ -22,6 +22,38 @@ The pack models three stability vectors:
 
 It then binds those vectors to intent classes and decision-space constraints so drift-aware behavior is deterministic and auditable.
 
+## How This Helps in Practice
+
+This pack is useful when teams must make decisions today using terms authored in older policy or contract text.
+
+1. Treaty and contract thresholds:
+It reduces the risk of silently applying new measurement semantics to old threshold clauses.
+2. Regulatory and policy replay:
+It gives reviewers a structured way to test whether a historical decision remains semantically valid under current standards.
+3. Agentic workflow safety:
+It prevents downstream agents from consuming a drifted fact as if it were unchanged, by forcing explicit review/escalation paths.
+4. Audit and evidence quality:
+It records version anchors, crosswalk lineage, and drift scores so reviewers can inspect the why, not only the outcome.
+
+## Who Benefits
+
+1. Policy and legal teams:
+Clear signal when semantic drift may invalidate literal threshold interpretation.
+2. Data and economics teams:
+A repeatable method to document comparability risk between cycles.
+3. Agent platform teams:
+A bounded decision surface that is deterministic, testable, and compatible with conformance fixtures.
+4. Governance and assurance functions:
+Traceable provenance from source document to crosswalk to decision recommendation.
+
+## Pipeline Fit (Authoring to Runtime)
+
+1. Source extraction captures standards references and candidate terms.
+2. Crosswalk and drift relations encode continuity and change points.
+3. Pack artifacts bind those relations to intents, shapes, and decision constraints.
+4. Runtime or promotion gates evaluate drift vectors and enforce pass/escalate behavior.
+5. Evidence artifacts preserve decision context for replay and audit.
+
 ## Synthetic Scenario Used
 
 1. Baseline policy era (example): `SNA2008 + ICP2017`.
