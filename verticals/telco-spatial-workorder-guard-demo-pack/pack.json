@@ -1,0 +1,33 @@
+{
+  "pack_schema": "1.0",
+  "id": "telco-spatial-workorder-guard-demo-0.1.0",
+  "domain": "telco-spatial-workorder-guard",
+  "version": "0.1.0",
+  "provider_id": "ontology:pact-public:telco",
+  "trust_tier": "Tier1",
+  "nbf": "2026-04-07T00:00:00Z",
+  "exp": "2031-04-07T00:00:00Z",
+  "rev_epoch": 1,
+  "deny_wins": true,
+  "precedence": [],
+  "files": {
+    "context": "context.jsonld",
+    "vocab": "vocab.skos.jsonld",
+    "shapes": "shapes.ttl",
+    "thesaurus": "thesaurus.jsonld",
+    "thesaurus_local": "thesaurus-local.json",
+    "patterns": "patterns.json",
+    "intent_mappings": "intent-mappings.json",
+    "convergence": "convergence.json",
+    "decision_space": "decision-space.json",
+    "source_extract": "source-extract/sources.json"
+  },
+  "dc": {
+    "identifier": "ontology:telco-spatial-workorder-guard-demo:v0.1.0",
+    "title": "Telco Spatial Work-Order Guard Demo Pack",
+    "creator": "PACT Public Working Draft",
+    "issued": "2026-04-07",
+    "rights": "Apache-2.0",
+    "description": "Dual-boundary telco demo pack for capability and geofenced work-order authorization."
+  }
+}

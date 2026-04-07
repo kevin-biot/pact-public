@@ -1,0 +1,31 @@
+{
+  "@context": {
+    "tswg": "https://pact.example/ontology/telco-spatial-workorder-guard/"
+  },
+  "entries": [
+    {
+      "label": "retune radio",
+      "alt": ["retune cell", "radio retune"],
+      "properties": {
+        "entity_type": "intent_hint",
+        "description": "Authorized RAN tuning action subject to parameter and spatial constraints."
+      }
+    },
+    {
+      "label": "restart radio",
+      "alt": ["restart cell", "radio restart"],
+      "properties": {
+        "entity_type": "intent_hint",
+        "description": "Operational restart action scoped by work-order boundaries."
+      }
+    },
+    {
+      "label": "authorized polygon",
+      "alt": ["geofence", "authorized area"],
+      "properties": {
+        "entity_type": "spatial_constraint",
+        "description": "GeoJSON polygon defining where actions may be executed."
+      }
+    }
+  ]
+}

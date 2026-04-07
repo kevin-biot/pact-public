@@ -1,0 +1,11 @@
+{
+  "schema_version": "0.1",
+  "generated_at_utc": "2026-04-07T09:30:00Z",
+  "profile": "telco-spatial-workorder-guard-demo-pack",
+  "domain": "telco-spatial-workorder-guard",
+  "source_spec": "GeoJSON RFC 7946 + telco governance demo constraints",
+  "source_artifact_count": 3,
+  "mapped_symbol_count": 10,
+  "mapped_field_count": 18,
+  "note": "Dual-boundary demo pack showing capability + spatial + temporal authorization checks with evidence output."
+}

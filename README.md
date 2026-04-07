@@ -202,6 +202,12 @@ Run the telco RAN/Core/Slice demo fixture harness:
 node tools/run-telco-ran-core-slice-fixtures.mjs
 ```
 
+Run the telco spatial work-order guard demo fixture harness:
+
+```bash
+node tools/run-telco-spatial-workorder-fixtures.mjs
+```
+
 Run the FHIR medications module demo fixture harness:
 
 ```bash
@@ -246,7 +252,7 @@ Fixture signing keys are test-only and must not be used in production systems.
 
 ## Reference Vertical Packs
 
-This repository currently publishes 36 reference/demo packs across healthcare, commerce, payments, open banking, telco, travel, policy, and economic measurement governance.
+This repository currently publishes 37 reference/demo packs across healthcare, commerce, payments, open banking, telco, travel, policy, economic measurement governance, and spatial execution guardrails.
 
 This repository includes:
 
@@ -286,12 +292,14 @@ This repository includes:
 34. `verticals/travel-air-order-lifecycle-demo-pack/`
 35. `verticals/travel-itinerary-fusion-demo-pack/`
 36. `verticals/economic-measurement-drift-demo-pack/`
+37. `verticals/telco-spatial-workorder-guard-demo-pack/`
 
 This telco pack is a non-normative example vertical profile demonstrating PACT extension mechanics.
 It does not define TM Forum standards and does not replace IG1453.
 An expanded public-review companion surface is also available at `verticals/telco-reference-pack/extended-retail/`.
 The telco retail demo pack provides a broader six-intent public candidate surface at `verticals/telco-retail-demo-pack/`.
 The telco fault-diagnosis and RAN/core/slice demo packs provide focused candidate surfaces with dedicated fixture harnesses.
+The telco spatial work-order guard demo pack adds a dual-boundary authorization surface (capability and polygon scope) with deterministic deny reasons and evidence-friendly outcomes.
 The FHIR medications module demo pack provides a healthcare candidate surface grounded to HL7 FHIR R5 medications resources.
 The FHIR reconciliation+allergy companion pack extends healthcare coverage for medication list reconciliation and allergy safety records.
 The FHIR encounter transitions pack provides a stepwise surface for transfer, ward step-down, discharge, history, and transition notifications.

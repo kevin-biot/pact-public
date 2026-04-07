@@ -1,0 +1,31 @@
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix tswg: <https://pact.example/ontology/telco-spatial-workorder-guard/> .
+
+tswg:IntentShape
+  a sh:NodeShape ;
+  sh:targetClass tswg:Intent ;
+  sh:property [
+    sh:path tswg:intentClass ;
+    sh:datatype xsd:string ;
+    sh:minCount 1 ;
+    sh:message "intentClass is required"
+  ] ;
+  sh:property [
+    sh:path tswg:workOrderId ;
+    sh:datatype xsd:string ;
+    sh:minCount 1 ;
+    sh:message "workOrderId is required"
+  ] ;
+  sh:property [
+    sh:path tswg:assetId ;
+    sh:datatype xsd:string ;
+    sh:minCount 1 ;
+    sh:message "assetId is required"
+  ] ;
+  sh:property [
+    sh:path tswg:requestTime ;
+    sh:datatype xsd:dateTime ;
+    sh:minCount 1 ;
+    sh:message "requestTime is required"
+  ] .

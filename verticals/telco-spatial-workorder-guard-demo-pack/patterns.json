@@ -1,0 +1,27 @@
+{
+  "schema_version": "1.0",
+  "domain": "telco-spatial-workorder-guard",
+  "patterns": [
+    {
+      "id": "retune_radio",
+      "concept_uri": "telco.workorder.spatial.execute.v1",
+      "entity_type": "intent_hint",
+      "regex": "(?i)\\b(retune\\s+radio|retune\\s+cell|radio\\s+retune)\\b",
+      "examples": ["retune radio in affected area"]
+    },
+    {
+      "id": "restart_radio",
+      "concept_uri": "telco.workorder.spatial.execute.v1",
+      "entity_type": "intent_hint",
+      "regex": "(?i)\\b(restart\\s+radio|restart\\s+cell)\\b",
+      "examples": ["restart radio for fault remediation"]
+    },
+    {
+      "id": "spatial_scope",
+      "concept_uri": "telco.boundary.spatial",
+      "entity_type": "constraint_hint",
+      "regex": "(?i)\\b(inside\\s+polygon|inside\\s+geofence|authorized\\s+area)\\b",
+      "examples": ["inside authorized polygon"]
+    }
+  ]
+}

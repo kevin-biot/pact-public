@@ -1,0 +1,47 @@
+{
+  "schema_version": "1.0",
+  "generated_at_utc": "2026-04-07T09:40:00Z",
+  "pack_path": "verticals/telco-spatial-workorder-guard-demo-pack",
+  "cases": [
+    {
+      "id": "TELCO-SPATIAL-VALID-001",
+      "path": "fixtures/telco-spatial-workorder/cases/valid-inside-retune.json",
+      "expected": {"status": "pass", "code": "ALLOW_IN_SCOPE"}
+    },
+    {
+      "id": "TELCO-SPATIAL-VALID-002",
+      "path": "fixtures/telco-spatial-workorder/cases/valid-boundary-restart.json",
+      "expected": {"status": "pass", "code": "ALLOW_IN_SCOPE"}
+    },
+    {
+      "id": "TELCO-SPATIAL-FAIL-001",
+      "path": "fixtures/telco-spatial-workorder/cases/fail-outside-polygon.json",
+      "expected": {"status": "fail", "code": "DENY_ASSET_OUTSIDE_POLYGON"}
+    },
+    {
+      "id": "TELCO-SPATIAL-FAIL-002",
+      "path": "fixtures/telco-spatial-workorder/cases/fail-action-not-authorized.json",
+      "expected": {"status": "fail", "code": "DENY_ACTION_NOT_AUTHORIZED"}
+    },
+    {
+      "id": "TELCO-SPATIAL-FAIL-003",
+      "path": "fixtures/telco-spatial-workorder/cases/fail-window-inactive.json",
+      "expected": {"status": "fail", "code": "DENY_WINDOW_INACTIVE"}
+    },
+    {
+      "id": "TELCO-SPATIAL-FAIL-004",
+      "path": "fixtures/telco-spatial-workorder/cases/fail-capability-param-out-of-bounds.json",
+      "expected": {"status": "fail", "code": "DENY_CAPABILITY_PARAM_OUT_OF_BOUNDS"}
+    },
+    {
+      "id": "TELCO-SPATIAL-FAIL-005",
+      "path": "fixtures/telco-spatial-workorder/cases/fail-out-of-scope-intent.json",
+      "expected": {"status": "fail", "code": "ESCALATE_OUT_OF_SCOPE_INTENT"}
+    },
+    {
+      "id": "TELCO-SPATIAL-FAIL-006",
+      "path": "fixtures/telco-spatial-workorder/cases/fail-bundle-commit-mismatch.json",
+      "expected": {"status": "fail", "code": "PSC_BUNDLE_COMMIT_MISMATCH"}
+    }
+  ]
+}

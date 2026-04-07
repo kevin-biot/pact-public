@@ -1,0 +1,9 @@
+{
+  "schema_version": "0.1",
+  "generated_at_utc": "2026-04-07T09:30:00Z",
+  "profile": "telco-spatial-workorder-guard-demo-pack",
+  "domain": "telco-spatial-workorder-guard",
+  "message_identifiers": [],
+  "message_types": [],
+  "note": "No ISO-style message identifiers for this policy-guard demo pack."
+}

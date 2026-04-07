@@ -1,0 +1,25 @@
+{
+  "id": "telco-spatial-workorder-guard-demo-0.1.0",
+  "domain": "telco-spatial-workorder-guard",
+  "version": "0.1.0",
+  "providerId": "ontology:pact-public:telco",
+  "trustTier": "Tier1",
+  "policySnapshotId": "sha256:7da0819a238f5fc9016f68dbfcb45f0c0f100f4b663a5e3dbb108d24d19b0845",
+  "files": {
+    "context": "sha256:4363a20158d488e963e2263fd78e068afd2ea2c8512b20269eeaf76721be8e42",
+    "vocab": "sha256:4a12afb08e6d7ea772ef0210d011d1659f3b908d722ca7d4111e889a550c9da3",
+    "shapes": "sha256:1ba46477c6beddef8236079aa1c543abc19305c686f623aab4ea0bde36e67bf2",
+    "thesaurus": "sha256:64ac48b6d90a49531952aa5dea95f48b04d19c40bcdc9fda60db8021836f2e7c",
+    "thesaurus_local": "sha256:2c706484ed7e71eb59a731b6afbd236a146ebe26163b9524be62ff4101d66626",
+    "patterns": "sha256:27ea87d48936b7d8c9fea9d08f17192cfb66f2ac5c68c2a2cfabf0cf2d2372b2",
+    "intent_mappings": "sha256:605ec547485d2c474fae760ab2438039c353ee764c09286a077f9d0353deb237",
+    "convergence": "sha256:dee8c90888c97fe88f96a8c2d53fb9bcc86e1e803b7cdb79366f7c0c3ff7bc09",
+    "decision_space": "sha256:7da0819a238f5fc9016f68dbfcb45f0c0f100f4b663a5e3dbb108d24d19b0845",
+    "source_extract": "sha256:f2168c99c7e21b7b533dcf9b3d302856d3d5d26918209f370aee3ac0fe812537"
+  },
+  "precedence": [],
+  "denyWins": true,
+  "nbf": "2026-04-07T00:00:00Z",
+  "exp": "2031-04-07T00:00:00Z",
+  "revEpoch": 1
+}

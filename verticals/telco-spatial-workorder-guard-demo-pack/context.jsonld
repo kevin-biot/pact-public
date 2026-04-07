@@ -1,0 +1,14 @@
+{
+  "@context": {
+    "tswg": "https://pact.example/ontology/telco-spatial-workorder-guard/",
+    "intentClass": "tswg:intentClass",
+    "workOrderId": "tswg:workOrderId",
+    "authorizedActions": "tswg:authorizedActions",
+    "authorizedArea": "tswg:authorizedArea",
+    "assetId": "tswg:assetId",
+    "assetLocation": "tswg:assetLocation",
+    "requestTime": "tswg:requestTime",
+    "reasonCode": "tswg:reasonCode",
+    "spatialResult": "tswg:spatialResult"
+  }
+}

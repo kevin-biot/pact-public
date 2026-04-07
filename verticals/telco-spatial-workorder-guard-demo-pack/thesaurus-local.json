@@ -1,0 +1,43 @@
+{
+  "schema_version": "1.0",
+  "domain": "telco-spatial-workorder-guard",
+  "last_modified": "2026-04-07",
+  "concepts": [
+    {
+      "concept_id": "telco.workorder.spatial.execute.v1",
+      "preferred_term": "Spatial Work-Order Execute",
+      "synonyms": ["execute work order in polygon", "apply action within geofence"],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "SpatialWorkOrderGuard",
+      "narrower": [],
+      "source_refs": ["rfc7946-geojson", "tmf-ig1453-reference"],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "telco.boundary.capability",
+      "preferred_term": "Capability Boundary",
+      "synonyms": ["action boundary", "parameter boundary"],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "SpatialWorkOrderGuard",
+      "narrower": [],
+      "source_refs": ["tmf-ig1453-reference"],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "telco.boundary.spatial",
+      "preferred_term": "Spatial Boundary",
+      "synonyms": ["geofence boundary", "polygon scope"],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "SpatialWorkOrderGuard",
+      "narrower": [],
+      "source_refs": ["rfc7946-geojson"],
+      "ner_provenance": null
+    }
+  ]
+}

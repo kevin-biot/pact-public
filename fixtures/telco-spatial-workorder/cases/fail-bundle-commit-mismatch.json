@@ -1,0 +1,29 @@
+{
+  "bundleId": "sha256:ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+  "decision": {
+    "type": "TelcoSpatialWorkOrderIntent",
+    "intent_class": "telco.ran.workorder.spatial.execute.v1",
+    "work_order": {
+      "work_order_id": "WO-2026-0008",
+      "issue_type": "ran_fault",
+      "authorized_actions": ["retune_radio", "restart_radio"],
+      "valid_from": "2026-04-07T09:00:00Z",
+      "valid_until": "2026-04-07T17:00:00Z",
+      "authorized_area": {
+        "type": "Polygon",
+        "coordinates": [[[2.3000,48.8000],[2.4000,48.8000],[2.4000,48.9000],[2.3000,48.9000],[2.3000,48.8000]]]
+      }
+    },
+    "asset": {
+      "asset_id": "RADIO-008",
+      "asset_type": "nrcelldu",
+      "location": {"type": "Point", "coordinates": [2.3400, 48.8600]}
+    },
+    "request": {
+      "requested_action": "restart_radio",
+      "target_asset_id": "RADIO-008",
+      "request_time": "2026-04-07T10:55:00Z",
+      "params": {}
+    }
+  }
+}

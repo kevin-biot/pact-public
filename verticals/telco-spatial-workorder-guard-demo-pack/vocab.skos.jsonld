@@ -1,0 +1,16 @@
+{
+  "@context": {
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "tswg": "https://pact.example/ontology/telco-spatial-workorder-guard/"
+  },
+  "concepts": [
+    {"id": "tswg:SpatialWorkOrderGuard", "prefLabel": "Spatial Work-Order Guard"},
+    {"id": "tswg:CapabilityBoundary", "prefLabel": "Capability Boundary", "broader": "tswg:SpatialWorkOrderGuard"},
+    {"id": "tswg:SpatialBoundary", "prefLabel": "Spatial Boundary", "broader": "tswg:SpatialWorkOrderGuard"},
+    {"id": "tswg:TemporalBoundary", "prefLabel": "Temporal Boundary", "broader": "tswg:SpatialWorkOrderGuard"},
+    {"id": "tswg:WorkOrder", "prefLabel": "Work Order", "broader": "tswg:SpatialWorkOrderGuard"},
+    {"id": "tswg:Asset", "prefLabel": "Asset", "broader": "tswg:SpatialWorkOrderGuard"},
+    {"id": "tswg:ActionRequest", "prefLabel": "Action Request", "broader": "tswg:SpatialWorkOrderGuard"},
+    {"id": "tswg:DecisionEvent", "prefLabel": "Decision Event", "broader": "tswg:SpatialWorkOrderGuard"}
+  ]
+}
