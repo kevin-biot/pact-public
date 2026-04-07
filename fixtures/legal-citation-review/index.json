@@ -1,0 +1,42 @@
+{
+  "schema_version": "1.0",
+  "generated_at_utc": "2026-04-07T10:05:00Z",
+  "pack_path": "verticals/legal-citation-review-demo-pack",
+  "cases": [
+    {
+      "id": "LEGAL-REVIEW-VALID-001",
+      "path": "fixtures/legal-citation-review/cases/valid-aligned.json",
+      "expected": {"status": "pass", "code": "ALLOW_REVIEW_PACK_READY"}
+    },
+    {
+      "id": "LEGAL-REVIEW-FAIL-001",
+      "path": "fixtures/legal-citation-review/cases/fail-missing-citation.json",
+      "expected": {"status": "fail", "code": "DENY_MISSING_CITATION"}
+    },
+    {
+      "id": "LEGAL-REVIEW-FAIL-002",
+      "path": "fixtures/legal-citation-review/cases/fail-unsupported-claim.json",
+      "expected": {"status": "fail", "code": "DENY_UNSUPPORTED_CLAIM"}
+    },
+    {
+      "id": "LEGAL-REVIEW-FAIL-003",
+      "path": "fixtures/legal-citation-review/cases/fail-jurisdiction-mismatch.json",
+      "expected": {"status": "fail", "code": "DENY_JURISDICTION_MISMATCH"}
+    },
+    {
+      "id": "LEGAL-REVIEW-FAIL-004",
+      "path": "fixtures/legal-citation-review/cases/fail-effective-date-mismatch.json",
+      "expected": {"status": "fail", "code": "DENY_EFFECTIVE_DATE_MISMATCH"}
+    },
+    {
+      "id": "LEGAL-REVIEW-FAIL-005",
+      "path": "fixtures/legal-citation-review/cases/fail-out-of-scope-intent.json",
+      "expected": {"status": "fail", "code": "ESCALATE_OUT_OF_SCOPE_INTENT"}
+    },
+    {
+      "id": "LEGAL-REVIEW-FAIL-006",
+      "path": "fixtures/legal-citation-review/cases/fail-bundle-commit-mismatch.json",
+      "expected": {"status": "fail", "code": "PSC_BUNDLE_COMMIT_MISMATCH"}
+    }
+  ]
+}

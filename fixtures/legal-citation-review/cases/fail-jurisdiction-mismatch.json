@@ -1,0 +1,26 @@
+{
+  "bundleId": "__AUTO_BUNDLE_ID__",
+  "decision": {
+    "type": "LegalCitationReviewIntent",
+    "intent_class": "legal.citation.review.align.v1",
+    "jurisdiction": "EU",
+    "review_date": "2026-09-01",
+    "source_refs": [
+      {
+        "source_id": "SRC-US-001",
+        "jurisdiction": "US-CA",
+        "effective_from": "2025-01-01",
+        "effective_until": "2030-12-31",
+        "supports_claim_ids": ["CLM-003"]
+      }
+    ],
+    "draft_claims": [
+      {
+        "claim_id": "CLM-003",
+        "claim_text": "Claim jurisdiction conflicts with cited source jurisdiction.",
+        "jurisdiction": "EU",
+        "cited_source_ids": ["SRC-US-001"]
+      }
+    ]
+  }
+}

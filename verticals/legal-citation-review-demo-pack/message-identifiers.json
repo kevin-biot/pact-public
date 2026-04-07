@@ -1,0 +1,9 @@
+{
+  "schema_version": "0.1",
+  "generated_at_utc": "2026-04-07T10:00:00Z",
+  "profile": "legal-citation-review-demo-pack",
+  "domain": "legal-citation-review",
+  "message_identifiers": [],
+  "message_types": [],
+  "note": "No transport-level message identifiers for this legal review demo."
+}

@@ -1,0 +1,23 @@
+{
+  "schema_version": "1.0",
+  "template_id": "legal-citation-review-pack-template-v1",
+  "review_fields": {
+    "draft_metadata": ["document_id", "jurisdiction", "review_date", "author"],
+    "claim_alignment": [
+      "claim_id",
+      "claim_text",
+      "cited_source_ids",
+      "support_status",
+      "jurisdiction_status",
+      "effective_date_status",
+      "reason_codes"
+    ],
+    "summary": [
+      "claims_total",
+      "claims_aligned",
+      "claims_flagged",
+      "flag_buckets"
+    ],
+    "reviewer_signoff": ["reviewer_id", "review_outcome", "notes", "signed_at"]
+  }
+}

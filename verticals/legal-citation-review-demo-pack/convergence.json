@@ -1,0 +1,28 @@
+{
+  "schema_version": "1.0",
+  "domain": "legal-citation-review",
+  "thresholds": {
+    "overall_min_pass_rate": 1.0,
+    "require_critical_pass": true
+  },
+  "cases": [
+    {
+      "id": "aligned",
+      "phrase": "align draft claims to legal source text with citations",
+      "expect": "legal.citation.review.align.v1",
+      "critical": true
+    },
+    {
+      "id": "missing_citation",
+      "phrase": "find claims without citations",
+      "expect": "legal.citation.review.align.v1",
+      "critical": true
+    },
+    {
+      "id": "out_scope",
+      "phrase": "summarize marketing campaign copy",
+      "expect": "marketing_copy_summary",
+      "critical": false
+    }
+  ]
+}

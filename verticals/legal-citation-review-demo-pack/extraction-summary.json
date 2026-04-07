@@ -1,0 +1,11 @@
+{
+  "schema_version": "0.1",
+  "generated_at_utc": "2026-04-07T10:00:00Z",
+  "profile": "legal-citation-review-demo-pack",
+  "domain": "legal-citation-review",
+  "source_spec": "Legal source references + draft claim review alignment",
+  "source_artifact_count": 2,
+  "mapped_symbol_count": 9,
+  "mapped_field_count": 16,
+  "note": "Demo pack for generating structured legal citation review surfaces with deterministic mismatch reason codes."
+}

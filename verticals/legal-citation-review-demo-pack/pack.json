@@ -1,0 +1,34 @@
+{
+  "pack_schema": "1.0",
+  "id": "legal-citation-review-demo-0.1.0",
+  "domain": "legal-citation-review",
+  "version": "0.1.0",
+  "provider_id": "ontology:pact-public:legal",
+  "trust_tier": "Tier1",
+  "nbf": "2026-04-07T00:00:00Z",
+  "exp": "2031-04-07T00:00:00Z",
+  "rev_epoch": 1,
+  "deny_wins": true,
+  "precedence": [],
+  "files": {
+    "context": "context.jsonld",
+    "vocab": "vocab.skos.jsonld",
+    "shapes": "shapes.ttl",
+    "thesaurus": "thesaurus.jsonld",
+    "thesaurus_local": "thesaurus-local.json",
+    "patterns": "patterns.json",
+    "intent_mappings": "intent-mappings.json",
+    "convergence": "convergence.json",
+    "decision_space": "decision-space.json",
+    "source_extract": "source-extract/sources.json",
+    "review_pack_template": "review-pack-template.json"
+  },
+  "dc": {
+    "identifier": "ontology:legal-citation-review-demo:v0.1.0",
+    "title": "Legal Citation Review Demo Pack",
+    "creator": "PACT Public Working Draft",
+    "issued": "2026-04-07",
+    "rights": "Apache-2.0",
+    "description": "Demo pack for deterministic legal citation alignment checks and review-pack generation support."
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "@context": {
+    "lcr": "https://pact.example/ontology/legal-citation-review/"
+  },
+  "entries": [
+    {
+      "label": "citation alignment",
+      "alt": ["citation mapping", "source alignment"],
+      "properties": {
+        "entity_type": "intent_hint",
+        "description": "Link draft claims to specific legal source references for review."
+      }
+    },
+    {
+      "label": "unsupported claim",
+      "alt": ["unfounded assertion", "citation gap"],
+      "properties": {
+        "entity_type": "review_flag",
+        "description": "Claim text without a supporting source reference."
+      }
+    },
+    {
+      "label": "effective date mismatch",
+      "alt": ["date window mismatch", "out-of-force citation"],
+      "properties": {
+        "entity_type": "review_flag",
+        "description": "Source citation is not effective on the draft review date."
+      }
+    }
+  ]
+}

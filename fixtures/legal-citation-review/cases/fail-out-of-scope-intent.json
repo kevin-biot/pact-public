@@ -1,0 +1,11 @@
+{
+  "bundleId": "__AUTO_BUNDLE_ID__",
+  "decision": {
+    "type": "LegalCitationReviewIntent",
+    "intent_class": "general_text_summarization",
+    "jurisdiction": "EU",
+    "review_date": "2026-09-01",
+    "source_refs": [],
+    "draft_claims": []
+  }
+}

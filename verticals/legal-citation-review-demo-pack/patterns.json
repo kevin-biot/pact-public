@@ -1,0 +1,27 @@
+{
+  "schema_version": "1.0",
+  "domain": "legal-citation-review",
+  "patterns": [
+    {
+      "id": "citation_alignment",
+      "concept_uri": "legal.citation.review.align.v1",
+      "entity_type": "intent_hint",
+      "regex": "(?i)\\b(citation\\s+alignment|map\\s+claims\\s+to\\s+law|source\\s+mapping)\\b",
+      "examples": ["run citation alignment review"]
+    },
+    {
+      "id": "jurisdiction_check",
+      "concept_uri": "legal.citation.review.jurisdiction_check.v1",
+      "entity_type": "intent_hint",
+      "regex": "(?i)\\b(jurisdiction\\s+mismatch|jurisdiction\\s+check)\\b",
+      "examples": ["check jurisdiction mismatch"]
+    },
+    {
+      "id": "effective_date_check",
+      "concept_uri": "legal.citation.review.effective_date_check.v1",
+      "entity_type": "intent_hint",
+      "regex": "(?i)\\b(effective\\s+date\\s+mismatch|in-force\\s+date\\s+check)\\b",
+      "examples": ["validate effective date coverage"]
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "id": "legal-citation-review-demo-0.1.0",
+  "domain": "legal-citation-review",
+  "version": "0.1.0",
+  "providerId": "ontology:pact-public:legal",
+  "trustTier": "Tier1",
+  "policySnapshotId": "sha256:824676a70167fd0e03b0ea3022ecf6daac53716d4b66730caffe956b48c83c47",
+  "files": {
+    "context": "sha256:a06a3f4862ae85edb8ac98c76e1b9689eec9cb7fe8af276fbd554957637f9da6",
+    "vocab": "sha256:3dc030341919376bea73b18e3361ecf62fae3c1ec47ac89fd874c77da1b56097",
+    "shapes": "sha256:fe576a391f8fe248f1928106eb7b8cf5594253c687d8d7854f8928dcec6cf9a2",
+    "thesaurus": "sha256:30db5c1bbc5b9ba2af448e407a8bbe8b13fdf349721cf3b74d9b300efd70aca1",
+    "thesaurus_local": "sha256:66b589c2645cb55962c0cf10ab7136611257910cfc7c875578439bfef6cd7594",
+    "patterns": "sha256:f5065e20e421fc9e39b76d109aef929a41fe74fa83c6f851cc075670b535de3c",
+    "intent_mappings": "sha256:cb3efb8d941ee1fcf56d162601a64e33dba929846eaaaf7c1947d84f876776a7",
+    "convergence": "sha256:8740cabacdf33c347ef77642c3c397edf181be8f0c43e3ec248087465843d650",
+    "decision_space": "sha256:824676a70167fd0e03b0ea3022ecf6daac53716d4b66730caffe956b48c83c47",
+    "source_extract": "sha256:b42e61d8b5aaa7cb945366805634f6418a426bf7cc48176abf562bf2fe536dd4",
+    "review_pack_template": "sha256:c940c8f2b7099a68cb7dc0cf697a2da0894195751d7c39e4d49ea877fb8e8f5d"
+  },
+  "precedence": [],
+  "denyWins": true,
+  "nbf": "2026-04-07T00:00:00Z",
+  "exp": "2031-04-07T00:00:00Z",
+  "revEpoch": 1
+}

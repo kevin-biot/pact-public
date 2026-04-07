@@ -1,0 +1,43 @@
+{
+  "schema_version": "1.0",
+  "domain": "legal-citation-review",
+  "last_modified": "2026-04-07",
+  "concepts": [
+    {
+      "concept_id": "legal.citation.review.align.v1",
+      "preferred_term": "Legal Citation Alignment Review",
+      "synonyms": ["citation review", "draft-to-source alignment"],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "LegalCitationReview",
+      "narrower": [],
+      "source_refs": ["eu-ai-act", "california-sanctions-order"],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "legal.citation.review.jurisdiction_check.v1",
+      "preferred_term": "Jurisdiction Citation Check",
+      "synonyms": ["jurisdiction mismatch check", "venue alignment check"],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "LegalCitationReview",
+      "narrower": [],
+      "source_refs": ["eu-ai-act"],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "legal.citation.review.effective_date_check.v1",
+      "preferred_term": "Effective-Date Citation Check",
+      "synonyms": ["legal force date check", "in-force citation check"],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "LegalCitationReview",
+      "narrower": [],
+      "source_refs": ["eu-ai-act"],
+      "ner_provenance": null
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "@context": {
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "lcr": "https://pact.example/ontology/legal-citation-review/"
+  },
+  "concepts": [
+    {"id": "lcr:LegalCitationReview", "prefLabel": "Legal Citation Review"},
+    {"id": "lcr:SourceReference", "prefLabel": "Source Reference", "broader": "lcr:LegalCitationReview"},
+    {"id": "lcr:DraftClaim", "prefLabel": "Draft Claim", "broader": "lcr:LegalCitationReview"},
+    {"id": "lcr:CitationAlignment", "prefLabel": "Citation Alignment", "broader": "lcr:LegalCitationReview"},
+    {"id": "lcr:JurisdictionCheck", "prefLabel": "Jurisdiction Check", "broader": "lcr:LegalCitationReview"},
+    {"id": "lcr:EffectiveDateCheck", "prefLabel": "Effective-Date Check", "broader": "lcr:LegalCitationReview"},
+    {"id": "lcr:ReviewPack", "prefLabel": "Review Pack", "broader": "lcr:LegalCitationReview"}
+  ]
+}

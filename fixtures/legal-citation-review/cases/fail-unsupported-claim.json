@@ -1,0 +1,26 @@
+{
+  "bundleId": "__AUTO_BUNDLE_ID__",
+  "decision": {
+    "type": "LegalCitationReviewIntent",
+    "intent_class": "legal.citation.review.align.v1",
+    "jurisdiction": "EU",
+    "review_date": "2026-09-01",
+    "source_refs": [
+      {
+        "source_id": "SRC-EU-001",
+        "jurisdiction": "EU",
+        "effective_from": "2026-08-01",
+        "effective_until": "2030-12-31",
+        "supports_claim_ids": ["CLM-001"]
+      }
+    ],
+    "draft_claims": [
+      {
+        "claim_id": "CLM-099",
+        "claim_text": "Claim cited but not supported by source index.",
+        "jurisdiction": "EU",
+        "cited_source_ids": ["SRC-EU-001"]
+      }
+    ]
+  }
+}

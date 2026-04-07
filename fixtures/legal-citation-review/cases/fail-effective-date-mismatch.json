@@ -1,0 +1,26 @@
+{
+  "bundleId": "__AUTO_BUNDLE_ID__",
+  "decision": {
+    "type": "LegalCitationReviewIntent",
+    "intent_class": "legal.citation.review.align.v1",
+    "jurisdiction": "EU",
+    "review_date": "2026-09-01",
+    "source_refs": [
+      {
+        "source_id": "SRC-EU-OLD",
+        "jurisdiction": "EU",
+        "effective_from": "2020-01-01",
+        "effective_until": "2025-12-31",
+        "supports_claim_ids": ["CLM-004"]
+      }
+    ],
+    "draft_claims": [
+      {
+        "claim_id": "CLM-004",
+        "claim_text": "Claim cites source outside effective date window.",
+        "jurisdiction": "EU",
+        "cited_source_ids": ["SRC-EU-OLD"]
+      }
+    ]
+  }
+}

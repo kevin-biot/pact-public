@@ -1,0 +1,21 @@
+{
+  "schema_version": "1.0",
+  "domain": "legal-citation-review",
+  "mappings": [
+    {
+      "concept_uri": "lcr:LegalCitationReview",
+      "intent_class": "legal.citation.review.align.v1",
+      "confidence_floor": 0.8
+    },
+    {
+      "concept_uri": "lcr:JurisdictionCheck",
+      "intent_class": "legal.citation.review.align.v1",
+      "confidence_floor": 0.75
+    },
+    {
+      "concept_uri": "lcr:EffectiveDateCheck",
+      "intent_class": "legal.citation.review.align.v1",
+      "confidence_floor": 0.75
+    }
+  ]
+}

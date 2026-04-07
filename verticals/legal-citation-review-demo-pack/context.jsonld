@@ -1,0 +1,12 @@
+{
+  "@context": {
+    "lcr": "https://pact.example/ontology/legal-citation-review/",
+    "intentClass": "lcr:intentClass",
+    "reviewDate": "lcr:reviewDate",
+    "jurisdiction": "lcr:jurisdiction",
+    "sourceRef": "lcr:sourceRef",
+    "draftClaim": "lcr:draftClaim",
+    "reasonCode": "lcr:reasonCode",
+    "reviewVerdict": "lcr:reviewVerdict"
+  }
+}

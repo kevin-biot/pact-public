@@ -1,0 +1,11 @@
+{
+  "bundleId": "sha256:ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+  "decision": {
+    "type": "LegalCitationReviewIntent",
+    "intent_class": "legal.citation.review.align.v1",
+    "jurisdiction": "EU",
+    "review_date": "2026-09-01",
+    "source_refs": [],
+    "draft_claims": []
+  }
+}

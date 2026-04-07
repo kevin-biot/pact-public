@@ -1,0 +1,22 @@
+{
+  "schema_version": "1.0",
+  "generated_at_utc": "2026-04-07T10:00:00Z",
+  "vertical": "legal-citation-review-demo",
+  "bundle_id": "legal-citation-review-source-2026-04-07",
+  "sources": [
+    {
+      "id": "eu-ai-act",
+      "title": "EU AI Act (reference context)",
+      "url": "https://eur-lex.europa.eu/",
+      "type": "regulatory_reference",
+      "status": "referenced"
+    },
+    {
+      "id": "california-sanctions-order",
+      "title": "California sanctions order for AI-hallucinated citations (reference context)",
+      "url": "https://law.justia.com/",
+      "type": "case_law_reference",
+      "status": "referenced"
+    }
+  ]
+}

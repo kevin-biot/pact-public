@@ -1,0 +1,25 @@
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix lcr: <https://pact.example/ontology/legal-citation-review/> .
+
+lcr:IntentShape
+  a sh:NodeShape ;
+  sh:targetClass lcr:Intent ;
+  sh:property [
+    sh:path lcr:intentClass ;
+    sh:datatype xsd:string ;
+    sh:minCount 1 ;
+    sh:message "intentClass is required"
+  ] ;
+  sh:property [
+    sh:path lcr:reviewDate ;
+    sh:datatype xsd:date ;
+    sh:minCount 1 ;
+    sh:message "reviewDate is required"
+  ] ;
+  sh:property [
+    sh:path lcr:jurisdiction ;
+    sh:datatype xsd:string ;
+    sh:minCount 1 ;
+    sh:message "jurisdiction is required"
+  ] .
