@@ -1,0 +1,37 @@
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix tsci: <https://pact.example/ontology/telco-spatial-coverage-intersection/> .
+
+tsci:IntentShape
+  a sh:NodeShape ;
+  sh:targetClass tsci:Intent ;
+  sh:property [
+    sh:path tsci:intentClass ;
+    sh:datatype xsd:string ;
+    sh:minCount 1 ;
+    sh:message "intentClass is required"
+  ] ;
+  sh:property [
+    sh:path tsci:workOrderId ;
+    sh:datatype xsd:string ;
+    sh:minCount 1 ;
+    sh:message "workOrderId is required"
+  ] ;
+  sh:property [
+    sh:path tsci:assetId ;
+    sh:datatype xsd:string ;
+    sh:minCount 1 ;
+    sh:message "assetId is required"
+  ] ;
+  sh:property [
+    sh:path tsci:assetCoverage ;
+    sh:datatype xsd:string ;
+    sh:minCount 1 ;
+    sh:message "assetCoverage is required"
+  ] ;
+  sh:property [
+    sh:path tsci:requestTime ;
+    sh:datatype xsd:dateTime ;
+    sh:minCount 1 ;
+    sh:message "requestTime is required"
+  ] .

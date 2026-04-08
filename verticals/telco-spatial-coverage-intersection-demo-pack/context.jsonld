@@ -1,0 +1,14 @@
+{
+  "@context": {
+    "tsci": "https://pact.example/ontology/telco-spatial-coverage-intersection/",
+    "intentClass": "tsci:intentClass",
+    "workOrderId": "tsci:workOrderId",
+    "authorizedActions": "tsci:authorizedActions",
+    "authorizedArea": "tsci:authorizedArea",
+    "assetId": "tsci:assetId",
+    "assetCoverage": "tsci:assetCoverage",
+    "requestTime": "tsci:requestTime",
+    "reasonCode": "tsci:reasonCode",
+    "spatialResult": "tsci:spatialResult"
+  }
+}

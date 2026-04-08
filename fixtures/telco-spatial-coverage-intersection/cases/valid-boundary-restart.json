@@ -1,0 +1,32 @@
+{
+  "bundleId": "__AUTO_BUNDLE_ID__",
+  "decision": {
+    "type": "TelcoSpatialCoverageIntersectionIntent",
+    "intent_class": "telco.ran.workorder.spatial.coverage_intersection.execute.v1",
+    "work_order": {
+      "work_order_id": "WO-COV-2026-0002",
+      "issue_type": "ran_fault",
+      "authorized_actions": ["restart_radio"],
+      "valid_from": "2026-04-08T09:00:00Z",
+      "valid_until": "2026-04-08T17:00:00Z",
+      "authorized_area": {
+        "type": "Polygon",
+        "coordinates": [[[2.3000,48.8000],[2.4000,48.8000],[2.4000,48.9000],[2.3000,48.9000],[2.3000,48.8000]]]
+      }
+    },
+    "asset": {
+      "asset_id": "RADIO-COV-002",
+      "asset_type": "nrcelldu",
+      "coverage": {
+        "type": "Polygon",
+        "coordinates": [[[2.3300,48.8300],[2.3600,48.8300],[2.3600,48.8600],[2.3300,48.8600],[2.3300,48.8300]]]
+      }
+    },
+    "request": {
+      "requested_action": "restart_radio",
+      "target_asset_id": "RADIO-COV-002",
+      "request_time": "2026-04-08T10:20:00Z",
+      "params": {}
+    }
+  }
+}

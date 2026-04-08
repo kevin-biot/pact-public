@@ -1,0 +1,28 @@
+{
+  "schema_version": "1.0",
+  "domain": "telco-spatial-coverage-intersection",
+  "thresholds": {
+    "overall_min_pass_rate": 1.0,
+    "require_critical_pass": true
+  },
+  "cases": [
+    {
+      "id": "intersecting_scope",
+      "phrase": "retune radios where coverage intersects authorized work order polygon",
+      "expect": "telco.ran.workorder.spatial.coverage_intersection.execute.v1",
+      "critical": true
+    },
+    {
+      "id": "outside_scope",
+      "phrase": "retune radio where coverage is outside polygon",
+      "expect": "telco.ran.workorder.spatial.coverage_intersection.execute.v1",
+      "critical": true
+    },
+    {
+      "id": "out_scope_intent",
+      "phrase": "adjust customer billing",
+      "expect": "customer_billing_adjustment",
+      "critical": false
+    }
+  ]
+}

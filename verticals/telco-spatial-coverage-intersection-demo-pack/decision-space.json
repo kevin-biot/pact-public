@@ -1,0 +1,53 @@
+{
+  "schema_version": "1.0",
+  "domain": "telco-spatial-coverage-intersection",
+  "pack_id": "telco-spatial-coverage-intersection-demo-0.1.0",
+  "version": "0.1.0",
+  "out_of_scope_behavior": "escalate",
+  "state_model": {
+    "states": ["ingress", "validated", "classified", "authorized", "responded", "rejected", "escalated"],
+    "initial_state": "ingress",
+    "terminal_states": ["responded", "rejected", "escalated"]
+  },
+  "intent_resource_map": {
+    "telco.ran.workorder.spatial.coverage_intersection.execute.v1": ["SpatialCoverageIntersectionDecision"]
+  },
+  "required_fields_by_intent": {
+    "telco.ran.workorder.spatial.coverage_intersection.execute.v1": [
+      "work_order_id",
+      "requested_action",
+      "target_asset_id",
+      "request_time",
+      "asset_coverage_polygon",
+      "authorized_polygon"
+    ]
+  },
+  "capability_boundary": {
+    "allowed_actions": ["retune_radio", "restart_radio"],
+    "parameter_constraints": {
+      "retune_radio": {
+        "tx_power_delta_db": {
+          "type": "number",
+          "min": -2.0,
+          "max": 2.0
+        }
+      }
+    }
+  },
+  "spatial_boundary": {
+    "geometry_standard": "GeoJSON RFC 7946",
+    "relation_policy": "coverage_intersects_or_contains",
+    "outside_result": "deny"
+  },
+  "temporal_boundary": {
+    "window_policy": "inclusive",
+    "timezone": "UTC"
+  },
+  "deny_reason_codes": [
+    "DENY_WORK_ORDER_NOT_FOUND",
+    "DENY_ACTION_NOT_AUTHORIZED",
+    "DENY_CAPABILITY_PARAM_OUT_OF_BOUNDS",
+    "DENY_WINDOW_INACTIVE",
+    "DENY_COVERAGE_NO_INTERSECTION"
+  ]
+}

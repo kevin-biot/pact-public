@@ -1,0 +1,21 @@
+{
+  "schema_version": "1.0",
+  "domain": "telco-spatial-coverage-intersection",
+  "mappings": [
+    {
+      "concept_uri": "tsci:SpatialCoverageIntersectionGuard",
+      "intent_class": "telco.ran.workorder.spatial.coverage_intersection.execute.v1",
+      "confidence_floor": 0.78
+    },
+    {
+      "concept_uri": "tsci:CapabilityBoundary",
+      "intent_class": "telco.ran.workorder.spatial.coverage_intersection.execute.v1",
+      "confidence_floor": 0.74
+    },
+    {
+      "concept_uri": "tsci:SpatialBoundary",
+      "intent_class": "telco.ran.workorder.spatial.coverage_intersection.execute.v1",
+      "confidence_floor": 0.74
+    }
+  ]
+}

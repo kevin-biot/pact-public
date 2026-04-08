@@ -1,0 +1,27 @@
+{
+  "schema_version": "1.0",
+  "domain": "telco-spatial-coverage-intersection",
+  "patterns": [
+    {
+      "id": "retune_radio",
+      "concept_uri": "telco.workorder.spatial.coverage_intersection.execute.v1",
+      "entity_type": "intent_hint",
+      "regex": "(?i)\\b(retune\\s+radio|retune\\s+cell|radio\\s+retune)\\b",
+      "examples": ["retune radios where coverage overlaps the authorized area"]
+    },
+    {
+      "id": "restart_radio",
+      "concept_uri": "telco.workorder.spatial.coverage_intersection.execute.v1",
+      "entity_type": "intent_hint",
+      "regex": "(?i)\\b(restart\\s+radio|restart\\s+cell)\\b",
+      "examples": ["restart radios in intersecting coverage"]
+    },
+    {
+      "id": "coverage_intersection",
+      "concept_uri": "telco.boundary.spatial.coverage_intersection",
+      "entity_type": "constraint_hint",
+      "regex": "(?i)\\b(intersect\\w*\\s+polygon|coverage\\s+overlap|overlapping\\s+area)\\b",
+      "examples": ["coverage intersects authorized polygon"]
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "schema_version": "0.1",
+  "generated_at_utc": "2026-04-08T11:20:00Z",
+  "profile": "telco-spatial-coverage-intersection-demo-pack",
+  "domain": "telco-spatial-coverage-intersection",
+  "source_spec": "GeoJSON RFC 7946 + telco governance demo constraints",
+  "source_artifact_count": 3,
+  "mapped_symbol_count": 11,
+  "mapped_field_count": 20,
+  "note": "Dual-boundary demo pack showing capability + coverage-intersection + temporal authorization checks with evidence output."
+}

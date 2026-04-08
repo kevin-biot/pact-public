@@ -1,0 +1,16 @@
+{
+  "@context": {
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "tsci": "https://pact.example/ontology/telco-spatial-coverage-intersection/"
+  },
+  "concepts": [
+    {"id": "tsci:SpatialCoverageIntersectionGuard", "prefLabel": "Spatial Coverage Intersection Guard"},
+    {"id": "tsci:CapabilityBoundary", "prefLabel": "Capability Boundary", "broader": "tsci:SpatialCoverageIntersectionGuard"},
+    {"id": "tsci:SpatialBoundary", "prefLabel": "Spatial Boundary", "broader": "tsci:SpatialCoverageIntersectionGuard"},
+    {"id": "tsci:TemporalBoundary", "prefLabel": "Temporal Boundary", "broader": "tsci:SpatialCoverageIntersectionGuard"},
+    {"id": "tsci:WorkOrder", "prefLabel": "Work Order", "broader": "tsci:SpatialCoverageIntersectionGuard"},
+    {"id": "tsci:AssetCoverage", "prefLabel": "Asset Coverage", "broader": "tsci:SpatialCoverageIntersectionGuard"},
+    {"id": "tsci:ActionRequest", "prefLabel": "Action Request", "broader": "tsci:SpatialCoverageIntersectionGuard"},
+    {"id": "tsci:DecisionEvent", "prefLabel": "Decision Event", "broader": "tsci:SpatialCoverageIntersectionGuard"}
+  ]
+}

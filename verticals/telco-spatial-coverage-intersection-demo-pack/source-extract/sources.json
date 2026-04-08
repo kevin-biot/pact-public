@@ -1,0 +1,29 @@
+{
+  "schema_version": "1.0",
+  "generated_at_utc": "2026-04-08T11:20:00Z",
+  "vertical": "telco-spatial-coverage-intersection-demo",
+  "bundle_id": "telco-spatial-coverage-intersection-source-2026-04-08",
+  "sources": [
+    {
+      "id": "rfc7946-geojson",
+      "title": "The GeoJSON Format (RFC 7946)",
+      "url": "https://datatracker.ietf.org/doc/html/rfc7946",
+      "type": "geometry_standard",
+      "status": "referenced"
+    },
+    {
+      "id": "tmf-ig1453-reference",
+      "title": "TM Forum IG1453 Ontology Management (reference context)",
+      "url": "https://www.tmforum.org/resources/standard/ig1453-ontology-management/",
+      "type": "domain_reference",
+      "status": "referenced"
+    },
+    {
+      "id": "telco-spatial-coverage-intersection-scenario",
+      "title": "Synthetic work-order coverage intersection scenario",
+      "url": "urn:pact-public:telco-spatial-coverage-intersection:scenario:v1",
+      "type": "synthetic_scenario",
+      "status": "authored"
+    }
+  ]
+}

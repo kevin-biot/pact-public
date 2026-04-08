@@ -1,0 +1,9 @@
+{
+  "schema_version": "0.1",
+  "generated_at_utc": "2026-04-08T11:20:00Z",
+  "profile": "telco-spatial-coverage-intersection-demo-pack",
+  "domain": "telco-spatial-coverage-intersection",
+  "message_identifiers": [],
+  "message_types": [],
+  "note": "No ISO-style message identifiers for this policy-guard demo pack."
+}

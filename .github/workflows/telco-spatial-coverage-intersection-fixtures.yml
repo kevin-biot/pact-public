@@ -1,0 +1,34 @@
+name: Telco Spatial Coverage Intersection Fixtures
+
+on:
+  pull_request:
+    paths:
+      - "tools/run-telco-spatial-coverage-intersection-fixtures.mjs"
+      - "fixtures/telco-spatial-coverage-intersection/**"
+      - "verticals/telco-spatial-coverage-intersection-demo-pack/**"
+      - "README.md"
+  push:
+    branches: ["main"]
+    paths:
+      - "tools/run-telco-spatial-coverage-intersection-fixtures.mjs"
+      - "fixtures/telco-spatial-coverage-intersection/**"
+      - "verticals/telco-spatial-coverage-intersection-demo-pack/**"
+      - "README.md"
+
+jobs:
+  run-fixtures:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Validate runner syntax
+        run: node --check tools/run-telco-spatial-coverage-intersection-fixtures.mjs
+
+      - name: Run telco spatial coverage intersection fixtures
+        run: node tools/run-telco-spatial-coverage-intersection-fixtures.mjs

@@ -1,0 +1,25 @@
+{
+  "id": "telco-spatial-coverage-intersection-demo-0.1.0",
+  "domain": "telco-spatial-coverage-intersection",
+  "version": "0.1.0",
+  "providerId": "ontology:pact-public:telco",
+  "trustTier": "Tier1",
+  "policySnapshotId": "sha256:971f79e769f4f8f413d7fdd605b20e9c7e514d57841f6168c934bea1f0ada21d",
+  "files": {
+    "context": "sha256:d1072afb794724ecd2f3707d672521e87be5d2c173ef02f47260545f1290d958",
+    "vocab": "sha256:c8119bc9fb2d5b4f91368e6f42ff25a638f6bd90aebf34f203e85cf5394492c0",
+    "shapes": "sha256:056c31e6bd194744e269d23d9cc87a0e6eea64c9f8596d3631c1b5513f618825",
+    "thesaurus": "sha256:a108a067ef240c2d4f873036f7e1acc1a0a4ded48cb2ee185d768936b05460f8",
+    "thesaurus_local": "sha256:5a6c9bc01ea751573774beed50d39eee3cb2adc07f3302124fe9787ccc59a308",
+    "patterns": "sha256:3493dad0048dda579914c7b2b5f9ef459453f3d6a419294f42474553e9732f6a",
+    "intent_mappings": "sha256:1aeb209b0f7030c591322f8d9a70978232ec6191f3bc0c506bb4b42cb28c99ff",
+    "convergence": "sha256:a8688e60f97f76b73d4d616831090aaba52f026d0407fd6c2fd6de833adf86a3",
+    "decision_space": "sha256:971f79e769f4f8f413d7fdd605b20e9c7e514d57841f6168c934bea1f0ada21d",
+    "source_extract": "sha256:5cc65f2e122731652c9e3f08383ba239920c2159a1fefc76683b7fdf3a8500e7"
+  },
+  "precedence": [],
+  "denyWins": true,
+  "nbf": "2026-04-08T00:00:00Z",
+  "exp": "2031-04-08T00:00:00Z",
+  "revEpoch": 1
+}
