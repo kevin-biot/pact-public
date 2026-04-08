@@ -1,0 +1,11 @@
+{
+  "schema_version": "0.1",
+  "generated_at_utc": "2026-04-08T09:30:00Z",
+  "profile": "benefit-allocation-risk-evolution-demo-pack",
+  "domain": "benefit-allocation-risk-evolution",
+  "source_spec": "Synthetic governance evolution scenario",
+  "source_artifact_count": 2,
+  "mapped_symbol_count": 10,
+  "mapped_field_count": 20,
+  "note": "Demo pack for version-bound risk concept evolution with governance gate and audit evidence constraints."
+}

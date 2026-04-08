@@ -1,0 +1,28 @@
+{
+  "schema_version": "1.0",
+  "domain": "benefit-allocation-risk-evolution",
+  "thresholds": {
+    "overall_min_pass_rate": 1.0,
+    "require_critical_pass": true
+  },
+  "cases": [
+    {
+      "id": "v10_bind",
+      "phrase": "evaluate high risk applicant under v1 baseline",
+      "expect": "policy.benefit.high_risk_applicant.evaluate.v1",
+      "critical": true
+    },
+    {
+      "id": "v11_bind",
+      "phrase": "evaluate high risk applicant under evolved v1.1",
+      "expect": "policy.benefit.high_risk_applicant.evaluate.v1",
+      "critical": true
+    },
+    {
+      "id": "out_scope",
+      "phrase": "update retail inventory counts",
+      "expect": "inventory_adjustment",
+      "critical": false
+    }
+  ]
+}

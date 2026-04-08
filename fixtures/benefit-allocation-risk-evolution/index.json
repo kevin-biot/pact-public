@@ -1,0 +1,47 @@
+{
+  "schema_version": "1.0",
+  "generated_at_utc": "2026-04-08T09:40:00Z",
+  "pack_path": "verticals/benefit-allocation-risk-evolution-demo-pack",
+  "cases": [
+    {
+      "id": "BARE-VALID-001",
+      "path": "fixtures/benefit-allocation-risk-evolution/cases/valid-v10-allocate.json",
+      "expected": {"status": "pass", "code": "ALLOW_DECISION_BOUND_TO_ACTIVE_VERSION"}
+    },
+    {
+      "id": "BARE-VALID-002",
+      "path": "fixtures/benefit-allocation-risk-evolution/cases/valid-v11-deny.json",
+      "expected": {"status": "pass", "code": "ALLOW_DECISION_BOUND_TO_ACTIVE_VERSION"}
+    },
+    {
+      "id": "BARE-FAIL-001",
+      "path": "fixtures/benefit-allocation-risk-evolution/cases/fail-version-not-active.json",
+      "expected": {"status": "fail", "code": "DENY_VERSION_NOT_ACTIVE"}
+    },
+    {
+      "id": "BARE-FAIL-002",
+      "path": "fixtures/benefit-allocation-risk-evolution/cases/fail-action-not-allowed.json",
+      "expected": {"status": "fail", "code": "DENY_ACTION_NOT_ALLOWED_FOR_VERSION"}
+    },
+    {
+      "id": "BARE-FAIL-003",
+      "path": "fixtures/benefit-allocation-risk-evolution/cases/fail-governance-gate.json",
+      "expected": {"status": "fail", "code": "DENY_GOVERNANCE_GATE_NOT_SATISFIED"}
+    },
+    {
+      "id": "BARE-FAIL-004",
+      "path": "fixtures/benefit-allocation-risk-evolution/cases/fail-threshold-justification.json",
+      "expected": {"status": "fail", "code": "DENY_DECISION_NOT_JUSTIFIED_BY_ACTIVE_THRESHOLD"}
+    },
+    {
+      "id": "BARE-FAIL-005",
+      "path": "fixtures/benefit-allocation-risk-evolution/cases/fail-out-of-scope-intent.json",
+      "expected": {"status": "fail", "code": "ESCALATE_OUT_OF_SCOPE_INTENT"}
+    },
+    {
+      "id": "BARE-FAIL-006",
+      "path": "fixtures/benefit-allocation-risk-evolution/cases/fail-bundle-commit-mismatch.json",
+      "expected": {"status": "fail", "code": "PSC_BUNDLE_COMMIT_MISMATCH"}
+    }
+  ]
+}

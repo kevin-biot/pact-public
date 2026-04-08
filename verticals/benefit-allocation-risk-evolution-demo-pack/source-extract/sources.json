@@ -1,0 +1,22 @@
+{
+  "schema_version": "1.0",
+  "generated_at_utc": "2026-04-08T09:30:00Z",
+  "vertical": "benefit-allocation-risk-evolution-demo",
+  "bundle_id": "benefit-allocation-risk-evolution-source-2026-04-08",
+  "sources": [
+    {
+      "id": "synthetic-risk-evolution-scenario",
+      "title": "Synthetic high-risk applicant evolution scenario",
+      "url": "urn:pact-public:benefit-allocation-risk-evolution:scenario:v1",
+      "type": "synthetic_scenario",
+      "status": "authored"
+    },
+    {
+      "id": "governance-gate-pattern",
+      "title": "Governance gate and version binding control pattern",
+      "url": "urn:pact-public:governance-gate:pattern:v1",
+      "type": "governance_pattern",
+      "status": "authored"
+    }
+  ]
+}

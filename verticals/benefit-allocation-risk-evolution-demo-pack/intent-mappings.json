@@ -1,0 +1,21 @@
+{
+  "schema_version": "1.0",
+  "domain": "benefit-allocation-risk-evolution",
+  "mappings": [
+    {
+      "concept_uri": "bare:BenefitAllocation",
+      "intent_class": "policy.benefit.high_risk_applicant.evaluate.v1",
+      "confidence_floor": 0.8
+    },
+    {
+      "concept_uri": "bare:HighRiskApplicantV10",
+      "intent_class": "policy.benefit.high_risk_applicant.evaluate.v1",
+      "confidence_floor": 0.75
+    },
+    {
+      "concept_uri": "bare:HighRiskApplicantV11",
+      "intent_class": "policy.benefit.high_risk_applicant.evaluate.v1",
+      "confidence_floor": 0.75
+    }
+  ]
+}

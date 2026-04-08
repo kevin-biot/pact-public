@@ -1,0 +1,15 @@
+{
+  "@context": {
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "bare": "https://pact.example/ontology/benefit-allocation-risk-evolution/"
+  },
+  "concepts": [
+    {"id": "bare:BenefitAllocation", "prefLabel": "Benefit Allocation"},
+    {"id": "bare:HighRiskApplicantV10", "prefLabel": "High Risk Applicant v1.0", "broader": "bare:BenefitAllocation"},
+    {"id": "bare:HighRiskApplicantV11", "prefLabel": "High Risk Applicant v1.1", "broader": "bare:BenefitAllocation"},
+    {"id": "bare:OntologicalDrift", "prefLabel": "Ontological Drift", "broader": "bare:BenefitAllocation"},
+    {"id": "bare:GovernanceGate", "prefLabel": "Governance Gate", "broader": "bare:BenefitAllocation"},
+    {"id": "bare:ControlValidation", "prefLabel": "Control Validation", "broader": "bare:BenefitAllocation"},
+    {"id": "bare:DecisionEvent", "prefLabel": "Decision Event", "broader": "bare:BenefitAllocation"}
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "id": "benefit-allocation-risk-evolution-demo-0.1.0",
+  "domain": "benefit-allocation-risk-evolution",
+  "version": "0.1.0",
+  "providerId": "ontology:pact-public:governance",
+  "trustTier": "Tier1",
+  "policySnapshotId": "sha256:09918d6874a633b47e9ed3e669968ffd2b6129653baf3e5712d8cb0b03d1a408",
+  "files": {
+    "context": "sha256:615c5bdaa9b391f774b1353e81836bfd861431053a0f05f6a6fb5c4762f1b0c5",
+    "vocab": "sha256:5d36035e3fc235529bc864292ca6c9133b1a0826e561c3a42cf576e8b79f5639",
+    "shapes": "sha256:37127fe3f376d46c2d9cd0ed662625461d1d925c870c4473ae75e0c5843bc410",
+    "thesaurus": "sha256:b0d3a990d0d6582014f3eccea7a470b5b118ed7138d7a8df1bfbf449e9292f85",
+    "thesaurus_local": "sha256:41b7aa88e3cd95406979592285934b8f86af898be1bf5c5d158f5c519d9ba8ae",
+    "patterns": "sha256:42190c0a858138b58bed97aadd7d07338bcf821966d4678283624346774150a9",
+    "intent_mappings": "sha256:3d9427d2b374e416ce996e4e5edab5eeb69d2ae6b5eeacc0e736bf721d92ef00",
+    "convergence": "sha256:985ed7d0aa6b01059a7f4d3660245fb109b06a5a65ef7afd2679f11f43965033",
+    "decision_space": "sha256:09918d6874a633b47e9ed3e669968ffd2b6129653baf3e5712d8cb0b03d1a408",
+    "source_extract": "sha256:61784183941f780242aee017cbbc3a89e50f9fa07967c0cd20e91b5c56e50609",
+    "concept_versions": "sha256:4cf2482e85d17a5fbcb9ef5086e5786653b56e76a813f39feb66a50178397c46",
+    "evidence_template": "sha256:80455a6566d2cf7b11d250997f761323ab0cd69e518a875c7db12fa462af622c"
+  },
+  "precedence": [],
+  "denyWins": true,
+  "nbf": "2026-04-08T00:00:00Z",
+  "exp": "2031-04-08T00:00:00Z",
+  "revEpoch": 1
+}

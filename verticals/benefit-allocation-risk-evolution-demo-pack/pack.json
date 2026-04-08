@@ -1,0 +1,35 @@
+{
+  "pack_schema": "1.0",
+  "id": "benefit-allocation-risk-evolution-demo-0.1.0",
+  "domain": "benefit-allocation-risk-evolution",
+  "version": "0.1.0",
+  "provider_id": "ontology:pact-public:governance",
+  "trust_tier": "Tier1",
+  "nbf": "2026-04-08T00:00:00Z",
+  "exp": "2031-04-08T00:00:00Z",
+  "rev_epoch": 1,
+  "deny_wins": true,
+  "precedence": [],
+  "files": {
+    "context": "context.jsonld",
+    "vocab": "vocab.skos.jsonld",
+    "shapes": "shapes.ttl",
+    "thesaurus": "thesaurus.jsonld",
+    "thesaurus_local": "thesaurus-local.json",
+    "patterns": "patterns.json",
+    "intent_mappings": "intent-mappings.json",
+    "convergence": "convergence.json",
+    "decision_space": "decision-space.json",
+    "source_extract": "source-extract/sources.json",
+    "concept_versions": "concept-versions.json",
+    "evidence_template": "evidence-template.json"
+  },
+  "dc": {
+    "identifier": "ontology:benefit-allocation-risk-evolution-demo:v0.1.0",
+    "title": "Benefit Allocation Risk Evolution Demo Pack",
+    "creator": "PACT Public Working Draft",
+    "issued": "2026-04-08",
+    "rights": "Apache-2.0",
+    "description": "Demo pack for governance-bound concept evolution and active-version decision binding in benefit allocation."
+  }
+}

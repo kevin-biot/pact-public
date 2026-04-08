@@ -1,0 +1,27 @@
+{
+  "schema_version": "1.0",
+  "domain": "benefit-allocation-risk-evolution",
+  "patterns": [
+    {
+      "id": "high_risk_applicant",
+      "concept_uri": "policy.benefit.high_risk_applicant.evaluate.v1",
+      "entity_type": "intent_hint",
+      "regex": "(?i)\\b(high\\s+risk\\s+applicant|risk\\s+applicant\\s+assessment)\\b",
+      "examples": ["evaluate high risk applicant"]
+    },
+    {
+      "id": "governance_gate",
+      "concept_uri": "bare:GovernanceGate",
+      "entity_type": "control_hint",
+      "regex": "(?i)\\b(governance\\s+gate|adjudication\\s+event|policy\\s+gate)\\b",
+      "examples": ["governance gate check"]
+    },
+    {
+      "id": "ontological_drift",
+      "concept_uri": "bare:OntologicalDrift",
+      "entity_type": "drift_signal",
+      "regex": "(?i)\\b(ontological\\s+drift|concept\\s+evolution|version\\s+drift)\\b",
+      "examples": ["ontological drift detected"]
+    }
+  ]
+}

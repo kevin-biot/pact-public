@@ -1,0 +1,14 @@
+{
+  "@context": {
+    "bare": "https://pact.example/ontology/benefit-allocation-risk-evolution/",
+    "intentClass": "bare:intentClass",
+    "conceptVersion": "bare:conceptVersion",
+    "governanceGate": "bare:governanceGate",
+    "controlValidation": "bare:controlValidation",
+    "requestTime": "bare:requestTime",
+    "riskScore": "bare:riskScore",
+    "threshold": "bare:threshold",
+    "requestedAction": "bare:requestedAction",
+    "reasonCode": "bare:reasonCode"
+  }
+}

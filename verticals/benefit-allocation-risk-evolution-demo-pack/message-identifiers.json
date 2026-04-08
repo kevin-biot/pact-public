@@ -1,0 +1,9 @@
+{
+  "schema_version": "0.1",
+  "generated_at_utc": "2026-04-08T09:30:00Z",
+  "profile": "benefit-allocation-risk-evolution-demo-pack",
+  "domain": "benefit-allocation-risk-evolution",
+  "message_identifiers": [],
+  "message_types": [],
+  "note": "No transport-level message identifiers for this policy evolution demo."
+}

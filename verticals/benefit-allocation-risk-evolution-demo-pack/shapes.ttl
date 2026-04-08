@@ -1,0 +1,31 @@
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix bare: <https://pact.example/ontology/benefit-allocation-risk-evolution/> .
+
+bare:IntentShape
+  a sh:NodeShape ;
+  sh:targetClass bare:Intent ;
+  sh:property [
+    sh:path bare:intentClass ;
+    sh:datatype xsd:string ;
+    sh:minCount 1 ;
+    sh:message "intentClass is required"
+  ] ;
+  sh:property [
+    sh:path bare:conceptVersion ;
+    sh:datatype xsd:string ;
+    sh:minCount 1 ;
+    sh:message "conceptVersion is required"
+  ] ;
+  sh:property [
+    sh:path bare:requestTime ;
+    sh:datatype xsd:dateTime ;
+    sh:minCount 1 ;
+    sh:message "requestTime is required"
+  ] ;
+  sh:property [
+    sh:path bare:riskScore ;
+    sh:datatype xsd:decimal ;
+    sh:minCount 1 ;
+    sh:message "riskScore is required"
+  ] .

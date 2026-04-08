@@ -1,0 +1,33 @@
+{
+  "schema_version": "1.0",
+  "domain": "benefit-allocation-risk-evolution",
+  "pack_id": "benefit-allocation-risk-evolution-demo-0.1.0",
+  "version": "0.1.0",
+  "out_of_scope_behavior": "escalate",
+  "state_model": {
+    "states": ["ingress", "validated", "classified", "adjudicated", "responded", "rejected", "escalated"],
+    "initial_state": "ingress",
+    "terminal_states": ["responded", "rejected", "escalated"]
+  },
+  "intent_resource_map": {
+    "policy.benefit.high_risk_applicant.evaluate.v1": ["BenefitAllocationDecision"]
+  },
+  "required_fields_by_intent": {
+    "policy.benefit.high_risk_applicant.evaluate.v1": [
+      "concept_version",
+      "request_time",
+      "risk_score",
+      "requested_action",
+      "governance_gate_passed",
+      "control_validation_proof",
+      "evidence"
+    ]
+  },
+  "deny_reason_codes": [
+    "DENY_GOVERNANCE_GATE_NOT_SATISFIED",
+    "DENY_CONTROL_VALIDATION_MISSING",
+    "DENY_VERSION_NOT_ACTIVE",
+    "DENY_ACTION_NOT_ALLOWED_FOR_VERSION",
+    "DENY_DECISION_NOT_JUSTIFIED_BY_ACTIVE_THRESHOLD"
+  ]
+}

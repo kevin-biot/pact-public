@@ -1,0 +1,31 @@
+{
+  "@context": {
+    "bare": "https://pact.example/ontology/benefit-allocation-risk-evolution/"
+  },
+  "entries": [
+    {
+      "label": "high risk applicant",
+      "alt": ["risk applicant", "risk class applicant"],
+      "properties": {
+        "entity_type": "intent_hint",
+        "description": "Applicant risk classification concept bound to versioned thresholds."
+      }
+    },
+    {
+      "label": "ontological drift",
+      "alt": ["concept drift", "semantic drift"],
+      "properties": {
+        "entity_type": "drift_signal",
+        "description": "Signal that concept semantics changed and a new version is required."
+      }
+    },
+    {
+      "label": "governance gate",
+      "alt": ["policy gate", "adjudication gate"],
+      "properties": {
+        "entity_type": "control_signal",
+        "description": "Mandatory gate before decision execution."
+      }
+    }
+  ]
+}

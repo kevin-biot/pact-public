@@ -1,0 +1,17 @@
+{
+  "schema_version": "1.0",
+  "template_id": "benefit-allocation-decision-evidence-v1",
+  "fields": [
+    "decision",
+    "reason_code",
+    "matched_rule_id",
+    "active_concept_version",
+    "request_time",
+    "risk_score",
+    "applied_threshold",
+    "governance_gate_passed",
+    "control_validation_proof",
+    "prev_hash",
+    "event_hash"
+  ]
+}

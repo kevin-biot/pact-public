@@ -1,0 +1,43 @@
+{
+  "schema_version": "1.0",
+  "domain": "benefit-allocation-risk-evolution",
+  "last_modified": "2026-04-08",
+  "concepts": [
+    {
+      "concept_id": "policy.benefit.high_risk_applicant.evaluate.v1",
+      "preferred_term": "High Risk Applicant Evaluation",
+      "synonyms": ["high risk applicant decision", "benefit risk adjudication"],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "BenefitAllocation",
+      "narrower": [],
+      "source_refs": ["synthetic-risk-evolution-scenario"],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "policy.benefit.high_risk_applicant.v1_0",
+      "preferred_term": "High Risk Applicant v1.0",
+      "synonyms": ["v1 baseline risk class"],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "BenefitAllocation",
+      "narrower": [],
+      "source_refs": ["synthetic-risk-evolution-scenario"],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "policy.benefit.high_risk_applicant.v1_1",
+      "preferred_term": "High Risk Applicant v1.1",
+      "synonyms": ["v1 evolution risk class"],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "BenefitAllocation",
+      "narrower": [],
+      "source_refs": ["synthetic-risk-evolution-scenario"],
+      "ner_provenance": null
+    }
+  ]
+}

@@ -238,6 +238,12 @@ Run the legal citation review demo fixture harness:
 node tools/run-legal-citation-review-fixtures.mjs
 ```
 
+Run the benefit-allocation risk evolution demo fixture harness:
+
+```bash
+node tools/run-benefit-allocation-risk-evolution-fixtures.mjs
+```
+
 Run the reference policy CIC+PSC fixture harness:
 
 ```bash
@@ -258,7 +264,7 @@ Fixture signing keys are test-only and must not be used in production systems.
 
 ## Reference Vertical Packs
 
-This repository currently publishes 38 reference/demo packs across healthcare, commerce, payments, open banking, telco, travel, policy, economic measurement governance, spatial execution guardrails, and legal review acceleration.
+This repository currently publishes 39 reference/demo packs across healthcare, commerce, payments, open banking, telco, travel, policy, economic measurement governance, spatial execution guardrails, legal review acceleration, and governance/version-drift control surfaces.
 
 This repository includes:
 
@@ -300,6 +306,7 @@ This repository includes:
 36. `verticals/economic-measurement-drift-demo-pack/`
 37. `verticals/telco-spatial-workorder-guard-demo-pack/`
 38. `verticals/legal-citation-review-demo-pack/`
+39. `verticals/benefit-allocation-risk-evolution-demo-pack/`
 
 This telco pack is a non-normative example vertical profile demonstrating PACT extension mechanics.
 It does not define TM Forum standards and does not replace IG1453.
@@ -308,6 +315,7 @@ The telco retail demo pack provides a broader six-intent public candidate surfac
 The telco fault-diagnosis and RAN/core/slice demo packs provide focused candidate surfaces with dedicated fixture harnesses.
 The telco spatial work-order guard demo pack adds a dual-boundary authorization surface (capability and polygon scope) with deterministic deny reasons and evidence-friendly outcomes.
 The legal citation review demo pack provides a bounded surface for claim-to-source alignment checks (citation presence, support, jurisdiction, and effective-date coverage) to accelerate human legal review.
+The benefit-allocation risk evolution demo pack provides a governance-bound concept versioning surface where decisions must bind to the active ontology version at request time, or fail closed with deterministic deny reasons.
 The FHIR medications module demo pack provides a healthcare candidate surface grounded to HL7 FHIR R5 medications resources.
 The FHIR reconciliation+allergy companion pack extends healthcare coverage for medication list reconciliation and allergy safety records.
 The FHIR encounter transitions pack provides a stepwise surface for transfer, ward step-down, discharge, history, and transition notifications.
