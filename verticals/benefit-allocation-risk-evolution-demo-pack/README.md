@@ -45,6 +45,26 @@ If any check fails, the decision is denied with a deterministic reason code.
 3. `evidence-template.json`: minimum hash-link fields for decision traceability.
 4. `bundle.json` and `obt.jws`: signed-style manifest and token artifacts for pack binding.
 
+## Decision Flow
+
+```mermaid
+flowchart TD
+  A["Decision Request"] --> B["Verify bundle.json binding"]
+  B --> C["Check governance gate + control validation"]
+  C --> D["Resolve active concept version by request_time"]
+  D --> E{"Requested action allowed for active version?"}
+  E -- "No" --> F["DENY_ACTION_NOT_ALLOWED_FOR_VERSION"]
+  E -- "Yes" --> G{"Risk threshold semantics satisfied?"}
+  G -- "No" --> H["DENY_DECISION_NOT_JUSTIFIED_BY_ACTIVE_THRESHOLD"]
+  G -- "Yes" --> I{"Evidence hashes valid?"}
+  I -- "No" --> J["CIC_CANONICAL_VALUE_INVALID"]
+  I -- "Yes" --> K["ALLOW_DECISION_BOUND_TO_ACTIVE_VERSION"]
+```
+
+Transition and retrieval strategy details:
+
+1. [Benefit Allocation Risk Evolution Pattern](../../docs/architecture/benefit-allocation-risk-evolution-pattern.md)
+
 ## Run Fixtures
 
 From repository root:

@@ -1,0 +1,17 @@
+{
+  "bundleId": "__AUTO_BUNDLE_ID__",
+  "decision": {
+    "type": "BenefitAllocationEvolutionIntent",
+    "intent_class": "policy.benefit.high_risk_applicant.evaluate.v1",
+    "concept_version": "high_risk_applicant.v1.1",
+    "request_time": "2026-08-10T10:00:00Z",
+    "risk_score": 0.76,
+    "requested_action": "deny_benefit",
+    "governance_gate_passed": true,
+    "control_validation_proof": true,
+    "evidence": {
+      "prev_hash": "sha256:abababababababababababababababababababababababababababababababab",
+      "event_hash": "sha256-not-a-valid-digest"
+    }
+  }
+}

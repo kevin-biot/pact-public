@@ -42,6 +42,11 @@
       "id": "BARE-FAIL-006",
       "path": "fixtures/benefit-allocation-risk-evolution/cases/fail-bundle-commit-mismatch.json",
       "expected": {"status": "fail", "code": "PSC_BUNDLE_COMMIT_MISMATCH"}
+    },
+    {
+      "id": "BARE-FAIL-007",
+      "path": "fixtures/benefit-allocation-risk-evolution/cases/fail-evidence-hash-malformed.json",
+      "expected": {"status": "fail", "code": "CIC_CANONICAL_VALUE_INVALID"}
     }
   ]
 }

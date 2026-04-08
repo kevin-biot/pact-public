@@ -141,6 +141,7 @@ Conformance claims should reference specific artifact versions or release tags.
 Authority boundary guidance:
 
 1. `docs/architecture/pack-bounded-authority.md` — packs are authoritative for execution; external context (including RAG/graph retrieval) is advisory and must not silently expand scope.
+2. `docs/architecture/benefit-allocation-risk-evolution-pattern.md` — version-aware retrieval, side-by-side transition windows, and decision-time active-version binding controls for governance drift.
 
 Agentic error flow and ontology composition:
 

@@ -1,0 +1,36 @@
+name: Benefit Allocation Risk Evolution Fixtures
+
+on:
+  pull_request:
+    paths:
+      - "tools/run-benefit-allocation-risk-evolution-fixtures.mjs"
+      - "fixtures/benefit-allocation-risk-evolution/**"
+      - "verticals/benefit-allocation-risk-evolution-demo-pack/**"
+      - "docs/architecture/benefit-allocation-risk-evolution-pattern.md"
+      - "README.md"
+  push:
+    branches: ["main"]
+    paths:
+      - "tools/run-benefit-allocation-risk-evolution-fixtures.mjs"
+      - "fixtures/benefit-allocation-risk-evolution/**"
+      - "verticals/benefit-allocation-risk-evolution-demo-pack/**"
+      - "docs/architecture/benefit-allocation-risk-evolution-pattern.md"
+      - "README.md"
+
+jobs:
+  run-fixtures:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Validate runner syntax
+        run: node --check tools/run-benefit-allocation-risk-evolution-fixtures.mjs
+
+      - name: Run benefit-allocation fixtures
+        run: node tools/run-benefit-allocation-risk-evolution-fixtures.mjs
