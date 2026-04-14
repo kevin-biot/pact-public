@@ -47,3 +47,11 @@ Primary references:
 
 - This pack is a non-normative demo surface for conformance and governance experimentation.
 - Fixture harness wiring is planned in Stage-5.
+
+## Fixture Harness
+
+Run from repository root:
+
+```bash
+node tools/run-dssc-participant-onboarding-lifecycle-fixtures.mjs
+```

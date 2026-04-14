@@ -1,0 +1,13 @@
+{
+  "bundleId": "sha256:ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+  "decision": {
+    "type": "DSSCParticipantLifecycleIntent",
+    "intent_class": "dssc.participant.transition_state.v1",
+    "resourceType": "GovernanceDecision",
+    "policy_snapshot_id": "ps-part-007",
+    "participant_id": "participant-007",
+    "current_state": "admitted",
+    "next_state": "suspended",
+    "trust_proof_valid": true
+  }
+}

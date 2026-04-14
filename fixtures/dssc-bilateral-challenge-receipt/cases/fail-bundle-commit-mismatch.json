@@ -1,0 +1,22 @@
+{
+  "bundleId": "sha256:ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+  "decision": {
+    "type": "DSSCBilateralGovernanceIntent",
+    "intent_class": "dssc.governance.issue_receipt.v1",
+    "resourceType": "GovernanceDecision",
+    "policy_snapshot_id": "ps-bilat-006",
+    "challenge_id": "challenge-006",
+    "origin_jurisdiction": "SE",
+    "target_jurisdiction": "FI",
+    "payload_hash": "sha256:eee555",
+    "policy_snapshot_origin": "ps-origin-006",
+    "rationale_ref_origin": "rat-origin-006",
+    "receipt_id": "receipt-006",
+    "acceptance_hash": "sha256:eee555",
+    "policy_snapshot_target": "ps-target-006",
+    "rationale_ref_target": "rat-target-006",
+    "status": "accepted",
+    "correlation_id": "corr-006",
+    "receipt_correlation_id": "corr-006"
+  }
+}

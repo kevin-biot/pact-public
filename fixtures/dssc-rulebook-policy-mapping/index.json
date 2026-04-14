@@ -1,0 +1,63 @@
+{
+  "schema_version": "1.0",
+  "generated_at_utc": "2026-04-14T12:30:00Z",
+  "pack_path": "verticals/dssc-rulebook-policy-mapping-demo-pack",
+  "cases": [
+    {
+      "id": "DSSC-RULE-VALID-001",
+      "path": "fixtures/dssc-rulebook-policy-mapping/cases/valid-permission-with-satisfied-obligation.json",
+      "expected": {
+        "status": "pass",
+        "code": "ALLOW_IN_SCOPE"
+      }
+    },
+    {
+      "id": "DSSC-RULE-VALID-002",
+      "path": "fixtures/dssc-rulebook-policy-mapping/cases/valid-prohibition-denies.json",
+      "expected": {
+        "status": "pass",
+        "code": "DENY_RULEBOOK_PROHIBITION"
+      }
+    },
+    {
+      "id": "DSSC-RULE-VALID-003",
+      "path": "fixtures/dssc-rulebook-policy-mapping/cases/valid-conflict-deny-wins.json",
+      "expected": {
+        "status": "pass",
+        "code": "DENY_POLICY_CONFLICT_DENY_WINS"
+      }
+    },
+    {
+      "id": "DSSC-RULE-FAIL-001",
+      "path": "fixtures/dssc-rulebook-policy-mapping/cases/fail-missing-policy-snapshot.json",
+      "expected": {
+        "status": "fail",
+        "code": "DENY_POLICY_SNAPSHOT_UNBOUND"
+      }
+    },
+    {
+      "id": "DSSC-RULE-FAIL-002",
+      "path": "fixtures/dssc-rulebook-policy-mapping/cases/fail-unmapped-constraint.json",
+      "expected": {
+        "status": "fail",
+        "code": "DENY_CONSTRAINT_UNMAPPED"
+      }
+    },
+    {
+      "id": "DSSC-RULE-FAIL-003",
+      "path": "fixtures/dssc-rulebook-policy-mapping/cases/fail-obligation-not-satisfied.json",
+      "expected": {
+        "status": "fail",
+        "code": "DENY_OBLIGATION_UNSATISFIED"
+      }
+    },
+    {
+      "id": "DSSC-RULE-FAIL-004",
+      "path": "fixtures/dssc-rulebook-policy-mapping/cases/fail-bundle-commit-mismatch.json",
+      "expected": {
+        "status": "fail",
+        "code": "PSC_BUNDLE_COMMIT_MISMATCH"
+      }
+    }
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "schema_version": "1.0",
+  "generated_at_utc": "2026-04-14T12:30:00Z",
+  "pack_path": "verticals/dssc-catalog-discovery-demo-pack",
+  "cases": [
+    {
+      "id": "DSSC-CAT-VALID-001",
+      "path": "fixtures/dssc-catalog-discovery/cases/valid-publish-minimal.json",
+      "expected": {
+        "status": "pass",
+        "code": "ALLOW_IN_SCOPE"
+      }
+    },
+    {
+      "id": "DSSC-CAT-VALID-002",
+      "path": "fixtures/dssc-catalog-discovery/cases/valid-query-in-scope.json",
+      "expected": {
+        "status": "pass",
+        "code": "ALLOW_IN_SCOPE"
+      }
+    },
+    {
+      "id": "DSSC-CAT-VALID-003",
+      "path": "fixtures/dssc-catalog-discovery/cases/valid-update-lifecycle.json",
+      "expected": {
+        "status": "pass",
+        "code": "ALLOW_IN_SCOPE"
+      }
+    },
+    {
+      "id": "DSSC-CAT-FAIL-001",
+      "path": "fixtures/dssc-catalog-discovery/cases/fail-missing-required-dcat-metadata.json",
+      "expected": {
+        "status": "fail",
+        "code": "CIC_REQUIRED_FIELD_MISSING"
+      }
+    },
+    {
+      "id": "DSSC-CAT-FAIL-002",
+      "path": "fixtures/dssc-catalog-discovery/cases/fail-policy-reference-not-bound.json",
+      "expected": {
+        "status": "fail",
+        "code": "DENY_POLICY_REFERENCE_UNBOUND"
+      }
+    },
+    {
+      "id": "DSSC-CAT-FAIL-003",
+      "path": "fixtures/dssc-catalog-discovery/cases/fail-out-of-scope-intent.json",
+      "expected": {
+        "status": "fail",
+        "code": "ESCALATE_OUT_OF_SCOPE_INTENT"
+      }
+    },
+    {
+      "id": "DSSC-CAT-FAIL-004",
+      "path": "fixtures/dssc-catalog-discovery/cases/fail-bundle-commit-mismatch.json",
+      "expected": {
+        "status": "fail",
+        "code": "PSC_BUNDLE_COMMIT_MISMATCH"
+      }
+    }
+  ]
+}

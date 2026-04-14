@@ -1,0 +1,15 @@
+{
+  "bundleId": "sha256:032b95d5c565aefa9f95b3d3165879949934ee12fdfbd24a19c35bead828d56c",
+  "decision": {
+    "type": "DSSCPolicyIntent",
+    "intent_class": "dssc.policy.evaluate_usage.v1",
+    "resourceType": "GovernanceDecision",
+    "policy_snapshot_id": "ps-rule-005",
+    "rulebook_clause_id": "clause-15.3",
+    "odrl_permission": true,
+    "odrl_prohibition": false,
+    "odrl_obligation": "delete-after-30-days",
+    "odrl_obligation_status": "pending",
+    "constraint_expression": "retention <= P30D"
+  }
+}

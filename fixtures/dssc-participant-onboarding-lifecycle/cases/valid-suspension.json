@@ -1,0 +1,13 @@
+{
+  "bundleId": "sha256:23f49ce2d14de24dd1cf08fd7e7810e10ddc8efd11fc76c8a4154d4d73c1a2a8",
+  "decision": {
+    "type": "DSSCParticipantLifecycleIntent",
+    "intent_class": "dssc.participant.transition_state.v1",
+    "resourceType": "GovernanceDecision",
+    "policy_snapshot_id": "ps-part-002",
+    "participant_id": "participant-002",
+    "current_state": "admitted",
+    "next_state": "suspended",
+    "trust_proof_valid": true
+  }
+}

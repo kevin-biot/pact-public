@@ -1,0 +1,21 @@
+{
+  "bundleId": "sha256:0ea274e2fb9188b567f7c72eaabfc0eba2c970f5c5d50074fd8471eb34bae5d7",
+  "decision": {
+    "type": "DSSCAttestationAdmissionIntent",
+    "intent_class": "dssc.identity.verify_trust_anchor.v1",
+    "resourceType": "GovernanceDecision",
+    "policy_snapshot_id": "ps-eudi-002",
+    "vp_token": "vp-tee-002",
+    "credential_type": "VerifiableCredential",
+    "issuer_id": "did:example:issuer:trusted:2",
+    "subject_id": "did:example:subject:2",
+    "assurance_level": "medium",
+    "attestation_class": "tee",
+    "corridor_min_attestation": "tee",
+    "valid_from": "2026-01-01T00:00:00Z",
+    "valid_until": "2026-12-01T00:00:00Z",
+    "revocation_status": "active",
+    "trusted_issuer": true,
+    "evaluation_time": "2026-04-14T12:00:00Z"
+  }
+}

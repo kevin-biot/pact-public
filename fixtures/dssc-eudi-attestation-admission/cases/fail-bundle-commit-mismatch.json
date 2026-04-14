@@ -1,0 +1,21 @@
+{
+  "bundleId": "sha256:ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+  "decision": {
+    "type": "DSSCAttestationAdmissionIntent",
+    "intent_class": "dssc.identity.evaluate_attestation.v1",
+    "resourceType": "GovernanceDecision",
+    "policy_snapshot_id": "ps-eudi-007",
+    "vp_token": "vp-hardware-007",
+    "credential_type": "VerifiableCredential",
+    "issuer_id": "did:example:issuer:trusted:7",
+    "subject_id": "did:example:subject:7",
+    "assurance_level": "high",
+    "attestation_class": "hardware",
+    "corridor_min_attestation": "tee",
+    "valid_from": "2026-01-01T00:00:00Z",
+    "valid_until": "2027-01-01T00:00:00Z",
+    "revocation_status": "active",
+    "trusted_issuer": true,
+    "evaluation_time": "2026-04-14T12:00:00Z"
+  }
+}

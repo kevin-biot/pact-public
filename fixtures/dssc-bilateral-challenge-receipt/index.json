@@ -1,0 +1,55 @@
+{
+  "schema_version": "1.0",
+  "generated_at_utc": "2026-04-14T12:30:00Z",
+  "pack_path": "verticals/dssc-bilateral-challenge-receipt-demo-pack",
+  "cases": [
+    {
+      "id": "DSSC-BILAT-VALID-001",
+      "path": "fixtures/dssc-bilateral-challenge-receipt/cases/valid-challenge-receipt-pair.json",
+      "expected": {
+        "status": "pass",
+        "code": "ALLOW_IN_SCOPE"
+      }
+    },
+    {
+      "id": "DSSC-BILAT-VALID-002",
+      "path": "fixtures/dssc-bilateral-challenge-receipt/cases/valid-dual-policy-snapshots.json",
+      "expected": {
+        "status": "pass",
+        "code": "ALLOW_IN_SCOPE"
+      }
+    },
+    {
+      "id": "DSSC-BILAT-FAIL-001",
+      "path": "fixtures/dssc-bilateral-challenge-receipt/cases/fail-receipt-hash-mismatch.json",
+      "expected": {
+        "status": "fail",
+        "code": "DENY_RECEIPT_HASH_MISMATCH"
+      }
+    },
+    {
+      "id": "DSSC-BILAT-FAIL-002",
+      "path": "fixtures/dssc-bilateral-challenge-receipt/cases/fail-missing-target-policy-snapshot.json",
+      "expected": {
+        "status": "fail",
+        "code": "DENY_POLICY_SNAPSHOT_MISSING"
+      }
+    },
+    {
+      "id": "DSSC-BILAT-FAIL-003",
+      "path": "fixtures/dssc-bilateral-challenge-receipt/cases/fail-correlation-id-mismatch.json",
+      "expected": {
+        "status": "fail",
+        "code": "DENY_CORRELATION_MISMATCH"
+      }
+    },
+    {
+      "id": "DSSC-BILAT-FAIL-004",
+      "path": "fixtures/dssc-bilateral-challenge-receipt/cases/fail-bundle-commit-mismatch.json",
+      "expected": {
+        "status": "fail",
+        "code": "PSC_BUNDLE_COMMIT_MISMATCH"
+      }
+    }
+  ]
+}

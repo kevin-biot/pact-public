@@ -1,0 +1,14 @@
+{
+  "bundleId": "sha256:8c80d9f04310053a1b27e4d0c114915c95b73e4dd6661a56b2c5d41c52d92ac7",
+  "decision": {
+    "type": "DSSCCatalogIntent",
+    "intent_class": "dssc.catalog.update_offering.v1",
+    "resourceType": "GovernanceDecision",
+    "policy_snapshot_id": "ps-cat-004",
+    "catalog_id": "catalog-eu-health",
+    "offering_id": "offering-lab-results",
+    "dataset_id": "dataset-labs-2026",
+    "service_endpoint": "https://catalog.example/offering/labs",
+    "policy_reference_bound": false
+  }
+}

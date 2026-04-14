@@ -1,0 +1,63 @@
+{
+  "schema_version": "1.0",
+  "generated_at_utc": "2026-04-14T12:30:00Z",
+  "pack_path": "verticals/dssc-eudi-attestation-admission-demo-pack",
+  "cases": [
+    {
+      "id": "DSSC-EUDI-VALID-001",
+      "path": "fixtures/dssc-eudi-attestation-admission/cases/valid-hardware-backed-attestation.json",
+      "expected": {
+        "status": "pass",
+        "code": "ALLOW_IN_SCOPE"
+      }
+    },
+    {
+      "id": "DSSC-EUDI-VALID-002",
+      "path": "fixtures/dssc-eudi-attestation-admission/cases/valid-tee-attestation-for-regulated-corridor.json",
+      "expected": {
+        "status": "pass",
+        "code": "ALLOW_IN_SCOPE"
+      }
+    },
+    {
+      "id": "DSSC-EUDI-FAIL-001",
+      "path": "fixtures/dssc-eudi-attestation-admission/cases/fail-credential-expired.json",
+      "expected": {
+        "status": "fail",
+        "code": "DENY_CREDENTIAL_EXPIRED"
+      }
+    },
+    {
+      "id": "DSSC-EUDI-FAIL-002",
+      "path": "fixtures/dssc-eudi-attestation-admission/cases/fail-credential-revoked.json",
+      "expected": {
+        "status": "fail",
+        "code": "DENY_CREDENTIAL_REVOKED"
+      }
+    },
+    {
+      "id": "DSSC-EUDI-FAIL-003",
+      "path": "fixtures/dssc-eudi-attestation-admission/cases/fail-attestation-below-threshold.json",
+      "expected": {
+        "status": "fail",
+        "code": "DENY_ATTESTATION_LEVEL_INSUFFICIENT"
+      }
+    },
+    {
+      "id": "DSSC-EUDI-FAIL-004",
+      "path": "fixtures/dssc-eudi-attestation-admission/cases/fail-untrusted-issuer.json",
+      "expected": {
+        "status": "fail",
+        "code": "DENY_TRUST_ANCHOR_UNVERIFIED"
+      }
+    },
+    {
+      "id": "DSSC-EUDI-FAIL-005",
+      "path": "fixtures/dssc-eudi-attestation-admission/cases/fail-bundle-commit-mismatch.json",
+      "expected": {
+        "status": "fail",
+        "code": "PSC_BUNDLE_COMMIT_MISMATCH"
+      }
+    }
+  ]
+}
