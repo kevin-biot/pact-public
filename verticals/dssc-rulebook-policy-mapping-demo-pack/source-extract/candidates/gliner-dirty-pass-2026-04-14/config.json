@@ -1,0 +1,30 @@
+{
+  "schema_version": "1.0",
+  "extractor": {
+    "adapter": "gliner",
+    "model": "urchade/gliner_medium-v2.1",
+    "threshold": 0.35,
+    "merge_strategy": "longest_match",
+    "max_length": 512
+  },
+  "domain": "dssc-rulebook-policy-mapping",
+  "extraction_profile": {
+    "labels": [
+      "RULEBOOK_CLAUSE",
+      "ODRL_PERMISSION",
+      "ODRL_PROHIBITION",
+      "ODRL_OBLIGATION",
+      "CONSTRAINT_EXPRESSION",
+      "INTENT_CLASS",
+      "DENY_REASON_CODE",
+      "POLICY_SNAPSHOT",
+      "JURISDICTION",
+      "IDENTIFIER"
+    ]
+  },
+  "output": {
+    "format": "candidate_json",
+    "include_context": true,
+    "context_window": 220
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "schema_version": "1.0",
+  "extractor": {
+    "adapter": "gliner",
+    "model": "urchade/gliner_medium-v2.1",
+    "threshold": 0.35,
+    "merge_strategy": "longest_match",
+    "max_length": 512
+  },
+  "domain": "dssc-catalog-discovery",
+  "extraction_profile": {
+    "labels": [
+      "CATALOG_ENTITY",
+      "OFFERING",
+      "DATASET_METADATA",
+      "SERVICE_ENDPOINT",
+      "USAGE_POLICY",
+      "LIFECYCLE_STATE",
+      "INTENT_CLASS",
+      "JURISDICTION",
+      "IDENTIFIER",
+      "POLICY_SNAPSHOT"
+    ]
+  },
+  "output": {
+    "format": "candidate_json",
+    "include_context": true,
+    "context_window": 220
+  }
+}

@@ -1,0 +1,511 @@
+### FILE: README.md
+# dssc-bilateral-challenge-receipt-demo-pack
+
+This is a DSSC-aligned demo ontology pack for `dssc-bilateral-challenge-receipt` under Stage-4 pack authoring.
+
+## Purpose
+
+Demonstrate cross-jurisdiction challenge/receipt governance with dual policy snapshots and correlated evidence anchors.
+
+## Source Grounding
+
+Canonical source references used for this pack draft are listed in `source-extract/sources.json`.
+
+Primary references:
+- https://blueprint.dssc.eu/
+- https://eclipse-dataspace-protocol-base.github.io/DataspaceProtocol/HEAD/
+
+## Intent Surface
+
+- `dssc.governance.submit_challenge.v1`: Submit cross-jurisdiction challenge payload with origin snapshot.
+- `dssc.governance.issue_receipt.v1`: Issue correlated receipt with target-side policy snapshot.
+
+## Determinism Boundary
+
+- Out-of-scope behavior is `escalate`.
+- Policy/bundle binding is required for admitted execution paths.
+- Deny reason codes are explicit and stable for fixture replay.
+
+## Included Artifacts
+
+- `README.md`
+- `pack.json`
+- `context.jsonld`
+- `vocab.skos.jsonld`
+- `shapes.ttl`
+- `thesaurus.jsonld`
+- `thesaurus-local.json`
+- `patterns.json`
+- `intent-mappings.json`
+- `convergence.json`
+- `decision-space.json`
+- `message-identifiers.json`
+- `extraction-summary.json`
+- `bundle.json`
+- `obt.jws`
+- `source-extract/sources.json`
+
+## Notes
+
+- This pack is a non-normative demo surface for conformance and governance experimentation.
+- Fixture harness wiring is planned in Stage-5.
+
+## Fixture Harness
+
+Run from repository root:
+
+```bash
+node tools/run-dssc-bilateral-challenge-receipt-fixtures.mjs
+```
+
+## Two-Pass Authoring (V1/V2)
+
+- `V1 mechanical`: canonical authored baseline for deterministic runtime and fixture behavior.
+- `V2 GLiNER candidate`: fast extraction pass for candidate entities/relations only.
+- `Review gate`: no V2 candidate is promoted without explicit human review.
+
+Candidate artifacts are stored under `source-extract/candidates/gliner-dirty-pass-2026-04-14/`.
+
+
+### FILE: pack.json
+{
+  "pack_schema": "1.0",
+  "id": "dssc-bilateral-challenge-receipt-demo-0.1.0",
+  "domain": "dssc-bilateral-challenge-receipt",
+  "version": "0.1.0",
+  "provider_id": "ontology:pact-public:trust",
+  "trust_tier": "Tier1",
+  "nbf": "2026-04-14T00:00:00Z",
+  "exp": "2031-04-14T00:00:00Z",
+  "rev_epoch": 1,
+  "deny_wins": true,
+  "precedence": [],
+  "files": {
+    "context": "context.jsonld",
+    "vocab": "vocab.skos.jsonld",
+    "shapes": "shapes.ttl",
+    "thesaurus": "thesaurus.jsonld",
+    "thesaurus_local": "thesaurus-local.json",
+    "patterns": "patterns.json",
+    "intent_mappings": "intent-mappings.json",
+    "convergence": "convergence.json",
+    "decision_space": "decision-space.json",
+    "message_identifiers": "message-identifiers.json",
+    "extraction_summary": "extraction-summary.json",
+    "source_extract": "source-extract/sources.json",
+    "execution_checklist": "source-extract/tasks/immutable-authoring-pipeline.v1-v2.json",
+    "gliner_dirty_manifest": "source-extract/candidates/gliner-dirty-pass-2026-04-14/manifest.json",
+    "gliner_dirty_candidates": "source-extract/candidates/gliner-dirty-pass-2026-04-14/candidates.json",
+    "gliner_dirty_summary": "source-extract/candidates/gliner-dirty-pass-2026-04-14/extraction-summary.json"
+  },
+  "dc": {
+    "identifier": "ontology:dssc-bilateral-challenge-receipt-demo:v0.1.0",
+    "title": "dssc-bilateral-challenge-receipt demo pack",
+    "creator": "PACT Public Working Draft",
+    "issued": "2026-04-14",
+    "rights": "Apache-2.0",
+    "description": "Demonstrate cross-jurisdiction challenge/receipt governance with dual policy snapshots and correlated evidence anchors."
+  }
+}
+
+
+### FILE: decision-space.json
+{
+  "schema_version": "1.0",
+  "domain": "dssc-bilateral-challenge-receipt",
+  "pack_id": "dssc-bilateral-challenge-receipt-demo-0.1.0",
+  "version": "0.1.0",
+  "out_of_scope_behavior": "escalate",
+  "state_model": {
+    "states": [
+      "ingress",
+      "validated",
+      "classified",
+      "authorized",
+      "responded",
+      "rejected",
+      "escalated"
+    ],
+    "initial_state": "ingress",
+    "terminal_states": [
+      "responded",
+      "rejected",
+      "escalated"
+    ]
+  },
+  "intent_resource_map": {
+    "dssc.governance.submit_challenge.v1": [
+      "GovernanceDecision"
+    ],
+    "dssc.governance.issue_receipt.v1": [
+      "GovernanceDecision"
+    ]
+  },
+  "required_fields_by_intent": {
+    "dssc.governance.submit_challenge.v1": [
+      "policy_snapshot_id",
+      "challenge_id",
+      "origin_jurisdiction",
+      "target_jurisdiction",
+      "payload_hash",
+      "policy_snapshot_origin",
+      "rationale_ref_origin",
+      "receipt_id",
+      "acceptance_hash",
+      "policy_snapshot_target",
+      "rationale_ref_target",
+      "status"
+    ],
+    "dssc.governance.issue_receipt.v1": [
+      "policy_snapshot_id",
+      "challenge_id",
+      "origin_jurisdiction",
+      "target_jurisdiction",
+      "payload_hash",
+      "policy_snapshot_origin",
+      "rationale_ref_origin",
+      "receipt_id",
+      "acceptance_hash",
+      "policy_snapshot_target",
+      "rationale_ref_target",
+      "status"
+    ]
+  },
+  "deny_reason_codes": [
+    "DENY_RECEIPT_HASH_MISMATCH",
+    "DENY_POLICY_SNAPSHOT_MISSING",
+    "DENY_CORRELATION_MISMATCH",
+    "PSC_BUNDLE_COMMIT_MISMATCH"
+  ]
+}
+
+
+### FILE: intent-mappings.json
+{
+  "schema_version": "1.0",
+  "domain": "dssc-bilateral-challenge-receipt",
+  "mappings": [
+    {
+      "concept_uri": "dssc:GovernanceSurface",
+      "intent_class": "dssc.governance.submit_challenge.v1",
+      "confidence_floor": 0.76
+    },
+    {
+      "concept_uri": "dssc:GovernanceSurface",
+      "intent_class": "dssc.governance.issue_receipt.v1",
+      "confidence_floor": 0.76
+    }
+  ]
+}
+
+
+### FILE: thesaurus-local.json
+{
+  "schema_version": "1.0",
+  "domain": "dssc-bilateral-challenge-receipt",
+  "last_modified": "2026-04-14",
+  "concepts": [
+    {
+      "concept_id": "dssc-bilateral-challenge-receipt.challenge.id.v1",
+      "preferred_term": "challenge_id",
+      "synonyms": [],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "GovernanceSurface",
+      "narrower": [],
+      "source_refs": [
+        "dssc-canonical-source-catalog"
+      ],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "dssc-bilateral-challenge-receipt.origin.jurisdiction.v1",
+      "preferred_term": "origin_jurisdiction",
+      "synonyms": [],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "GovernanceSurface",
+      "narrower": [],
+      "source_refs": [
+        "dssc-canonical-source-catalog"
+      ],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "dssc-bilateral-challenge-receipt.target.jurisdiction.v1",
+      "preferred_term": "target_jurisdiction",
+      "synonyms": [],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "GovernanceSurface",
+      "narrower": [],
+      "source_refs": [
+        "dssc-canonical-source-catalog"
+      ],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "dssc-bilateral-challenge-receipt.payload.hash.v1",
+      "preferred_term": "payload_hash",
+      "synonyms": [],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "GovernanceSurface",
+      "narrower": [],
+      "source_refs": [
+        "dssc-canonical-source-catalog"
+      ],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "dssc-bilateral-challenge-receipt.policy.snapshot.origin.v1",
+      "preferred_term": "policy_snapshot_origin",
+      "synonyms": [],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "GovernanceSurface",
+      "narrower": [],
+      "source_refs": [
+        "dssc-canonical-source-catalog"
+      ],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "dssc-bilateral-challenge-receipt.rationale.ref.origin.v1",
+      "preferred_term": "rationale_ref_origin",
+      "synonyms": [],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "GovernanceSurface",
+      "narrower": [],
+      "source_refs": [
+        "dssc-canonical-source-catalog"
+      ],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "dssc-bilateral-challenge-receipt.receipt.id.v1",
+      "preferred_term": "receipt_id",
+      "synonyms": [],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "GovernanceSurface",
+      "narrower": [],
+      "source_refs": [
+        "dssc-canonical-source-catalog"
+      ],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "dssc-bilateral-challenge-receipt.acceptance.hash.v1",
+      "preferred_term": "acceptance_hash",
+      "synonyms": [],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "GovernanceSurface",
+      "narrower": [],
+      "source_refs": [
+        "dssc-canonical-source-catalog"
+      ],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "dssc-bilateral-challenge-receipt.policy.snapshot.target.v1",
+      "preferred_term": "policy_snapshot_target",
+      "synonyms": [],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "GovernanceSurface",
+      "narrower": [],
+      "source_refs": [
+        "dssc-canonical-source-catalog"
+      ],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "dssc-bilateral-challenge-receipt.rationale.ref.target.v1",
+      "preferred_term": "rationale_ref_target",
+      "synonyms": [],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "GovernanceSurface",
+      "narrower": [],
+      "source_refs": [
+        "dssc-canonical-source-catalog"
+      ],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "dssc-bilateral-challenge-receipt.status.v1",
+      "preferred_term": "status",
+      "synonyms": [],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "GovernanceSurface",
+      "narrower": [],
+      "source_refs": [
+        "dssc-canonical-source-catalog"
+      ],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "dssc-bilateral-challenge-receipt.correlation.id.v1",
+      "preferred_term": "correlation_id",
+      "synonyms": [],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "GovernanceSurface",
+      "narrower": [],
+      "source_refs": [
+        "dssc-canonical-source-catalog"
+      ],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "dssc-bilateral-challenge-receipt.anchor.hash.origin.v1",
+      "preferred_term": "anchor_hash_origin",
+      "synonyms": [],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "GovernanceSurface",
+      "narrower": [],
+      "source_refs": [
+        "dssc-canonical-source-catalog"
+      ],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "dssc-bilateral-challenge-receipt.anchor.hash.target.v1",
+      "preferred_term": "anchor_hash_target",
+      "synonyms": [],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "GovernanceSurface",
+      "narrower": [],
+      "source_refs": [
+        "dssc-canonical-source-catalog"
+      ],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "dssc-bilateral-challenge-receipt.event.hash.v1",
+      "preferred_term": "event_hash",
+      "synonyms": [],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "GovernanceSurface",
+      "narrower": [],
+      "source_refs": [
+        "dssc-canonical-source-catalog"
+      ],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "dssc-bilateral-challenge-receipt.prev.hash.v1",
+      "preferred_term": "prev_hash",
+      "synonyms": [],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "GovernanceSurface",
+      "narrower": [],
+      "source_refs": [
+        "dssc-canonical-source-catalog"
+      ],
+      "ner_provenance": null
+    }
+  ]
+}
+
+
+### FILE: patterns.json
+{
+  "schema_version": "1.0",
+  "domain": "dssc-bilateral-challenge-receipt",
+  "patterns": [
+    {
+      "id": "dssc_governance_submit_challenge_v1",
+      "concept_uri": "dssc:GovernanceSurface",
+      "entity_type": "intent_hint",
+      "regex": "(?i)\\bdssc\\.governance\\.submit_challenge\\.v1\\b",
+      "examples": [
+        "dssc.governance.submit_challenge.v1"
+      ]
+    },
+    {
+      "id": "dssc_governance_issue_receipt_v1",
+      "concept_uri": "dssc:GovernanceSurface",
+      "entity_type": "intent_hint",
+      "regex": "(?i)\\bdssc\\.governance\\.issue_receipt\\.v1\\b",
+      "examples": [
+        "dssc.governance.issue_receipt.v1"
+      ]
+    }
+  ]
+}
+
+
+### FILE: source-extract/sources.json
+{
+  "schema_version": "1.0",
+  "generated_at_utc": "2026-04-14T12:00:00Z",
+  "vertical": "dssc-bilateral-challenge-receipt-demo-pack",
+  "bundle_id": "dssc-bilateral-challenge-receipt-source-2026-04-14",
+  "sources": [
+    {
+      "id": "canonical-source-1",
+      "title": "Canonical source 1",
+      "url": "https://blueprint.dssc.eu/",
+      "type": "canonical_reference",
+      "status": "referenced"
+    },
+    {
+      "id": "canonical-source-2",
+      "title": "Canonical source 2",
+      "url": "https://eclipse-dataspace-protocol-base.github.io/DataspaceProtocol/HEAD/",
+      "type": "canonical_reference",
+      "status": "referenced"
+    }
+  ]
+}
+
+
+### FILE: message-identifiers.json
+{
+  "schema_version": "0.1",
+  "generated_at_utc": "2026-04-14T12:00:00Z",
+  "profile": "dssc-bilateral-challenge-receipt-demo-pack",
+  "domain": "dssc-bilateral-challenge-receipt",
+  "message_identifiers": [],
+  "message_types": [],
+  "note": "No ISO-style message identifiers for this DSSC governance demo pack."
+}
+
+
+### FILE: extraction-summary.json
+{
+  "schema_version": "0.1",
+  "generated_at_utc": "2026-04-14T12:00:00Z",
+  "profile": "dssc-bilateral-challenge-receipt-demo-pack",
+  "domain": "dssc-bilateral-challenge-receipt",
+  "source_spec": "DSSC source-grounded pack spec and crosswalk notes",
+  "source_artifact_count": 2,
+  "mapped_symbol_count": 16,
+  "mapped_field_count": 12,
+  "note": "Stage-4 skeleton pack authored from stage-3 spec artifacts."
+}

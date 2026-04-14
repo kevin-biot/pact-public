@@ -1,0 +1,1804 @@
+{
+  "schema_version": "1.0",
+  "tool": "extract_candidates",
+  "run_id": "dssc-participant-onboarding-lifecycle-gliner-docker-pass-2026-04-14",
+  "review_status": "candidate",
+  "authoritative": false,
+  "candidates": [
+    {
+      "candidate_id": "DSSC-PARTICIPANT-ONBOARDING-LIFECYCLE-CAND-0001",
+      "surface_form": "deterministic participant lifecycle governance states",
+      "label": "LIFECYCLE_STATE",
+      "confidence": 0.8236,
+      "review_status": "candidate",
+      "span": {
+        "start": 212,
+        "end": 265
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 8,
+        "line_end": 8
+      },
+      "context": "ology pack for `dssc-participant-onboarding-lifecycle` under Stage-4 pack authoring.\n\n## Purpose\n\nDemonstrate deterministic participant lifecycle governance states for DSSC-aligned admission and trust operations.\n\n## Source Grounding\n\nCanonical source references used for t"
+    },
+    {
+      "candidate_id": "DSSC-PARTICIPANT-ONBOARDING-LIFECYCLE-CAND-0002",
+      "surface_form": "Intent Surface",
+      "label": "INTENT_CLASS",
+      "confidence": 0.3635,
+      "review_status": "candidate",
+      "span": {
+        "start": 489,
+        "end": 503
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 17,
+        "line_end": 17
+      },
+      "context": "pack draft are listed in `source-extract/sources.json`.\n\nPrimary references:\n- https://blueprint.dssc.eu/\n\n## Intent Surface\n\n- `dssc.participant.transition_state.v1`: Apply participant lifecycle transition with deterministic guards.\n"
+    },
+    {
+      "candidate_id": "DSSC-PARTICIPANT-ONBOARDING-LIFECYCLE-CAND-0003",
+      "surface_form": "participant",
+      "label": "PARTICIPANT_ID",
+      "confidence": 0.8594,
+      "review_status": "candidate",
+      "span": {
+        "start": 513,
+        "end": 524
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 19,
+        "line_end": 19
+      },
+      "context": " `source-extract/sources.json`.\n\nPrimary references:\n- https://blueprint.dssc.eu/\n\n## Intent Surface\n\n- `dssc.participant.transition_state.v1`: Apply participant lifecycle transition with deterministic guards.\n- `dssc.participant.e"
+    },
+    {
+      "candidate_id": "DSSC-PARTICIPANT-ONBOARDING-LIFECYCLE-CAND-0004",
+      "surface_form": "transition_state",
+      "label": "LIFECYCLE_STATE",
+      "confidence": 0.5724,
+      "review_status": "candidate",
+      "span": {
+        "start": 525,
+        "end": 541
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 19,
+        "line_end": 19
+      },
+      "context": "ract/sources.json`.\n\nPrimary references:\n- https://blueprint.dssc.eu/\n\n## Intent Surface\n\n- `dssc.participant.transition_state.v1`: Apply participant lifecycle transition with deterministic guards.\n- `dssc.participant.evaluate_admission"
+    },
+    {
+      "candidate_id": "DSSC-PARTICIPANT-ONBOARDING-LIFECYCLE-CAND-0005",
+      "surface_form": "participant",
+      "label": "PARTICIPANT_ID",
+      "confidence": 0.87,
+      "review_status": "candidate",
+      "span": {
+        "start": 553,
+        "end": 564
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 19,
+        "line_end": 19
+      },
+      "context": " references:\n- https://blueprint.dssc.eu/\n\n## Intent Surface\n\n- `dssc.participant.transition_state.v1`: Apply participant lifecycle transition with deterministic guards.\n- `dssc.participant.evaluate_admission.v1`: Evaluate admissio"
+    },
+    {
+      "candidate_id": "DSSC-PARTICIPANT-ONBOARDING-LIFECYCLE-CAND-0006",
+      "surface_form": "participant",
+      "label": "PARTICIPANT_ID",
+      "confidence": 0.8814,
+      "review_status": "candidate",
+      "span": {
+        "start": 621,
+        "end": 632
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 20,
+        "line_end": 20
+      },
+      "context": "c.participant.transition_state.v1`: Apply participant lifecycle transition with deterministic guards.\n- `dssc.participant.evaluate_admission.v1`: Evaluate admission readiness from trust and policy inputs.\n\n## Determinism Boundary\n\n"
+    },
+    {
+      "candidate_id": "DSSC-PARTICIPANT-ONBOARDING-LIFECYCLE-CAND-0007",
+      "surface_form": "evaluate_admission.v1",
+      "label": "POLICY_SNAPSHOT",
+      "confidence": 0.3967,
+      "review_status": "candidate",
+      "span": {
+        "start": 633,
+        "end": 654
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 20,
+        "line_end": 20
+      },
+      "context": "t.transition_state.v1`: Apply participant lifecycle transition with deterministic guards.\n- `dssc.participant.evaluate_admission.v1`: Evaluate admission readiness from trust and policy inputs.\n\n## Determinism Boundary\n\n- Out-of-scope behavio"
+    },
+    {
+      "candidate_id": "DSSC-PARTICIPANT-ONBOARDING-LIFECYCLE-CAND-0008",
+      "surface_form": "Deny reason codes",
+      "label": "DENY_REASON_CODE",
+      "confidence": 0.8618,
+      "review_status": "candidate",
+      "span": {
+        "start": 849,
+        "end": 866
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 26,
+        "line_end": 26
+      },
+      "context": "y\n\n- Out-of-scope behavior is `escalate`.\n- Policy/bundle binding is required for admitted execution paths.\n- Deny reason codes are explicit and stable for fixture replay.\n\n## Included Artifacts\n\n- `README.md`\n- `pack.json`\n- `context.js"
+    },
+    {
+      "candidate_id": "DSSC-PARTICIPANT-ONBOARDING-LIFECYCLE-CAND-0009",
+      "surface_form": "Deny",
+      "label": "DENY_REASON_CODE",
+      "confidence": 0.6238,
+      "review_status": "candidate",
+      "span": {
+        "start": 849,
+        "end": 853
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 26,
+        "line_end": 26
+      },
+      "context": "y\n\n- Out-of-scope behavior is `escalate`.\n- Policy/bundle binding is required for admitted execution paths.\n- Deny reason codes are explicit and stable for fixture replay.\n\n## Included Artifacts\n\n- `README.md`\n- `pack.json`\n"
+    },
+    {
+      "candidate_id": "DSSC-PARTICIPANT-ONBOARDING-LIFECYCLE-CAND-0010",
+      "surface_form": "reason codes",
+      "label": "DENY_REASON_CODE",
+      "confidence": 0.4274,
+      "review_status": "candidate",
+      "span": {
+        "start": 854,
+        "end": 866
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 26,
+        "line_end": 26
+      },
+      "context": "Out-of-scope behavior is `escalate`.\n- Policy/bundle binding is required for admitted execution paths.\n- Deny reason codes are explicit and stable for fixture replay.\n\n## Included Artifacts\n\n- `README.md`\n- `pack.json`\n- `context.js"
+    },
+    {
+      "candidate_id": "DSSC-PARTICIPANT-ONBOARDING-LIFECYCLE-CAND-0011",
+      "surface_form": "Stage-5",
+      "label": "LIFECYCLE_STATE",
+      "confidence": 0.7841,
+      "review_status": "candidate",
+      "span": {
+        "start": 1412,
+        "end": 1419
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 50,
+        "line_end": 50
+      },
+      "context": "normative demo surface for conformance and governance experimentation.\n- Fixture harness wiring is planned in Stage-5.\n\n## Fixture Harness\n\nRun from repository root:\n\n```bash\nnode tools/run-dssc-participant-onboarding-lifecycle"
+    },
+    {
+      "candidate_id": "DSSC-PARTICIPANT-ONBOARDING-LIFECYCLE-CAND-0012",
+      "surface_form": "root",
+      "label": "IDENTIFIER",
+      "confidence": 0.4229,
+      "review_status": "candidate",
+      "span": {
+        "start": 1462,
+        "end": 1466
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 54,
+        "line_end": 54
+      },
+      "context": "nce experimentation.\n- Fixture harness wiring is planned in Stage-5.\n\n## Fixture Harness\n\nRun from repository root:\n\n```bash\nnode tools/run-dssc-participant-onboarding-lifecycle-fixtures.mjs\n```\n\n## Two-Pass Authoring (V1/V2"
+    },
+    {
+      "candidate_id": "DSSC-PARTICIPANT-ONBOARDING-LIFECYCLE-CAND-0013",
+      "surface_form": "id",
+      "label": "IDENTIFIER",
+      "confidence": 0.4382,
+      "review_status": "candidate",
+      "span": {
+        "start": 1983,
+        "end": 1985
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 72,
+        "line_end": 72
+      },
+      "context": "`source-extract/candidates/gliner-dirty-pass-2026-04-14/`.\n\n\n### FILE: pack.json\n{\n  \"pack_schema\": \"1.0\",\n  \"id\": \"dssc-participant-onboarding-lifecycle-demo-0.1.0\",\n  \"domain\": \"dssc-participant-onboarding-lifecycle\",\n  "
+    },
+    {
+      "candidate_id": "DSSC-PARTICIPANT-ONBOARDING-LIFECYCLE-CAND-0014",
+      "surface_form": "provider_id",
+      "label": "PARTICIPANT_ID",
+      "confidence": 0.362,
+      "review_status": "candidate",
+      "span": {
+        "start": 2118,
+        "end": 2129
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 75,
+        "line_end": 75
+      },
+      "context": "boarding-lifecycle-demo-0.1.0\",\n  \"domain\": \"dssc-participant-onboarding-lifecycle\",\n  \"version\": \"0.1.0\",\n  \"provider_id\": \"ontology:pact-public:trust\",\n  \"trust_tier\": \"Tier1\",\n  \"nbf\": \"2026-04-14T00:00:00Z\",\n  \"exp\": \"2031-04-1"
+    },
+    {
+      "candidate_id": "DSSC-PARTICIPANT-ONBOARDING-LIFECYCLE-CAND-0015",
+      "surface_form": "trust_tier",
+      "label": "TRUST_PROOF",
+      "confidence": 0.373,
+      "review_status": "candidate",
+      "span": {
+        "start": 2165,
+        "end": 2175
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 76,
+        "line_end": 76
+      },
+      "context": "sc-participant-onboarding-lifecycle\",\n  \"version\": \"0.1.0\",\n  \"provider_id\": \"ontology:pact-public:trust\",\n  \"trust_tier\": \"Tier1\",\n  \"nbf\": \"2026-04-14T00:00:00Z\",\n  \"exp\": \"2031-04-14T00:00:00Z\",\n  \"rev_epoch\": 1,\n  \"deny_wins\":"
+    },
+    {
+      "candidate_id": "DSSC-PARTICIPANT-ONBOARDING-LIFECYCLE-CAND-0016",
+      "surface_form": "Tier1",
+      "label": "TRUST_PROOF",
+      "confidence": 0.3859,
+      "review_status": "candidate",
+      "span": {
+        "start": 2179,
+        "end": 2184
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 76,
+        "line_end": 76
+      },
+      "context": "-onboarding-lifecycle\",\n  \"version\": \"0.1.0\",\n  \"provider_id\": \"ontology:pact-public:trust\",\n  \"trust_tier\": \"Tier1\",\n  \"nbf\": \"2026-04-14T00:00:00Z\",\n  \"exp\": \"2031-04-14T00:00:00Z\",\n  \"rev_epoch\": 1,\n  \"deny_wins\": true,\n  "
+    },
+    {
+      "candidate_id": "DSSC-PARTICIPANT-ONBOARDING-LIFECYCLE-CAND-0017",
+      "surface_form": "deny_wins",
+      "label": "DENY_REASON_CODE",
+      "confidence": 0.5819,
+      "review_status": "candidate",
+      "span": {
+        "start": 2274,
+        "end": 2283
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 80,
+        "line_end": 80
+      },
+      "context": "\"trust_tier\": \"Tier1\",\n  \"nbf\": \"2026-04-14T00:00:00Z\",\n  \"exp\": \"2031-04-14T00:00:00Z\",\n  \"rev_epoch\": 1,\n  \"deny_wins\": true,\n  \"precedence\": [],\n  \"files\": {\n    \"context\": \"context.jsonld\",\n    \"vocab\": \"vocab.skos.jsonld\",\n "
+    },
+    {
+      "candidate_id": "DSSC-PARTICIPANT-ONBOARDING-LIFECYCLE-CAND-0018",
+      "surface_form": "dssc-participant-onboarding-lifecycle-demo",
+      "label": "PARTICIPANT_ID",
+      "confidence": 0.3929,
+      "review_status": "candidate",
+      "span": {
+        "start": 3278,
+        "end": 3320
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 101,
+        "line_end": 101
+      },
+      "context": "t/candidates/gliner-dirty-pass-2026-04-14/extraction-summary.json\"\n  },\n  \"dc\": {\n    \"identifier\": \"ontology:dssc-participant-onboarding-lifecycle-demo:v0.1.0\",\n    \"title\": \"dssc-participant-onboarding-lifecycle demo pack\",\n    \"creator\": \"PACT Public Working "
+    },
+    {
+      "candidate_id": "DSSC-PARTICIPANT-ONBOARDING-LIFECYCLE-CAND-0019",
+      "surface_form": "v0.1.0",
+      "label": "POLICY_SNAPSHOT",
+      "confidence": 0.3818,
+      "review_status": "candidate",
+      "span": {
+        "start": 3321,
+        "end": 3327
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 101,
+        "line_end": 101
+      },
+      "context": "xtraction-summary.json\"\n  },\n  \"dc\": {\n    \"identifier\": \"ontology:dssc-participant-onboarding-lifecycle-demo:v0.1.0\",\n    \"title\": \"dssc-participant-onboarding-lifecycle demo pack\",\n    \"creator\": \"PACT Public Working Draft\","
+    },
+    {
+      "candidate_id": "DSSC-PARTICIPANT-ONBOARDING-LIFECYCLE-CAND-0020",
+      "surface_form": "deterministic participant lifecycle governance states",
+      "label": "LIFECYCLE_STATE",
+      "confidence": 0.7799,
+      "review_status": "candidate",
+      "span": {
+        "start": 3526,
+        "end": 3579
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 106,
+        "line_end": 106
+      },
+      "context": "ublic Working Draft\",\n    \"issued\": \"2026-04-14\",\n    \"rights\": \"Apache-2.0\",\n    \"description\": \"Demonstrate deterministic participant lifecycle governance states for DSSC-aligned admission and trust operations.\"\n  }\n}\n\n\n### FILE: decision-space.json\n{\n  \"schema_version\":"
+    },
+    {
+      "candidate_id": "DSSC-PARTICIPANT-ONBOARDING-LIFECYCLE-CAND-0021",
+      "surface_form": "dssc-participant-onb",
+      "label": "PARTICIPANT_ID",
+      "confidence": 0.4462,
+      "review_status": "candidate",
+      "span": {
+        "start": 3764,
+        "end": 3784
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 115,
+        "line_end": 115
+      },
+      "context": "on-space.json\n{\n  \"schema_version\": \"1.0\",\n  \"domain\": \"dssc-participant-onboarding-lifecycle\",\n  \"pack_id\": \"dssc-participant-onboarding-lifecycle-demo-0.1.0\",\n  \"version\": \"0.1.0\",\n  \"out_of_scope_behavior\": \"escalate\",\n  \"state_model\": {"
+    },
+    {
+      "candidate_id": "DSSC-PARTICIPANT-ONBOARDING-LIFECYCLE-CAND-0022",
+      "surface_form": "dssc-participant-onboarding-lifecycle-demo-0.1.0",
+      "label": "POLICY_SNAPSHOT",
+      "confidence": 0.4787,
+      "review_status": "candidate",
+      "span": {
+        "start": 3764,
+        "end": 3812
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 115,
+        "line_end": 115
+      },
+      "context": "on-space.json\n{\n  \"schema_version\": \"1.0\",\n  \"domain\": \"dssc-participant-onboarding-lifecycle\",\n  \"pack_id\": \"dssc-participant-onboarding-lifecycle-demo-0.1.0\",\n  \"version\": \"0.1.0\",\n  \"out_of_scope_behavior\": \"escalate\",\n  \"state_model\": {\n    \"states\": [\n      \"ingr"
+    },
+    {
+      "candidate_id": "DSSC-PARTICIPANT-ONBOARDING-LIFECYCLE-CAND-0023",
+      "surface_form": "ingress",
+      "label": "LIFECYCLE_STATE",
+      "confidence": 0.7823,
+      "review_status": "candidate",
+      "span": {
+        "start": 3918,
+        "end": 3925
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 120,
+        "line_end": 120
+      },
+      "context": ".1.0\",\n  \"version\": \"0.1.0\",\n  \"out_of_scope_behavior\": \"escalate\",\n  \"state_model\": {\n    \"states\": [\n      \"ingress\",\n      \"validated\",\n      \"classified\",\n      \"authorized\",\n      \"responded\",\n      \"rejected\",\n      \"esca"
+    },
+    {
+      "candidate_id": "DSSC-PARTICIPANT-ONBOARDING-LIFECYCLE-CAND-0024",
+      "surface_form": "classified",
+      "label": "INTENT_CLASS",
+      "confidence": 0.3591,
+      "review_status": "candidate",
+      "span": {
+        "start": 3954,
+        "end": 3964
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 122,
+        "line_end": 122
+      },
+      "context": "of_scope_behavior\": \"escalate\",\n  \"state_model\": {\n    \"states\": [\n      \"ingress\",\n      \"validated\",\n      \"classified\",\n      \"authorized\",\n      \"responded\",\n      \"rejected\",\n      \"escalated\"\n    ],\n    \"initial_state\": \"ing"
+    },
+    {
+      "candidate_id": "DSSC-PARTICIPANT-ONBOARDING-LIFECYCLE-CAND-0025",
+      "surface_form": "responded",
+      "label": "INTENT_CLASS",
+      "confidence": 0.4841,
+      "review_status": "candidate",
+      "span": {
+        "start": 3994,
+        "end": 4003
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 124,
+        "line_end": 124
+      },
+      "context": "_model\": {\n    \"states\": [\n      \"ingress\",\n      \"validated\",\n      \"classified\",\n      \"authorized\",\n      \"responded\",\n      \"rejected\",\n      \"escalated\"\n    ],\n    \"initial_state\": \"ingress\",\n    \"terminal_states\": [\n      \""
+    },
+    {
+      "candidate_id": "DSSC-PARTICIPANT-ONBOARDING-LIFECYCLE-CAND-0026",
+      "surface_form": "rejected",
+      "label": "DENY_REASON_CODE",
+      "confidence": 0.5737,
+      "review_status": "candidate",
+      "span": {
+        "start": 4013,
+        "end": 4021
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 125,
+        "line_end": 125
+      },
+      "context": "tes\": [\n      \"ingress\",\n      \"validated\",\n      \"classified\",\n      \"authorized\",\n      \"responded\",\n      \"rejected\",\n      \"escalated\"\n    ],\n    \"initial_state\": \"ingress\",\n    \"terminal_states\": [\n      \"responded\",\n      "
+    },
+    {
+      "candidate_id": "DSSC-PARTICIPANT-ONBOARDING-LIFECYCLE-CAND-0027",
+      "surface_form": "escalated",
+      "label": "DENY_REASON_CODE",
+      "confidence": 0.4143,
+      "review_status": "candidate",
+      "span": {
+        "start": 4031,
+        "end": 4040
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 126,
+        "line_end": 126
+      },
+      "context": "ress\",\n      \"validated\",\n      \"classified\",\n      \"authorized\",\n      \"responded\",\n      \"rejected\",\n      \"escalated\"\n    ],\n    \"initial_state\": \"ingress\",\n    \"terminal_states\": [\n      \"responded\",\n      \"rejected\",\n      \""
+    },
+    {
+      "candidate_id": "DSSC-PARTICIPANT-ONBOARDING-LIFECYCLE-CAND-0028",
+      "surface_form": "ingress",
+      "label": "LIFECYCLE_STATE",
+      "confidence": 0.8218,
+      "review_status": "candidate",
+      "span": {
+        "start": 4071,
+        "end": 4078
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 128,
+        "line_end": 128
+      },
+      "context": "ied\",\n      \"authorized\",\n      \"responded\",\n      \"rejected\",\n      \"escalated\"\n    ],\n    \"initial_state\": \"ingress\",\n    \"terminal_states\": [\n      \"responded\",\n      \"rejected\",\n      \"escalated\"\n    ]\n  },\n  \"intent_resour"
+    },
+    {
+      "candidate_id": "DSSC-PARTICIPANT-ONBOARDING-LIFECYCLE-CAND-0029",
+      "surface_form": "responded",
+      "label": "INTENT_CLASS",
+      "confidence": 0.4621,
+      "review_status": "candidate",
+      "span": {
+        "start": 4113,
+        "end": 4122
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 130,
+        "line_end": 130
+      },
+      "context": "\",\n      \"rejected\",\n      \"escalated\"\n    ],\n    \"initial_state\": \"ingress\",\n    \"terminal_states\": [\n      \"responded\",\n      \"rejected\",\n      \"escalated\"\n    ]\n  },\n  \"intent_resource_map\": {\n    \"dssc.participant.transition_"
+    },
+    {
+      "candidate_id": "DSSC-PARTICIPANT-ONBOARDING-LIFECYCLE-CAND-0030",
+      "surface_form": "rejected",
+      "label": "DENY_REASON_CODE",
+      "confidence": 0.6139,
+      "review_status": "candidate",
+      "span": {
+        "start": 4132,
+        "end": 4140
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 131,
+        "line_end": 131
+      },
+      "context": ",\n      \"escalated\"\n    ],\n    \"initial_state\": \"ingress\",\n    \"terminal_states\": [\n      \"responded\",\n      \"rejected\",\n      \"escalated\"\n    ]\n  },\n  \"intent_resource_map\": {\n    \"dssc.participant.transition_state.v1\": [\n     "
+    },
+    {
+      "candidate_id": "DSSC-PARTICIPANT-ONBOARDING-LIFECYCLE-CAND-0031",
+      "surface_form": "escalated",
+      "label": "DENY_REASON_CODE",
+      "confidence": 0.4572,
+      "review_status": "candidate",
+      "span": {
+        "start": 4150,
+        "end": 4159
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 132,
+        "line_end": 132
+      },
+      "context": "\"\n    ],\n    \"initial_state\": \"ingress\",\n    \"terminal_states\": [\n      \"responded\",\n      \"rejected\",\n      \"escalated\"\n    ]\n  },\n  \"intent_resource_map\": {\n    \"dssc.participant.transition_state.v1\": [\n      \"GovernanceDecisio"
+    },
+    {
+      "candidate_id": "DSSC-PARTICIPANT-ONBOARDING-LIFECYCLE-CAND-0032",
+      "surface_form": "participant",
+      "label": "PARTICIPANT_ID",
+      "confidence": 0.6432,
+      "review_status": "candidate",
+      "span": {
+        "start": 4209,
+        "end": 4220
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 136,
+        "line_end": 136
+      },
+      "context": "es\": [\n      \"responded\",\n      \"rejected\",\n      \"escalated\"\n    ]\n  },\n  \"intent_resource_map\": {\n    \"dssc.participant.transition_state.v1\": [\n      \"GovernanceDecision\"\n    ],\n    \"dssc.participant.evaluate_admission.v1\": [\n   "
+    },
+    {
+      "candidate_id": "DSSC-PARTICIPANT-ONBOARDING-LIFECYCLE-CAND-0033",
+      "surface_form": "transition_state",
+      "label": "LIFECYCLE_STATE",
+      "confidence": 0.536,
+      "review_status": "candidate",
+      "span": {
+        "start": 4221,
+        "end": 4237
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 136,
+        "line_end": 136
+      },
+      "context": " \"responded\",\n      \"rejected\",\n      \"escalated\"\n    ]\n  },\n  \"intent_resource_map\": {\n    \"dssc.participant.transition_state.v1\": [\n      \"GovernanceDecision\"\n    ],\n    \"dssc.participant.evaluate_admission.v1\": [\n      \"GovernanceDec"
+    },
+    {
+      "candidate_id": "DSSC-PARTICIPANT-ONBOARDING-LIFECYCLE-CAND-0034",
+      "surface_form": "GovernanceDecision",
+      "label": "TRANSITION_RULE",
+      "confidence": 0.4972,
+      "review_status": "candidate",
+      "span": {
+        "start": 4252,
+        "end": 4270
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 137,
+        "line_end": 137
+      },
+      "context": "\n      \"escalated\"\n    ]\n  },\n  \"intent_resource_map\": {\n    \"dssc.participant.transition_state.v1\": [\n      \"GovernanceDecision\"\n    ],\n    \"dssc.participant.evaluate_admission.v1\": [\n      \"GovernanceDecision\"\n    ]\n  },\n  \"required_fie"
+    },
+    {
+      "candidate_id": "DSSC-PARTICIPANT-ONBOARDING-LIFECYCLE-CAND-0035",
+      "surface_form": "participant",
+      "label": "PARTICIPANT_ID",
+      "confidence": 0.668,
+      "review_status": "candidate",
+      "span": {
+        "start": 4289,
+        "end": 4300
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 139,
+        "line_end": 139
+      },
+      "context": "nt_resource_map\": {\n    \"dssc.participant.transition_state.v1\": [\n      \"GovernanceDecision\"\n    ],\n    \"dssc.participant.evaluate_admission.v1\": [\n      \"GovernanceDecision\"\n    ]\n  },\n  \"required_fields_by_intent\": {\n    \"dssc.pa"
+    },
+    {
+      "candidate_id": "DSSC-PARTICIPANT-ONBOARDING-LIFECYCLE-CAND-0036",
+      "surface_form": "GovernanceDecision",
+      "label": "TRANSITION_RULE",
+      "confidence": 0.4146,
+      "review_status": "candidate",
+      "span": {
+        "start": 4334,
+        "end": 4352
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 140,
+        "line_end": 140
+      },
+      "context": "nsition_state.v1\": [\n      \"GovernanceDecision\"\n    ],\n    \"dssc.participant.evaluate_admission.v1\": [\n      \"GovernanceDecision\"\n    ]\n  },\n  \"required_fields_by_intent\": {\n    \"dssc.participant.transition_state.v1\": [\n      \"policy_snap"
+    },
+    {
+      "candidate_id": "DSSC-PARTICIPANT-ONBOARDING-LIFECYCLE-CAND-0037",
+      "surface_form": "participant",
+      "label": "PARTICIPANT_ID",
+      "confidence": 0.6243,
+      "review_status": "candidate",
+      "span": {
+        "start": 4408,
+        "end": 4419
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 144,
+        "line_end": 144
+      },
+      "context": "nt.evaluate_admission.v1\": [\n      \"GovernanceDecision\"\n    ]\n  },\n  \"required_fields_by_intent\": {\n    \"dssc.participant.transition_state.v1\": [\n      \"policy_snapshot_id\"\n    ],\n    \"dssc.participant.evaluate_admission.v1\": [\n   "
+    },
+    {
+      "candidate_id": "DSSC-PARTICIPANT-ONBOARDING-LIFECYCLE-CAND-0038",
+      "surface_form": "transition_state",
+      "label": "LIFECYCLE_STATE",
+      "confidence": 0.5965,
+      "review_status": "candidate",
+      "span": {
+        "start": 4420,
+        "end": 4436
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 144,
+        "line_end": 144
+      },
+      "context": "admission.v1\": [\n      \"GovernanceDecision\"\n    ]\n  },\n  \"required_fields_by_intent\": {\n    \"dssc.participant.transition_state.v1\": [\n      \"policy_snapshot_id\"\n    ],\n    \"dssc.participant.evaluate_admission.v1\": [\n      \"policy_snapsh"
+    },
+    {
+      "candidate_id": "DSSC-PARTICIPANT-ONBOARDING-LIFECYCLE-CAND-0039",
+      "surface_form": "policy_snapshot_id",
+      "label": "POLICY_SNAPSHOT",
+      "confidence": 0.9571,
+      "review_status": "candidate",
+      "span": {
+        "start": 4451,
+        "end": 4469
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 145,
+        "line_end": 145
+      },
+      "context": "nceDecision\"\n    ]\n  },\n  \"required_fields_by_intent\": {\n    \"dssc.participant.transition_state.v1\": [\n      \"policy_snapshot_id\"\n    ],\n    \"dssc.participant.evaluate_admission.v1\": [\n      \"policy_snapshot_id\"\n    ]\n  },\n  \"deny_reason_"
+    },
+    {
+      "candidate_id": "DSSC-PARTICIPANT-ONBOARDING-LIFECYCLE-CAND-0040",
+      "surface_form": "participant",
+      "label": "PARTICIPANT_ID",
+      "confidence": 0.6282,
+      "review_status": "candidate",
+      "span": {
+        "start": 4488,
+        "end": 4499
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 147,
+        "line_end": 147
+      },
+      "context": "ields_by_intent\": {\n    \"dssc.participant.transition_state.v1\": [\n      \"policy_snapshot_id\"\n    ],\n    \"dssc.participant.evaluate_admission.v1\": [\n      \"policy_snapshot_id\"\n    ]\n  },\n  \"deny_reason_codes\": [\n    \"DENY_TRUST_PROO"
+    },
+    {
+      "candidate_id": "DSSC-PARTICIPANT-ONBOARDING-LIFECYCLE-CAND-0041",
+      "surface_form": "policy_snapshot_id",
+      "label": "POLICY_SNAPSHOT",
+      "confidence": 0.961,
+      "review_status": "candidate",
+      "span": {
+        "start": 4533,
+        "end": 4551
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 148,
+        "line_end": 148
+      },
+      "context": "nsition_state.v1\": [\n      \"policy_snapshot_id\"\n    ],\n    \"dssc.participant.evaluate_admission.v1\": [\n      \"policy_snapshot_id\"\n    ]\n  },\n  \"deny_reason_codes\": [\n    \"DENY_TRUST_PROOF_MISSING\",\n    \"DENY_STATE_TRANSITION_INVALID\",\n   "
+    },
+    {
+      "candidate_id": "DSSC-PARTICIPANT-ONBOARDING-LIFECYCLE-CAND-0042",
+      "surface_form": "deny_reason_codes",
+      "label": "DENY_REASON_CODE",
+      "confidence": 0.4953,
+      "review_status": "candidate",
+      "span": {
+        "start": 4567,
+        "end": 4584
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 151,
+        "line_end": 151
+      },
+      "context": "_snapshot_id\"\n    ],\n    \"dssc.participant.evaluate_admission.v1\": [\n      \"policy_snapshot_id\"\n    ]\n  },\n  \"deny_reason_codes\": [\n    \"DENY_TRUST_PROOF_MISSING\",\n    \"DENY_STATE_TRANSITION_INVALID\",\n    \"DENY_PARTICIPANT_REVOKED\",\n    "
+    },
+    {
+      "candidate_id": "DSSC-PARTICIPANT-ONBOARDING-LIFECYCLE-CAND-0043",
+      "surface_form": "DENY_TRU",
+      "label": "DENY_REASON_CODE",
+      "confidence": 0.5579,
+      "review_status": "candidate",
+      "span": {
+        "start": 4594,
+        "end": 4602
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 152,
+        "line_end": 152
+      },
+      "context": "ssc.participant.evaluate_admission.v1\": [\n      \"policy_snapshot_id\"\n    ]\n  },\n  \"deny_reason_codes\": [\n    \"DENY_TRUST_PROOF_MISSING\",\n    \"DENY_STATE_TRANSITION_INVALID\",\n    \"DENY_PARTICIPANT_REVOKED\",\n    \"PSC_BUNDLE_COMMIT"
+    },
+    {
+      "candidate_id": "DSSC-PARTICIPANT-ONBOARDING-LIFECYCLE-CAND-0044",
+      "surface_form": "DENY_TRUST_PROOF_MISSING",
+      "label": "DENY_REASON_CODE",
+      "confidence": 0.7766,
+      "review_status": "candidate",
+      "span": {
+        "start": 4594,
+        "end": 4618
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 152,
+        "line_end": 152
+      },
+      "context": "ssc.participant.evaluate_admission.v1\": [\n      \"policy_snapshot_id\"\n    ]\n  },\n  \"deny_reason_codes\": [\n    \"DENY_TRUST_PROOF_MISSING\",\n    \"DENY_STATE_TRANSITION_INVALID\",\n    \"DENY_PARTICIPANT_REVOKED\",\n    \"PSC_BUNDLE_COMMIT_MISMATCH\"\n  ]\n}"
+    },
+    {
+      "candidate_id": "DSSC-PARTICIPANT-ONBOARDING-LIFECYCLE-CAND-0045",
+      "surface_form": "DENY_STATE_TRANSITION_INVALID",
+      "label": "DENY_REASON_CODE",
+      "confidence": 0.7699,
+      "review_status": "candidate",
+      "span": {
+        "start": 4626,
+        "end": 4655
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 153,
+        "line_end": 153
+      },
+      "context": "on.v1\": [\n      \"policy_snapshot_id\"\n    ]\n  },\n  \"deny_reason_codes\": [\n    \"DENY_TRUST_PROOF_MISSING\",\n    \"DENY_STATE_TRANSITION_INVALID\",\n    \"DENY_PARTICIPANT_REVOKED\",\n    \"PSC_BUNDLE_COMMIT_MISMATCH\"\n  ]\n}\n\n\n### FILE: intent-mappings.json\n{\n "
+    },
+    {
+      "candidate_id": "DSSC-PARTICIPANT-ONBOARDING-LIFECYCLE-CAND-0046",
+      "surface_form": "DENY_PARTICIPANT_REVOKED",
+      "label": "DENY_REASON_CODE",
+      "confidence": 0.7284,
+      "review_status": "candidate",
+      "span": {
+        "start": 4663,
+        "end": 4687
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 154,
+        "line_end": 154
+      },
+      "context": "    ]\n  },\n  \"deny_reason_codes\": [\n    \"DENY_TRUST_PROOF_MISSING\",\n    \"DENY_STATE_TRANSITION_INVALID\",\n    \"DENY_PARTICIPANT_REVOKED\",\n    \"PSC_BUNDLE_COMMIT_MISMATCH\"\n  ]\n}\n\n\n### FILE: intent-mappings.json\n{\n  \"schema_version\": \"1.0\",\n  \"dom"
+    },
+    {
+      "candidate_id": "DSSC-PARTICIPANT-ONBOARDING-LIFECYCLE-CAND-0047",
+      "surface_form": "dssc-participant-onboarding-lifecycle",
+      "label": "JURISDICTION",
+      "confidence": 0.3842,
+      "review_status": "candidate",
+      "span": {
+        "start": 4804,
+        "end": 4841
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 163,
+        "line_end": 163
+      },
+      "context": "\"PSC_BUNDLE_COMMIT_MISMATCH\"\n  ]\n}\n\n\n### FILE: intent-mappings.json\n{\n  \"schema_version\": \"1.0\",\n  \"domain\": \"dssc-participant-onboarding-lifecycle\",\n  \"mappings\": [\n    {\n      \"concept_uri\": \"dssc:GovernanceSurface\",\n      \"intent_class\": \"dssc.participan"
+    },
+    {
+      "candidate_id": "DSSC-PARTICIPANT-ONBOARDING-LIFECYCLE-CAND-0048",
+      "surface_form": "GovernanceSurface",
+      "label": "JURISDICTION",
+      "confidence": 0.8895,
+      "review_status": "candidate",
+      "span": {
+        "start": 4893,
+        "end": 4910
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 166,
+        "line_end": 166
+      },
+      "context": " \"1.0\",\n  \"domain\": \"dssc-participant-onboarding-lifecycle\",\n  \"mappings\": [\n    {\n      \"concept_uri\": \"dssc:GovernanceSurface\",\n      \"intent_class\": \"dssc.participant.transition_state.v1\",\n      \"confidence_floor\": 0.76\n    },\n    {\n "
+    },
+    {
+      "candidate_id": "DSSC-PARTICIPANT-ONBOARDING-LIFECYCLE-CAND-0049",
+      "surface_form": "intent_class",
+      "label": "INTENT_CLASS",
+      "confidence": 0.4591,
+      "review_status": "candidate",
+      "span": {
+        "start": 4920,
+        "end": 4932
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 167,
+        "line_end": 167
+      },
+      "context": "articipant-onboarding-lifecycle\",\n  \"mappings\": [\n    {\n      \"concept_uri\": \"dssc:GovernanceSurface\",\n      \"intent_class\": \"dssc.participant.transition_state.v1\",\n      \"confidence_floor\": 0.76\n    },\n    {\n      \"concept_uri\": \"d"
+    },
+    {
+      "candidate_id": "DSSC-PARTICIPANT-ONBOARDING-LIFECYCLE-CAND-0050",
+      "surface_form": "participant",
+      "label": "INTENT_CLASS",
+      "confidence": 0.4141,
+      "review_status": "candidate",
+      "span": {
+        "start": 4941,
+        "end": 4952
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 167,
+        "line_end": 167
+      },
+      "context": "-lifecycle\",\n  \"mappings\": [\n    {\n      \"concept_uri\": \"dssc:GovernanceSurface\",\n      \"intent_class\": \"dssc.participant.transition_state.v1\",\n      \"confidence_floor\": 0.76\n    },\n    {\n      \"concept_uri\": \"dssc:GovernanceSurfac"
+    },
+    {
+      "candidate_id": "DSSC-PARTICIPANT-ONBOARDING-LIFECYCLE-CAND-0051",
+      "surface_form": "participant",
+      "label": "PARTICIPANT_ID",
+      "confidence": 0.5549,
+      "review_status": "candidate",
+      "span": {
+        "start": 4941,
+        "end": 4952
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 167,
+        "line_end": 167
+      },
+      "context": "-lifecycle\",\n  \"mappings\": [\n    {\n      \"concept_uri\": \"dssc:GovernanceSurface\",\n      \"intent_class\": \"dssc.participant.transition_state.v1\",\n      \"confidence_floor\": 0.76\n    },\n    {\n      \"concept_uri\": \"dssc:GovernanceSurfac"
+    },
+    {
+      "candidate_id": "DSSC-PARTICIPANT-ONBOARDING-LIFECYCLE-CAND-0052",
+      "surface_form": "transition_state",
+      "label": "TRANSITION_RULE",
+      "confidence": 0.3773,
+      "review_status": "candidate",
+      "span": {
+        "start": 4953,
+        "end": 4969
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 167,
+        "line_end": 167
+      },
+      "context": "\n  \"mappings\": [\n    {\n      \"concept_uri\": \"dssc:GovernanceSurface\",\n      \"intent_class\": \"dssc.participant.transition_state.v1\",\n      \"confidence_floor\": 0.76\n    },\n    {\n      \"concept_uri\": \"dssc:GovernanceSurface\",\n      \"intent"
+    },
+    {
+      "candidate_id": "DSSC-PARTICIPANT-ONBOARDING-LIFECYCLE-CAND-0053",
+      "surface_form": "v1",
+      "label": "POLICY_SNAPSHOT",
+      "confidence": 0.3762,
+      "review_status": "candidate",
+      "span": {
+        "start": 4970,
+        "end": 4972
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 167,
+        "line_end": 167
+      },
+      "context": "    {\n      \"concept_uri\": \"dssc:GovernanceSurface\",\n      \"intent_class\": \"dssc.participant.transition_state.v1\",\n      \"confidence_floor\": 0.76\n    },\n    {\n      \"concept_uri\": \"dssc:GovernanceSurface\",\n      \"intent_cl"
+    },
+    {
+      "candidate_id": "DSSC-PARTICIPANT-ONBOARDING-LIFECYCLE-CAND-0054",
+      "surface_form": "GovernanceSurface",
+      "label": "JURISDICTION",
+      "confidence": 0.8159,
+      "review_status": "candidate",
+      "span": {
+        "start": 5046,
+        "end": 5063
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 171,
+        "line_end": 171
+      },
+      "context": "dssc.participant.transition_state.v1\",\n      \"confidence_floor\": 0.76\n    },\n    {\n      \"concept_uri\": \"dssc:GovernanceSurface\",\n      \"intent_class\": \"dssc.participant.evaluate_admission.v1\",\n      \"confidence_floor\": 0.76\n    }\n  ]\n}\n"
+    },
+    {
+      "candidate_id": "DSSC-PARTICIPANT-ONBOARDING-LIFECYCLE-CAND-0055",
+      "surface_form": "intent_class",
+      "label": "INTENT_CLASS",
+      "confidence": 0.6232,
+      "review_status": "candidate",
+      "span": {
+        "start": 5073,
+        "end": 5085
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 172,
+        "line_end": 172
+      },
+      "context": "_state.v1\",\n      \"confidence_floor\": 0.76\n    },\n    {\n      \"concept_uri\": \"dssc:GovernanceSurface\",\n      \"intent_class\": \"dssc.participant.evaluate_admission.v1\",\n      \"confidence_floor\": 0.76\n    }\n  ]\n}\n\n\n### FILE: thesaurus-"
+    },
+    {
+      "candidate_id": "DSSC-PARTICIPANT-ONBOARDING-LIFECYCLE-CAND-0056",
+      "surface_form": "participant",
+      "label": "PARTICIPANT_ID",
+      "confidence": 0.5884,
+      "review_status": "candidate",
+      "span": {
+        "start": 5094,
+        "end": 5105
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 172,
+        "line_end": 172
+      },
+      "context": "nfidence_floor\": 0.76\n    },\n    {\n      \"concept_uri\": \"dssc:GovernanceSurface\",\n      \"intent_class\": \"dssc.participant.evaluate_admission.v1\",\n      \"confidence_floor\": 0.76\n    }\n  ]\n}\n\n\n### FILE: thesaurus-local.json\n{\n  \"sche"
+    },
+    {
+      "candidate_id": "DSSC-PARTICIPANT-ONBOARDING-LIFECYCLE-CAND-0057",
+      "surface_form": "v1",
+      "label": "POLICY_SNAPSHOT",
+      "confidence": 0.4154,
+      "review_status": "candidate",
+      "span": {
+        "start": 5125,
+        "end": 5127
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 172,
+        "line_end": 172
+      },
+      "context": "  {\n      \"concept_uri\": \"dssc:GovernanceSurface\",\n      \"intent_class\": \"dssc.participant.evaluate_admission.v1\",\n      \"confidence_floor\": 0.76\n    }\n  ]\n}\n\n\n### FILE: thesaurus-local.json\n{\n  \"schema_version\": \"1.0\",\n  "
+    },
+    {
+      "candidate_id": "DSSC-PARTICIPANT-ONBOARDING-LIFECYCLE-CAND-0058",
+      "surface_form": "domain",
+      "label": "JURISDICTION",
+      "confidence": 0.5145,
+      "review_status": "candidate",
+      "span": {
+        "start": 5238,
+        "end": 5244
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 182,
+        "line_end": 182
+      },
+      "context": ",\n      \"confidence_floor\": 0.76\n    }\n  ]\n}\n\n\n### FILE: thesaurus-local.json\n{\n  \"schema_version\": \"1.0\",\n  \"domain\": \"dssc-participant-onboarding-lifecycle\",\n  \"last_modified\": \"2026-04-14\",\n  \"concepts\": [\n    {\n      \"conc"
+    },
+    {
+      "candidate_id": "DSSC-PARTICIPANT-ONBOARDING-LIFECYCLE-CAND-0059",
+      "surface_form": "concept_id",
+      "label": "IDENTIFIER",
+      "confidence": 0.3873,
+      "review_status": "candidate",
+      "span": {
+        "start": 5350,
+        "end": 5360
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 186,
+        "line_end": 186
+      },
+      "context": "main\": \"dssc-participant-onboarding-lifecycle\",\n  \"last_modified\": \"2026-04-14\",\n  \"concepts\": [\n    {\n      \"concept_id\": \"dssc-participant-onboarding-lifecycle.candidate.v1\",\n      \"preferred_term\": \"candidate\",\n      \"synonyms\""
+    },
+    {
+      "candidate_id": "DSSC-PARTICIPANT-ONBOARDING-LIFECYCLE-CAND-0060",
+      "surface_form": "candidate",
+      "label": "IDENTIFIER",
+      "confidence": 0.4762,
+      "review_status": "candidate",
+      "span": {
+        "start": 5402,
+        "end": 5411
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 186,
+        "line_end": 186
+      },
+      "context": "ast_modified\": \"2026-04-14\",\n  \"concepts\": [\n    {\n      \"concept_id\": \"dssc-participant-onboarding-lifecycle.candidate.v1\",\n      \"preferred_term\": \"candidate\",\n      \"synonyms\": [],\n      \"register_variants\": {},\n      \"domain_"
+    },
+    {
+      "candidate_id": "DSSC-PARTICIPANT-ONBOARDING-LIFECYCLE-CAND-0061",
+      "surface_form": "v1",
+      "label": "POLICY_SNAPSHOT",
+      "confidence": 0.3525,
+      "review_status": "candidate",
+      "span": {
+        "start": 5412,
+        "end": 5414
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 186,
+        "line_end": 186
+      },
+      "context": "ed\": \"2026-04-14\",\n  \"concepts\": [\n    {\n      \"concept_id\": \"dssc-participant-onboarding-lifecycle.candidate.v1\",\n      \"preferred_term\": \"candidate\",\n      \"synonyms\": [],\n      \"register_variants\": {},\n      \"domain_voc"
+    },
+    {
+      "candidate_id": "DSSC-PARTICIPANT-ONBOARDING-LIFECYCLE-CAND-0062",
+      "surface_form": "candidate",
+      "label": "PARTICIPANT_ID",
+      "confidence": 0.7879,
+      "review_status": "candidate",
+      "span": {
+        "start": 5442,
+        "end": 5451
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 187,
+        "line_end": 187
+      },
+      "context": "\": [\n    {\n      \"concept_id\": \"dssc-participant-onboarding-lifecycle.candidate.v1\",\n      \"preferred_term\": \"candidate\",\n      \"synonyms\": [],\n      \"register_variants\": {},\n      \"domain_vocabulary\": {},\n      \"translations\": {"
+    },
+    {
+      "candidate_id": "DSSC-PARTICIPANT-ONBOARDING-LIFECYCLE-CAND-0063",
+      "surface_form": "GovernanceSurface",
+      "label": "JURISDICTION",
+      "confidence": 0.612,
+      "review_status": "candidate",
+      "span": {
+        "start": 5582,
+        "end": 5599
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 192,
+        "line_end": 192
+      },
+      "context": "[],\n      \"register_variants\": {},\n      \"domain_vocabulary\": {},\n      \"translations\": {},\n      \"broader\": \"GovernanceSurface\",\n      \"narrower\": [],\n      \"source_refs\": [\n        \"dssc-canonical-source-catalog\"\n      ],\n      \"ner_pr"
+    },
+    {
+      "candidate_id": "DSSC-PARTICIPANT-ONBOARDING-LIFECYCLE-CAND-0064",
+      "surface_form": "concept_id",
+      "label": "IDENTIFIER",
+      "confidence": 0.3706,
+      "review_status": "candidate",
+      "span": {
+        "start": 5745,
+        "end": 5755
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 200,
+        "line_end": 200
+      },
+      "context": "ce_refs\": [\n        \"dssc-canonical-source-catalog\"\n      ],\n      \"ner_provenance\": null\n    },\n    {\n      \"concept_id\": \"dssc-participant-onboarding-lifecycle.pending.review.v1\",\n      \"preferred_term\": \"pending_review\",\n      "
+    },
+    {
+      "candidate_id": "DSSC-PARTICIPANT-ONBOARDING-LIFECYCLE-CAND-0065",
+      "surface_form": "pending_review",
+      "label": "IDENTIFIER",
+      "confidence": 0.4543,
+      "review_status": "candidate",
+      "span": {
+        "start": 5842,
+        "end": 5856
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 201,
+        "line_end": 201
+      },
+      "context": "    {\n      \"concept_id\": \"dssc-participant-onboarding-lifecycle.pending.review.v1\",\n      \"preferred_term\": \"pending_review\",\n      \"synonyms\": [],\n      \"register_variants\": {},\n      \"domain_vocabulary\": {},\n      \"translations\": {"
+    },
+    {
+      "candidate_id": "DSSC-PARTICIPANT-ONBOARDING-LIFECYCLE-CAND-0066",
+      "surface_form": "GovernanceSurface",
+      "label": "JURISDICTION",
+      "confidence": 0.6393,
+      "review_status": "candidate",
+      "span": {
+        "start": 5987,
+        "end": 6004
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 206,
+        "line_end": 206
+      },
+      "context": "[],\n      \"register_variants\": {},\n      \"domain_vocabulary\": {},\n      \"translations\": {},\n      \"broader\": \"GovernanceSurface\",\n      \"narrower\": [],\n      \"source_refs\": [\n        \"dssc-canonical-source-catalog\"\n      ],\n      \"ner_pr"
+    },
+    {
+      "candidate_id": "DSSC-PARTICIPANT-ONBOARDING-LIFECYCLE-CAND-0067",
+      "surface_form": "concept_id",
+      "label": "IDENTIFIER",
+      "confidence": 0.3664,
+      "review_status": "candidate",
+      "span": {
+        "start": 6150,
+        "end": 6160
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 214,
+        "line_end": 214
+      },
+      "context": "ce_refs\": [\n        \"dssc-canonical-source-catalog\"\n      ],\n      \"ner_provenance\": null\n    },\n    {\n      \"concept_id\": \"dssc-participant-onboarding-lifecycle.admitted.v1\",\n      \"preferred_term\": \"admitted\",\n      \"synonyms\": "
+    },
+    {
+      "candidate_id": "DSSC-PARTICIPANT-ONBOARDING-LIFECYCLE-CAND-0068",
+      "surface_form": "admitted",
+      "label": "IDENTIFIER",
+      "confidence": 0.5315,
+      "review_status": "candidate",
+      "span": {
+        "start": 6202,
+        "end": 6210
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 214,
+        "line_end": 214
+      },
+      "context": "      ],\n      \"ner_provenance\": null\n    },\n    {\n      \"concept_id\": \"dssc-participant-onboarding-lifecycle.admitted.v1\",\n      \"preferred_term\": \"admitted\",\n      \"synonyms\": [],\n      \"register_variants\": {},\n      \"domain_v"
+    },
+    {
+      "candidate_id": "DSSC-PARTICIPANT-ONBOARDING-LIFECYCLE-CAND-0069",
+      "surface_form": "admitted",
+      "label": "IDENTIFIER",
+      "confidence": 0.6601,
+      "review_status": "candidate",
+      "span": {
+        "start": 6241,
+        "end": 6249
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 215,
+        "line_end": 215
+      },
+      "context": "   },\n    {\n      \"concept_id\": \"dssc-participant-onboarding-lifecycle.admitted.v1\",\n      \"preferred_term\": \"admitted\",\n      \"synonyms\": [],\n      \"register_variants\": {},\n      \"domain_vocabulary\": {},\n      \"translations\": {"
+    },
+    {
+      "candidate_id": "DSSC-PARTICIPANT-ONBOARDING-LIFECYCLE-CAND-0070",
+      "surface_form": "GovernanceSurface",
+      "label": "JURISDICTION",
+      "confidence": 0.7601,
+      "review_status": "candidate",
+      "span": {
+        "start": 6380,
+        "end": 6397
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 220,
+        "line_end": 220
+      },
+      "context": "[],\n      \"register_variants\": {},\n      \"domain_vocabulary\": {},\n      \"translations\": {},\n      \"broader\": \"GovernanceSurface\",\n      \"narrower\": [],\n      \"source_refs\": [\n        \"dssc-canonical-source-catalog\"\n      ],\n      \"ner_pr"
+    },
+    {
+      "candidate_id": "DSSC-PARTICIPANT-ONBOARDING-LIFECYCLE-CAND-0071",
+      "surface_form": "restricted",
+      "label": "IDENTIFIER",
+      "confidence": 0.4266,
+      "review_status": "candidate",
+      "span": {
+        "start": 6595,
+        "end": 6605
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 228,
+        "line_end": 228
+      },
+      "context": "      ],\n      \"ner_provenance\": null\n    },\n    {\n      \"concept_id\": \"dssc-participant-onboarding-lifecycle.restricted.v1\",\n      \"preferred_term\": \"restricted\",\n      \"synonyms\": [],\n      \"register_variants\": {},\n      \"domain"
+    },
+    {
+      "candidate_id": "DSSC-PARTICIPANT-ONBOARDING-LIFECYCLE-CAND-0072",
+      "surface_form": "restricted",
+      "label": "IDENTIFIER",
+      "confidence": 0.5717,
+      "review_status": "candidate",
+      "span": {
+        "start": 6636,
+        "end": 6646
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 229,
+        "line_end": 229
+      },
+      "context": " },\n    {\n      \"concept_id\": \"dssc-participant-onboarding-lifecycle.restricted.v1\",\n      \"preferred_term\": \"restricted\",\n      \"synonyms\": [],\n      \"register_variants\": {},\n      \"domain_vocabulary\": {},\n      \"translations\": {"
+    },
+    {
+      "candidate_id": "DSSC-PARTICIPANT-ONBOARDING-LIFECYCLE-CAND-0073",
+      "surface_form": "GovernanceSurface",
+      "label": "JURISDICTION",
+      "confidence": 0.6657,
+      "review_status": "candidate",
+      "span": {
+        "start": 6777,
+        "end": 6794
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 234,
+        "line_end": 234
+      },
+      "context": "[],\n      \"register_variants\": {},\n      \"domain_vocabulary\": {},\n      \"translations\": {},\n      \"broader\": \"GovernanceSurface\",\n      \"narrower\": [],\n      \"source_refs\": [\n        \"dssc-canonical-source-catalog\"\n      ],\n      \"ner_pr"
+    },
+    {
+      "candidate_id": "DSSC-PARTICIPANT-ONBOARDING-LIFECYCLE-CAND-0074",
+      "surface_form": "suspended",
+      "label": "DENY_REASON_CODE",
+      "confidence": 0.4444,
+      "review_status": "candidate",
+      "span": {
+        "start": 6992,
+        "end": 7001
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 242,
+        "line_end": 242
+      },
+      "context": "      ],\n      \"ner_provenance\": null\n    },\n    {\n      \"concept_id\": \"dssc-participant-onboarding-lifecycle.suspended.v1\",\n      \"preferred_term\": \"suspended\",\n      \"synonyms\": [],\n      \"register_variants\": {},\n      \"domain_"
+    },
+    {
+      "candidate_id": "DSSC-PARTICIPANT-ONBOARDING-LIFECYCLE-CAND-0075",
+      "surface_form": "suspended",
+      "label": "IDENTIFIER",
+      "confidence": 0.5137,
+      "review_status": "candidate",
+      "span": {
+        "start": 7032,
+        "end": 7041
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 243,
+        "line_end": 243
+      },
+      "context": "  },\n    {\n      \"concept_id\": \"dssc-participant-onboarding-lifecycle.suspended.v1\",\n      \"preferred_term\": \"suspended\",\n      \"synonyms\": [],\n      \"register_variants\": {},\n      \"domain_vocabulary\": {},\n      \"translations\": {"
+    },
+    {
+      "candidate_id": "DSSC-PARTICIPANT-ONBOARDING-LIFECYCLE-CAND-0076",
+      "surface_form": "suspended",
+      "label": "DENY_REASON_CODE",
+      "confidence": 0.3745,
+      "review_status": "candidate",
+      "span": {
+        "start": 7032,
+        "end": 7041
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 243,
+        "line_end": 243
+      },
+      "context": "  },\n    {\n      \"concept_id\": \"dssc-participant-onboarding-lifecycle.suspended.v1\",\n      \"preferred_term\": \"suspended\",\n      \"synonyms\": [],\n      \"register_variants\": {},\n      \"domain_vocabulary\": {},\n      \"translations\": {"
+    },
+    {
+      "candidate_id": "DSSC-PARTICIPANT-ONBOARDING-LIFECYCLE-CAND-0077",
+      "surface_form": "GovernanceSurface",
+      "label": "JURISDICTION",
+      "confidence": 0.5638,
+      "review_status": "candidate",
+      "span": {
+        "start": 7172,
+        "end": 7189
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 248,
+        "line_end": 248
+      },
+      "context": "[],\n      \"register_variants\": {},\n      \"domain_vocabulary\": {},\n      \"translations\": {},\n      \"broader\": \"GovernanceSurface\",\n      \"narrower\": [],\n      \"source_refs\": [\n        \"dssc-canonical-source-catalog\"\n      ],\n      \"ner_pr"
+    },
+    {
+      "candidate_id": "DSSC-PARTICIPANT-ONBOARDING-LIFECYCLE-CAND-0078",
+      "surface_form": "revoked",
+      "label": "DENY_REASON_CODE",
+      "confidence": 0.425,
+      "review_status": "candidate",
+      "span": {
+        "start": 7387,
+        "end": 7394
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 256,
+        "line_end": 256
+      },
+      "context": "      ],\n      \"ner_provenance\": null\n    },\n    {\n      \"concept_id\": \"dssc-participant-onboarding-lifecycle.revoked.v1\",\n      \"preferred_term\": \"revoked\",\n      \"synonyms\": [],\n      \"register_variants\": {},\n      \"domain_vo"
+    },
+    {
+      "candidate_id": "DSSC-PARTICIPANT-ONBOARDING-LIFECYCLE-CAND-0079",
+      "surface_form": "revoked",
+      "label": "DENY_REASON_CODE",
+      "confidence": 0.47,
+      "review_status": "candidate",
+      "span": {
+        "start": 7425,
+        "end": 7432
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 257,
+        "line_end": 257
+      },
+      "context": "    },\n    {\n      \"concept_id\": \"dssc-participant-onboarding-lifecycle.revoked.v1\",\n      \"preferred_term\": \"revoked\",\n      \"synonyms\": [],\n      \"register_variants\": {},\n      \"domain_vocabulary\": {},\n      \"translations\": {"
+    },
+    {
+      "candidate_id": "DSSC-PARTICIPANT-ONBOARDING-LIFECYCLE-CAND-0080",
+      "surface_form": "GovernanceSurface",
+      "label": "JURISDICTION",
+      "confidence": 0.5879,
+      "review_status": "candidate",
+      "span": {
+        "start": 7563,
+        "end": 7580
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 262,
+        "line_end": 262
+      },
+      "context": "[],\n      \"register_variants\": {},\n      \"domain_vocabulary\": {},\n      \"translations\": {},\n      \"broader\": \"GovernanceSurface\",\n      \"narrower\": [],\n      \"source_refs\": [\n        \"dssc-canonical-source-catalog\"\n      ],\n      \"ner_pr"
+    },
+    {
+      "candidate_id": "DSSC-PARTICIPANT-ONBOARDING-LIFECYCLE-CAND-0081",
+      "surface_form": "reinstated.v1",
+      "label": "DENY_REASON_CODE",
+      "confidence": 0.4661,
+      "review_status": "candidate",
+      "span": {
+        "start": 7778,
+        "end": 7791
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 270,
+        "line_end": 270
+      },
+      "context": "      ],\n      \"ner_provenance\": null\n    },\n    {\n      \"concept_id\": \"dssc-participant-onboarding-lifecycle.reinstated.v1\",\n      \"preferred_term\": \"reinstated\",\n      \"synonyms\": [],\n      \"register_variants\": {},\n      \"domain_vo"
+    },
+    {
+      "candidate_id": "DSSC-PARTICIPANT-ONBOARDING-LIFECYCLE-CAND-0082",
+      "surface_form": "reinstated",
+      "label": "DENY_REASON_CODE",
+      "confidence": 0.4256,
+      "review_status": "candidate",
+      "span": {
+        "start": 7819,
+        "end": 7829
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 271,
+        "line_end": 271
+      },
+      "context": " },\n    {\n      \"concept_id\": \"dssc-participant-onboarding-lifecycle.reinstated.v1\",\n      \"preferred_term\": \"reinstated\",\n      \"synonyms\": [],\n      \"register_variants\": {},\n      \"domain_vocabulary\": {},\n      \"translations\": {"
+    },
+    {
+      "candidate_id": "DSSC-PARTICIPANT-ONBOARDING-LIFECYCLE-CAND-0083",
+      "surface_form": "GovernanceSurface",
+      "label": "JURISDICTION",
+      "confidence": 0.6708,
+      "review_status": "candidate",
+      "span": {
+        "start": 7960,
+        "end": 7977
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 276,
+        "line_end": 276
+      },
+      "context": "[],\n      \"register_variants\": {},\n      \"domain_vocabulary\": {},\n      \"translations\": {},\n      \"broader\": \"GovernanceSurface\",\n      \"narrower\": [],\n      \"source_refs\": [\n        \"dssc-canonical-source-catalog\"\n      ],\n      \"ner_pr"
+    },
+    {
+      "candidate_id": "DSSC-PARTICIPANT-ONBOARDING-LIFECYCLE-CAND-0084",
+      "surface_form": "dssc-participant-onboarding-lifecycle",
+      "label": "TRANSITION_RULE",
+      "confidence": 0.475,
+      "review_status": "candidate",
+      "span": {
+        "start": 8183,
+        "end": 8220
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 290,
+        "line_end": 290
+      },
+      "context": "\n      \"ner_provenance\": null\n    }\n  ]\n}\n\n\n### FILE: patterns.json\n{\n  \"schema_version\": \"1.0\",\n  \"domain\": \"dssc-participant-onboarding-lifecycle\",\n  \"patterns\": [\n    {\n      \"id\": \"dssc_participant_transition_state_v1\",\n      \"concept_uri\": \"dssc:Govern"
+    },
+    {
+      "candidate_id": "DSSC-PARTICIPANT-ONBOARDING-LIFECYCLE-CAND-0085",
+      "surface_form": "id",
+      "label": "IDENTIFIER",
+      "confidence": 0.4309,
+      "review_status": "candidate",
+      "span": {
+        "start": 8252,
+        "end": 8254
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 293,
+        "line_end": 293
+      },
+      "context": "\n  \"schema_version\": \"1.0\",\n  \"domain\": \"dssc-participant-onboarding-lifecycle\",\n  \"patterns\": [\n    {\n      \"id\": \"dssc_participant_transition_state_v1\",\n      \"concept_uri\": \"dssc:GovernanceSurface\",\n      \"entity_type\":"
+    },
+    {
+      "candidate_id": "DSSC-PARTICIPANT-ONBOARDING-LIFECYCLE-CAND-0086",
+      "surface_form": "dssc_participant_transiti",
+      "label": "TRANSITION_RULE",
+      "confidence": 0.4335,
+      "review_status": "candidate",
+      "span": {
+        "start": 8258,
+        "end": 8283
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 293,
+        "line_end": 293
+      },
+      "context": "hema_version\": \"1.0\",\n  \"domain\": \"dssc-participant-onboarding-lifecycle\",\n  \"patterns\": [\n    {\n      \"id\": \"dssc_participant_transition_state_v1\",\n      \"concept_uri\": \"dssc:GovernanceSurface\",\n      \"entity_type\": \"intent_hint\",\n      \"regex\""
+    },
+    {
+      "candidate_id": "DSSC-PARTICIPANT-ONBOARDING-LIFECYCLE-CAND-0087",
+      "surface_form": "dssc_participant_transition_state_v1",
+      "label": "LIFECYCLE_STATE",
+      "confidence": 0.4092,
+      "review_status": "candidate",
+      "span": {
+        "start": 8258,
+        "end": 8294
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 293,
+        "line_end": 293
+      },
+      "context": "hema_version\": \"1.0\",\n  \"domain\": \"dssc-participant-onboarding-lifecycle\",\n  \"patterns\": [\n    {\n      \"id\": \"dssc_participant_transition_state_v1\",\n      \"concept_uri\": \"dssc:GovernanceSurface\",\n      \"entity_type\": \"intent_hint\",\n      \"regex\": \"(?i)\\\\bd"
+    },
+    {
+      "candidate_id": "DSSC-PARTICIPANT-ONBOARDING-LIFECYCLE-CAND-0088",
+      "surface_form": "intent_hint",
+      "label": "INTENT_CLASS",
+      "confidence": 0.6769,
+      "review_status": "candidate",
+      "span": {
+        "start": 8366,
+        "end": 8377
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 295,
+        "line_end": 295
+      },
+      "context": " \"dssc_participant_transition_state_v1\",\n      \"concept_uri\": \"dssc:GovernanceSurface\",\n      \"entity_type\": \"intent_hint\",\n      \"regex\": \"(?i)\\\\bdssc\\\\.participant\\\\.transition_state\\\\.v1\\\\b\",\n      \"examples\": [\n        \"dssc.pa"
+    },
+    {
+      "candidate_id": "DSSC-PARTICIPANT-ONBOARDING-LIFECYCLE-CAND-0089",
+      "surface_form": "participant",
+      "label": "PARTICIPANT_ID",
+      "confidence": 0.7699,
+      "review_status": "candidate",
+      "span": {
+        "start": 8410,
+        "end": 8421
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 296,
+        "line_end": 296
+      },
+      "context": "   \"concept_uri\": \"dssc:GovernanceSurface\",\n      \"entity_type\": \"intent_hint\",\n      \"regex\": \"(?i)\\\\bdssc\\\\.participant\\\\.transition_state\\\\.v1\\\\b\",\n      \"examples\": [\n        \"dssc.participant.transition_state.v1\"\n      ]\n    }"
+    },
+    {
+      "candidate_id": "DSSC-PARTICIPANT-ONBOARDING-LIFECYCLE-CAND-0090",
+      "surface_form": "transition_state",
+      "label": "LIFECYCLE_STATE",
+      "confidence": 0.5279,
+      "review_status": "candidate",
+      "span": {
+        "start": 8424,
+        "end": 8440
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 296,
+        "line_end": 296
+      },
+      "context": "i\": \"dssc:GovernanceSurface\",\n      \"entity_type\": \"intent_hint\",\n      \"regex\": \"(?i)\\\\bdssc\\\\.participant\\\\.transition_state\\\\.v1\\\\b\",\n      \"examples\": [\n        \"dssc.participant.transition_state.v1\"\n      ]\n    },\n    {\n      \"id\":"
+    },
+    {
+      "candidate_id": "DSSC-PARTICIPANT-ONBOARDING-LIFECYCLE-CAND-0091",
+      "surface_form": "participant",
+      "label": "PARTICIPANT_ID",
+      "confidence": 0.7663,
+      "review_status": "candidate",
+      "span": {
+        "start": 8485,
+        "end": 8496
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 298,
+        "line_end": 298
+      },
+      "context": "nt\",\n      \"regex\": \"(?i)\\\\bdssc\\\\.participant\\\\.transition_state\\\\.v1\\\\b\",\n      \"examples\": [\n        \"dssc.participant.transition_state.v1\"\n      ]\n    },\n    {\n      \"id\": \"dssc_participant_evaluate_admission_v1\",\n      \"concep"
+    },
+    {
+      "candidate_id": "DSSC-PARTICIPANT-ONBOARDING-LIFECYCLE-CAND-0092",
+      "surface_form": "transition_state",
+      "label": "LIFECYCLE_STATE",
+      "confidence": 0.4671,
+      "review_status": "candidate",
+      "span": {
+        "start": 8497,
+        "end": 8513
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 298,
+        "line_end": 298
+      },
+      "context": "regex\": \"(?i)\\\\bdssc\\\\.participant\\\\.transition_state\\\\.v1\\\\b\",\n      \"examples\": [\n        \"dssc.participant.transition_state.v1\"\n      ]\n    },\n    {\n      \"id\": \"dssc_participant_evaluate_admission_v1\",\n      \"concept_uri\": \"dssc:Gov"
+    },
+    {
+      "candidate_id": "DSSC-PARTICIPANT-ONBOARDING-LIFECYCLE-CAND-0093",
+      "surface_form": "id",
+      "label": "IDENTIFIER",
+      "confidence": 0.5336,
+      "review_status": "candidate",
+      "span": {
+        "start": 8546,
+        "end": 8548
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 302,
+        "line_end": 302
+      },
+      "context": "tate\\\\.v1\\\\b\",\n      \"examples\": [\n        \"dssc.participant.transition_state.v1\"\n      ]\n    },\n    {\n      \"id\": \"dssc_participant_evaluate_admission_v1\",\n      \"concept_uri\": \"dssc:GovernanceSurface\",\n      \"entity_type"
+    },
+    {
+      "candidate_id": "DSSC-PARTICIPANT-ONBOARDING-LIFECYCLE-CAND-0094",
+      "surface_form": "intent_hint",
+      "label": "INTENT_CLASS",
+      "confidence": 0.7113,
+      "review_status": "candidate",
+      "span": {
+        "start": 8662,
+        "end": 8673
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 304,
+        "line_end": 304
+      },
+      "context": "dssc_participant_evaluate_admission_v1\",\n      \"concept_uri\": \"dssc:GovernanceSurface\",\n      \"entity_type\": \"intent_hint\",\n      \"regex\": \"(?i)\\\\bdssc\\\\.participant\\\\.evaluate_admission\\\\.v1\\\\b\",\n      \"examples\": [\n        \"dssc."
+    },
+    {
+      "candidate_id": "DSSC-PARTICIPANT-ONBOARDING-LIFECYCLE-CAND-0095",
+      "surface_form": "participant",
+      "label": "PARTICIPANT_ID",
+      "confidence": 0.8297,
+      "review_status": "candidate",
+      "span": {
+        "start": 8706,
+        "end": 8717
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 305,
+        "line_end": 305
+      },
+      "context": "   \"concept_uri\": \"dssc:GovernanceSurface\",\n      \"entity_type\": \"intent_hint\",\n      \"regex\": \"(?i)\\\\bdssc\\\\.participant\\\\.evaluate_admission\\\\.v1\\\\b\",\n      \"examples\": [\n        \"dssc.participant.evaluate_admission.v1\"\n      ]\n "
+    },
+    {
+      "candidate_id": "DSSC-PARTICIPANT-ONBOARDING-LIFECYCLE-CAND-0096",
+      "surface_form": "participant",
+      "label": "PARTICIPANT_ID",
+      "confidence": 0.7604,
+      "review_status": "candidate",
+      "span": {
+        "start": 8783,
+        "end": 8794
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 307,
+        "line_end": 307
+      },
+      "context": "\",\n      \"regex\": \"(?i)\\\\bdssc\\\\.participant\\\\.evaluate_admission\\\\.v1\\\\b\",\n      \"examples\": [\n        \"dssc.participant.evaluate_admission.v1\"\n      ]\n    }\n  ]\n}\n\n\n### FILE: source-extract/sources.json\n{\n  \"schema_version\": \"1.0"
+    },
+    {
+      "candidate_id": "DSSC-PARTICIPANT-ONBOARDING-LIFECYCLE-CAND-0097",
+      "surface_form": "v1",
+      "label": "POLICY_SNAPSHOT",
+      "confidence": 0.406,
+      "review_status": "candidate",
+      "span": {
+        "start": 8814,
+        "end": 8816
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 307,
+        "line_end": 307
+      },
+      "context": "\\.participant\\\\.evaluate_admission\\\\.v1\\\\b\",\n      \"examples\": [\n        \"dssc.participant.evaluate_admission.v1\"\n      ]\n    }\n  ]\n}\n\n\n### FILE: source-extract/sources.json\n{\n  \"schema_version\": \"1.0\",\n  \"generated_at_utc"
+    },
+    {
+      "candidate_id": "DSSC-PARTICIPANT-ONBOARDING-LIFECYCLE-CAND-0098",
+      "surface_form": "dssc-participant-onboarding-lifecycle-source-2026-04-14",
+      "label": "IDENTIFIER",
+      "confidence": 0.4613,
+      "review_status": "candidate",
+      "span": {
+        "start": 9034,
+        "end": 9089
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 319,
+        "line_end": 319
+      },
+      "context": "tc\": \"2026-04-14T12:00:00Z\",\n  \"vertical\": \"dssc-participant-onboarding-lifecycle-demo-pack\",\n  \"bundle_id\": \"dssc-participant-onboarding-lifecycle-source-2026-04-14\",\n  \"sources\": [\n    {\n      \"id\": \"canonical-source-1\",\n      \"title\": \"Canonical source 1\",\n      \"url\": \"h"
+    },
+    {
+      "candidate_id": "DSSC-PARTICIPANT-ONBOARDING-LIFECYCLE-CAND-0099",
+      "surface_form": "canonical-source-1",
+      "label": "IDENTIFIER",
+      "confidence": 0.6607,
+      "review_status": "candidate",
+      "span": {
+        "start": 9126,
+        "end": 9144
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 322,
+        "line_end": 322
+      },
+      "context": ",\n  \"bundle_id\": \"dssc-participant-onboarding-lifecycle-source-2026-04-14\",\n  \"sources\": [\n    {\n      \"id\": \"canonical-source-1\",\n      \"title\": \"Canonical source 1\",\n      \"url\": \"https://blueprint.dssc.eu/\",\n      \"type\": \"canonical_re"
+    },
+    {
+      "candidate_id": "DSSC-PARTICIPANT-ONBOARDING-LIFECYCLE-CAND-0100",
+      "surface_form": "Canonical source 1",
+      "label": "IDENTIFIER",
+      "confidence": 0.5587,
+      "review_status": "candidate",
+      "span": {
+        "start": 9163,
+        "end": 9181
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 323,
+        "line_end": 323
+      },
+      "context": "boarding-lifecycle-source-2026-04-14\",\n  \"sources\": [\n    {\n      \"id\": \"canonical-source-1\",\n      \"title\": \"Canonical source 1\",\n      \"url\": \"https://blueprint.dssc.eu/\",\n      \"type\": \"canonical_reference\",\n      \"status\": \"referenced"
+    },
+    {
+      "candidate_id": "DSSC-PARTICIPANT-ONBOARDING-LIFECYCLE-CAND-0101",
+      "surface_form": "dssc-participant-onboarding-lifecycle-demo-pack",
+      "label": "IDENTIFIER",
+      "confidence": 0.5429,
+      "review_status": "candidate",
+      "span": {
+        "start": 9431,
+        "end": 9478
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 336,
+        "line_end": 336
+      },
+      "context": "age-identifiers.json\n{\n  \"schema_version\": \"0.1\",\n  \"generated_at_utc\": \"2026-04-14T12:00:00Z\",\n  \"profile\": \"dssc-participant-onboarding-lifecycle-demo-pack\",\n  \"domain\": \"dssc-participant-onboarding-lifecycle\",\n  \"message_identifiers\": [],\n  \"message_types\": [],\n  "
+    },
+    {
+      "candidate_id": "DSSC-PARTICIPANT-ONBOARDING-LIFECYCLE-CAND-0102",
+      "surface_form": "dssc-participant",
+      "label": "PARTICIPANT_ID",
+      "confidence": 0.6685,
+      "review_status": "candidate",
+      "span": {
+        "start": 9494,
+        "end": 9510
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 337,
+        "line_end": 337
+      },
+      "context": "at_utc\": \"2026-04-14T12:00:00Z\",\n  \"profile\": \"dssc-participant-onboarding-lifecycle-demo-pack\",\n  \"domain\": \"dssc-participant-onboarding-lifecycle\",\n  \"message_identifiers\": [],\n  \"message_types\": [],\n  \"note\": \"No ISO-style message id"
+    },
+    {
+      "candidate_id": "DSSC-PARTICIPANT-ONBOARDING-LIFECYCLE-CAND-0103",
+      "surface_form": "dssc-participant-onboarding-lifecycle-demo-pack",
+      "label": "IDENTIFIER",
+      "confidence": 0.5951,
+      "review_status": "candidate",
+      "span": {
+        "start": 9794,
+        "end": 9841
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 348,
+        "line_end": 348
+      },
+      "context": "raction-summary.json\n{\n  \"schema_version\": \"0.1\",\n  \"generated_at_utc\": \"2026-04-14T12:00:00Z\",\n  \"profile\": \"dssc-participant-onboarding-lifecycle-demo-pack\",\n  \"domain\": \"dssc-participant-onboarding-lifecycle\",\n  \"source_spec\": \"DSSC source-grounded pack spec and c"
+    },
+    {
+      "candidate_id": "DSSC-PARTICIPANT-ONBOARDING-LIFECYCLE-CAND-0104",
+      "surface_form": "stage-3",
+      "label": "LIFECYCLE_STATE",
+      "confidence": 0.4029,
+      "review_status": "candidate",
+      "span": {
+        "start": 10100,
+        "end": 10107
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 354,
+        "line_end": 354
+      },
+      "context": "nt\": 1,\n  \"mapped_symbol_count\": 7,\n  \"mapped_field_count\": 1,\n  \"note\": \"Stage-4 skeleton pack authored from stage-3 spec artifacts.\"\n}\n"
+    }
+  ],
+  "provenance": {
+    "run_id": "dssc-participant-onboarding-lifecycle-gliner-docker-pass-2026-04-14",
+    "model_id": "urchade/gliner_medium-v2.1",
+    "model_hash": "sha256:6c2fcfc92ecee10654d9d3151b2fca9dee740b375c4c99d928c87a9d969e1f7b",
+    "adapter": "gliner",
+    "threshold": 0.35,
+    "docker_image": "gliner-extractor:latest",
+    "config_digest": "sha256:77a8db507c260df7d6824e9b833688669e6511afc3cf8d3b43601d0bc953e74c",
+    "source_digest": "sha256:7359088970a77024730a10e5f3589b12ba75235e976ad8cf7fa0676048cb9609",
+    "raw_output_digest": "sha256:8e1780202532401d61dab3747ad67e528a19b23892976bf730d531d03f614c9a",
+    "created_at": "2026-04-14T09:24:33.763Z"
+  },
+  "summary": {
+    "candidate_count": 104,
+    "labels_used": [
+      "PARTICIPANT_ID",
+      "LIFECYCLE_STATE",
+      "TRANSITION_RULE",
+      "TRUST_PROOF",
+      "POLICY_SNAPSHOT",
+      "INTENT_CLASS",
+      "DENY_REASON_CODE",
+      "JURISDICTION",
+      "IDENTIFIER"
+    ],
+    "processing_time_ms": 19906
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "schema_version": "1.0",
+  "extractor": {
+    "adapter": "gliner",
+    "model": "urchade/gliner_medium-v2.1",
+    "threshold": 0.35,
+    "merge_strategy": "longest_match",
+    "max_length": 512
+  },
+  "domain": "dssc-bilateral-challenge-receipt",
+  "extraction_profile": {
+    "labels": [
+      "CHALLENGE_ID",
+      "RECEIPT_ID",
+      "JURISDICTION",
+      "PAYLOAD_HASH",
+      "POLICY_SNAPSHOT",
+      "RATIONALE_REFERENCE",
+      "CORRELATION_ID",
+      "STATUS",
+      "INTENT_CLASS",
+      "DENY_REASON_CODE"
+    ]
+  },
+  "output": {
+    "format": "candidate_json",
+    "include_context": true,
+    "context_window": 220
+  }
+}

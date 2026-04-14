@@ -1,5 +1,5 @@
 {
-  "bundleId": "sha256:8c80d9f04310053a1b27e4d0c114915c95b73e4dd6661a56b2c5d41c52d92ac7",
+  "bundleId": "sha256:27aa7de30a2c3ac992dbbd2828b2745d4ce850896f8458b10b8a7bdb90341adc",
   "decision": {
     "type": "DSSCCatalogIntent",
     "intent_class": "dssc.catalog.query_offering.v1",

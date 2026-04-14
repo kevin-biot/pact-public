@@ -1,0 +1,2587 @@
+{
+  "schema_version": "1.0",
+  "tool": "extract_candidates",
+  "run_id": "dssc-bilateral-challenge-receipt-gliner-docker-pass-2026-04-14",
+  "review_status": "candidate",
+  "authoritative": false,
+  "candidates": [
+    {
+      "candidate_id": "DSSC-BILATERAL-CHALLENGE-RECEIPT-CAND-0001",
+      "surface_form": "cross-jurisdiction",
+      "label": "JURISDICTION",
+      "confidence": 0.8394,
+      "review_status": "candidate",
+      "span": {
+        "start": 202,
+        "end": 220
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 8,
+        "line_end": 8
+      },
+      "context": "o ontology pack for `dssc-bilateral-challenge-receipt` under Stage-4 pack authoring.\n\n## Purpose\n\nDemonstrate cross-jurisdiction challenge/receipt governance with dual policy snapshots and correlated evidence anchors.\n\n## Source Grounding"
+    },
+    {
+      "candidate_id": "DSSC-BILATERAL-CHALLENGE-RECEIPT-CAND-0002",
+      "surface_form": "dual policy snapshots",
+      "label": "POLICY_SNAPSHOT",
+      "confidence": 0.9524,
+      "review_status": "candidate",
+      "span": {
+        "start": 255,
+        "end": 276
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 8,
+        "line_end": 8
+      },
+      "context": "` under Stage-4 pack authoring.\n\n## Purpose\n\nDemonstrate cross-jurisdiction challenge/receipt governance with dual policy snapshots and correlated evidence anchors.\n\n## Source Grounding\n\nCanonical source references used for this pack draft a"
+    },
+    {
+      "candidate_id": "DSSC-BILATERAL-CHALLENGE-RECEIPT-CAND-0003",
+      "surface_form": "Intent Surface",
+      "label": "INTENT_CLASS",
+      "confidence": 0.412,
+      "review_status": "candidate",
+      "span": {
+        "start": 560,
+        "end": 574
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 18,
+        "line_end": 18
+      },
+      "context": "\n- https://blueprint.dssc.eu/\n- https://eclipse-dataspace-protocol-base.github.io/DataspaceProtocol/HEAD/\n\n## Intent Surface\n\n- `dssc.governance.submit_challenge.v1`: Submit cross-jurisdiction challenge payload with origin snapshot.\n-"
+    },
+    {
+      "candidate_id": "DSSC-BILATERAL-CHALLENGE-RECEIPT-CAND-0004",
+      "surface_form": "cross-jurisdiction",
+      "label": "JURISDICTION",
+      "confidence": 0.5731,
+      "review_status": "candidate",
+      "span": {
+        "start": 624,
+        "end": 642
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 20,
+        "line_end": 20
+      },
+      "context": "ol-base.github.io/DataspaceProtocol/HEAD/\n\n## Intent Surface\n\n- `dssc.governance.submit_challenge.v1`: Submit cross-jurisdiction challenge payload with origin snapshot.\n- `dssc.governance.issue_receipt.v1`: Issue correlated receipt with t"
+    },
+    {
+      "candidate_id": "DSSC-BILATERAL-CHALLENGE-RECEIPT-CAND-0005",
+      "surface_form": "challenge",
+      "label": "PAYLOAD_HASH",
+      "confidence": 0.41,
+      "review_status": "candidate",
+      "span": {
+        "start": 643,
+        "end": 652
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 20,
+        "line_end": 20
+      },
+      "context": "ataspaceProtocol/HEAD/\n\n## Intent Surface\n\n- `dssc.governance.submit_challenge.v1`: Submit cross-jurisdiction challenge payload with origin snapshot.\n- `dssc.governance.issue_receipt.v1`: Issue correlated receipt with target-side"
+    },
+    {
+      "candidate_id": "DSSC-BILATERAL-CHALLENGE-RECEIPT-CAND-0006",
+      "surface_form": "payload",
+      "label": "PAYLOAD_HASH",
+      "confidence": 0.6055,
+      "review_status": "candidate",
+      "span": {
+        "start": 653,
+        "end": 660
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 20,
+        "line_end": 20
+      },
+      "context": "otocol/HEAD/\n\n## Intent Surface\n\n- `dssc.governance.submit_challenge.v1`: Submit cross-jurisdiction challenge payload with origin snapshot.\n- `dssc.governance.issue_receipt.v1`: Issue correlated receipt with target-side policy "
+    },
+    {
+      "candidate_id": "DSSC-BILATERAL-CHALLENGE-RECEIPT-CAND-0007",
+      "surface_form": "origin snapshot",
+      "label": "POLICY_SNAPSHOT",
+      "confidence": 0.8584,
+      "review_status": "candidate",
+      "span": {
+        "start": 666,
+        "end": 681
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 20,
+        "line_end": 20
+      },
+      "context": "\n## Intent Surface\n\n- `dssc.governance.submit_challenge.v1`: Submit cross-jurisdiction challenge payload with origin snapshot.\n- `dssc.governance.issue_receipt.v1`: Issue correlated receipt with target-side policy snapshot.\n\n## Determi"
+    },
+    {
+      "candidate_id": "DSSC-BILATERAL-CHALLENGE-RECEIPT-CAND-0008",
+      "surface_form": "target-side policy snapshot",
+      "label": "POLICY_SNAPSHOT",
+      "confidence": 0.9405,
+      "review_status": "candidate",
+      "span": {
+        "start": 751,
+        "end": 778
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 21,
+        "line_end": 21
+      },
+      "context": "n challenge payload with origin snapshot.\n- `dssc.governance.issue_receipt.v1`: Issue correlated receipt with target-side policy snapshot.\n\n## Determinism Boundary\n\n- Out-of-scope behavior is `escalate`.\n- Policy/bundle binding is required for adm"
+    },
+    {
+      "candidate_id": "DSSC-BILATERAL-CHALLENGE-RECEIPT-CAND-0009",
+      "surface_form": "Policy",
+      "label": "POLICY_SNAPSHOT",
+      "confidence": 0.5054,
+      "review_status": "candidate",
+      "span": {
+        "start": 847,
+        "end": 853
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 26,
+        "line_end": 26
+      },
+      "context": " receipt with target-side policy snapshot.\n\n## Determinism Boundary\n\n- Out-of-scope behavior is `escalate`.\n- Policy/bundle binding is required for admitted execution paths.\n- Deny reason codes are explicit and stable for fixt"
+    },
+    {
+      "candidate_id": "DSSC-BILATERAL-CHALLENGE-RECEIPT-CAND-0010",
+      "surface_form": "Deny",
+      "label": "DENY_REASON_CODE",
+      "confidence": 0.7137,
+      "review_status": "candidate",
+      "span": {
+        "start": 913,
+        "end": 917
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 27,
+        "line_end": 27
+      },
+      "context": "y\n\n- Out-of-scope behavior is `escalate`.\n- Policy/bundle binding is required for admitted execution paths.\n- Deny reason codes are explicit and stable for fixture replay.\n\n## Included Artifacts\n\n- `README.md`\n- `pack.json`\n"
+    },
+    {
+      "candidate_id": "DSSC-BILATERAL-CHALLENGE-RECEIPT-CAND-0011",
+      "surface_form": "bash",
+      "label": "PAYLOAD_HASH",
+      "confidence": 0.3937,
+      "review_status": "candidate",
+      "span": {
+        "start": 1536,
+        "end": 1540
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 57,
+        "line_end": 57
+      },
+      "context": "mentation.\n- Fixture harness wiring is planned in Stage-5.\n\n## Fixture Harness\n\nRun from repository root:\n\n```bash\nnode tools/run-dssc-bilateral-challenge-receipt-fixtures.mjs\n```\n\n## Two-Pass Authoring (V1/V2)\n\n- `V1 mechan"
+    },
+    {
+      "candidate_id": "DSSC-BILATERAL-CHALLENGE-RECEIPT-CAND-0012",
+      "surface_form": "dssc-bilateral-challenge-receipt-demo-0.1.0",
+      "label": "CHALLENGE_ID",
+      "confidence": 0.4708,
+      "review_status": "candidate",
+      "span": {
+        "start": 2048,
+        "end": 2091
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 73,
+        "line_end": 73
+      },
+      "context": "e-extract/candidates/gliner-dirty-pass-2026-04-14/`.\n\n\n### FILE: pack.json\n{\n  \"pack_schema\": \"1.0\",\n  \"id\": \"dssc-bilateral-challenge-receipt-demo-0.1.0\",\n  \"domain\": \"dssc-bilateral-challenge-receipt\",\n  \"version\": \"0.1.0\",\n  \"provider_id\": \"ontology:pact-publi"
+    },
+    {
+      "candidate_id": "DSSC-BILATERAL-CHALLENGE-RECEIPT-CAND-0013",
+      "surface_form": "dssc-bilateral-challenge-receipt",
+      "label": "RECEIPT_ID",
+      "confidence": 0.6646,
+      "review_status": "candidate",
+      "span": {
+        "start": 2107,
+        "end": 2139
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 74,
+        "line_end": 74
+      },
+      "context": "FILE: pack.json\n{\n  \"pack_schema\": \"1.0\",\n  \"id\": \"dssc-bilateral-challenge-receipt-demo-0.1.0\",\n  \"domain\": \"dssc-bilateral-challenge-receipt\",\n  \"version\": \"0.1.0\",\n  \"provider_id\": \"ontology:pact-public:trust\",\n  \"trust_tier\": \"Tier1\",\n  \"nbf\": \"202"
+    },
+    {
+      "candidate_id": "DSSC-BILATERAL-CHALLENGE-RECEIPT-CAND-0014",
+      "surface_form": "0.1.0",
+      "label": "DENY_REASON_CODE",
+      "confidence": 0.3612,
+      "review_status": "candidate",
+      "span": {
+        "start": 2156,
+        "end": 2161
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 75,
+        "line_end": 75
+      },
+      "context": " \"dssc-bilateral-challenge-receipt-demo-0.1.0\",\n  \"domain\": \"dssc-bilateral-challenge-receipt\",\n  \"version\": \"0.1.0\",\n  \"provider_id\": \"ontology:pact-public:trust\",\n  \"trust_tier\": \"Tier1\",\n  \"nbf\": \"2026-04-14T00:00:00Z\",\n  "
+    },
+    {
+      "candidate_id": "DSSC-BILATERAL-CHALLENGE-RECEIPT-CAND-0015",
+      "surface_form": "Tier1",
+      "label": "CHALLENGE_ID",
+      "confidence": 0.4382,
+      "review_status": "candidate",
+      "span": {
+        "start": 2228,
+        "end": 2233
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 77,
+        "line_end": 77
+      },
+      "context": "ral-challenge-receipt\",\n  \"version\": \"0.1.0\",\n  \"provider_id\": \"ontology:pact-public:trust\",\n  \"trust_tier\": \"Tier1\",\n  \"nbf\": \"2026-04-14T00:00:00Z\",\n  \"exp\": \"2031-04-14T00:00:00Z\",\n  \"rev_epoch\": 1,\n  \"deny_wins\": true,\n  "
+    },
+    {
+      "candidate_id": "DSSC-BILATERAL-CHALLENGE-RECEIPT-CAND-0016",
+      "surface_form": "deny_wins",
+      "label": "DENY_REASON_CODE",
+      "confidence": 0.4772,
+      "review_status": "candidate",
+      "span": {
+        "start": 2323,
+        "end": 2332
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 81,
+        "line_end": 81
+      },
+      "context": "\"trust_tier\": \"Tier1\",\n  \"nbf\": \"2026-04-14T00:00:00Z\",\n  \"exp\": \"2031-04-14T00:00:00Z\",\n  \"rev_epoch\": 1,\n  \"deny_wins\": true,\n  \"precedence\": [],\n  \"files\": {\n    \"context\": \"context.jsonld\",\n    \"vocab\": \"vocab.skos.jsonld\",\n "
+    },
+    {
+      "candidate_id": "DSSC-BILATERAL-CHALLENGE-RECEIPT-CAND-0017",
+      "surface_form": "thesaurus",
+      "label": "RATIONALE_REFERENCE",
+      "confidence": 0.4434,
+      "review_status": "candidate",
+      "span": {
+        "start": 2474,
+        "end": 2483
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 87,
+        "line_end": 87
+      },
+      "context": "files\": {\n    \"context\": \"context.jsonld\",\n    \"vocab\": \"vocab.skos.jsonld\",\n    \"shapes\": \"shapes.ttl\",\n    \"thesaurus\": \"thesaurus.jsonld\",\n    \"thesaurus_local\": \"thesaurus-local.json\",\n    \"patterns\": \"patterns.json\",\n    \"in"
+    },
+    {
+      "candidate_id": "DSSC-BILATERAL-CHALLENGE-RECEIPT-CAND-0018",
+      "surface_form": "thesaurus",
+      "label": "RATIONALE_REFERENCE",
+      "confidence": 0.4804,
+      "review_status": "candidate",
+      "span": {
+        "start": 2487,
+        "end": 2496
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 87,
+        "line_end": 87
+      },
+      "context": " \"context\": \"context.jsonld\",\n    \"vocab\": \"vocab.skos.jsonld\",\n    \"shapes\": \"shapes.ttl\",\n    \"thesaurus\": \"thesaurus.jsonld\",\n    \"thesaurus_local\": \"thesaurus-local.json\",\n    \"patterns\": \"patterns.json\",\n    \"intent_mappings"
+    },
+    {
+      "candidate_id": "DSSC-BILATERAL-CHALLENGE-RECEIPT-CAND-0019",
+      "surface_form": "thesaurus_local",
+      "label": "RATIONALE_REFERENCE",
+      "confidence": 0.4459,
+      "review_status": "candidate",
+      "span": {
+        "start": 2511,
+        "end": 2526
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 88,
+        "line_end": 88
+      },
+      "context": "nld\",\n    \"vocab\": \"vocab.skos.jsonld\",\n    \"shapes\": \"shapes.ttl\",\n    \"thesaurus\": \"thesaurus.jsonld\",\n    \"thesaurus_local\": \"thesaurus-local.json\",\n    \"patterns\": \"patterns.json\",\n    \"intent_mappings\": \"intent-mappings.json\",\n   "
+    },
+    {
+      "candidate_id": "DSSC-BILATERAL-CHALLENGE-RECEIPT-CAND-0020",
+      "surface_form": "thesaurus-local",
+      "label": "RATIONALE_REFERENCE",
+      "confidence": 0.3512,
+      "review_status": "candidate",
+      "span": {
+        "start": 2530,
+        "end": 2545
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 88,
+        "line_end": 88
+      },
+      "context": "\"vocab.skos.jsonld\",\n    \"shapes\": \"shapes.ttl\",\n    \"thesaurus\": \"thesaurus.jsonld\",\n    \"thesaurus_local\": \"thesaurus-local.json\",\n    \"patterns\": \"patterns.json\",\n    \"intent_mappings\": \"intent-mappings.json\",\n    \"convergence\": \"co"
+    },
+    {
+      "candidate_id": "DSSC-BILATERAL-CHALLENGE-RECEIPT-CAND-0021",
+      "surface_form": "convergence",
+      "label": "RATIONALE_REFERENCE",
+      "confidence": 0.4715,
+      "review_status": "candidate",
+      "span": {
+        "start": 2638,
+        "end": 2649
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 91,
+        "line_end": 91
+      },
+      "context": " \"thesaurus-local.json\",\n    \"patterns\": \"patterns.json\",\n    \"intent_mappings\": \"intent-mappings.json\",\n    \"convergence\": \"convergence.json\",\n    \"decision_space\": \"decision-space.json\",\n    \"message_identifiers\": \"message-identi"
+    },
+    {
+      "candidate_id": "DSSC-BILATERAL-CHALLENGE-RECEIPT-CAND-0022",
+      "surface_form": "convergence",
+      "label": "RATIONALE_REFERENCE",
+      "confidence": 0.4339,
+      "review_status": "candidate",
+      "span": {
+        "start": 2653,
+        "end": 2664
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 91,
+        "line_end": 91
+      },
+      "context": "al.json\",\n    \"patterns\": \"patterns.json\",\n    \"intent_mappings\": \"intent-mappings.json\",\n    \"convergence\": \"convergence.json\",\n    \"decision_space\": \"decision-space.json\",\n    \"message_identifiers\": \"message-identifiers.json\",\n  "
+    },
+    {
+      "candidate_id": "DSSC-BILATERAL-CHALLENGE-RECEIPT-CAND-0023",
+      "surface_form": "dssc-bilateral-challenge-receipt-demo",
+      "label": "CHALLENGE_ID",
+      "confidence": 0.4998,
+      "review_status": "candidate",
+      "span": {
+        "start": 3327,
+        "end": 3364
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 102,
+        "line_end": 102
+      },
+      "context": "t/candidates/gliner-dirty-pass-2026-04-14/extraction-summary.json\"\n  },\n  \"dc\": {\n    \"identifier\": \"ontology:dssc-bilateral-challenge-receipt-demo:v0.1.0\",\n    \"title\": \"dssc-bilateral-challenge-receipt demo pack\",\n    \"creator\": \"PACT Public Working Draft"
+    },
+    {
+      "candidate_id": "DSSC-BILATERAL-CHALLENGE-RECEIPT-CAND-0024",
+      "surface_form": "v0.1.0",
+      "label": "CHALLENGE_ID",
+      "confidence": 0.3717,
+      "review_status": "candidate",
+      "span": {
+        "start": 3365,
+        "end": 3371
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 102,
+        "line_end": 102
+      },
+      "context": "-14/extraction-summary.json\"\n  },\n  \"dc\": {\n    \"identifier\": \"ontology:dssc-bilateral-challenge-receipt-demo:v0.1.0\",\n    \"title\": \"dssc-bilateral-challenge-receipt demo pack\",\n    \"creator\": \"PACT Public Working Draft\",\n    "
+    },
+    {
+      "candidate_id": "DSSC-BILATERAL-CHALLENGE-RECEIPT-CAND-0025",
+      "surface_form": "2026-04-14",
+      "label": "STATUS",
+      "confidence": 0.3746,
+      "review_status": "candidate",
+      "span": {
+        "start": 3492,
+        "end": 3502
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 105,
+        "line_end": 105
+      },
+      "context": "le\": \"dssc-bilateral-challenge-receipt demo pack\",\n    \"creator\": \"PACT Public Working Draft\",\n    \"issued\": \"2026-04-14\",\n    \"rights\": \"Apache-2.0\",\n    \"description\": \"Demonstrate cross-jurisdiction challenge/receipt governance"
+    },
+    {
+      "candidate_id": "DSSC-BILATERAL-CHALLENGE-RECEIPT-CAND-0026",
+      "surface_form": "cross-jurisdiction",
+      "label": "JURISDICTION",
+      "confidence": 0.7636,
+      "review_status": "candidate",
+      "span": {
+        "start": 3565,
+        "end": 3583
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 107,
+        "line_end": 107
+      },
+      "context": "ublic Working Draft\",\n    \"issued\": \"2026-04-14\",\n    \"rights\": \"Apache-2.0\",\n    \"description\": \"Demonstrate cross-jurisdiction challenge/receipt governance with dual policy snapshots and correlated evidence anchors.\"\n  }\n}\n\n\n### FILE: d"
+    },
+    {
+      "candidate_id": "DSSC-BILATERAL-CHALLENGE-RECEIPT-CAND-0027",
+      "surface_form": "dual policy snapshots",
+      "label": "POLICY_SNAPSHOT",
+      "confidence": 0.9519,
+      "review_status": "candidate",
+      "span": {
+        "start": 3618,
+        "end": 3639
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 107,
+        "line_end": 107
+      },
+      "context": " \"rights\": \"Apache-2.0\",\n    \"description\": \"Demonstrate cross-jurisdiction challenge/receipt governance with dual policy snapshots and correlated evidence anchors.\"\n  }\n}\n\n\n### FILE: decision-space.json\n{\n  \"schema_version\": \"1.0\",\n  \"domai"
+    },
+    {
+      "candidate_id": "DSSC-BILATERAL-CHALLENGE-RECEIPT-CAND-0028",
+      "surface_form": "dssc-bilateral-challenge-receipt-demo-0.1.0",
+      "label": "POLICY_SNAPSHOT",
+      "confidence": 0.4502,
+      "review_status": "candidate",
+      "span": {
+        "start": 3803,
+        "end": 3846
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 116,
+        "line_end": 116
+      },
+      "context": "ecision-space.json\n{\n  \"schema_version\": \"1.0\",\n  \"domain\": \"dssc-bilateral-challenge-receipt\",\n  \"pack_id\": \"dssc-bilateral-challenge-receipt-demo-0.1.0\",\n  \"version\": \"0.1.0\",\n  \"out_of_scope_behavior\": \"escalate\",\n  \"state_model\": {\n    \"states\": [\n      \"ingr"
+    },
+    {
+      "candidate_id": "DSSC-BILATERAL-CHALLENGE-RECEIPT-CAND-0029",
+      "surface_form": "ingress",
+      "label": "INTENT_CLASS",
+      "confidence": 0.357,
+      "review_status": "candidate",
+      "span": {
+        "start": 3952,
+        "end": 3959
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 121,
+        "line_end": 121
+      },
+      "context": ".1.0\",\n  \"version\": \"0.1.0\",\n  \"out_of_scope_behavior\": \"escalate\",\n  \"state_model\": {\n    \"states\": [\n      \"ingress\",\n      \"validated\",\n      \"classified\",\n      \"authorized\",\n      \"responded\",\n      \"rejected\",\n      \"esca"
+    },
+    {
+      "candidate_id": "DSSC-BILATERAL-CHALLENGE-RECEIPT-CAND-0030",
+      "surface_form": "responded",
+      "label": "RATIONALE_REFERENCE",
+      "confidence": 0.3691,
+      "review_status": "candidate",
+      "span": {
+        "start": 4028,
+        "end": 4037
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 125,
+        "line_end": 125
+      },
+      "context": "_model\": {\n    \"states\": [\n      \"ingress\",\n      \"validated\",\n      \"classified\",\n      \"authorized\",\n      \"responded\",\n      \"rejected\",\n      \"escalated\"\n    ],\n    \"initial_state\": \"ingress\",\n    \"terminal_states\": [\n      \""
+    },
+    {
+      "candidate_id": "DSSC-BILATERAL-CHALLENGE-RECEIPT-CAND-0031",
+      "surface_form": "rejected",
+      "label": "STATUS",
+      "confidence": 0.6839,
+      "review_status": "candidate",
+      "span": {
+        "start": 4047,
+        "end": 4055
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 126,
+        "line_end": 126
+      },
+      "context": "tes\": [\n      \"ingress\",\n      \"validated\",\n      \"classified\",\n      \"authorized\",\n      \"responded\",\n      \"rejected\",\n      \"escalated\"\n    ],\n    \"initial_state\": \"ingress\",\n    \"terminal_states\": [\n      \"responded\",\n      "
+    },
+    {
+      "candidate_id": "DSSC-BILATERAL-CHALLENGE-RECEIPT-CAND-0032",
+      "surface_form": "escalated",
+      "label": "STATUS",
+      "confidence": 0.6603,
+      "review_status": "candidate",
+      "span": {
+        "start": 4065,
+        "end": 4074
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 127,
+        "line_end": 127
+      },
+      "context": "ress\",\n      \"validated\",\n      \"classified\",\n      \"authorized\",\n      \"responded\",\n      \"rejected\",\n      \"escalated\"\n    ],\n    \"initial_state\": \"ingress\",\n    \"terminal_states\": [\n      \"responded\",\n      \"rejected\",\n      \""
+    },
+    {
+      "candidate_id": "DSSC-BILATERAL-CHALLENGE-RECEIPT-CAND-0033",
+      "surface_form": "responded",
+      "label": "RATIONALE_REFERENCE",
+      "confidence": 0.384,
+      "review_status": "candidate",
+      "span": {
+        "start": 4147,
+        "end": 4156
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 131,
+        "line_end": 131
+      },
+      "context": "\",\n      \"rejected\",\n      \"escalated\"\n    ],\n    \"initial_state\": \"ingress\",\n    \"terminal_states\": [\n      \"responded\",\n      \"rejected\",\n      \"escalated\"\n    ]\n  },\n  \"intent_resource_map\": {\n    \"dssc.governance.submit_chall"
+    },
+    {
+      "candidate_id": "DSSC-BILATERAL-CHALLENGE-RECEIPT-CAND-0034",
+      "surface_form": "rejected",
+      "label": "STATUS",
+      "confidence": 0.6419,
+      "review_status": "candidate",
+      "span": {
+        "start": 4166,
+        "end": 4174
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 132,
+        "line_end": 132
+      },
+      "context": ",\n      \"escalated\"\n    ],\n    \"initial_state\": \"ingress\",\n    \"terminal_states\": [\n      \"responded\",\n      \"rejected\",\n      \"escalated\"\n    ]\n  },\n  \"intent_resource_map\": {\n    \"dssc.governance.submit_challenge.v1\": [\n      "
+    },
+    {
+      "candidate_id": "DSSC-BILATERAL-CHALLENGE-RECEIPT-CAND-0035",
+      "surface_form": "escalated",
+      "label": "STATUS",
+      "confidence": 0.5955,
+      "review_status": "candidate",
+      "span": {
+        "start": 4184,
+        "end": 4193
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 133,
+        "line_end": 133
+      },
+      "context": "\"\n    ],\n    \"initial_state\": \"ingress\",\n    \"terminal_states\": [\n      \"responded\",\n      \"rejected\",\n      \"escalated\"\n    ]\n  },\n  \"intent_resource_map\": {\n    \"dssc.governance.submit_challenge.v1\": [\n      \"GovernanceDecision"
+    },
+    {
+      "candidate_id": "DSSC-BILATERAL-CHALLENGE-RECEIPT-CAND-0036",
+      "surface_form": "GovernanceDecision",
+      "label": "INTENT_CLASS",
+      "confidence": 0.4345,
+      "review_status": "candidate",
+      "span": {
+        "start": 4285,
+        "end": 4303
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 138,
+        "line_end": 138
+      },
+      "context": ",\n      \"escalated\"\n    ]\n  },\n  \"intent_resource_map\": {\n    \"dssc.governance.submit_challenge.v1\": [\n      \"GovernanceDecision\"\n    ],\n    \"dssc.governance.issue_receipt.v1\": [\n      \"GovernanceDecision\"\n    ]\n  },\n  \"required_fields_by"
+    },
+    {
+      "candidate_id": "DSSC-BILATERAL-CHALLENGE-RECEIPT-CAND-0037",
+      "surface_form": "GovernanceDecision",
+      "label": "INTENT_CLASS",
+      "confidence": 0.3782,
+      "review_status": "candidate",
+      "span": {
+        "start": 4361,
+        "end": 4379
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 141,
+        "line_end": 141
+      },
+      "context": "ce.submit_challenge.v1\": [\n      \"GovernanceDecision\"\n    ],\n    \"dssc.governance.issue_receipt.v1\": [\n      \"GovernanceDecision\"\n    ]\n  },\n  \"required_fields_by_intent\": {\n    \"dssc.governance.submit_challenge.v1\": [\n      \"policy_snaps"
+    },
+    {
+      "candidate_id": "DSSC-BILATERAL-CHALLENGE-RECEIPT-CAND-0038",
+      "surface_form": "policy_snapshot_id",
+      "label": "POLICY_SNAPSHOT",
+      "confidence": 0.8167,
+      "review_status": "candidate",
+      "span": {
+        "start": 4477,
+        "end": 4495
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 146,
+        "line_end": 146
+      },
+      "context": "anceDecision\"\n    ]\n  },\n  \"required_fields_by_intent\": {\n    \"dssc.governance.submit_challenge.v1\": [\n      \"policy_snapshot_id\",\n      \"challenge_id\",\n      \"origin_jurisdiction\",\n      \"target_jurisdiction\",\n      \"payload_hash\",\n     "
+    },
+    {
+      "candidate_id": "DSSC-BILATERAL-CHALLENGE-RECEIPT-CAND-0039",
+      "surface_form": "challenge_id",
+      "label": "CHALLENGE_ID",
+      "confidence": 0.8596,
+      "review_status": "candidate",
+      "span": {
+        "start": 4505,
+        "end": 4517
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 147,
+        "line_end": 147
+      },
+      "context": "required_fields_by_intent\": {\n    \"dssc.governance.submit_challenge.v1\": [\n      \"policy_snapshot_id\",\n      \"challenge_id\",\n      \"origin_jurisdiction\",\n      \"target_jurisdiction\",\n      \"payload_hash\",\n      \"policy_snapshot_orig"
+    },
+    {
+      "candidate_id": "DSSC-BILATERAL-CHALLENGE-RECEIPT-CAND-0040",
+      "surface_form": "origin_jurisdiction",
+      "label": "JURISDICTION",
+      "confidence": 0.8578,
+      "review_status": "candidate",
+      "span": {
+        "start": 4527,
+        "end": 4546
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 148,
+        "line_end": 148
+      },
+      "context": "ent\": {\n    \"dssc.governance.submit_challenge.v1\": [\n      \"policy_snapshot_id\",\n      \"challenge_id\",\n      \"origin_jurisdiction\",\n      \"target_jurisdiction\",\n      \"payload_hash\",\n      \"policy_snapshot_origin\",\n      \"rationale_ref_ori"
+    },
+    {
+      "candidate_id": "DSSC-BILATERAL-CHALLENGE-RECEIPT-CAND-0041",
+      "surface_form": "target_jurisdiction",
+      "label": "JURISDICTION",
+      "confidence": 0.9005,
+      "review_status": "candidate",
+      "span": {
+        "start": 4556,
+        "end": 4575
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 149,
+        "line_end": 149
+      },
+      "context": "submit_challenge.v1\": [\n      \"policy_snapshot_id\",\n      \"challenge_id\",\n      \"origin_jurisdiction\",\n      \"target_jurisdiction\",\n      \"payload_hash\",\n      \"policy_snapshot_origin\",\n      \"rationale_ref_origin\",\n      \"receipt_id\",\n   "
+    },
+    {
+      "candidate_id": "DSSC-BILATERAL-CHALLENGE-RECEIPT-CAND-0042",
+      "surface_form": "payload_hash",
+      "label": "PAYLOAD_HASH",
+      "confidence": 0.9538,
+      "review_status": "candidate",
+      "span": {
+        "start": 4585,
+        "end": 4597
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 150,
+        "line_end": 150
+      },
+      "context": " \"policy_snapshot_id\",\n      \"challenge_id\",\n      \"origin_jurisdiction\",\n      \"target_jurisdiction\",\n      \"payload_hash\",\n      \"policy_snapshot_origin\",\n      \"rationale_ref_origin\",\n      \"receipt_id\",\n      \"acceptance_hash\",\n"
+    },
+    {
+      "candidate_id": "DSSC-BILATERAL-CHALLENGE-RECEIPT-CAND-0043",
+      "surface_form": "policy_snapshot_origin",
+      "label": "POLICY_SNAPSHOT",
+      "confidence": 0.7763,
+      "review_status": "candidate",
+      "span": {
+        "start": 4607,
+        "end": 4629
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 151,
+        "line_end": 151
+      },
+      "context": "\n      \"challenge_id\",\n      \"origin_jurisdiction\",\n      \"target_jurisdiction\",\n      \"payload_hash\",\n      \"policy_snapshot_origin\",\n      \"rationale_ref_origin\",\n      \"receipt_id\",\n      \"acceptance_hash\",\n      \"policy_snapshot_target\",\n"
+    },
+    {
+      "candidate_id": "DSSC-BILATERAL-CHALLENGE-RECEIPT-CAND-0044",
+      "surface_form": "rationale_ref_origin",
+      "label": "RATIONALE_REFERENCE",
+      "confidence": 0.6599,
+      "review_status": "candidate",
+      "span": {
+        "start": 4639,
+        "end": 4659
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 152,
+        "line_end": 152
+      },
+      "context": "igin_jurisdiction\",\n      \"target_jurisdiction\",\n      \"payload_hash\",\n      \"policy_snapshot_origin\",\n      \"rationale_ref_origin\",\n      \"receipt_id\",\n      \"acceptance_hash\",\n      \"policy_snapshot_target\",\n      \"rationale_ref_target\",\n"
+    },
+    {
+      "candidate_id": "DSSC-BILATERAL-CHALLENGE-RECEIPT-CAND-0045",
+      "surface_form": "receipt_id",
+      "label": "RECEIPT_ID",
+      "confidence": 0.7516,
+      "review_status": "candidate",
+      "span": {
+        "start": 4669,
+        "end": 4679
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 153,
+        "line_end": 153
+      },
+      "context": "get_jurisdiction\",\n      \"payload_hash\",\n      \"policy_snapshot_origin\",\n      \"rationale_ref_origin\",\n      \"receipt_id\",\n      \"acceptance_hash\",\n      \"policy_snapshot_target\",\n      \"rationale_ref_target\",\n      \"status\"\n    ]"
+    },
+    {
+      "candidate_id": "DSSC-BILATERAL-CHALLENGE-RECEIPT-CAND-0046",
+      "surface_form": "acceptance_hash",
+      "label": "PAYLOAD_HASH",
+      "confidence": 0.5256,
+      "review_status": "candidate",
+      "span": {
+        "start": 4689,
+        "end": 4704
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 154,
+        "line_end": 154
+      },
+      "context": "     \"payload_hash\",\n      \"policy_snapshot_origin\",\n      \"rationale_ref_origin\",\n      \"receipt_id\",\n      \"acceptance_hash\",\n      \"policy_snapshot_target\",\n      \"rationale_ref_target\",\n      \"status\"\n    ],\n    \"dssc.governance.is"
+    },
+    {
+      "candidate_id": "DSSC-BILATERAL-CHALLENGE-RECEIPT-CAND-0047",
+      "surface_form": "policy_snapshot_target",
+      "label": "POLICY_SNAPSHOT",
+      "confidence": 0.718,
+      "review_status": "candidate",
+      "span": {
+        "start": 4714,
+        "end": 4736
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 155,
+        "line_end": 155
+      },
+      "context": "  \"policy_snapshot_origin\",\n      \"rationale_ref_origin\",\n      \"receipt_id\",\n      \"acceptance_hash\",\n      \"policy_snapshot_target\",\n      \"rationale_ref_target\",\n      \"status\"\n    ],\n    \"dssc.governance.issue_receipt.v1\": [\n      \"policy"
+    },
+    {
+      "candidate_id": "DSSC-BILATERAL-CHALLENGE-RECEIPT-CAND-0048",
+      "surface_form": "rationale_ref_target",
+      "label": "RATIONALE_REFERENCE",
+      "confidence": 0.7198,
+      "review_status": "candidate",
+      "span": {
+        "start": 4746,
+        "end": 4766
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 156,
+        "line_end": 156
+      },
+      "context": "  \"rationale_ref_origin\",\n      \"receipt_id\",\n      \"acceptance_hash\",\n      \"policy_snapshot_target\",\n      \"rationale_ref_target\",\n      \"status\"\n    ],\n    \"dssc.governance.issue_receipt.v1\": [\n      \"policy_snapshot_id\",\n      \"challeng"
+    },
+    {
+      "candidate_id": "DSSC-BILATERAL-CHALLENGE-RECEIPT-CAND-0049",
+      "surface_form": "status",
+      "label": "STATUS",
+      "confidence": 0.7567,
+      "review_status": "candidate",
+      "span": {
+        "start": 4776,
+        "end": 4782
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 157,
+        "line_end": 157
+      },
+      "context": "  \"receipt_id\",\n      \"acceptance_hash\",\n      \"policy_snapshot_target\",\n      \"rationale_ref_target\",\n      \"status\"\n    ],\n    \"dssc.governance.issue_receipt.v1\": [\n      \"policy_snapshot_id\",\n      \"challenge_id\",\n      \"or"
+    },
+    {
+      "candidate_id": "DSSC-BILATERAL-CHALLENGE-RECEIPT-CAND-0050",
+      "surface_form": "policy_snapshot_id",
+      "label": "POLICY_SNAPSHOT",
+      "confidence": 0.7196,
+      "review_status": "candidate",
+      "span": {
+        "start": 4840,
+        "end": 4858
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 160,
+        "line_end": 160
+      },
+      "context": "target\",\n      \"rationale_ref_target\",\n      \"status\"\n    ],\n    \"dssc.governance.issue_receipt.v1\": [\n      \"policy_snapshot_id\",\n      \"challenge_id\",\n      \"origin_jurisdiction\",\n      \"target_jurisdiction\",\n      \"payload_hash\",\n     "
+    },
+    {
+      "candidate_id": "DSSC-BILATERAL-CHALLENGE-RECEIPT-CAND-0051",
+      "surface_form": "challenge_id",
+      "label": "CHALLENGE_ID",
+      "confidence": 0.8769,
+      "review_status": "candidate",
+      "span": {
+        "start": 4868,
+        "end": 4880
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 161,
+        "line_end": 161
+      },
+      "context": "f_target\",\n      \"status\"\n    ],\n    \"dssc.governance.issue_receipt.v1\": [\n      \"policy_snapshot_id\",\n      \"challenge_id\",\n      \"origin_jurisdiction\",\n      \"target_jurisdiction\",\n      \"payload_hash\",\n      \"policy_snapshot_orig"
+    },
+    {
+      "candidate_id": "DSSC-BILATERAL-CHALLENGE-RECEIPT-CAND-0052",
+      "surface_form": "origin_jurisdiction",
+      "label": "JURISDICTION",
+      "confidence": 0.9031,
+      "review_status": "candidate",
+      "span": {
+        "start": 4890,
+        "end": 4909
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 162,
+        "line_end": 162
+      },
+      "context": "us\"\n    ],\n    \"dssc.governance.issue_receipt.v1\": [\n      \"policy_snapshot_id\",\n      \"challenge_id\",\n      \"origin_jurisdiction\",\n      \"target_jurisdiction\",\n      \"payload_hash\",\n      \"policy_snapshot_origin\",\n      \"rationale_ref_ori"
+    },
+    {
+      "candidate_id": "DSSC-BILATERAL-CHALLENGE-RECEIPT-CAND-0053",
+      "surface_form": "target_jurisdiction",
+      "label": "JURISDICTION",
+      "confidence": 0.9258,
+      "review_status": "candidate",
+      "span": {
+        "start": 4919,
+        "end": 4938
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 163,
+        "line_end": 163
+      },
+      "context": "ce.issue_receipt.v1\": [\n      \"policy_snapshot_id\",\n      \"challenge_id\",\n      \"origin_jurisdiction\",\n      \"target_jurisdiction\",\n      \"payload_hash\",\n      \"policy_snapshot_origin\",\n      \"rationale_ref_origin\",\n      \"receipt_id\",\n   "
+    },
+    {
+      "candidate_id": "DSSC-BILATERAL-CHALLENGE-RECEIPT-CAND-0054",
+      "surface_form": "payload_hash",
+      "label": "PAYLOAD_HASH",
+      "confidence": 0.9497,
+      "review_status": "candidate",
+      "span": {
+        "start": 4948,
+        "end": 4960
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 164,
+        "line_end": 164
+      },
+      "context": " \"policy_snapshot_id\",\n      \"challenge_id\",\n      \"origin_jurisdiction\",\n      \"target_jurisdiction\",\n      \"payload_hash\",\n      \"policy_snapshot_origin\",\n      \"rationale_ref_origin\",\n      \"receipt_id\",\n      \"acceptance_hash\",\n"
+    },
+    {
+      "candidate_id": "DSSC-BILATERAL-CHALLENGE-RECEIPT-CAND-0055",
+      "surface_form": "policy_snapshot_origin",
+      "label": "POLICY_SNAPSHOT",
+      "confidence": 0.6697,
+      "review_status": "candidate",
+      "span": {
+        "start": 4970,
+        "end": 4992
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 165,
+        "line_end": 165
+      },
+      "context": "\n      \"challenge_id\",\n      \"origin_jurisdiction\",\n      \"target_jurisdiction\",\n      \"payload_hash\",\n      \"policy_snapshot_origin\",\n      \"rationale_ref_origin\",\n      \"receipt_id\",\n      \"acceptance_hash\",\n      \"policy_snapshot_target\",\n"
+    },
+    {
+      "candidate_id": "DSSC-BILATERAL-CHALLENGE-RECEIPT-CAND-0056",
+      "surface_form": "rationale",
+      "label": "RATIONALE_REFERENCE",
+      "confidence": 0.3938,
+      "review_status": "candidate",
+      "span": {
+        "start": 5002,
+        "end": 5011
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 166,
+        "line_end": 166
+      },
+      "context": "igin_jurisdiction\",\n      \"target_jurisdiction\",\n      \"payload_hash\",\n      \"policy_snapshot_origin\",\n      \"rationale_ref_origin\",\n      \"receipt_id\",\n      \"acceptance_hash\",\n      \"policy_snapshot_target\",\n      \"rationale_re"
+    },
+    {
+      "candidate_id": "DSSC-BILATERAL-CHALLENGE-RECEIPT-CAND-0057",
+      "surface_form": "rationale_ref_origin",
+      "label": "RATIONALE_REFERENCE",
+      "confidence": 0.3966,
+      "review_status": "candidate",
+      "span": {
+        "start": 5002,
+        "end": 5022
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 166,
+        "line_end": 166
+      },
+      "context": "igin_jurisdiction\",\n      \"target_jurisdiction\",\n      \"payload_hash\",\n      \"policy_snapshot_origin\",\n      \"rationale_ref_origin\",\n      \"receipt_id\",\n      \"acceptance_hash\",\n      \"policy_snapshot_target\",\n      \"rationale_ref_target\",\n"
+    },
+    {
+      "candidate_id": "DSSC-BILATERAL-CHALLENGE-RECEIPT-CAND-0058",
+      "surface_form": "receipt_id",
+      "label": "RECEIPT_ID",
+      "confidence": 0.7686,
+      "review_status": "candidate",
+      "span": {
+        "start": 5032,
+        "end": 5042
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 167,
+        "line_end": 167
+      },
+      "context": "get_jurisdiction\",\n      \"payload_hash\",\n      \"policy_snapshot_origin\",\n      \"rationale_ref_origin\",\n      \"receipt_id\",\n      \"acceptance_hash\",\n      \"policy_snapshot_target\",\n      \"rationale_ref_target\",\n      \"status\"\n    ]"
+    },
+    {
+      "candidate_id": "DSSC-BILATERAL-CHALLENGE-RECEIPT-CAND-0059",
+      "surface_form": "acceptance_hash",
+      "label": "PAYLOAD_HASH",
+      "confidence": 0.6087,
+      "review_status": "candidate",
+      "span": {
+        "start": 5052,
+        "end": 5067
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 168,
+        "line_end": 168
+      },
+      "context": "     \"payload_hash\",\n      \"policy_snapshot_origin\",\n      \"rationale_ref_origin\",\n      \"receipt_id\",\n      \"acceptance_hash\",\n      \"policy_snapshot_target\",\n      \"rationale_ref_target\",\n      \"status\"\n    ]\n  },\n  \"deny_reason_code"
+    },
+    {
+      "candidate_id": "DSSC-BILATERAL-CHALLENGE-RECEIPT-CAND-0060",
+      "surface_form": "policy_snapshot_target",
+      "label": "POLICY_SNAPSHOT",
+      "confidence": 0.801,
+      "review_status": "candidate",
+      "span": {
+        "start": 5077,
+        "end": 5099
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 169,
+        "line_end": 169
+      },
+      "context": "  \"policy_snapshot_origin\",\n      \"rationale_ref_origin\",\n      \"receipt_id\",\n      \"acceptance_hash\",\n      \"policy_snapshot_target\",\n      \"rationale_ref_target\",\n      \"status\"\n    ]\n  },\n  \"deny_reason_codes\": [\n    \"DENY_RECEIPT_HASH_MIS"
+    },
+    {
+      "candidate_id": "DSSC-BILATERAL-CHALLENGE-RECEIPT-CAND-0061",
+      "surface_form": "rationale_ref_target",
+      "label": "RATIONALE_REFERENCE",
+      "confidence": 0.4046,
+      "review_status": "candidate",
+      "span": {
+        "start": 5109,
+        "end": 5129
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 170,
+        "line_end": 170
+      },
+      "context": "  \"rationale_ref_origin\",\n      \"receipt_id\",\n      \"acceptance_hash\",\n      \"policy_snapshot_target\",\n      \"rationale_ref_target\",\n      \"status\"\n    ]\n  },\n  \"deny_reason_codes\": [\n    \"DENY_RECEIPT_HASH_MISMATCH\",\n    \"DENY_POLICY_SNAPS"
+    },
+    {
+      "candidate_id": "DSSC-BILATERAL-CHALLENGE-RECEIPT-CAND-0062",
+      "surface_form": "status",
+      "label": "STATUS",
+      "confidence": 0.7341,
+      "review_status": "candidate",
+      "span": {
+        "start": 5139,
+        "end": 5145
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 171,
+        "line_end": 171
+      },
+      "context": "  \"receipt_id\",\n      \"acceptance_hash\",\n      \"policy_snapshot_target\",\n      \"rationale_ref_target\",\n      \"status\"\n    ]\n  },\n  \"deny_reason_codes\": [\n    \"DENY_RECEIPT_HASH_MISMATCH\",\n    \"DENY_POLICY_SNAPSHOT_MISSING\",\n  "
+    },
+    {
+      "candidate_id": "DSSC-BILATERAL-CHALLENGE-RECEIPT-CAND-0063",
+      "surface_form": "DENY_RECEIPT_HASH_MISMATCH",
+      "label": "DENY_REASON_CODE",
+      "confidence": 0.5798,
+      "review_status": "candidate",
+      "span": {
+        "start": 5188,
+        "end": 5214
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 175,
+        "line_end": 175
+      },
+      "context": "olicy_snapshot_target\",\n      \"rationale_ref_target\",\n      \"status\"\n    ]\n  },\n  \"deny_reason_codes\": [\n    \"DENY_RECEIPT_HASH_MISMATCH\",\n    \"DENY_POLICY_SNAPSHOT_MISSING\",\n    \"DENY_CORRELATION_MISMATCH\",\n    \"PSC_BUNDLE_COMMIT_MISMATCH\"\n  ]\n}"
+    },
+    {
+      "candidate_id": "DSSC-BILATERAL-CHALLENGE-RECEIPT-CAND-0064",
+      "surface_form": "DENY_POLICY_SNAPSHOT_MISSING",
+      "label": "DENY_REASON_CODE",
+      "confidence": 0.5238,
+      "review_status": "candidate",
+      "span": {
+        "start": 5222,
+        "end": 5250
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 176,
+        "line_end": 176
+      },
+      "context": "ionale_ref_target\",\n      \"status\"\n    ]\n  },\n  \"deny_reason_codes\": [\n    \"DENY_RECEIPT_HASH_MISMATCH\",\n    \"DENY_POLICY_SNAPSHOT_MISSING\",\n    \"DENY_CORRELATION_MISMATCH\",\n    \"PSC_BUNDLE_COMMIT_MISMATCH\"\n  ]\n}\n\n\n### FILE: intent-mappings.json\n{\n"
+    },
+    {
+      "candidate_id": "DSSC-BILATERAL-CHALLENGE-RECEIPT-CAND-0065",
+      "surface_form": "DENY_CORRELATION_MISMATCH",
+      "label": "DENY_REASON_CODE",
+      "confidence": 0.497,
+      "review_status": "candidate",
+      "span": {
+        "start": 5258,
+        "end": 5283
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 177,
+        "line_end": 177
+      },
+      "context": "   ]\n  },\n  \"deny_reason_codes\": [\n    \"DENY_RECEIPT_HASH_MISMATCH\",\n    \"DENY_POLICY_SNAPSHOT_MISSING\",\n    \"DENY_CORRELATION_MISMATCH\",\n    \"PSC_BUNDLE_COMMIT_MISMATCH\"\n  ]\n}\n\n\n### FILE: intent-mappings.json\n{\n  \"schema_version\": \"1.0\",\n  \"dom"
+    },
+    {
+      "candidate_id": "DSSC-BILATERAL-CHALLENGE-RECEIPT-CAND-0066",
+      "surface_form": "dssc-bilateral-challenge-receipt",
+      "label": "RECEIPT_ID",
+      "confidence": 0.4098,
+      "review_status": "candidate",
+      "span": {
+        "start": 5400,
+        "end": 5432
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 186,
+        "line_end": 186
+      },
+      "context": "\"PSC_BUNDLE_COMMIT_MISMATCH\"\n  ]\n}\n\n\n### FILE: intent-mappings.json\n{\n  \"schema_version\": \"1.0\",\n  \"domain\": \"dssc-bilateral-challenge-receipt\",\n  \"mappings\": [\n    {\n      \"concept_uri\": \"dssc:GovernanceSurface\",\n      \"intent_class\": \"dssc.governance"
+    },
+    {
+      "candidate_id": "DSSC-BILATERAL-CHALLENGE-RECEIPT-CAND-0067",
+      "surface_form": "dssc",
+      "label": "JURISDICTION",
+      "confidence": 0.8008,
+      "review_status": "candidate",
+      "span": {
+        "start": 5479,
+        "end": 5483
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 189,
+        "line_end": 189
+      },
+      "context": "_version\": \"1.0\",\n  \"domain\": \"dssc-bilateral-challenge-receipt\",\n  \"mappings\": [\n    {\n      \"concept_uri\": \"dssc:GovernanceSurface\",\n      \"intent_class\": \"dssc.governance.submit_challenge.v1\",\n      \"confidence_floor\": 0."
+    },
+    {
+      "candidate_id": "DSSC-BILATERAL-CHALLENGE-RECEIPT-CAND-0068",
+      "surface_form": "GovernanceSurface",
+      "label": "JURISDICTION",
+      "confidence": 0.8347,
+      "review_status": "candidate",
+      "span": {
+        "start": 5484,
+        "end": 5501
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 189,
+        "line_end": 189
+      },
+      "context": "ion\": \"1.0\",\n  \"domain\": \"dssc-bilateral-challenge-receipt\",\n  \"mappings\": [\n    {\n      \"concept_uri\": \"dssc:GovernanceSurface\",\n      \"intent_class\": \"dssc.governance.submit_challenge.v1\",\n      \"confidence_floor\": 0.76\n    },\n    {\n  "
+    },
+    {
+      "candidate_id": "DSSC-BILATERAL-CHALLENGE-RECEIPT-CAND-0069",
+      "surface_form": "intent_class",
+      "label": "INTENT_CLASS",
+      "confidence": 0.6947,
+      "review_status": "candidate",
+      "span": {
+        "start": 5511,
+        "end": 5523
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 190,
+        "line_end": 190
+      },
+      "context": "ssc-bilateral-challenge-receipt\",\n  \"mappings\": [\n    {\n      \"concept_uri\": \"dssc:GovernanceSurface\",\n      \"intent_class\": \"dssc.governance.submit_challenge.v1\",\n      \"confidence_floor\": 0.76\n    },\n    {\n      \"concept_uri\": \"ds"
+    },
+    {
+      "candidate_id": "DSSC-BILATERAL-CHALLENGE-RECEIPT-CAND-0070",
+      "surface_form": "dssc",
+      "label": "JURISDICTION",
+      "confidence": 0.5462,
+      "review_status": "candidate",
+      "span": {
+        "start": 5527,
+        "end": 5531
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 190,
+        "line_end": 190
+      },
+      "context": "allenge-receipt\",\n  \"mappings\": [\n    {\n      \"concept_uri\": \"dssc:GovernanceSurface\",\n      \"intent_class\": \"dssc.governance.submit_challenge.v1\",\n      \"confidence_floor\": 0.76\n    },\n    {\n      \"concept_uri\": \"dssc:Gover"
+    },
+    {
+      "candidate_id": "DSSC-BILATERAL-CHALLENGE-RECEIPT-CAND-0071",
+      "surface_form": "submit_challenge.v1",
+      "label": "POLICY_SNAPSHOT",
+      "confidence": 0.4216,
+      "review_status": "candidate",
+      "span": {
+        "start": 5543,
+        "end": 5562
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 190,
+        "line_end": 190
+      },
+      "context": ",\n  \"mappings\": [\n    {\n      \"concept_uri\": \"dssc:GovernanceSurface\",\n      \"intent_class\": \"dssc.governance.submit_challenge.v1\",\n      \"confidence_floor\": 0.76\n    },\n    {\n      \"concept_uri\": \"dssc:GovernanceSurface\",\n      \"intent_cl"
+    },
+    {
+      "candidate_id": "DSSC-BILATERAL-CHALLENGE-RECEIPT-CAND-0072",
+      "surface_form": "dssc",
+      "label": "JURISDICTION",
+      "confidence": 0.7851,
+      "review_status": "candidate",
+      "span": {
+        "start": 5631,
+        "end": 5635
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 194,
+        "line_end": 194
+      },
+      "context": "ss\": \"dssc.governance.submit_challenge.v1\",\n      \"confidence_floor\": 0.76\n    },\n    {\n      \"concept_uri\": \"dssc:GovernanceSurface\",\n      \"intent_class\": \"dssc.governance.issue_receipt.v1\",\n      \"confidence_floor\": 0.76\n"
+    },
+    {
+      "candidate_id": "DSSC-BILATERAL-CHALLENGE-RECEIPT-CAND-0073",
+      "surface_form": "GovernanceSurface",
+      "label": "JURISDICTION",
+      "confidence": 0.7949,
+      "review_status": "candidate",
+      "span": {
+        "start": 5636,
+        "end": 5653
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 194,
+        "line_end": 194
+      },
+      "context": "\"dssc.governance.submit_challenge.v1\",\n      \"confidence_floor\": 0.76\n    },\n    {\n      \"concept_uri\": \"dssc:GovernanceSurface\",\n      \"intent_class\": \"dssc.governance.issue_receipt.v1\",\n      \"confidence_floor\": 0.76\n    }\n  ]\n}\n\n\n### "
+    },
+    {
+      "candidate_id": "DSSC-BILATERAL-CHALLENGE-RECEIPT-CAND-0074",
+      "surface_form": "intent_class",
+      "label": "INTENT_CLASS",
+      "confidence": 0.7278,
+      "review_status": "candidate",
+      "span": {
+        "start": 5663,
+        "end": 5675
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 195,
+        "line_end": 195
+      },
+      "context": "llenge.v1\",\n      \"confidence_floor\": 0.76\n    },\n    {\n      \"concept_uri\": \"dssc:GovernanceSurface\",\n      \"intent_class\": \"dssc.governance.issue_receipt.v1\",\n      \"confidence_floor\": 0.76\n    }\n  ]\n}\n\n\n### FILE: thesaurus-local."
+    },
+    {
+      "candidate_id": "DSSC-BILATERAL-CHALLENGE-RECEIPT-CAND-0075",
+      "surface_form": "dssc",
+      "label": "JURISDICTION",
+      "confidence": 0.5141,
+      "review_status": "candidate",
+      "span": {
+        "start": 5679,
+        "end": 5683
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 195,
+        "line_end": 195
+      },
+      "context": "  \"confidence_floor\": 0.76\n    },\n    {\n      \"concept_uri\": \"dssc:GovernanceSurface\",\n      \"intent_class\": \"dssc.governance.issue_receipt.v1\",\n      \"confidence_floor\": 0.76\n    }\n  ]\n}\n\n\n### FILE: thesaurus-local.json\n{\n "
+    },
+    {
+      "candidate_id": "DSSC-BILATERAL-CHALLENGE-RECEIPT-CAND-0076",
+      "surface_form": "issue_receipt.v1",
+      "label": "POLICY_SNAPSHOT",
+      "confidence": 0.4511,
+      "review_status": "candidate",
+      "span": {
+        "start": 5695,
+        "end": 5711
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 195,
+        "line_end": 195
+      },
+      "context": "oor\": 0.76\n    },\n    {\n      \"concept_uri\": \"dssc:GovernanceSurface\",\n      \"intent_class\": \"dssc.governance.issue_receipt.v1\",\n      \"confidence_floor\": 0.76\n    }\n  ]\n}\n\n\n### FILE: thesaurus-local.json\n{\n  \"schema_version\": \"1.0\",\n  "
+    },
+    {
+      "candidate_id": "DSSC-BILATERAL-CHALLENGE-RECEIPT-CAND-0077",
+      "surface_form": "dssc-bilateral-challenge-receipt",
+      "label": "RECEIPT_ID",
+      "confidence": 0.3649,
+      "review_status": "candidate",
+      "span": {
+        "start": 5832,
+        "end": 5864
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 205,
+        "line_end": 205
+      },
+      "context": "onfidence_floor\": 0.76\n    }\n  ]\n}\n\n\n### FILE: thesaurus-local.json\n{\n  \"schema_version\": \"1.0\",\n  \"domain\": \"dssc-bilateral-challenge-receipt\",\n  \"last_modified\": \"2026-04-14\",\n  \"concepts\": [\n    {\n      \"concept_id\": \"dssc-bilateral-challenge-receip"
+    },
+    {
+      "candidate_id": "DSSC-BILATERAL-CHALLENGE-RECEIPT-CAND-0078",
+      "surface_form": "dssc-bilateral-challenge-receipt",
+      "label": "RECEIPT_ID",
+      "confidence": 0.4291,
+      "review_status": "candidate",
+      "span": {
+        "start": 5943,
+        "end": 5975
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 209,
+        "line_end": 209
+      },
+      "context": "ssc-bilateral-challenge-receipt\",\n  \"last_modified\": \"2026-04-14\",\n  \"concepts\": [\n    {\n      \"concept_id\": \"dssc-bilateral-challenge-receipt.challenge.id.v1\",\n      \"preferred_term\": \"challenge_id\",\n      \"synonyms\": [],\n      \"register_variants\": {}"
+    },
+    {
+      "candidate_id": "DSSC-BILATERAL-CHALLENGE-RECEIPT-CAND-0079",
+      "surface_form": "challenge_id",
+      "label": "CHALLENGE_ID",
+      "confidence": 0.8508,
+      "review_status": "candidate",
+      "span": {
+        "start": 6019,
+        "end": 6031
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 210,
+        "line_end": 210
+      },
+      "context": "ts\": [\n    {\n      \"concept_id\": \"dssc-bilateral-challenge-receipt.challenge.id.v1\",\n      \"preferred_term\": \"challenge_id\",\n      \"synonyms\": [],\n      \"register_variants\": {},\n      \"domain_vocabulary\": {},\n      \"translations\": {"
+    },
+    {
+      "candidate_id": "DSSC-BILATERAL-CHALLENGE-RECEIPT-CAND-0080",
+      "surface_form": "GovernanceSurface",
+      "label": "JURISDICTION",
+      "confidence": 0.9208,
+      "review_status": "candidate",
+      "span": {
+        "start": 6162,
+        "end": 6179
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 215,
+        "line_end": 215
+      },
+      "context": "[],\n      \"register_variants\": {},\n      \"domain_vocabulary\": {},\n      \"translations\": {},\n      \"broader\": \"GovernanceSurface\",\n      \"narrower\": [],\n      \"source_refs\": [\n        \"dssc-canonical-source-catalog\"\n      ],\n      \"ner_pr"
+    },
+    {
+      "candidate_id": "DSSC-BILATERAL-CHALLENGE-RECEIPT-CAND-0081",
+      "surface_form": "ds",
+      "label": "RATIONALE_REFERENCE",
+      "confidence": 0.4126,
+      "review_status": "candidate",
+      "span": {
+        "start": 6236,
+        "end": 6238
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 218,
+        "line_end": 218
+      },
+      "context": "ranslations\": {},\n      \"broader\": \"GovernanceSurface\",\n      \"narrower\": [],\n      \"source_refs\": [\n        \"dssc-canonical-source-catalog\"\n      ],\n      \"ner_provenance\": null\n    },\n    {\n      \"concept_id\": \"dssc-bila"
+    },
+    {
+      "candidate_id": "DSSC-BILATERAL-CHALLENGE-RECEIPT-CAND-0082",
+      "surface_form": "dssc-canonical-source-catalog",
+      "label": "RATIONALE_REFERENCE",
+      "confidence": 0.3746,
+      "review_status": "candidate",
+      "span": {
+        "start": 6236,
+        "end": 6265
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 218,
+        "line_end": 218
+      },
+      "context": "ranslations\": {},\n      \"broader\": \"GovernanceSurface\",\n      \"narrower\": [],\n      \"source_refs\": [\n        \"dssc-canonical-source-catalog\"\n      ],\n      \"ner_provenance\": null\n    },\n    {\n      \"concept_id\": \"dssc-bilateral-challenge-receipt.ori"
+    },
+    {
+      "candidate_id": "DSSC-BILATERAL-CHALLENGE-RECEIPT-CAND-0083",
+      "surface_form": "dssc-bilateral-challenge-receipt",
+      "label": "RECEIPT_ID",
+      "confidence": 0.5144,
+      "review_status": "candidate",
+      "span": {
+        "start": 6339,
+        "end": 6371
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 223,
+        "line_end": 223
+      },
+      "context": "      \"dssc-canonical-source-catalog\"\n      ],\n      \"ner_provenance\": null\n    },\n    {\n      \"concept_id\": \"dssc-bilateral-challenge-receipt.origin.jurisdiction.v1\",\n      \"preferred_term\": \"origin_jurisdiction\",\n      \"synonyms\": [],\n      \"register"
+    },
+    {
+      "candidate_id": "DSSC-BILATERAL-CHALLENGE-RECEIPT-CAND-0084",
+      "surface_form": "jurisdiction",
+      "label": "JURISDICTION",
+      "confidence": 0.656,
+      "review_status": "candidate",
+      "span": {
+        "start": 6379,
+        "end": 6391
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 223,
+        "line_end": 223
+      },
+      "context": "    ],\n      \"ner_provenance\": null\n    },\n    {\n      \"concept_id\": \"dssc-bilateral-challenge-receipt.origin.jurisdiction.v1\",\n      \"preferred_term\": \"origin_jurisdiction\",\n      \"synonyms\": [],\n      \"register_variants\": {},\n    "
+    },
+    {
+      "candidate_id": "DSSC-BILATERAL-CHALLENGE-RECEIPT-CAND-0085",
+      "surface_form": "origin_jurisdiction",
+      "label": "JURISDICTION",
+      "confidence": 0.7365,
+      "review_status": "candidate",
+      "span": {
+        "start": 6422,
+        "end": 6441
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 224,
+        "line_end": 224
+      },
+      "context": "    {\n      \"concept_id\": \"dssc-bilateral-challenge-receipt.origin.jurisdiction.v1\",\n      \"preferred_term\": \"origin_jurisdiction\",\n      \"synonyms\": [],\n      \"register_variants\": {},\n      \"domain_vocabulary\": {},\n      \"translations\": {"
+    },
+    {
+      "candidate_id": "DSSC-BILATERAL-CHALLENGE-RECEIPT-CAND-0086",
+      "surface_form": "GovernanceSurface",
+      "label": "RATIONALE_REFERENCE",
+      "confidence": 0.3812,
+      "review_status": "candidate",
+      "span": {
+        "start": 6572,
+        "end": 6589
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 229,
+        "line_end": 229
+      },
+      "context": "[],\n      \"register_variants\": {},\n      \"domain_vocabulary\": {},\n      \"translations\": {},\n      \"broader\": \"GovernanceSurface\",\n      \"narrower\": [],\n      \"source_refs\": [\n        \"dssc-canonical-source-catalog\"\n      ],\n      \"ner_pr"
+    },
+    {
+      "candidate_id": "DSSC-BILATERAL-CHALLENGE-RECEIPT-CAND-0087",
+      "surface_form": "dssc-canonical-source-catalog",
+      "label": "RATIONALE_REFERENCE",
+      "confidence": 0.4415,
+      "review_status": "candidate",
+      "span": {
+        "start": 6646,
+        "end": 6675
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 232,
+        "line_end": 232
+      },
+      "context": "ranslations\": {},\n      \"broader\": \"GovernanceSurface\",\n      \"narrower\": [],\n      \"source_refs\": [\n        \"dssc-canonical-source-catalog\"\n      ],\n      \"ner_provenance\": null\n    },\n    {\n      \"concept_id\": \"dssc-bilateral-challenge-receipt.tar"
+    },
+    {
+      "candidate_id": "DSSC-BILATERAL-CHALLENGE-RECEIPT-CAND-0088",
+      "surface_form": "concept_id",
+      "label": "CHALLENGE_ID",
+      "confidence": 0.3875,
+      "review_status": "candidate",
+      "span": {
+        "start": 6735,
+        "end": 6745
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 237,
+        "line_end": 237
+      },
+      "context": "ce_refs\": [\n        \"dssc-canonical-source-catalog\"\n      ],\n      \"ner_provenance\": null\n    },\n    {\n      \"concept_id\": \"dssc-bilateral-challenge-receipt.target.jurisdiction.v1\",\n      \"preferred_term\": \"target_jurisdiction\",\n "
+    },
+    {
+      "candidate_id": "DSSC-BILATERAL-CHALLENGE-RECEIPT-CAND-0089",
+      "surface_form": "dssc-bilateral-challenge-receipt",
+      "label": "RECEIPT_ID",
+      "confidence": 0.5262,
+      "review_status": "candidate",
+      "span": {
+        "start": 6749,
+        "end": 6781
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 237,
+        "line_end": 237
+      },
+      "context": "      \"dssc-canonical-source-catalog\"\n      ],\n      \"ner_provenance\": null\n    },\n    {\n      \"concept_id\": \"dssc-bilateral-challenge-receipt.target.jurisdiction.v1\",\n      \"preferred_term\": \"target_jurisdiction\",\n      \"synonyms\": [],\n      \"register"
+    },
+    {
+      "candidate_id": "DSSC-BILATERAL-CHALLENGE-RECEIPT-CAND-0090",
+      "surface_form": "jurisdiction",
+      "label": "JURISDICTION",
+      "confidence": 0.593,
+      "review_status": "candidate",
+      "span": {
+        "start": 6789,
+        "end": 6801
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 237,
+        "line_end": 237
+      },
+      "context": "    ],\n      \"ner_provenance\": null\n    },\n    {\n      \"concept_id\": \"dssc-bilateral-challenge-receipt.target.jurisdiction.v1\",\n      \"preferred_term\": \"target_jurisdiction\",\n      \"synonyms\": [],\n      \"register_variants\": {},\n    "
+    },
+    {
+      "candidate_id": "DSSC-BILATERAL-CHALLENGE-RECEIPT-CAND-0091",
+      "surface_form": "target_jurisdiction",
+      "label": "JURISDICTION",
+      "confidence": 0.8741,
+      "review_status": "candidate",
+      "span": {
+        "start": 6832,
+        "end": 6851
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 238,
+        "line_end": 238
+      },
+      "context": "    {\n      \"concept_id\": \"dssc-bilateral-challenge-receipt.target.jurisdiction.v1\",\n      \"preferred_term\": \"target_jurisdiction\",\n      \"synonyms\": [],\n      \"register_variants\": {},\n      \"domain_vocabulary\": {},\n      \"translations\": {"
+    },
+    {
+      "candidate_id": "DSSC-BILATERAL-CHALLENGE-RECEIPT-CAND-0092",
+      "surface_form": "dssc-bilateral-challenge-receipt",
+      "label": "RECEIPT_ID",
+      "confidence": 0.4372,
+      "review_status": "candidate",
+      "span": {
+        "start": 7159,
+        "end": 7191
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 251,
+        "line_end": 251
+      },
+      "context": "      \"dssc-canonical-source-catalog\"\n      ],\n      \"ner_provenance\": null\n    },\n    {\n      \"concept_id\": \"dssc-bilateral-challenge-receipt.payload.hash.v1\",\n      \"preferred_term\": \"payload_hash\",\n      \"synonyms\": [],\n      \"register_variants\": {}"
+    },
+    {
+      "candidate_id": "DSSC-BILATERAL-CHALLENGE-RECEIPT-CAND-0093",
+      "surface_form": "payload_hash",
+      "label": "PAYLOAD_HASH",
+      "confidence": 0.9046,
+      "review_status": "candidate",
+      "span": {
+        "start": 7235,
+        "end": 7247
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 252,
+        "line_end": 252
+      },
+      "context": "    },\n    {\n      \"concept_id\": \"dssc-bilateral-challenge-receipt.payload.hash.v1\",\n      \"preferred_term\": \"payload_hash\",\n      \"synonyms\": [],\n      \"register_variants\": {},\n      \"domain_vocabulary\": {},\n      \"translations\": {"
+    },
+    {
+      "candidate_id": "DSSC-BILATERAL-CHALLENGE-RECEIPT-CAND-0094",
+      "surface_form": "policy.snapshot",
+      "label": "POLICY_SNAPSHOT",
+      "confidence": 0.5031,
+      "review_status": "candidate",
+      "span": {
+        "start": 7588,
+        "end": 7603
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 265,
+        "line_end": 265
+      },
+      "context": "log\"\n      ],\n      \"ner_provenance\": null\n    },\n    {\n      \"concept_id\": \"dssc-bilateral-challenge-receipt.policy.snapshot.origin.v1\",\n      \"preferred_term\": \"policy_snapshot_origin\",\n      \"synonyms\": [],\n      \"register_variants\""
+    },
+    {
+      "candidate_id": "DSSC-BILATERAL-CHALLENGE-RECEIPT-CAND-0095",
+      "surface_form": "origin.v1",
+      "label": "POLICY_SNAPSHOT",
+      "confidence": 0.688,
+      "review_status": "candidate",
+      "span": {
+        "start": 7604,
+        "end": 7613
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 265,
+        "line_end": 265
+      },
+      "context": "    \"ner_provenance\": null\n    },\n    {\n      \"concept_id\": \"dssc-bilateral-challenge-receipt.policy.snapshot.origin.v1\",\n      \"preferred_term\": \"policy_snapshot_origin\",\n      \"synonyms\": [],\n      \"register_variants\": {},\n    "
+    },
+    {
+      "candidate_id": "DSSC-BILATERAL-CHALLENGE-RECEIPT-CAND-0096",
+      "surface_form": "policy_snapshot_origin",
+      "label": "POLICY_SNAPSHOT",
+      "confidence": 0.6999,
+      "review_status": "candidate",
+      "span": {
+        "start": 7641,
+        "end": 7663
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 266,
+        "line_end": 266
+      },
+      "context": " {\n      \"concept_id\": \"dssc-bilateral-challenge-receipt.policy.snapshot.origin.v1\",\n      \"preferred_term\": \"policy_snapshot_origin\",\n      \"synonyms\": [],\n      \"register_variants\": {},\n      \"domain_vocabulary\": {},\n      \"translations\": {"
+    },
+    {
+      "candidate_id": "DSSC-BILATERAL-CHALLENGE-RECEIPT-CAND-0097",
+      "surface_form": "dssc-bilateral-challenge-receipt",
+      "label": "RECEIPT_ID",
+      "confidence": 0.4399,
+      "review_status": "candidate",
+      "span": {
+        "start": 7971,
+        "end": 8003
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 279,
+        "line_end": 279
+      },
+      "context": "      \"dssc-canonical-source-catalog\"\n      ],\n      \"ner_provenance\": null\n    },\n    {\n      \"concept_id\": \"dssc-bilateral-challenge-receipt.rationale.ref.origin.v1\",\n      \"preferred_term\": \"rationale_ref_origin\",\n      \"synonyms\": [],\n      \"regist"
+    },
+    {
+      "candidate_id": "DSSC-BILATERAL-CHALLENGE-RECEIPT-CAND-0098",
+      "surface_form": "rationale_ref_origin",
+      "label": "RATIONALE_REFERENCE",
+      "confidence": 0.3831,
+      "review_status": "candidate",
+      "span": {
+        "start": 8055,
+        "end": 8075
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 280,
+        "line_end": 280
+      },
+      "context": "   {\n      \"concept_id\": \"dssc-bilateral-challenge-receipt.rationale.ref.origin.v1\",\n      \"preferred_term\": \"rationale_ref_origin\",\n      \"synonyms\": [],\n      \"register_variants\": {},\n      \"domain_vocabulary\": {},\n      \"translations\": {"
+    },
+    {
+      "candidate_id": "DSSC-BILATERAL-CHALLENGE-RECEIPT-CAND-0099",
+      "surface_form": "dssc-canonical-source-catalog",
+      "label": "RATIONALE_REFERENCE",
+      "confidence": 0.3845,
+      "review_status": "candidate",
+      "span": {
+        "start": 8280,
+        "end": 8309
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 288,
+        "line_end": 288
+      },
+      "context": "ranslations\": {},\n      \"broader\": \"GovernanceSurface\",\n      \"narrower\": [],\n      \"source_refs\": [\n        \"dssc-canonical-source-catalog\"\n      ],\n      \"ner_provenance\": null\n    },\n    {\n      \"concept_id\": \"dssc-bilateral-challenge-receipt.rec"
+    },
+    {
+      "candidate_id": "DSSC-BILATERAL-CHALLENGE-RECEIPT-CAND-0100",
+      "surface_form": "receipt_id",
+      "label": "RECEIPT_ID",
+      "confidence": 0.6889,
+      "review_status": "candidate",
+      "span": {
+        "start": 8457,
+        "end": 8467
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 294,
+        "line_end": 294
+      },
+      "context": "l\n    },\n    {\n      \"concept_id\": \"dssc-bilateral-challenge-receipt.receipt.id.v1\",\n      \"preferred_term\": \"receipt_id\",\n      \"synonyms\": [],\n      \"register_variants\": {},\n      \"domain_vocabulary\": {},\n      \"translations\": {"
+    },
+    {
+      "candidate_id": "DSSC-BILATERAL-CHALLENGE-RECEIPT-CAND-0101",
+      "surface_form": "concept_id",
+      "label": "CHALLENGE_ID",
+      "confidence": 0.3967,
+      "review_status": "candidate",
+      "span": {
+        "start": 8761,
+        "end": 8771
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 307,
+        "line_end": 307
+      },
+      "context": "ce_refs\": [\n        \"dssc-canonical-source-catalog\"\n      ],\n      \"ner_provenance\": null\n    },\n    {\n      \"concept_id\": \"dssc-bilateral-challenge-receipt.acceptance.hash.v1\",\n      \"preferred_term\": \"acceptance_hash\",\n      \"sy"
+    },
+    {
+      "candidate_id": "DSSC-BILATERAL-CHALLENGE-RECEIPT-CAND-0102",
+      "surface_form": "dssc-bilateral-challenge-receipt",
+      "label": "RECEIPT_ID",
+      "confidence": 0.4343,
+      "review_status": "candidate",
+      "span": {
+        "start": 8775,
+        "end": 8807
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 307,
+        "line_end": 307
+      },
+      "context": "      \"dssc-canonical-source-catalog\"\n      ],\n      \"ner_provenance\": null\n    },\n    {\n      \"concept_id\": \"dssc-bilateral-challenge-receipt.acceptance.hash.v1\",\n      \"preferred_term\": \"acceptance_hash\",\n      \"synonyms\": [],\n      \"register_variant"
+    },
+    {
+      "candidate_id": "DSSC-BILATERAL-CHALLENGE-RECEIPT-CAND-0103",
+      "surface_form": "narrower",
+      "label": "RATIONALE_REFERENCE",
+      "confidence": 0.373,
+      "review_status": "candidate",
+      "span": {
+        "start": 9027,
+        "end": 9035
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 314,
+        "line_end": 314
+      },
+      "context": "s\": {},\n      \"domain_vocabulary\": {},\n      \"translations\": {},\n      \"broader\": \"GovernanceSurface\",\n      \"narrower\": [],\n      \"source_refs\": [\n        \"dssc-canonical-source-catalog\"\n      ],\n      \"ner_provenance\": null\n  "
+    },
+    {
+      "candidate_id": "DSSC-BILATERAL-CHALLENGE-RECEIPT-CAND-0104",
+      "surface_form": "policy.snapshot.target.v1",
+      "label": "POLICY_SNAPSHOT",
+      "confidence": 0.5429,
+      "review_status": "candidate",
+      "span": {
+        "start": 9210,
+        "end": 9235
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 321,
+        "line_end": 321
+      },
+      "context": "log\"\n      ],\n      \"ner_provenance\": null\n    },\n    {\n      \"concept_id\": \"dssc-bilateral-challenge-receipt.policy.snapshot.target.v1\",\n      \"preferred_term\": \"policy_snapshot_target\",\n      \"synonyms\": [],\n      \"register_variants\": {},\n    "
+    },
+    {
+      "candidate_id": "DSSC-BILATERAL-CHALLENGE-RECEIPT-CAND-0105",
+      "surface_form": "policy_snapshot_target",
+      "label": "POLICY_SNAPSHOT",
+      "confidence": 0.7183,
+      "review_status": "candidate",
+      "span": {
+        "start": 9263,
+        "end": 9285
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 322,
+        "line_end": 322
+      },
+      "context": " {\n      \"concept_id\": \"dssc-bilateral-challenge-receipt.policy.snapshot.target.v1\",\n      \"preferred_term\": \"policy_snapshot_target\",\n      \"synonyms\": [],\n      \"register_variants\": {},\n      \"domain_vocabulary\": {},\n      \"translations\": {"
+    },
+    {
+      "candidate_id": "DSSC-BILATERAL-CHALLENGE-RECEIPT-CAND-0106",
+      "surface_form": "dssc-canonical-source-catalog",
+      "label": "RATIONALE_REFERENCE",
+      "confidence": 0.3877,
+      "review_status": "candidate",
+      "span": {
+        "start": 9490,
+        "end": 9519
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 330,
+        "line_end": 330
+      },
+      "context": "ranslations\": {},\n      \"broader\": \"GovernanceSurface\",\n      \"narrower\": [],\n      \"source_refs\": [\n        \"dssc-canonical-source-catalog\"\n      ],\n      \"ner_provenance\": null\n    },\n    {\n      \"concept_id\": \"dssc-bilateral-challenge-receipt.rat"
+    },
+    {
+      "candidate_id": "DSSC-BILATERAL-CHALLENGE-RECEIPT-CAND-0107",
+      "surface_form": "dssc-bilateral-challenge-receipt",
+      "label": "RECEIPT_ID",
+      "confidence": 0.4568,
+      "review_status": "candidate",
+      "span": {
+        "start": 9593,
+        "end": 9625
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 335,
+        "line_end": 335
+      },
+      "context": "      \"dssc-canonical-source-catalog\"\n      ],\n      \"ner_provenance\": null\n    },\n    {\n      \"concept_id\": \"dssc-bilateral-challenge-receipt.rationale.ref.target.v1\",\n      \"preferred_term\": \"rationale_ref_target\",\n      \"synonyms\": [],\n      \"regist"
+    },
+    {
+      "candidate_id": "DSSC-BILATERAL-CHALLENGE-RECEIPT-CAND-0108",
+      "surface_form": "rationale_ref_target",
+      "label": "RATIONALE_REFERENCE",
+      "confidence": 0.4207,
+      "review_status": "candidate",
+      "span": {
+        "start": 9677,
+        "end": 9697
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 336,
+        "line_end": 336
+      },
+      "context": "   {\n      \"concept_id\": \"dssc-bilateral-challenge-receipt.rationale.ref.target.v1\",\n      \"preferred_term\": \"rationale_ref_target\",\n      \"synonyms\": [],\n      \"register_variants\": {},\n      \"domain_vocabulary\": {},\n      \"translations\": {"
+    },
+    {
+      "candidate_id": "DSSC-BILATERAL-CHALLENGE-RECEIPT-CAND-0109",
+      "surface_form": "dssc-canonical-so",
+      "label": "RATIONALE_REFERENCE",
+      "confidence": 0.3645,
+      "review_status": "candidate",
+      "span": {
+        "start": 9902,
+        "end": 9919
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 344,
+        "line_end": 344
+      },
+      "context": "ranslations\": {},\n      \"broader\": \"GovernanceSurface\",\n      \"narrower\": [],\n      \"source_refs\": [\n        \"dssc-canonical-source-catalog\"\n      ],\n      \"ner_provenance\": null\n    },\n    {\n      \"concept_id\": \"dssc-bilateral-challenge"
+    },
+    {
+      "candidate_id": "DSSC-BILATERAL-CHALLENGE-RECEIPT-CAND-0110",
+      "surface_form": "dssc-bilateral-challenge-receipt",
+      "label": "RECEIPT_ID",
+      "confidence": 0.4474,
+      "review_status": "candidate",
+      "span": {
+        "start": 10005,
+        "end": 10037
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 349,
+        "line_end": 349
+      },
+      "context": "      \"dssc-canonical-source-catalog\"\n      ],\n      \"ner_provenance\": null\n    },\n    {\n      \"concept_id\": \"dssc-bilateral-challenge-receipt.status.v1\",\n      \"preferred_term\": \"status\",\n      \"synonyms\": [],\n      \"register_variants\": {},\n      \"dom"
+    },
+    {
+      "candidate_id": "DSSC-BILATERAL-CHALLENGE-RECEIPT-CAND-0111",
+      "surface_form": "status.v1",
+      "label": "CHALLENGE_ID",
+      "confidence": 0.3992,
+      "review_status": "candidate",
+      "span": {
+        "start": 10038,
+        "end": 10047
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 349,
+        "line_end": 349
+      },
+      "context": "log\"\n      ],\n      \"ner_provenance\": null\n    },\n    {\n      \"concept_id\": \"dssc-bilateral-challenge-receipt.status.v1\",\n      \"preferred_term\": \"status\",\n      \"synonyms\": [],\n      \"register_variants\": {},\n      \"domain_vocabu"
+    },
+    {
+      "candidate_id": "DSSC-BILATERAL-CHALLENGE-RECEIPT-CAND-0112",
+      "surface_form": "status",
+      "label": "STATUS",
+      "confidence": 0.578,
+      "review_status": "candidate",
+      "span": {
+        "start": 10075,
+        "end": 10081
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 350,
+        "line_end": 350
+      },
+      "context": " null\n    },\n    {\n      \"concept_id\": \"dssc-bilateral-challenge-receipt.status.v1\",\n      \"preferred_term\": \"status\",\n      \"synonyms\": [],\n      \"register_variants\": {},\n      \"domain_vocabulary\": {},\n      \"translations\": {"
+    },
+    {
+      "candidate_id": "DSSC-BILATERAL-CHALLENGE-RECEIPT-CAND-0113",
+      "surface_form": "dssc-canonical-source-catalog",
+      "label": "RATIONALE_REFERENCE",
+      "confidence": 0.4739,
+      "review_status": "candidate",
+      "span": {
+        "start": 10286,
+        "end": 10315
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 358,
+        "line_end": 358
+      },
+      "context": "ranslations\": {},\n      \"broader\": \"GovernanceSurface\",\n      \"narrower\": [],\n      \"source_refs\": [\n        \"dssc-canonical-source-catalog\"\n      ],\n      \"ner_provenance\": null\n    },\n    {\n      \"concept_id\": \"dssc-bilateral-challenge-receipt.cor"
+    },
+    {
+      "candidate_id": "DSSC-BILATERAL-CHALLENGE-RECEIPT-CAND-0114",
+      "surface_form": "dssc-bilateral-challenge-receipt",
+      "label": "RECEIPT_ID",
+      "confidence": 0.5231,
+      "review_status": "candidate",
+      "span": {
+        "start": 10389,
+        "end": 10421
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 363,
+        "line_end": 363
+      },
+      "context": "      \"dssc-canonical-source-catalog\"\n      ],\n      \"ner_provenance\": null\n    },\n    {\n      \"concept_id\": \"dssc-bilateral-challenge-receipt.correlation.id.v1\",\n      \"preferred_term\": \"correlation_id\",\n      \"synonyms\": [],\n      \"register_variants\""
+    },
+    {
+      "candidate_id": "DSSC-BILATERAL-CHALLENGE-RECEIPT-CAND-0115",
+      "surface_form": "correlation_id",
+      "label": "CORRELATION_ID",
+      "confidence": 0.5602,
+      "review_status": "candidate",
+      "span": {
+        "start": 10467,
+        "end": 10481
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 364,
+        "line_end": 364
+      },
+      "context": "  },\n    {\n      \"concept_id\": \"dssc-bilateral-challenge-receipt.correlation.id.v1\",\n      \"preferred_term\": \"correlation_id\",\n      \"synonyms\": [],\n      \"register_variants\": {},\n      \"domain_vocabulary\": {},\n      \"translations\": {"
+    },
+    {
+      "candidate_id": "DSSC-BILATERAL-CHALLENGE-RECEIPT-CAND-0116",
+      "surface_form": "GovernanceSurface",
+      "label": "JURISDICTION",
+      "confidence": 0.9131,
+      "review_status": "candidate",
+      "span": {
+        "start": 10612,
+        "end": 10629
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 369,
+        "line_end": 369
+      },
+      "context": "[],\n      \"register_variants\": {},\n      \"domain_vocabulary\": {},\n      \"translations\": {},\n      \"broader\": \"GovernanceSurface\",\n      \"narrower\": [],\n      \"source_refs\": [\n        \"dssc-canonical-source-catalog\"\n      ],\n      \"ner_pr"
+    },
+    {
+      "candidate_id": "DSSC-BILATERAL-CHALLENGE-RECEIPT-CAND-0117",
+      "surface_form": "dssc-canonical-source-catalog",
+      "label": "RATIONALE_REFERENCE",
+      "confidence": 0.4537,
+      "review_status": "candidate",
+      "span": {
+        "start": 10686,
+        "end": 10715
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 372,
+        "line_end": 372
+      },
+      "context": "ranslations\": {},\n      \"broader\": \"GovernanceSurface\",\n      \"narrower\": [],\n      \"source_refs\": [\n        \"dssc-canonical-source-catalog\"\n      ],\n      \"ner_provenance\": null\n    },\n    {\n      \"concept_id\": \"dssc-bilateral-challenge-receipt.anc"
+    },
+    {
+      "candidate_id": "DSSC-BILATERAL-CHALLENGE-RECEIPT-CAND-0118",
+      "surface_form": "dssc-bilateral-challenge-receipt",
+      "label": "RECEIPT_ID",
+      "confidence": 0.4495,
+      "review_status": "candidate",
+      "span": {
+        "start": 10789,
+        "end": 10821
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 377,
+        "line_end": 377
+      },
+      "context": "      \"dssc-canonical-source-catalog\"\n      ],\n      \"ner_provenance\": null\n    },\n    {\n      \"concept_id\": \"dssc-bilateral-challenge-receipt.anchor.hash.origin.v1\",\n      \"preferred_term\": \"anchor_hash_origin\",\n      \"synonyms\": [],\n      \"register_v"
+    },
+    {
+      "candidate_id": "DSSC-BILATERAL-CHALLENGE-RECEIPT-CAND-0119",
+      "surface_form": "anchor_hash_origin",
+      "label": "RATIONALE_REFERENCE",
+      "confidence": 0.4269,
+      "review_status": "candidate",
+      "span": {
+        "start": 10871,
+        "end": 10889
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 378,
+        "line_end": 378
+      },
+      "context": "\n    {\n      \"concept_id\": \"dssc-bilateral-challenge-receipt.anchor.hash.origin.v1\",\n      \"preferred_term\": \"anchor_hash_origin\",\n      \"synonyms\": [],\n      \"register_variants\": {},\n      \"domain_vocabulary\": {},\n      \"translations\": {"
+    },
+    {
+      "candidate_id": "DSSC-BILATERAL-CHALLENGE-RECEIPT-CAND-0120",
+      "surface_form": "GovernanceSurface",
+      "label": "JURISDICTION",
+      "confidence": 0.9206,
+      "review_status": "candidate",
+      "span": {
+        "start": 11020,
+        "end": 11037
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 383,
+        "line_end": 383
+      },
+      "context": "[],\n      \"register_variants\": {},\n      \"domain_vocabulary\": {},\n      \"translations\": {},\n      \"broader\": \"GovernanceSurface\",\n      \"narrower\": [],\n      \"source_refs\": [\n        \"dssc-canonical-source-catalog\"\n      ],\n      \"ner_pr"
+    },
+    {
+      "candidate_id": "DSSC-BILATERAL-CHALLENGE-RECEIPT-CAND-0121",
+      "surface_form": "dssc-bilateral-challenge-receipt",
+      "label": "RECEIPT_ID",
+      "confidence": 0.4133,
+      "review_status": "candidate",
+      "span": {
+        "start": 11197,
+        "end": 11229
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 391,
+        "line_end": 391
+      },
+      "context": "      \"dssc-canonical-source-catalog\"\n      ],\n      \"ner_provenance\": null\n    },\n    {\n      \"concept_id\": \"dssc-bilateral-challenge-receipt.anchor.hash.target.v1\",\n      \"preferred_term\": \"anchor_hash_target\",\n      \"synonyms\": [],\n      \"register_v"
+    },
+    {
+      "candidate_id": "DSSC-BILATERAL-CHALLENGE-RECEIPT-CAND-0122",
+      "surface_form": "anchor_hash_target",
+      "label": "RATIONALE_REFERENCE",
+      "confidence": 0.4275,
+      "review_status": "candidate",
+      "span": {
+        "start": 11279,
+        "end": 11297
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 392,
+        "line_end": 392
+      },
+      "context": "\n    {\n      \"concept_id\": \"dssc-bilateral-challenge-receipt.anchor.hash.target.v1\",\n      \"preferred_term\": \"anchor_hash_target\",\n      \"synonyms\": [],\n      \"register_variants\": {},\n      \"domain_vocabulary\": {},\n      \"translations\": {"
+    },
+    {
+      "candidate_id": "DSSC-BILATERAL-CHALLENGE-RECEIPT-CAND-0123",
+      "surface_form": "GovernanceSurface",
+      "label": "JURISDICTION",
+      "confidence": 0.9277,
+      "review_status": "candidate",
+      "span": {
+        "start": 11428,
+        "end": 11445
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 397,
+        "line_end": 397
+      },
+      "context": "[],\n      \"register_variants\": {},\n      \"domain_vocabulary\": {},\n      \"translations\": {},\n      \"broader\": \"GovernanceSurface\",\n      \"narrower\": [],\n      \"source_refs\": [\n        \"dssc-canonical-source-catalog\"\n      ],\n      \"ner_pr"
+    },
+    {
+      "candidate_id": "DSSC-BILATERAL-CHALLENGE-RECEIPT-CAND-0124",
+      "surface_form": "concept_id",
+      "label": "CHALLENGE_ID",
+      "confidence": 0.3579,
+      "review_status": "candidate",
+      "span": {
+        "start": 11591,
+        "end": 11601
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 405,
+        "line_end": 405
+      },
+      "context": "ce_refs\": [\n        \"dssc-canonical-source-catalog\"\n      ],\n      \"ner_provenance\": null\n    },\n    {\n      \"concept_id\": \"dssc-bilateral-challenge-receipt.event.hash.v1\",\n      \"preferred_term\": \"event_hash\",\n      \"synonyms\": ["
+    },
+    {
+      "candidate_id": "DSSC-BILATERAL-CHALLENGE-RECEIPT-CAND-0125",
+      "surface_form": "dssc-bilateral-challenge-receipt",
+      "label": "RECEIPT_ID",
+      "confidence": 0.3618,
+      "review_status": "candidate",
+      "span": {
+        "start": 11605,
+        "end": 11637
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 405,
+        "line_end": 405
+      },
+      "context": "      \"dssc-canonical-source-catalog\"\n      ],\n      \"ner_provenance\": null\n    },\n    {\n      \"concept_id\": \"dssc-bilateral-challenge-receipt.event.hash.v1\",\n      \"preferred_term\": \"event_hash\",\n      \"synonyms\": [],\n      \"register_variants\": {},\n  "
+    },
+    {
+      "candidate_id": "DSSC-BILATERAL-CHALLENGE-RECEIPT-CAND-0126",
+      "surface_form": "event_hash",
+      "label": "PAYLOAD_HASH",
+      "confidence": 0.3629,
+      "review_status": "candidate",
+      "span": {
+        "start": 11679,
+        "end": 11689
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 406,
+        "line_end": 406
+      },
+      "context": "l\n    },\n    {\n      \"concept_id\": \"dssc-bilateral-challenge-receipt.event.hash.v1\",\n      \"preferred_term\": \"event_hash\",\n      \"synonyms\": [],\n      \"register_variants\": {},\n      \"domain_vocabulary\": {},\n      \"translations\": {"
+    },
+    {
+      "candidate_id": "DSSC-BILATERAL-CHALLENGE-RECEIPT-CAND-0127",
+      "surface_form": "GovernanceSurface",
+      "label": "JURISDICTION",
+      "confidence": 0.9158,
+      "review_status": "candidate",
+      "span": {
+        "start": 11820,
+        "end": 11837
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 411,
+        "line_end": 411
+      },
+      "context": "[],\n      \"register_variants\": {},\n      \"domain_vocabulary\": {},\n      \"translations\": {},\n      \"broader\": \"GovernanceSurface\",\n      \"narrower\": [],\n      \"source_refs\": [\n        \"dssc-canonical-source-catalog\"\n      ],\n      \"ner_pr"
+    },
+    {
+      "candidate_id": "DSSC-BILATERAL-CHALLENGE-RECEIPT-CAND-0128",
+      "surface_form": "GovernanceSurface",
+      "label": "JURISDICTION",
+      "confidence": 0.9209,
+      "review_status": "candidate",
+      "span": {
+        "start": 12210,
+        "end": 12227
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 425,
+        "line_end": 425
+      },
+      "context": "[],\n      \"register_variants\": {},\n      \"domain_vocabulary\": {},\n      \"translations\": {},\n      \"broader\": \"GovernanceSurface\",\n      \"narrower\": [],\n      \"source_refs\": [\n        \"dssc-canonical-source-catalog\"\n      ],\n      \"ner_pr"
+    },
+    {
+      "candidate_id": "DSSC-BILATERAL-CHALLENGE-RECEIPT-CAND-0129",
+      "surface_form": "dssc_governance_submit_challenge_v1",
+      "label": "CHALLENGE_ID",
+      "confidence": 0.5722,
+      "review_status": "candidate",
+      "span": {
+        "start": 12503,
+        "end": 12538
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 442,
+        "line_end": 442
+      },
+      "context": "  \"schema_version\": \"1.0\",\n  \"domain\": \"dssc-bilateral-challenge-receipt\",\n  \"patterns\": [\n    {\n      \"id\": \"dssc_governance_submit_challenge_v1\",\n      \"concept_uri\": \"dssc:GovernanceSurface\",\n      \"entity_type\": \"intent_hint\",\n      \"regex\": \"(?i)\\\\bd"
+    },
+    {
+      "candidate_id": "DSSC-BILATERAL-CHALLENGE-RECEIPT-CAND-0130",
+      "surface_form": "dssc",
+      "label": "JURISDICTION",
+      "confidence": 0.4537,
+      "review_status": "candidate",
+      "span": {
+        "start": 12563,
+        "end": 12567
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 443,
+        "line_end": 443
+      },
+      "context": "enge-receipt\",\n  \"patterns\": [\n    {\n      \"id\": \"dssc_governance_submit_challenge_v1\",\n      \"concept_uri\": \"dssc:GovernanceSurface\",\n      \"entity_type\": \"intent_hint\",\n      \"regex\": \"(?i)\\\\bdssc\\\\.governance\\\\.submit_cha"
+    },
+    {
+      "candidate_id": "DSSC-BILATERAL-CHALLENGE-RECEIPT-CAND-0131",
+      "surface_form": "GovernanceSurface",
+      "label": "JURISDICTION",
+      "confidence": 0.6778,
+      "review_status": "candidate",
+      "span": {
+        "start": 12568,
+        "end": 12585
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 443,
+        "line_end": 443
+      },
+      "context": "receipt\",\n  \"patterns\": [\n    {\n      \"id\": \"dssc_governance_submit_challenge_v1\",\n      \"concept_uri\": \"dssc:GovernanceSurface\",\n      \"entity_type\": \"intent_hint\",\n      \"regex\": \"(?i)\\\\bdssc\\\\.governance\\\\.submit_challenge\\\\.v1\\\\b\",\n "
+    },
+    {
+      "candidate_id": "DSSC-BILATERAL-CHALLENGE-RECEIPT-CAND-0132",
+      "surface_form": "intent_hint",
+      "label": "INTENT_CLASS",
+      "confidence": 0.4967,
+      "review_status": "candidate",
+      "span": {
+        "start": 12610,
+        "end": 12621
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 444,
+        "line_end": 444
+      },
+      "context": ": \"dssc_governance_submit_challenge_v1\",\n      \"concept_uri\": \"dssc:GovernanceSurface\",\n      \"entity_type\": \"intent_hint\",\n      \"regex\": \"(?i)\\\\bdssc\\\\.governance\\\\.submit_challenge\\\\.v1\\\\b\",\n      \"examples\": [\n        \"dssc.gov"
+    },
+    {
+      "candidate_id": "DSSC-BILATERAL-CHALLENGE-RECEIPT-CAND-0133",
+      "surface_form": "v1",
+      "label": "POLICY_SNAPSHOT",
+      "confidence": 0.4611,
+      "review_status": "candidate",
+      "span": {
+        "start": 12686,
+        "end": 12688
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 445,
+        "line_end": 445
+      },
+      "context": "ceSurface\",\n      \"entity_type\": \"intent_hint\",\n      \"regex\": \"(?i)\\\\bdssc\\\\.governance\\\\.submit_challenge\\\\.v1\\\\b\",\n      \"examples\": [\n        \"dssc.governance.submit_challenge.v1\"\n      ]\n    },\n    {\n      \"id\": \"dssc"
+    },
+    {
+      "candidate_id": "DSSC-BILATERAL-CHALLENGE-RECEIPT-CAND-0134",
+      "surface_form": "submit_challenge",
+      "label": "CHALLENGE_ID",
+      "confidence": 0.3556,
+      "review_status": "candidate",
+      "span": {
+        "start": 12739,
+        "end": 12755
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 447,
+        "line_end": 447
+      },
+      "context": " \"regex\": \"(?i)\\\\bdssc\\\\.governance\\\\.submit_challenge\\\\.v1\\\\b\",\n      \"examples\": [\n        \"dssc.governance.submit_challenge.v1\"\n      ]\n    },\n    {\n      \"id\": \"dssc_governance_issue_receipt_v1\",\n      \"concept_uri\": \"dssc:Governanc"
+    },
+    {
+      "candidate_id": "DSSC-BILATERAL-CHALLENGE-RECEIPT-CAND-0135",
+      "surface_form": "v1",
+      "label": "POLICY_SNAPSHOT",
+      "confidence": 0.4443,
+      "review_status": "candidate",
+      "span": {
+        "start": 12756,
+        "end": 12758
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 447,
+        "line_end": 447
+      },
+      "context": "bdssc\\\\.governance\\\\.submit_challenge\\\\.v1\\\\b\",\n      \"examples\": [\n        \"dssc.governance.submit_challenge.v1\"\n      ]\n    },\n    {\n      \"id\": \"dssc_governance_issue_receipt_v1\",\n      \"concept_uri\": \"dssc:GovernanceSu"
+    },
+    {
+      "candidate_id": "DSSC-BILATERAL-CHALLENGE-RECEIPT-CAND-0136",
+      "surface_form": "dssc_governance_issue_receipt_v1",
+      "label": "RECEIPT_ID",
+      "confidence": 0.5766,
+      "review_status": "candidate",
+      "span": {
+        "start": 12794,
+        "end": 12826
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 451,
+        "line_end": 451
+      },
+      "context": "\\.v1\\\\b\",\n      \"examples\": [\n        \"dssc.governance.submit_challenge.v1\"\n      ]\n    },\n    {\n      \"id\": \"dssc_governance_issue_receipt_v1\",\n      \"concept_uri\": \"dssc:GovernanceSurface\",\n      \"entity_type\": \"intent_hint\",\n      \"regex\": \"(?i)\\\\bd"
+    },
+    {
+      "candidate_id": "DSSC-BILATERAL-CHALLENGE-RECEIPT-CAND-0137",
+      "surface_form": "GovernanceSurface",
+      "label": "JURISDICTION",
+      "confidence": 0.4643,
+      "review_status": "candidate",
+      "span": {
+        "start": 12856,
+        "end": 12873
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 452,
+        "line_end": 452
+      },
+      "context": "challenge.v1\"\n      ]\n    },\n    {\n      \"id\": \"dssc_governance_issue_receipt_v1\",\n      \"concept_uri\": \"dssc:GovernanceSurface\",\n      \"entity_type\": \"intent_hint\",\n      \"regex\": \"(?i)\\\\bdssc\\\\.governance\\\\.issue_receipt\\\\.v1\\\\b\",\n    "
+    },
+    {
+      "candidate_id": "DSSC-BILATERAL-CHALLENGE-RECEIPT-CAND-0138",
+      "surface_form": "intent_hint",
+      "label": "INTENT_CLASS",
+      "confidence": 0.4481,
+      "review_status": "candidate",
+      "span": {
+        "start": 12898,
+        "end": 12909
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 453,
+        "line_end": 453
+      },
+      "context": "id\": \"dssc_governance_issue_receipt_v1\",\n      \"concept_uri\": \"dssc:GovernanceSurface\",\n      \"entity_type\": \"intent_hint\",\n      \"regex\": \"(?i)\\\\bdssc\\\\.governance\\\\.issue_receipt\\\\.v1\\\\b\",\n      \"examples\": [\n        \"dssc.govern"
+    },
+    {
+      "candidate_id": "DSSC-BILATERAL-CHALLENGE-RECEIPT-CAND-0139",
+      "surface_form": "v1",
+      "label": "POLICY_SNAPSHOT",
+      "confidence": 0.36,
+      "review_status": "candidate",
+      "span": {
+        "start": 12971,
+        "end": 12973
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 454,
+        "line_end": 454
+      },
+      "context": "nanceSurface\",\n      \"entity_type\": \"intent_hint\",\n      \"regex\": \"(?i)\\\\bdssc\\\\.governance\\\\.issue_receipt\\\\.v1\\\\b\",\n      \"examples\": [\n        \"dssc.governance.issue_receipt.v1\"\n      ]\n    }\n  ]\n}\n\n\n### FILE: source-ex"
+    },
+    {
+      "candidate_id": "DSSC-BILATERAL-CHALLENGE-RECEIPT-CAND-0140",
+      "surface_form": "issue_receipt",
+      "label": "RECEIPT_ID",
+      "confidence": 0.4159,
+      "review_status": "candidate",
+      "span": {
+        "start": 13024,
+        "end": 13037
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 456,
+        "line_end": 456
+      },
+      "context": "    \"regex\": \"(?i)\\\\bdssc\\\\.governance\\\\.issue_receipt\\\\.v1\\\\b\",\n      \"examples\": [\n        \"dssc.governance.issue_receipt.v1\"\n      ]\n    }\n  ]\n}\n\n\n### FILE: source-extract/sources.json\n{\n  \"schema_version\": \"1.0\",\n  \"generated_at_"
+    },
+    {
+      "candidate_id": "DSSC-BILATERAL-CHALLENGE-RECEIPT-CAND-0141",
+      "surface_form": "v1",
+      "label": "POLICY_SNAPSHOT",
+      "confidence": 0.4152,
+      "review_status": "candidate",
+      "span": {
+        "start": 13038,
+        "end": 13040
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 456,
+        "line_end": 456
+      },
+      "context": "(?i)\\\\bdssc\\\\.governance\\\\.issue_receipt\\\\.v1\\\\b\",\n      \"examples\": [\n        \"dssc.governance.issue_receipt.v1\"\n      ]\n    }\n  ]\n}\n\n\n### FILE: source-extract/sources.json\n{\n  \"schema_version\": \"1.0\",\n  \"generated_at_utc"
+    },
+    {
+      "candidate_id": "DSSC-BILATERAL-CHALLENGE-RECEIPT-CAND-0142",
+      "surface_form": "canonical-source-1",
+      "label": "RATIONALE_REFERENCE",
+      "confidence": 0.4303,
+      "review_status": "candidate",
+      "span": {
+        "start": 13340,
+        "end": 13358
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 471,
+        "line_end": 471
+      },
+      "context": "pack\",\n  \"bundle_id\": \"dssc-bilateral-challenge-receipt-source-2026-04-14\",\n  \"sources\": [\n    {\n      \"id\": \"canonical-source-1\",\n      \"title\": \"Canonical source 1\",\n      \"url\": \"https://blueprint.dssc.eu/\",\n      \"type\": \"canonical_re"
+    },
+    {
+      "candidate_id": "DSSC-BILATERAL-CHALLENGE-RECEIPT-CAND-0143",
+      "surface_form": "Canonical source 1",
+      "label": "RECEIPT_ID",
+      "confidence": 0.3628,
+      "review_status": "candidate",
+      "span": {
+        "start": 13377,
+        "end": 13395
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 472,
+        "line_end": 472
+      },
+      "context": "-challenge-receipt-source-2026-04-14\",\n  \"sources\": [\n    {\n      \"id\": \"canonical-source-1\",\n      \"title\": \"Canonical source 1\",\n      \"url\": \"https://blueprint.dssc.eu/\",\n      \"type\": \"canonical_reference\",\n      \"status\": \"referenced"
+    },
+    {
+      "candidate_id": "DSSC-BILATERAL-CHALLENGE-RECEIPT-CAND-0144",
+      "surface_form": "status",
+      "label": "STATUS",
+      "confidence": 0.7327,
+      "review_status": "candidate",
+      "span": {
+        "start": 13485,
+        "end": 13491
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 475,
+        "line_end": 475
+      },
+      "context": " \"Canonical source 1\",\n      \"url\": \"https://blueprint.dssc.eu/\",\n      \"type\": \"canonical_reference\",\n      \"status\": \"referenced\"\n    },\n    {\n      \"id\": \"canonical-source-2\",\n      \"title\": \"Canonical source 2\",\n      \"url"
+    },
+    {
+      "candidate_id": "DSSC-BILATERAL-CHALLENGE-RECEIPT-CAND-0145",
+      "surface_form": "canonical-source-2",
+      "label": "RATIONALE_REFERENCE",
+      "confidence": 0.4337,
+      "review_status": "candidate",
+      "span": {
+        "start": 13533,
+        "end": 13551
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 478,
+        "line_end": 478
+      },
+      "context": "eprint.dssc.eu/\",\n      \"type\": \"canonical_reference\",\n      \"status\": \"referenced\"\n    },\n    {\n      \"id\": \"canonical-source-2\",\n      \"title\": \"Canonical source 2\",\n      \"url\": \"https://eclipse-dataspace-protocol-base.github.io/Datasp"
+    },
+    {
+      "candidate_id": "DSSC-BILATERAL-CHALLENGE-RECEIPT-CAND-0146",
+      "surface_form": "Canonical source 2",
+      "label": "RECEIPT_ID",
+      "confidence": 0.4113,
+      "review_status": "candidate",
+      "span": {
+        "start": 13570,
+        "end": 13588
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 479,
+        "line_end": 479
+      },
+      "context": "nical_reference\",\n      \"status\": \"referenced\"\n    },\n    {\n      \"id\": \"canonical-source-2\",\n      \"title\": \"Canonical source 2\",\n      \"url\": \"https://eclipse-dataspace-protocol-base.github.io/DataspaceProtocol/HEAD/\",\n      \"type\": \"ca"
+    },
+    {
+      "candidate_id": "DSSC-BILATERAL-CHALLENGE-RECEIPT-CAND-0147",
+      "surface_form": "status",
+      "label": "STATUS",
+      "confidence": 0.6767,
+      "review_status": "candidate",
+      "span": {
+        "start": 13725,
+        "end": 13731
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 482,
+        "line_end": 482
+      },
+      "context": "lipse-dataspace-protocol-base.github.io/DataspaceProtocol/HEAD/\",\n      \"type\": \"canonical_reference\",\n      \"status\": \"referenced\"\n    }\n  ]\n}\n\n\n### FILE: message-identifiers.json\n{\n  \"schema_version\": \"0.1\",\n  \"generated_at_"
+    },
+    {
+      "candidate_id": "DSSC-BILATERAL-CHALLENGE-RECEIPT-CAND-0148",
+      "surface_form": "dssc-bilateral-challenge-receipt",
+      "label": "RATIONALE_REFERENCE",
+      "confidence": 0.3799,
+      "review_status": "candidate",
+      "span": {
+        "start": 13943,
+        "end": 13975
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 493,
+        "line_end": 493
+      },
+      "context": "ated_at_utc\": \"2026-04-14T12:00:00Z\",\n  \"profile\": \"dssc-bilateral-challenge-receipt-demo-pack\",\n  \"domain\": \"dssc-bilateral-challenge-receipt\",\n  \"message_identifiers\": [],\n  \"message_types\": [],\n  \"note\": \"No ISO-style message identifiers for this DS"
+    },
+    {
+      "candidate_id": "DSSC-BILATERAL-CHALLENGE-RECEIPT-CAND-0149",
+      "surface_form": "Stage-4",
+      "label": "STATUS",
+      "confidence": 0.4569,
+      "review_status": "candidate",
+      "span": {
+        "start": 14500,
+        "end": 14507
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 510,
+        "line_end": 510
+      },
+      "context": "alk notes\",\n  \"source_artifact_count\": 2,\n  \"mapped_symbol_count\": 16,\n  \"mapped_field_count\": 12,\n  \"note\": \"Stage-4 skeleton pack authored from stage-3 spec artifacts.\"\n}\n"
+    },
+    {
+      "candidate_id": "DSSC-BILATERAL-CHALLENGE-RECEIPT-CAND-0150",
+      "surface_form": "stage-3",
+      "label": "STATUS",
+      "confidence": 0.4946,
+      "review_status": "candidate",
+      "span": {
+        "start": 14536,
+        "end": 14543
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 510,
+        "line_end": 510
+      },
+      "context": "\": 2,\n  \"mapped_symbol_count\": 16,\n  \"mapped_field_count\": 12,\n  \"note\": \"Stage-4 skeleton pack authored from stage-3 spec artifacts.\"\n}\n"
+    }
+  ],
+  "provenance": {
+    "run_id": "dssc-bilateral-challenge-receipt-gliner-docker-pass-2026-04-14",
+    "model_id": "urchade/gliner_medium-v2.1",
+    "model_hash": "sha256:6c2fcfc92ecee10654d9d3151b2fca9dee740b375c4c99d928c87a9d969e1f7b",
+    "adapter": "gliner",
+    "threshold": 0.35,
+    "docker_image": "gliner-extractor:latest",
+    "config_digest": "sha256:49de280dd98cfce34d5da62f8396b3c2df6b5c6772f8443b309d34980199f38a",
+    "source_digest": "sha256:4c047381b70f5c166c41832f690f296bd5d2737d5ccb306448569108e0049f68",
+    "raw_output_digest": "sha256:c73603223fae86b4d0b3e095ed293292d3dedfcf020d1fb87313eed9e71d0426",
+    "created_at": "2026-04-14T09:24:13.043Z"
+  },
+  "summary": {
+    "candidate_count": 150,
+    "labels_used": [
+      "CHALLENGE_ID",
+      "RECEIPT_ID",
+      "JURISDICTION",
+      "PAYLOAD_HASH",
+      "POLICY_SNAPSHOT",
+      "RATIONALE_REFERENCE",
+      "CORRELATION_ID",
+      "STATUS",
+      "INTENT_CLASS",
+      "DENY_REASON_CODE"
+    ],
+    "processing_time_ms": 22152
+  }
+}

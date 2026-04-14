@@ -1,0 +1,31 @@
+{
+  "schema_version": "1.0",
+  "extractor": {
+    "adapter": "gliner",
+    "model": "urchade/gliner_medium-v2.1",
+    "threshold": 0.35,
+    "merge_strategy": "longest_match",
+    "max_length": 512
+  },
+  "domain": "dssc-eudi-attestation-admission",
+  "extraction_profile": {
+    "labels": [
+      "VP_TOKEN",
+      "CREDENTIAL_TYPE",
+      "ISSUER_ID",
+      "SUBJECT_ID",
+      "ATTESTATION_CLASS",
+      "ASSURANCE_LEVEL",
+      "TRUST_ANCHOR",
+      "VALIDITY_WINDOW",
+      "REVOCATION_STATUS",
+      "INTENT_CLASS",
+      "POLICY_SNAPSHOT"
+    ]
+  },
+  "output": {
+    "format": "candidate_json",
+    "include_context": true,
+    "context_window": 220
+  }
+}

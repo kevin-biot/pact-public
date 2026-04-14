@@ -1,0 +1,498 @@
+### FILE: README.md
+# dssc-rulebook-policy-mapping-demo-pack
+
+This is a DSSC-aligned demo ontology pack for `dssc-rulebook-policy-mapping` under Stage-4 pack authoring.
+
+## Purpose
+
+Demonstrate deterministic mapping of DSSC-style rulebook and ODRL policy expressions into PACT fail-closed decision semantics.
+
+## Source Grounding
+
+Canonical source references used for this pack draft are listed in `source-extract/sources.json`.
+
+Primary references:
+- https://blueprint.dssc.eu/
+- https://www.w3.org/TR/odrl-model/
+- https://www.w3.org/TR/odrl-vocab/
+- https://eclipse-dataspace-protocol-base.github.io/DataspaceProtocol/HEAD/
+
+## Intent Surface
+
+- `dssc.policy.evaluate_access.v1`: Evaluate access request against mapped rulebook/ODRL policy snapshot.
+- `dssc.policy.evaluate_usage.v1`: Evaluate post-access usage obligations and prohibitions.
+- `dssc.policy.resolve_conflict.v1`: Deterministically resolve policy conflicts with deny-wins precedence.
+
+## Determinism Boundary
+
+- Out-of-scope behavior is `escalate`.
+- Policy/bundle binding is required for admitted execution paths.
+- Deny reason codes are explicit and stable for fixture replay.
+
+## Included Artifacts
+
+- `README.md`
+- `pack.json`
+- `context.jsonld`
+- `vocab.skos.jsonld`
+- `shapes.ttl`
+- `thesaurus.jsonld`
+- `thesaurus-local.json`
+- `patterns.json`
+- `intent-mappings.json`
+- `convergence.json`
+- `decision-space.json`
+- `message-identifiers.json`
+- `extraction-summary.json`
+- `bundle.json`
+- `obt.jws`
+- `source-extract/sources.json`
+- `source-extract/crosswalk/odrl-to-pact-policy-crosswalk.v1.json`
+
+## Notes
+
+- This pack is a non-normative demo surface for conformance and governance experimentation.
+- Fixture harness wiring is planned in Stage-5.
+
+## Fixture Harness
+
+Run from repository root:
+
+```bash
+node tools/run-dssc-rulebook-policy-mapping-fixtures.mjs
+```
+
+## Two-Pass Authoring (V1/V2)
+
+- `V1 mechanical`: canonical authored baseline for deterministic runtime and fixture behavior.
+- `V2 GLiNER candidate`: fast extraction pass for candidate entities/relations only.
+- `Review gate`: no V2 candidate is promoted without explicit human review.
+
+Candidate artifacts are stored under `source-extract/candidates/gliner-dirty-pass-2026-04-14/`.
+
+
+### FILE: pack.json
+{
+  "pack_schema": "1.0",
+  "id": "dssc-rulebook-policy-mapping-demo-0.1.0",
+  "domain": "dssc-rulebook-policy-mapping",
+  "version": "0.1.0",
+  "provider_id": "ontology:pact-public:trust",
+  "trust_tier": "Tier1",
+  "nbf": "2026-04-14T00:00:00Z",
+  "exp": "2031-04-14T00:00:00Z",
+  "rev_epoch": 1,
+  "deny_wins": true,
+  "precedence": [],
+  "files": {
+    "context": "context.jsonld",
+    "vocab": "vocab.skos.jsonld",
+    "shapes": "shapes.ttl",
+    "thesaurus": "thesaurus.jsonld",
+    "thesaurus_local": "thesaurus-local.json",
+    "patterns": "patterns.json",
+    "intent_mappings": "intent-mappings.json",
+    "convergence": "convergence.json",
+    "decision_space": "decision-space.json",
+    "message_identifiers": "message-identifiers.json",
+    "extraction_summary": "extraction-summary.json",
+    "source_extract": "source-extract/sources.json",
+    "crosswalk": "source-extract/crosswalk/odrl-to-pact-policy-crosswalk.v1.json",
+    "execution_checklist": "source-extract/tasks/immutable-authoring-pipeline.v1-v2.json",
+    "gliner_dirty_manifest": "source-extract/candidates/gliner-dirty-pass-2026-04-14/manifest.json",
+    "gliner_dirty_candidates": "source-extract/candidates/gliner-dirty-pass-2026-04-14/candidates.json",
+    "gliner_dirty_summary": "source-extract/candidates/gliner-dirty-pass-2026-04-14/extraction-summary.json"
+  },
+  "dc": {
+    "identifier": "ontology:dssc-rulebook-policy-mapping-demo:v0.1.0",
+    "title": "dssc-rulebook-policy-mapping demo pack",
+    "creator": "PACT Public Working Draft",
+    "issued": "2026-04-14",
+    "rights": "Apache-2.0",
+    "description": "Demonstrate deterministic mapping of DSSC-style rulebook and ODRL policy expressions into PACT fail-closed decision semantics."
+  }
+}
+
+
+### FILE: decision-space.json
+{
+  "schema_version": "1.0",
+  "domain": "dssc-rulebook-policy-mapping",
+  "pack_id": "dssc-rulebook-policy-mapping-demo-0.1.0",
+  "version": "0.1.0",
+  "out_of_scope_behavior": "escalate",
+  "state_model": {
+    "states": [
+      "ingress",
+      "validated",
+      "classified",
+      "authorized",
+      "responded",
+      "rejected",
+      "escalated"
+    ],
+    "initial_state": "ingress",
+    "terminal_states": [
+      "responded",
+      "rejected",
+      "escalated"
+    ]
+  },
+  "intent_resource_map": {
+    "dssc.policy.evaluate_access.v1": [
+      "GovernanceDecision"
+    ],
+    "dssc.policy.evaluate_usage.v1": [
+      "GovernanceDecision"
+    ],
+    "dssc.policy.resolve_conflict.v1": [
+      "GovernanceDecision"
+    ]
+  },
+  "required_fields_by_intent": {
+    "dssc.policy.evaluate_access.v1": [
+      "policy_snapshot_id",
+      "rulebook_clause_id",
+      "odrl_permission",
+      "odrl_prohibition",
+      "odrl_obligation",
+      "constraint_expression"
+    ],
+    "dssc.policy.evaluate_usage.v1": [
+      "policy_snapshot_id",
+      "rulebook_clause_id",
+      "odrl_permission",
+      "odrl_prohibition",
+      "odrl_obligation",
+      "constraint_expression"
+    ],
+    "dssc.policy.resolve_conflict.v1": [
+      "policy_snapshot_id",
+      "rulebook_clause_id",
+      "odrl_permission",
+      "odrl_prohibition",
+      "odrl_obligation",
+      "constraint_expression"
+    ]
+  },
+  "deny_reason_codes": [
+    "DENY_RULEBOOK_PROHIBITION",
+    "DENY_POLICY_CONFLICT_DENY_WINS",
+    "DENY_POLICY_SNAPSHOT_UNBOUND",
+    "DENY_CONSTRAINT_UNMAPPED",
+    "DENY_OBLIGATION_UNSATISFIED",
+    "PSC_BUNDLE_COMMIT_MISMATCH"
+  ]
+}
+
+
+### FILE: intent-mappings.json
+{
+  "schema_version": "1.0",
+  "domain": "dssc-rulebook-policy-mapping",
+  "mappings": [
+    {
+      "concept_uri": "dssc:GovernanceSurface",
+      "intent_class": "dssc.policy.evaluate_access.v1",
+      "confidence_floor": 0.76
+    },
+    {
+      "concept_uri": "dssc:GovernanceSurface",
+      "intent_class": "dssc.policy.evaluate_usage.v1",
+      "confidence_floor": 0.76
+    },
+    {
+      "concept_uri": "dssc:GovernanceSurface",
+      "intent_class": "dssc.policy.resolve_conflict.v1",
+      "confidence_floor": 0.76
+    }
+  ]
+}
+
+
+### FILE: thesaurus-local.json
+{
+  "schema_version": "1.0",
+  "domain": "dssc-rulebook-policy-mapping",
+  "last_modified": "2026-04-14",
+  "concepts": [
+    {
+      "concept_id": "dssc-rulebook-policy-mapping.rulebook.clause.id.v1",
+      "preferred_term": "rulebook_clause_id",
+      "synonyms": [],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "GovernanceSurface",
+      "narrower": [],
+      "source_refs": [
+        "dssc-canonical-source-catalog"
+      ],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "dssc-rulebook-policy-mapping.odrl.permission.v1",
+      "preferred_term": "odrl_permission",
+      "synonyms": [],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "GovernanceSurface",
+      "narrower": [],
+      "source_refs": [
+        "dssc-canonical-source-catalog"
+      ],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "dssc-rulebook-policy-mapping.odrl.prohibition.v1",
+      "preferred_term": "odrl_prohibition",
+      "synonyms": [],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "GovernanceSurface",
+      "narrower": [],
+      "source_refs": [
+        "dssc-canonical-source-catalog"
+      ],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "dssc-rulebook-policy-mapping.odrl.obligation.v1",
+      "preferred_term": "odrl_obligation",
+      "synonyms": [],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "GovernanceSurface",
+      "narrower": [],
+      "source_refs": [
+        "dssc-canonical-source-catalog"
+      ],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "dssc-rulebook-policy-mapping.constraint.expression.v1",
+      "preferred_term": "constraint_expression",
+      "synonyms": [],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "GovernanceSurface",
+      "narrower": [],
+      "source_refs": [
+        "dssc-canonical-source-catalog"
+      ],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "dssc-rulebook-policy-mapping.intent.class.v1",
+      "preferred_term": "intent_class",
+      "synonyms": [],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "GovernanceSurface",
+      "narrower": [],
+      "source_refs": [
+        "dssc-canonical-source-catalog"
+      ],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "dssc-rulebook-policy-mapping.deny.reason.code.v1",
+      "preferred_term": "deny_reason_code",
+      "synonyms": [],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "GovernanceSurface",
+      "narrower": [],
+      "source_refs": [
+        "dssc-canonical-source-catalog"
+      ],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "dssc-rulebook-policy-mapping.obligation.state.v1",
+      "preferred_term": "obligation_state",
+      "synonyms": [],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "GovernanceSurface",
+      "narrower": [],
+      "source_refs": [
+        "dssc-canonical-source-catalog"
+      ],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "dssc-rulebook-policy-mapping.policy.snapshot.id.v1",
+      "preferred_term": "policy_snapshot_id",
+      "synonyms": [],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "GovernanceSurface",
+      "narrower": [],
+      "source_refs": [
+        "dssc-canonical-source-catalog"
+      ],
+      "ner_provenance": null
+    }
+  ]
+}
+
+
+### FILE: patterns.json
+{
+  "schema_version": "1.0",
+  "domain": "dssc-rulebook-policy-mapping",
+  "patterns": [
+    {
+      "id": "dssc_policy_evaluate_access_v1",
+      "concept_uri": "dssc:GovernanceSurface",
+      "entity_type": "intent_hint",
+      "regex": "(?i)\\bdssc\\.policy\\.evaluate_access\\.v1\\b",
+      "examples": [
+        "dssc.policy.evaluate_access.v1"
+      ]
+    },
+    {
+      "id": "dssc_policy_evaluate_usage_v1",
+      "concept_uri": "dssc:GovernanceSurface",
+      "entity_type": "intent_hint",
+      "regex": "(?i)\\bdssc\\.policy\\.evaluate_usage\\.v1\\b",
+      "examples": [
+        "dssc.policy.evaluate_usage.v1"
+      ]
+    },
+    {
+      "id": "dssc_policy_resolve_conflict_v1",
+      "concept_uri": "dssc:GovernanceSurface",
+      "entity_type": "intent_hint",
+      "regex": "(?i)\\bdssc\\.policy\\.resolve_conflict\\.v1\\b",
+      "examples": [
+        "dssc.policy.resolve_conflict.v1"
+      ]
+    }
+  ]
+}
+
+
+### FILE: source-extract/sources.json
+{
+  "schema_version": "1.0",
+  "generated_at_utc": "2026-04-14T12:00:00Z",
+  "vertical": "dssc-rulebook-policy-mapping-demo-pack",
+  "bundle_id": "dssc-rulebook-policy-mapping-source-2026-04-14",
+  "sources": [
+    {
+      "id": "canonical-source-1",
+      "title": "Canonical source 1",
+      "url": "https://blueprint.dssc.eu/",
+      "type": "canonical_reference",
+      "status": "referenced"
+    },
+    {
+      "id": "canonical-source-2",
+      "title": "Canonical source 2",
+      "url": "https://www.w3.org/TR/odrl-model/",
+      "type": "canonical_reference",
+      "status": "referenced"
+    },
+    {
+      "id": "canonical-source-3",
+      "title": "Canonical source 3",
+      "url": "https://www.w3.org/TR/odrl-vocab/",
+      "type": "canonical_reference",
+      "status": "referenced"
+    },
+    {
+      "id": "canonical-source-4",
+      "title": "Canonical source 4",
+      "url": "https://eclipse-dataspace-protocol-base.github.io/DataspaceProtocol/HEAD/",
+      "type": "canonical_reference",
+      "status": "referenced"
+    }
+  ]
+}
+
+
+### FILE: message-identifiers.json
+{
+  "schema_version": "0.1",
+  "generated_at_utc": "2026-04-14T12:00:00Z",
+  "profile": "dssc-rulebook-policy-mapping-demo-pack",
+  "domain": "dssc-rulebook-policy-mapping",
+  "message_identifiers": [],
+  "message_types": [],
+  "note": "No ISO-style message identifiers for this DSSC governance demo pack."
+}
+
+
+### FILE: extraction-summary.json
+{
+  "schema_version": "0.1",
+  "generated_at_utc": "2026-04-14T12:00:00Z",
+  "profile": "dssc-rulebook-policy-mapping-demo-pack",
+  "domain": "dssc-rulebook-policy-mapping",
+  "source_spec": "DSSC source-grounded pack spec and crosswalk notes",
+  "source_artifact_count": 4,
+  "mapped_symbol_count": 9,
+  "mapped_field_count": 6,
+  "note": "Stage-4 skeleton pack authored from stage-3 spec artifacts."
+}
+
+
+### FILE: source-extract/crosswalk/odrl-to-pact-policy-crosswalk.v1.json
+{
+  "schema_version": "0.1",
+  "generated_at_utc": "2026-04-14T12:00:00Z",
+  "domain": "dssc-rulebook-policy-mapping",
+  "crosswalk": "odrl-to-pact-policy-crosswalk.v1.json",
+  "mappings": [
+    {
+      "source_term": "rulebook_clause_id",
+      "pact_concept": "dssc:rulebook_clause_id",
+      "relation": "closeMatch"
+    },
+    {
+      "source_term": "odrl_permission",
+      "pact_concept": "dssc:odrl_permission",
+      "relation": "closeMatch"
+    },
+    {
+      "source_term": "odrl_prohibition",
+      "pact_concept": "dssc:odrl_prohibition",
+      "relation": "closeMatch"
+    },
+    {
+      "source_term": "odrl_obligation",
+      "pact_concept": "dssc:odrl_obligation",
+      "relation": "closeMatch"
+    },
+    {
+      "source_term": "constraint_expression",
+      "pact_concept": "dssc:constraint_expression",
+      "relation": "closeMatch"
+    },
+    {
+      "source_term": "intent_class",
+      "pact_concept": "dssc:intent_class",
+      "relation": "closeMatch"
+    },
+    {
+      "source_term": "deny_reason_code",
+      "pact_concept": "dssc:deny_reason_code",
+      "relation": "closeMatch"
+    },
+    {
+      "source_term": "obligation_state",
+      "pact_concept": "dssc:obligation_state",
+      "relation": "closeMatch"
+    }
+  ]
+}

@@ -1,5 +1,5 @@
 {
-  "bundleId": "sha256:9da090ed3f6bbdddac075e6c82b5907e225ee46c1b649cc0c32d1d3db77208be",
+  "bundleId": "sha256:767219a4266c5fe202c86a3237625910cb68a91e7536a86ffbae1b8ca26af043",
   "decision": {
     "type": "DSSCBilateralGovernanceIntent",
     "intent_class": "dssc.governance.issue_receipt.v1",

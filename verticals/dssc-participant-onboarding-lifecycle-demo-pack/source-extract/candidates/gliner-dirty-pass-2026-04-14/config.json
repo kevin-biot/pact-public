@@ -1,0 +1,29 @@
+{
+  "schema_version": "1.0",
+  "extractor": {
+    "adapter": "gliner",
+    "model": "urchade/gliner_medium-v2.1",
+    "threshold": 0.35,
+    "merge_strategy": "longest_match",
+    "max_length": 512
+  },
+  "domain": "dssc-participant-onboarding-lifecycle",
+  "extraction_profile": {
+    "labels": [
+      "PARTICIPANT_ID",
+      "LIFECYCLE_STATE",
+      "TRANSITION_RULE",
+      "TRUST_PROOF",
+      "POLICY_SNAPSHOT",
+      "INTENT_CLASS",
+      "DENY_REASON_CODE",
+      "JURISDICTION",
+      "IDENTIFIER"
+    ]
+  },
+  "output": {
+    "format": "candidate_json",
+    "include_context": true,
+    "context_window": 220
+  }
+}

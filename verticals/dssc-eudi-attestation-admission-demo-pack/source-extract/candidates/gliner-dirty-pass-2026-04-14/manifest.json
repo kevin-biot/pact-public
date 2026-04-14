@@ -1,0 +1,42 @@
+{
+  "schema_version": "1.0",
+  "tool": "batch_extract_candidates",
+  "run_id": "dssc-eudi-attestation-admission-gliner-docker-pass-2026-04-14",
+  "review_status": "candidate",
+  "artifact_paths": {
+    "config": "source-extract/candidates/gliner-dirty-pass-2026-04-14/config.json",
+    "corpus": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+    "raw": "source-extract/candidates/gliner-dirty-pass-2026-04-14/candidates.raw.json",
+    "candidates": "source-extract/candidates/gliner-dirty-pass-2026-04-14/candidates.json",
+    "summary": "source-extract/candidates/gliner-dirty-pass-2026-04-14/extraction-summary.json",
+    "manifest": "source-extract/candidates/gliner-dirty-pass-2026-04-14/manifest.json"
+  },
+  "stats": {
+    "source_count": 10,
+    "candidate_count": 123,
+    "processing_time_ms": 30075
+  },
+  "provenance": {
+    "run_id": "dssc-eudi-attestation-admission-gliner-docker-pass-2026-04-14",
+    "model_id": "urchade/gliner_medium-v2.1",
+    "model_hash": "sha256:6c2fcfc92ecee10654d9d3151b2fca9dee740b375c4c99d928c87a9d969e1f7b",
+    "docker_image": "gliner-extractor:latest",
+    "config_digest": "sha256:211c23c65f8443c7e235cc6e7cec813b331ae856a67a37e27e0de16b9c9a3761",
+    "source_digests": [
+      "sha256:bdf0a6b8632bf535409a0e4d92d248c79974567beb080e7a2b41e78e590f774f",
+      "sha256:1717a25789e73048671682e1c43266041e8ae03e0db4dfb3d13b6c2c486bffef",
+      "sha256:9e2a1b451c35cd116fc30dc68cb2dfe9813e56544bd6368e8556502163c3e19a",
+      "sha256:9df67c7498b741e1b7e96372efb60f3aae27a5049a117ed22a98958368980084",
+      "sha256:810c247ae13f3c47db612f1a3dbfbd1f125217df228810ab3fdae932fb3ddde0",
+      "sha256:09fa6be89d694d7eee3775929c71efddbb5c423a29f7cdd90a88c15d35ec4d04",
+      "sha256:2558e166759348536cd9a69a54c3abb665e846e6a9bc941ead6b293a430ea611",
+      "sha256:0bdf543e26193a790ab1124a9c49cbce52d698e41ec1c07061b1cf36e373031d",
+      "sha256:2848e325eae2e423333d2e61f4f131c5fc81a640137a69604caf2030dc5cbbee",
+      "sha256:70b7987d4f1ca2d539dfa021de27781572a7dec3656e19a96ef1a5049c24198d"
+    ],
+    "corpus_digest": "sha256:5faf7ab4fc5addd56c42bc62b7263014fb755749931827a85d546cf62e279ee5",
+    "raw_output_digest": "sha256:bc2fdec8c78139a49f9cfe7d5387651be110306b98a1d37d153cd392b08fe55d",
+    "output_digest": "sha256:12b6bb82492ecec517694276b77e59465f0e6896e66633e520d33da432c0028b",
+    "created_at": "2026-04-14T09:23:50.052Z"
+  }
+}

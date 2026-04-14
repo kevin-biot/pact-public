@@ -1,5 +1,5 @@
 {
-  "bundleId": "sha256:23f49ce2d14de24dd1cf08fd7e7810e10ddc8efd11fc76c8a4154d4d73c1a2a8",
+  "bundleId": "sha256:997b20392715915d8d860597633ca1f302aeefd41f5fcd7b42b21c26e83a0d8f",
   "decision": {
     "type": "DSSCParticipantLifecycleIntent",
     "intent_class": "dssc.participant.evaluate_admission.v1",

@@ -1,0 +1,3012 @@
+{
+  "schema_version": "1.0",
+  "tool": "extract_candidates",
+  "run_id": "dssc-catalog-discovery-gliner-docker-pass-2026-04-14",
+  "review_status": "candidate",
+  "authoritative": false,
+  "candidates": [
+    {
+      "candidate_id": "DSSC-CATALOG-DISCOVERY-CAND-0001",
+      "surface_form": "Intent Surface",
+      "label": "INTENT_CLASS",
+      "confidence": 0.4009,
+      "review_status": "candidate",
+      "span": {
+        "start": 779,
+        "end": 793
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 21,
+        "line_end": 21
+      },
+      "context": "n-profile-data-portals-europe\n- https://eclipse-dataspace-protocol-base.github.io/DataspaceProtocol/HEAD/\n\n## Intent Surface\n\n- `dssc.catalog.publish_offering.v1`: Publish new offering metadata into catalog scope.\n- `dssc.catalog.upda"
+    },
+    {
+      "candidate_id": "DSSC-CATALOG-DISCOVERY-CAND-0002",
+      "surface_form": "offering",
+      "label": "OFFERING",
+      "confidence": 0.7435,
+      "review_status": "candidate",
+      "span": {
+        "start": 845,
+        "end": 853
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 23,
+        "line_end": 23
+      },
+      "context": "-base.github.io/DataspaceProtocol/HEAD/\n\n## Intent Surface\n\n- `dssc.catalog.publish_offering.v1`: Publish new offering metadata into catalog scope.\n- `dssc.catalog.update_offering.v1`: Update existing offering metadata and lifec"
+    },
+    {
+      "candidate_id": "DSSC-CATALOG-DISCOVERY-CAND-0003",
+      "surface_form": "metadata",
+      "label": "DATASET_METADATA",
+      "confidence": 0.5937,
+      "review_status": "candidate",
+      "span": {
+        "start": 854,
+        "end": 862
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 23,
+        "line_end": 23
+      },
+      "context": "hub.io/DataspaceProtocol/HEAD/\n\n## Intent Surface\n\n- `dssc.catalog.publish_offering.v1`: Publish new offering metadata into catalog scope.\n- `dssc.catalog.update_offering.v1`: Update existing offering metadata and lifecycle stat"
+    },
+    {
+      "candidate_id": "DSSC-CATALOG-DISCOVERY-CAND-0004",
+      "surface_form": "catalog scope",
+      "label": "CATALOG_ENTITY",
+      "confidence": 0.6238,
+      "review_status": "candidate",
+      "span": {
+        "start": 868,
+        "end": 881
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 23,
+        "line_end": 23
+      },
+      "context": "ceProtocol/HEAD/\n\n## Intent Surface\n\n- `dssc.catalog.publish_offering.v1`: Publish new offering metadata into catalog scope.\n- `dssc.catalog.update_offering.v1`: Update existing offering metadata and lifecycle state.\n- `dssc.catalog."
+    },
+    {
+      "candidate_id": "DSSC-CATALOG-DISCOVERY-CAND-0005",
+      "surface_form": "v1",
+      "label": "POLICY_SNAPSHOT",
+      "confidence": 0.3759,
+      "review_status": "candidate",
+      "span": {
+        "start": 915,
+        "end": 917
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 24,
+        "line_end": 24
+      },
+      "context": "talog.publish_offering.v1`: Publish new offering metadata into catalog scope.\n- `dssc.catalog.update_offering.v1`: Update existing offering metadata and lifecycle state.\n- `dssc.catalog.remove_offering.v1`: Remove/deprecat"
+    },
+    {
+      "candidate_id": "DSSC-CATALOG-DISCOVERY-CAND-0006",
+      "surface_form": "offering",
+      "label": "OFFERING",
+      "confidence": 0.6646,
+      "review_status": "candidate",
+      "span": {
+        "start": 936,
+        "end": 944
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 24,
+        "line_end": 24
+      },
+      "context": "g.v1`: Publish new offering metadata into catalog scope.\n- `dssc.catalog.update_offering.v1`: Update existing offering metadata and lifecycle state.\n- `dssc.catalog.remove_offering.v1`: Remove/deprecate offering from discoverabl"
+    },
+    {
+      "candidate_id": "DSSC-CATALOG-DISCOVERY-CAND-0007",
+      "surface_form": "metadata",
+      "label": "DATASET_METADATA",
+      "confidence": 0.7104,
+      "review_status": "candidate",
+      "span": {
+        "start": 945,
+        "end": 953
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 24,
+        "line_end": 24
+      },
+      "context": "blish new offering metadata into catalog scope.\n- `dssc.catalog.update_offering.v1`: Update existing offering metadata and lifecycle state.\n- `dssc.catalog.remove_offering.v1`: Remove/deprecate offering from discoverable catalog"
+    },
+    {
+      "candidate_id": "DSSC-CATALOG-DISCOVERY-CAND-0008",
+      "surface_form": "lifecycle state",
+      "label": "LIFECYCLE_STATE",
+      "confidence": 0.9064,
+      "review_status": "candidate",
+      "span": {
+        "start": 958,
+        "end": 973
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 24,
+        "line_end": 24
+      },
+      "context": "ering metadata into catalog scope.\n- `dssc.catalog.update_offering.v1`: Update existing offering metadata and lifecycle state.\n- `dssc.catalog.remove_offering.v1`: Remove/deprecate offering from discoverable catalog set.\n- `dssc.catalo"
+    },
+    {
+      "candidate_id": "DSSC-CATALOG-DISCOVERY-CAND-0009",
+      "surface_form": "v1",
+      "label": "POLICY_SNAPSHOT",
+      "confidence": 0.3649,
+      "review_status": "candidate",
+      "span": {
+        "start": 1007,
+        "end": 1009
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 25,
+        "line_end": 25
+      },
+      "context": "g.update_offering.v1`: Update existing offering metadata and lifecycle state.\n- `dssc.catalog.remove_offering.v1`: Remove/deprecate offering from discoverable catalog set.\n- `dssc.catalog.query_offering.v1`: Query offering"
+    },
+    {
+      "candidate_id": "DSSC-CATALOG-DISCOVERY-CAND-0010",
+      "surface_form": "offering",
+      "label": "OFFERING",
+      "confidence": 0.6565,
+      "review_status": "candidate",
+      "span": {
+        "start": 1029,
+        "end": 1037
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 25,
+        "line_end": 25
+      },
+      "context": " Update existing offering metadata and lifecycle state.\n- `dssc.catalog.remove_offering.v1`: Remove/deprecate offering from discoverable catalog set.\n- `dssc.catalog.query_offering.v1`: Query offering metadata in bounded discove"
+    },
+    {
+      "candidate_id": "DSSC-CATALOG-DISCOVERY-CAND-0011",
+      "surface_form": "v1",
+      "label": "POLICY_SNAPSHOT",
+      "confidence": 0.3691,
+      "review_status": "candidate",
+      "span": {
+        "start": 1100,
+        "end": 1102
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 26,
+        "line_end": 26
+      },
+      "context": ".remove_offering.v1`: Remove/deprecate offering from discoverable catalog set.\n- `dssc.catalog.query_offering.v1`: Query offering metadata in bounded discovery profile.\n\n## Determinism Boundary\n\n- Out-of-scope behavior is "
+    },
+    {
+      "candidate_id": "DSSC-CATALOG-DISCOVERY-CAND-0012",
+      "surface_form": "offering",
+      "label": "OFFERING",
+      "confidence": 0.8794,
+      "review_status": "candidate",
+      "span": {
+        "start": 1111,
+        "end": 1119
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 26,
+        "line_end": 26
+      },
+      "context": "ering.v1`: Remove/deprecate offering from discoverable catalog set.\n- `dssc.catalog.query_offering.v1`: Query offering metadata in bounded discovery profile.\n\n## Determinism Boundary\n\n- Out-of-scope behavior is `escalate`.\n- Pol"
+    },
+    {
+      "candidate_id": "DSSC-CATALOG-DISCOVERY-CAND-0013",
+      "surface_form": "metadata",
+      "label": "DATASET_METADATA",
+      "confidence": 0.7123,
+      "review_status": "candidate",
+      "span": {
+        "start": 1120,
+        "end": 1128
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 26,
+        "line_end": 26
+      },
+      "context": ": Remove/deprecate offering from discoverable catalog set.\n- `dssc.catalog.query_offering.v1`: Query offering metadata in bounded discovery profile.\n\n## Determinism Boundary\n\n- Out-of-scope behavior is `escalate`.\n- Policy/bundl"
+    },
+    {
+      "candidate_id": "DSSC-CATALOG-DISCOVERY-CAND-0014",
+      "surface_form": "Policy",
+      "label": "USAGE_POLICY",
+      "confidence": 0.4242,
+      "review_status": "candidate",
+      "span": {
+        "start": 1226,
+        "end": 1232
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 31,
+        "line_end": 31
+      },
+      "context": "ing metadata in bounded discovery profile.\n\n## Determinism Boundary\n\n- Out-of-scope behavior is `escalate`.\n- Policy/bundle binding is required for admitted execution paths.\n- Deny reason codes are explicit and stable for fixt"
+    },
+    {
+      "candidate_id": "DSSC-CATALOG-DISCOVERY-CAND-0015",
+      "surface_form": "olicy",
+      "label": "USAGE_POLICY",
+      "confidence": 0.4348,
+      "review_status": "candidate",
+      "span": {
+        "start": 1227,
+        "end": 1232
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 31,
+        "line_end": 31
+      },
+      "context": "ng metadata in bounded discovery profile.\n\n## Determinism Boundary\n\n- Out-of-scope behavior is `escalate`.\n- Policy/bundle binding is required for admitted execution paths.\n- Deny reason codes are explicit and stable for fixt"
+    },
+    {
+      "candidate_id": "DSSC-CATALOG-DISCOVERY-CAND-0016",
+      "surface_form": "pack.json",
+      "label": "DATASET_METADATA",
+      "confidence": 0.4535,
+      "review_status": "candidate",
+      "span": {
+        "start": 1395,
+        "end": 1404
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 37,
+        "line_end": 37
+      },
+      "context": "ths.\n- Deny reason codes are explicit and stable for fixture replay.\n\n## Included Artifacts\n\n- `README.md`\n- `pack.json`\n- `context.jsonld`\n- `vocab.skos.jsonld`\n- `shapes.ttl`\n- `thesaurus.jsonld`\n- `thesaurus-local.json`\n- `pat"
+    },
+    {
+      "candidate_id": "DSSC-CATALOG-DISCOVERY-CAND-0017",
+      "surface_form": "context.jsonld",
+      "label": "DATASET_METADATA",
+      "confidence": 0.4828,
+      "review_status": "candidate",
+      "span": {
+        "start": 1409,
+        "end": 1423
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 38,
+        "line_end": 38
+      },
+      "context": "ason codes are explicit and stable for fixture replay.\n\n## Included Artifacts\n\n- `README.md`\n- `pack.json`\n- `context.jsonld`\n- `vocab.skos.jsonld`\n- `shapes.ttl`\n- `thesaurus.jsonld`\n- `thesaurus-local.json`\n- `patterns.json`\n- `inte"
+    },
+    {
+      "candidate_id": "DSSC-CATALOG-DISCOVERY-CAND-0018",
+      "surface_form": "shapes.ttl",
+      "label": "DATASET_METADATA",
+      "confidence": 0.381,
+      "review_status": "candidate",
+      "span": {
+        "start": 1450,
+        "end": 1460
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 40,
+        "line_end": 40
+      },
+      "context": "xture replay.\n\n## Included Artifacts\n\n- `README.md`\n- `pack.json`\n- `context.jsonld`\n- `vocab.skos.jsonld`\n- `shapes.ttl`\n- `thesaurus.jsonld`\n- `thesaurus-local.json`\n- `patterns.json`\n- `intent-mappings.json`\n- `convergence.json"
+    },
+    {
+      "candidate_id": "DSSC-CATALOG-DISCOVERY-CAND-0019",
+      "surface_form": "thesaurus.jsonld",
+      "label": "DATASET_METADATA",
+      "confidence": 0.5265,
+      "review_status": "candidate",
+      "span": {
+        "start": 1465,
+        "end": 1481
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 41,
+        "line_end": 41
+      },
+      "context": "## Included Artifacts\n\n- `README.md`\n- `pack.json`\n- `context.jsonld`\n- `vocab.skos.jsonld`\n- `shapes.ttl`\n- `thesaurus.jsonld`\n- `thesaurus-local.json`\n- `patterns.json`\n- `intent-mappings.json`\n- `convergence.json`\n- `decision-space.j"
+    },
+    {
+      "candidate_id": "DSSC-CATALOG-DISCOVERY-CAND-0020",
+      "surface_form": "thesaurus-local.json",
+      "label": "DATASET_METADATA",
+      "confidence": 0.5402,
+      "review_status": "candidate",
+      "span": {
+        "start": 1486,
+        "end": 1506
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 42,
+        "line_end": 42
+      },
+      "context": "\n\n- `README.md`\n- `pack.json`\n- `context.jsonld`\n- `vocab.skos.jsonld`\n- `shapes.ttl`\n- `thesaurus.jsonld`\n- `thesaurus-local.json`\n- `patterns.json`\n- `intent-mappings.json`\n- `convergence.json`\n- `decision-space.json`\n- `message-identifie"
+    },
+    {
+      "candidate_id": "DSSC-CATALOG-DISCOVERY-CAND-0021",
+      "surface_form": "patterns.json",
+      "label": "DATASET_METADATA",
+      "confidence": 0.6954,
+      "review_status": "candidate",
+      "span": {
+        "start": 1511,
+        "end": 1524
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 43,
+        "line_end": 43
+      },
+      "context": "son`\n- `context.jsonld`\n- `vocab.skos.jsonld`\n- `shapes.ttl`\n- `thesaurus.jsonld`\n- `thesaurus-local.json`\n- `patterns.json`\n- `intent-mappings.json`\n- `convergence.json`\n- `decision-space.json`\n- `message-identifiers.json`\n- `extrac"
+    },
+    {
+      "candidate_id": "DSSC-CATALOG-DISCOVERY-CAND-0022",
+      "surface_form": "intent-mappings.json",
+      "label": "DATASET_METADATA",
+      "confidence": 0.6521,
+      "review_status": "candidate",
+      "span": {
+        "start": 1529,
+        "end": 1549
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 44,
+        "line_end": 44
+      },
+      "context": "onld`\n- `vocab.skos.jsonld`\n- `shapes.ttl`\n- `thesaurus.jsonld`\n- `thesaurus-local.json`\n- `patterns.json`\n- `intent-mappings.json`\n- `convergence.json`\n- `decision-space.json`\n- `message-identifiers.json`\n- `extraction-summary.json`\n- `bun"
+    },
+    {
+      "candidate_id": "DSSC-CATALOG-DISCOVERY-CAND-0023",
+      "surface_form": "convergence.json",
+      "label": "DATASET_METADATA",
+      "confidence": 0.6768,
+      "review_status": "candidate",
+      "span": {
+        "start": 1554,
+        "end": 1570
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 45,
+        "line_end": 45
+      },
+      "context": "d`\n- `shapes.ttl`\n- `thesaurus.jsonld`\n- `thesaurus-local.json`\n- `patterns.json`\n- `intent-mappings.json`\n- `convergence.json`\n- `decision-space.json`\n- `message-identifiers.json`\n- `extraction-summary.json`\n- `bundle.json`\n- `obt.jws`"
+    },
+    {
+      "candidate_id": "DSSC-CATALOG-DISCOVERY-CAND-0024",
+      "surface_form": "decision-space.json",
+      "label": "DATASET_METADATA",
+      "confidence": 0.769,
+      "review_status": "candidate",
+      "span": {
+        "start": 1575,
+        "end": 1594
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 46,
+        "line_end": 46
+      },
+      "context": "thesaurus.jsonld`\n- `thesaurus-local.json`\n- `patterns.json`\n- `intent-mappings.json`\n- `convergence.json`\n- `decision-space.json`\n- `message-identifiers.json`\n- `extraction-summary.json`\n- `bundle.json`\n- `obt.jws`\n- `source-extract/sourc"
+    },
+    {
+      "candidate_id": "DSSC-CATALOG-DISCOVERY-CAND-0025",
+      "surface_form": "message-identifiers.json",
+      "label": "DATASET_METADATA",
+      "confidence": 0.7174,
+      "review_status": "candidate",
+      "span": {
+        "start": 1599,
+        "end": 1623
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 47,
+        "line_end": 47
+      },
+      "context": "saurus-local.json`\n- `patterns.json`\n- `intent-mappings.json`\n- `convergence.json`\n- `decision-space.json`\n- `message-identifiers.json`\n- `extraction-summary.json`\n- `bundle.json`\n- `obt.jws`\n- `source-extract/sources.json`\n- `source-extract/cr"
+    },
+    {
+      "candidate_id": "DSSC-CATALOG-DISCOVERY-CAND-0026",
+      "surface_form": "extraction-summary.json",
+      "label": "DATASET_METADATA",
+      "confidence": 0.606,
+      "review_status": "candidate",
+      "span": {
+        "start": 1628,
+        "end": 1651
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 48,
+        "line_end": 48
+      },
+      "context": "s.json`\n- `intent-mappings.json`\n- `convergence.json`\n- `decision-space.json`\n- `message-identifiers.json`\n- `extraction-summary.json`\n- `bundle.json`\n- `obt.jws`\n- `source-extract/sources.json`\n- `source-extract/crosswalk/dssc-dcat-to-pact-cr"
+    },
+    {
+      "candidate_id": "DSSC-CATALOG-DISCOVERY-CAND-0027",
+      "surface_form": "bundle.json",
+      "label": "DATASET_METADATA",
+      "confidence": 0.6631,
+      "review_status": "candidate",
+      "span": {
+        "start": 1656,
+        "end": 1667
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 49,
+        "line_end": 49
+      },
+      "context": "son`\n- `convergence.json`\n- `decision-space.json`\n- `message-identifiers.json`\n- `extraction-summary.json`\n- `bundle.json`\n- `obt.jws`\n- `source-extract/sources.json`\n- `source-extract/crosswalk/dssc-dcat-to-pact-crosswalk.v1.json`"
+    },
+    {
+      "candidate_id": "DSSC-CATALOG-DISCOVERY-CAND-0028",
+      "surface_form": "obt.jws",
+      "label": "DATASET_METADATA",
+      "confidence": 0.3709,
+      "review_status": "candidate",
+      "span": {
+        "start": 1672,
+        "end": 1679
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 50,
+        "line_end": 50
+      },
+      "context": "nce.json`\n- `decision-space.json`\n- `message-identifiers.json`\n- `extraction-summary.json`\n- `bundle.json`\n- `obt.jws`\n- `source-extract/sources.json`\n- `source-extract/crosswalk/dssc-dcat-to-pact-crosswalk.v1.json`\n\n## Notes\n\n"
+    },
+    {
+      "candidate_id": "DSSC-CATALOG-DISCOVERY-CAND-0029",
+      "surface_form": "Fixture harness",
+      "label": "CATALOG_ENTITY",
+      "confidence": 0.36,
+      "review_status": "candidate",
+      "span": {
+        "start": 1883,
+        "end": 1898
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 57,
+        "line_end": 57
+      },
+      "context": "son`\n\n## Notes\n\n- This pack is a non-normative demo surface for conformance and governance experimentation.\n- Fixture harness wiring is planned in Stage-5.\n\n## Fixture Harness\n\nRun from repository root:\n\n```bash\nnode tools/run-dssc-cat"
+    },
+    {
+      "candidate_id": "DSSC-CATALOG-DISCOVERY-CAND-0030",
+      "surface_form": "candidate entities",
+      "label": "CATALOG_ENTITY",
+      "confidence": 0.5935,
+      "review_status": "candidate",
+      "span": {
+        "start": 2217,
+        "end": 2235
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 70,
+        "line_end": 70
+      },
+      "context": "ed baseline for deterministic runtime and fixture behavior.\n- `V2 GLiNER candidate`: fast extraction pass for candidate entities/relations only.\n- `Review gate`: no V2 candidate is promoted without explicit human review.\n\nCandidate artifa"
+    },
+    {
+      "candidate_id": "DSSC-CATALOG-DISCOVERY-CAND-0031",
+      "surface_form": "id",
+      "label": "IDENTIFIER",
+      "confidence": 0.6146,
+      "review_status": "candidate",
+      "span": {
+        "start": 2476,
+        "end": 2478
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 79,
+        "line_end": 79
+      },
+      "context": "`source-extract/candidates/gliner-dirty-pass-2026-04-14/`.\n\n\n### FILE: pack.json\n{\n  \"pack_schema\": \"1.0\",\n  \"id\": \"dssc-catalog-discovery-demo-0.1.0\",\n  \"domain\": \"dssc-catalog-discovery\",\n  \"version\": \"0.1.0\",\n  \"provide"
+    },
+    {
+      "candidate_id": "DSSC-CATALOG-DISCOVERY-CAND-0032",
+      "surface_form": "context",
+      "label": "DATASET_METADATA",
+      "confidence": 0.6416,
+      "review_status": "candidate",
+      "span": {
+        "start": 2793,
+        "end": 2800
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 90,
+        "line_end": 90
+      },
+      "context": "  \"exp\": \"2031-04-14T00:00:00Z\",\n  \"rev_epoch\": 1,\n  \"deny_wins\": true,\n  \"precedence\": [],\n  \"files\": {\n    \"context\": \"context.jsonld\",\n    \"vocab\": \"vocab.skos.jsonld\",\n    \"shapes\": \"shapes.ttl\",\n    \"thesaurus\": \"thesaurus"
+    },
+    {
+      "candidate_id": "DSSC-CATALOG-DISCOVERY-CAND-0033",
+      "surface_form": "context",
+      "label": "DATASET_METADATA",
+      "confidence": 0.6323,
+      "review_status": "candidate",
+      "span": {
+        "start": 2804,
+        "end": 2811
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 90,
+        "line_end": 90
+      },
+      "context": "031-04-14T00:00:00Z\",\n  \"rev_epoch\": 1,\n  \"deny_wins\": true,\n  \"precedence\": [],\n  \"files\": {\n    \"context\": \"context.jsonld\",\n    \"vocab\": \"vocab.skos.jsonld\",\n    \"shapes\": \"shapes.ttl\",\n    \"thesaurus\": \"thesaurus.jsonld\",\n "
+    },
+    {
+      "candidate_id": "DSSC-CATALOG-DISCOVERY-CAND-0034",
+      "surface_form": "vocab",
+      "label": "DATASET_METADATA",
+      "confidence": 0.5867,
+      "review_status": "candidate",
+      "span": {
+        "start": 2826,
+        "end": 2831
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 91,
+        "line_end": 91
+      },
+      "context": "  \"rev_epoch\": 1,\n  \"deny_wins\": true,\n  \"precedence\": [],\n  \"files\": {\n    \"context\": \"context.jsonld\",\n    \"vocab\": \"vocab.skos.jsonld\",\n    \"shapes\": \"shapes.ttl\",\n    \"thesaurus\": \"thesaurus.jsonld\",\n    \"thesaurus_local\""
+    },
+    {
+      "candidate_id": "DSSC-CATALOG-DISCOVERY-CAND-0035",
+      "surface_form": "vocab",
+      "label": "DATASET_METADATA",
+      "confidence": 0.5796,
+      "review_status": "candidate",
+      "span": {
+        "start": 2835,
+        "end": 2840
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 91,
+        "line_end": 91
+      },
+      "context": "och\": 1,\n  \"deny_wins\": true,\n  \"precedence\": [],\n  \"files\": {\n    \"context\": \"context.jsonld\",\n    \"vocab\": \"vocab.skos.jsonld\",\n    \"shapes\": \"shapes.ttl\",\n    \"thesaurus\": \"thesaurus.jsonld\",\n    \"thesaurus_local\": \"thesau"
+    },
+    {
+      "candidate_id": "DSSC-CATALOG-DISCOVERY-CAND-0036",
+      "surface_form": "shapes",
+      "label": "DATASET_METADATA",
+      "confidence": 0.3939,
+      "review_status": "candidate",
+      "span": {
+        "start": 2860,
+        "end": 2866
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 92,
+        "line_end": 92
+      },
+      "context": "rue,\n  \"precedence\": [],\n  \"files\": {\n    \"context\": \"context.jsonld\",\n    \"vocab\": \"vocab.skos.jsonld\",\n    \"shapes\": \"shapes.ttl\",\n    \"thesaurus\": \"thesaurus.jsonld\",\n    \"thesaurus_local\": \"thesaurus-local.json\",\n    \"patt"
+    },
+    {
+      "candidate_id": "DSSC-CATALOG-DISCOVERY-CAND-0037",
+      "surface_form": "shapes",
+      "label": "DATASET_METADATA",
+      "confidence": 0.4778,
+      "review_status": "candidate",
+      "span": {
+        "start": 2870,
+        "end": 2876
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 92,
+        "line_end": 92
+      },
+      "context": "ecedence\": [],\n  \"files\": {\n    \"context\": \"context.jsonld\",\n    \"vocab\": \"vocab.skos.jsonld\",\n    \"shapes\": \"shapes.ttl\",\n    \"thesaurus\": \"thesaurus.jsonld\",\n    \"thesaurus_local\": \"thesaurus-local.json\",\n    \"patterns\": \"pa"
+    },
+    {
+      "candidate_id": "DSSC-CATALOG-DISCOVERY-CAND-0038",
+      "surface_form": "thesaurus",
+      "label": "DATASET_METADATA",
+      "confidence": 0.6907,
+      "review_status": "candidate",
+      "span": {
+        "start": 2888,
+        "end": 2897
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 93,
+        "line_end": 93
+      },
+      "context": "files\": {\n    \"context\": \"context.jsonld\",\n    \"vocab\": \"vocab.skos.jsonld\",\n    \"shapes\": \"shapes.ttl\",\n    \"thesaurus\": \"thesaurus.jsonld\",\n    \"thesaurus_local\": \"thesaurus-local.json\",\n    \"patterns\": \"patterns.json\",\n    \"in"
+    },
+    {
+      "candidate_id": "DSSC-CATALOG-DISCOVERY-CAND-0039",
+      "surface_form": "thesaurus",
+      "label": "DATASET_METADATA",
+      "confidence": 0.6524,
+      "review_status": "candidate",
+      "span": {
+        "start": 2901,
+        "end": 2910
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 93,
+        "line_end": 93
+      },
+      "context": " \"context\": \"context.jsonld\",\n    \"vocab\": \"vocab.skos.jsonld\",\n    \"shapes\": \"shapes.ttl\",\n    \"thesaurus\": \"thesaurus.jsonld\",\n    \"thesaurus_local\": \"thesaurus-local.json\",\n    \"patterns\": \"patterns.json\",\n    \"intent_mappings"
+    },
+    {
+      "candidate_id": "DSSC-CATALOG-DISCOVERY-CAND-0040",
+      "surface_form": "thesaurus",
+      "label": "CATALOG_ENTITY",
+      "confidence": 0.3568,
+      "review_status": "candidate",
+      "span": {
+        "start": 2901,
+        "end": 2910
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 93,
+        "line_end": 93
+      },
+      "context": " \"context\": \"context.jsonld\",\n    \"vocab\": \"vocab.skos.jsonld\",\n    \"shapes\": \"shapes.ttl\",\n    \"thesaurus\": \"thesaurus.jsonld\",\n    \"thesaurus_local\": \"thesaurus-local.json\",\n    \"patterns\": \"patterns.json\",\n    \"intent_mappings"
+    },
+    {
+      "candidate_id": "DSSC-CATALOG-DISCOVERY-CAND-0041",
+      "surface_form": "thesaurus_local",
+      "label": "CATALOG_ENTITY",
+      "confidence": 0.4091,
+      "review_status": "candidate",
+      "span": {
+        "start": 2925,
+        "end": 2940
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 94,
+        "line_end": 94
+      },
+      "context": "nld\",\n    \"vocab\": \"vocab.skos.jsonld\",\n    \"shapes\": \"shapes.ttl\",\n    \"thesaurus\": \"thesaurus.jsonld\",\n    \"thesaurus_local\": \"thesaurus-local.json\",\n    \"patterns\": \"patterns.json\",\n    \"intent_mappings\": \"intent-mappings.json\",\n   "
+    },
+    {
+      "candidate_id": "DSSC-CATALOG-DISCOVERY-CAND-0042",
+      "surface_form": "patterns",
+      "label": "DATASET_METADATA",
+      "confidence": 0.4446,
+      "review_status": "candidate",
+      "span": {
+        "start": 2972,
+        "end": 2980
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 95,
+        "line_end": 95
+      },
+      "context": "apes\": \"shapes.ttl\",\n    \"thesaurus\": \"thesaurus.jsonld\",\n    \"thesaurus_local\": \"thesaurus-local.json\",\n    \"patterns\": \"patterns.json\",\n    \"intent_mappings\": \"intent-mappings.json\",\n    \"convergence\": \"convergence.json\",\n    "
+    },
+    {
+      "candidate_id": "DSSC-CATALOG-DISCOVERY-CAND-0043",
+      "surface_form": "patterns",
+      "label": "DATASET_METADATA",
+      "confidence": 0.4602,
+      "review_status": "candidate",
+      "span": {
+        "start": 2984,
+        "end": 2992
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 95,
+        "line_end": 95
+      },
+      "context": "es.ttl\",\n    \"thesaurus\": \"thesaurus.jsonld\",\n    \"thesaurus_local\": \"thesaurus-local.json\",\n    \"patterns\": \"patterns.json\",\n    \"intent_mappings\": \"intent-mappings.json\",\n    \"convergence\": \"convergence.json\",\n    \"decision_sp"
+    },
+    {
+      "candidate_id": "DSSC-CATALOG-DISCOVERY-CAND-0044",
+      "surface_form": "convergence",
+      "label": "CATALOG_ENTITY",
+      "confidence": 0.4173,
+      "review_status": "candidate",
+      "span": {
+        "start": 3052,
+        "end": 3063
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 97,
+        "line_end": 97
+      },
+      "context": " \"thesaurus-local.json\",\n    \"patterns\": \"patterns.json\",\n    \"intent_mappings\": \"intent-mappings.json\",\n    \"convergence\": \"convergence.json\",\n    \"decision_space\": \"decision-space.json\",\n    \"message_identifiers\": \"message-identi"
+    },
+    {
+      "candidate_id": "DSSC-CATALOG-DISCOVERY-CAND-0045",
+      "surface_form": "message_identifiers",
+      "label": "DATASET_METADATA",
+      "confidence": 0.5051,
+      "review_status": "candidate",
+      "span": {
+        "start": 3136,
+        "end": 3155
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 99,
+        "line_end": 99
+      },
+      "context": "tent-mappings.json\",\n    \"convergence\": \"convergence.json\",\n    \"decision_space\": \"decision-space.json\",\n    \"message_identifiers\": \"message-identifiers.json\",\n    \"extraction_summary\": \"extraction-summary.json\",\n    \"source_extract\": \"sou"
+    },
+    {
+      "candidate_id": "DSSC-CATALOG-DISCOVERY-CAND-0046",
+      "surface_form": "message-identifiers",
+      "label": "DATASET_METADATA",
+      "confidence": 0.386,
+      "review_status": "candidate",
+      "span": {
+        "start": 3159,
+        "end": 3178
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 99,
+        "line_end": 99
+      },
+      "context": "  \"convergence\": \"convergence.json\",\n    \"decision_space\": \"decision-space.json\",\n    \"message_identifiers\": \"message-identifiers.json\",\n    \"extraction_summary\": \"extraction-summary.json\",\n    \"source_extract\": \"source-extract/sources.jso"
+    },
+    {
+      "candidate_id": "DSSC-CATALOG-DISCOVERY-CAND-0047",
+      "surface_form": "json",
+      "label": "DATASET_METADATA",
+      "confidence": 0.4409,
+      "review_status": "candidate",
+      "span": {
+        "start": 3285,
+        "end": 3289
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 101,
+        "line_end": 101
+      },
+      "context": "ers.json\",\n    \"extraction_summary\": \"extraction-summary.json\",\n    \"source_extract\": \"source-extract/sources.json\",\n    \"crosswalk\": \"source-extract/crosswalk/dssc-dcat-to-pact-crosswalk.v1.json\",\n    \"execution_checklist\":"
+    },
+    {
+      "candidate_id": "DSSC-CATALOG-DISCOVERY-CAND-0048",
+      "surface_form": "json",
+      "label": "DATASET_METADATA",
+      "confidence": 0.3514,
+      "review_status": "candidate",
+      "span": {
+        "start": 3457,
+        "end": 3461
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 103,
+        "line_end": 103
+      },
+      "context": "-pact-crosswalk.v1.json\",\n    \"execution_checklist\": \"source-extract/tasks/immutable-authoring-pipeline.v1-v2.json\",\n    \"gliner_dirty_manifest\": \"source-extract/candidates/gliner-dirty-pass-2026-04-14/manifest.json\",\n    \"g"
+    },
+    {
+      "candidate_id": "DSSC-CATALOG-DISCOVERY-CAND-0049",
+      "surface_form": "dc",
+      "label": "IDENTIFIER",
+      "confidence": 0.4466,
+      "review_status": "candidate",
+      "span": {
+        "start": 3787,
+        "end": 3789
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 108,
+        "line_end": 108
+      },
+      "context": "iner_dirty_summary\": \"source-extract/candidates/gliner-dirty-pass-2026-04-14/extraction-summary.json\"\n  },\n  \"dc\": {\n    \"identifier\": \"ontology:dssc-catalog-discovery-demo:v0.1.0\",\n    \"title\": \"dssc-catalog-discovery dem"
+    },
+    {
+      "candidate_id": "DSSC-CATALOG-DISCOVERY-CAND-0050",
+      "surface_form": "PACT Public Working Draft",
+      "label": "OFFERING",
+      "confidence": 0.3908,
+      "review_status": "candidate",
+      "span": {
+        "start": 3924,
+        "end": 3949
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 111,
+        "line_end": 111
+      },
+      "context": "ntology:dssc-catalog-discovery-demo:v0.1.0\",\n    \"title\": \"dssc-catalog-discovery demo pack\",\n    \"creator\": \"PACT Public Working Draft\",\n    \"issued\": \"2026-04-14\",\n    \"rights\": \"Apache-2.0\",\n    \"description\": \"Demonstrate DSSC-aligned public"
+    },
+    {
+      "candidate_id": "DSSC-CATALOG-DISCOVERY-CAND-0051",
+      "surface_form": "2026-04-14",
+      "label": "POLICY_SNAPSHOT",
+      "confidence": 0.5057,
+      "review_status": "candidate",
+      "span": {
+        "start": 3967,
+        "end": 3977
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 112,
+        "line_end": 112
+      },
+      "context": ",\n    \"title\": \"dssc-catalog-discovery demo pack\",\n    \"creator\": \"PACT Public Working Draft\",\n    \"issued\": \"2026-04-14\",\n    \"rights\": \"Apache-2.0\",\n    \"description\": \"Demonstrate DSSC-aligned publication/discovery semantics ma"
+    },
+    {
+      "candidate_id": "DSSC-CATALOG-DISCOVERY-CAND-0052",
+      "surface_form": "out_of_scope_behavior",
+      "label": "USAGE_POLICY",
+      "confidence": 0.3672,
+      "review_status": "candidate",
+      "span": {
+        "start": 4307,
+        "end": 4328
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 125,
+        "line_end": 125
+      },
+      "context": "domain\": \"dssc-catalog-discovery\",\n  \"pack_id\": \"dssc-catalog-discovery-demo-0.1.0\",\n  \"version\": \"0.1.0\",\n  \"out_of_scope_behavior\": \"escalate\",\n  \"state_model\": {\n    \"states\": [\n      \"ingress\",\n      \"validated\",\n      \"classified\",\n    "
+    },
+    {
+      "candidate_id": "DSSC-CATALOG-DISCOVERY-CAND-0053",
+      "surface_form": "escalate",
+      "label": "USAGE_POLICY",
+      "confidence": 0.6069,
+      "review_status": "candidate",
+      "span": {
+        "start": 4332,
+        "end": 4340
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 125,
+        "line_end": 125
+      },
+      "context": "scovery\",\n  \"pack_id\": \"dssc-catalog-discovery-demo-0.1.0\",\n  \"version\": \"0.1.0\",\n  \"out_of_scope_behavior\": \"escalate\",\n  \"state_model\": {\n    \"states\": [\n      \"ingress\",\n      \"validated\",\n      \"classified\",\n      \"authorize"
+    },
+    {
+      "candidate_id": "DSSC-CATALOG-DISCOVERY-CAND-0054",
+      "surface_form": "ingress",
+      "label": "SERVICE_ENDPOINT",
+      "confidence": 0.9836,
+      "review_status": "candidate",
+      "span": {
+        "start": 4385,
+        "end": 4392
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 128,
+        "line_end": 128
+      },
+      "context": ".1.0\",\n  \"version\": \"0.1.0\",\n  \"out_of_scope_behavior\": \"escalate\",\n  \"state_model\": {\n    \"states\": [\n      \"ingress\",\n      \"validated\",\n      \"classified\",\n      \"authorized\",\n      \"responded\",\n      \"rejected\",\n      \"esca"
+    },
+    {
+      "candidate_id": "DSSC-CATALOG-DISCOVERY-CAND-0055",
+      "surface_form": "classified",
+      "label": "DATASET_METADATA",
+      "confidence": 0.3968,
+      "review_status": "candidate",
+      "span": {
+        "start": 4421,
+        "end": 4431
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 130,
+        "line_end": 130
+      },
+      "context": "of_scope_behavior\": \"escalate\",\n  \"state_model\": {\n    \"states\": [\n      \"ingress\",\n      \"validated\",\n      \"classified\",\n      \"authorized\",\n      \"responded\",\n      \"rejected\",\n      \"escalated\"\n    ],\n    \"initial_state\": \"ing"
+    },
+    {
+      "candidate_id": "DSSC-CATALOG-DISCOVERY-CAND-0056",
+      "surface_form": "escalated",
+      "label": "USAGE_POLICY",
+      "confidence": 0.5126,
+      "review_status": "candidate",
+      "span": {
+        "start": 4498,
+        "end": 4507
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 134,
+        "line_end": 134
+      },
+      "context": "ress\",\n      \"validated\",\n      \"classified\",\n      \"authorized\",\n      \"responded\",\n      \"rejected\",\n      \"escalated\"\n    ],\n    \"initial_state\": \"ingress\",\n    \"terminal_states\": [\n      \"responded\",\n      \"rejected\",\n      \""
+    },
+    {
+      "candidate_id": "DSSC-CATALOG-DISCOVERY-CAND-0057",
+      "surface_form": "ingress",
+      "label": "SERVICE_ENDPOINT",
+      "confidence": 0.9862,
+      "review_status": "candidate",
+      "span": {
+        "start": 4538,
+        "end": 4545
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 136,
+        "line_end": 136
+      },
+      "context": "ied\",\n      \"authorized\",\n      \"responded\",\n      \"rejected\",\n      \"escalated\"\n    ],\n    \"initial_state\": \"ingress\",\n    \"terminal_states\": [\n      \"responded\",\n      \"rejected\",\n      \"escalated\"\n    ]\n  },\n  \"intent_resour"
+    },
+    {
+      "candidate_id": "DSSC-CATALOG-DISCOVERY-CAND-0058",
+      "surface_form": "GovernanceDecision",
+      "label": "OFFERING",
+      "confidence": 0.9522,
+      "review_status": "candidate",
+      "span": {
+        "start": 4715,
+        "end": 4733
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 145,
+        "line_end": 145
+      },
+      "context": "ed\",\n      \"escalated\"\n    ]\n  },\n  \"intent_resource_map\": {\n    \"dssc.catalog.publish_offering.v1\": [\n      \"GovernanceDecision\"\n    ],\n    \"dssc.catalog.update_offering.v1\": [\n      \"GovernanceDecision\"\n    ],\n    \"dssc.catalog.remove_o"
+    },
+    {
+      "candidate_id": "DSSC-CATALOG-DISCOVERY-CAND-0059",
+      "surface_form": "GovernanceDecision",
+      "label": "OFFERING",
+      "confidence": 0.9433,
+      "review_status": "candidate",
+      "span": {
+        "start": 4790,
+        "end": 4808
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 148,
+        "line_end": 148
+      },
+      "context": "log.publish_offering.v1\": [\n      \"GovernanceDecision\"\n    ],\n    \"dssc.catalog.update_offering.v1\": [\n      \"GovernanceDecision\"\n    ],\n    \"dssc.catalog.remove_offering.v1\": [\n      \"GovernanceDecision\"\n    ],\n    \"dssc.catalog.query_of"
+    },
+    {
+      "candidate_id": "DSSC-CATALOG-DISCOVERY-CAND-0060",
+      "surface_form": "GovernanceDecision",
+      "label": "OFFERING",
+      "confidence": 0.9386,
+      "review_status": "candidate",
+      "span": {
+        "start": 4865,
+        "end": 4883
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 151,
+        "line_end": 151
+      },
+      "context": "alog.update_offering.v1\": [\n      \"GovernanceDecision\"\n    ],\n    \"dssc.catalog.remove_offering.v1\": [\n      \"GovernanceDecision\"\n    ],\n    \"dssc.catalog.query_offering.v1\": [\n      \"GovernanceDecision\"\n    ]\n  },\n  \"required_fields_by_i"
+    },
+    {
+      "candidate_id": "DSSC-CATALOG-DISCOVERY-CAND-0061",
+      "surface_form": "GovernanceDecision",
+      "label": "OFFERING",
+      "confidence": 0.9408,
+      "review_status": "candidate",
+      "span": {
+        "start": 4939,
+        "end": 4957
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 154,
+        "line_end": 154
+      },
+      "context": "talog.remove_offering.v1\": [\n      \"GovernanceDecision\"\n    ],\n    \"dssc.catalog.query_offering.v1\": [\n      \"GovernanceDecision\"\n    ]\n  },\n  \"required_fields_by_intent\": {\n    \"dssc.catalog.publish_offering.v1\": [\n      \"policy_snapshot"
+    },
+    {
+      "candidate_id": "DSSC-CATALOG-DISCOVERY-CAND-0062",
+      "surface_form": "policy_snapshot_id",
+      "label": "POLICY_SNAPSHOT",
+      "confidence": 0.968,
+      "review_status": "candidate",
+      "span": {
+        "start": 5052,
+        "end": 5070
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 159,
+        "line_end": 159
+      },
+      "context": "ernanceDecision\"\n    ]\n  },\n  \"required_fields_by_intent\": {\n    \"dssc.catalog.publish_offering.v1\": [\n      \"policy_snapshot_id\"\n    ],\n    \"dssc.catalog.update_offering.v1\": [\n      \"policy_snapshot_id\"\n    ],\n    \"dssc.catalog.remove_o"
+    },
+    {
+      "candidate_id": "DSSC-CATALOG-DISCOVERY-CAND-0063",
+      "surface_form": "policy_snapshot_id",
+      "label": "POLICY_SNAPSHOT",
+      "confidence": 0.9808,
+      "review_status": "candidate",
+      "span": {
+        "start": 5127,
+        "end": 5145
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 162,
+        "line_end": 162
+      },
+      "context": "log.publish_offering.v1\": [\n      \"policy_snapshot_id\"\n    ],\n    \"dssc.catalog.update_offering.v1\": [\n      \"policy_snapshot_id\"\n    ],\n    \"dssc.catalog.remove_offering.v1\": [\n      \"policy_snapshot_id\"\n    ],\n    \"dssc.catalog.query_of"
+    },
+    {
+      "candidate_id": "DSSC-CATALOG-DISCOVERY-CAND-0064",
+      "surface_form": "policy_snapshot_id",
+      "label": "POLICY_SNAPSHOT",
+      "confidence": 0.9811,
+      "review_status": "candidate",
+      "span": {
+        "start": 5202,
+        "end": 5220
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 165,
+        "line_end": 165
+      },
+      "context": "alog.update_offering.v1\": [\n      \"policy_snapshot_id\"\n    ],\n    \"dssc.catalog.remove_offering.v1\": [\n      \"policy_snapshot_id\"\n    ],\n    \"dssc.catalog.query_offering.v1\": [\n      \"policy_snapshot_id\"\n    ]\n  },\n  \"deny_reason_codes\": "
+    },
+    {
+      "candidate_id": "DSSC-CATALOG-DISCOVERY-CAND-0065",
+      "surface_form": "policy_snapshot_id",
+      "label": "POLICY_SNAPSHOT",
+      "confidence": 0.9811,
+      "review_status": "candidate",
+      "span": {
+        "start": 5276,
+        "end": 5294
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 168,
+        "line_end": 168
+      },
+      "context": "talog.remove_offering.v1\": [\n      \"policy_snapshot_id\"\n    ],\n    \"dssc.catalog.query_offering.v1\": [\n      \"policy_snapshot_id\"\n    ]\n  },\n  \"deny_reason_codes\": [\n    \"CIC_REQUIRED_FIELD_MISSING\",\n    \"DENY_POLICY_REFERENCE_UNBOUND\",\n "
+    },
+    {
+      "candidate_id": "DSSC-CATALOG-DISCOVERY-CAND-0066",
+      "surface_form": "DENY_POLICY_REFERENCE_UNBOUND",
+      "label": "USAGE_POLICY",
+      "confidence": 0.4172,
+      "review_status": "candidate",
+      "span": {
+        "start": 5371,
+        "end": 5400
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 173,
+        "line_end": 173
+      },
+      "context": ".v1\": [\n      \"policy_snapshot_id\"\n    ]\n  },\n  \"deny_reason_codes\": [\n    \"CIC_REQUIRED_FIELD_MISSING\",\n    \"DENY_POLICY_REFERENCE_UNBOUND\",\n    \"ESCALATE_OUT_OF_SCOPE_INTENT\",\n    \"PSC_BUNDLE_COMMIT_MISMATCH\"\n  ]\n}\n\n\n### FILE: intent-mappings.json"
+    },
+    {
+      "candidate_id": "DSSC-CATALOG-DISCOVERY-CAND-0067",
+      "surface_form": "dssc-catalog-discovery",
+      "label": "OFFERING",
+      "confidence": 0.7149,
+      "review_status": "candidate",
+      "span": {
+        "start": 5553,
+        "end": 5575
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 183,
+        "line_end": 183
+      },
+      "context": "\"PSC_BUNDLE_COMMIT_MISMATCH\"\n  ]\n}\n\n\n### FILE: intent-mappings.json\n{\n  \"schema_version\": \"1.0\",\n  \"domain\": \"dssc-catalog-discovery\",\n  \"mappings\": [\n    {\n      \"concept_uri\": \"dssc:GovernanceSurface\",\n      \"intent_class\": \"dssc.catalog.pu"
+    },
+    {
+      "candidate_id": "DSSC-CATALOG-DISCOVERY-CAND-0068",
+      "surface_form": "dssc",
+      "label": "CATALOG_ENTITY",
+      "confidence": 0.4815,
+      "review_status": "candidate",
+      "span": {
+        "start": 5622,
+        "end": 5626
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 186,
+        "line_end": 186
+      },
+      "context": "\n  \"schema_version\": \"1.0\",\n  \"domain\": \"dssc-catalog-discovery\",\n  \"mappings\": [\n    {\n      \"concept_uri\": \"dssc:GovernanceSurface\",\n      \"intent_class\": \"dssc.catalog.publish_offering.v1\",\n      \"confidence_floor\": 0.76\n"
+    },
+    {
+      "candidate_id": "DSSC-CATALOG-DISCOVERY-CAND-0069",
+      "surface_form": "GovernanceSurface",
+      "label": "CATALOG_ENTITY",
+      "confidence": 0.506,
+      "review_status": "candidate",
+      "span": {
+        "start": 5627,
+        "end": 5644
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 186,
+        "line_end": 186
+      },
+      "context": "chema_version\": \"1.0\",\n  \"domain\": \"dssc-catalog-discovery\",\n  \"mappings\": [\n    {\n      \"concept_uri\": \"dssc:GovernanceSurface\",\n      \"intent_class\": \"dssc.catalog.publish_offering.v1\",\n      \"confidence_floor\": 0.76\n    },\n    {\n     "
+    },
+    {
+      "candidate_id": "DSSC-CATALOG-DISCOVERY-CAND-0070",
+      "surface_form": "intent_class",
+      "label": "INTENT_CLASS",
+      "confidence": 0.6931,
+      "review_status": "candidate",
+      "span": {
+        "start": 5654,
+        "end": 5666
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 187,
+        "line_end": 187
+      },
+      "context": "omain\": \"dssc-catalog-discovery\",\n  \"mappings\": [\n    {\n      \"concept_uri\": \"dssc:GovernanceSurface\",\n      \"intent_class\": \"dssc.catalog.publish_offering.v1\",\n      \"confidence_floor\": 0.76\n    },\n    {\n      \"concept_uri\": \"dssc:"
+    },
+    {
+      "candidate_id": "DSSC-CATALOG-DISCOVERY-CAND-0071",
+      "surface_form": "publish_offering",
+      "label": "OFFERING",
+      "confidence": 0.5739,
+      "review_status": "candidate",
+      "span": {
+        "start": 5683,
+        "end": 5699
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 187,
+        "line_end": 187
+      },
+      "context": "ry\",\n  \"mappings\": [\n    {\n      \"concept_uri\": \"dssc:GovernanceSurface\",\n      \"intent_class\": \"dssc.catalog.publish_offering.v1\",\n      \"confidence_floor\": 0.76\n    },\n    {\n      \"concept_uri\": \"dssc:GovernanceSurface\",\n      \"intent"
+    },
+    {
+      "candidate_id": "DSSC-CATALOG-DISCOVERY-CAND-0072",
+      "surface_form": "dssc",
+      "label": "CATALOG_ENTITY",
+      "confidence": 0.4925,
+      "review_status": "candidate",
+      "span": {
+        "start": 5771,
+        "end": 5775
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 191,
+        "line_end": 191
+      },
+      "context": "class\": \"dssc.catalog.publish_offering.v1\",\n      \"confidence_floor\": 0.76\n    },\n    {\n      \"concept_uri\": \"dssc:GovernanceSurface\",\n      \"intent_class\": \"dssc.catalog.update_offering.v1\",\n      \"confidence_floor\": 0.76\n "
+    },
+    {
+      "candidate_id": "DSSC-CATALOG-DISCOVERY-CAND-0073",
+      "surface_form": "dssc",
+      "label": "OFFERING",
+      "confidence": 0.4464,
+      "review_status": "candidate",
+      "span": {
+        "start": 5771,
+        "end": 5775
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 191,
+        "line_end": 191
+      },
+      "context": "class\": \"dssc.catalog.publish_offering.v1\",\n      \"confidence_floor\": 0.76\n    },\n    {\n      \"concept_uri\": \"dssc:GovernanceSurface\",\n      \"intent_class\": \"dssc.catalog.update_offering.v1\",\n      \"confidence_floor\": 0.76\n "
+    },
+    {
+      "candidate_id": "DSSC-CATALOG-DISCOVERY-CAND-0074",
+      "surface_form": "GovernanceSurface",
+      "label": "CATALOG_ENTITY",
+      "confidence": 0.4251,
+      "review_status": "candidate",
+      "span": {
+        "start": 5776,
+        "end": 5793
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 191,
+        "line_end": 191
+      },
+      "context": "\": \"dssc.catalog.publish_offering.v1\",\n      \"confidence_floor\": 0.76\n    },\n    {\n      \"concept_uri\": \"dssc:GovernanceSurface\",\n      \"intent_class\": \"dssc.catalog.update_offering.v1\",\n      \"confidence_floor\": 0.76\n    },\n    {\n      "
+    },
+    {
+      "candidate_id": "DSSC-CATALOG-DISCOVERY-CAND-0075",
+      "surface_form": "intent_class",
+      "label": "INTENT_CLASS",
+      "confidence": 0.8144,
+      "review_status": "candidate",
+      "span": {
+        "start": 5803,
+        "end": 5815
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 192,
+        "line_end": 192
+      },
+      "context": "fering.v1\",\n      \"confidence_floor\": 0.76\n    },\n    {\n      \"concept_uri\": \"dssc:GovernanceSurface\",\n      \"intent_class\": \"dssc.catalog.update_offering.v1\",\n      \"confidence_floor\": 0.76\n    },\n    {\n      \"concept_uri\": \"dssc:G"
+    },
+    {
+      "candidate_id": "DSSC-CATALOG-DISCOVERY-CAND-0076",
+      "surface_form": "dssc",
+      "label": "OFFERING",
+      "confidence": 0.4837,
+      "review_status": "candidate",
+      "span": {
+        "start": 5919,
+        "end": 5923
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 196,
+        "line_end": 196
+      },
+      "context": "_class\": \"dssc.catalog.update_offering.v1\",\n      \"confidence_floor\": 0.76\n    },\n    {\n      \"concept_uri\": \"dssc:GovernanceSurface\",\n      \"intent_class\": \"dssc.catalog.remove_offering.v1\",\n      \"confidence_floor\": 0.76\n "
+    },
+    {
+      "candidate_id": "DSSC-CATALOG-DISCOVERY-CAND-0077",
+      "surface_form": "intent_class",
+      "label": "INTENT_CLASS",
+      "confidence": 0.7719,
+      "review_status": "candidate",
+      "span": {
+        "start": 5951,
+        "end": 5963
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 197,
+        "line_end": 197
+      },
+      "context": "fering.v1\",\n      \"confidence_floor\": 0.76\n    },\n    {\n      \"concept_uri\": \"dssc:GovernanceSurface\",\n      \"intent_class\": \"dssc.catalog.remove_offering.v1\",\n      \"confidence_floor\": 0.76\n    },\n    {\n      \"concept_uri\": \"dssc:G"
+    },
+    {
+      "candidate_id": "DSSC-CATALOG-DISCOVERY-CAND-0078",
+      "surface_form": "dssc",
+      "label": "OFFERING",
+      "confidence": 0.5213,
+      "review_status": "candidate",
+      "span": {
+        "start": 6067,
+        "end": 6071
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 201,
+        "line_end": 201
+      },
+      "context": "_class\": \"dssc.catalog.remove_offering.v1\",\n      \"confidence_floor\": 0.76\n    },\n    {\n      \"concept_uri\": \"dssc:GovernanceSurface\",\n      \"intent_class\": \"dssc.catalog.query_offering.v1\",\n      \"confidence_floor\": 0.76\n  "
+    },
+    {
+      "candidate_id": "DSSC-CATALOG-DISCOVERY-CAND-0079",
+      "surface_form": "intent_class",
+      "label": "INTENT_CLASS",
+      "confidence": 0.7852,
+      "review_status": "candidate",
+      "span": {
+        "start": 6099,
+        "end": 6111
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 202,
+        "line_end": 202
+      },
+      "context": "fering.v1\",\n      \"confidence_floor\": 0.76\n    },\n    {\n      \"concept_uri\": \"dssc:GovernanceSurface\",\n      \"intent_class\": \"dssc.catalog.query_offering.v1\",\n      \"confidence_floor\": 0.76\n    }\n  ]\n}\n\n\n### FILE: thesaurus-local.js"
+    },
+    {
+      "candidate_id": "DSSC-CATALOG-DISCOVERY-CAND-0080",
+      "surface_form": "dssc",
+      "label": "OFFERING",
+      "confidence": 0.3813,
+      "review_status": "candidate",
+      "span": {
+        "start": 6115,
+        "end": 6119
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 202,
+        "line_end": 202
+      },
+      "context": "  \"confidence_floor\": 0.76\n    },\n    {\n      \"concept_uri\": \"dssc:GovernanceSurface\",\n      \"intent_class\": \"dssc.catalog.query_offering.v1\",\n      \"confidence_floor\": 0.76\n    }\n  ]\n}\n\n\n### FILE: thesaurus-local.json\n{\n  \""
+    },
+    {
+      "candidate_id": "DSSC-CATALOG-DISCOVERY-CAND-0081",
+      "surface_form": "catalog",
+      "label": "CATALOG_ENTITY",
+      "confidence": 0.359,
+      "review_status": "candidate",
+      "span": {
+        "start": 6390,
+        "end": 6397
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 216,
+        "line_end": 216
+      },
+      "context": "iscovery\",\n  \"last_modified\": \"2026-04-14\",\n  \"concepts\": [\n    {\n      \"concept_id\": \"dssc-catalog-discovery.catalog.v1\",\n      \"preferred_term\": \"Catalog\",\n      \"synonyms\": [],\n      \"register_variants\": {},\n      \"domain_vo"
+    },
+    {
+      "candidate_id": "DSSC-CATALOG-DISCOVERY-CAND-0082",
+      "surface_form": "Catalog",
+      "label": "CATALOG_ENTITY",
+      "confidence": 0.4224,
+      "review_status": "candidate",
+      "span": {
+        "start": 6428,
+        "end": 6435
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 217,
+        "line_end": 217
+      },
+      "context": "-14\",\n  \"concepts\": [\n    {\n      \"concept_id\": \"dssc-catalog-discovery.catalog.v1\",\n      \"preferred_term\": \"Catalog\",\n      \"synonyms\": [],\n      \"register_variants\": {},\n      \"domain_vocabulary\": {},\n      \"translations\": {"
+    },
+    {
+      "candidate_id": "DSSC-CATALOG-DISCOVERY-CAND-0083",
+      "surface_form": "GovernanceSurface",
+      "label": "JURISDICTION",
+      "confidence": 0.9155,
+      "review_status": "candidate",
+      "span": {
+        "start": 6566,
+        "end": 6583
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 222,
+        "line_end": 222
+      },
+      "context": "[],\n      \"register_variants\": {},\n      \"domain_vocabulary\": {},\n      \"translations\": {},\n      \"broader\": \"GovernanceSurface\",\n      \"narrower\": [],\n      \"source_refs\": [\n        \"dssc-canonical-source-catalog\"\n      ],\n      \"ner_pr"
+    },
+    {
+      "candidate_id": "DSSC-CATALOG-DISCOVERY-CAND-0084",
+      "surface_form": "dssc-canonical-source-catalog",
+      "label": "OFFERING",
+      "confidence": 0.7953,
+      "review_status": "candidate",
+      "span": {
+        "start": 6640,
+        "end": 6669
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 225,
+        "line_end": 225
+      },
+      "context": "ranslations\": {},\n      \"broader\": \"GovernanceSurface\",\n      \"narrower\": [],\n      \"source_refs\": [\n        \"dssc-canonical-source-catalog\"\n      ],\n      \"ner_provenance\": null\n    },\n    {\n      \"concept_id\": \"dssc-catalog-discovery.offering.v1\","
+    },
+    {
+      "candidate_id": "DSSC-CATALOG-DISCOVERY-CAND-0085",
+      "surface_form": "dssc-catalog-discovery",
+      "label": "OFFERING",
+      "confidence": 0.5521,
+      "review_status": "candidate",
+      "span": {
+        "start": 6743,
+        "end": 6765
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 230,
+        "line_end": 230
+      },
+      "context": "      \"dssc-canonical-source-catalog\"\n      ],\n      \"ner_provenance\": null\n    },\n    {\n      \"concept_id\": \"dssc-catalog-discovery.offering.v1\",\n      \"preferred_term\": \"Offering\",\n      \"synonyms\": [],\n      \"register_variants\": {},\n      "
+    },
+    {
+      "candidate_id": "DSSC-CATALOG-DISCOVERY-CAND-0086",
+      "surface_form": "offering",
+      "label": "OFFERING",
+      "confidence": 0.5373,
+      "review_status": "candidate",
+      "span": {
+        "start": 6766,
+        "end": 6774
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 230,
+        "line_end": 230
+      },
+      "context": "ource-catalog\"\n      ],\n      \"ner_provenance\": null\n    },\n    {\n      \"concept_id\": \"dssc-catalog-discovery.offering.v1\",\n      \"preferred_term\": \"Offering\",\n      \"synonyms\": [],\n      \"register_variants\": {},\n      \"domain_v"
+    },
+    {
+      "candidate_id": "DSSC-CATALOG-DISCOVERY-CAND-0087",
+      "surface_form": "Offering",
+      "label": "OFFERING",
+      "confidence": 0.8013,
+      "review_status": "candidate",
+      "span": {
+        "start": 6805,
+        "end": 6813
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 231,
+        "line_end": 231
+      },
+      "context": "enance\": null\n    },\n    {\n      \"concept_id\": \"dssc-catalog-discovery.offering.v1\",\n      \"preferred_term\": \"Offering\",\n      \"synonyms\": [],\n      \"register_variants\": {},\n      \"domain_vocabulary\": {},\n      \"translations\": {"
+    },
+    {
+      "candidate_id": "DSSC-CATALOG-DISCOVERY-CAND-0088",
+      "surface_form": "dssc-canonical-source-catalog",
+      "label": "OFFERING",
+      "confidence": 0.8006,
+      "review_status": "candidate",
+      "span": {
+        "start": 7018,
+        "end": 7047
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 239,
+        "line_end": 239
+      },
+      "context": "ranslations\": {},\n      \"broader\": \"GovernanceSurface\",\n      \"narrower\": [],\n      \"source_refs\": [\n        \"dssc-canonical-source-catalog\"\n      ],\n      \"ner_provenance\": null\n    },\n    {\n      \"concept_id\": \"dssc-catalog-discovery.datasetmetada"
+    },
+    {
+      "candidate_id": "DSSC-CATALOG-DISCOVERY-CAND-0089",
+      "surface_form": "datasetmetadata",
+      "label": "DATASET_METADATA",
+      "confidence": 0.4892,
+      "review_status": "candidate",
+      "span": {
+        "start": 7144,
+        "end": 7159
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 244,
+        "line_end": 244
+      },
+      "context": "ource-catalog\"\n      ],\n      \"ner_provenance\": null\n    },\n    {\n      \"concept_id\": \"dssc-catalog-discovery.datasetmetadata.v1\",\n      \"preferred_term\": \"DatasetMetadata\",\n      \"synonyms\": [],\n      \"register_variants\": {},\n      \"d"
+    },
+    {
+      "candidate_id": "DSSC-CATALOG-DISCOVERY-CAND-0090",
+      "surface_form": "DatasetMetadata",
+      "label": "DATASET_METADATA",
+      "confidence": 0.8485,
+      "review_status": "candidate",
+      "span": {
+        "start": 7190,
+        "end": 7205
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 245,
+        "line_end": 245
+      },
+      "context": ": null\n    },\n    {\n      \"concept_id\": \"dssc-catalog-discovery.datasetmetadata.v1\",\n      \"preferred_term\": \"DatasetMetadata\",\n      \"synonyms\": [],\n      \"register_variants\": {},\n      \"domain_vocabulary\": {},\n      \"translations\": {"
+    },
+    {
+      "candidate_id": "DSSC-CATALOG-DISCOVERY-CAND-0091",
+      "surface_form": "ner_provenance",
+      "label": "CATALOG_ENTITY",
+      "confidence": 0.4625,
+      "review_status": "candidate",
+      "span": {
+        "start": 7457,
+        "end": 7471
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 255,
+        "line_end": 255
+      },
+      "context": "urface\",\n      \"narrower\": [],\n      \"source_refs\": [\n        \"dssc-canonical-source-catalog\"\n      ],\n      \"ner_provenance\": null\n    },\n    {\n      \"concept_id\": \"dssc-catalog-discovery.dataserviceendpoint.v1\",\n      \"preferred_ter"
+    },
+    {
+      "candidate_id": "DSSC-CATALOG-DISCOVERY-CAND-0092",
+      "surface_form": "dataserviceendpoint",
+      "label": "SERVICE_ENDPOINT",
+      "confidence": 0.7416,
+      "review_status": "candidate",
+      "span": {
+        "start": 7536,
+        "end": 7555
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 258,
+        "line_end": 258
+      },
+      "context": "ource-catalog\"\n      ],\n      \"ner_provenance\": null\n    },\n    {\n      \"concept_id\": \"dssc-catalog-discovery.dataserviceendpoint.v1\",\n      \"preferred_term\": \"DataServiceEndpoint\",\n      \"synonyms\": [],\n      \"register_variants\": {},\n    "
+    },
+    {
+      "candidate_id": "DSSC-CATALOG-DISCOVERY-CAND-0093",
+      "surface_form": "DataServiceEndpoint",
+      "label": "SERVICE_ENDPOINT",
+      "confidence": 0.9006,
+      "review_status": "candidate",
+      "span": {
+        "start": 7586,
+        "end": 7605
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 259,
+        "line_end": 259
+      },
+      "context": "ll\n    },\n    {\n      \"concept_id\": \"dssc-catalog-discovery.dataserviceendpoint.v1\",\n      \"preferred_term\": \"DataServiceEndpoint\",\n      \"synonyms\": [],\n      \"register_variants\": {},\n      \"domain_vocabulary\": {},\n      \"translations\": {"
+    },
+    {
+      "candidate_id": "DSSC-CATALOG-DISCOVERY-CAND-0094",
+      "surface_form": "GovernanceSurface",
+      "label": "JURISDICTION",
+      "confidence": 0.8664,
+      "review_status": "candidate",
+      "span": {
+        "start": 7736,
+        "end": 7753
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 264,
+        "line_end": 264
+      },
+      "context": "[],\n      \"register_variants\": {},\n      \"domain_vocabulary\": {},\n      \"translations\": {},\n      \"broader\": \"GovernanceSurface\",\n      \"narrower\": [],\n      \"source_refs\": [\n        \"dssc-canonical-source-catalog\"\n      ],\n      \"ner_pr"
+    },
+    {
+      "candidate_id": "DSSC-CATALOG-DISCOVERY-CAND-0095",
+      "surface_form": "ner_provenance",
+      "label": "CATALOG_ENTITY",
+      "confidence": 0.4922,
+      "review_status": "candidate",
+      "span": {
+        "start": 7857,
+        "end": 7871
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 269,
+        "line_end": 269
+      },
+      "context": "urface\",\n      \"narrower\": [],\n      \"source_refs\": [\n        \"dssc-canonical-source-catalog\"\n      ],\n      \"ner_provenance\": null\n    },\n    {\n      \"concept_id\": \"dssc-catalog-discovery.usagepolicyreference.v1\",\n      \"preferred_te"
+    },
+    {
+      "candidate_id": "DSSC-CATALOG-DISCOVERY-CAND-0096",
+      "surface_form": "usagepolicyreference",
+      "label": "USAGE_POLICY",
+      "confidence": 0.6594,
+      "review_status": "candidate",
+      "span": {
+        "start": 7936,
+        "end": 7956
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 272,
+        "line_end": 272
+      },
+      "context": "ource-catalog\"\n      ],\n      \"ner_provenance\": null\n    },\n    {\n      \"concept_id\": \"dssc-catalog-discovery.usagepolicyreference.v1\",\n      \"preferred_term\": \"UsagePolicyReference\",\n      \"synonyms\": [],\n      \"register_variants\": {},\n   "
+    },
+    {
+      "candidate_id": "DSSC-CATALOG-DISCOVERY-CAND-0097",
+      "surface_form": "UsagePolicyReference",
+      "label": "USAGE_POLICY",
+      "confidence": 0.9052,
+      "review_status": "candidate",
+      "span": {
+        "start": 7987,
+        "end": 8007
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 273,
+        "line_end": 273
+      },
+      "context": "l\n    },\n    {\n      \"concept_id\": \"dssc-catalog-discovery.usagepolicyreference.v1\",\n      \"preferred_term\": \"UsagePolicyReference\",\n      \"synonyms\": [],\n      \"register_variants\": {},\n      \"domain_vocabulary\": {},\n      \"translations\": {"
+    },
+    {
+      "candidate_id": "DSSC-CATALOG-DISCOVERY-CAND-0098",
+      "surface_form": "GovernanceSurface",
+      "label": "JURISDICTION",
+      "confidence": 0.8867,
+      "review_status": "candidate",
+      "span": {
+        "start": 8138,
+        "end": 8155
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 278,
+        "line_end": 278
+      },
+      "context": "[],\n      \"register_variants\": {},\n      \"domain_vocabulary\": {},\n      \"translations\": {},\n      \"broader\": \"GovernanceSurface\",\n      \"narrower\": [],\n      \"source_refs\": [\n        \"dssc-canonical-source-catalog\"\n      ],\n      \"ner_pr"
+    },
+    {
+      "candidate_id": "DSSC-CATALOG-DISCOVERY-CAND-0099",
+      "surface_form": "participantvisibilityscope",
+      "label": "CATALOG_ENTITY",
+      "confidence": 0.482,
+      "review_status": "candidate",
+      "span": {
+        "start": 8338,
+        "end": 8364
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 286,
+        "line_end": 286
+      },
+      "context": "ource-catalog\"\n      ],\n      \"ner_provenance\": null\n    },\n    {\n      \"concept_id\": \"dssc-catalog-discovery.participantvisibilityscope.v1\",\n      \"preferred_term\": \"ParticipantVisibilityScope\",\n      \"synonyms\": [],\n      \"register_variants\": {"
+    },
+    {
+      "candidate_id": "DSSC-CATALOG-DISCOVERY-CAND-0100",
+      "surface_form": "ParticipantVisibilityScope",
+      "label": "CATALOG_ENTITY",
+      "confidence": 0.6375,
+      "review_status": "candidate",
+      "span": {
+        "start": 8395,
+        "end": 8421
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 287,
+        "line_end": 287
+      },
+      "context": "},\n    {\n      \"concept_id\": \"dssc-catalog-discovery.participantvisibilityscope.v1\",\n      \"preferred_term\": \"ParticipantVisibilityScope\",\n      \"synonyms\": [],\n      \"register_variants\": {},\n      \"domain_vocabulary\": {},\n      \"translations\": {"
+    },
+    {
+      "candidate_id": "DSSC-CATALOG-DISCOVERY-CAND-0101",
+      "surface_form": "GovernanceSurface",
+      "label": "JURISDICTION",
+      "confidence": 0.912,
+      "review_status": "candidate",
+      "span": {
+        "start": 8552,
+        "end": 8569
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 292,
+        "line_end": 292
+      },
+      "context": "[],\n      \"register_variants\": {},\n      \"domain_vocabulary\": {},\n      \"translations\": {},\n      \"broader\": \"GovernanceSurface\",\n      \"narrower\": [],\n      \"source_refs\": [\n        \"dssc-canonical-source-catalog\"\n      ],\n      \"ner_pr"
+    },
+    {
+      "candidate_id": "DSSC-CATALOG-DISCOVERY-CAND-0102",
+      "surface_form": "lifecyclestate",
+      "label": "LIFECYCLE_STATE",
+      "confidence": 0.8523,
+      "review_status": "candidate",
+      "span": {
+        "start": 8752,
+        "end": 8766
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 300,
+        "line_end": 300
+      },
+      "context": "ource-catalog\"\n      ],\n      \"ner_provenance\": null\n    },\n    {\n      \"concept_id\": \"dssc-catalog-discovery.lifecyclestate.v1\",\n      \"preferred_term\": \"LifecycleState\",\n      \"synonyms\": [],\n      \"register_variants\": {},\n      \"do"
+    },
+    {
+      "candidate_id": "DSSC-CATALOG-DISCOVERY-CAND-0103",
+      "surface_form": "LifecycleState",
+      "label": "LIFECYCLE_STATE",
+      "confidence": 0.8756,
+      "review_status": "candidate",
+      "span": {
+        "start": 8797,
+        "end": 8811
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 301,
+        "line_end": 301
+      },
+      "context": "\": null\n    },\n    {\n      \"concept_id\": \"dssc-catalog-discovery.lifecyclestate.v1\",\n      \"preferred_term\": \"LifecycleState\",\n      \"synonyms\": [],\n      \"register_variants\": {},\n      \"domain_vocabulary\": {},\n      \"translations\": {"
+    },
+    {
+      "candidate_id": "DSSC-CATALOG-DISCOVERY-CAND-0104",
+      "surface_form": "GovernanceSurface",
+      "label": "JURISDICTION",
+      "confidence": 0.896,
+      "review_status": "candidate",
+      "span": {
+        "start": 8942,
+        "end": 8959
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 306,
+        "line_end": 306
+      },
+      "context": "[],\n      \"register_variants\": {},\n      \"domain_vocabulary\": {},\n      \"translations\": {},\n      \"broader\": \"GovernanceSurface\",\n      \"narrower\": [],\n      \"source_refs\": [\n        \"dssc-canonical-source-catalog\"\n      ],\n      \"ner_pr"
+    },
+    {
+      "candidate_id": "DSSC-CATALOG-DISCOVERY-CAND-0105",
+      "surface_form": "dssc-catalog-discovery",
+      "label": "OFFERING",
+      "confidence": 0.43,
+      "review_status": "candidate",
+      "span": {
+        "start": 9165,
+        "end": 9187
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 320,
+        "line_end": 320
+      },
+      "context": "\n      \"ner_provenance\": null\n    }\n  ]\n}\n\n\n### FILE: patterns.json\n{\n  \"schema_version\": \"1.0\",\n  \"domain\": \"dssc-catalog-discovery\",\n  \"patterns\": [\n    {\n      \"id\": \"dssc_catalog_publish_offering_v1\",\n      \"concept_uri\": \"dssc:Governance"
+    },
+    {
+      "candidate_id": "DSSC-CATALOG-DISCOVERY-CAND-0106",
+      "surface_form": "id",
+      "label": "IDENTIFIER",
+      "confidence": 0.5806,
+      "review_status": "candidate",
+      "span": {
+        "start": 9219,
+        "end": 9221
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 323,
+        "line_end": 323
+      },
+      "context": "patterns.json\n{\n  \"schema_version\": \"1.0\",\n  \"domain\": \"dssc-catalog-discovery\",\n  \"patterns\": [\n    {\n      \"id\": \"dssc_catalog_publish_offering_v1\",\n      \"concept_uri\": \"dssc:GovernanceSurface\",\n      \"entity_type\": \"in"
+    },
+    {
+      "candidate_id": "DSSC-CATALOG-DISCOVERY-CAND-0107",
+      "surface_form": "dssc_catalog_publish_offering_v1",
+      "label": "OFFERING",
+      "confidence": 0.745,
+      "review_status": "candidate",
+      "span": {
+        "start": 9225,
+        "end": 9257
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 323,
+        "line_end": 323
+      },
+      "context": "ns.json\n{\n  \"schema_version\": \"1.0\",\n  \"domain\": \"dssc-catalog-discovery\",\n  \"patterns\": [\n    {\n      \"id\": \"dssc_catalog_publish_offering_v1\",\n      \"concept_uri\": \"dssc:GovernanceSurface\",\n      \"entity_type\": \"intent_hint\",\n      \"regex\": \"(?i)\\\\bd"
+    },
+    {
+      "candidate_id": "DSSC-CATALOG-DISCOVERY-CAND-0108",
+      "surface_form": "dssc",
+      "label": "OFFERING",
+      "confidence": 0.3508,
+      "review_status": "candidate",
+      "span": {
+        "start": 9282,
+        "end": 9286
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 324,
+        "line_end": 324
+      },
+      "context": "talog-discovery\",\n  \"patterns\": [\n    {\n      \"id\": \"dssc_catalog_publish_offering_v1\",\n      \"concept_uri\": \"dssc:GovernanceSurface\",\n      \"entity_type\": \"intent_hint\",\n      \"regex\": \"(?i)\\\\bdssc\\\\.catalog\\\\.publish_offer"
+    },
+    {
+      "candidate_id": "DSSC-CATALOG-DISCOVERY-CAND-0109",
+      "surface_form": "GovernanceSurface",
+      "label": "JURISDICTION",
+      "confidence": 0.8739,
+      "review_status": "candidate",
+      "span": {
+        "start": 9287,
+        "end": 9304
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 324,
+        "line_end": 324
+      },
+      "context": "-discovery\",\n  \"patterns\": [\n    {\n      \"id\": \"dssc_catalog_publish_offering_v1\",\n      \"concept_uri\": \"dssc:GovernanceSurface\",\n      \"entity_type\": \"intent_hint\",\n      \"regex\": \"(?i)\\\\bdssc\\\\.catalog\\\\.publish_offering\\\\.v1\\\\b\",\n    "
+    },
+    {
+      "candidate_id": "DSSC-CATALOG-DISCOVERY-CAND-0110",
+      "surface_form": "intent_hint",
+      "label": "INTENT_CLASS",
+      "confidence": 0.5248,
+      "review_status": "candidate",
+      "span": {
+        "start": 9329,
+        "end": 9340
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 325,
+        "line_end": 325
+      },
+      "context": "id\": \"dssc_catalog_publish_offering_v1\",\n      \"concept_uri\": \"dssc:GovernanceSurface\",\n      \"entity_type\": \"intent_hint\",\n      \"regex\": \"(?i)\\\\bdssc\\\\.catalog\\\\.publish_offering\\\\.v1\\\\b\",\n      \"examples\": [\n        \"dssc.catalo"
+    },
+    {
+      "candidate_id": "DSSC-CATALOG-DISCOVERY-CAND-0111",
+      "surface_form": "publish_offering",
+      "label": "OFFERING",
+      "confidence": 0.6243,
+      "review_status": "candidate",
+      "span": {
+        "start": 9383,
+        "end": 9399
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 326,
+        "line_end": 326
+      },
+      "context": "t_uri\": \"dssc:GovernanceSurface\",\n      \"entity_type\": \"intent_hint\",\n      \"regex\": \"(?i)\\\\bdssc\\\\.catalog\\\\.publish_offering\\\\.v1\\\\b\",\n      \"examples\": [\n        \"dssc.catalog.publish_offering.v1\"\n      ]\n    },\n    {\n      \"id\": \"ds"
+    },
+    {
+      "candidate_id": "DSSC-CATALOG-DISCOVERY-CAND-0112",
+      "surface_form": "dssc",
+      "label": "OFFERING",
+      "confidence": 0.6141,
+      "review_status": "candidate",
+      "span": {
+        "start": 9439,
+        "end": 9443
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 328,
+        "line_end": 328
+      },
+      "context": "intent_hint\",\n      \"regex\": \"(?i)\\\\bdssc\\\\.catalog\\\\.publish_offering\\\\.v1\\\\b\",\n      \"examples\": [\n        \"dssc.catalog.publish_offering.v1\"\n      ]\n    },\n    {\n      \"id\": \"dssc_catalog_update_offering_v1\",\n      \"conce"
+    },
+    {
+      "candidate_id": "DSSC-CATALOG-DISCOVERY-CAND-0113",
+      "surface_form": "publish_offering",
+      "label": "OFFERING",
+      "confidence": 0.5524,
+      "review_status": "candidate",
+      "span": {
+        "start": 9452,
+        "end": 9468
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 328,
+        "line_end": 328
+      },
+      "context": "\n      \"regex\": \"(?i)\\\\bdssc\\\\.catalog\\\\.publish_offering\\\\.v1\\\\b\",\n      \"examples\": [\n        \"dssc.catalog.publish_offering.v1\"\n      ]\n    },\n    {\n      \"id\": \"dssc_catalog_update_offering_v1\",\n      \"concept_uri\": \"dssc:Governance"
+    },
+    {
+      "candidate_id": "DSSC-CATALOG-DISCOVERY-CAND-0114",
+      "surface_form": "id",
+      "label": "IDENTIFIER",
+      "confidence": 0.747,
+      "review_status": "candidate",
+      "span": {
+        "start": 9501,
+        "end": 9503
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 332,
+        "line_end": 332
+      },
+      "context": "offering\\\\.v1\\\\b\",\n      \"examples\": [\n        \"dssc.catalog.publish_offering.v1\"\n      ]\n    },\n    {\n      \"id\": \"dssc_catalog_update_offering_v1\",\n      \"concept_uri\": \"dssc:GovernanceSurface\",\n      \"entity_type\": \"int"
+    },
+    {
+      "candidate_id": "DSSC-CATALOG-DISCOVERY-CAND-0115",
+      "surface_form": "dss",
+      "label": "OFFERING",
+      "confidence": 0.6813,
+      "review_status": "candidate",
+      "span": {
+        "start": 9507,
+        "end": 9510
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 332,
+        "line_end": 332
+      },
+      "context": "ng\\\\.v1\\\\b\",\n      \"examples\": [\n        \"dssc.catalog.publish_offering.v1\"\n      ]\n    },\n    {\n      \"id\": \"dssc_catalog_update_offering_v1\",\n      \"concept_uri\": \"dssc:GovernanceSurface\",\n      \"entity_type\": \"intent_hin"
+    },
+    {
+      "candidate_id": "DSSC-CATALOG-DISCOVERY-CAND-0116",
+      "surface_form": "dssc_catalog_update_offering_v1",
+      "label": "OFFERING",
+      "confidence": 0.5839,
+      "review_status": "candidate",
+      "span": {
+        "start": 9507,
+        "end": 9538
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 332,
+        "line_end": 332
+      },
+      "context": "ng\\\\.v1\\\\b\",\n      \"examples\": [\n        \"dssc.catalog.publish_offering.v1\"\n      ]\n    },\n    {\n      \"id\": \"dssc_catalog_update_offering_v1\",\n      \"concept_uri\": \"dssc:GovernanceSurface\",\n      \"entity_type\": \"intent_hint\",\n      \"regex\": \"(?i)\\\\bd"
+    },
+    {
+      "candidate_id": "DSSC-CATALOG-DISCOVERY-CAND-0117",
+      "surface_form": "dssc",
+      "label": "CATALOG_ENTITY",
+      "confidence": 0.5727,
+      "review_status": "candidate",
+      "span": {
+        "start": 9563,
+        "end": 9567
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 333,
+        "line_end": 333
+      },
+      "context": "ublish_offering.v1\"\n      ]\n    },\n    {\n      \"id\": \"dssc_catalog_update_offering_v1\",\n      \"concept_uri\": \"dssc:GovernanceSurface\",\n      \"entity_type\": \"intent_hint\",\n      \"regex\": \"(?i)\\\\bdssc\\\\.catalog\\\\.update_offeri"
+    },
+    {
+      "candidate_id": "DSSC-CATALOG-DISCOVERY-CAND-0118",
+      "surface_form": "GovernanceSurface",
+      "label": "CATALOG_ENTITY",
+      "confidence": 0.4734,
+      "review_status": "candidate",
+      "span": {
+        "start": 9568,
+        "end": 9585
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 333,
+        "line_end": 333
+      },
+      "context": "h_offering.v1\"\n      ]\n    },\n    {\n      \"id\": \"dssc_catalog_update_offering_v1\",\n      \"concept_uri\": \"dssc:GovernanceSurface\",\n      \"entity_type\": \"intent_hint\",\n      \"regex\": \"(?i)\\\\bdssc\\\\.catalog\\\\.update_offering\\\\.v1\\\\b\",\n     "
+    },
+    {
+      "candidate_id": "DSSC-CATALOG-DISCOVERY-CAND-0119",
+      "surface_form": "intent_hint",
+      "label": "INTENT_CLASS",
+      "confidence": 0.6622,
+      "review_status": "candidate",
+      "span": {
+        "start": 9610,
+        "end": 9621
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 334,
+        "line_end": 334
+      },
+      "context": "\"id\": \"dssc_catalog_update_offering_v1\",\n      \"concept_uri\": \"dssc:GovernanceSurface\",\n      \"entity_type\": \"intent_hint\",\n      \"regex\": \"(?i)\\\\bdssc\\\\.catalog\\\\.update_offering\\\\.v1\\\\b\",\n      \"examples\": [\n        \"dssc.catalog"
+    },
+    {
+      "candidate_id": "DSSC-CATALOG-DISCOVERY-CAND-0120",
+      "surface_form": "update_offering",
+      "label": "CATALOG_ENTITY",
+      "confidence": 0.3885,
+      "review_status": "candidate",
+      "span": {
+        "start": 9664,
+        "end": 9679
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 335,
+        "line_end": 335
+      },
+      "context": "t_uri\": \"dssc:GovernanceSurface\",\n      \"entity_type\": \"intent_hint\",\n      \"regex\": \"(?i)\\\\bdssc\\\\.catalog\\\\.update_offering\\\\.v1\\\\b\",\n      \"examples\": [\n        \"dssc.catalog.update_offering.v1\"\n      ]\n    },\n    {\n      \"id\": \"dss"
+    },
+    {
+      "candidate_id": "DSSC-CATALOG-DISCOVERY-CAND-0121",
+      "surface_form": "dssc",
+      "label": "OFFERING",
+      "confidence": 0.5758,
+      "review_status": "candidate",
+      "span": {
+        "start": 9719,
+        "end": 9723
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 337,
+        "line_end": 337
+      },
+      "context": "\"intent_hint\",\n      \"regex\": \"(?i)\\\\bdssc\\\\.catalog\\\\.update_offering\\\\.v1\\\\b\",\n      \"examples\": [\n        \"dssc.catalog.update_offering.v1\"\n      ]\n    },\n    {\n      \"id\": \"dssc_catalog_remove_offering_v1\",\n      \"concep"
+    },
+    {
+      "candidate_id": "DSSC-CATALOG-DISCOVERY-CAND-0122",
+      "surface_form": "id",
+      "label": "IDENTIFIER",
+      "confidence": 0.5525,
+      "review_status": "candidate",
+      "span": {
+        "start": 9780,
+        "end": 9782
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 341,
+        "line_end": 341
+      },
+      "context": "_offering\\\\.v1\\\\b\",\n      \"examples\": [\n        \"dssc.catalog.update_offering.v1\"\n      ]\n    },\n    {\n      \"id\": \"dssc_catalog_remove_offering_v1\",\n      \"concept_uri\": \"dssc:GovernanceSurface\",\n      \"entity_type\": \"int"
+    },
+    {
+      "candidate_id": "DSSC-CATALOG-DISCOVERY-CAND-0123",
+      "surface_form": "dssc_catalog_remove_offering_v1",
+      "label": "OFFERING",
+      "confidence": 0.6052,
+      "review_status": "candidate",
+      "span": {
+        "start": 9786,
+        "end": 9817
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 341,
+        "line_end": 341
+      },
+      "context": "ing\\\\.v1\\\\b\",\n      \"examples\": [\n        \"dssc.catalog.update_offering.v1\"\n      ]\n    },\n    {\n      \"id\": \"dssc_catalog_remove_offering_v1\",\n      \"concept_uri\": \"dssc:GovernanceSurface\",\n      \"entity_type\": \"intent_hint\",\n      \"regex\": \"(?i)\\\\bd"
+    },
+    {
+      "candidate_id": "DSSC-CATALOG-DISCOVERY-CAND-0124",
+      "surface_form": "dssc",
+      "label": "CATALOG_ENTITY",
+      "confidence": 0.5655,
+      "review_status": "candidate",
+      "span": {
+        "start": 9842,
+        "end": 9846
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 342,
+        "line_end": 342
+      },
+      "context": "update_offering.v1\"\n      ]\n    },\n    {\n      \"id\": \"dssc_catalog_remove_offering_v1\",\n      \"concept_uri\": \"dssc:GovernanceSurface\",\n      \"entity_type\": \"intent_hint\",\n      \"regex\": \"(?i)\\\\bdssc\\\\.catalog\\\\.remove_offeri"
+    },
+    {
+      "candidate_id": "DSSC-CATALOG-DISCOVERY-CAND-0125",
+      "surface_form": "GovernanceSurface",
+      "label": "CATALOG_ENTITY",
+      "confidence": 0.428,
+      "review_status": "candidate",
+      "span": {
+        "start": 9847,
+        "end": 9864
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 342,
+        "line_end": 342
+      },
+      "context": "e_offering.v1\"\n      ]\n    },\n    {\n      \"id\": \"dssc_catalog_remove_offering_v1\",\n      \"concept_uri\": \"dssc:GovernanceSurface\",\n      \"entity_type\": \"intent_hint\",\n      \"regex\": \"(?i)\\\\bdssc\\\\.catalog\\\\.remove_offering\\\\.v1\\\\b\",\n     "
+    },
+    {
+      "candidate_id": "DSSC-CATALOG-DISCOVERY-CAND-0126",
+      "surface_form": "intent_hint",
+      "label": "INTENT_CLASS",
+      "confidence": 0.7039,
+      "review_status": "candidate",
+      "span": {
+        "start": 9889,
+        "end": 9900
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 343,
+        "line_end": 343
+      },
+      "context": "\"id\": \"dssc_catalog_remove_offering_v1\",\n      \"concept_uri\": \"dssc:GovernanceSurface\",\n      \"entity_type\": \"intent_hint\",\n      \"regex\": \"(?i)\\\\bdssc\\\\.catalog\\\\.remove_offering\\\\.v1\\\\b\",\n      \"examples\": [\n        \"dssc.catalog"
+    },
+    {
+      "candidate_id": "DSSC-CATALOG-DISCOVERY-CAND-0127",
+      "surface_form": "bdssc",
+      "label": "OFFERING",
+      "confidence": 0.4584,
+      "review_status": "candidate",
+      "span": {
+        "start": 9925,
+        "end": 9930
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 344,
+        "line_end": 344
+      },
+      "context": "v1\",\n      \"concept_uri\": \"dssc:GovernanceSurface\",\n      \"entity_type\": \"intent_hint\",\n      \"regex\": \"(?i)\\\\bdssc\\\\.catalog\\\\.remove_offering\\\\.v1\\\\b\",\n      \"examples\": [\n        \"dssc.catalog.remove_offering.v1\"\n      ]\n "
+    },
+    {
+      "candidate_id": "DSSC-CATALOG-DISCOVERY-CAND-0128",
+      "surface_form": "dssc",
+      "label": "OFFERING",
+      "confidence": 0.4913,
+      "review_status": "candidate",
+      "span": {
+        "start": 9998,
+        "end": 10002
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 346,
+        "line_end": 346
+      },
+      "context": "\"intent_hint\",\n      \"regex\": \"(?i)\\\\bdssc\\\\.catalog\\\\.remove_offering\\\\.v1\\\\b\",\n      \"examples\": [\n        \"dssc.catalog.remove_offering.v1\"\n      ]\n    },\n    {\n      \"id\": \"dssc_catalog_query_offering_v1\",\n      \"concept"
+    },
+    {
+      "candidate_id": "DSSC-CATALOG-DISCOVERY-CAND-0129",
+      "surface_form": "dssc_catalog_query_offering_v1",
+      "label": "OFFERING",
+      "confidence": 0.5331,
+      "review_status": "candidate",
+      "span": {
+        "start": 10065,
+        "end": 10095
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 350,
+        "line_end": 350
+      },
+      "context": "ing\\\\.v1\\\\b\",\n      \"examples\": [\n        \"dssc.catalog.remove_offering.v1\"\n      ]\n    },\n    {\n      \"id\": \"dssc_catalog_query_offering_v1\",\n      \"concept_uri\": \"dssc:GovernanceSurface\",\n      \"entity_type\": \"intent_hint\",\n      \"regex\": \"(?i)\\\\bd"
+    },
+    {
+      "candidate_id": "DSSC-CATALOG-DISCOVERY-CAND-0130",
+      "surface_form": "dssc",
+      "label": "CATALOG_ENTITY",
+      "confidence": 0.5998,
+      "review_status": "candidate",
+      "span": {
+        "start": 10120,
+        "end": 10124
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 351,
+        "line_end": 351
+      },
+      "context": ".remove_offering.v1\"\n      ]\n    },\n    {\n      \"id\": \"dssc_catalog_query_offering_v1\",\n      \"concept_uri\": \"dssc:GovernanceSurface\",\n      \"entity_type\": \"intent_hint\",\n      \"regex\": \"(?i)\\\\bdssc\\\\.catalog\\\\.query_offerin"
+    },
+    {
+      "candidate_id": "DSSC-CATALOG-DISCOVERY-CAND-0131",
+      "surface_form": "GovernanceSurface",
+      "label": "CATALOG_ENTITY",
+      "confidence": 0.6766,
+      "review_status": "candidate",
+      "span": {
+        "start": 10125,
+        "end": 10142
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 351,
+        "line_end": 351
+      },
+      "context": "ve_offering.v1\"\n      ]\n    },\n    {\n      \"id\": \"dssc_catalog_query_offering_v1\",\n      \"concept_uri\": \"dssc:GovernanceSurface\",\n      \"entity_type\": \"intent_hint\",\n      \"regex\": \"(?i)\\\\bdssc\\\\.catalog\\\\.query_offering\\\\.v1\\\\b\",\n      "
+    },
+    {
+      "candidate_id": "DSSC-CATALOG-DISCOVERY-CAND-0132",
+      "surface_form": "intent_hint",
+      "label": "INTENT_CLASS",
+      "confidence": 0.6465,
+      "review_status": "candidate",
+      "span": {
+        "start": 10167,
+        "end": 10178
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 352,
+        "line_end": 352
+      },
+      "context": " \"id\": \"dssc_catalog_query_offering_v1\",\n      \"concept_uri\": \"dssc:GovernanceSurface\",\n      \"entity_type\": \"intent_hint\",\n      \"regex\": \"(?i)\\\\bdssc\\\\.catalog\\\\.query_offering\\\\.v1\\\\b\",\n      \"examples\": [\n        \"dssc.catalog."
+    },
+    {
+      "candidate_id": "DSSC-CATALOG-DISCOVERY-CAND-0133",
+      "surface_form": "bdssc",
+      "label": "OFFERING",
+      "confidence": 0.5599,
+      "review_status": "candidate",
+      "span": {
+        "start": 10203,
+        "end": 10208
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 353,
+        "line_end": 353
+      },
+      "context": "v1\",\n      \"concept_uri\": \"dssc:GovernanceSurface\",\n      \"entity_type\": \"intent_hint\",\n      \"regex\": \"(?i)\\\\bdssc\\\\.catalog\\\\.query_offering\\\\.v1\\\\b\",\n      \"examples\": [\n        \"dssc.catalog.query_offering.v1\"\n      ]\n   "
+    },
+    {
+      "candidate_id": "DSSC-CATALOG-DISCOVERY-CAND-0134",
+      "surface_form": "dssc",
+      "label": "OFFERING",
+      "confidence": 0.4743,
+      "review_status": "candidate",
+      "span": {
+        "start": 10275,
+        "end": 10279
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 355,
+        "line_end": 355
+      },
+      "context": " \"intent_hint\",\n      \"regex\": \"(?i)\\\\bdssc\\\\.catalog\\\\.query_offering\\\\.v1\\\\b\",\n      \"examples\": [\n        \"dssc.catalog.query_offering.v1\"\n      ]\n    }\n  ]\n}\n\n\n### FILE: source-extract/sources.json\n{\n  \"schema_version\": "
+    },
+    {
+      "candidate_id": "DSSC-CATALOG-DISCOVERY-CAND-0135",
+      "surface_form": "query_offering",
+      "label": "OFFERING",
+      "confidence": 0.3851,
+      "review_status": "candidate",
+      "span": {
+        "start": 10288,
+        "end": 10302
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 355,
+        "line_end": 355
+      },
+      "context": "\",\n      \"regex\": \"(?i)\\\\bdssc\\\\.catalog\\\\.query_offering\\\\.v1\\\\b\",\n      \"examples\": [\n        \"dssc.catalog.query_offering.v1\"\n      ]\n    }\n  ]\n}\n\n\n### FILE: source-extract/sources.json\n{\n  \"schema_version\": \"1.0\",\n  \"generated_at_"
+    },
+    {
+      "candidate_id": "DSSC-CATALOG-DISCOVERY-CAND-0136",
+      "surface_form": "dssc-catalog-discovery-demo-pack",
+      "label": "OFFERING",
+      "confidence": 0.4029,
+      "review_status": "candidate",
+      "span": {
+        "start": 10457,
+        "end": 10489
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 366,
+        "line_end": 366
+      },
+      "context": "xtract/sources.json\n{\n  \"schema_version\": \"1.0\",\n  \"generated_at_utc\": \"2026-04-14T12:00:00Z\",\n  \"vertical\": \"dssc-catalog-discovery-demo-pack\",\n  \"bundle_id\": \"dssc-catalog-discovery-source-2026-04-14\",\n  \"sources\": [\n    {\n      \"id\": \"canonical-sour"
+    },
+    {
+      "candidate_id": "DSSC-CATALOG-DISCOVERY-CAND-0137",
+      "surface_form": "dssc-catalog-discovery-source-2026-04-14",
+      "label": "OFFERING",
+      "confidence": 0.4184,
+      "review_status": "candidate",
+      "span": {
+        "start": 10508,
+        "end": 10548
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 367,
+        "line_end": 367
+      },
+      "context": "\"generated_at_utc\": \"2026-04-14T12:00:00Z\",\n  \"vertical\": \"dssc-catalog-discovery-demo-pack\",\n  \"bundle_id\": \"dssc-catalog-discovery-source-2026-04-14\",\n  \"sources\": [\n    {\n      \"id\": \"canonical-source-1\",\n      \"title\": \"Canonical source 1\",\n      \"url\": \"h"
+    },
+    {
+      "candidate_id": "DSSC-CATALOG-DISCOVERY-CAND-0138",
+      "surface_form": "Canonical source 1",
+      "label": "IDENTIFIER",
+      "confidence": 0.4078,
+      "review_status": "candidate",
+      "span": {
+        "start": 10622,
+        "end": 10640
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 371,
+        "line_end": 371
+      },
+      "context": "-catalog-discovery-source-2026-04-14\",\n  \"sources\": [\n    {\n      \"id\": \"canonical-source-1\",\n      \"title\": \"Canonical source 1\",\n      \"url\": \"https://blueprint.dssc.eu/\",\n      \"type\": \"canonical_reference\",\n      \"status\": \"referenced"
+    },
+    {
+      "candidate_id": "DSSC-CATALOG-DISCOVERY-CAND-0139",
+      "surface_form": "canonical_reference",
+      "label": "DATASET_METADATA",
+      "confidence": 0.4437,
+      "review_status": "candidate",
+      "span": {
+        "start": 10701,
+        "end": 10720
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 373,
+        "line_end": 373
+      },
+      "context": "cal-source-1\",\n      \"title\": \"Canonical source 1\",\n      \"url\": \"https://blueprint.dssc.eu/\",\n      \"type\": \"canonical_reference\",\n      \"status\": \"referenced\"\n    },\n    {\n      \"id\": \"canonical-source-2\",\n      \"title\": \"Canonical sourc"
+    },
+    {
+      "candidate_id": "DSSC-CATALOG-DISCOVERY-CAND-0140",
+      "surface_form": "id",
+      "label": "IDENTIFIER",
+      "confidence": 0.427,
+      "review_status": "candidate",
+      "span": {
+        "start": 10772,
+        "end": 10774
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 377,
+        "line_end": 377
+      },
+      "context": "://blueprint.dssc.eu/\",\n      \"type\": \"canonical_reference\",\n      \"status\": \"referenced\"\n    },\n    {\n      \"id\": \"canonical-source-2\",\n      \"title\": \"Canonical source 2\",\n      \"url\": \"https://toolbox.dssc.eu/?pane=tech"
+    },
+    {
+      "candidate_id": "DSSC-CATALOG-DISCOVERY-CAND-0141",
+      "surface_form": "canonical-source-2",
+      "label": "IDENTIFIER",
+      "confidence": 0.8694,
+      "review_status": "candidate",
+      "span": {
+        "start": 10778,
+        "end": 10796
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 377,
+        "line_end": 377
+      },
+      "context": "eprint.dssc.eu/\",\n      \"type\": \"canonical_reference\",\n      \"status\": \"referenced\"\n    },\n    {\n      \"id\": \"canonical-source-2\",\n      \"title\": \"Canonical source 2\",\n      \"url\": \"https://toolbox.dssc.eu/?pane=technical&technical=data-s"
+    },
+    {
+      "candidate_id": "DSSC-CATALOG-DISCOVERY-CAND-0142",
+      "surface_form": "Canonical source 2",
+      "label": "IDENTIFIER",
+      "confidence": 0.6489,
+      "review_status": "candidate",
+      "span": {
+        "start": 10815,
+        "end": 10833
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 378,
+        "line_end": 378
+      },
+      "context": "nical_reference\",\n      \"status\": \"referenced\"\n    },\n    {\n      \"id\": \"canonical-source-2\",\n      \"title\": \"Canonical source 2\",\n      \"url\": \"https://toolbox.dssc.eu/?pane=technical&technical=data-services-and-offerings-descriptions\",\n"
+    },
+    {
+      "candidate_id": "DSSC-CATALOG-DISCOVERY-CAND-0143",
+      "surface_form": "canonical-source-3",
+      "label": "IDENTIFIER",
+      "confidence": 0.8156,
+      "review_status": "candidate",
+      "span": {
+        "start": 11035,
+        "end": 11053
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 384,
+        "line_end": 384
+      },
+      "context": "gs-descriptions\",\n      \"type\": \"canonical_reference\",\n      \"status\": \"referenced\"\n    },\n    {\n      \"id\": \"canonical-source-3\",\n      \"title\": \"Canonical source 3\",\n      \"url\": \"https://www.w3.org/TR/vocab-dcat-3/\",\n      \"type\": \"can"
+    },
+    {
+      "candidate_id": "DSSC-CATALOG-DISCOVERY-CAND-0144",
+      "surface_form": "Canonical source 3",
+      "label": "IDENTIFIER",
+      "confidence": 0.4945,
+      "review_status": "candidate",
+      "span": {
+        "start": 11072,
+        "end": 11090
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 385,
+        "line_end": 385
+      },
+      "context": "nical_reference\",\n      \"status\": \"referenced\"\n    },\n    {\n      \"id\": \"canonical-source-3\",\n      \"title\": \"Canonical source 3\",\n      \"url\": \"https://www.w3.org/TR/vocab-dcat-3/\",\n      \"type\": \"canonical_reference\",\n      \"status\": \"r"
+    },
+    {
+      "candidate_id": "DSSC-CATALOG-DISCOVERY-CAND-0145",
+      "surface_form": "id",
+      "label": "IDENTIFIER",
+      "confidence": 0.3728,
+      "review_status": "candidate",
+      "span": {
+        "start": 11231,
+        "end": 11233
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 391,
+        "line_end": 391
+      },
+      "context": ".org/TR/vocab-dcat-3/\",\n      \"type\": \"canonical_reference\",\n      \"status\": \"referenced\"\n    },\n    {\n      \"id\": \"canonical-source-4\",\n      \"title\": \"Canonical source 4\",\n      \"url\": \"https://interoperable-europe.ec.eu"
+    },
+    {
+      "candidate_id": "DSSC-CATALOG-DISCOVERY-CAND-0146",
+      "surface_form": "canonical-source-4",
+      "label": "IDENTIFIER",
+      "confidence": 0.8353,
+      "review_status": "candidate",
+      "span": {
+        "start": 11237,
+        "end": 11255
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 391,
+        "line_end": 391
+      },
+      "context": "R/vocab-dcat-3/\",\n      \"type\": \"canonical_reference\",\n      \"status\": \"referenced\"\n    },\n    {\n      \"id\": \"canonical-source-4\",\n      \"title\": \"Canonical source 4\",\n      \"url\": \"https://interoperable-europe.ec.europa.eu/collection/sem"
+    },
+    {
+      "candidate_id": "DSSC-CATALOG-DISCOVERY-CAND-0147",
+      "surface_form": "Canonical source 4",
+      "label": "IDENTIFIER",
+      "confidence": 0.38,
+      "review_status": "candidate",
+      "span": {
+        "start": 11274,
+        "end": 11292
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 392,
+        "line_end": 392
+      },
+      "context": "nical_reference\",\n      \"status\": \"referenced\"\n    },\n    {\n      \"id\": \"canonical-source-4\",\n      \"title\": \"Canonical source 4\",\n      \"url\": \"https://interoperable-europe.ec.europa.eu/collection/semic-support-centre/solution/dcat-appli"
+    },
+    {
+      "candidate_id": "DSSC-CATALOG-DISCOVERY-CAND-0148",
+      "surface_form": "canonical_reference",
+      "label": "CATALOG_ENTITY",
+      "confidence": 0.7375,
+      "review_status": "candidate",
+      "span": {
+        "start": 11454,
+        "end": 11473
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 394,
+        "line_end": 394
+      },
+      "context": "opa.eu/collection/semic-support-centre/solution/dcat-application-profile-data-portals-europe\",\n      \"type\": \"canonical_reference\",\n      \"status\": \"referenced\"\n    },\n    {\n      \"id\": \"canonical-source-5\",\n      \"title\": \"Canonical sourc"
+    },
+    {
+      "candidate_id": "DSSC-CATALOG-DISCOVERY-CAND-0149",
+      "surface_form": "id",
+      "label": "IDENTIFIER",
+      "confidence": 0.3617,
+      "review_status": "candidate",
+      "span": {
+        "start": 11525,
+        "end": 11527
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 398,
+        "line_end": 398
+      },
+      "context": "e-data-portals-europe\",\n      \"type\": \"canonical_reference\",\n      \"status\": \"referenced\"\n    },\n    {\n      \"id\": \"canonical-source-5\",\n      \"title\": \"Canonical source 5\",\n      \"url\": \"https://eclipse-dataspace-protocol"
+    },
+    {
+      "candidate_id": "DSSC-CATALOG-DISCOVERY-CAND-0150",
+      "surface_form": "canonical-source-5",
+      "label": "IDENTIFIER",
+      "confidence": 0.8135,
+      "review_status": "candidate",
+      "span": {
+        "start": 11531,
+        "end": 11549
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 398,
+        "line_end": 398
+      },
+      "context": "-portals-europe\",\n      \"type\": \"canonical_reference\",\n      \"status\": \"referenced\"\n    },\n    {\n      \"id\": \"canonical-source-5\",\n      \"title\": \"Canonical source 5\",\n      \"url\": \"https://eclipse-dataspace-protocol-base.github.io/Datasp"
+    },
+    {
+      "candidate_id": "DSSC-CATALOG-DISCOVERY-CAND-0151",
+      "surface_form": "canonical-source-5",
+      "label": "CATALOG_ENTITY",
+      "confidence": 0.4648,
+      "review_status": "candidate",
+      "span": {
+        "start": 11531,
+        "end": 11549
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 398,
+        "line_end": 398
+      },
+      "context": "-portals-europe\",\n      \"type\": \"canonical_reference\",\n      \"status\": \"referenced\"\n    },\n    {\n      \"id\": \"canonical-source-5\",\n      \"title\": \"Canonical source 5\",\n      \"url\": \"https://eclipse-dataspace-protocol-base.github.io/Datasp"
+    },
+    {
+      "candidate_id": "DSSC-CATALOG-DISCOVERY-CAND-0152",
+      "surface_form": "Canonical source 5",
+      "label": "CATALOG_ENTITY",
+      "confidence": 0.461,
+      "review_status": "candidate",
+      "span": {
+        "start": 11568,
+        "end": 11586
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 399,
+        "line_end": 399
+      },
+      "context": "nical_reference\",\n      \"status\": \"referenced\"\n    },\n    {\n      \"id\": \"canonical-source-5\",\n      \"title\": \"Canonical source 5\",\n      \"url\": \"https://eclipse-dataspace-protocol-base.github.io/DataspaceProtocol/HEAD/\",\n      \"type\": \"ca"
+    },
+    {
+      "candidate_id": "DSSC-CATALOG-DISCOVERY-CAND-0153",
+      "surface_form": "canonical_reference",
+      "label": "CATALOG_ENTITY",
+      "confidence": 0.7831,
+      "review_status": "candidate",
+      "span": {
+        "start": 11694,
+        "end": 11713
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 401,
+        "line_end": 401
+      },
+      "context": " 5\",\n      \"url\": \"https://eclipse-dataspace-protocol-base.github.io/DataspaceProtocol/HEAD/\",\n      \"type\": \"canonical_reference\",\n      \"status\": \"referenced\"\n    }\n  ]\n}\n\n\n### FILE: message-identifiers.json\n{\n  \"schema_version\": \"0.1\",\n"
+    },
+    {
+      "candidate_id": "DSSC-CATALOG-DISCOVERY-CAND-0154",
+      "surface_form": "message_identifiers",
+      "label": "DATASET_METADATA",
+      "confidence": 0.487,
+      "review_status": "candidate",
+      "span": {
+        "start": 11959,
+        "end": 11978
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 414,
+        "line_end": 414
+      },
+      "context": "6-04-14T12:00:00Z\",\n  \"profile\": \"dssc-catalog-discovery-demo-pack\",\n  \"domain\": \"dssc-catalog-discovery\",\n  \"message_identifiers\": [],\n  \"message_types\": [],\n  \"note\": \"No ISO-style message identifiers for this DSSC governance demo pack.\""
+    },
+    {
+      "candidate_id": "DSSC-CATALOG-DISCOVERY-CAND-0155",
+      "surface_form": "message_types",
+      "label": "DATASET_METADATA",
+      "confidence": 0.3954,
+      "review_status": "candidate",
+      "span": {
+        "start": 11988,
+        "end": 12001
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 415,
+        "line_end": 415
+      },
+      "context": "e\": \"dssc-catalog-discovery-demo-pack\",\n  \"domain\": \"dssc-catalog-discovery\",\n  \"message_identifiers\": [],\n  \"message_types\": [],\n  \"note\": \"No ISO-style message identifiers for this DSSC governance demo pack.\"\n}\n\n\n### FILE: extracti"
+    },
+    {
+      "candidate_id": "DSSC-CATALOG-DISCOVERY-CAND-0156",
+      "surface_form": "ISO-style message identifiers",
+      "label": "DATASET_METADATA",
+      "confidence": 0.4393,
+      "review_status": "candidate",
+      "span": {
+        "start": 12022,
+        "end": 12051
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 416,
+        "line_end": 416
+      },
+      "context": "ack\",\n  \"domain\": \"dssc-catalog-discovery\",\n  \"message_identifiers\": [],\n  \"message_types\": [],\n  \"note\": \"No ISO-style message identifiers for this DSSC governance demo pack.\"\n}\n\n\n### FILE: extraction-summary.json\n{\n  \"schema_version\": \"0.1\",\n  \"ge"
+    },
+    {
+      "candidate_id": "DSSC-CATALOG-DISCOVERY-CAND-0157",
+      "surface_form": "Catalog",
+      "label": "CATALOG_ENTITY",
+      "confidence": 0.3581,
+      "review_status": "candidate",
+      "span": {
+        "start": 12841,
+        "end": 12848
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 443,
+        "line_end": 443
+      },
+      "context": "to-pact-crosswalk.v1.json\",\n  \"mappings\": [\n    {\n      \"source_term\": \"Catalog\",\n      \"pact_concept\": \"dssc:Catalog\",\n      \"relation\": \"closeMatch\"\n    },\n    {\n      \"source_term\": \"Offering\",\n      \"pact_concept\": \"dssc:Of"
+    },
+    {
+      "candidate_id": "DSSC-CATALOG-DISCOVERY-CAND-0158",
+      "surface_form": "Offering",
+      "label": "OFFERING",
+      "confidence": 0.818,
+      "review_status": "candidate",
+      "span": {
+        "start": 12917,
+        "end": 12925
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 447,
+        "line_end": 447
+      },
+      "context": "log\",\n      \"pact_concept\": \"dssc:Catalog\",\n      \"relation\": \"closeMatch\"\n    },\n    {\n      \"source_term\": \"Offering\",\n      \"pact_concept\": \"dssc:Offering\",\n      \"relation\": \"closeMatch\"\n    },\n    {\n      \"source_term\": \"Da"
+    },
+    {
+      "candidate_id": "DSSC-CATALOG-DISCOVERY-CAND-0159",
+      "surface_form": "Offering",
+      "label": "OFFERING",
+      "confidence": 0.8023,
+      "review_status": "candidate",
+      "span": {
+        "start": 12956,
+        "end": 12964
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 448,
+        "line_end": 448
+      },
+      "context": "og\",\n      \"relation\": \"closeMatch\"\n    },\n    {\n      \"source_term\": \"Offering\",\n      \"pact_concept\": \"dssc:Offering\",\n      \"relation\": \"closeMatch\"\n    },\n    {\n      \"source_term\": \"DatasetMetadata\",\n      \"pact_concept\": \""
+    },
+    {
+      "candidate_id": "DSSC-CATALOG-DISCOVERY-CAND-0160",
+      "surface_form": "DatasetMetadata",
+      "label": "DATASET_METADATA",
+      "confidence": 0.816,
+      "review_status": "candidate",
+      "span": {
+        "start": 13033,
+        "end": 13048
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 452,
+        "line_end": 452
+      },
+      "context": "ng\",\n      \"pact_concept\": \"dssc:Offering\",\n      \"relation\": \"closeMatch\"\n    },\n    {\n      \"source_term\": \"DatasetMetadata\",\n      \"pact_concept\": \"dssc:DatasetMetadata\",\n      \"relation\": \"closeMatch\"\n    },\n    {\n      \"source_ter"
+    },
+    {
+      "candidate_id": "DSSC-CATALOG-DISCOVERY-CAND-0161",
+      "surface_form": "dssc",
+      "label": "DATASET_METADATA",
+      "confidence": 0.7419,
+      "review_status": "candidate",
+      "span": {
+        "start": 13074,
+        "end": 13078
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 453,
+        "line_end": 453
+      },
+      "context": "\",\n      \"relation\": \"closeMatch\"\n    },\n    {\n      \"source_term\": \"DatasetMetadata\",\n      \"pact_concept\": \"dssc:DatasetMetadata\",\n      \"relation\": \"closeMatch\"\n    },\n    {\n      \"source_term\": \"DataServiceEndpoint\",\n   "
+    },
+    {
+      "candidate_id": "DSSC-CATALOG-DISCOVERY-CAND-0162",
+      "surface_form": "DatasetMetadata",
+      "label": "DATASET_METADATA",
+      "confidence": 0.8213,
+      "review_status": "candidate",
+      "span": {
+        "start": 13079,
+        "end": 13094
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 453,
+        "line_end": 453
+      },
+      "context": "    \"relation\": \"closeMatch\"\n    },\n    {\n      \"source_term\": \"DatasetMetadata\",\n      \"pact_concept\": \"dssc:DatasetMetadata\",\n      \"relation\": \"closeMatch\"\n    },\n    {\n      \"source_term\": \"DataServiceEndpoint\",\n      \"pact_concept"
+    },
+    {
+      "candidate_id": "DSSC-CATALOG-DISCOVERY-CAND-0163",
+      "surface_form": "tadata",
+      "label": "DATASET_METADATA",
+      "confidence": 0.3693,
+      "review_status": "candidate",
+      "span": {
+        "start": 13088,
+        "end": 13094
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 453,
+        "line_end": 453
+      },
+      "context": "tion\": \"closeMatch\"\n    },\n    {\n      \"source_term\": \"DatasetMetadata\",\n      \"pact_concept\": \"dssc:DatasetMetadata\",\n      \"relation\": \"closeMatch\"\n    },\n    {\n      \"source_term\": \"DataServiceEndpoint\",\n      \"pact_concept"
+    },
+    {
+      "candidate_id": "DSSC-CATALOG-DISCOVERY-CAND-0164",
+      "surface_form": "DataServiceEndpoint",
+      "label": "SERVICE_ENDPOINT",
+      "confidence": 0.9288,
+      "review_status": "candidate",
+      "span": {
+        "start": 13163,
+        "end": 13182
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 457,
+        "line_end": 457
+      },
+      "context": "    \"pact_concept\": \"dssc:DatasetMetadata\",\n      \"relation\": \"closeMatch\"\n    },\n    {\n      \"source_term\": \"DataServiceEndpoint\",\n      \"pact_concept\": \"dssc:DataServiceEndpoint\",\n      \"relation\": \"closeMatch\"\n    },\n    {\n      \"source"
+    },
+    {
+      "candidate_id": "DSSC-CATALOG-DISCOVERY-CAND-0165",
+      "surface_form": "dssc",
+      "label": "SERVICE_ENDPOINT",
+      "confidence": 0.8305,
+      "review_status": "candidate",
+      "span": {
+        "start": 13208,
+        "end": 13212
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 458,
+        "line_end": 458
+      },
+      "context": "     \"relation\": \"closeMatch\"\n    },\n    {\n      \"source_term\": \"DataServiceEndpoint\",\n      \"pact_concept\": \"dssc:DataServiceEndpoint\",\n      \"relation\": \"closeMatch\"\n    },\n    {\n      \"source_term\": \"UsagePolicyReference\""
+    },
+    {
+      "candidate_id": "DSSC-CATALOG-DISCOVERY-CAND-0166",
+      "surface_form": "DataServiceEndpoint",
+      "label": "SERVICE_ENDPOINT",
+      "confidence": 0.7922,
+      "review_status": "candidate",
+      "span": {
+        "start": 13213,
+        "end": 13232
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 458,
+        "line_end": 458
+      },
+      "context": "\"relation\": \"closeMatch\"\n    },\n    {\n      \"source_term\": \"DataServiceEndpoint\",\n      \"pact_concept\": \"dssc:DataServiceEndpoint\",\n      \"relation\": \"closeMatch\"\n    },\n    {\n      \"source_term\": \"UsagePolicyReference\",\n      \"pact_concep"
+    },
+    {
+      "candidate_id": "DSSC-CATALOG-DISCOVERY-CAND-0167",
+      "surface_form": "UsagePolicyReference",
+      "label": "USAGE_POLICY",
+      "confidence": 0.8373,
+      "review_status": "candidate",
+      "span": {
+        "start": 13301,
+        "end": 13321
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 462,
+        "line_end": 462
+      },
+      "context": "\"pact_concept\": \"dssc:DataServiceEndpoint\",\n      \"relation\": \"closeMatch\"\n    },\n    {\n      \"source_term\": \"UsagePolicyReference\",\n      \"pact_concept\": \"dssc:UsagePolicyReference\",\n      \"relation\": \"closeMatch\"\n    },\n    {\n      \"sourc"
+    },
+    {
+      "candidate_id": "DSSC-CATALOG-DISCOVERY-CAND-0168",
+      "surface_form": "dssc",
+      "label": "SERVICE_ENDPOINT",
+      "confidence": 0.7857,
+      "review_status": "candidate",
+      "span": {
+        "start": 13347,
+        "end": 13351
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 463,
+        "line_end": 463
+      },
+      "context": "    \"relation\": \"closeMatch\"\n    },\n    {\n      \"source_term\": \"UsagePolicyReference\",\n      \"pact_concept\": \"dssc:UsagePolicyReference\",\n      \"relation\": \"closeMatch\"\n    },\n    {\n      \"source_term\": \"ParticipantVisibilit"
+    },
+    {
+      "candidate_id": "DSSC-CATALOG-DISCOVERY-CAND-0169",
+      "surface_form": "UsagePolicyReference",
+      "label": "USAGE_POLICY",
+      "confidence": 0.8381,
+      "review_status": "candidate",
+      "span": {
+        "start": 13352,
+        "end": 13372
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 463,
+        "line_end": 463
+      },
+      "context": "relation\": \"closeMatch\"\n    },\n    {\n      \"source_term\": \"UsagePolicyReference\",\n      \"pact_concept\": \"dssc:UsagePolicyReference\",\n      \"relation\": \"closeMatch\"\n    },\n    {\n      \"source_term\": \"ParticipantVisibilityScope\",\n      \"pact_"
+    },
+    {
+      "candidate_id": "DSSC-CATALOG-DISCOVERY-CAND-0170",
+      "surface_form": "dssc",
+      "label": "SERVICE_ENDPOINT",
+      "confidence": 0.7391,
+      "review_status": "candidate",
+      "span": {
+        "start": 13493,
+        "end": 13497
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 468,
+        "line_end": 468
+      },
+      "context": "elation\": \"closeMatch\"\n    },\n    {\n      \"source_term\": \"ParticipantVisibilityScope\",\n      \"pact_concept\": \"dssc:ParticipantVisibilityScope\",\n      \"relation\": \"closeMatch\"\n    },\n    {\n      \"source_term\": \"LifecycleState"
+    },
+    {
+      "candidate_id": "DSSC-CATALOG-DISCOVERY-CAND-0171",
+      "surface_form": "closeMatch",
+      "label": "USAGE_POLICY",
+      "confidence": 0.7326,
+      "review_status": "candidate",
+      "span": {
+        "start": 13546,
+        "end": 13556
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 469,
+        "line_end": 469
+      },
+      "context": "m\": \"ParticipantVisibilityScope\",\n      \"pact_concept\": \"dssc:ParticipantVisibilityScope\",\n      \"relation\": \"closeMatch\"\n    },\n    {\n      \"source_term\": \"LifecycleState\",\n      \"pact_concept\": \"dssc:LifecycleState\",\n      \"rela"
+    },
+    {
+      "candidate_id": "DSSC-CATALOG-DISCOVERY-CAND-0172",
+      "surface_form": "LifecycleState",
+      "label": "LIFECYCLE_STATE",
+      "confidence": 0.9608,
+      "review_status": "candidate",
+      "span": {
+        "start": 13593,
+        "end": 13607
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 472,
+        "line_end": 472
+      },
+      "context": "oncept\": \"dssc:ParticipantVisibilityScope\",\n      \"relation\": \"closeMatch\"\n    },\n    {\n      \"source_term\": \"LifecycleState\",\n      \"pact_concept\": \"dssc:LifecycleState\",\n      \"relation\": \"closeMatch\"\n    }\n  ]\n}\n"
+    },
+    {
+      "candidate_id": "DSSC-CATALOG-DISCOVERY-CAND-0173",
+      "surface_form": "LifecycleState",
+      "label": "LIFECYCLE_STATE",
+      "confidence": 0.9558,
+      "review_status": "candidate",
+      "span": {
+        "start": 13638,
+        "end": 13652
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 473,
+        "line_end": 473
+      },
+      "context": "     \"relation\": \"closeMatch\"\n    },\n    {\n      \"source_term\": \"LifecycleState\",\n      \"pact_concept\": \"dssc:LifecycleState\",\n      \"relation\": \"closeMatch\"\n    }\n  ]\n}\n"
+    },
+    {
+      "candidate_id": "DSSC-CATALOG-DISCOVERY-CAND-0174",
+      "surface_form": "relation",
+      "label": "USAGE_POLICY",
+      "confidence": 0.4494,
+      "review_status": "candidate",
+      "span": {
+        "start": 13662,
+        "end": 13670
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 474,
+        "line_end": 474
+      },
+      "context": "atch\"\n    },\n    {\n      \"source_term\": \"LifecycleState\",\n      \"pact_concept\": \"dssc:LifecycleState\",\n      \"relation\": \"closeMatch\"\n    }\n  ]\n}\n"
+    },
+    {
+      "candidate_id": "DSSC-CATALOG-DISCOVERY-CAND-0175",
+      "surface_form": "closeMatch",
+      "label": "USAGE_POLICY",
+      "confidence": 0.8147,
+      "review_status": "candidate",
+      "span": {
+        "start": 13674,
+        "end": 13684
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 474,
+        "line_end": 474
+      },
+      "context": "\n    {\n      \"source_term\": \"LifecycleState\",\n      \"pact_concept\": \"dssc:LifecycleState\",\n      \"relation\": \"closeMatch\"\n    }\n  ]\n}\n"
+    }
+  ],
+  "provenance": {
+    "run_id": "dssc-catalog-discovery-gliner-docker-pass-2026-04-14",
+    "model_id": "urchade/gliner_medium-v2.1",
+    "model_hash": "sha256:6c2fcfc92ecee10654d9d3151b2fca9dee740b375c4c99d928c87a9d969e1f7b",
+    "adapter": "gliner",
+    "threshold": 0.35,
+    "docker_image": "gliner-extractor:latest",
+    "config_digest": "sha256:d9f70517b3f295424807adbde40fd7ee2e52ed15ca417b289acc2afed08cd956",
+    "source_digest": "sha256:cc4676f402a917d38da9765d3e2779aafbe9ed019d00cd850a0c2f02b8fa0769",
+    "raw_output_digest": "sha256:53f24f750f40c0016867fce8f4216c86f3bd605bc30a1a6f7d165a0fa7ed8107",
+    "created_at": "2026-04-14T09:22:40.751Z"
+  },
+  "summary": {
+    "candidate_count": 175,
+    "labels_used": [
+      "CATALOG_ENTITY",
+      "OFFERING",
+      "DATASET_METADATA",
+      "SERVICE_ENDPOINT",
+      "USAGE_POLICY",
+      "LIFECYCLE_STATE",
+      "INTENT_CLASS",
+      "JURISDICTION",
+      "IDENTIFIER",
+      "POLICY_SNAPSHOT"
+    ],
+    "processing_time_ms": 23319
+  }
+}

@@ -1,0 +1,2021 @@
+{
+  "schema_version": "1.0",
+  "extraction_run_id": "dssc-participant-onboarding-lifecycle-gliner-docker-pass-2026-04-14",
+  "adapter": "gliner",
+  "model": "urchade/gliner_medium-v2.1",
+  "model_hash": "sha256:6c2fcfc92ecee10654d9d3151b2fca9dee740b375c4c99d928c87a9d969e1f7b",
+  "source_document": "corpus.txt",
+  "source_document_hash": "sha256:7359088970a77024730a10e5f3589b12ba75235e976ad8cf7fa0676048cb9609",
+  "labels_used": [
+    "PARTICIPANT_ID",
+    "LIFECYCLE_STATE",
+    "TRANSITION_RULE",
+    "TRUST_PROOF",
+    "POLICY_SNAPSHOT",
+    "INTENT_CLASS",
+    "DENY_REASON_CODE",
+    "JURISDICTION",
+    "IDENTIFIER"
+  ],
+  "threshold": 0.35,
+  "candidates": [
+    {
+      "surface_form": "deterministic participant lifecycle governance states",
+      "entity_type": "LIFECYCLE_STATE",
+      "confidence": 0.8236,
+      "status": "candidate",
+      "source_location": {
+        "line": 8,
+        "offset": 212,
+        "end_offset": 265,
+        "context": "ology pack for `dssc-participant-onboarding-lifecycle` under Stage-4 pack authoring.\n\n## Purpose\n\nDemonstrate deterministic participant lifecycle governance states for DSSC-aligned admission and trust operations.\n\n## Source Grounding\n\nCanonical source references used for t"
+      },
+      "suggested_skos": {
+        "prefLabel": "deterministic participant lifecycle governance states",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "Intent Surface",
+      "entity_type": "INTENT_CLASS",
+      "confidence": 0.3635,
+      "status": "candidate",
+      "source_location": {
+        "line": 17,
+        "offset": 489,
+        "end_offset": 503,
+        "context": "pack draft are listed in `source-extract/sources.json`.\n\nPrimary references:\n- https://blueprint.dssc.eu/\n\n## Intent Surface\n\n- `dssc.participant.transition_state.v1`: Apply participant lifecycle transition with deterministic guards.\n"
+      },
+      "suggested_skos": {
+        "prefLabel": "Intent Surface",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "participant",
+      "entity_type": "PARTICIPANT_ID",
+      "confidence": 0.8594,
+      "status": "candidate",
+      "source_location": {
+        "line": 19,
+        "offset": 513,
+        "end_offset": 524,
+        "context": " `source-extract/sources.json`.\n\nPrimary references:\n- https://blueprint.dssc.eu/\n\n## Intent Surface\n\n- `dssc.participant.transition_state.v1`: Apply participant lifecycle transition with deterministic guards.\n- `dssc.participant.e"
+      },
+      "suggested_skos": {
+        "prefLabel": "participant",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "transition_state",
+      "entity_type": "LIFECYCLE_STATE",
+      "confidence": 0.5724,
+      "status": "candidate",
+      "source_location": {
+        "line": 19,
+        "offset": 525,
+        "end_offset": 541,
+        "context": "ract/sources.json`.\n\nPrimary references:\n- https://blueprint.dssc.eu/\n\n## Intent Surface\n\n- `dssc.participant.transition_state.v1`: Apply participant lifecycle transition with deterministic guards.\n- `dssc.participant.evaluate_admission"
+      },
+      "suggested_skos": {
+        "prefLabel": "transition_state",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "participant",
+      "entity_type": "PARTICIPANT_ID",
+      "confidence": 0.87,
+      "status": "candidate",
+      "source_location": {
+        "line": 19,
+        "offset": 553,
+        "end_offset": 564,
+        "context": " references:\n- https://blueprint.dssc.eu/\n\n## Intent Surface\n\n- `dssc.participant.transition_state.v1`: Apply participant lifecycle transition with deterministic guards.\n- `dssc.participant.evaluate_admission.v1`: Evaluate admissio"
+      },
+      "suggested_skos": {
+        "prefLabel": "participant",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "participant",
+      "entity_type": "PARTICIPANT_ID",
+      "confidence": 0.8814,
+      "status": "candidate",
+      "source_location": {
+        "line": 20,
+        "offset": 621,
+        "end_offset": 632,
+        "context": "c.participant.transition_state.v1`: Apply participant lifecycle transition with deterministic guards.\n- `dssc.participant.evaluate_admission.v1`: Evaluate admission readiness from trust and policy inputs.\n\n## Determinism Boundary\n\n"
+      },
+      "suggested_skos": {
+        "prefLabel": "participant",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "evaluate_admission.v1",
+      "entity_type": "POLICY_SNAPSHOT",
+      "confidence": 0.3967,
+      "status": "candidate",
+      "source_location": {
+        "line": 20,
+        "offset": 633,
+        "end_offset": 654,
+        "context": "t.transition_state.v1`: Apply participant lifecycle transition with deterministic guards.\n- `dssc.participant.evaluate_admission.v1`: Evaluate admission readiness from trust and policy inputs.\n\n## Determinism Boundary\n\n- Out-of-scope behavio"
+      },
+      "suggested_skos": {
+        "prefLabel": "evaluate_admission.v1",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "Deny reason codes",
+      "entity_type": "DENY_REASON_CODE",
+      "confidence": 0.8618,
+      "status": "candidate",
+      "source_location": {
+        "line": 26,
+        "offset": 849,
+        "end_offset": 866,
+        "context": "y\n\n- Out-of-scope behavior is `escalate`.\n- Policy/bundle binding is required for admitted execution paths.\n- Deny reason codes are explicit and stable for fixture replay.\n\n## Included Artifacts\n\n- `README.md`\n- `pack.json`\n- `context.js"
+      },
+      "suggested_skos": {
+        "prefLabel": "Deny reason codes",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "Deny",
+      "entity_type": "DENY_REASON_CODE",
+      "confidence": 0.6238,
+      "status": "candidate",
+      "source_location": {
+        "line": 26,
+        "offset": 849,
+        "end_offset": 853,
+        "context": "y\n\n- Out-of-scope behavior is `escalate`.\n- Policy/bundle binding is required for admitted execution paths.\n- Deny reason codes are explicit and stable for fixture replay.\n\n## Included Artifacts\n\n- `README.md`\n- `pack.json`\n"
+      },
+      "suggested_skos": {
+        "prefLabel": "Deny",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "reason codes",
+      "entity_type": "DENY_REASON_CODE",
+      "confidence": 0.4274,
+      "status": "candidate",
+      "source_location": {
+        "line": 26,
+        "offset": 854,
+        "end_offset": 866,
+        "context": "Out-of-scope behavior is `escalate`.\n- Policy/bundle binding is required for admitted execution paths.\n- Deny reason codes are explicit and stable for fixture replay.\n\n## Included Artifacts\n\n- `README.md`\n- `pack.json`\n- `context.js"
+      },
+      "suggested_skos": {
+        "prefLabel": "reason codes",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "Stage-5",
+      "entity_type": "LIFECYCLE_STATE",
+      "confidence": 0.7841,
+      "status": "candidate",
+      "source_location": {
+        "line": 50,
+        "offset": 1412,
+        "end_offset": 1419,
+        "context": "normative demo surface for conformance and governance experimentation.\n- Fixture harness wiring is planned in Stage-5.\n\n## Fixture Harness\n\nRun from repository root:\n\n```bash\nnode tools/run-dssc-participant-onboarding-lifecycle"
+      },
+      "suggested_skos": {
+        "prefLabel": "Stage-5",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "root",
+      "entity_type": "IDENTIFIER",
+      "confidence": 0.4229,
+      "status": "candidate",
+      "source_location": {
+        "line": 54,
+        "offset": 1462,
+        "end_offset": 1466,
+        "context": "nce experimentation.\n- Fixture harness wiring is planned in Stage-5.\n\n## Fixture Harness\n\nRun from repository root:\n\n```bash\nnode tools/run-dssc-participant-onboarding-lifecycle-fixtures.mjs\n```\n\n## Two-Pass Authoring (V1/V2"
+      },
+      "suggested_skos": {
+        "prefLabel": "root",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "id",
+      "entity_type": "IDENTIFIER",
+      "confidence": 0.4382,
+      "status": "candidate",
+      "source_location": {
+        "line": 72,
+        "offset": 1983,
+        "end_offset": 1985,
+        "context": "`source-extract/candidates/gliner-dirty-pass-2026-04-14/`.\n\n\n### FILE: pack.json\n{\n  \"pack_schema\": \"1.0\",\n  \"id\": \"dssc-participant-onboarding-lifecycle-demo-0.1.0\",\n  \"domain\": \"dssc-participant-onboarding-lifecycle\",\n  "
+      },
+      "suggested_skos": {
+        "prefLabel": "id",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "provider_id",
+      "entity_type": "PARTICIPANT_ID",
+      "confidence": 0.362,
+      "status": "candidate",
+      "source_location": {
+        "line": 75,
+        "offset": 2118,
+        "end_offset": 2129,
+        "context": "boarding-lifecycle-demo-0.1.0\",\n  \"domain\": \"dssc-participant-onboarding-lifecycle\",\n  \"version\": \"0.1.0\",\n  \"provider_id\": \"ontology:pact-public:trust\",\n  \"trust_tier\": \"Tier1\",\n  \"nbf\": \"2026-04-14T00:00:00Z\",\n  \"exp\": \"2031-04-1"
+      },
+      "suggested_skos": {
+        "prefLabel": "provider_id",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "trust_tier",
+      "entity_type": "TRUST_PROOF",
+      "confidence": 0.373,
+      "status": "candidate",
+      "source_location": {
+        "line": 76,
+        "offset": 2165,
+        "end_offset": 2175,
+        "context": "sc-participant-onboarding-lifecycle\",\n  \"version\": \"0.1.0\",\n  \"provider_id\": \"ontology:pact-public:trust\",\n  \"trust_tier\": \"Tier1\",\n  \"nbf\": \"2026-04-14T00:00:00Z\",\n  \"exp\": \"2031-04-14T00:00:00Z\",\n  \"rev_epoch\": 1,\n  \"deny_wins\":"
+      },
+      "suggested_skos": {
+        "prefLabel": "trust_tier",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "Tier1",
+      "entity_type": "TRUST_PROOF",
+      "confidence": 0.3859,
+      "status": "candidate",
+      "source_location": {
+        "line": 76,
+        "offset": 2179,
+        "end_offset": 2184,
+        "context": "-onboarding-lifecycle\",\n  \"version\": \"0.1.0\",\n  \"provider_id\": \"ontology:pact-public:trust\",\n  \"trust_tier\": \"Tier1\",\n  \"nbf\": \"2026-04-14T00:00:00Z\",\n  \"exp\": \"2031-04-14T00:00:00Z\",\n  \"rev_epoch\": 1,\n  \"deny_wins\": true,\n  "
+      },
+      "suggested_skos": {
+        "prefLabel": "Tier1",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "deny_wins",
+      "entity_type": "DENY_REASON_CODE",
+      "confidence": 0.5819,
+      "status": "candidate",
+      "source_location": {
+        "line": 80,
+        "offset": 2274,
+        "end_offset": 2283,
+        "context": "\"trust_tier\": \"Tier1\",\n  \"nbf\": \"2026-04-14T00:00:00Z\",\n  \"exp\": \"2031-04-14T00:00:00Z\",\n  \"rev_epoch\": 1,\n  \"deny_wins\": true,\n  \"precedence\": [],\n  \"files\": {\n    \"context\": \"context.jsonld\",\n    \"vocab\": \"vocab.skos.jsonld\",\n "
+      },
+      "suggested_skos": {
+        "prefLabel": "deny_wins",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "dssc-participant-onboarding-lifecycle-demo",
+      "entity_type": "PARTICIPANT_ID",
+      "confidence": 0.3929,
+      "status": "candidate",
+      "source_location": {
+        "line": 101,
+        "offset": 3278,
+        "end_offset": 3320,
+        "context": "t/candidates/gliner-dirty-pass-2026-04-14/extraction-summary.json\"\n  },\n  \"dc\": {\n    \"identifier\": \"ontology:dssc-participant-onboarding-lifecycle-demo:v0.1.0\",\n    \"title\": \"dssc-participant-onboarding-lifecycle demo pack\",\n    \"creator\": \"PACT Public Working "
+      },
+      "suggested_skos": {
+        "prefLabel": "dssc-participant-onboarding-lifecycle-demo",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "v0.1.0",
+      "entity_type": "POLICY_SNAPSHOT",
+      "confidence": 0.3818,
+      "status": "candidate",
+      "source_location": {
+        "line": 101,
+        "offset": 3321,
+        "end_offset": 3327,
+        "context": "xtraction-summary.json\"\n  },\n  \"dc\": {\n    \"identifier\": \"ontology:dssc-participant-onboarding-lifecycle-demo:v0.1.0\",\n    \"title\": \"dssc-participant-onboarding-lifecycle demo pack\",\n    \"creator\": \"PACT Public Working Draft\","
+      },
+      "suggested_skos": {
+        "prefLabel": "v0.1.0",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "deterministic participant lifecycle governance states",
+      "entity_type": "LIFECYCLE_STATE",
+      "confidence": 0.7799,
+      "status": "candidate",
+      "source_location": {
+        "line": 106,
+        "offset": 3526,
+        "end_offset": 3579,
+        "context": "ublic Working Draft\",\n    \"issued\": \"2026-04-14\",\n    \"rights\": \"Apache-2.0\",\n    \"description\": \"Demonstrate deterministic participant lifecycle governance states for DSSC-aligned admission and trust operations.\"\n  }\n}\n\n\n### FILE: decision-space.json\n{\n  \"schema_version\":"
+      },
+      "suggested_skos": {
+        "prefLabel": "deterministic participant lifecycle governance states",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "dssc-participant-onb",
+      "entity_type": "PARTICIPANT_ID",
+      "confidence": 0.4462,
+      "status": "candidate",
+      "source_location": {
+        "line": 115,
+        "offset": 3764,
+        "end_offset": 3784,
+        "context": "on-space.json\n{\n  \"schema_version\": \"1.0\",\n  \"domain\": \"dssc-participant-onboarding-lifecycle\",\n  \"pack_id\": \"dssc-participant-onboarding-lifecycle-demo-0.1.0\",\n  \"version\": \"0.1.0\",\n  \"out_of_scope_behavior\": \"escalate\",\n  \"state_model\": {"
+      },
+      "suggested_skos": {
+        "prefLabel": "dssc-participant-onb",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "dssc-participant-onboarding-lifecycle-demo-0.1.0",
+      "entity_type": "POLICY_SNAPSHOT",
+      "confidence": 0.4787,
+      "status": "candidate",
+      "source_location": {
+        "line": 115,
+        "offset": 3764,
+        "end_offset": 3812,
+        "context": "on-space.json\n{\n  \"schema_version\": \"1.0\",\n  \"domain\": \"dssc-participant-onboarding-lifecycle\",\n  \"pack_id\": \"dssc-participant-onboarding-lifecycle-demo-0.1.0\",\n  \"version\": \"0.1.0\",\n  \"out_of_scope_behavior\": \"escalate\",\n  \"state_model\": {\n    \"states\": [\n      \"ingr"
+      },
+      "suggested_skos": {
+        "prefLabel": "dssc-participant-onboarding-lifecycle-demo-0.1.0",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "ingress",
+      "entity_type": "LIFECYCLE_STATE",
+      "confidence": 0.7823,
+      "status": "candidate",
+      "source_location": {
+        "line": 120,
+        "offset": 3918,
+        "end_offset": 3925,
+        "context": ".1.0\",\n  \"version\": \"0.1.0\",\n  \"out_of_scope_behavior\": \"escalate\",\n  \"state_model\": {\n    \"states\": [\n      \"ingress\",\n      \"validated\",\n      \"classified\",\n      \"authorized\",\n      \"responded\",\n      \"rejected\",\n      \"esca"
+      },
+      "suggested_skos": {
+        "prefLabel": "ingress",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "classified",
+      "entity_type": "INTENT_CLASS",
+      "confidence": 0.3591,
+      "status": "candidate",
+      "source_location": {
+        "line": 122,
+        "offset": 3954,
+        "end_offset": 3964,
+        "context": "of_scope_behavior\": \"escalate\",\n  \"state_model\": {\n    \"states\": [\n      \"ingress\",\n      \"validated\",\n      \"classified\",\n      \"authorized\",\n      \"responded\",\n      \"rejected\",\n      \"escalated\"\n    ],\n    \"initial_state\": \"ing"
+      },
+      "suggested_skos": {
+        "prefLabel": "classified",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "responded",
+      "entity_type": "INTENT_CLASS",
+      "confidence": 0.4841,
+      "status": "candidate",
+      "source_location": {
+        "line": 124,
+        "offset": 3994,
+        "end_offset": 4003,
+        "context": "_model\": {\n    \"states\": [\n      \"ingress\",\n      \"validated\",\n      \"classified\",\n      \"authorized\",\n      \"responded\",\n      \"rejected\",\n      \"escalated\"\n    ],\n    \"initial_state\": \"ingress\",\n    \"terminal_states\": [\n      \""
+      },
+      "suggested_skos": {
+        "prefLabel": "responded",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "rejected",
+      "entity_type": "DENY_REASON_CODE",
+      "confidence": 0.5737,
+      "status": "candidate",
+      "source_location": {
+        "line": 125,
+        "offset": 4013,
+        "end_offset": 4021,
+        "context": "tes\": [\n      \"ingress\",\n      \"validated\",\n      \"classified\",\n      \"authorized\",\n      \"responded\",\n      \"rejected\",\n      \"escalated\"\n    ],\n    \"initial_state\": \"ingress\",\n    \"terminal_states\": [\n      \"responded\",\n      "
+      },
+      "suggested_skos": {
+        "prefLabel": "rejected",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "escalated",
+      "entity_type": "DENY_REASON_CODE",
+      "confidence": 0.4143,
+      "status": "candidate",
+      "source_location": {
+        "line": 126,
+        "offset": 4031,
+        "end_offset": 4040,
+        "context": "ress\",\n      \"validated\",\n      \"classified\",\n      \"authorized\",\n      \"responded\",\n      \"rejected\",\n      \"escalated\"\n    ],\n    \"initial_state\": \"ingress\",\n    \"terminal_states\": [\n      \"responded\",\n      \"rejected\",\n      \""
+      },
+      "suggested_skos": {
+        "prefLabel": "escalated",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "ingress",
+      "entity_type": "LIFECYCLE_STATE",
+      "confidence": 0.8218,
+      "status": "candidate",
+      "source_location": {
+        "line": 128,
+        "offset": 4071,
+        "end_offset": 4078,
+        "context": "ied\",\n      \"authorized\",\n      \"responded\",\n      \"rejected\",\n      \"escalated\"\n    ],\n    \"initial_state\": \"ingress\",\n    \"terminal_states\": [\n      \"responded\",\n      \"rejected\",\n      \"escalated\"\n    ]\n  },\n  \"intent_resour"
+      },
+      "suggested_skos": {
+        "prefLabel": "ingress",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "responded",
+      "entity_type": "INTENT_CLASS",
+      "confidence": 0.4621,
+      "status": "candidate",
+      "source_location": {
+        "line": 130,
+        "offset": 4113,
+        "end_offset": 4122,
+        "context": "\",\n      \"rejected\",\n      \"escalated\"\n    ],\n    \"initial_state\": \"ingress\",\n    \"terminal_states\": [\n      \"responded\",\n      \"rejected\",\n      \"escalated\"\n    ]\n  },\n  \"intent_resource_map\": {\n    \"dssc.participant.transition_"
+      },
+      "suggested_skos": {
+        "prefLabel": "responded",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "rejected",
+      "entity_type": "DENY_REASON_CODE",
+      "confidence": 0.6139,
+      "status": "candidate",
+      "source_location": {
+        "line": 131,
+        "offset": 4132,
+        "end_offset": 4140,
+        "context": ",\n      \"escalated\"\n    ],\n    \"initial_state\": \"ingress\",\n    \"terminal_states\": [\n      \"responded\",\n      \"rejected\",\n      \"escalated\"\n    ]\n  },\n  \"intent_resource_map\": {\n    \"dssc.participant.transition_state.v1\": [\n     "
+      },
+      "suggested_skos": {
+        "prefLabel": "rejected",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "escalated",
+      "entity_type": "DENY_REASON_CODE",
+      "confidence": 0.4572,
+      "status": "candidate",
+      "source_location": {
+        "line": 132,
+        "offset": 4150,
+        "end_offset": 4159,
+        "context": "\"\n    ],\n    \"initial_state\": \"ingress\",\n    \"terminal_states\": [\n      \"responded\",\n      \"rejected\",\n      \"escalated\"\n    ]\n  },\n  \"intent_resource_map\": {\n    \"dssc.participant.transition_state.v1\": [\n      \"GovernanceDecisio"
+      },
+      "suggested_skos": {
+        "prefLabel": "escalated",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "participant",
+      "entity_type": "PARTICIPANT_ID",
+      "confidence": 0.6432,
+      "status": "candidate",
+      "source_location": {
+        "line": 136,
+        "offset": 4209,
+        "end_offset": 4220,
+        "context": "es\": [\n      \"responded\",\n      \"rejected\",\n      \"escalated\"\n    ]\n  },\n  \"intent_resource_map\": {\n    \"dssc.participant.transition_state.v1\": [\n      \"GovernanceDecision\"\n    ],\n    \"dssc.participant.evaluate_admission.v1\": [\n   "
+      },
+      "suggested_skos": {
+        "prefLabel": "participant",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "transition_state",
+      "entity_type": "LIFECYCLE_STATE",
+      "confidence": 0.536,
+      "status": "candidate",
+      "source_location": {
+        "line": 136,
+        "offset": 4221,
+        "end_offset": 4237,
+        "context": " \"responded\",\n      \"rejected\",\n      \"escalated\"\n    ]\n  },\n  \"intent_resource_map\": {\n    \"dssc.participant.transition_state.v1\": [\n      \"GovernanceDecision\"\n    ],\n    \"dssc.participant.evaluate_admission.v1\": [\n      \"GovernanceDec"
+      },
+      "suggested_skos": {
+        "prefLabel": "transition_state",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "GovernanceDecision",
+      "entity_type": "TRANSITION_RULE",
+      "confidence": 0.4972,
+      "status": "candidate",
+      "source_location": {
+        "line": 137,
+        "offset": 4252,
+        "end_offset": 4270,
+        "context": "\n      \"escalated\"\n    ]\n  },\n  \"intent_resource_map\": {\n    \"dssc.participant.transition_state.v1\": [\n      \"GovernanceDecision\"\n    ],\n    \"dssc.participant.evaluate_admission.v1\": [\n      \"GovernanceDecision\"\n    ]\n  },\n  \"required_fie"
+      },
+      "suggested_skos": {
+        "prefLabel": "GovernanceDecision",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "participant",
+      "entity_type": "PARTICIPANT_ID",
+      "confidence": 0.668,
+      "status": "candidate",
+      "source_location": {
+        "line": 139,
+        "offset": 4289,
+        "end_offset": 4300,
+        "context": "nt_resource_map\": {\n    \"dssc.participant.transition_state.v1\": [\n      \"GovernanceDecision\"\n    ],\n    \"dssc.participant.evaluate_admission.v1\": [\n      \"GovernanceDecision\"\n    ]\n  },\n  \"required_fields_by_intent\": {\n    \"dssc.pa"
+      },
+      "suggested_skos": {
+        "prefLabel": "participant",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "GovernanceDecision",
+      "entity_type": "TRANSITION_RULE",
+      "confidence": 0.4146,
+      "status": "candidate",
+      "source_location": {
+        "line": 140,
+        "offset": 4334,
+        "end_offset": 4352,
+        "context": "nsition_state.v1\": [\n      \"GovernanceDecision\"\n    ],\n    \"dssc.participant.evaluate_admission.v1\": [\n      \"GovernanceDecision\"\n    ]\n  },\n  \"required_fields_by_intent\": {\n    \"dssc.participant.transition_state.v1\": [\n      \"policy_snap"
+      },
+      "suggested_skos": {
+        "prefLabel": "GovernanceDecision",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "participant",
+      "entity_type": "PARTICIPANT_ID",
+      "confidence": 0.6243,
+      "status": "candidate",
+      "source_location": {
+        "line": 144,
+        "offset": 4408,
+        "end_offset": 4419,
+        "context": "nt.evaluate_admission.v1\": [\n      \"GovernanceDecision\"\n    ]\n  },\n  \"required_fields_by_intent\": {\n    \"dssc.participant.transition_state.v1\": [\n      \"policy_snapshot_id\"\n    ],\n    \"dssc.participant.evaluate_admission.v1\": [\n   "
+      },
+      "suggested_skos": {
+        "prefLabel": "participant",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "transition_state",
+      "entity_type": "LIFECYCLE_STATE",
+      "confidence": 0.5965,
+      "status": "candidate",
+      "source_location": {
+        "line": 144,
+        "offset": 4420,
+        "end_offset": 4436,
+        "context": "admission.v1\": [\n      \"GovernanceDecision\"\n    ]\n  },\n  \"required_fields_by_intent\": {\n    \"dssc.participant.transition_state.v1\": [\n      \"policy_snapshot_id\"\n    ],\n    \"dssc.participant.evaluate_admission.v1\": [\n      \"policy_snapsh"
+      },
+      "suggested_skos": {
+        "prefLabel": "transition_state",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "policy_snapshot_id",
+      "entity_type": "POLICY_SNAPSHOT",
+      "confidence": 0.9571,
+      "status": "candidate",
+      "source_location": {
+        "line": 145,
+        "offset": 4451,
+        "end_offset": 4469,
+        "context": "nceDecision\"\n    ]\n  },\n  \"required_fields_by_intent\": {\n    \"dssc.participant.transition_state.v1\": [\n      \"policy_snapshot_id\"\n    ],\n    \"dssc.participant.evaluate_admission.v1\": [\n      \"policy_snapshot_id\"\n    ]\n  },\n  \"deny_reason_"
+      },
+      "suggested_skos": {
+        "prefLabel": "policy_snapshot_id",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "participant",
+      "entity_type": "PARTICIPANT_ID",
+      "confidence": 0.6282,
+      "status": "candidate",
+      "source_location": {
+        "line": 147,
+        "offset": 4488,
+        "end_offset": 4499,
+        "context": "ields_by_intent\": {\n    \"dssc.participant.transition_state.v1\": [\n      \"policy_snapshot_id\"\n    ],\n    \"dssc.participant.evaluate_admission.v1\": [\n      \"policy_snapshot_id\"\n    ]\n  },\n  \"deny_reason_codes\": [\n    \"DENY_TRUST_PROO"
+      },
+      "suggested_skos": {
+        "prefLabel": "participant",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "policy_snapshot_id",
+      "entity_type": "POLICY_SNAPSHOT",
+      "confidence": 0.961,
+      "status": "candidate",
+      "source_location": {
+        "line": 148,
+        "offset": 4533,
+        "end_offset": 4551,
+        "context": "nsition_state.v1\": [\n      \"policy_snapshot_id\"\n    ],\n    \"dssc.participant.evaluate_admission.v1\": [\n      \"policy_snapshot_id\"\n    ]\n  },\n  \"deny_reason_codes\": [\n    \"DENY_TRUST_PROOF_MISSING\",\n    \"DENY_STATE_TRANSITION_INVALID\",\n   "
+      },
+      "suggested_skos": {
+        "prefLabel": "policy_snapshot_id",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "deny_reason_codes",
+      "entity_type": "DENY_REASON_CODE",
+      "confidence": 0.4953,
+      "status": "candidate",
+      "source_location": {
+        "line": 151,
+        "offset": 4567,
+        "end_offset": 4584,
+        "context": "_snapshot_id\"\n    ],\n    \"dssc.participant.evaluate_admission.v1\": [\n      \"policy_snapshot_id\"\n    ]\n  },\n  \"deny_reason_codes\": [\n    \"DENY_TRUST_PROOF_MISSING\",\n    \"DENY_STATE_TRANSITION_INVALID\",\n    \"DENY_PARTICIPANT_REVOKED\",\n    "
+      },
+      "suggested_skos": {
+        "prefLabel": "deny_reason_codes",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "DENY_TRU",
+      "entity_type": "DENY_REASON_CODE",
+      "confidence": 0.5579,
+      "status": "candidate",
+      "source_location": {
+        "line": 152,
+        "offset": 4594,
+        "end_offset": 4602,
+        "context": "ssc.participant.evaluate_admission.v1\": [\n      \"policy_snapshot_id\"\n    ]\n  },\n  \"deny_reason_codes\": [\n    \"DENY_TRUST_PROOF_MISSING\",\n    \"DENY_STATE_TRANSITION_INVALID\",\n    \"DENY_PARTICIPANT_REVOKED\",\n    \"PSC_BUNDLE_COMMIT"
+      },
+      "suggested_skos": {
+        "prefLabel": "DENY_TRU",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "DENY_TRUST_PROOF_MISSING",
+      "entity_type": "DENY_REASON_CODE",
+      "confidence": 0.7766,
+      "status": "candidate",
+      "source_location": {
+        "line": 152,
+        "offset": 4594,
+        "end_offset": 4618,
+        "context": "ssc.participant.evaluate_admission.v1\": [\n      \"policy_snapshot_id\"\n    ]\n  },\n  \"deny_reason_codes\": [\n    \"DENY_TRUST_PROOF_MISSING\",\n    \"DENY_STATE_TRANSITION_INVALID\",\n    \"DENY_PARTICIPANT_REVOKED\",\n    \"PSC_BUNDLE_COMMIT_MISMATCH\"\n  ]\n}"
+      },
+      "suggested_skos": {
+        "prefLabel": "DENY_TRUST_PROOF_MISSING",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "DENY_STATE_TRANSITION_INVALID",
+      "entity_type": "DENY_REASON_CODE",
+      "confidence": 0.7699,
+      "status": "candidate",
+      "source_location": {
+        "line": 153,
+        "offset": 4626,
+        "end_offset": 4655,
+        "context": "on.v1\": [\n      \"policy_snapshot_id\"\n    ]\n  },\n  \"deny_reason_codes\": [\n    \"DENY_TRUST_PROOF_MISSING\",\n    \"DENY_STATE_TRANSITION_INVALID\",\n    \"DENY_PARTICIPANT_REVOKED\",\n    \"PSC_BUNDLE_COMMIT_MISMATCH\"\n  ]\n}\n\n\n### FILE: intent-mappings.json\n{\n "
+      },
+      "suggested_skos": {
+        "prefLabel": "DENY_STATE_TRANSITION_INVALID",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "DENY_PARTICIPANT_REVOKED",
+      "entity_type": "DENY_REASON_CODE",
+      "confidence": 0.7284,
+      "status": "candidate",
+      "source_location": {
+        "line": 154,
+        "offset": 4663,
+        "end_offset": 4687,
+        "context": "    ]\n  },\n  \"deny_reason_codes\": [\n    \"DENY_TRUST_PROOF_MISSING\",\n    \"DENY_STATE_TRANSITION_INVALID\",\n    \"DENY_PARTICIPANT_REVOKED\",\n    \"PSC_BUNDLE_COMMIT_MISMATCH\"\n  ]\n}\n\n\n### FILE: intent-mappings.json\n{\n  \"schema_version\": \"1.0\",\n  \"dom"
+      },
+      "suggested_skos": {
+        "prefLabel": "DENY_PARTICIPANT_REVOKED",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "dssc-participant-onboarding-lifecycle",
+      "entity_type": "JURISDICTION",
+      "confidence": 0.3842,
+      "status": "candidate",
+      "source_location": {
+        "line": 163,
+        "offset": 4804,
+        "end_offset": 4841,
+        "context": "\"PSC_BUNDLE_COMMIT_MISMATCH\"\n  ]\n}\n\n\n### FILE: intent-mappings.json\n{\n  \"schema_version\": \"1.0\",\n  \"domain\": \"dssc-participant-onboarding-lifecycle\",\n  \"mappings\": [\n    {\n      \"concept_uri\": \"dssc:GovernanceSurface\",\n      \"intent_class\": \"dssc.participan"
+      },
+      "suggested_skos": {
+        "prefLabel": "dssc-participant-onboarding-lifecycle",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "GovernanceSurface",
+      "entity_type": "JURISDICTION",
+      "confidence": 0.8895,
+      "status": "candidate",
+      "source_location": {
+        "line": 166,
+        "offset": 4893,
+        "end_offset": 4910,
+        "context": " \"1.0\",\n  \"domain\": \"dssc-participant-onboarding-lifecycle\",\n  \"mappings\": [\n    {\n      \"concept_uri\": \"dssc:GovernanceSurface\",\n      \"intent_class\": \"dssc.participant.transition_state.v1\",\n      \"confidence_floor\": 0.76\n    },\n    {\n "
+      },
+      "suggested_skos": {
+        "prefLabel": "GovernanceSurface",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "intent_class",
+      "entity_type": "INTENT_CLASS",
+      "confidence": 0.4591,
+      "status": "candidate",
+      "source_location": {
+        "line": 167,
+        "offset": 4920,
+        "end_offset": 4932,
+        "context": "articipant-onboarding-lifecycle\",\n  \"mappings\": [\n    {\n      \"concept_uri\": \"dssc:GovernanceSurface\",\n      \"intent_class\": \"dssc.participant.transition_state.v1\",\n      \"confidence_floor\": 0.76\n    },\n    {\n      \"concept_uri\": \"d"
+      },
+      "suggested_skos": {
+        "prefLabel": "intent_class",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "participant",
+      "entity_type": "INTENT_CLASS",
+      "confidence": 0.4141,
+      "status": "candidate",
+      "source_location": {
+        "line": 167,
+        "offset": 4941,
+        "end_offset": 4952,
+        "context": "-lifecycle\",\n  \"mappings\": [\n    {\n      \"concept_uri\": \"dssc:GovernanceSurface\",\n      \"intent_class\": \"dssc.participant.transition_state.v1\",\n      \"confidence_floor\": 0.76\n    },\n    {\n      \"concept_uri\": \"dssc:GovernanceSurfac"
+      },
+      "suggested_skos": {
+        "prefLabel": "participant",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "participant",
+      "entity_type": "PARTICIPANT_ID",
+      "confidence": 0.5549,
+      "status": "candidate",
+      "source_location": {
+        "line": 167,
+        "offset": 4941,
+        "end_offset": 4952,
+        "context": "-lifecycle\",\n  \"mappings\": [\n    {\n      \"concept_uri\": \"dssc:GovernanceSurface\",\n      \"intent_class\": \"dssc.participant.transition_state.v1\",\n      \"confidence_floor\": 0.76\n    },\n    {\n      \"concept_uri\": \"dssc:GovernanceSurfac"
+      },
+      "suggested_skos": {
+        "prefLabel": "participant",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "transition_state",
+      "entity_type": "TRANSITION_RULE",
+      "confidence": 0.3773,
+      "status": "candidate",
+      "source_location": {
+        "line": 167,
+        "offset": 4953,
+        "end_offset": 4969,
+        "context": "\n  \"mappings\": [\n    {\n      \"concept_uri\": \"dssc:GovernanceSurface\",\n      \"intent_class\": \"dssc.participant.transition_state.v1\",\n      \"confidence_floor\": 0.76\n    },\n    {\n      \"concept_uri\": \"dssc:GovernanceSurface\",\n      \"intent"
+      },
+      "suggested_skos": {
+        "prefLabel": "transition_state",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "v1",
+      "entity_type": "POLICY_SNAPSHOT",
+      "confidence": 0.3762,
+      "status": "candidate",
+      "source_location": {
+        "line": 167,
+        "offset": 4970,
+        "end_offset": 4972,
+        "context": "    {\n      \"concept_uri\": \"dssc:GovernanceSurface\",\n      \"intent_class\": \"dssc.participant.transition_state.v1\",\n      \"confidence_floor\": 0.76\n    },\n    {\n      \"concept_uri\": \"dssc:GovernanceSurface\",\n      \"intent_cl"
+      },
+      "suggested_skos": {
+        "prefLabel": "v1",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "GovernanceSurface",
+      "entity_type": "JURISDICTION",
+      "confidence": 0.8159,
+      "status": "candidate",
+      "source_location": {
+        "line": 171,
+        "offset": 5046,
+        "end_offset": 5063,
+        "context": "dssc.participant.transition_state.v1\",\n      \"confidence_floor\": 0.76\n    },\n    {\n      \"concept_uri\": \"dssc:GovernanceSurface\",\n      \"intent_class\": \"dssc.participant.evaluate_admission.v1\",\n      \"confidence_floor\": 0.76\n    }\n  ]\n}\n"
+      },
+      "suggested_skos": {
+        "prefLabel": "GovernanceSurface",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "intent_class",
+      "entity_type": "INTENT_CLASS",
+      "confidence": 0.6232,
+      "status": "candidate",
+      "source_location": {
+        "line": 172,
+        "offset": 5073,
+        "end_offset": 5085,
+        "context": "_state.v1\",\n      \"confidence_floor\": 0.76\n    },\n    {\n      \"concept_uri\": \"dssc:GovernanceSurface\",\n      \"intent_class\": \"dssc.participant.evaluate_admission.v1\",\n      \"confidence_floor\": 0.76\n    }\n  ]\n}\n\n\n### FILE: thesaurus-"
+      },
+      "suggested_skos": {
+        "prefLabel": "intent_class",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "participant",
+      "entity_type": "PARTICIPANT_ID",
+      "confidence": 0.5884,
+      "status": "candidate",
+      "source_location": {
+        "line": 172,
+        "offset": 5094,
+        "end_offset": 5105,
+        "context": "nfidence_floor\": 0.76\n    },\n    {\n      \"concept_uri\": \"dssc:GovernanceSurface\",\n      \"intent_class\": \"dssc.participant.evaluate_admission.v1\",\n      \"confidence_floor\": 0.76\n    }\n  ]\n}\n\n\n### FILE: thesaurus-local.json\n{\n  \"sche"
+      },
+      "suggested_skos": {
+        "prefLabel": "participant",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "v1",
+      "entity_type": "POLICY_SNAPSHOT",
+      "confidence": 0.4154,
+      "status": "candidate",
+      "source_location": {
+        "line": 172,
+        "offset": 5125,
+        "end_offset": 5127,
+        "context": "  {\n      \"concept_uri\": \"dssc:GovernanceSurface\",\n      \"intent_class\": \"dssc.participant.evaluate_admission.v1\",\n      \"confidence_floor\": 0.76\n    }\n  ]\n}\n\n\n### FILE: thesaurus-local.json\n{\n  \"schema_version\": \"1.0\",\n  "
+      },
+      "suggested_skos": {
+        "prefLabel": "v1",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "domain",
+      "entity_type": "JURISDICTION",
+      "confidence": 0.5145,
+      "status": "candidate",
+      "source_location": {
+        "line": 182,
+        "offset": 5238,
+        "end_offset": 5244,
+        "context": ",\n      \"confidence_floor\": 0.76\n    }\n  ]\n}\n\n\n### FILE: thesaurus-local.json\n{\n  \"schema_version\": \"1.0\",\n  \"domain\": \"dssc-participant-onboarding-lifecycle\",\n  \"last_modified\": \"2026-04-14\",\n  \"concepts\": [\n    {\n      \"conc"
+      },
+      "suggested_skos": {
+        "prefLabel": "domain",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "concept_id",
+      "entity_type": "IDENTIFIER",
+      "confidence": 0.3873,
+      "status": "candidate",
+      "source_location": {
+        "line": 186,
+        "offset": 5350,
+        "end_offset": 5360,
+        "context": "main\": \"dssc-participant-onboarding-lifecycle\",\n  \"last_modified\": \"2026-04-14\",\n  \"concepts\": [\n    {\n      \"concept_id\": \"dssc-participant-onboarding-lifecycle.candidate.v1\",\n      \"preferred_term\": \"candidate\",\n      \"synonyms\""
+      },
+      "suggested_skos": {
+        "prefLabel": "concept_id",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "candidate",
+      "entity_type": "IDENTIFIER",
+      "confidence": 0.4762,
+      "status": "candidate",
+      "source_location": {
+        "line": 186,
+        "offset": 5402,
+        "end_offset": 5411,
+        "context": "ast_modified\": \"2026-04-14\",\n  \"concepts\": [\n    {\n      \"concept_id\": \"dssc-participant-onboarding-lifecycle.candidate.v1\",\n      \"preferred_term\": \"candidate\",\n      \"synonyms\": [],\n      \"register_variants\": {},\n      \"domain_"
+      },
+      "suggested_skos": {
+        "prefLabel": "candidate",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "v1",
+      "entity_type": "POLICY_SNAPSHOT",
+      "confidence": 0.3525,
+      "status": "candidate",
+      "source_location": {
+        "line": 186,
+        "offset": 5412,
+        "end_offset": 5414,
+        "context": "ed\": \"2026-04-14\",\n  \"concepts\": [\n    {\n      \"concept_id\": \"dssc-participant-onboarding-lifecycle.candidate.v1\",\n      \"preferred_term\": \"candidate\",\n      \"synonyms\": [],\n      \"register_variants\": {},\n      \"domain_voc"
+      },
+      "suggested_skos": {
+        "prefLabel": "v1",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "candidate",
+      "entity_type": "PARTICIPANT_ID",
+      "confidence": 0.7879,
+      "status": "candidate",
+      "source_location": {
+        "line": 187,
+        "offset": 5442,
+        "end_offset": 5451,
+        "context": "\": [\n    {\n      \"concept_id\": \"dssc-participant-onboarding-lifecycle.candidate.v1\",\n      \"preferred_term\": \"candidate\",\n      \"synonyms\": [],\n      \"register_variants\": {},\n      \"domain_vocabulary\": {},\n      \"translations\": {"
+      },
+      "suggested_skos": {
+        "prefLabel": "candidate",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "GovernanceSurface",
+      "entity_type": "JURISDICTION",
+      "confidence": 0.612,
+      "status": "candidate",
+      "source_location": {
+        "line": 192,
+        "offset": 5582,
+        "end_offset": 5599,
+        "context": "[],\n      \"register_variants\": {},\n      \"domain_vocabulary\": {},\n      \"translations\": {},\n      \"broader\": \"GovernanceSurface\",\n      \"narrower\": [],\n      \"source_refs\": [\n        \"dssc-canonical-source-catalog\"\n      ],\n      \"ner_pr"
+      },
+      "suggested_skos": {
+        "prefLabel": "GovernanceSurface",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "concept_id",
+      "entity_type": "IDENTIFIER",
+      "confidence": 0.3706,
+      "status": "candidate",
+      "source_location": {
+        "line": 200,
+        "offset": 5745,
+        "end_offset": 5755,
+        "context": "ce_refs\": [\n        \"dssc-canonical-source-catalog\"\n      ],\n      \"ner_provenance\": null\n    },\n    {\n      \"concept_id\": \"dssc-participant-onboarding-lifecycle.pending.review.v1\",\n      \"preferred_term\": \"pending_review\",\n      "
+      },
+      "suggested_skos": {
+        "prefLabel": "concept_id",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "pending_review",
+      "entity_type": "IDENTIFIER",
+      "confidence": 0.4543,
+      "status": "candidate",
+      "source_location": {
+        "line": 201,
+        "offset": 5842,
+        "end_offset": 5856,
+        "context": "    {\n      \"concept_id\": \"dssc-participant-onboarding-lifecycle.pending.review.v1\",\n      \"preferred_term\": \"pending_review\",\n      \"synonyms\": [],\n      \"register_variants\": {},\n      \"domain_vocabulary\": {},\n      \"translations\": {"
+      },
+      "suggested_skos": {
+        "prefLabel": "pending_review",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "GovernanceSurface",
+      "entity_type": "JURISDICTION",
+      "confidence": 0.6393,
+      "status": "candidate",
+      "source_location": {
+        "line": 206,
+        "offset": 5987,
+        "end_offset": 6004,
+        "context": "[],\n      \"register_variants\": {},\n      \"domain_vocabulary\": {},\n      \"translations\": {},\n      \"broader\": \"GovernanceSurface\",\n      \"narrower\": [],\n      \"source_refs\": [\n        \"dssc-canonical-source-catalog\"\n      ],\n      \"ner_pr"
+      },
+      "suggested_skos": {
+        "prefLabel": "GovernanceSurface",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "concept_id",
+      "entity_type": "IDENTIFIER",
+      "confidence": 0.3664,
+      "status": "candidate",
+      "source_location": {
+        "line": 214,
+        "offset": 6150,
+        "end_offset": 6160,
+        "context": "ce_refs\": [\n        \"dssc-canonical-source-catalog\"\n      ],\n      \"ner_provenance\": null\n    },\n    {\n      \"concept_id\": \"dssc-participant-onboarding-lifecycle.admitted.v1\",\n      \"preferred_term\": \"admitted\",\n      \"synonyms\": "
+      },
+      "suggested_skos": {
+        "prefLabel": "concept_id",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "admitted",
+      "entity_type": "IDENTIFIER",
+      "confidence": 0.5315,
+      "status": "candidate",
+      "source_location": {
+        "line": 214,
+        "offset": 6202,
+        "end_offset": 6210,
+        "context": "      ],\n      \"ner_provenance\": null\n    },\n    {\n      \"concept_id\": \"dssc-participant-onboarding-lifecycle.admitted.v1\",\n      \"preferred_term\": \"admitted\",\n      \"synonyms\": [],\n      \"register_variants\": {},\n      \"domain_v"
+      },
+      "suggested_skos": {
+        "prefLabel": "admitted",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "admitted",
+      "entity_type": "IDENTIFIER",
+      "confidence": 0.6601,
+      "status": "candidate",
+      "source_location": {
+        "line": 215,
+        "offset": 6241,
+        "end_offset": 6249,
+        "context": "   },\n    {\n      \"concept_id\": \"dssc-participant-onboarding-lifecycle.admitted.v1\",\n      \"preferred_term\": \"admitted\",\n      \"synonyms\": [],\n      \"register_variants\": {},\n      \"domain_vocabulary\": {},\n      \"translations\": {"
+      },
+      "suggested_skos": {
+        "prefLabel": "admitted",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "GovernanceSurface",
+      "entity_type": "JURISDICTION",
+      "confidence": 0.7601,
+      "status": "candidate",
+      "source_location": {
+        "line": 220,
+        "offset": 6380,
+        "end_offset": 6397,
+        "context": "[],\n      \"register_variants\": {},\n      \"domain_vocabulary\": {},\n      \"translations\": {},\n      \"broader\": \"GovernanceSurface\",\n      \"narrower\": [],\n      \"source_refs\": [\n        \"dssc-canonical-source-catalog\"\n      ],\n      \"ner_pr"
+      },
+      "suggested_skos": {
+        "prefLabel": "GovernanceSurface",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "restricted",
+      "entity_type": "IDENTIFIER",
+      "confidence": 0.4266,
+      "status": "candidate",
+      "source_location": {
+        "line": 228,
+        "offset": 6595,
+        "end_offset": 6605,
+        "context": "      ],\n      \"ner_provenance\": null\n    },\n    {\n      \"concept_id\": \"dssc-participant-onboarding-lifecycle.restricted.v1\",\n      \"preferred_term\": \"restricted\",\n      \"synonyms\": [],\n      \"register_variants\": {},\n      \"domain"
+      },
+      "suggested_skos": {
+        "prefLabel": "restricted",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "restricted",
+      "entity_type": "IDENTIFIER",
+      "confidence": 0.5717,
+      "status": "candidate",
+      "source_location": {
+        "line": 229,
+        "offset": 6636,
+        "end_offset": 6646,
+        "context": " },\n    {\n      \"concept_id\": \"dssc-participant-onboarding-lifecycle.restricted.v1\",\n      \"preferred_term\": \"restricted\",\n      \"synonyms\": [],\n      \"register_variants\": {},\n      \"domain_vocabulary\": {},\n      \"translations\": {"
+      },
+      "suggested_skos": {
+        "prefLabel": "restricted",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "GovernanceSurface",
+      "entity_type": "JURISDICTION",
+      "confidence": 0.6657,
+      "status": "candidate",
+      "source_location": {
+        "line": 234,
+        "offset": 6777,
+        "end_offset": 6794,
+        "context": "[],\n      \"register_variants\": {},\n      \"domain_vocabulary\": {},\n      \"translations\": {},\n      \"broader\": \"GovernanceSurface\",\n      \"narrower\": [],\n      \"source_refs\": [\n        \"dssc-canonical-source-catalog\"\n      ],\n      \"ner_pr"
+      },
+      "suggested_skos": {
+        "prefLabel": "GovernanceSurface",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "suspended",
+      "entity_type": "DENY_REASON_CODE",
+      "confidence": 0.4444,
+      "status": "candidate",
+      "source_location": {
+        "line": 242,
+        "offset": 6992,
+        "end_offset": 7001,
+        "context": "      ],\n      \"ner_provenance\": null\n    },\n    {\n      \"concept_id\": \"dssc-participant-onboarding-lifecycle.suspended.v1\",\n      \"preferred_term\": \"suspended\",\n      \"synonyms\": [],\n      \"register_variants\": {},\n      \"domain_"
+      },
+      "suggested_skos": {
+        "prefLabel": "suspended",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "suspended",
+      "entity_type": "IDENTIFIER",
+      "confidence": 0.5137,
+      "status": "candidate",
+      "source_location": {
+        "line": 243,
+        "offset": 7032,
+        "end_offset": 7041,
+        "context": "  },\n    {\n      \"concept_id\": \"dssc-participant-onboarding-lifecycle.suspended.v1\",\n      \"preferred_term\": \"suspended\",\n      \"synonyms\": [],\n      \"register_variants\": {},\n      \"domain_vocabulary\": {},\n      \"translations\": {"
+      },
+      "suggested_skos": {
+        "prefLabel": "suspended",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "suspended",
+      "entity_type": "DENY_REASON_CODE",
+      "confidence": 0.3745,
+      "status": "candidate",
+      "source_location": {
+        "line": 243,
+        "offset": 7032,
+        "end_offset": 7041,
+        "context": "  },\n    {\n      \"concept_id\": \"dssc-participant-onboarding-lifecycle.suspended.v1\",\n      \"preferred_term\": \"suspended\",\n      \"synonyms\": [],\n      \"register_variants\": {},\n      \"domain_vocabulary\": {},\n      \"translations\": {"
+      },
+      "suggested_skos": {
+        "prefLabel": "suspended",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "GovernanceSurface",
+      "entity_type": "JURISDICTION",
+      "confidence": 0.5638,
+      "status": "candidate",
+      "source_location": {
+        "line": 248,
+        "offset": 7172,
+        "end_offset": 7189,
+        "context": "[],\n      \"register_variants\": {},\n      \"domain_vocabulary\": {},\n      \"translations\": {},\n      \"broader\": \"GovernanceSurface\",\n      \"narrower\": [],\n      \"source_refs\": [\n        \"dssc-canonical-source-catalog\"\n      ],\n      \"ner_pr"
+      },
+      "suggested_skos": {
+        "prefLabel": "GovernanceSurface",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "revoked",
+      "entity_type": "DENY_REASON_CODE",
+      "confidence": 0.425,
+      "status": "candidate",
+      "source_location": {
+        "line": 256,
+        "offset": 7387,
+        "end_offset": 7394,
+        "context": "      ],\n      \"ner_provenance\": null\n    },\n    {\n      \"concept_id\": \"dssc-participant-onboarding-lifecycle.revoked.v1\",\n      \"preferred_term\": \"revoked\",\n      \"synonyms\": [],\n      \"register_variants\": {},\n      \"domain_vo"
+      },
+      "suggested_skos": {
+        "prefLabel": "revoked",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "revoked",
+      "entity_type": "DENY_REASON_CODE",
+      "confidence": 0.47,
+      "status": "candidate",
+      "source_location": {
+        "line": 257,
+        "offset": 7425,
+        "end_offset": 7432,
+        "context": "    },\n    {\n      \"concept_id\": \"dssc-participant-onboarding-lifecycle.revoked.v1\",\n      \"preferred_term\": \"revoked\",\n      \"synonyms\": [],\n      \"register_variants\": {},\n      \"domain_vocabulary\": {},\n      \"translations\": {"
+      },
+      "suggested_skos": {
+        "prefLabel": "revoked",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "GovernanceSurface",
+      "entity_type": "JURISDICTION",
+      "confidence": 0.5879,
+      "status": "candidate",
+      "source_location": {
+        "line": 262,
+        "offset": 7563,
+        "end_offset": 7580,
+        "context": "[],\n      \"register_variants\": {},\n      \"domain_vocabulary\": {},\n      \"translations\": {},\n      \"broader\": \"GovernanceSurface\",\n      \"narrower\": [],\n      \"source_refs\": [\n        \"dssc-canonical-source-catalog\"\n      ],\n      \"ner_pr"
+      },
+      "suggested_skos": {
+        "prefLabel": "GovernanceSurface",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "reinstated.v1",
+      "entity_type": "DENY_REASON_CODE",
+      "confidence": 0.4661,
+      "status": "candidate",
+      "source_location": {
+        "line": 270,
+        "offset": 7778,
+        "end_offset": 7791,
+        "context": "      ],\n      \"ner_provenance\": null\n    },\n    {\n      \"concept_id\": \"dssc-participant-onboarding-lifecycle.reinstated.v1\",\n      \"preferred_term\": \"reinstated\",\n      \"synonyms\": [],\n      \"register_variants\": {},\n      \"domain_vo"
+      },
+      "suggested_skos": {
+        "prefLabel": "reinstated.v1",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "reinstated",
+      "entity_type": "DENY_REASON_CODE",
+      "confidence": 0.4256,
+      "status": "candidate",
+      "source_location": {
+        "line": 271,
+        "offset": 7819,
+        "end_offset": 7829,
+        "context": " },\n    {\n      \"concept_id\": \"dssc-participant-onboarding-lifecycle.reinstated.v1\",\n      \"preferred_term\": \"reinstated\",\n      \"synonyms\": [],\n      \"register_variants\": {},\n      \"domain_vocabulary\": {},\n      \"translations\": {"
+      },
+      "suggested_skos": {
+        "prefLabel": "reinstated",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "GovernanceSurface",
+      "entity_type": "JURISDICTION",
+      "confidence": 0.6708,
+      "status": "candidate",
+      "source_location": {
+        "line": 276,
+        "offset": 7960,
+        "end_offset": 7977,
+        "context": "[],\n      \"register_variants\": {},\n      \"domain_vocabulary\": {},\n      \"translations\": {},\n      \"broader\": \"GovernanceSurface\",\n      \"narrower\": [],\n      \"source_refs\": [\n        \"dssc-canonical-source-catalog\"\n      ],\n      \"ner_pr"
+      },
+      "suggested_skos": {
+        "prefLabel": "GovernanceSurface",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "dssc-participant-onboarding-lifecycle",
+      "entity_type": "TRANSITION_RULE",
+      "confidence": 0.475,
+      "status": "candidate",
+      "source_location": {
+        "line": 290,
+        "offset": 8183,
+        "end_offset": 8220,
+        "context": "\n      \"ner_provenance\": null\n    }\n  ]\n}\n\n\n### FILE: patterns.json\n{\n  \"schema_version\": \"1.0\",\n  \"domain\": \"dssc-participant-onboarding-lifecycle\",\n  \"patterns\": [\n    {\n      \"id\": \"dssc_participant_transition_state_v1\",\n      \"concept_uri\": \"dssc:Govern"
+      },
+      "suggested_skos": {
+        "prefLabel": "dssc-participant-onboarding-lifecycle",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "id",
+      "entity_type": "IDENTIFIER",
+      "confidence": 0.4309,
+      "status": "candidate",
+      "source_location": {
+        "line": 293,
+        "offset": 8252,
+        "end_offset": 8254,
+        "context": "\n  \"schema_version\": \"1.0\",\n  \"domain\": \"dssc-participant-onboarding-lifecycle\",\n  \"patterns\": [\n    {\n      \"id\": \"dssc_participant_transition_state_v1\",\n      \"concept_uri\": \"dssc:GovernanceSurface\",\n      \"entity_type\":"
+      },
+      "suggested_skos": {
+        "prefLabel": "id",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "dssc_participant_transiti",
+      "entity_type": "TRANSITION_RULE",
+      "confidence": 0.4335,
+      "status": "candidate",
+      "source_location": {
+        "line": 293,
+        "offset": 8258,
+        "end_offset": 8283,
+        "context": "hema_version\": \"1.0\",\n  \"domain\": \"dssc-participant-onboarding-lifecycle\",\n  \"patterns\": [\n    {\n      \"id\": \"dssc_participant_transition_state_v1\",\n      \"concept_uri\": \"dssc:GovernanceSurface\",\n      \"entity_type\": \"intent_hint\",\n      \"regex\""
+      },
+      "suggested_skos": {
+        "prefLabel": "dssc_participant_transiti",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "dssc_participant_transition_state_v1",
+      "entity_type": "LIFECYCLE_STATE",
+      "confidence": 0.4092,
+      "status": "candidate",
+      "source_location": {
+        "line": 293,
+        "offset": 8258,
+        "end_offset": 8294,
+        "context": "hema_version\": \"1.0\",\n  \"domain\": \"dssc-participant-onboarding-lifecycle\",\n  \"patterns\": [\n    {\n      \"id\": \"dssc_participant_transition_state_v1\",\n      \"concept_uri\": \"dssc:GovernanceSurface\",\n      \"entity_type\": \"intent_hint\",\n      \"regex\": \"(?i)\\\\bd"
+      },
+      "suggested_skos": {
+        "prefLabel": "dssc_participant_transition_state_v1",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "intent_hint",
+      "entity_type": "INTENT_CLASS",
+      "confidence": 0.6769,
+      "status": "candidate",
+      "source_location": {
+        "line": 295,
+        "offset": 8366,
+        "end_offset": 8377,
+        "context": " \"dssc_participant_transition_state_v1\",\n      \"concept_uri\": \"dssc:GovernanceSurface\",\n      \"entity_type\": \"intent_hint\",\n      \"regex\": \"(?i)\\\\bdssc\\\\.participant\\\\.transition_state\\\\.v1\\\\b\",\n      \"examples\": [\n        \"dssc.pa"
+      },
+      "suggested_skos": {
+        "prefLabel": "intent_hint",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "participant",
+      "entity_type": "PARTICIPANT_ID",
+      "confidence": 0.7699,
+      "status": "candidate",
+      "source_location": {
+        "line": 296,
+        "offset": 8410,
+        "end_offset": 8421,
+        "context": "   \"concept_uri\": \"dssc:GovernanceSurface\",\n      \"entity_type\": \"intent_hint\",\n      \"regex\": \"(?i)\\\\bdssc\\\\.participant\\\\.transition_state\\\\.v1\\\\b\",\n      \"examples\": [\n        \"dssc.participant.transition_state.v1\"\n      ]\n    }"
+      },
+      "suggested_skos": {
+        "prefLabel": "participant",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "transition_state",
+      "entity_type": "LIFECYCLE_STATE",
+      "confidence": 0.5279,
+      "status": "candidate",
+      "source_location": {
+        "line": 296,
+        "offset": 8424,
+        "end_offset": 8440,
+        "context": "i\": \"dssc:GovernanceSurface\",\n      \"entity_type\": \"intent_hint\",\n      \"regex\": \"(?i)\\\\bdssc\\\\.participant\\\\.transition_state\\\\.v1\\\\b\",\n      \"examples\": [\n        \"dssc.participant.transition_state.v1\"\n      ]\n    },\n    {\n      \"id\":"
+      },
+      "suggested_skos": {
+        "prefLabel": "transition_state",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "participant",
+      "entity_type": "PARTICIPANT_ID",
+      "confidence": 0.7663,
+      "status": "candidate",
+      "source_location": {
+        "line": 298,
+        "offset": 8485,
+        "end_offset": 8496,
+        "context": "nt\",\n      \"regex\": \"(?i)\\\\bdssc\\\\.participant\\\\.transition_state\\\\.v1\\\\b\",\n      \"examples\": [\n        \"dssc.participant.transition_state.v1\"\n      ]\n    },\n    {\n      \"id\": \"dssc_participant_evaluate_admission_v1\",\n      \"concep"
+      },
+      "suggested_skos": {
+        "prefLabel": "participant",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "transition_state",
+      "entity_type": "LIFECYCLE_STATE",
+      "confidence": 0.4671,
+      "status": "candidate",
+      "source_location": {
+        "line": 298,
+        "offset": 8497,
+        "end_offset": 8513,
+        "context": "regex\": \"(?i)\\\\bdssc\\\\.participant\\\\.transition_state\\\\.v1\\\\b\",\n      \"examples\": [\n        \"dssc.participant.transition_state.v1\"\n      ]\n    },\n    {\n      \"id\": \"dssc_participant_evaluate_admission_v1\",\n      \"concept_uri\": \"dssc:Gov"
+      },
+      "suggested_skos": {
+        "prefLabel": "transition_state",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "id",
+      "entity_type": "IDENTIFIER",
+      "confidence": 0.5336,
+      "status": "candidate",
+      "source_location": {
+        "line": 302,
+        "offset": 8546,
+        "end_offset": 8548,
+        "context": "tate\\\\.v1\\\\b\",\n      \"examples\": [\n        \"dssc.participant.transition_state.v1\"\n      ]\n    },\n    {\n      \"id\": \"dssc_participant_evaluate_admission_v1\",\n      \"concept_uri\": \"dssc:GovernanceSurface\",\n      \"entity_type"
+      },
+      "suggested_skos": {
+        "prefLabel": "id",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "intent_hint",
+      "entity_type": "INTENT_CLASS",
+      "confidence": 0.7113,
+      "status": "candidate",
+      "source_location": {
+        "line": 304,
+        "offset": 8662,
+        "end_offset": 8673,
+        "context": "dssc_participant_evaluate_admission_v1\",\n      \"concept_uri\": \"dssc:GovernanceSurface\",\n      \"entity_type\": \"intent_hint\",\n      \"regex\": \"(?i)\\\\bdssc\\\\.participant\\\\.evaluate_admission\\\\.v1\\\\b\",\n      \"examples\": [\n        \"dssc."
+      },
+      "suggested_skos": {
+        "prefLabel": "intent_hint",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "participant",
+      "entity_type": "PARTICIPANT_ID",
+      "confidence": 0.8297,
+      "status": "candidate",
+      "source_location": {
+        "line": 305,
+        "offset": 8706,
+        "end_offset": 8717,
+        "context": "   \"concept_uri\": \"dssc:GovernanceSurface\",\n      \"entity_type\": \"intent_hint\",\n      \"regex\": \"(?i)\\\\bdssc\\\\.participant\\\\.evaluate_admission\\\\.v1\\\\b\",\n      \"examples\": [\n        \"dssc.participant.evaluate_admission.v1\"\n      ]\n "
+      },
+      "suggested_skos": {
+        "prefLabel": "participant",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "participant",
+      "entity_type": "PARTICIPANT_ID",
+      "confidence": 0.7604,
+      "status": "candidate",
+      "source_location": {
+        "line": 307,
+        "offset": 8783,
+        "end_offset": 8794,
+        "context": "\",\n      \"regex\": \"(?i)\\\\bdssc\\\\.participant\\\\.evaluate_admission\\\\.v1\\\\b\",\n      \"examples\": [\n        \"dssc.participant.evaluate_admission.v1\"\n      ]\n    }\n  ]\n}\n\n\n### FILE: source-extract/sources.json\n{\n  \"schema_version\": \"1.0"
+      },
+      "suggested_skos": {
+        "prefLabel": "participant",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "v1",
+      "entity_type": "POLICY_SNAPSHOT",
+      "confidence": 0.406,
+      "status": "candidate",
+      "source_location": {
+        "line": 307,
+        "offset": 8814,
+        "end_offset": 8816,
+        "context": "\\.participant\\\\.evaluate_admission\\\\.v1\\\\b\",\n      \"examples\": [\n        \"dssc.participant.evaluate_admission.v1\"\n      ]\n    }\n  ]\n}\n\n\n### FILE: source-extract/sources.json\n{\n  \"schema_version\": \"1.0\",\n  \"generated_at_utc"
+      },
+      "suggested_skos": {
+        "prefLabel": "v1",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "dssc-participant-onboarding-lifecycle-source-2026-04-14",
+      "entity_type": "IDENTIFIER",
+      "confidence": 0.4613,
+      "status": "candidate",
+      "source_location": {
+        "line": 319,
+        "offset": 9034,
+        "end_offset": 9089,
+        "context": "tc\": \"2026-04-14T12:00:00Z\",\n  \"vertical\": \"dssc-participant-onboarding-lifecycle-demo-pack\",\n  \"bundle_id\": \"dssc-participant-onboarding-lifecycle-source-2026-04-14\",\n  \"sources\": [\n    {\n      \"id\": \"canonical-source-1\",\n      \"title\": \"Canonical source 1\",\n      \"url\": \"h"
+      },
+      "suggested_skos": {
+        "prefLabel": "dssc-participant-onboarding-lifecycle-source-2026-04-14",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "canonical-source-1",
+      "entity_type": "IDENTIFIER",
+      "confidence": 0.6607,
+      "status": "candidate",
+      "source_location": {
+        "line": 322,
+        "offset": 9126,
+        "end_offset": 9144,
+        "context": ",\n  \"bundle_id\": \"dssc-participant-onboarding-lifecycle-source-2026-04-14\",\n  \"sources\": [\n    {\n      \"id\": \"canonical-source-1\",\n      \"title\": \"Canonical source 1\",\n      \"url\": \"https://blueprint.dssc.eu/\",\n      \"type\": \"canonical_re"
+      },
+      "suggested_skos": {
+        "prefLabel": "canonical-source-1",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "Canonical source 1",
+      "entity_type": "IDENTIFIER",
+      "confidence": 0.5587,
+      "status": "candidate",
+      "source_location": {
+        "line": 323,
+        "offset": 9163,
+        "end_offset": 9181,
+        "context": "boarding-lifecycle-source-2026-04-14\",\n  \"sources\": [\n    {\n      \"id\": \"canonical-source-1\",\n      \"title\": \"Canonical source 1\",\n      \"url\": \"https://blueprint.dssc.eu/\",\n      \"type\": \"canonical_reference\",\n      \"status\": \"referenced"
+      },
+      "suggested_skos": {
+        "prefLabel": "Canonical source 1",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "dssc-participant-onboarding-lifecycle-demo-pack",
+      "entity_type": "IDENTIFIER",
+      "confidence": 0.5429,
+      "status": "candidate",
+      "source_location": {
+        "line": 336,
+        "offset": 9431,
+        "end_offset": 9478,
+        "context": "age-identifiers.json\n{\n  \"schema_version\": \"0.1\",\n  \"generated_at_utc\": \"2026-04-14T12:00:00Z\",\n  \"profile\": \"dssc-participant-onboarding-lifecycle-demo-pack\",\n  \"domain\": \"dssc-participant-onboarding-lifecycle\",\n  \"message_identifiers\": [],\n  \"message_types\": [],\n  "
+      },
+      "suggested_skos": {
+        "prefLabel": "dssc-participant-onboarding-lifecycle-demo-pack",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "dssc-participant",
+      "entity_type": "PARTICIPANT_ID",
+      "confidence": 0.6685,
+      "status": "candidate",
+      "source_location": {
+        "line": 337,
+        "offset": 9494,
+        "end_offset": 9510,
+        "context": "at_utc\": \"2026-04-14T12:00:00Z\",\n  \"profile\": \"dssc-participant-onboarding-lifecycle-demo-pack\",\n  \"domain\": \"dssc-participant-onboarding-lifecycle\",\n  \"message_identifiers\": [],\n  \"message_types\": [],\n  \"note\": \"No ISO-style message id"
+      },
+      "suggested_skos": {
+        "prefLabel": "dssc-participant",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "dssc-participant-onboarding-lifecycle-demo-pack",
+      "entity_type": "IDENTIFIER",
+      "confidence": 0.5951,
+      "status": "candidate",
+      "source_location": {
+        "line": 348,
+        "offset": 9794,
+        "end_offset": 9841,
+        "context": "raction-summary.json\n{\n  \"schema_version\": \"0.1\",\n  \"generated_at_utc\": \"2026-04-14T12:00:00Z\",\n  \"profile\": \"dssc-participant-onboarding-lifecycle-demo-pack\",\n  \"domain\": \"dssc-participant-onboarding-lifecycle\",\n  \"source_spec\": \"DSSC source-grounded pack spec and c"
+      },
+      "suggested_skos": {
+        "prefLabel": "dssc-participant-onboarding-lifecycle-demo-pack",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "stage-3",
+      "entity_type": "LIFECYCLE_STATE",
+      "confidence": 0.4029,
+      "status": "candidate",
+      "source_location": {
+        "line": 354,
+        "offset": 10100,
+        "end_offset": 10107,
+        "context": "nt\": 1,\n  \"mapped_symbol_count\": 7,\n  \"mapped_field_count\": 1,\n  \"note\": \"Stage-4 skeleton pack authored from stage-3 spec artifacts.\"\n}\n"
+      },
+      "suggested_skos": {
+        "prefLabel": "stage-3",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    }
+  ],
+  "provenance": {
+    "extraction_run_id": "dssc-participant-onboarding-lifecycle-gliner-docker-pass-2026-04-14",
+    "adapter": "gliner",
+    "model": "urchade/gliner_medium-v2.1",
+    "model_hash": "sha256:6c2fcfc92ecee10654d9d3151b2fca9dee740b375c4c99d928c87a9d969e1f7b",
+    "timestamp": "2026-04-14T09:24:33.105182+00:00",
+    "document_hash": "sha256:7359088970a77024730a10e5f3589b12ba75235e976ad8cf7fa0676048cb9609",
+    "config_hash": "sha256:77a8db507c260df7d6824e9b833688669e6511afc3cf8d3b43601d0bc953e74c",
+    "entity_count": 104,
+    "entity_type_distribution": {
+      "LIFECYCLE_STATE": 12,
+      "INTENT_CLASS": 9,
+      "PARTICIPANT_ID": 18,
+      "POLICY_SNAPSHOT": 9,
+      "DENY_REASON_CODE": 19,
+      "IDENTIFIER": 19,
+      "TRUST_PROOF": 2,
+      "TRANSITION_RULE": 5,
+      "JURISDICTION": 11
+    },
+    "processing_time_ms": 19906
+  }
+}

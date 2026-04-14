@@ -1,0 +1,2631 @@
+{
+  "schema_version": "1.0",
+  "extraction_run_id": "dssc-rulebook-policy-mapping-gliner-docker-pass-2026-04-14",
+  "adapter": "gliner",
+  "model": "urchade/gliner_medium-v2.1",
+  "model_hash": "sha256:6c2fcfc92ecee10654d9d3151b2fca9dee740b375c4c99d928c87a9d969e1f7b",
+  "source_document": "corpus.txt",
+  "source_document_hash": "sha256:296d6d1ba99a7913367b0dda5459b55c26f2574156b32b118c6a1498490e9eac",
+  "labels_used": [
+    "RULEBOOK_CLAUSE",
+    "ODRL_PERMISSION",
+    "ODRL_PROHIBITION",
+    "ODRL_OBLIGATION",
+    "CONSTRAINT_EXPRESSION",
+    "INTENT_CLASS",
+    "DENY_REASON_CODE",
+    "POLICY_SNAPSHOT",
+    "JURISDICTION",
+    "IDENTIFIER"
+  ],
+  "threshold": 0.35,
+  "candidates": [
+    {
+      "surface_form": "ODRL policy expressions",
+      "entity_type": "ODRL_PROHIBITION",
+      "confidence": 0.5613,
+      "status": "candidate",
+      "source_location": {
+        "line": 8,
+        "offset": 243,
+        "end_offset": 266,
+        "context": "ping` under Stage-4 pack authoring.\n\n## Purpose\n\nDemonstrate deterministic mapping of DSSC-style rulebook and ODRL policy expressions into PACT fail-closed decision semantics.\n\n## Source Grounding\n\nCanonical source references used for this pac"
+      },
+      "suggested_skos": {
+        "prefLabel": "ODRL policy expressions",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "odrl-vocab",
+      "entity_type": "ODRL_PROHIBITION",
+      "confidence": 0.4064,
+      "status": "candidate",
+      "source_location": {
+        "line": 17,
+        "offset": 539,
+        "end_offset": 549,
+        "context": "\nPrimary references:\n- https://blueprint.dssc.eu/\n- https://www.w3.org/TR/odrl-model/\n- https://www.w3.org/TR/odrl-vocab/\n- https://eclipse-dataspace-protocol-base.github.io/DataspaceProtocol/HEAD/\n\n## Intent Surface\n\n- `dssc.poli"
+      },
+      "suggested_skos": {
+        "prefLabel": "odrl-vocab",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "Intent Surface",
+      "entity_type": "INTENT_CLASS",
+      "confidence": 0.5288,
+      "status": "candidate",
+      "source_location": {
+        "line": 20,
+        "offset": 631,
+        "end_offset": 645,
+        "context": "s://www.w3.org/TR/odrl-vocab/\n- https://eclipse-dataspace-protocol-base.github.io/DataspaceProtocol/HEAD/\n\n## Intent Surface\n\n- `dssc.policy.evaluate_access.v1`: Evaluate access request against mapped rulebook/ODRL policy snapshot.\n- "
+      },
+      "suggested_skos": {
+        "prefLabel": "Intent Surface",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "access request",
+      "entity_type": "ODRL_PERMISSION",
+      "confidence": 0.3595,
+      "status": "candidate",
+      "source_location": {
+        "line": 22,
+        "offset": 692,
+        "end_offset": 706,
+        "context": "tocol-base.github.io/DataspaceProtocol/HEAD/\n\n## Intent Surface\n\n- `dssc.policy.evaluate_access.v1`: Evaluate access request against mapped rulebook/ODRL policy snapshot.\n- `dssc.policy.evaluate_usage.v1`: Evaluate post-access usage o"
+      },
+      "suggested_skos": {
+        "prefLabel": "access request",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "rulebook",
+      "entity_type": "RULEBOOK_CLAUSE",
+      "confidence": 0.7761,
+      "status": "candidate",
+      "source_location": {
+        "line": 22,
+        "offset": 722,
+        "end_offset": 730,
+        "context": "Protocol/HEAD/\n\n## Intent Surface\n\n- `dssc.policy.evaluate_access.v1`: Evaluate access request against mapped rulebook/ODRL policy snapshot.\n- `dssc.policy.evaluate_usage.v1`: Evaluate post-access usage obligations and prohibiti"
+      },
+      "suggested_skos": {
+        "prefLabel": "rulebook",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "ODRL policy snapshot",
+      "entity_type": "POLICY_SNAPSHOT",
+      "confidence": 0.8309,
+      "status": "candidate",
+      "source_location": {
+        "line": 22,
+        "offset": 731,
+        "end_offset": 751,
+        "context": "HEAD/\n\n## Intent Surface\n\n- `dssc.policy.evaluate_access.v1`: Evaluate access request against mapped rulebook/ODRL policy snapshot.\n- `dssc.policy.evaluate_usage.v1`: Evaluate post-access usage obligations and prohibitions.\n- `dssc.policy.r"
+      },
+      "suggested_skos": {
+        "prefLabel": "ODRL policy snapshot",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "resolve_conflict.v1",
+      "entity_type": "POLICY_SNAPSHOT",
+      "confidence": 0.3585,
+      "status": "candidate",
+      "source_location": {
+        "line": 24,
+        "offset": 860,
+        "end_offset": 879,
+        "context": "t.\n- `dssc.policy.evaluate_usage.v1`: Evaluate post-access usage obligations and prohibitions.\n- `dssc.policy.resolve_conflict.v1`: Deterministically resolve policy conflicts with deny-wins precedence.\n\n## Determinism Boundary\n\n- Out-of-sc"
+      },
+      "suggested_skos": {
+        "prefLabel": "resolve_conflict.v1",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "Deny",
+      "entity_type": "DENY_REASON_CODE",
+      "confidence": 0.4495,
+      "status": "candidate",
+      "source_location": {
+        "line": 30,
+        "offset": 1085,
+        "end_offset": 1089,
+        "context": "y\n\n- Out-of-scope behavior is `escalate`.\n- Policy/bundle binding is required for admitted execution paths.\n- Deny reason codes are explicit and stable for fixture replay.\n\n## Included Artifacts\n\n- `README.md`\n- `pack.json`\n"
+      },
+      "suggested_skos": {
+        "prefLabel": "Deny",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "V1",
+      "entity_type": "POLICY_SNAPSHOT",
+      "confidence": 0.5707,
+      "status": "candidate",
+      "source_location": {
+        "line": 65,
+        "offset": 1865,
+        "end_offset": 1867,
+        "context": "epository root:\n\n```bash\nnode tools/run-dssc-rulebook-policy-mapping-fixtures.mjs\n```\n\n## Two-Pass Authoring (V1/V2)\n\n- `V1 mechanical`: canonical authored baseline for deterministic runtime and fixture behavior.\n- `V2 GLi"
+      },
+      "suggested_skos": {
+        "prefLabel": "V1",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "V2",
+      "entity_type": "POLICY_SNAPSHOT",
+      "confidence": 0.5895,
+      "status": "candidate",
+      "source_location": {
+        "line": 65,
+        "offset": 1868,
+        "end_offset": 1870,
+        "context": "sitory root:\n\n```bash\nnode tools/run-dssc-rulebook-policy-mapping-fixtures.mjs\n```\n\n## Two-Pass Authoring (V1/V2)\n\n- `V1 mechanical`: canonical authored baseline for deterministic runtime and fixture behavior.\n- `V2 GLiNER"
+      },
+      "suggested_skos": {
+        "prefLabel": "V2",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "V1",
+      "entity_type": "POLICY_SNAPSHOT",
+      "confidence": 0.4959,
+      "status": "candidate",
+      "source_location": {
+        "line": 67,
+        "offset": 1876,
+        "end_offset": 1878,
+        "context": "oot:\n\n```bash\nnode tools/run-dssc-rulebook-policy-mapping-fixtures.mjs\n```\n\n## Two-Pass Authoring (V1/V2)\n\n- `V1 mechanical`: canonical authored baseline for deterministic runtime and fixture behavior.\n- `V2 GLiNER candida"
+      },
+      "suggested_skos": {
+        "prefLabel": "V1",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "V2",
+      "entity_type": "POLICY_SNAPSHOT",
+      "confidence": 0.5481,
+      "status": "candidate",
+      "source_location": {
+        "line": 68,
+        "offset": 1971,
+        "end_offset": 1973,
+        "context": "ng (V1/V2)\n\n- `V1 mechanical`: canonical authored baseline for deterministic runtime and fixture behavior.\n- `V2 GLiNER candidate`: fast extraction pass for candidate entities/relations only.\n- `Review gate`: no V2 candida"
+      },
+      "suggested_skos": {
+        "prefLabel": "V2",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "fast extraction pass",
+      "entity_type": "CONSTRAINT_EXPRESSION",
+      "confidence": 0.6698,
+      "status": "candidate",
+      "source_location": {
+        "line": 68,
+        "offset": 1993,
+        "end_offset": 2013,
+        "context": "anical`: canonical authored baseline for deterministic runtime and fixture behavior.\n- `V2 GLiNER candidate`: fast extraction pass for candidate entities/relations only.\n- `Review gate`: no V2 candidate is promoted without explicit human re"
+      },
+      "suggested_skos": {
+        "prefLabel": "fast extraction pass",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "Review gate",
+      "entity_type": "ODRL_PROHIBITION",
+      "confidence": 0.5361,
+      "status": "candidate",
+      "source_location": {
+        "line": 69,
+        "offset": 2056,
+        "end_offset": 2067,
+        "context": "and fixture behavior.\n- `V2 GLiNER candidate`: fast extraction pass for candidate entities/relations only.\n- `Review gate`: no V2 candidate is promoted without explicit human review.\n\nCandidate artifacts are stored under `source-ex"
+      },
+      "suggested_skos": {
+        "prefLabel": "Review gate",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "V2",
+      "entity_type": "POLICY_SNAPSHOT",
+      "confidence": 0.5793,
+      "status": "candidate",
+      "source_location": {
+        "line": 69,
+        "offset": 2073,
+        "end_offset": 2075,
+        "context": "ior.\n- `V2 GLiNER candidate`: fast extraction pass for candidate entities/relations only.\n- `Review gate`: no V2 candidate is promoted without explicit human review.\n\nCandidate artifacts are stored under `source-extract/ca"
+      },
+      "suggested_skos": {
+        "prefLabel": "V2",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "id",
+      "entity_type": "IDENTIFIER",
+      "confidence": 0.3622,
+      "status": "candidate",
+      "source_location": {
+        "line": 77,
+        "offset": 2277,
+        "end_offset": 2279,
+        "context": "`source-extract/candidates/gliner-dirty-pass-2026-04-14/`.\n\n\n### FILE: pack.json\n{\n  \"pack_schema\": \"1.0\",\n  \"id\": \"dssc-rulebook-policy-mapping-demo-0.1.0\",\n  \"domain\": \"dssc-rulebook-policy-mapping\",\n  \"version\": \"0.1.0\""
+      },
+      "suggested_skos": {
+        "prefLabel": "id",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "deny_wi",
+      "entity_type": "DENY_REASON_CODE",
+      "confidence": 0.5662,
+      "status": "candidate",
+      "source_location": {
+        "line": 85,
+        "offset": 2550,
+        "end_offset": 2557,
+        "context": "\"trust_tier\": \"Tier1\",\n  \"nbf\": \"2026-04-14T00:00:00Z\",\n  \"exp\": \"2031-04-14T00:00:00Z\",\n  \"rev_epoch\": 1,\n  \"deny_wins\": true,\n  \"precedence\": [],\n  \"files\": {\n    \"context\": \"context.jsonld\",\n    \"vocab\": \"vocab.skos.jsonld\","
+      },
+      "suggested_skos": {
+        "prefLabel": "deny_wi",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "deny_wins",
+      "entity_type": "DENY_REASON_CODE",
+      "confidence": 0.469,
+      "status": "candidate",
+      "source_location": {
+        "line": 85,
+        "offset": 2550,
+        "end_offset": 2559,
+        "context": "\"trust_tier\": \"Tier1\",\n  \"nbf\": \"2026-04-14T00:00:00Z\",\n  \"exp\": \"2031-04-14T00:00:00Z\",\n  \"rev_epoch\": 1,\n  \"deny_wins\": true,\n  \"precedence\": [],\n  \"files\": {\n    \"context\": \"context.jsonld\",\n    \"vocab\": \"vocab.skos.jsonld\",\n "
+      },
+      "suggested_skos": {
+        "prefLabel": "deny_wins",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "convergence",
+      "entity_type": "ODRL_PROHIBITION",
+      "confidence": 0.5285,
+      "status": "candidate",
+      "source_location": {
+        "line": 95,
+        "offset": 2865,
+        "end_offset": 2876,
+        "context": " \"thesaurus-local.json\",\n    \"patterns\": \"patterns.json\",\n    \"intent_mappings\": \"intent-mappings.json\",\n    \"convergence\": \"convergence.json\",\n    \"decision_space\": \"decision-space.json\",\n    \"message_identifiers\": \"message-identi"
+      },
+      "suggested_skos": {
+        "prefLabel": "convergence",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "convergence",
+      "entity_type": "ODRL_PROHIBITION",
+      "confidence": 0.5208,
+      "status": "candidate",
+      "source_location": {
+        "line": 95,
+        "offset": 2880,
+        "end_offset": 2891,
+        "context": "al.json\",\n    \"patterns\": \"patterns.json\",\n    \"intent_mappings\": \"intent-mappings.json\",\n    \"convergence\": \"convergence.json\",\n    \"decision_space\": \"decision-space.json\",\n    \"message_identifiers\": \"message-identifiers.json\",\n  "
+      },
+      "suggested_skos": {
+        "prefLabel": "convergence",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "message_identifiers",
+      "entity_type": "IDENTIFIER",
+      "confidence": 0.3952,
+      "status": "candidate",
+      "source_location": {
+        "line": 97,
+        "offset": 2949,
+        "end_offset": 2968,
+        "context": "tent-mappings.json\",\n    \"convergence\": \"convergence.json\",\n    \"decision_space\": \"decision-space.json\",\n    \"message_identifiers\": \"message-identifiers.json\",\n    \"extraction_summary\": \"extraction-summary.json\",\n    \"source_extract\": \"sou"
+      },
+      "suggested_skos": {
+        "prefLabel": "message_identifiers",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "gliner-dirty-pass-2026-04-14",
+      "entity_type": "POLICY_SNAPSHOT",
+      "confidence": 0.4491,
+      "status": "candidate",
+      "source_location": {
+        "line": 102,
+        "offset": 3335,
+        "end_offset": 3363,
+        "context": "tract/tasks/immutable-authoring-pipeline.v1-v2.json\",\n    \"gliner_dirty_manifest\": \"source-extract/candidates/gliner-dirty-pass-2026-04-14/manifest.json\",\n    \"gliner_dirty_candidates\": \"source-extract/candidates/gliner-dirty-pass-2026-04-14/candid"
+      },
+      "suggested_skos": {
+        "prefLabel": "gliner-dirty-pass-2026-04-14",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "gliner-dirty-pass-2026-04-14",
+      "entity_type": "POLICY_SNAPSHOT",
+      "confidence": 0.5085,
+      "status": "candidate",
+      "source_location": {
+        "line": 103,
+        "offset": 3438,
+        "end_offset": 3466,
+        "context": "idates/gliner-dirty-pass-2026-04-14/manifest.json\",\n    \"gliner_dirty_candidates\": \"source-extract/candidates/gliner-dirty-pass-2026-04-14/candidates.json\",\n    \"gliner_dirty_summary\": \"source-extract/candidates/gliner-dirty-pass-2026-04-14/extract"
+      },
+      "suggested_skos": {
+        "prefLabel": "gliner-dirty-pass-2026-04-14",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "gliner-dirty-pass-2026-04-14",
+      "entity_type": "POLICY_SNAPSHOT",
+      "confidence": 0.5181,
+      "status": "candidate",
+      "source_location": {
+        "line": 104,
+        "offset": 3540,
+        "end_offset": 3568,
+        "context": "didates/gliner-dirty-pass-2026-04-14/candidates.json\",\n    \"gliner_dirty_summary\": \"source-extract/candidates/gliner-dirty-pass-2026-04-14/extraction-summary.json\"\n  },\n  \"dc\": {\n    \"identifier\": \"ontology:dssc-rulebook-policy-mapping-demo:v0.1.0\""
+      },
+      "suggested_skos": {
+        "prefLabel": "gliner-dirty-pass-2026-04-14",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "dc",
+      "entity_type": "IDENTIFIER",
+      "confidence": 0.5149,
+      "status": "candidate",
+      "source_location": {
+        "line": 106,
+        "offset": 3602,
+        "end_offset": 3604,
+        "context": "iner_dirty_summary\": \"source-extract/candidates/gliner-dirty-pass-2026-04-14/extraction-summary.json\"\n  },\n  \"dc\": {\n    \"identifier\": \"ontology:dssc-rulebook-policy-mapping-demo:v0.1.0\",\n    \"title\": \"dssc-rulebook-policy"
+      },
+      "suggested_skos": {
+        "prefLabel": "dc",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "dssc-rulebook-policy-mapping-demo",
+      "entity_type": "ODRL_PROHIBITION",
+      "confidence": 0.3766,
+      "status": "candidate",
+      "source_location": {
+        "line": 107,
+        "offset": 3637,
+        "end_offset": 3670,
+        "context": "t/candidates/gliner-dirty-pass-2026-04-14/extraction-summary.json\"\n  },\n  \"dc\": {\n    \"identifier\": \"ontology:dssc-rulebook-policy-mapping-demo:v0.1.0\",\n    \"title\": \"dssc-rulebook-policy-mapping demo pack\",\n    \"creator\": \"PACT Public Working Draft\",\n "
+      },
+      "suggested_skos": {
+        "prefLabel": "dssc-rulebook-policy-mapping-demo",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "ODRL policy expressions",
+      "entity_type": "ODRL_PROHIBITION",
+      "confidence": 0.564,
+      "status": "candidate",
+      "source_location": {
+        "line": 112,
+        "offset": 3916,
+        "end_offset": 3939,
+        "context": "\n    \"rights\": \"Apache-2.0\",\n    \"description\": \"Demonstrate deterministic mapping of DSSC-style rulebook and ODRL policy expressions into PACT fail-closed decision semantics.\"\n  }\n}\n\n\n### FILE: decision-space.json\n{\n  \"schema_version\": \"1.0\","
+      },
+      "suggested_skos": {
+        "prefLabel": "ODRL policy expressions",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "dssc-rulebook-policy-mapping-demo-0.1.0",
+      "entity_type": "POLICY_SNAPSHOT",
+      "confidence": 0.6822,
+      "status": "candidate",
+      "source_location": {
+        "line": 121,
+        "offset": 4108,
+        "end_offset": 4147,
+        "context": "E: decision-space.json\n{\n  \"schema_version\": \"1.0\",\n  \"domain\": \"dssc-rulebook-policy-mapping\",\n  \"pack_id\": \"dssc-rulebook-policy-mapping-demo-0.1.0\",\n  \"version\": \"0.1.0\",\n  \"out_of_scope_behavior\": \"escalate\",\n  \"state_model\": {\n    \"states\": [\n      \"ingr"
+      },
+      "suggested_skos": {
+        "prefLabel": "dssc-rulebook-policy-mapping-demo-0.1.0",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "0.1.0",
+      "entity_type": "POLICY_SNAPSHOT",
+      "confidence": 0.5124,
+      "status": "candidate",
+      "source_location": {
+        "line": 122,
+        "offset": 4164,
+        "end_offset": 4169,
+        "context": "omain\": \"dssc-rulebook-policy-mapping\",\n  \"pack_id\": \"dssc-rulebook-policy-mapping-demo-0.1.0\",\n  \"version\": \"0.1.0\",\n  \"out_of_scope_behavior\": \"escalate\",\n  \"state_model\": {\n    \"states\": [\n      \"ingress\",\n      \"validated"
+      },
+      "suggested_skos": {
+        "prefLabel": "0.1.0",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "escalate",
+      "entity_type": "ODRL_PROHIBITION",
+      "confidence": 0.3708,
+      "status": "candidate",
+      "source_location": {
+        "line": 123,
+        "offset": 4200,
+        "end_offset": 4208,
+        "context": "g\",\n  \"pack_id\": \"dssc-rulebook-policy-mapping-demo-0.1.0\",\n  \"version\": \"0.1.0\",\n  \"out_of_scope_behavior\": \"escalate\",\n  \"state_model\": {\n    \"states\": [\n      \"ingress\",\n      \"validated\",\n      \"classified\",\n      \"authorize"
+      },
+      "suggested_skos": {
+        "prefLabel": "escalate",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "rejected",
+      "entity_type": "DENY_REASON_CODE",
+      "confidence": 0.5399,
+      "status": "candidate",
+      "source_location": {
+        "line": 131,
+        "offset": 4348,
+        "end_offset": 4356,
+        "context": "tes\": [\n      \"ingress\",\n      \"validated\",\n      \"classified\",\n      \"authorized\",\n      \"responded\",\n      \"rejected\",\n      \"escalated\"\n    ],\n    \"initial_state\": \"ingress\",\n    \"terminal_states\": [\n      \"responded\",\n      "
+      },
+      "suggested_skos": {
+        "prefLabel": "rejected",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "escalated",
+      "entity_type": "ODRL_PROHIBITION",
+      "confidence": 0.4138,
+      "status": "candidate",
+      "source_location": {
+        "line": 132,
+        "offset": 4366,
+        "end_offset": 4375,
+        "context": "ress\",\n      \"validated\",\n      \"classified\",\n      \"authorized\",\n      \"responded\",\n      \"rejected\",\n      \"escalated\"\n    ],\n    \"initial_state\": \"ingress\",\n    \"terminal_states\": [\n      \"responded\",\n      \"rejected\",\n      \""
+      },
+      "suggested_skos": {
+        "prefLabel": "escalated",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "responded",
+      "entity_type": "ODRL_PROHIBITION",
+      "confidence": 0.4391,
+      "status": "candidate",
+      "source_location": {
+        "line": 136,
+        "offset": 4448,
+        "end_offset": 4457,
+        "context": "\",\n      \"rejected\",\n      \"escalated\"\n    ],\n    \"initial_state\": \"ingress\",\n    \"terminal_states\": [\n      \"responded\",\n      \"rejected\",\n      \"escalated\"\n    ]\n  },\n  \"intent_resource_map\": {\n    \"dssc.policy.evaluate_access."
+      },
+      "suggested_skos": {
+        "prefLabel": "responded",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "rejected",
+      "entity_type": "DENY_REASON_CODE",
+      "confidence": 0.5706,
+      "status": "candidate",
+      "source_location": {
+        "line": 137,
+        "offset": 4467,
+        "end_offset": 4475,
+        "context": ",\n      \"escalated\"\n    ],\n    \"initial_state\": \"ingress\",\n    \"terminal_states\": [\n      \"responded\",\n      \"rejected\",\n      \"escalated\"\n    ]\n  },\n  \"intent_resource_map\": {\n    \"dssc.policy.evaluate_access.v1\": [\n      \"Gove"
+      },
+      "suggested_skos": {
+        "prefLabel": "rejected",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "escalated",
+      "entity_type": "ODRL_PROHIBITION",
+      "confidence": 0.3757,
+      "status": "candidate",
+      "source_location": {
+        "line": 138,
+        "offset": 4485,
+        "end_offset": 4494,
+        "context": "\"\n    ],\n    \"initial_state\": \"ingress\",\n    \"terminal_states\": [\n      \"responded\",\n      \"rejected\",\n      \"escalated\"\n    ]\n  },\n  \"intent_resource_map\": {\n    \"dssc.policy.evaluate_access.v1\": [\n      \"GovernanceDecision\"\n   "
+      },
+      "suggested_skos": {
+        "prefLabel": "escalated",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "policy_snapshot_id",
+      "entity_type": "POLICY_SNAPSHOT",
+      "confidence": 0.8478,
+      "status": "candidate",
+      "source_location": {
+        "line": 154,
+        "offset": 4840,
+        "end_offset": 4858,
+        "context": "overnanceDecision\"\n    ]\n  },\n  \"required_fields_by_intent\": {\n    \"dssc.policy.evaluate_access.v1\": [\n      \"policy_snapshot_id\",\n      \"rulebook_clause_id\",\n      \"odrl_permission\",\n      \"odrl_prohibition\",\n      \"odrl_obligation\",\n   "
+      },
+      "suggested_skos": {
+        "prefLabel": "policy_snapshot_id",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "rulebook_clause_id",
+      "entity_type": "RULEBOOK_CLAUSE",
+      "confidence": 0.7925,
+      "status": "candidate",
+      "source_location": {
+        "line": 155,
+        "offset": 4868,
+        "end_offset": 4886,
+        "context": ",\n  \"required_fields_by_intent\": {\n    \"dssc.policy.evaluate_access.v1\": [\n      \"policy_snapshot_id\",\n      \"rulebook_clause_id\",\n      \"odrl_permission\",\n      \"odrl_prohibition\",\n      \"odrl_obligation\",\n      \"constraint_expression\"\n "
+      },
+      "suggested_skos": {
+        "prefLabel": "rulebook_clause_id",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "odrl_permission",
+      "entity_type": "ODRL_PERMISSION",
+      "confidence": 0.9173,
+      "status": "candidate",
+      "source_location": {
+        "line": 156,
+        "offset": 4896,
+        "end_offset": 4911,
+        "context": "nt\": {\n    \"dssc.policy.evaluate_access.v1\": [\n      \"policy_snapshot_id\",\n      \"rulebook_clause_id\",\n      \"odrl_permission\",\n      \"odrl_prohibition\",\n      \"odrl_obligation\",\n      \"constraint_expression\"\n    ],\n    \"dssc.policy.ev"
+      },
+      "suggested_skos": {
+        "prefLabel": "odrl_permission",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "odrl_prohibition",
+      "entity_type": "ODRL_PROHIBITION",
+      "confidence": 0.6156,
+      "status": "candidate",
+      "source_location": {
+        "line": 157,
+        "offset": 4921,
+        "end_offset": 4937,
+        "context": "valuate_access.v1\": [\n      \"policy_snapshot_id\",\n      \"rulebook_clause_id\",\n      \"odrl_permission\",\n      \"odrl_prohibition\",\n      \"odrl_obligation\",\n      \"constraint_expression\"\n    ],\n    \"dssc.policy.evaluate_usage.v1\": [\n      "
+      },
+      "suggested_skos": {
+        "prefLabel": "odrl_prohibition",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "odrl_obligation",
+      "entity_type": "ODRL_OBLIGATION",
+      "confidence": 0.6403,
+      "status": "candidate",
+      "source_location": {
+        "line": 158,
+        "offset": 4947,
+        "end_offset": 4962,
+        "context": "  \"policy_snapshot_id\",\n      \"rulebook_clause_id\",\n      \"odrl_permission\",\n      \"odrl_prohibition\",\n      \"odrl_obligation\",\n      \"constraint_expression\"\n    ],\n    \"dssc.policy.evaluate_usage.v1\": [\n      \"policy_snapshot_id\",\n   "
+      },
+      "suggested_skos": {
+        "prefLabel": "odrl_obligation",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "constraint_expression",
+      "entity_type": "CONSTRAINT_EXPRESSION",
+      "confidence": 0.6151,
+      "status": "candidate",
+      "source_location": {
+        "line": 159,
+        "offset": 4972,
+        "end_offset": 4993,
+        "context": "     \"rulebook_clause_id\",\n      \"odrl_permission\",\n      \"odrl_prohibition\",\n      \"odrl_obligation\",\n      \"constraint_expression\"\n    ],\n    \"dssc.policy.evaluate_usage.v1\": [\n      \"policy_snapshot_id\",\n      \"rulebook_clause_id\",\n      "
+      },
+      "suggested_skos": {
+        "prefLabel": "constraint_expression",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "policy_snapshot_id",
+      "entity_type": "POLICY_SNAPSHOT",
+      "confidence": 0.8924,
+      "status": "candidate",
+      "source_location": {
+        "line": 162,
+        "offset": 5048,
+        "end_offset": 5066,
+        "context": ",\n      \"odrl_obligation\",\n      \"constraint_expression\"\n    ],\n    \"dssc.policy.evaluate_usage.v1\": [\n      \"policy_snapshot_id\",\n      \"rulebook_clause_id\",\n      \"odrl_permission\",\n      \"odrl_prohibition\",\n      \"odrl_obligation\",\n   "
+      },
+      "suggested_skos": {
+        "prefLabel": "policy_snapshot_id",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "rulebook_clause_id",
+      "entity_type": "RULEBOOK_CLAUSE",
+      "confidence": 0.8951,
+      "status": "candidate",
+      "source_location": {
+        "line": 163,
+        "offset": 5076,
+        "end_offset": 5094,
+        "context": "     \"constraint_expression\"\n    ],\n    \"dssc.policy.evaluate_usage.v1\": [\n      \"policy_snapshot_id\",\n      \"rulebook_clause_id\",\n      \"odrl_permission\",\n      \"odrl_prohibition\",\n      \"odrl_obligation\",\n      \"constraint_expression\"\n "
+      },
+      "suggested_skos": {
+        "prefLabel": "rulebook_clause_id",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "odrl_permission",
+      "entity_type": "ODRL_PERMISSION",
+      "confidence": 0.8795,
+      "status": "candidate",
+      "source_location": {
+        "line": 164,
+        "offset": 5104,
+        "end_offset": 5119,
+        "context": "\n    ],\n    \"dssc.policy.evaluate_usage.v1\": [\n      \"policy_snapshot_id\",\n      \"rulebook_clause_id\",\n      \"odrl_permission\",\n      \"odrl_prohibition\",\n      \"odrl_obligation\",\n      \"constraint_expression\"\n    ],\n    \"dssc.policy.re"
+      },
+      "suggested_skos": {
+        "prefLabel": "odrl_permission",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "odrl_prohibition",
+      "entity_type": "ODRL_PROHIBITION",
+      "confidence": 0.7575,
+      "status": "candidate",
+      "source_location": {
+        "line": 165,
+        "offset": 5129,
+        "end_offset": 5145,
+        "context": "evaluate_usage.v1\": [\n      \"policy_snapshot_id\",\n      \"rulebook_clause_id\",\n      \"odrl_permission\",\n      \"odrl_prohibition\",\n      \"odrl_obligation\",\n      \"constraint_expression\"\n    ],\n    \"dssc.policy.resolve_conflict.v1\": [\n    "
+      },
+      "suggested_skos": {
+        "prefLabel": "odrl_prohibition",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "odrl_obligation",
+      "entity_type": "ODRL_OBLIGATION",
+      "confidence": 0.7553,
+      "status": "candidate",
+      "source_location": {
+        "line": 166,
+        "offset": 5155,
+        "end_offset": 5170,
+        "context": "  \"policy_snapshot_id\",\n      \"rulebook_clause_id\",\n      \"odrl_permission\",\n      \"odrl_prohibition\",\n      \"odrl_obligation\",\n      \"constraint_expression\"\n    ],\n    \"dssc.policy.resolve_conflict.v1\": [\n      \"policy_snapshot_id\",\n "
+      },
+      "suggested_skos": {
+        "prefLabel": "odrl_obligation",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "constraint_expression",
+      "entity_type": "CONSTRAINT_EXPRESSION",
+      "confidence": 0.7817,
+      "status": "candidate",
+      "source_location": {
+        "line": 167,
+        "offset": 5180,
+        "end_offset": 5201,
+        "context": "     \"rulebook_clause_id\",\n      \"odrl_permission\",\n      \"odrl_prohibition\",\n      \"odrl_obligation\",\n      \"constraint_expression\"\n    ],\n    \"dssc.policy.resolve_conflict.v1\": [\n      \"policy_snapshot_id\",\n      \"rulebook_clause_id\",\n    "
+      },
+      "suggested_skos": {
+        "prefLabel": "constraint_expression",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "policy_snapshot_id",
+      "entity_type": "POLICY_SNAPSHOT",
+      "confidence": 0.8743,
+      "status": "candidate",
+      "source_location": {
+        "line": 170,
+        "offset": 5258,
+        "end_offset": 5276,
+        "context": "      \"odrl_obligation\",\n      \"constraint_expression\"\n    ],\n    \"dssc.policy.resolve_conflict.v1\": [\n      \"policy_snapshot_id\",\n      \"rulebook_clause_id\",\n      \"odrl_permission\",\n      \"odrl_prohibition\",\n      \"odrl_obligation\",\n   "
+      },
+      "suggested_skos": {
+        "prefLabel": "policy_snapshot_id",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "rulebook_clause_id",
+      "entity_type": "RULEBOOK_CLAUSE",
+      "confidence": 0.8718,
+      "status": "candidate",
+      "source_location": {
+        "line": 171,
+        "offset": 5286,
+        "end_offset": 5304,
+        "context": "   \"constraint_expression\"\n    ],\n    \"dssc.policy.resolve_conflict.v1\": [\n      \"policy_snapshot_id\",\n      \"rulebook_clause_id\",\n      \"odrl_permission\",\n      \"odrl_prohibition\",\n      \"odrl_obligation\",\n      \"constraint_expression\"\n "
+      },
+      "suggested_skos": {
+        "prefLabel": "rulebook_clause_id",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "odrl_permission",
+      "entity_type": "ODRL_PERMISSION",
+      "confidence": 0.886,
+      "status": "candidate",
+      "source_location": {
+        "line": 172,
+        "offset": 5314,
+        "end_offset": 5329,
+        "context": "   ],\n    \"dssc.policy.resolve_conflict.v1\": [\n      \"policy_snapshot_id\",\n      \"rulebook_clause_id\",\n      \"odrl_permission\",\n      \"odrl_prohibition\",\n      \"odrl_obligation\",\n      \"constraint_expression\"\n    ]\n  },\n  \"deny_reason_"
+      },
+      "suggested_skos": {
+        "prefLabel": "odrl_permission",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "l_permission",
+      "entity_type": "ODRL_PERMISSION",
+      "confidence": 0.4541,
+      "status": "candidate",
+      "source_location": {
+        "line": 172,
+        "offset": 5317,
+        "end_offset": 5329,
+        "context": "],\n    \"dssc.policy.resolve_conflict.v1\": [\n      \"policy_snapshot_id\",\n      \"rulebook_clause_id\",\n      \"odrl_permission\",\n      \"odrl_prohibition\",\n      \"odrl_obligation\",\n      \"constraint_expression\"\n    ]\n  },\n  \"deny_reason_"
+      },
+      "suggested_skos": {
+        "prefLabel": "l_permission",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "odrl_prohibition",
+      "entity_type": "ODRL_PROHIBITION",
+      "confidence": 0.7534,
+      "status": "candidate",
+      "source_location": {
+        "line": 173,
+        "offset": 5339,
+        "end_offset": 5355,
+        "context": "solve_conflict.v1\": [\n      \"policy_snapshot_id\",\n      \"rulebook_clause_id\",\n      \"odrl_permission\",\n      \"odrl_prohibition\",\n      \"odrl_obligation\",\n      \"constraint_expression\"\n    ]\n  },\n  \"deny_reason_codes\": [\n    \"DENY_RULEBO"
+      },
+      "suggested_skos": {
+        "prefLabel": "odrl_prohibition",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "odrl_prohibition",
+      "entity_type": "ODRL_OBLIGATION",
+      "confidence": 0.5051,
+      "status": "candidate",
+      "source_location": {
+        "line": 173,
+        "offset": 5339,
+        "end_offset": 5355,
+        "context": "solve_conflict.v1\": [\n      \"policy_snapshot_id\",\n      \"rulebook_clause_id\",\n      \"odrl_permission\",\n      \"odrl_prohibition\",\n      \"odrl_obligation\",\n      \"constraint_expression\"\n    ]\n  },\n  \"deny_reason_codes\": [\n    \"DENY_RULEBO"
+      },
+      "suggested_skos": {
+        "prefLabel": "odrl_prohibition",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "odrl_obligation",
+      "entity_type": "ODRL_OBLIGATION",
+      "confidence": 0.7133,
+      "status": "candidate",
+      "source_location": {
+        "line": 174,
+        "offset": 5365,
+        "end_offset": 5380,
+        "context": "  \"policy_snapshot_id\",\n      \"rulebook_clause_id\",\n      \"odrl_permission\",\n      \"odrl_prohibition\",\n      \"odrl_obligation\",\n      \"constraint_expression\"\n    ]\n  },\n  \"deny_reason_codes\": [\n    \"DENY_RULEBOOK_PROHIBITION\",\n    \"DEN"
+      },
+      "suggested_skos": {
+        "prefLabel": "odrl_obligation",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "constraint_expression",
+      "entity_type": "CONSTRAINT_EXPRESSION",
+      "confidence": 0.8082,
+      "status": "candidate",
+      "source_location": {
+        "line": 175,
+        "offset": 5390,
+        "end_offset": 5411,
+        "context": "     \"rulebook_clause_id\",\n      \"odrl_permission\",\n      \"odrl_prohibition\",\n      \"odrl_obligation\",\n      \"constraint_expression\"\n    ]\n  },\n  \"deny_reason_codes\": [\n    \"DENY_RULEBOOK_PROHIBITION\",\n    \"DENY_POLICY_CONFLICT_DENY_WINS\",\n "
+      },
+      "suggested_skos": {
+        "prefLabel": "constraint_expression",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "DENY_RULEBOOK_PROHIBITION",
+      "entity_type": "ODRL_PROHIBITION",
+      "confidence": 0.5814,
+      "status": "candidate",
+      "source_location": {
+        "line": 179,
+        "offset": 5454,
+        "end_offset": 5479,
+        "context": "prohibition\",\n      \"odrl_obligation\",\n      \"constraint_expression\"\n    ]\n  },\n  \"deny_reason_codes\": [\n    \"DENY_RULEBOOK_PROHIBITION\",\n    \"DENY_POLICY_CONFLICT_DENY_WINS\",\n    \"DENY_POLICY_SNAPSHOT_UNBOUND\",\n    \"DENY_CONSTRAINT_UNMAPPED\",\n "
+      },
+      "suggested_skos": {
+        "prefLabel": "DENY_RULEBOOK_PROHIBITION",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "DENY_POLICY_CONFLICT_DENY_WINS",
+      "entity_type": "DENY_REASON_CODE",
+      "confidence": 0.4321,
+      "status": "candidate",
+      "source_location": {
+        "line": 180,
+        "offset": 5487,
+        "end_offset": 5517,
+        "context": "ion\",\n      \"constraint_expression\"\n    ]\n  },\n  \"deny_reason_codes\": [\n    \"DENY_RULEBOOK_PROHIBITION\",\n    \"DENY_POLICY_CONFLICT_DENY_WINS\",\n    \"DENY_POLICY_SNAPSHOT_UNBOUND\",\n    \"DENY_CONSTRAINT_UNMAPPED\",\n    \"DENY_OBLIGATION_UNSATISFIED\",\n    "
+      },
+      "suggested_skos": {
+        "prefLabel": "DENY_POLICY_CONFLICT_DENY_WINS",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "DENY_OBLIGATION_UNSATISFIED",
+      "entity_type": "DENY_REASON_CODE",
+      "confidence": 0.4743,
+      "status": "candidate",
+      "source_location": {
+        "line": 183,
+        "offset": 5593,
+        "end_offset": 5620,
+        "context": "   \"DENY_POLICY_CONFLICT_DENY_WINS\",\n    \"DENY_POLICY_SNAPSHOT_UNBOUND\",\n    \"DENY_CONSTRAINT_UNMAPPED\",\n    \"DENY_OBLIGATION_UNSATISFIED\",\n    \"PSC_BUNDLE_COMMIT_MISMATCH\"\n  ]\n}\n\n\n### FILE: intent-mappings.json\n{\n  \"schema_version\": \"1.0\",\n  \"dom"
+      },
+      "suggested_skos": {
+        "prefLabel": "DENY_OBLIGATION_UNSATISFIED",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "GovernanceSu",
+      "entity_type": "JURISDICTION",
+      "confidence": 0.5814,
+      "status": "candidate",
+      "source_location": {
+        "line": 195,
+        "offset": 5817,
+        "end_offset": 5829,
+        "context": "version\": \"1.0\",\n  \"domain\": \"dssc-rulebook-policy-mapping\",\n  \"mappings\": [\n    {\n      \"concept_uri\": \"dssc:GovernanceSurface\",\n      \"intent_class\": \"dssc.policy.evaluate_access.v1\",\n      \"confidence_floor\": 0.76\n    },\n    {\n  "
+      },
+      "suggested_skos": {
+        "prefLabel": "GovernanceSu",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "GovernanceSurface",
+      "entity_type": "JURISDICTION",
+      "confidence": 0.3537,
+      "status": "candidate",
+      "source_location": {
+        "line": 195,
+        "offset": 5817,
+        "end_offset": 5834,
+        "context": "version\": \"1.0\",\n  \"domain\": \"dssc-rulebook-policy-mapping\",\n  \"mappings\": [\n    {\n      \"concept_uri\": \"dssc:GovernanceSurface\",\n      \"intent_class\": \"dssc.policy.evaluate_access.v1\",\n      \"confidence_floor\": 0.76\n    },\n    {\n      \""
+      },
+      "suggested_skos": {
+        "prefLabel": "GovernanceSurface",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "intent_class",
+      "entity_type": "INTENT_CLASS",
+      "confidence": 0.7392,
+      "status": "candidate",
+      "source_location": {
+        "line": 196,
+        "offset": 5844,
+        "end_offset": 5856,
+        "context": ": \"dssc-rulebook-policy-mapping\",\n  \"mappings\": [\n    {\n      \"concept_uri\": \"dssc:GovernanceSurface\",\n      \"intent_class\": \"dssc.policy.evaluate_access.v1\",\n      \"confidence_floor\": 0.76\n    },\n    {\n      \"concept_uri\": \"dssc:Go"
+      },
+      "suggested_skos": {
+        "prefLabel": "intent_class",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "evaluate_access.v1",
+      "entity_type": "POLICY_SNAPSHOT",
+      "confidence": 0.5994,
+      "status": "candidate",
+      "source_location": {
+        "line": 196,
+        "offset": 5872,
+        "end_offset": 5890,
+        "context": "ing\",\n  \"mappings\": [\n    {\n      \"concept_uri\": \"dssc:GovernanceSurface\",\n      \"intent_class\": \"dssc.policy.evaluate_access.v1\",\n      \"confidence_floor\": 0.76\n    },\n    {\n      \"concept_uri\": \"dssc:GovernanceSurface\",\n      \"intent_cl"
+      },
+      "suggested_skos": {
+        "prefLabel": "evaluate_access.v1",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "intent_class",
+      "entity_type": "INTENT_CLASS",
+      "confidence": 0.7523,
+      "status": "candidate",
+      "source_location": {
+        "line": 201,
+        "offset": 5991,
+        "end_offset": 6003,
+        "context": "access.v1\",\n      \"confidence_floor\": 0.76\n    },\n    {\n      \"concept_uri\": \"dssc:GovernanceSurface\",\n      \"intent_class\": \"dssc.policy.evaluate_usage.v1\",\n      \"confidence_floor\": 0.76\n    },\n    {\n      \"concept_uri\": \"dssc:Gov"
+      },
+      "suggested_skos": {
+        "prefLabel": "intent_class",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "evaluate_usage.v1",
+      "entity_type": "POLICY_SNAPSHOT",
+      "confidence": 0.5795,
+      "status": "candidate",
+      "source_location": {
+        "line": 201,
+        "offset": 6019,
+        "end_offset": 6036,
+        "context": "e_floor\": 0.76\n    },\n    {\n      \"concept_uri\": \"dssc:GovernanceSurface\",\n      \"intent_class\": \"dssc.policy.evaluate_usage.v1\",\n      \"confidence_floor\": 0.76\n    },\n    {\n      \"concept_uri\": \"dssc:GovernanceSurface\",\n      \"intent_cl"
+      },
+      "suggested_skos": {
+        "prefLabel": "evaluate_usage.v1",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "intent_class",
+      "entity_type": "INTENT_CLASS",
+      "confidence": 0.7399,
+      "status": "candidate",
+      "source_location": {
+        "line": 206,
+        "offset": 6137,
+        "end_offset": 6149,
+        "context": "_usage.v1\",\n      \"confidence_floor\": 0.76\n    },\n    {\n      \"concept_uri\": \"dssc:GovernanceSurface\",\n      \"intent_class\": \"dssc.policy.resolve_conflict.v1\",\n      \"confidence_floor\": 0.76\n    }\n  ]\n}\n\n\n### FILE: thesaurus-local.j"
+      },
+      "suggested_skos": {
+        "prefLabel": "intent_class",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "resolve_conflict.v1",
+      "entity_type": "POLICY_SNAPSHOT",
+      "confidence": 0.641,
+      "status": "candidate",
+      "source_location": {
+        "line": 206,
+        "offset": 6165,
+        "end_offset": 6184,
+        "context": "e_floor\": 0.76\n    },\n    {\n      \"concept_uri\": \"dssc:GovernanceSurface\",\n      \"intent_class\": \"dssc.policy.resolve_conflict.v1\",\n      \"confidence_floor\": 0.76\n    }\n  ]\n}\n\n\n### FILE: thesaurus-local.json\n{\n  \"schema_version\": \"1.0\",\n  "
+      },
+      "suggested_skos": {
+        "prefLabel": "resolve_conflict.v1",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "v1",
+      "entity_type": "POLICY_SNAPSHOT",
+      "confidence": 0.3511,
+      "status": "candidate",
+      "source_location": {
+        "line": 206,
+        "offset": 6182,
+        "end_offset": 6184,
+        "context": "  },\n    {\n      \"concept_uri\": \"dssc:GovernanceSurface\",\n      \"intent_class\": \"dssc.policy.resolve_conflict.v1\",\n      \"confidence_floor\": 0.76\n    }\n  ]\n}\n\n\n### FILE: thesaurus-local.json\n{\n  \"schema_version\": \"1.0\",\n  "
+      },
+      "suggested_skos": {
+        "prefLabel": "v1",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "v1",
+      "entity_type": "POLICY_SNAPSHOT",
+      "confidence": 0.5111,
+      "status": "candidate",
+      "source_location": {
+        "line": 220,
+        "offset": 6460,
+        "end_offset": 6462,
+        "context": "ed\": \"2026-04-14\",\n  \"concepts\": [\n    {\n      \"concept_id\": \"dssc-rulebook-policy-mapping.rulebook.clause.id.v1\",\n      \"preferred_term\": \"rulebook_clause_id\",\n      \"synonyms\": [],\n      \"register_variants\": {},\n      \"d"
+      },
+      "suggested_skos": {
+        "prefLabel": "v1",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "rulebook_clause_id",
+      "entity_type": "RULEBOOK_CLAUSE",
+      "confidence": 0.6306,
+      "status": "candidate",
+      "source_location": {
+        "line": 221,
+        "offset": 6490,
+        "end_offset": 6508,
+        "context": "\": [\n    {\n      \"concept_id\": \"dssc-rulebook-policy-mapping.rulebook.clause.id.v1\",\n      \"preferred_term\": \"rulebook_clause_id\",\n      \"synonyms\": [],\n      \"register_variants\": {},\n      \"domain_vocabulary\": {},\n      \"translations\": {"
+      },
+      "suggested_skos": {
+        "prefLabel": "rulebook_clause_id",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "Governan",
+      "entity_type": "JURISDICTION",
+      "confidence": 0.9115,
+      "status": "candidate",
+      "source_location": {
+        "line": 226,
+        "offset": 6639,
+        "end_offset": 6647,
+        "context": "[],\n      \"register_variants\": {},\n      \"domain_vocabulary\": {},\n      \"translations\": {},\n      \"broader\": \"GovernanceSurface\",\n      \"narrower\": [],\n      \"source_refs\": [\n        \"dssc-canonical-source-catalog\"\n      ],\n    "
+      },
+      "suggested_skos": {
+        "prefLabel": "Governan",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "odrl_permission",
+      "entity_type": "ODRL_PERMISSION",
+      "confidence": 0.7187,
+      "status": "candidate",
+      "source_location": {
+        "line": 235,
+        "offset": 6891,
+        "end_offset": 6906,
+        "context": "\n    },\n    {\n      \"concept_id\": \"dssc-rulebook-policy-mapping.odrl.permission.v1\",\n      \"preferred_term\": \"odrl_permission\",\n      \"synonyms\": [],\n      \"register_variants\": {},\n      \"domain_vocabulary\": {},\n      \"translations\": {"
+      },
+      "suggested_skos": {
+        "prefLabel": "odrl_permission",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "GovernanceSurface",
+      "entity_type": "ODRL_PERMISSION",
+      "confidence": 0.5081,
+      "status": "candidate",
+      "source_location": {
+        "line": 240,
+        "offset": 7037,
+        "end_offset": 7054,
+        "context": "[],\n      \"register_variants\": {},\n      \"domain_vocabulary\": {},\n      \"translations\": {},\n      \"broader\": \"GovernanceSurface\",\n      \"narrower\": [],\n      \"source_refs\": [\n        \"dssc-canonical-source-catalog\"\n      ],\n      \"ner_pr"
+      },
+      "suggested_skos": {
+        "prefLabel": "GovernanceSurface",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "prohibition",
+      "entity_type": "ODRL_PROHIBITION",
+      "confidence": 0.4891,
+      "status": "candidate",
+      "source_location": {
+        "line": 248,
+        "offset": 7248,
+        "end_offset": 7259,
+        "context": "og\"\n      ],\n      \"ner_provenance\": null\n    },\n    {\n      \"concept_id\": \"dssc-rulebook-policy-mapping.odrl.prohibition.v1\",\n      \"preferred_term\": \"odrl_prohibition\",\n      \"synonyms\": [],\n      \"register_variants\": {},\n      \""
+      },
+      "suggested_skos": {
+        "prefLabel": "prohibition",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "v1",
+      "entity_type": "POLICY_SNAPSHOT",
+      "confidence": 0.3761,
+      "status": "candidate",
+      "source_location": {
+        "line": 248,
+        "offset": 7260,
+        "end_offset": 7262,
+        "context": "\n      \"ner_provenance\": null\n    },\n    {\n      \"concept_id\": \"dssc-rulebook-policy-mapping.odrl.prohibition.v1\",\n      \"preferred_term\": \"odrl_prohibition\",\n      \"synonyms\": [],\n      \"register_variants\": {},\n      \"dom"
+      },
+      "suggested_skos": {
+        "prefLabel": "v1",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "odrl_prohibition",
+      "entity_type": "ODRL_PROHIBITION",
+      "confidence": 0.647,
+      "status": "candidate",
+      "source_location": {
+        "line": 249,
+        "offset": 7290,
+        "end_offset": 7306,
+        "context": "    },\n    {\n      \"concept_id\": \"dssc-rulebook-policy-mapping.odrl.prohibition.v1\",\n      \"preferred_term\": \"odrl_prohibition\",\n      \"synonyms\": [],\n      \"register_variants\": {},\n      \"domain_vocabulary\": {},\n      \"translations\": {"
+      },
+      "suggested_skos": {
+        "prefLabel": "odrl_prohibition",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "narrower",
+      "entity_type": "IDENTIFIER",
+      "confidence": 0.4028,
+      "status": "candidate",
+      "source_location": {
+        "line": 255,
+        "offset": 7464,
+        "end_offset": 7472,
+        "context": "s\": {},\n      \"domain_vocabulary\": {},\n      \"translations\": {},\n      \"broader\": \"GovernanceSurface\",\n      \"narrower\": [],\n      \"source_refs\": [\n        \"dssc-canonical-source-catalog\"\n      ],\n      \"ner_provenance\": null\n  "
+      },
+      "suggested_skos": {
+        "prefLabel": "narrower",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "obligation",
+      "entity_type": "ODRL_PROHIBITION",
+      "confidence": 0.3901,
+      "status": "candidate",
+      "source_location": {
+        "line": 262,
+        "offset": 7648,
+        "end_offset": 7658,
+        "context": "og\"\n      ],\n      \"ner_provenance\": null\n    },\n    {\n      \"concept_id\": \"dssc-rulebook-policy-mapping.odrl.obligation.v1\",\n      \"preferred_term\": \"odrl_obligation\",\n      \"synonyms\": [],\n      \"register_variants\": {},\n      \"d"
+      },
+      "suggested_skos": {
+        "prefLabel": "obligation",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "odrl_obligation",
+      "entity_type": "ODRL_OBLIGATION",
+      "confidence": 0.7969,
+      "status": "candidate",
+      "source_location": {
+        "line": 263,
+        "offset": 7689,
+        "end_offset": 7704,
+        "context": "\n    },\n    {\n      \"concept_id\": \"dssc-rulebook-policy-mapping.odrl.obligation.v1\",\n      \"preferred_term\": \"odrl_obligation\",\n      \"synonyms\": [],\n      \"register_variants\": {},\n      \"domain_vocabulary\": {},\n      \"translations\": {"
+      },
+      "suggested_skos": {
+        "prefLabel": "odrl_obligation",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "narrower",
+      "entity_type": "IDENTIFIER",
+      "confidence": 0.4044,
+      "status": "candidate",
+      "source_location": {
+        "line": 269,
+        "offset": 7862,
+        "end_offset": 7870,
+        "context": "s\": {},\n      \"domain_vocabulary\": {},\n      \"translations\": {},\n      \"broader\": \"GovernanceSurface\",\n      \"narrower\": [],\n      \"source_refs\": [\n        \"dssc-canonical-source-catalog\"\n      ],\n      \"ner_provenance\": null\n  "
+      },
+      "suggested_skos": {
+        "prefLabel": "narrower",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "constraint_expression",
+      "entity_type": "CONSTRAINT_EXPRESSION",
+      "confidence": 0.5924,
+      "status": "candidate",
+      "source_location": {
+        "line": 277,
+        "offset": 8093,
+        "end_offset": 8114,
+        "context": ",\n    {\n      \"concept_id\": \"dssc-rulebook-policy-mapping.constraint.expression.v1\",\n      \"preferred_term\": \"constraint_expression\",\n      \"synonyms\": [],\n      \"register_variants\": {},\n      \"domain_vocabulary\": {},\n      \"translations\": {"
+      },
+      "suggested_skos": {
+        "prefLabel": "constraint_expression",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "intent_class",
+      "entity_type": "INTENT_CLASS",
+      "confidence": 0.7909,
+      "status": "candidate",
+      "source_location": {
+        "line": 291,
+        "offset": 8494,
+        "end_offset": 8506,
+        "context": "ull\n    },\n    {\n      \"concept_id\": \"dssc-rulebook-policy-mapping.intent.class.v1\",\n      \"preferred_term\": \"intent_class\",\n      \"synonyms\": [],\n      \"register_variants\": {},\n      \"domain_vocabulary\": {},\n      \"translations\": {"
+      },
+      "suggested_skos": {
+        "prefLabel": "intent_class",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "narrower",
+      "entity_type": "IDENTIFIER",
+      "confidence": 0.3503,
+      "status": "candidate",
+      "source_location": {
+        "line": 297,
+        "offset": 8664,
+        "end_offset": 8672,
+        "context": "s\": {},\n      \"domain_vocabulary\": {},\n      \"translations\": {},\n      \"broader\": \"GovernanceSurface\",\n      \"narrower\": [],\n      \"source_refs\": [\n        \"dssc-canonical-source-catalog\"\n      ],\n      \"ner_provenance\": null\n  "
+      },
+      "suggested_skos": {
+        "prefLabel": "narrower",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "v1",
+      "entity_type": "POLICY_SNAPSHOT",
+      "confidence": 0.3926,
+      "status": "candidate",
+      "source_location": {
+        "line": 304,
+        "offset": 8860,
+        "end_offset": 8862,
+        "context": "\n      \"ner_provenance\": null\n    },\n    {\n      \"concept_id\": \"dssc-rulebook-policy-mapping.deny.reason.code.v1\",\n      \"preferred_term\": \"deny_reason_code\",\n      \"synonyms\": [],\n      \"register_variants\": {},\n      \"dom"
+      },
+      "suggested_skos": {
+        "prefLabel": "v1",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "deny_reason_code",
+      "entity_type": "DENY_REASON_CODE",
+      "confidence": 0.9136,
+      "status": "candidate",
+      "source_location": {
+        "line": 305,
+        "offset": 8890,
+        "end_offset": 8906,
+        "context": "    },\n    {\n      \"concept_id\": \"dssc-rulebook-policy-mapping.deny.reason.code.v1\",\n      \"preferred_term\": \"deny_reason_code\",\n      \"synonyms\": [],\n      \"register_variants\": {},\n      \"domain_vocabulary\": {},\n      \"translations\": {"
+      },
+      "suggested_skos": {
+        "prefLabel": "deny_reason_code",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "v1",
+      "entity_type": "POLICY_SNAPSHOT",
+      "confidence": 0.3616,
+      "status": "candidate",
+      "source_location": {
+        "line": 318,
+        "offset": 9260,
+        "end_offset": 9262,
+        "context": "\n      \"ner_provenance\": null\n    },\n    {\n      \"concept_id\": \"dssc-rulebook-policy-mapping.obligation.state.v1\",\n      \"preferred_term\": \"obligation_state\",\n      \"synonyms\": [],\n      \"register_variants\": {},\n      \"dom"
+      },
+      "suggested_skos": {
+        "prefLabel": "v1",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "narrower",
+      "entity_type": "IDENTIFIER",
+      "confidence": 0.3583,
+      "status": "candidate",
+      "source_location": {
+        "line": 325,
+        "offset": 9464,
+        "end_offset": 9472,
+        "context": "s\": {},\n      \"domain_vocabulary\": {},\n      \"translations\": {},\n      \"broader\": \"GovernanceSurface\",\n      \"narrower\": [],\n      \"source_refs\": [\n        \"dssc-canonical-source-catalog\"\n      ],\n      \"ner_provenance\": null\n  "
+      },
+      "suggested_skos": {
+        "prefLabel": "narrower",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "policy_snapshot_id",
+      "entity_type": "POLICY_SNAPSHOT",
+      "confidence": 0.8523,
+      "status": "candidate",
+      "source_location": {
+        "line": 333,
+        "offset": 9692,
+        "end_offset": 9710,
+        "context": "  },\n    {\n      \"concept_id\": \"dssc-rulebook-policy-mapping.policy.snapshot.id.v1\",\n      \"preferred_term\": \"policy_snapshot_id\",\n      \"synonyms\": [],\n      \"register_variants\": {},\n      \"domain_vocabulary\": {},\n      \"translations\": {"
+      },
+      "suggested_skos": {
+        "prefLabel": "policy_snapshot_id",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "intent_hint",
+      "entity_type": "INTENT_CLASS",
+      "confidence": 0.4827,
+      "status": "candidate",
+      "source_location": {
+        "line": 357,
+        "offset": 10232,
+        "end_offset": 10243,
+        "context": " \"id\": \"dssc_policy_evaluate_access_v1\",\n      \"concept_uri\": \"dssc:GovernanceSurface\",\n      \"entity_type\": \"intent_hint\",\n      \"regex\": \"(?i)\\\\bdssc\\\\.policy\\\\.evaluate_access\\\\.v1\\\\b\",\n      \"examples\": [\n        \"dssc.policy.e"
+      },
+      "suggested_skos": {
+        "prefLabel": "intent_hint",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "evaluate_access",
+      "entity_type": "POLICY_SNAPSHOT",
+      "confidence": 0.3748,
+      "status": "candidate",
+      "source_location": {
+        "line": 358,
+        "offset": 10285,
+        "end_offset": 10300,
+        "context": "pt_uri\": \"dssc:GovernanceSurface\",\n      \"entity_type\": \"intent_hint\",\n      \"regex\": \"(?i)\\\\bdssc\\\\.policy\\\\.evaluate_access\\\\.v1\\\\b\",\n      \"examples\": [\n        \"dssc.policy.evaluate_access.v1\"\n      ]\n    },\n    {\n      \"id\": \"dssc"
+      },
+      "suggested_skos": {
+        "prefLabel": "evaluate_access",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "v1",
+      "entity_type": "POLICY_SNAPSHOT",
+      "confidence": 0.4486,
+      "status": "candidate",
+      "source_location": {
+        "line": 358,
+        "offset": 10303,
+        "end_offset": 10305,
+        "context": "ernanceSurface\",\n      \"entity_type\": \"intent_hint\",\n      \"regex\": \"(?i)\\\\bdssc\\\\.policy\\\\.evaluate_access\\\\.v1\\\\b\",\n      \"examples\": [\n        \"dssc.policy.evaluate_access.v1\"\n      ]\n    },\n    {\n      \"id\": \"dssc_poli"
+      },
+      "suggested_skos": {
+        "prefLabel": "v1",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "evaluate_access",
+      "entity_type": "POLICY_SNAPSHOT",
+      "confidence": 0.5573,
+      "status": "candidate",
+      "source_location": {
+        "line": 360,
+        "offset": 10352,
+        "end_offset": 10367,
+        "context": "t\",\n      \"regex\": \"(?i)\\\\bdssc\\\\.policy\\\\.evaluate_access\\\\.v1\\\\b\",\n      \"examples\": [\n        \"dssc.policy.evaluate_access.v1\"\n      ]\n    },\n    {\n      \"id\": \"dssc_policy_evaluate_usage_v1\",\n      \"concept_uri\": \"dssc:GovernanceSu"
+      },
+      "suggested_skos": {
+        "prefLabel": "evaluate_access",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "id",
+      "entity_type": "IDENTIFIER",
+      "confidence": 0.5882,
+      "status": "candidate",
+      "source_location": {
+        "line": 364,
+        "offset": 10400,
+        "end_offset": 10402,
+        "context": "ate_access\\\\.v1\\\\b\",\n      \"examples\": [\n        \"dssc.policy.evaluate_access.v1\"\n      ]\n    },\n    {\n      \"id\": \"dssc_policy_evaluate_usage_v1\",\n      \"concept_uri\": \"dssc:GovernanceSurface\",\n      \"entity_type\": \"inten"
+      },
+      "suggested_skos": {
+        "prefLabel": "id",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "GovernanceSurface",
+      "entity_type": "JURISDICTION",
+      "confidence": 0.7389,
+      "status": "candidate",
+      "source_location": {
+        "line": 365,
+        "offset": 10465,
+        "end_offset": 10482,
+        "context": "luate_access.v1\"\n      ]\n    },\n    {\n      \"id\": \"dssc_policy_evaluate_usage_v1\",\n      \"concept_uri\": \"dssc:GovernanceSurface\",\n      \"entity_type\": \"intent_hint\",\n      \"regex\": \"(?i)\\\\bdssc\\\\.policy\\\\.evaluate_usage\\\\.v1\\\\b\",\n      \""
+      },
+      "suggested_skos": {
+        "prefLabel": "GovernanceSurface",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "intent_hint",
+      "entity_type": "INTENT_CLASS",
+      "confidence": 0.5967,
+      "status": "candidate",
+      "source_location": {
+        "line": 366,
+        "offset": 10507,
+        "end_offset": 10518,
+        "context": "  \"id\": \"dssc_policy_evaluate_usage_v1\",\n      \"concept_uri\": \"dssc:GovernanceSurface\",\n      \"entity_type\": \"intent_hint\",\n      \"regex\": \"(?i)\\\\bdssc\\\\.policy\\\\.evaluate_usage\\\\.v1\\\\b\",\n      \"examples\": [\n        \"dssc.policy.ev"
+      },
+      "suggested_skos": {
+        "prefLabel": "intent_hint",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "evaluate_usage",
+      "entity_type": "POLICY_SNAPSHOT",
+      "confidence": 0.4605,
+      "status": "candidate",
+      "source_location": {
+        "line": 367,
+        "offset": 10560,
+        "end_offset": 10574,
+        "context": "pt_uri\": \"dssc:GovernanceSurface\",\n      \"entity_type\": \"intent_hint\",\n      \"regex\": \"(?i)\\\\bdssc\\\\.policy\\\\.evaluate_usage\\\\.v1\\\\b\",\n      \"examples\": [\n        \"dssc.policy.evaluate_usage.v1\"\n      ]\n    },\n    {\n      \"id\": \"dssc_"
+      },
+      "suggested_skos": {
+        "prefLabel": "evaluate_usage",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "evaluate_usage",
+      "entity_type": "POLICY_SNAPSHOT",
+      "confidence": 0.5434,
+      "status": "candidate",
+      "source_location": {
+        "line": 369,
+        "offset": 10626,
+        "end_offset": 10640,
+        "context": "nt\",\n      \"regex\": \"(?i)\\\\bdssc\\\\.policy\\\\.evaluate_usage\\\\.v1\\\\b\",\n      \"examples\": [\n        \"dssc.policy.evaluate_usage.v1\"\n      ]\n    },\n    {\n      \"id\": \"dssc_policy_resolve_conflict_v1\",\n      \"concept_uri\": \"dssc:Governance"
+      },
+      "suggested_skos": {
+        "prefLabel": "evaluate_usage",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "id",
+      "entity_type": "IDENTIFIER",
+      "confidence": 0.6852,
+      "status": "candidate",
+      "source_location": {
+        "line": 373,
+        "offset": 10673,
+        "end_offset": 10675,
+        "context": "luate_usage\\\\.v1\\\\b\",\n      \"examples\": [\n        \"dssc.policy.evaluate_usage.v1\"\n      ]\n    },\n    {\n      \"id\": \"dssc_policy_resolve_conflict_v1\",\n      \"concept_uri\": \"dssc:GovernanceSurface\",\n      \"entity_type\": \"int"
+      },
+      "suggested_skos": {
+        "prefLabel": "id",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "GovernanceSurface",
+      "entity_type": "JURISDICTION",
+      "confidence": 0.7414,
+      "status": "candidate",
+      "source_location": {
+        "line": 374,
+        "offset": 10740,
+        "end_offset": 10757,
+        "context": "uate_usage.v1\"\n      ]\n    },\n    {\n      \"id\": \"dssc_policy_resolve_conflict_v1\",\n      \"concept_uri\": \"dssc:GovernanceSurface\",\n      \"entity_type\": \"intent_hint\",\n      \"regex\": \"(?i)\\\\bdssc\\\\.policy\\\\.resolve_conflict\\\\.v1\\\\b\",\n     "
+      },
+      "suggested_skos": {
+        "prefLabel": "GovernanceSurface",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "intent_hint",
+      "entity_type": "INTENT_CLASS",
+      "confidence": 0.3576,
+      "status": "candidate",
+      "source_location": {
+        "line": 375,
+        "offset": 10782,
+        "end_offset": 10793,
+        "context": "\"id\": \"dssc_policy_resolve_conflict_v1\",\n      \"concept_uri\": \"dssc:GovernanceSurface\",\n      \"entity_type\": \"intent_hint\",\n      \"regex\": \"(?i)\\\\bdssc\\\\.policy\\\\.resolve_conflict\\\\.v1\\\\b\",\n      \"examples\": [\n        \"dssc.policy."
+      },
+      "suggested_skos": {
+        "prefLabel": "intent_hint",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "resolve_conflict",
+      "entity_type": "POLICY_SNAPSHOT",
+      "confidence": 0.3596,
+      "status": "candidate",
+      "source_location": {
+        "line": 378,
+        "offset": 10903,
+        "end_offset": 10919,
+        "context": "\",\n      \"regex\": \"(?i)\\\\bdssc\\\\.policy\\\\.resolve_conflict\\\\.v1\\\\b\",\n      \"examples\": [\n        \"dssc.policy.resolve_conflict.v1\"\n      ]\n    }\n  ]\n}\n\n\n### FILE: source-extract/sources.json\n{\n  \"schema_version\": \"1.0\",\n  \"generated_at_"
+      },
+      "suggested_skos": {
+        "prefLabel": "resolve_conflict",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "canonical-source-1",
+      "entity_type": "IDENTIFIER",
+      "confidence": 0.9184,
+      "status": "candidate",
+      "source_location": {
+        "line": 393,
+        "offset": 11214,
+        "end_offset": 11232,
+        "context": "emo-pack\",\n  \"bundle_id\": \"dssc-rulebook-policy-mapping-source-2026-04-14\",\n  \"sources\": [\n    {\n      \"id\": \"canonical-source-1\",\n      \"title\": \"Canonical source 1\",\n      \"url\": \"https://blueprint.dssc.eu/\",\n      \"type\": \"canonical_re"
+      },
+      "suggested_skos": {
+        "prefLabel": "canonical-source-1",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "Canonical source 1",
+      "entity_type": "IDENTIFIER",
+      "confidence": 0.6997,
+      "status": "candidate",
+      "source_location": {
+        "line": 394,
+        "offset": 11251,
+        "end_offset": 11269,
+        "context": "ook-policy-mapping-source-2026-04-14\",\n  \"sources\": [\n    {\n      \"id\": \"canonical-source-1\",\n      \"title\": \"Canonical source 1\",\n      \"url\": \"https://blueprint.dssc.eu/\",\n      \"type\": \"canonical_reference\",\n      \"status\": \"referenced"
+      },
+      "suggested_skos": {
+        "prefLabel": "Canonical source 1",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "canonical-source-2",
+      "entity_type": "IDENTIFIER",
+      "confidence": 0.9126,
+      "status": "candidate",
+      "source_location": {
+        "line": 400,
+        "offset": 11407,
+        "end_offset": 11425,
+        "context": "eprint.dssc.eu/\",\n      \"type\": \"canonical_reference\",\n      \"status\": \"referenced\"\n    },\n    {\n      \"id\": \"canonical-source-2\",\n      \"title\": \"Canonical source 2\",\n      \"url\": \"https://www.w3.org/TR/odrl-model/\",\n      \"type\": \"canon"
+      },
+      "suggested_skos": {
+        "prefLabel": "canonical-source-2",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "Canonical source 2",
+      "entity_type": "IDENTIFIER",
+      "confidence": 0.6434,
+      "status": "candidate",
+      "source_location": {
+        "line": 401,
+        "offset": 11444,
+        "end_offset": 11462,
+        "context": "nical_reference\",\n      \"status\": \"referenced\"\n    },\n    {\n      \"id\": \"canonical-source-2\",\n      \"title\": \"Canonical source 2\",\n      \"url\": \"https://www.w3.org/TR/odrl-model/\",\n      \"type\": \"canonical_reference\",\n      \"status\": \"ref"
+      },
+      "suggested_skos": {
+        "prefLabel": "Canonical source 2",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "canonical_reference",
+      "entity_type": "ODRL_PROHIBITION",
+      "confidence": 0.5038,
+      "status": "candidate",
+      "source_location": {
+        "line": 403,
+        "offset": 11530,
+        "end_offset": 11549,
+        "context": "rce-2\",\n      \"title\": \"Canonical source 2\",\n      \"url\": \"https://www.w3.org/TR/odrl-model/\",\n      \"type\": \"canonical_reference\",\n      \"status\": \"referenced\"\n    },\n    {\n      \"id\": \"canonical-source-3\",\n      \"title\": \"Canonical sourc"
+      },
+      "suggested_skos": {
+        "prefLabel": "canonical_reference",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "canonical-source-3",
+      "entity_type": "IDENTIFIER",
+      "confidence": 0.9303,
+      "status": "candidate",
+      "source_location": {
+        "line": 407,
+        "offset": 11607,
+        "end_offset": 11625,
+        "context": "/TR/odrl-model/\",\n      \"type\": \"canonical_reference\",\n      \"status\": \"referenced\"\n    },\n    {\n      \"id\": \"canonical-source-3\",\n      \"title\": \"Canonical source 3\",\n      \"url\": \"https://www.w3.org/TR/odrl-vocab/\",\n      \"type\": \"canon"
+      },
+      "suggested_skos": {
+        "prefLabel": "canonical-source-3",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "Canonical source 3",
+      "entity_type": "IDENTIFIER",
+      "confidence": 0.5462,
+      "status": "candidate",
+      "source_location": {
+        "line": 408,
+        "offset": 11644,
+        "end_offset": 11662,
+        "context": "nical_reference\",\n      \"status\": \"referenced\"\n    },\n    {\n      \"id\": \"canonical-source-3\",\n      \"title\": \"Canonical source 3\",\n      \"url\": \"https://www.w3.org/TR/odrl-vocab/\",\n      \"type\": \"canonical_reference\",\n      \"status\": \"ref"
+      },
+      "suggested_skos": {
+        "prefLabel": "Canonical source 3",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "canonical_reference",
+      "entity_type": "ODRL_PROHIBITION",
+      "confidence": 0.5146,
+      "status": "candidate",
+      "source_location": {
+        "line": 410,
+        "offset": 11730,
+        "end_offset": 11749,
+        "context": "rce-3\",\n      \"title\": \"Canonical source 3\",\n      \"url\": \"https://www.w3.org/TR/odrl-vocab/\",\n      \"type\": \"canonical_reference\",\n      \"status\": \"referenced\"\n    },\n    {\n      \"id\": \"canonical-source-4\",\n      \"title\": \"Canonical sourc"
+      },
+      "suggested_skos": {
+        "prefLabel": "canonical_reference",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "canonical-source-4",
+      "entity_type": "IDENTIFIER",
+      "confidence": 0.9131,
+      "status": "candidate",
+      "source_location": {
+        "line": 414,
+        "offset": 11807,
+        "end_offset": 11825,
+        "context": "/TR/odrl-vocab/\",\n      \"type\": \"canonical_reference\",\n      \"status\": \"referenced\"\n    },\n    {\n      \"id\": \"canonical-source-4\",\n      \"title\": \"Canonical source 4\",\n      \"url\": \"https://eclipse-dataspace-protocol-base.github.io/Datasp"
+      },
+      "suggested_skos": {
+        "prefLabel": "canonical-source-4",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "Canonical source 4",
+      "entity_type": "IDENTIFIER",
+      "confidence": 0.4888,
+      "status": "candidate",
+      "source_location": {
+        "line": 415,
+        "offset": 11844,
+        "end_offset": 11862,
+        "context": "nical_reference\",\n      \"status\": \"referenced\"\n    },\n    {\n      \"id\": \"canonical-source-4\",\n      \"title\": \"Canonical source 4\",\n      \"url\": \"https://eclipse-dataspace-protocol-base.github.io/DataspaceProtocol/HEAD/\",\n      \"type\": \"ca"
+      },
+      "suggested_skos": {
+        "prefLabel": "Canonical source 4",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "canonical_reference",
+      "entity_type": "IDENTIFIER",
+      "confidence": 0.5962,
+      "status": "candidate",
+      "source_location": {
+        "line": 417,
+        "offset": 11970,
+        "end_offset": 11989,
+        "context": " 4\",\n      \"url\": \"https://eclipse-dataspace-protocol-base.github.io/DataspaceProtocol/HEAD/\",\n      \"type\": \"canonical_reference\",\n      \"status\": \"referenced\"\n    }\n  ]\n}\n\n\n### FILE: message-identifiers.json\n{\n  \"schema_version\": \"0.1\",\n"
+      },
+      "suggested_skos": {
+        "prefLabel": "canonical_reference",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "message_identifiers",
+      "entity_type": "IDENTIFIER",
+      "confidence": 0.5724,
+      "status": "candidate",
+      "source_location": {
+        "line": 430,
+        "offset": 12247,
+        "end_offset": 12266,
+        "context": "0:00Z\",\n  \"profile\": \"dssc-rulebook-policy-mapping-demo-pack\",\n  \"domain\": \"dssc-rulebook-policy-mapping\",\n  \"message_identifiers\": [],\n  \"message_types\": [],\n  \"note\": \"No ISO-style message identifiers for this DSSC governance demo pack.\""
+      },
+      "suggested_skos": {
+        "prefLabel": "message_identifiers",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "ISO-style message identifiers",
+      "entity_type": "IDENTIFIER",
+      "confidence": 0.4473,
+      "status": "candidate",
+      "source_location": {
+        "line": 432,
+        "offset": 12310,
+        "end_offset": 12339,
+        "context": "  \"domain\": \"dssc-rulebook-policy-mapping\",\n  \"message_identifiers\": [],\n  \"message_types\": [],\n  \"note\": \"No ISO-style message identifiers for this DSSC governance demo pack.\"\n}\n\n\n### FILE: extraction-summary.json\n{\n  \"schema_version\": \"0.1\",\n  \"ge"
+      },
+      "suggested_skos": {
+        "prefLabel": "ISO-style message identifiers",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "odrl-to-pact-policy-crosswalk",
+      "entity_type": "ODRL_PROHIBITION",
+      "confidence": 0.4998,
+      "status": "candidate",
+      "source_location": {
+        "line": 450,
+        "offset": 12856,
+        "end_offset": 12885,
+        "context": " \"note\": \"Stage-4 skeleton pack authored from stage-3 spec artifacts.\"\n}\n\n\n### FILE: source-extract/crosswalk/odrl-to-pact-policy-crosswalk.v1.json\n{\n  \"schema_version\": \"0.1\",\n  \"generated_at_utc\": \"2026-04-14T12:00:00Z\",\n  \"domain\": \"dssc-rulebook"
+      },
+      "suggested_skos": {
+        "prefLabel": "odrl-to-pact-policy-crosswalk",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "odrl-to-pact-policy-crosswalk",
+      "entity_type": "ODRL_PROHIBITION",
+      "confidence": 0.5421,
+      "status": "candidate",
+      "source_location": {
+        "line": 455,
+        "offset": 13029,
+        "end_offset": 13058,
+        "context": "1\",\n  \"generated_at_utc\": \"2026-04-14T12:00:00Z\",\n  \"domain\": \"dssc-rulebook-policy-mapping\",\n  \"crosswalk\": \"odrl-to-pact-policy-crosswalk.v1.json\",\n  \"mappings\": [\n    {\n      \"source_term\": \"rulebook_clause_id\",\n      \"pact_concept\": \"dssc:rulebo"
+      },
+      "suggested_skos": {
+        "prefLabel": "odrl-to-pact-policy-crosswalk",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "rulebook_clause_id",
+      "entity_type": "RULEBOOK_CLAUSE",
+      "confidence": 0.9248,
+      "status": "candidate",
+      "source_location": {
+        "line": 458,
+        "offset": 13113,
+        "end_offset": 13131,
+        "context": "mapping\",\n  \"crosswalk\": \"odrl-to-pact-policy-crosswalk.v1.json\",\n  \"mappings\": [\n    {\n      \"source_term\": \"rulebook_clause_id\",\n      \"pact_concept\": \"dssc:rulebook_clause_id\",\n      \"relation\": \"closeMatch\"\n    },\n    {\n      \"source_"
+      },
+      "suggested_skos": {
+        "prefLabel": "rulebook_clause_id",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "rulebook_clause_id",
+      "entity_type": "RULEBOOK_CLAUSE",
+      "confidence": 0.9031,
+      "status": "candidate",
+      "source_location": {
+        "line": 459,
+        "offset": 13162,
+        "end_offset": 13180,
+        "context": "sswalk.v1.json\",\n  \"mappings\": [\n    {\n      \"source_term\": \"rulebook_clause_id\",\n      \"pact_concept\": \"dssc:rulebook_clause_id\",\n      \"relation\": \"closeMatch\"\n    },\n    {\n      \"source_term\": \"odrl_permission\",\n      \"pact_concept\": \""
+      },
+      "suggested_skos": {
+        "prefLabel": "rulebook_clause_id",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "odrl_permission",
+      "entity_type": "ODRL_PERMISSION",
+      "confidence": 0.7997,
+      "status": "candidate",
+      "source_location": {
+        "line": 463,
+        "offset": 13249,
+        "end_offset": 13264,
+        "context": " \"pact_concept\": \"dssc:rulebook_clause_id\",\n      \"relation\": \"closeMatch\"\n    },\n    {\n      \"source_term\": \"odrl_permission\",\n      \"pact_concept\": \"dssc:odrl_permission\",\n      \"relation\": \"closeMatch\"\n    },\n    {\n      \"source_ter"
+      },
+      "suggested_skos": {
+        "prefLabel": "odrl_permission",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "odrl_permission",
+      "entity_type": "ODRL_PERMISSION",
+      "confidence": 0.7464,
+      "status": "candidate",
+      "source_location": {
+        "line": 464,
+        "offset": 13295,
+        "end_offset": 13310,
+        "context": "    \"relation\": \"closeMatch\"\n    },\n    {\n      \"source_term\": \"odrl_permission\",\n      \"pact_concept\": \"dssc:odrl_permission\",\n      \"relation\": \"closeMatch\"\n    },\n    {\n      \"source_term\": \"odrl_prohibition\",\n      \"pact_concept\": "
+      },
+      "suggested_skos": {
+        "prefLabel": "odrl_permission",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "odrl_prohibition",
+      "entity_type": "ODRL_OBLIGATION",
+      "confidence": 0.7631,
+      "status": "candidate",
+      "source_location": {
+        "line": 468,
+        "offset": 13379,
+        "end_offset": 13395,
+        "context": "    \"pact_concept\": \"dssc:odrl_permission\",\n      \"relation\": \"closeMatch\"\n    },\n    {\n      \"source_term\": \"odrl_prohibition\",\n      \"pact_concept\": \"dssc:odrl_prohibition\",\n      \"relation\": \"closeMatch\"\n    },\n    {\n      \"source_te"
+      },
+      "suggested_skos": {
+        "prefLabel": "odrl_prohibition",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "odrl_prohibition",
+      "entity_type": "ODRL_OBLIGATION",
+      "confidence": 0.7573,
+      "status": "candidate",
+      "source_location": {
+        "line": 469,
+        "offset": 13426,
+        "end_offset": 13442,
+        "context": "   \"relation\": \"closeMatch\"\n    },\n    {\n      \"source_term\": \"odrl_prohibition\",\n      \"pact_concept\": \"dssc:odrl_prohibition\",\n      \"relation\": \"closeMatch\"\n    },\n    {\n      \"source_term\": \"odrl_obligation\",\n      \"pact_concept\": \""
+      },
+      "suggested_skos": {
+        "prefLabel": "odrl_prohibition",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "odrl_obligation",
+      "entity_type": "ODRL_OBLIGATION",
+      "confidence": 0.7839,
+      "status": "candidate",
+      "source_location": {
+        "line": 473,
+        "offset": 13511,
+        "end_offset": 13526,
+        "context": "   \"pact_concept\": \"dssc:odrl_prohibition\",\n      \"relation\": \"closeMatch\"\n    },\n    {\n      \"source_term\": \"odrl_obligation\",\n      \"pact_concept\": \"dssc:odrl_obligation\",\n      \"relation\": \"closeMatch\"\n    },\n    {\n      \"source_ter"
+      },
+      "suggested_skos": {
+        "prefLabel": "odrl_obligation",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "pact_concept",
+      "entity_type": "INTENT_CLASS",
+      "confidence": 0.4523,
+      "status": "candidate",
+      "source_location": {
+        "line": 474,
+        "offset": 13536,
+        "end_offset": 13548,
+        "context": "odrl_prohibition\",\n      \"relation\": \"closeMatch\"\n    },\n    {\n      \"source_term\": \"odrl_obligation\",\n      \"pact_concept\": \"dssc:odrl_obligation\",\n      \"relation\": \"closeMatch\"\n    },\n    {\n      \"source_term\": \"constraint_expres"
+      },
+      "suggested_skos": {
+        "prefLabel": "pact_concept",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "dssc",
+      "entity_type": "INTENT_CLASS",
+      "confidence": 0.4506,
+      "status": "candidate",
+      "source_location": {
+        "line": 474,
+        "offset": 13552,
+        "end_offset": 13556,
+        "context": "\",\n      \"relation\": \"closeMatch\"\n    },\n    {\n      \"source_term\": \"odrl_obligation\",\n      \"pact_concept\": \"dssc:odrl_obligation\",\n      \"relation\": \"closeMatch\"\n    },\n    {\n      \"source_term\": \"constraint_expression\",\n "
+      },
+      "suggested_skos": {
+        "prefLabel": "dssc",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "odrl_obligation",
+      "entity_type": "ODRL_OBLIGATION",
+      "confidence": 0.7803,
+      "status": "candidate",
+      "source_location": {
+        "line": 474,
+        "offset": 13557,
+        "end_offset": 13572,
+        "context": "    \"relation\": \"closeMatch\"\n    },\n    {\n      \"source_term\": \"odrl_obligation\",\n      \"pact_concept\": \"dssc:odrl_obligation\",\n      \"relation\": \"closeMatch\"\n    },\n    {\n      \"source_term\": \"constraint_expression\",\n      \"pact_conce"
+      },
+      "suggested_skos": {
+        "prefLabel": "odrl_obligation",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "constraint_expression",
+      "entity_type": "CONSTRAINT_EXPRESSION",
+      "confidence": 0.4375,
+      "status": "candidate",
+      "source_location": {
+        "line": 478,
+        "offset": 13641,
+        "end_offset": 13662,
+        "context": "    \"pact_concept\": \"dssc:odrl_obligation\",\n      \"relation\": \"closeMatch\"\n    },\n    {\n      \"source_term\": \"constraint_expression\",\n      \"pact_concept\": \"dssc:constraint_expression\",\n      \"relation\": \"closeMatch\"\n    },\n    {\n      \"sour"
+      },
+      "suggested_skos": {
+        "prefLabel": "constraint_expression",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "pact_concept",
+      "entity_type": "ODRL_PROHIBITION",
+      "confidence": 0.3632,
+      "status": "candidate",
+      "source_location": {
+        "line": 479,
+        "offset": 13672,
+        "end_offset": 13684,
+        "context": "obligation\",\n      \"relation\": \"closeMatch\"\n    },\n    {\n      \"source_term\": \"constraint_expression\",\n      \"pact_concept\": \"dssc:constraint_expression\",\n      \"relation\": \"closeMatch\"\n    },\n    {\n      \"source_term\": \"intent_clas"
+      },
+      "suggested_skos": {
+        "prefLabel": "pact_concept",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "dssc",
+      "entity_type": "INTENT_CLASS",
+      "confidence": 0.4973,
+      "status": "candidate",
+      "source_location": {
+        "line": 479,
+        "offset": 13688,
+        "end_offset": 13692,
+        "context": "   \"relation\": \"closeMatch\"\n    },\n    {\n      \"source_term\": \"constraint_expression\",\n      \"pact_concept\": \"dssc:constraint_expression\",\n      \"relation\": \"closeMatch\"\n    },\n    {\n      \"source_term\": \"intent_class\",\n    "
+      },
+      "suggested_skos": {
+        "prefLabel": "dssc",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "constraint_expression",
+      "entity_type": "CONSTRAINT_EXPRESSION",
+      "confidence": 0.5381,
+      "status": "candidate",
+      "source_location": {
+        "line": 479,
+        "offset": 13693,
+        "end_offset": 13714,
+        "context": "elation\": \"closeMatch\"\n    },\n    {\n      \"source_term\": \"constraint_expression\",\n      \"pact_concept\": \"dssc:constraint_expression\",\n      \"relation\": \"closeMatch\"\n    },\n    {\n      \"source_term\": \"intent_class\",\n      \"pact_concept\": \"dss"
+      },
+      "suggested_skos": {
+        "prefLabel": "constraint_expression",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "intent_class",
+      "entity_type": "INTENT_CLASS",
+      "confidence": 0.8244,
+      "status": "candidate",
+      "source_location": {
+        "line": 483,
+        "offset": 13783,
+        "end_offset": 13795,
+        "context": "act_concept\": \"dssc:constraint_expression\",\n      \"relation\": \"closeMatch\"\n    },\n    {\n      \"source_term\": \"intent_class\",\n      \"pact_concept\": \"dssc:intent_class\",\n      \"relation\": \"closeMatch\"\n    },\n    {\n      \"source_term\":"
+      },
+      "suggested_skos": {
+        "prefLabel": "intent_class",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "pact_concept",
+      "entity_type": "ODRL_PROHIBITION",
+      "confidence": 0.3885,
+      "status": "candidate",
+      "source_location": {
+        "line": 484,
+        "offset": 13805,
+        "end_offset": 13817,
+        "context": "nstraint_expression\",\n      \"relation\": \"closeMatch\"\n    },\n    {\n      \"source_term\": \"intent_class\",\n      \"pact_concept\": \"dssc:intent_class\",\n      \"relation\": \"closeMatch\"\n    },\n    {\n      \"source_term\": \"deny_reason_code\",\n "
+      },
+      "suggested_skos": {
+        "prefLabel": "pact_concept",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "dssc",
+      "entity_type": "INTENT_CLASS",
+      "confidence": 0.5868,
+      "status": "candidate",
+      "source_location": {
+        "line": 484,
+        "offset": 13821,
+        "end_offset": 13825,
+        "context": "ion\",\n      \"relation\": \"closeMatch\"\n    },\n    {\n      \"source_term\": \"intent_class\",\n      \"pact_concept\": \"dssc:intent_class\",\n      \"relation\": \"closeMatch\"\n    },\n    {\n      \"source_term\": \"deny_reason_code\",\n      \"pa"
+      },
+      "suggested_skos": {
+        "prefLabel": "dssc",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "intent_class",
+      "entity_type": "INTENT_CLASS",
+      "confidence": 0.8087,
+      "status": "candidate",
+      "source_location": {
+        "line": 484,
+        "offset": 13826,
+        "end_offset": 13838,
+        "context": "\n      \"relation\": \"closeMatch\"\n    },\n    {\n      \"source_term\": \"intent_class\",\n      \"pact_concept\": \"dssc:intent_class\",\n      \"relation\": \"closeMatch\"\n    },\n    {\n      \"source_term\": \"deny_reason_code\",\n      \"pact_concept\": "
+      },
+      "suggested_skos": {
+        "prefLabel": "intent_class",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "deny_reason_code",
+      "entity_type": "DENY_REASON_CODE",
+      "confidence": 0.9079,
+      "status": "candidate",
+      "source_location": {
+        "line": 488,
+        "offset": 13907,
+        "end_offset": 13923,
+        "context": "\n      \"pact_concept\": \"dssc:intent_class\",\n      \"relation\": \"closeMatch\"\n    },\n    {\n      \"source_term\": \"deny_reason_code\",\n      \"pact_concept\": \"dssc:deny_reason_code\",\n      \"relation\": \"closeMatch\"\n    },\n    {\n      \"source_te"
+      },
+      "suggested_skos": {
+        "prefLabel": "deny_reason_code",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "dssc",
+      "entity_type": "INTENT_CLASS",
+      "confidence": 0.3941,
+      "status": "candidate",
+      "source_location": {
+        "line": 489,
+        "offset": 13949,
+        "end_offset": 13953,
+        "context": ",\n      \"relation\": \"closeMatch\"\n    },\n    {\n      \"source_term\": \"deny_reason_code\",\n      \"pact_concept\": \"dssc:deny_reason_code\",\n      \"relation\": \"closeMatch\"\n    },\n    {\n      \"source_term\": \"obligation_state\",\n     "
+      },
+      "suggested_skos": {
+        "prefLabel": "dssc",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "deny_reason_code",
+      "entity_type": "DENY_REASON_CODE",
+      "confidence": 0.9134,
+      "status": "candidate",
+      "source_location": {
+        "line": 489,
+        "offset": 13954,
+        "end_offset": 13970,
+        "context": "   \"relation\": \"closeMatch\"\n    },\n    {\n      \"source_term\": \"deny_reason_code\",\n      \"pact_concept\": \"dssc:deny_reason_code\",\n      \"relation\": \"closeMatch\"\n    },\n    {\n      \"source_term\": \"obligation_state\",\n      \"pact_concept\": "
+      },
+      "suggested_skos": {
+        "prefLabel": "deny_reason_code",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    }
+  ],
+  "provenance": {
+    "extraction_run_id": "dssc-rulebook-policy-mapping-gliner-docker-pass-2026-04-14",
+    "adapter": "gliner",
+    "model": "urchade/gliner_medium-v2.1",
+    "model_hash": "sha256:6c2fcfc92ecee10654d9d3151b2fca9dee740b375c4c99d928c87a9d969e1f7b",
+    "timestamp": "2026-04-14T09:23:18.393187+00:00",
+    "document_hash": "sha256:296d6d1ba99a7913367b0dda5459b55c26f2574156b32b118c6a1498490e9eac",
+    "config_hash": "sha256:50ef53e4e9bf6281273df52da09a3c75179e4040e80d2580444ecd848e12b6c4",
+    "entity_count": 136,
+    "entity_type_distribution": {
+      "ODRL_PROHIBITION": 24,
+      "INTENT_CLASS": 15,
+      "ODRL_PERMISSION": 9,
+      "RULEBOOK_CLAUSE": 7,
+      "POLICY_SNAPSHOT": 30,
+      "DENY_REASON_CODE": 10,
+      "CONSTRAINT_EXPRESSION": 7,
+      "IDENTIFIER": 20,
+      "ODRL_OBLIGATION": 9,
+      "JURISDICTION": 5
+    },
+    "processing_time_ms": 37470
+  }
+}

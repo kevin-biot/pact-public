@@ -1,0 +1,12 @@
+{
+  "schema_version": "1.0",
+  "run_id": "dssc-rulebook-policy-mapping-gliner-docker-pass-2026-04-14",
+  "review_status": "candidate",
+  "authoritative": false,
+  "source_count": 10,
+  "candidate_count": 136,
+  "notes": [
+    "This is a Docker-executed GLiNER dirty-pass extraction for demo acceleration.",
+    "No downstream ontology promotion is allowed without human candidate adjudication."
+  ]
+}

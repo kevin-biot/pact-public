@@ -1,0 +1,41 @@
+{
+  "schema_version": "1.0",
+  "tool": "batch_extract_candidates",
+  "run_id": "dssc-bilateral-challenge-receipt-gliner-docker-pass-2026-04-14",
+  "review_status": "candidate",
+  "artifact_paths": {
+    "config": "source-extract/candidates/gliner-dirty-pass-2026-04-14/config.json",
+    "corpus": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+    "raw": "source-extract/candidates/gliner-dirty-pass-2026-04-14/candidates.raw.json",
+    "candidates": "source-extract/candidates/gliner-dirty-pass-2026-04-14/candidates.json",
+    "summary": "source-extract/candidates/gliner-dirty-pass-2026-04-14/extraction-summary.json",
+    "manifest": "source-extract/candidates/gliner-dirty-pass-2026-04-14/manifest.json"
+  },
+  "stats": {
+    "source_count": 9,
+    "candidate_count": 150,
+    "processing_time_ms": 22152
+  },
+  "provenance": {
+    "run_id": "dssc-bilateral-challenge-receipt-gliner-docker-pass-2026-04-14",
+    "model_id": "urchade/gliner_medium-v2.1",
+    "model_hash": "sha256:6c2fcfc92ecee10654d9d3151b2fca9dee740b375c4c99d928c87a9d969e1f7b",
+    "docker_image": "gliner-extractor:latest",
+    "config_digest": "sha256:49de280dd98cfce34d5da62f8396b3c2df6b5c6772f8443b309d34980199f38a",
+    "source_digests": [
+      "sha256:16ca2789b41574244cc4e63b2dcc376aec67a7b9f1cfa0d794f707cbdc7a9481",
+      "sha256:71206a4c7697459907d4a6d2e80763c687a0c10d56eef0114fa4d1e0892be2a8",
+      "sha256:25404ebf19751b396c553b0b051cc2b02224557a78982ef941675829d4b9a289",
+      "sha256:2ac1fbeb146ede17884f48710cea33d96c777f67979604626d5464f90099eb4b",
+      "sha256:70e1cbeadb783dd8c22c069c006825aaeea1d5330c6e47e4f638f9ff6c93245d",
+      "sha256:de358d02d2a8f7c205e7f048b31eb4641af2f7f45567b5fc9d591af80c61fb79",
+      "sha256:cd02feff33c99d191111a03d927fa811d26ac434a10033fd1b079209f7605a3b",
+      "sha256:53d9016ef5f2fbac9edfbd3a9b2a5db11ff54ce1dacfc9a12756234d13db4600",
+      "sha256:5aa0c2cdd63069e98fb16799f917b128b5e22f0925f74833d8eab394991b8382"
+    ],
+    "corpus_digest": "sha256:4c047381b70f5c166c41832f690f296bd5d2737d5ccb306448569108e0049f68",
+    "raw_output_digest": "sha256:c73603223fae86b4d0b3e095ed293292d3dedfcf020d1fb87313eed9e71d0426",
+    "output_digest": "sha256:10426bd8a8b5e7008f60c5a11fa3fab8aefbf68b00e843270b3c4890fffefbae",
+    "created_at": "2026-04-14T09:24:13.045Z"
+  }
+}

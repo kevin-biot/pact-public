@@ -56,3 +56,13 @@ Run from repository root:
 ```bash
 node tools/run-dssc-bilateral-challenge-receipt-fixtures.mjs
 ```
+
+## Two-Pass Authoring (V1/V2)
+
+- `V1 mechanical`: canonical authored baseline for deterministic runtime and fixture behavior.
+- `V2 GLiNER candidate`: fast extraction pass for candidate entities/relations only.
+- `Review gate`: no V2 candidate is promoted without explicit human review.
+
+Candidate artifacts are stored under `source-extract/candidates/gliner-dirty-pass-2026-04-14/`.
+
+Current GLiNER Docker candidate pass: `dssc-bilateral-challenge-receipt-gliner-docker-pass-2026-04-14` (image: `gliner-extractor:latest`).

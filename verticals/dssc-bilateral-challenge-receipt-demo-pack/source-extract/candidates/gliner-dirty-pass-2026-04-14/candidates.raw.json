@@ -1,0 +1,2897 @@
+{
+  "schema_version": "1.0",
+  "extraction_run_id": "dssc-bilateral-challenge-receipt-gliner-docker-pass-2026-04-14",
+  "adapter": "gliner",
+  "model": "urchade/gliner_medium-v2.1",
+  "model_hash": "sha256:6c2fcfc92ecee10654d9d3151b2fca9dee740b375c4c99d928c87a9d969e1f7b",
+  "source_document": "corpus.txt",
+  "source_document_hash": "sha256:4c047381b70f5c166c41832f690f296bd5d2737d5ccb306448569108e0049f68",
+  "labels_used": [
+    "CHALLENGE_ID",
+    "RECEIPT_ID",
+    "JURISDICTION",
+    "PAYLOAD_HASH",
+    "POLICY_SNAPSHOT",
+    "RATIONALE_REFERENCE",
+    "CORRELATION_ID",
+    "STATUS",
+    "INTENT_CLASS",
+    "DENY_REASON_CODE"
+  ],
+  "threshold": 0.35,
+  "candidates": [
+    {
+      "surface_form": "cross-jurisdiction",
+      "entity_type": "JURISDICTION",
+      "confidence": 0.8394,
+      "status": "candidate",
+      "source_location": {
+        "line": 8,
+        "offset": 202,
+        "end_offset": 220,
+        "context": "o ontology pack for `dssc-bilateral-challenge-receipt` under Stage-4 pack authoring.\n\n## Purpose\n\nDemonstrate cross-jurisdiction challenge/receipt governance with dual policy snapshots and correlated evidence anchors.\n\n## Source Grounding"
+      },
+      "suggested_skos": {
+        "prefLabel": "cross-jurisdiction",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "dual policy snapshots",
+      "entity_type": "POLICY_SNAPSHOT",
+      "confidence": 0.9524,
+      "status": "candidate",
+      "source_location": {
+        "line": 8,
+        "offset": 255,
+        "end_offset": 276,
+        "context": "` under Stage-4 pack authoring.\n\n## Purpose\n\nDemonstrate cross-jurisdiction challenge/receipt governance with dual policy snapshots and correlated evidence anchors.\n\n## Source Grounding\n\nCanonical source references used for this pack draft a"
+      },
+      "suggested_skos": {
+        "prefLabel": "dual policy snapshots",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "Intent Surface",
+      "entity_type": "INTENT_CLASS",
+      "confidence": 0.412,
+      "status": "candidate",
+      "source_location": {
+        "line": 18,
+        "offset": 560,
+        "end_offset": 574,
+        "context": "\n- https://blueprint.dssc.eu/\n- https://eclipse-dataspace-protocol-base.github.io/DataspaceProtocol/HEAD/\n\n## Intent Surface\n\n- `dssc.governance.submit_challenge.v1`: Submit cross-jurisdiction challenge payload with origin snapshot.\n-"
+      },
+      "suggested_skos": {
+        "prefLabel": "Intent Surface",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "cross-jurisdiction",
+      "entity_type": "JURISDICTION",
+      "confidence": 0.5731,
+      "status": "candidate",
+      "source_location": {
+        "line": 20,
+        "offset": 624,
+        "end_offset": 642,
+        "context": "ol-base.github.io/DataspaceProtocol/HEAD/\n\n## Intent Surface\n\n- `dssc.governance.submit_challenge.v1`: Submit cross-jurisdiction challenge payload with origin snapshot.\n- `dssc.governance.issue_receipt.v1`: Issue correlated receipt with t"
+      },
+      "suggested_skos": {
+        "prefLabel": "cross-jurisdiction",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "challenge",
+      "entity_type": "PAYLOAD_HASH",
+      "confidence": 0.41,
+      "status": "candidate",
+      "source_location": {
+        "line": 20,
+        "offset": 643,
+        "end_offset": 652,
+        "context": "ataspaceProtocol/HEAD/\n\n## Intent Surface\n\n- `dssc.governance.submit_challenge.v1`: Submit cross-jurisdiction challenge payload with origin snapshot.\n- `dssc.governance.issue_receipt.v1`: Issue correlated receipt with target-side"
+      },
+      "suggested_skos": {
+        "prefLabel": "challenge",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "payload",
+      "entity_type": "PAYLOAD_HASH",
+      "confidence": 0.6055,
+      "status": "candidate",
+      "source_location": {
+        "line": 20,
+        "offset": 653,
+        "end_offset": 660,
+        "context": "otocol/HEAD/\n\n## Intent Surface\n\n- `dssc.governance.submit_challenge.v1`: Submit cross-jurisdiction challenge payload with origin snapshot.\n- `dssc.governance.issue_receipt.v1`: Issue correlated receipt with target-side policy "
+      },
+      "suggested_skos": {
+        "prefLabel": "payload",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "origin snapshot",
+      "entity_type": "POLICY_SNAPSHOT",
+      "confidence": 0.8584,
+      "status": "candidate",
+      "source_location": {
+        "line": 20,
+        "offset": 666,
+        "end_offset": 681,
+        "context": "\n## Intent Surface\n\n- `dssc.governance.submit_challenge.v1`: Submit cross-jurisdiction challenge payload with origin snapshot.\n- `dssc.governance.issue_receipt.v1`: Issue correlated receipt with target-side policy snapshot.\n\n## Determi"
+      },
+      "suggested_skos": {
+        "prefLabel": "origin snapshot",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "target-side policy snapshot",
+      "entity_type": "POLICY_SNAPSHOT",
+      "confidence": 0.9405,
+      "status": "candidate",
+      "source_location": {
+        "line": 21,
+        "offset": 751,
+        "end_offset": 778,
+        "context": "n challenge payload with origin snapshot.\n- `dssc.governance.issue_receipt.v1`: Issue correlated receipt with target-side policy snapshot.\n\n## Determinism Boundary\n\n- Out-of-scope behavior is `escalate`.\n- Policy/bundle binding is required for adm"
+      },
+      "suggested_skos": {
+        "prefLabel": "target-side policy snapshot",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "Policy",
+      "entity_type": "POLICY_SNAPSHOT",
+      "confidence": 0.5054,
+      "status": "candidate",
+      "source_location": {
+        "line": 26,
+        "offset": 847,
+        "end_offset": 853,
+        "context": " receipt with target-side policy snapshot.\n\n## Determinism Boundary\n\n- Out-of-scope behavior is `escalate`.\n- Policy/bundle binding is required for admitted execution paths.\n- Deny reason codes are explicit and stable for fixt"
+      },
+      "suggested_skos": {
+        "prefLabel": "Policy",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "Deny",
+      "entity_type": "DENY_REASON_CODE",
+      "confidence": 0.7137,
+      "status": "candidate",
+      "source_location": {
+        "line": 27,
+        "offset": 913,
+        "end_offset": 917,
+        "context": "y\n\n- Out-of-scope behavior is `escalate`.\n- Policy/bundle binding is required for admitted execution paths.\n- Deny reason codes are explicit and stable for fixture replay.\n\n## Included Artifacts\n\n- `README.md`\n- `pack.json`\n"
+      },
+      "suggested_skos": {
+        "prefLabel": "Deny",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "bash",
+      "entity_type": "PAYLOAD_HASH",
+      "confidence": 0.3937,
+      "status": "candidate",
+      "source_location": {
+        "line": 57,
+        "offset": 1536,
+        "end_offset": 1540,
+        "context": "mentation.\n- Fixture harness wiring is planned in Stage-5.\n\n## Fixture Harness\n\nRun from repository root:\n\n```bash\nnode tools/run-dssc-bilateral-challenge-receipt-fixtures.mjs\n```\n\n## Two-Pass Authoring (V1/V2)\n\n- `V1 mechan"
+      },
+      "suggested_skos": {
+        "prefLabel": "bash",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "dssc-bilateral-challenge-receipt-demo-0.1.0",
+      "entity_type": "CHALLENGE_ID",
+      "confidence": 0.4708,
+      "status": "candidate",
+      "source_location": {
+        "line": 73,
+        "offset": 2048,
+        "end_offset": 2091,
+        "context": "e-extract/candidates/gliner-dirty-pass-2026-04-14/`.\n\n\n### FILE: pack.json\n{\n  \"pack_schema\": \"1.0\",\n  \"id\": \"dssc-bilateral-challenge-receipt-demo-0.1.0\",\n  \"domain\": \"dssc-bilateral-challenge-receipt\",\n  \"version\": \"0.1.0\",\n  \"provider_id\": \"ontology:pact-publi"
+      },
+      "suggested_skos": {
+        "prefLabel": "dssc-bilateral-challenge-receipt-demo-0.1.0",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "dssc-bilateral-challenge-receipt",
+      "entity_type": "RECEIPT_ID",
+      "confidence": 0.6646,
+      "status": "candidate",
+      "source_location": {
+        "line": 74,
+        "offset": 2107,
+        "end_offset": 2139,
+        "context": "FILE: pack.json\n{\n  \"pack_schema\": \"1.0\",\n  \"id\": \"dssc-bilateral-challenge-receipt-demo-0.1.0\",\n  \"domain\": \"dssc-bilateral-challenge-receipt\",\n  \"version\": \"0.1.0\",\n  \"provider_id\": \"ontology:pact-public:trust\",\n  \"trust_tier\": \"Tier1\",\n  \"nbf\": \"202"
+      },
+      "suggested_skos": {
+        "prefLabel": "dssc-bilateral-challenge-receipt",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "0.1.0",
+      "entity_type": "DENY_REASON_CODE",
+      "confidence": 0.3612,
+      "status": "candidate",
+      "source_location": {
+        "line": 75,
+        "offset": 2156,
+        "end_offset": 2161,
+        "context": " \"dssc-bilateral-challenge-receipt-demo-0.1.0\",\n  \"domain\": \"dssc-bilateral-challenge-receipt\",\n  \"version\": \"0.1.0\",\n  \"provider_id\": \"ontology:pact-public:trust\",\n  \"trust_tier\": \"Tier1\",\n  \"nbf\": \"2026-04-14T00:00:00Z\",\n  "
+      },
+      "suggested_skos": {
+        "prefLabel": "0.1.0",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "Tier1",
+      "entity_type": "CHALLENGE_ID",
+      "confidence": 0.4382,
+      "status": "candidate",
+      "source_location": {
+        "line": 77,
+        "offset": 2228,
+        "end_offset": 2233,
+        "context": "ral-challenge-receipt\",\n  \"version\": \"0.1.0\",\n  \"provider_id\": \"ontology:pact-public:trust\",\n  \"trust_tier\": \"Tier1\",\n  \"nbf\": \"2026-04-14T00:00:00Z\",\n  \"exp\": \"2031-04-14T00:00:00Z\",\n  \"rev_epoch\": 1,\n  \"deny_wins\": true,\n  "
+      },
+      "suggested_skos": {
+        "prefLabel": "Tier1",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "deny_wins",
+      "entity_type": "DENY_REASON_CODE",
+      "confidence": 0.4772,
+      "status": "candidate",
+      "source_location": {
+        "line": 81,
+        "offset": 2323,
+        "end_offset": 2332,
+        "context": "\"trust_tier\": \"Tier1\",\n  \"nbf\": \"2026-04-14T00:00:00Z\",\n  \"exp\": \"2031-04-14T00:00:00Z\",\n  \"rev_epoch\": 1,\n  \"deny_wins\": true,\n  \"precedence\": [],\n  \"files\": {\n    \"context\": \"context.jsonld\",\n    \"vocab\": \"vocab.skos.jsonld\",\n "
+      },
+      "suggested_skos": {
+        "prefLabel": "deny_wins",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "thesaurus",
+      "entity_type": "RATIONALE_REFERENCE",
+      "confidence": 0.4434,
+      "status": "candidate",
+      "source_location": {
+        "line": 87,
+        "offset": 2474,
+        "end_offset": 2483,
+        "context": "files\": {\n    \"context\": \"context.jsonld\",\n    \"vocab\": \"vocab.skos.jsonld\",\n    \"shapes\": \"shapes.ttl\",\n    \"thesaurus\": \"thesaurus.jsonld\",\n    \"thesaurus_local\": \"thesaurus-local.json\",\n    \"patterns\": \"patterns.json\",\n    \"in"
+      },
+      "suggested_skos": {
+        "prefLabel": "thesaurus",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "thesaurus",
+      "entity_type": "RATIONALE_REFERENCE",
+      "confidence": 0.4804,
+      "status": "candidate",
+      "source_location": {
+        "line": 87,
+        "offset": 2487,
+        "end_offset": 2496,
+        "context": " \"context\": \"context.jsonld\",\n    \"vocab\": \"vocab.skos.jsonld\",\n    \"shapes\": \"shapes.ttl\",\n    \"thesaurus\": \"thesaurus.jsonld\",\n    \"thesaurus_local\": \"thesaurus-local.json\",\n    \"patterns\": \"patterns.json\",\n    \"intent_mappings"
+      },
+      "suggested_skos": {
+        "prefLabel": "thesaurus",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "thesaurus_local",
+      "entity_type": "RATIONALE_REFERENCE",
+      "confidence": 0.4459,
+      "status": "candidate",
+      "source_location": {
+        "line": 88,
+        "offset": 2511,
+        "end_offset": 2526,
+        "context": "nld\",\n    \"vocab\": \"vocab.skos.jsonld\",\n    \"shapes\": \"shapes.ttl\",\n    \"thesaurus\": \"thesaurus.jsonld\",\n    \"thesaurus_local\": \"thesaurus-local.json\",\n    \"patterns\": \"patterns.json\",\n    \"intent_mappings\": \"intent-mappings.json\",\n   "
+      },
+      "suggested_skos": {
+        "prefLabel": "thesaurus_local",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "thesaurus-local",
+      "entity_type": "RATIONALE_REFERENCE",
+      "confidence": 0.3512,
+      "status": "candidate",
+      "source_location": {
+        "line": 88,
+        "offset": 2530,
+        "end_offset": 2545,
+        "context": "\"vocab.skos.jsonld\",\n    \"shapes\": \"shapes.ttl\",\n    \"thesaurus\": \"thesaurus.jsonld\",\n    \"thesaurus_local\": \"thesaurus-local.json\",\n    \"patterns\": \"patterns.json\",\n    \"intent_mappings\": \"intent-mappings.json\",\n    \"convergence\": \"co"
+      },
+      "suggested_skos": {
+        "prefLabel": "thesaurus-local",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "convergence",
+      "entity_type": "RATIONALE_REFERENCE",
+      "confidence": 0.4715,
+      "status": "candidate",
+      "source_location": {
+        "line": 91,
+        "offset": 2638,
+        "end_offset": 2649,
+        "context": " \"thesaurus-local.json\",\n    \"patterns\": \"patterns.json\",\n    \"intent_mappings\": \"intent-mappings.json\",\n    \"convergence\": \"convergence.json\",\n    \"decision_space\": \"decision-space.json\",\n    \"message_identifiers\": \"message-identi"
+      },
+      "suggested_skos": {
+        "prefLabel": "convergence",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "convergence",
+      "entity_type": "RATIONALE_REFERENCE",
+      "confidence": 0.4339,
+      "status": "candidate",
+      "source_location": {
+        "line": 91,
+        "offset": 2653,
+        "end_offset": 2664,
+        "context": "al.json\",\n    \"patterns\": \"patterns.json\",\n    \"intent_mappings\": \"intent-mappings.json\",\n    \"convergence\": \"convergence.json\",\n    \"decision_space\": \"decision-space.json\",\n    \"message_identifiers\": \"message-identifiers.json\",\n  "
+      },
+      "suggested_skos": {
+        "prefLabel": "convergence",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "dssc-bilateral-challenge-receipt-demo",
+      "entity_type": "CHALLENGE_ID",
+      "confidence": 0.4998,
+      "status": "candidate",
+      "source_location": {
+        "line": 102,
+        "offset": 3327,
+        "end_offset": 3364,
+        "context": "t/candidates/gliner-dirty-pass-2026-04-14/extraction-summary.json\"\n  },\n  \"dc\": {\n    \"identifier\": \"ontology:dssc-bilateral-challenge-receipt-demo:v0.1.0\",\n    \"title\": \"dssc-bilateral-challenge-receipt demo pack\",\n    \"creator\": \"PACT Public Working Draft"
+      },
+      "suggested_skos": {
+        "prefLabel": "dssc-bilateral-challenge-receipt-demo",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "v0.1.0",
+      "entity_type": "CHALLENGE_ID",
+      "confidence": 0.3717,
+      "status": "candidate",
+      "source_location": {
+        "line": 102,
+        "offset": 3365,
+        "end_offset": 3371,
+        "context": "-14/extraction-summary.json\"\n  },\n  \"dc\": {\n    \"identifier\": \"ontology:dssc-bilateral-challenge-receipt-demo:v0.1.0\",\n    \"title\": \"dssc-bilateral-challenge-receipt demo pack\",\n    \"creator\": \"PACT Public Working Draft\",\n    "
+      },
+      "suggested_skos": {
+        "prefLabel": "v0.1.0",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "2026-04-14",
+      "entity_type": "STATUS",
+      "confidence": 0.3746,
+      "status": "candidate",
+      "source_location": {
+        "line": 105,
+        "offset": 3492,
+        "end_offset": 3502,
+        "context": "le\": \"dssc-bilateral-challenge-receipt demo pack\",\n    \"creator\": \"PACT Public Working Draft\",\n    \"issued\": \"2026-04-14\",\n    \"rights\": \"Apache-2.0\",\n    \"description\": \"Demonstrate cross-jurisdiction challenge/receipt governance"
+      },
+      "suggested_skos": {
+        "prefLabel": "2026-04-14",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "cross-jurisdiction",
+      "entity_type": "JURISDICTION",
+      "confidence": 0.7636,
+      "status": "candidate",
+      "source_location": {
+        "line": 107,
+        "offset": 3565,
+        "end_offset": 3583,
+        "context": "ublic Working Draft\",\n    \"issued\": \"2026-04-14\",\n    \"rights\": \"Apache-2.0\",\n    \"description\": \"Demonstrate cross-jurisdiction challenge/receipt governance with dual policy snapshots and correlated evidence anchors.\"\n  }\n}\n\n\n### FILE: d"
+      },
+      "suggested_skos": {
+        "prefLabel": "cross-jurisdiction",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "dual policy snapshots",
+      "entity_type": "POLICY_SNAPSHOT",
+      "confidence": 0.9519,
+      "status": "candidate",
+      "source_location": {
+        "line": 107,
+        "offset": 3618,
+        "end_offset": 3639,
+        "context": " \"rights\": \"Apache-2.0\",\n    \"description\": \"Demonstrate cross-jurisdiction challenge/receipt governance with dual policy snapshots and correlated evidence anchors.\"\n  }\n}\n\n\n### FILE: decision-space.json\n{\n  \"schema_version\": \"1.0\",\n  \"domai"
+      },
+      "suggested_skos": {
+        "prefLabel": "dual policy snapshots",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "dssc-bilateral-challenge-receipt-demo-0.1.0",
+      "entity_type": "POLICY_SNAPSHOT",
+      "confidence": 0.4502,
+      "status": "candidate",
+      "source_location": {
+        "line": 116,
+        "offset": 3803,
+        "end_offset": 3846,
+        "context": "ecision-space.json\n{\n  \"schema_version\": \"1.0\",\n  \"domain\": \"dssc-bilateral-challenge-receipt\",\n  \"pack_id\": \"dssc-bilateral-challenge-receipt-demo-0.1.0\",\n  \"version\": \"0.1.0\",\n  \"out_of_scope_behavior\": \"escalate\",\n  \"state_model\": {\n    \"states\": [\n      \"ingr"
+      },
+      "suggested_skos": {
+        "prefLabel": "dssc-bilateral-challenge-receipt-demo-0.1.0",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "ingress",
+      "entity_type": "INTENT_CLASS",
+      "confidence": 0.357,
+      "status": "candidate",
+      "source_location": {
+        "line": 121,
+        "offset": 3952,
+        "end_offset": 3959,
+        "context": ".1.0\",\n  \"version\": \"0.1.0\",\n  \"out_of_scope_behavior\": \"escalate\",\n  \"state_model\": {\n    \"states\": [\n      \"ingress\",\n      \"validated\",\n      \"classified\",\n      \"authorized\",\n      \"responded\",\n      \"rejected\",\n      \"esca"
+      },
+      "suggested_skos": {
+        "prefLabel": "ingress",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "responded",
+      "entity_type": "RATIONALE_REFERENCE",
+      "confidence": 0.3691,
+      "status": "candidate",
+      "source_location": {
+        "line": 125,
+        "offset": 4028,
+        "end_offset": 4037,
+        "context": "_model\": {\n    \"states\": [\n      \"ingress\",\n      \"validated\",\n      \"classified\",\n      \"authorized\",\n      \"responded\",\n      \"rejected\",\n      \"escalated\"\n    ],\n    \"initial_state\": \"ingress\",\n    \"terminal_states\": [\n      \""
+      },
+      "suggested_skos": {
+        "prefLabel": "responded",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "rejected",
+      "entity_type": "STATUS",
+      "confidence": 0.6839,
+      "status": "candidate",
+      "source_location": {
+        "line": 126,
+        "offset": 4047,
+        "end_offset": 4055,
+        "context": "tes\": [\n      \"ingress\",\n      \"validated\",\n      \"classified\",\n      \"authorized\",\n      \"responded\",\n      \"rejected\",\n      \"escalated\"\n    ],\n    \"initial_state\": \"ingress\",\n    \"terminal_states\": [\n      \"responded\",\n      "
+      },
+      "suggested_skos": {
+        "prefLabel": "rejected",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "escalated",
+      "entity_type": "STATUS",
+      "confidence": 0.6603,
+      "status": "candidate",
+      "source_location": {
+        "line": 127,
+        "offset": 4065,
+        "end_offset": 4074,
+        "context": "ress\",\n      \"validated\",\n      \"classified\",\n      \"authorized\",\n      \"responded\",\n      \"rejected\",\n      \"escalated\"\n    ],\n    \"initial_state\": \"ingress\",\n    \"terminal_states\": [\n      \"responded\",\n      \"rejected\",\n      \""
+      },
+      "suggested_skos": {
+        "prefLabel": "escalated",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "responded",
+      "entity_type": "RATIONALE_REFERENCE",
+      "confidence": 0.384,
+      "status": "candidate",
+      "source_location": {
+        "line": 131,
+        "offset": 4147,
+        "end_offset": 4156,
+        "context": "\",\n      \"rejected\",\n      \"escalated\"\n    ],\n    \"initial_state\": \"ingress\",\n    \"terminal_states\": [\n      \"responded\",\n      \"rejected\",\n      \"escalated\"\n    ]\n  },\n  \"intent_resource_map\": {\n    \"dssc.governance.submit_chall"
+      },
+      "suggested_skos": {
+        "prefLabel": "responded",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "rejected",
+      "entity_type": "STATUS",
+      "confidence": 0.6419,
+      "status": "candidate",
+      "source_location": {
+        "line": 132,
+        "offset": 4166,
+        "end_offset": 4174,
+        "context": ",\n      \"escalated\"\n    ],\n    \"initial_state\": \"ingress\",\n    \"terminal_states\": [\n      \"responded\",\n      \"rejected\",\n      \"escalated\"\n    ]\n  },\n  \"intent_resource_map\": {\n    \"dssc.governance.submit_challenge.v1\": [\n      "
+      },
+      "suggested_skos": {
+        "prefLabel": "rejected",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "escalated",
+      "entity_type": "STATUS",
+      "confidence": 0.5955,
+      "status": "candidate",
+      "source_location": {
+        "line": 133,
+        "offset": 4184,
+        "end_offset": 4193,
+        "context": "\"\n    ],\n    \"initial_state\": \"ingress\",\n    \"terminal_states\": [\n      \"responded\",\n      \"rejected\",\n      \"escalated\"\n    ]\n  },\n  \"intent_resource_map\": {\n    \"dssc.governance.submit_challenge.v1\": [\n      \"GovernanceDecision"
+      },
+      "suggested_skos": {
+        "prefLabel": "escalated",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "GovernanceDecision",
+      "entity_type": "INTENT_CLASS",
+      "confidence": 0.4345,
+      "status": "candidate",
+      "source_location": {
+        "line": 138,
+        "offset": 4285,
+        "end_offset": 4303,
+        "context": ",\n      \"escalated\"\n    ]\n  },\n  \"intent_resource_map\": {\n    \"dssc.governance.submit_challenge.v1\": [\n      \"GovernanceDecision\"\n    ],\n    \"dssc.governance.issue_receipt.v1\": [\n      \"GovernanceDecision\"\n    ]\n  },\n  \"required_fields_by"
+      },
+      "suggested_skos": {
+        "prefLabel": "GovernanceDecision",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "GovernanceDecision",
+      "entity_type": "INTENT_CLASS",
+      "confidence": 0.3782,
+      "status": "candidate",
+      "source_location": {
+        "line": 141,
+        "offset": 4361,
+        "end_offset": 4379,
+        "context": "ce.submit_challenge.v1\": [\n      \"GovernanceDecision\"\n    ],\n    \"dssc.governance.issue_receipt.v1\": [\n      \"GovernanceDecision\"\n    ]\n  },\n  \"required_fields_by_intent\": {\n    \"dssc.governance.submit_challenge.v1\": [\n      \"policy_snaps"
+      },
+      "suggested_skos": {
+        "prefLabel": "GovernanceDecision",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "policy_snapshot_id",
+      "entity_type": "POLICY_SNAPSHOT",
+      "confidence": 0.8167,
+      "status": "candidate",
+      "source_location": {
+        "line": 146,
+        "offset": 4477,
+        "end_offset": 4495,
+        "context": "anceDecision\"\n    ]\n  },\n  \"required_fields_by_intent\": {\n    \"dssc.governance.submit_challenge.v1\": [\n      \"policy_snapshot_id\",\n      \"challenge_id\",\n      \"origin_jurisdiction\",\n      \"target_jurisdiction\",\n      \"payload_hash\",\n     "
+      },
+      "suggested_skos": {
+        "prefLabel": "policy_snapshot_id",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "challenge_id",
+      "entity_type": "CHALLENGE_ID",
+      "confidence": 0.8596,
+      "status": "candidate",
+      "source_location": {
+        "line": 147,
+        "offset": 4505,
+        "end_offset": 4517,
+        "context": "required_fields_by_intent\": {\n    \"dssc.governance.submit_challenge.v1\": [\n      \"policy_snapshot_id\",\n      \"challenge_id\",\n      \"origin_jurisdiction\",\n      \"target_jurisdiction\",\n      \"payload_hash\",\n      \"policy_snapshot_orig"
+      },
+      "suggested_skos": {
+        "prefLabel": "challenge_id",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "origin_jurisdiction",
+      "entity_type": "JURISDICTION",
+      "confidence": 0.8578,
+      "status": "candidate",
+      "source_location": {
+        "line": 148,
+        "offset": 4527,
+        "end_offset": 4546,
+        "context": "ent\": {\n    \"dssc.governance.submit_challenge.v1\": [\n      \"policy_snapshot_id\",\n      \"challenge_id\",\n      \"origin_jurisdiction\",\n      \"target_jurisdiction\",\n      \"payload_hash\",\n      \"policy_snapshot_origin\",\n      \"rationale_ref_ori"
+      },
+      "suggested_skos": {
+        "prefLabel": "origin_jurisdiction",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "target_jurisdiction",
+      "entity_type": "JURISDICTION",
+      "confidence": 0.9005,
+      "status": "candidate",
+      "source_location": {
+        "line": 149,
+        "offset": 4556,
+        "end_offset": 4575,
+        "context": "submit_challenge.v1\": [\n      \"policy_snapshot_id\",\n      \"challenge_id\",\n      \"origin_jurisdiction\",\n      \"target_jurisdiction\",\n      \"payload_hash\",\n      \"policy_snapshot_origin\",\n      \"rationale_ref_origin\",\n      \"receipt_id\",\n   "
+      },
+      "suggested_skos": {
+        "prefLabel": "target_jurisdiction",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "payload_hash",
+      "entity_type": "PAYLOAD_HASH",
+      "confidence": 0.9538,
+      "status": "candidate",
+      "source_location": {
+        "line": 150,
+        "offset": 4585,
+        "end_offset": 4597,
+        "context": " \"policy_snapshot_id\",\n      \"challenge_id\",\n      \"origin_jurisdiction\",\n      \"target_jurisdiction\",\n      \"payload_hash\",\n      \"policy_snapshot_origin\",\n      \"rationale_ref_origin\",\n      \"receipt_id\",\n      \"acceptance_hash\",\n"
+      },
+      "suggested_skos": {
+        "prefLabel": "payload_hash",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "policy_snapshot_origin",
+      "entity_type": "POLICY_SNAPSHOT",
+      "confidence": 0.7763,
+      "status": "candidate",
+      "source_location": {
+        "line": 151,
+        "offset": 4607,
+        "end_offset": 4629,
+        "context": "\n      \"challenge_id\",\n      \"origin_jurisdiction\",\n      \"target_jurisdiction\",\n      \"payload_hash\",\n      \"policy_snapshot_origin\",\n      \"rationale_ref_origin\",\n      \"receipt_id\",\n      \"acceptance_hash\",\n      \"policy_snapshot_target\",\n"
+      },
+      "suggested_skos": {
+        "prefLabel": "policy_snapshot_origin",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "rationale_ref_origin",
+      "entity_type": "RATIONALE_REFERENCE",
+      "confidence": 0.6599,
+      "status": "candidate",
+      "source_location": {
+        "line": 152,
+        "offset": 4639,
+        "end_offset": 4659,
+        "context": "igin_jurisdiction\",\n      \"target_jurisdiction\",\n      \"payload_hash\",\n      \"policy_snapshot_origin\",\n      \"rationale_ref_origin\",\n      \"receipt_id\",\n      \"acceptance_hash\",\n      \"policy_snapshot_target\",\n      \"rationale_ref_target\",\n"
+      },
+      "suggested_skos": {
+        "prefLabel": "rationale_ref_origin",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "receipt_id",
+      "entity_type": "RECEIPT_ID",
+      "confidence": 0.7516,
+      "status": "candidate",
+      "source_location": {
+        "line": 153,
+        "offset": 4669,
+        "end_offset": 4679,
+        "context": "get_jurisdiction\",\n      \"payload_hash\",\n      \"policy_snapshot_origin\",\n      \"rationale_ref_origin\",\n      \"receipt_id\",\n      \"acceptance_hash\",\n      \"policy_snapshot_target\",\n      \"rationale_ref_target\",\n      \"status\"\n    ]"
+      },
+      "suggested_skos": {
+        "prefLabel": "receipt_id",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "acceptance_hash",
+      "entity_type": "PAYLOAD_HASH",
+      "confidence": 0.5256,
+      "status": "candidate",
+      "source_location": {
+        "line": 154,
+        "offset": 4689,
+        "end_offset": 4704,
+        "context": "     \"payload_hash\",\n      \"policy_snapshot_origin\",\n      \"rationale_ref_origin\",\n      \"receipt_id\",\n      \"acceptance_hash\",\n      \"policy_snapshot_target\",\n      \"rationale_ref_target\",\n      \"status\"\n    ],\n    \"dssc.governance.is"
+      },
+      "suggested_skos": {
+        "prefLabel": "acceptance_hash",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "policy_snapshot_target",
+      "entity_type": "POLICY_SNAPSHOT",
+      "confidence": 0.718,
+      "status": "candidate",
+      "source_location": {
+        "line": 155,
+        "offset": 4714,
+        "end_offset": 4736,
+        "context": "  \"policy_snapshot_origin\",\n      \"rationale_ref_origin\",\n      \"receipt_id\",\n      \"acceptance_hash\",\n      \"policy_snapshot_target\",\n      \"rationale_ref_target\",\n      \"status\"\n    ],\n    \"dssc.governance.issue_receipt.v1\": [\n      \"policy"
+      },
+      "suggested_skos": {
+        "prefLabel": "policy_snapshot_target",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "rationale_ref_target",
+      "entity_type": "RATIONALE_REFERENCE",
+      "confidence": 0.7198,
+      "status": "candidate",
+      "source_location": {
+        "line": 156,
+        "offset": 4746,
+        "end_offset": 4766,
+        "context": "  \"rationale_ref_origin\",\n      \"receipt_id\",\n      \"acceptance_hash\",\n      \"policy_snapshot_target\",\n      \"rationale_ref_target\",\n      \"status\"\n    ],\n    \"dssc.governance.issue_receipt.v1\": [\n      \"policy_snapshot_id\",\n      \"challeng"
+      },
+      "suggested_skos": {
+        "prefLabel": "rationale_ref_target",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "status",
+      "entity_type": "STATUS",
+      "confidence": 0.7567,
+      "status": "candidate",
+      "source_location": {
+        "line": 157,
+        "offset": 4776,
+        "end_offset": 4782,
+        "context": "  \"receipt_id\",\n      \"acceptance_hash\",\n      \"policy_snapshot_target\",\n      \"rationale_ref_target\",\n      \"status\"\n    ],\n    \"dssc.governance.issue_receipt.v1\": [\n      \"policy_snapshot_id\",\n      \"challenge_id\",\n      \"or"
+      },
+      "suggested_skos": {
+        "prefLabel": "status",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "policy_snapshot_id",
+      "entity_type": "POLICY_SNAPSHOT",
+      "confidence": 0.7196,
+      "status": "candidate",
+      "source_location": {
+        "line": 160,
+        "offset": 4840,
+        "end_offset": 4858,
+        "context": "target\",\n      \"rationale_ref_target\",\n      \"status\"\n    ],\n    \"dssc.governance.issue_receipt.v1\": [\n      \"policy_snapshot_id\",\n      \"challenge_id\",\n      \"origin_jurisdiction\",\n      \"target_jurisdiction\",\n      \"payload_hash\",\n     "
+      },
+      "suggested_skos": {
+        "prefLabel": "policy_snapshot_id",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "challenge_id",
+      "entity_type": "CHALLENGE_ID",
+      "confidence": 0.8769,
+      "status": "candidate",
+      "source_location": {
+        "line": 161,
+        "offset": 4868,
+        "end_offset": 4880,
+        "context": "f_target\",\n      \"status\"\n    ],\n    \"dssc.governance.issue_receipt.v1\": [\n      \"policy_snapshot_id\",\n      \"challenge_id\",\n      \"origin_jurisdiction\",\n      \"target_jurisdiction\",\n      \"payload_hash\",\n      \"policy_snapshot_orig"
+      },
+      "suggested_skos": {
+        "prefLabel": "challenge_id",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "origin_jurisdiction",
+      "entity_type": "JURISDICTION",
+      "confidence": 0.9031,
+      "status": "candidate",
+      "source_location": {
+        "line": 162,
+        "offset": 4890,
+        "end_offset": 4909,
+        "context": "us\"\n    ],\n    \"dssc.governance.issue_receipt.v1\": [\n      \"policy_snapshot_id\",\n      \"challenge_id\",\n      \"origin_jurisdiction\",\n      \"target_jurisdiction\",\n      \"payload_hash\",\n      \"policy_snapshot_origin\",\n      \"rationale_ref_ori"
+      },
+      "suggested_skos": {
+        "prefLabel": "origin_jurisdiction",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "target_jurisdiction",
+      "entity_type": "JURISDICTION",
+      "confidence": 0.9258,
+      "status": "candidate",
+      "source_location": {
+        "line": 163,
+        "offset": 4919,
+        "end_offset": 4938,
+        "context": "ce.issue_receipt.v1\": [\n      \"policy_snapshot_id\",\n      \"challenge_id\",\n      \"origin_jurisdiction\",\n      \"target_jurisdiction\",\n      \"payload_hash\",\n      \"policy_snapshot_origin\",\n      \"rationale_ref_origin\",\n      \"receipt_id\",\n   "
+      },
+      "suggested_skos": {
+        "prefLabel": "target_jurisdiction",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "payload_hash",
+      "entity_type": "PAYLOAD_HASH",
+      "confidence": 0.9497,
+      "status": "candidate",
+      "source_location": {
+        "line": 164,
+        "offset": 4948,
+        "end_offset": 4960,
+        "context": " \"policy_snapshot_id\",\n      \"challenge_id\",\n      \"origin_jurisdiction\",\n      \"target_jurisdiction\",\n      \"payload_hash\",\n      \"policy_snapshot_origin\",\n      \"rationale_ref_origin\",\n      \"receipt_id\",\n      \"acceptance_hash\",\n"
+      },
+      "suggested_skos": {
+        "prefLabel": "payload_hash",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "policy_snapshot_origin",
+      "entity_type": "POLICY_SNAPSHOT",
+      "confidence": 0.6697,
+      "status": "candidate",
+      "source_location": {
+        "line": 165,
+        "offset": 4970,
+        "end_offset": 4992,
+        "context": "\n      \"challenge_id\",\n      \"origin_jurisdiction\",\n      \"target_jurisdiction\",\n      \"payload_hash\",\n      \"policy_snapshot_origin\",\n      \"rationale_ref_origin\",\n      \"receipt_id\",\n      \"acceptance_hash\",\n      \"policy_snapshot_target\",\n"
+      },
+      "suggested_skos": {
+        "prefLabel": "policy_snapshot_origin",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "rationale",
+      "entity_type": "RATIONALE_REFERENCE",
+      "confidence": 0.3938,
+      "status": "candidate",
+      "source_location": {
+        "line": 166,
+        "offset": 5002,
+        "end_offset": 5011,
+        "context": "igin_jurisdiction\",\n      \"target_jurisdiction\",\n      \"payload_hash\",\n      \"policy_snapshot_origin\",\n      \"rationale_ref_origin\",\n      \"receipt_id\",\n      \"acceptance_hash\",\n      \"policy_snapshot_target\",\n      \"rationale_re"
+      },
+      "suggested_skos": {
+        "prefLabel": "rationale",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "rationale_ref_origin",
+      "entity_type": "RATIONALE_REFERENCE",
+      "confidence": 0.3966,
+      "status": "candidate",
+      "source_location": {
+        "line": 166,
+        "offset": 5002,
+        "end_offset": 5022,
+        "context": "igin_jurisdiction\",\n      \"target_jurisdiction\",\n      \"payload_hash\",\n      \"policy_snapshot_origin\",\n      \"rationale_ref_origin\",\n      \"receipt_id\",\n      \"acceptance_hash\",\n      \"policy_snapshot_target\",\n      \"rationale_ref_target\",\n"
+      },
+      "suggested_skos": {
+        "prefLabel": "rationale_ref_origin",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "receipt_id",
+      "entity_type": "RECEIPT_ID",
+      "confidence": 0.7686,
+      "status": "candidate",
+      "source_location": {
+        "line": 167,
+        "offset": 5032,
+        "end_offset": 5042,
+        "context": "get_jurisdiction\",\n      \"payload_hash\",\n      \"policy_snapshot_origin\",\n      \"rationale_ref_origin\",\n      \"receipt_id\",\n      \"acceptance_hash\",\n      \"policy_snapshot_target\",\n      \"rationale_ref_target\",\n      \"status\"\n    ]"
+      },
+      "suggested_skos": {
+        "prefLabel": "receipt_id",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "acceptance_hash",
+      "entity_type": "PAYLOAD_HASH",
+      "confidence": 0.6087,
+      "status": "candidate",
+      "source_location": {
+        "line": 168,
+        "offset": 5052,
+        "end_offset": 5067,
+        "context": "     \"payload_hash\",\n      \"policy_snapshot_origin\",\n      \"rationale_ref_origin\",\n      \"receipt_id\",\n      \"acceptance_hash\",\n      \"policy_snapshot_target\",\n      \"rationale_ref_target\",\n      \"status\"\n    ]\n  },\n  \"deny_reason_code"
+      },
+      "suggested_skos": {
+        "prefLabel": "acceptance_hash",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "policy_snapshot_target",
+      "entity_type": "POLICY_SNAPSHOT",
+      "confidence": 0.801,
+      "status": "candidate",
+      "source_location": {
+        "line": 169,
+        "offset": 5077,
+        "end_offset": 5099,
+        "context": "  \"policy_snapshot_origin\",\n      \"rationale_ref_origin\",\n      \"receipt_id\",\n      \"acceptance_hash\",\n      \"policy_snapshot_target\",\n      \"rationale_ref_target\",\n      \"status\"\n    ]\n  },\n  \"deny_reason_codes\": [\n    \"DENY_RECEIPT_HASH_MIS"
+      },
+      "suggested_skos": {
+        "prefLabel": "policy_snapshot_target",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "rationale_ref_target",
+      "entity_type": "RATIONALE_REFERENCE",
+      "confidence": 0.4046,
+      "status": "candidate",
+      "source_location": {
+        "line": 170,
+        "offset": 5109,
+        "end_offset": 5129,
+        "context": "  \"rationale_ref_origin\",\n      \"receipt_id\",\n      \"acceptance_hash\",\n      \"policy_snapshot_target\",\n      \"rationale_ref_target\",\n      \"status\"\n    ]\n  },\n  \"deny_reason_codes\": [\n    \"DENY_RECEIPT_HASH_MISMATCH\",\n    \"DENY_POLICY_SNAPS"
+      },
+      "suggested_skos": {
+        "prefLabel": "rationale_ref_target",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "status",
+      "entity_type": "STATUS",
+      "confidence": 0.7341,
+      "status": "candidate",
+      "source_location": {
+        "line": 171,
+        "offset": 5139,
+        "end_offset": 5145,
+        "context": "  \"receipt_id\",\n      \"acceptance_hash\",\n      \"policy_snapshot_target\",\n      \"rationale_ref_target\",\n      \"status\"\n    ]\n  },\n  \"deny_reason_codes\": [\n    \"DENY_RECEIPT_HASH_MISMATCH\",\n    \"DENY_POLICY_SNAPSHOT_MISSING\",\n  "
+      },
+      "suggested_skos": {
+        "prefLabel": "status",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "DENY_RECEIPT_HASH_MISMATCH",
+      "entity_type": "DENY_REASON_CODE",
+      "confidence": 0.5798,
+      "status": "candidate",
+      "source_location": {
+        "line": 175,
+        "offset": 5188,
+        "end_offset": 5214,
+        "context": "olicy_snapshot_target\",\n      \"rationale_ref_target\",\n      \"status\"\n    ]\n  },\n  \"deny_reason_codes\": [\n    \"DENY_RECEIPT_HASH_MISMATCH\",\n    \"DENY_POLICY_SNAPSHOT_MISSING\",\n    \"DENY_CORRELATION_MISMATCH\",\n    \"PSC_BUNDLE_COMMIT_MISMATCH\"\n  ]\n}"
+      },
+      "suggested_skos": {
+        "prefLabel": "DENY_RECEIPT_HASH_MISMATCH",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "DENY_POLICY_SNAPSHOT_MISSING",
+      "entity_type": "DENY_REASON_CODE",
+      "confidence": 0.5238,
+      "status": "candidate",
+      "source_location": {
+        "line": 176,
+        "offset": 5222,
+        "end_offset": 5250,
+        "context": "ionale_ref_target\",\n      \"status\"\n    ]\n  },\n  \"deny_reason_codes\": [\n    \"DENY_RECEIPT_HASH_MISMATCH\",\n    \"DENY_POLICY_SNAPSHOT_MISSING\",\n    \"DENY_CORRELATION_MISMATCH\",\n    \"PSC_BUNDLE_COMMIT_MISMATCH\"\n  ]\n}\n\n\n### FILE: intent-mappings.json\n{\n"
+      },
+      "suggested_skos": {
+        "prefLabel": "DENY_POLICY_SNAPSHOT_MISSING",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "DENY_CORRELATION_MISMATCH",
+      "entity_type": "DENY_REASON_CODE",
+      "confidence": 0.497,
+      "status": "candidate",
+      "source_location": {
+        "line": 177,
+        "offset": 5258,
+        "end_offset": 5283,
+        "context": "   ]\n  },\n  \"deny_reason_codes\": [\n    \"DENY_RECEIPT_HASH_MISMATCH\",\n    \"DENY_POLICY_SNAPSHOT_MISSING\",\n    \"DENY_CORRELATION_MISMATCH\",\n    \"PSC_BUNDLE_COMMIT_MISMATCH\"\n  ]\n}\n\n\n### FILE: intent-mappings.json\n{\n  \"schema_version\": \"1.0\",\n  \"dom"
+      },
+      "suggested_skos": {
+        "prefLabel": "DENY_CORRELATION_MISMATCH",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "dssc-bilateral-challenge-receipt",
+      "entity_type": "RECEIPT_ID",
+      "confidence": 0.4098,
+      "status": "candidate",
+      "source_location": {
+        "line": 186,
+        "offset": 5400,
+        "end_offset": 5432,
+        "context": "\"PSC_BUNDLE_COMMIT_MISMATCH\"\n  ]\n}\n\n\n### FILE: intent-mappings.json\n{\n  \"schema_version\": \"1.0\",\n  \"domain\": \"dssc-bilateral-challenge-receipt\",\n  \"mappings\": [\n    {\n      \"concept_uri\": \"dssc:GovernanceSurface\",\n      \"intent_class\": \"dssc.governance"
+      },
+      "suggested_skos": {
+        "prefLabel": "dssc-bilateral-challenge-receipt",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "dssc",
+      "entity_type": "JURISDICTION",
+      "confidence": 0.8008,
+      "status": "candidate",
+      "source_location": {
+        "line": 189,
+        "offset": 5479,
+        "end_offset": 5483,
+        "context": "_version\": \"1.0\",\n  \"domain\": \"dssc-bilateral-challenge-receipt\",\n  \"mappings\": [\n    {\n      \"concept_uri\": \"dssc:GovernanceSurface\",\n      \"intent_class\": \"dssc.governance.submit_challenge.v1\",\n      \"confidence_floor\": 0."
+      },
+      "suggested_skos": {
+        "prefLabel": "dssc",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "GovernanceSurface",
+      "entity_type": "JURISDICTION",
+      "confidence": 0.8347,
+      "status": "candidate",
+      "source_location": {
+        "line": 189,
+        "offset": 5484,
+        "end_offset": 5501,
+        "context": "ion\": \"1.0\",\n  \"domain\": \"dssc-bilateral-challenge-receipt\",\n  \"mappings\": [\n    {\n      \"concept_uri\": \"dssc:GovernanceSurface\",\n      \"intent_class\": \"dssc.governance.submit_challenge.v1\",\n      \"confidence_floor\": 0.76\n    },\n    {\n  "
+      },
+      "suggested_skos": {
+        "prefLabel": "GovernanceSurface",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "intent_class",
+      "entity_type": "INTENT_CLASS",
+      "confidence": 0.6947,
+      "status": "candidate",
+      "source_location": {
+        "line": 190,
+        "offset": 5511,
+        "end_offset": 5523,
+        "context": "ssc-bilateral-challenge-receipt\",\n  \"mappings\": [\n    {\n      \"concept_uri\": \"dssc:GovernanceSurface\",\n      \"intent_class\": \"dssc.governance.submit_challenge.v1\",\n      \"confidence_floor\": 0.76\n    },\n    {\n      \"concept_uri\": \"ds"
+      },
+      "suggested_skos": {
+        "prefLabel": "intent_class",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "dssc",
+      "entity_type": "JURISDICTION",
+      "confidence": 0.5462,
+      "status": "candidate",
+      "source_location": {
+        "line": 190,
+        "offset": 5527,
+        "end_offset": 5531,
+        "context": "allenge-receipt\",\n  \"mappings\": [\n    {\n      \"concept_uri\": \"dssc:GovernanceSurface\",\n      \"intent_class\": \"dssc.governance.submit_challenge.v1\",\n      \"confidence_floor\": 0.76\n    },\n    {\n      \"concept_uri\": \"dssc:Gover"
+      },
+      "suggested_skos": {
+        "prefLabel": "dssc",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "submit_challenge.v1",
+      "entity_type": "POLICY_SNAPSHOT",
+      "confidence": 0.4216,
+      "status": "candidate",
+      "source_location": {
+        "line": 190,
+        "offset": 5543,
+        "end_offset": 5562,
+        "context": ",\n  \"mappings\": [\n    {\n      \"concept_uri\": \"dssc:GovernanceSurface\",\n      \"intent_class\": \"dssc.governance.submit_challenge.v1\",\n      \"confidence_floor\": 0.76\n    },\n    {\n      \"concept_uri\": \"dssc:GovernanceSurface\",\n      \"intent_cl"
+      },
+      "suggested_skos": {
+        "prefLabel": "submit_challenge.v1",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "dssc",
+      "entity_type": "JURISDICTION",
+      "confidence": 0.7851,
+      "status": "candidate",
+      "source_location": {
+        "line": 194,
+        "offset": 5631,
+        "end_offset": 5635,
+        "context": "ss\": \"dssc.governance.submit_challenge.v1\",\n      \"confidence_floor\": 0.76\n    },\n    {\n      \"concept_uri\": \"dssc:GovernanceSurface\",\n      \"intent_class\": \"dssc.governance.issue_receipt.v1\",\n      \"confidence_floor\": 0.76\n"
+      },
+      "suggested_skos": {
+        "prefLabel": "dssc",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "GovernanceSurface",
+      "entity_type": "JURISDICTION",
+      "confidence": 0.7949,
+      "status": "candidate",
+      "source_location": {
+        "line": 194,
+        "offset": 5636,
+        "end_offset": 5653,
+        "context": "\"dssc.governance.submit_challenge.v1\",\n      \"confidence_floor\": 0.76\n    },\n    {\n      \"concept_uri\": \"dssc:GovernanceSurface\",\n      \"intent_class\": \"dssc.governance.issue_receipt.v1\",\n      \"confidence_floor\": 0.76\n    }\n  ]\n}\n\n\n### "
+      },
+      "suggested_skos": {
+        "prefLabel": "GovernanceSurface",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "intent_class",
+      "entity_type": "INTENT_CLASS",
+      "confidence": 0.7278,
+      "status": "candidate",
+      "source_location": {
+        "line": 195,
+        "offset": 5663,
+        "end_offset": 5675,
+        "context": "llenge.v1\",\n      \"confidence_floor\": 0.76\n    },\n    {\n      \"concept_uri\": \"dssc:GovernanceSurface\",\n      \"intent_class\": \"dssc.governance.issue_receipt.v1\",\n      \"confidence_floor\": 0.76\n    }\n  ]\n}\n\n\n### FILE: thesaurus-local."
+      },
+      "suggested_skos": {
+        "prefLabel": "intent_class",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "dssc",
+      "entity_type": "JURISDICTION",
+      "confidence": 0.5141,
+      "status": "candidate",
+      "source_location": {
+        "line": 195,
+        "offset": 5679,
+        "end_offset": 5683,
+        "context": "  \"confidence_floor\": 0.76\n    },\n    {\n      \"concept_uri\": \"dssc:GovernanceSurface\",\n      \"intent_class\": \"dssc.governance.issue_receipt.v1\",\n      \"confidence_floor\": 0.76\n    }\n  ]\n}\n\n\n### FILE: thesaurus-local.json\n{\n "
+      },
+      "suggested_skos": {
+        "prefLabel": "dssc",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "issue_receipt.v1",
+      "entity_type": "POLICY_SNAPSHOT",
+      "confidence": 0.4511,
+      "status": "candidate",
+      "source_location": {
+        "line": 195,
+        "offset": 5695,
+        "end_offset": 5711,
+        "context": "oor\": 0.76\n    },\n    {\n      \"concept_uri\": \"dssc:GovernanceSurface\",\n      \"intent_class\": \"dssc.governance.issue_receipt.v1\",\n      \"confidence_floor\": 0.76\n    }\n  ]\n}\n\n\n### FILE: thesaurus-local.json\n{\n  \"schema_version\": \"1.0\",\n  "
+      },
+      "suggested_skos": {
+        "prefLabel": "issue_receipt.v1",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "dssc-bilateral-challenge-receipt",
+      "entity_type": "RECEIPT_ID",
+      "confidence": 0.3649,
+      "status": "candidate",
+      "source_location": {
+        "line": 205,
+        "offset": 5832,
+        "end_offset": 5864,
+        "context": "onfidence_floor\": 0.76\n    }\n  ]\n}\n\n\n### FILE: thesaurus-local.json\n{\n  \"schema_version\": \"1.0\",\n  \"domain\": \"dssc-bilateral-challenge-receipt\",\n  \"last_modified\": \"2026-04-14\",\n  \"concepts\": [\n    {\n      \"concept_id\": \"dssc-bilateral-challenge-receip"
+      },
+      "suggested_skos": {
+        "prefLabel": "dssc-bilateral-challenge-receipt",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "dssc-bilateral-challenge-receipt",
+      "entity_type": "RECEIPT_ID",
+      "confidence": 0.4291,
+      "status": "candidate",
+      "source_location": {
+        "line": 209,
+        "offset": 5943,
+        "end_offset": 5975,
+        "context": "ssc-bilateral-challenge-receipt\",\n  \"last_modified\": \"2026-04-14\",\n  \"concepts\": [\n    {\n      \"concept_id\": \"dssc-bilateral-challenge-receipt.challenge.id.v1\",\n      \"preferred_term\": \"challenge_id\",\n      \"synonyms\": [],\n      \"register_variants\": {}"
+      },
+      "suggested_skos": {
+        "prefLabel": "dssc-bilateral-challenge-receipt",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "challenge_id",
+      "entity_type": "CHALLENGE_ID",
+      "confidence": 0.8508,
+      "status": "candidate",
+      "source_location": {
+        "line": 210,
+        "offset": 6019,
+        "end_offset": 6031,
+        "context": "ts\": [\n    {\n      \"concept_id\": \"dssc-bilateral-challenge-receipt.challenge.id.v1\",\n      \"preferred_term\": \"challenge_id\",\n      \"synonyms\": [],\n      \"register_variants\": {},\n      \"domain_vocabulary\": {},\n      \"translations\": {"
+      },
+      "suggested_skos": {
+        "prefLabel": "challenge_id",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "GovernanceSurface",
+      "entity_type": "JURISDICTION",
+      "confidence": 0.9208,
+      "status": "candidate",
+      "source_location": {
+        "line": 215,
+        "offset": 6162,
+        "end_offset": 6179,
+        "context": "[],\n      \"register_variants\": {},\n      \"domain_vocabulary\": {},\n      \"translations\": {},\n      \"broader\": \"GovernanceSurface\",\n      \"narrower\": [],\n      \"source_refs\": [\n        \"dssc-canonical-source-catalog\"\n      ],\n      \"ner_pr"
+      },
+      "suggested_skos": {
+        "prefLabel": "GovernanceSurface",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "ds",
+      "entity_type": "RATIONALE_REFERENCE",
+      "confidence": 0.4126,
+      "status": "candidate",
+      "source_location": {
+        "line": 218,
+        "offset": 6236,
+        "end_offset": 6238,
+        "context": "ranslations\": {},\n      \"broader\": \"GovernanceSurface\",\n      \"narrower\": [],\n      \"source_refs\": [\n        \"dssc-canonical-source-catalog\"\n      ],\n      \"ner_provenance\": null\n    },\n    {\n      \"concept_id\": \"dssc-bila"
+      },
+      "suggested_skos": {
+        "prefLabel": "ds",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "dssc-canonical-source-catalog",
+      "entity_type": "RATIONALE_REFERENCE",
+      "confidence": 0.3746,
+      "status": "candidate",
+      "source_location": {
+        "line": 218,
+        "offset": 6236,
+        "end_offset": 6265,
+        "context": "ranslations\": {},\n      \"broader\": \"GovernanceSurface\",\n      \"narrower\": [],\n      \"source_refs\": [\n        \"dssc-canonical-source-catalog\"\n      ],\n      \"ner_provenance\": null\n    },\n    {\n      \"concept_id\": \"dssc-bilateral-challenge-receipt.ori"
+      },
+      "suggested_skos": {
+        "prefLabel": "dssc-canonical-source-catalog",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "dssc-bilateral-challenge-receipt",
+      "entity_type": "RECEIPT_ID",
+      "confidence": 0.5144,
+      "status": "candidate",
+      "source_location": {
+        "line": 223,
+        "offset": 6339,
+        "end_offset": 6371,
+        "context": "      \"dssc-canonical-source-catalog\"\n      ],\n      \"ner_provenance\": null\n    },\n    {\n      \"concept_id\": \"dssc-bilateral-challenge-receipt.origin.jurisdiction.v1\",\n      \"preferred_term\": \"origin_jurisdiction\",\n      \"synonyms\": [],\n      \"register"
+      },
+      "suggested_skos": {
+        "prefLabel": "dssc-bilateral-challenge-receipt",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "jurisdiction",
+      "entity_type": "JURISDICTION",
+      "confidence": 0.656,
+      "status": "candidate",
+      "source_location": {
+        "line": 223,
+        "offset": 6379,
+        "end_offset": 6391,
+        "context": "    ],\n      \"ner_provenance\": null\n    },\n    {\n      \"concept_id\": \"dssc-bilateral-challenge-receipt.origin.jurisdiction.v1\",\n      \"preferred_term\": \"origin_jurisdiction\",\n      \"synonyms\": [],\n      \"register_variants\": {},\n    "
+      },
+      "suggested_skos": {
+        "prefLabel": "jurisdiction",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "origin_jurisdiction",
+      "entity_type": "JURISDICTION",
+      "confidence": 0.7365,
+      "status": "candidate",
+      "source_location": {
+        "line": 224,
+        "offset": 6422,
+        "end_offset": 6441,
+        "context": "    {\n      \"concept_id\": \"dssc-bilateral-challenge-receipt.origin.jurisdiction.v1\",\n      \"preferred_term\": \"origin_jurisdiction\",\n      \"synonyms\": [],\n      \"register_variants\": {},\n      \"domain_vocabulary\": {},\n      \"translations\": {"
+      },
+      "suggested_skos": {
+        "prefLabel": "origin_jurisdiction",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "GovernanceSurface",
+      "entity_type": "RATIONALE_REFERENCE",
+      "confidence": 0.3812,
+      "status": "candidate",
+      "source_location": {
+        "line": 229,
+        "offset": 6572,
+        "end_offset": 6589,
+        "context": "[],\n      \"register_variants\": {},\n      \"domain_vocabulary\": {},\n      \"translations\": {},\n      \"broader\": \"GovernanceSurface\",\n      \"narrower\": [],\n      \"source_refs\": [\n        \"dssc-canonical-source-catalog\"\n      ],\n      \"ner_pr"
+      },
+      "suggested_skos": {
+        "prefLabel": "GovernanceSurface",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "dssc-canonical-source-catalog",
+      "entity_type": "RATIONALE_REFERENCE",
+      "confidence": 0.4415,
+      "status": "candidate",
+      "source_location": {
+        "line": 232,
+        "offset": 6646,
+        "end_offset": 6675,
+        "context": "ranslations\": {},\n      \"broader\": \"GovernanceSurface\",\n      \"narrower\": [],\n      \"source_refs\": [\n        \"dssc-canonical-source-catalog\"\n      ],\n      \"ner_provenance\": null\n    },\n    {\n      \"concept_id\": \"dssc-bilateral-challenge-receipt.tar"
+      },
+      "suggested_skos": {
+        "prefLabel": "dssc-canonical-source-catalog",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "concept_id",
+      "entity_type": "CHALLENGE_ID",
+      "confidence": 0.3875,
+      "status": "candidate",
+      "source_location": {
+        "line": 237,
+        "offset": 6735,
+        "end_offset": 6745,
+        "context": "ce_refs\": [\n        \"dssc-canonical-source-catalog\"\n      ],\n      \"ner_provenance\": null\n    },\n    {\n      \"concept_id\": \"dssc-bilateral-challenge-receipt.target.jurisdiction.v1\",\n      \"preferred_term\": \"target_jurisdiction\",\n "
+      },
+      "suggested_skos": {
+        "prefLabel": "concept_id",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "dssc-bilateral-challenge-receipt",
+      "entity_type": "RECEIPT_ID",
+      "confidence": 0.5262,
+      "status": "candidate",
+      "source_location": {
+        "line": 237,
+        "offset": 6749,
+        "end_offset": 6781,
+        "context": "      \"dssc-canonical-source-catalog\"\n      ],\n      \"ner_provenance\": null\n    },\n    {\n      \"concept_id\": \"dssc-bilateral-challenge-receipt.target.jurisdiction.v1\",\n      \"preferred_term\": \"target_jurisdiction\",\n      \"synonyms\": [],\n      \"register"
+      },
+      "suggested_skos": {
+        "prefLabel": "dssc-bilateral-challenge-receipt",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "jurisdiction",
+      "entity_type": "JURISDICTION",
+      "confidence": 0.593,
+      "status": "candidate",
+      "source_location": {
+        "line": 237,
+        "offset": 6789,
+        "end_offset": 6801,
+        "context": "    ],\n      \"ner_provenance\": null\n    },\n    {\n      \"concept_id\": \"dssc-bilateral-challenge-receipt.target.jurisdiction.v1\",\n      \"preferred_term\": \"target_jurisdiction\",\n      \"synonyms\": [],\n      \"register_variants\": {},\n    "
+      },
+      "suggested_skos": {
+        "prefLabel": "jurisdiction",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "target_jurisdiction",
+      "entity_type": "JURISDICTION",
+      "confidence": 0.8741,
+      "status": "candidate",
+      "source_location": {
+        "line": 238,
+        "offset": 6832,
+        "end_offset": 6851,
+        "context": "    {\n      \"concept_id\": \"dssc-bilateral-challenge-receipt.target.jurisdiction.v1\",\n      \"preferred_term\": \"target_jurisdiction\",\n      \"synonyms\": [],\n      \"register_variants\": {},\n      \"domain_vocabulary\": {},\n      \"translations\": {"
+      },
+      "suggested_skos": {
+        "prefLabel": "target_jurisdiction",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "dssc-bilateral-challenge-receipt",
+      "entity_type": "RECEIPT_ID",
+      "confidence": 0.4372,
+      "status": "candidate",
+      "source_location": {
+        "line": 251,
+        "offset": 7159,
+        "end_offset": 7191,
+        "context": "      \"dssc-canonical-source-catalog\"\n      ],\n      \"ner_provenance\": null\n    },\n    {\n      \"concept_id\": \"dssc-bilateral-challenge-receipt.payload.hash.v1\",\n      \"preferred_term\": \"payload_hash\",\n      \"synonyms\": [],\n      \"register_variants\": {}"
+      },
+      "suggested_skos": {
+        "prefLabel": "dssc-bilateral-challenge-receipt",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "payload_hash",
+      "entity_type": "PAYLOAD_HASH",
+      "confidence": 0.9046,
+      "status": "candidate",
+      "source_location": {
+        "line": 252,
+        "offset": 7235,
+        "end_offset": 7247,
+        "context": "    },\n    {\n      \"concept_id\": \"dssc-bilateral-challenge-receipt.payload.hash.v1\",\n      \"preferred_term\": \"payload_hash\",\n      \"synonyms\": [],\n      \"register_variants\": {},\n      \"domain_vocabulary\": {},\n      \"translations\": {"
+      },
+      "suggested_skos": {
+        "prefLabel": "payload_hash",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "policy.snapshot",
+      "entity_type": "POLICY_SNAPSHOT",
+      "confidence": 0.5031,
+      "status": "candidate",
+      "source_location": {
+        "line": 265,
+        "offset": 7588,
+        "end_offset": 7603,
+        "context": "log\"\n      ],\n      \"ner_provenance\": null\n    },\n    {\n      \"concept_id\": \"dssc-bilateral-challenge-receipt.policy.snapshot.origin.v1\",\n      \"preferred_term\": \"policy_snapshot_origin\",\n      \"synonyms\": [],\n      \"register_variants\""
+      },
+      "suggested_skos": {
+        "prefLabel": "policy.snapshot",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "origin.v1",
+      "entity_type": "POLICY_SNAPSHOT",
+      "confidence": 0.688,
+      "status": "candidate",
+      "source_location": {
+        "line": 265,
+        "offset": 7604,
+        "end_offset": 7613,
+        "context": "    \"ner_provenance\": null\n    },\n    {\n      \"concept_id\": \"dssc-bilateral-challenge-receipt.policy.snapshot.origin.v1\",\n      \"preferred_term\": \"policy_snapshot_origin\",\n      \"synonyms\": [],\n      \"register_variants\": {},\n    "
+      },
+      "suggested_skos": {
+        "prefLabel": "origin.v1",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "policy_snapshot_origin",
+      "entity_type": "POLICY_SNAPSHOT",
+      "confidence": 0.6999,
+      "status": "candidate",
+      "source_location": {
+        "line": 266,
+        "offset": 7641,
+        "end_offset": 7663,
+        "context": " {\n      \"concept_id\": \"dssc-bilateral-challenge-receipt.policy.snapshot.origin.v1\",\n      \"preferred_term\": \"policy_snapshot_origin\",\n      \"synonyms\": [],\n      \"register_variants\": {},\n      \"domain_vocabulary\": {},\n      \"translations\": {"
+      },
+      "suggested_skos": {
+        "prefLabel": "policy_snapshot_origin",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "dssc-bilateral-challenge-receipt",
+      "entity_type": "RECEIPT_ID",
+      "confidence": 0.4399,
+      "status": "candidate",
+      "source_location": {
+        "line": 279,
+        "offset": 7971,
+        "end_offset": 8003,
+        "context": "      \"dssc-canonical-source-catalog\"\n      ],\n      \"ner_provenance\": null\n    },\n    {\n      \"concept_id\": \"dssc-bilateral-challenge-receipt.rationale.ref.origin.v1\",\n      \"preferred_term\": \"rationale_ref_origin\",\n      \"synonyms\": [],\n      \"regist"
+      },
+      "suggested_skos": {
+        "prefLabel": "dssc-bilateral-challenge-receipt",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "rationale_ref_origin",
+      "entity_type": "RATIONALE_REFERENCE",
+      "confidence": 0.3831,
+      "status": "candidate",
+      "source_location": {
+        "line": 280,
+        "offset": 8055,
+        "end_offset": 8075,
+        "context": "   {\n      \"concept_id\": \"dssc-bilateral-challenge-receipt.rationale.ref.origin.v1\",\n      \"preferred_term\": \"rationale_ref_origin\",\n      \"synonyms\": [],\n      \"register_variants\": {},\n      \"domain_vocabulary\": {},\n      \"translations\": {"
+      },
+      "suggested_skos": {
+        "prefLabel": "rationale_ref_origin",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "dssc-canonical-source-catalog",
+      "entity_type": "RATIONALE_REFERENCE",
+      "confidence": 0.3845,
+      "status": "candidate",
+      "source_location": {
+        "line": 288,
+        "offset": 8280,
+        "end_offset": 8309,
+        "context": "ranslations\": {},\n      \"broader\": \"GovernanceSurface\",\n      \"narrower\": [],\n      \"source_refs\": [\n        \"dssc-canonical-source-catalog\"\n      ],\n      \"ner_provenance\": null\n    },\n    {\n      \"concept_id\": \"dssc-bilateral-challenge-receipt.rec"
+      },
+      "suggested_skos": {
+        "prefLabel": "dssc-canonical-source-catalog",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "receipt_id",
+      "entity_type": "RECEIPT_ID",
+      "confidence": 0.6889,
+      "status": "candidate",
+      "source_location": {
+        "line": 294,
+        "offset": 8457,
+        "end_offset": 8467,
+        "context": "l\n    },\n    {\n      \"concept_id\": \"dssc-bilateral-challenge-receipt.receipt.id.v1\",\n      \"preferred_term\": \"receipt_id\",\n      \"synonyms\": [],\n      \"register_variants\": {},\n      \"domain_vocabulary\": {},\n      \"translations\": {"
+      },
+      "suggested_skos": {
+        "prefLabel": "receipt_id",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "concept_id",
+      "entity_type": "CHALLENGE_ID",
+      "confidence": 0.3967,
+      "status": "candidate",
+      "source_location": {
+        "line": 307,
+        "offset": 8761,
+        "end_offset": 8771,
+        "context": "ce_refs\": [\n        \"dssc-canonical-source-catalog\"\n      ],\n      \"ner_provenance\": null\n    },\n    {\n      \"concept_id\": \"dssc-bilateral-challenge-receipt.acceptance.hash.v1\",\n      \"preferred_term\": \"acceptance_hash\",\n      \"sy"
+      },
+      "suggested_skos": {
+        "prefLabel": "concept_id",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "dssc-bilateral-challenge-receipt",
+      "entity_type": "RECEIPT_ID",
+      "confidence": 0.4343,
+      "status": "candidate",
+      "source_location": {
+        "line": 307,
+        "offset": 8775,
+        "end_offset": 8807,
+        "context": "      \"dssc-canonical-source-catalog\"\n      ],\n      \"ner_provenance\": null\n    },\n    {\n      \"concept_id\": \"dssc-bilateral-challenge-receipt.acceptance.hash.v1\",\n      \"preferred_term\": \"acceptance_hash\",\n      \"synonyms\": [],\n      \"register_variant"
+      },
+      "suggested_skos": {
+        "prefLabel": "dssc-bilateral-challenge-receipt",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "narrower",
+      "entity_type": "RATIONALE_REFERENCE",
+      "confidence": 0.373,
+      "status": "candidate",
+      "source_location": {
+        "line": 314,
+        "offset": 9027,
+        "end_offset": 9035,
+        "context": "s\": {},\n      \"domain_vocabulary\": {},\n      \"translations\": {},\n      \"broader\": \"GovernanceSurface\",\n      \"narrower\": [],\n      \"source_refs\": [\n        \"dssc-canonical-source-catalog\"\n      ],\n      \"ner_provenance\": null\n  "
+      },
+      "suggested_skos": {
+        "prefLabel": "narrower",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "policy.snapshot.target.v1",
+      "entity_type": "POLICY_SNAPSHOT",
+      "confidence": 0.5429,
+      "status": "candidate",
+      "source_location": {
+        "line": 321,
+        "offset": 9210,
+        "end_offset": 9235,
+        "context": "log\"\n      ],\n      \"ner_provenance\": null\n    },\n    {\n      \"concept_id\": \"dssc-bilateral-challenge-receipt.policy.snapshot.target.v1\",\n      \"preferred_term\": \"policy_snapshot_target\",\n      \"synonyms\": [],\n      \"register_variants\": {},\n    "
+      },
+      "suggested_skos": {
+        "prefLabel": "policy.snapshot.target.v1",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "policy_snapshot_target",
+      "entity_type": "POLICY_SNAPSHOT",
+      "confidence": 0.7183,
+      "status": "candidate",
+      "source_location": {
+        "line": 322,
+        "offset": 9263,
+        "end_offset": 9285,
+        "context": " {\n      \"concept_id\": \"dssc-bilateral-challenge-receipt.policy.snapshot.target.v1\",\n      \"preferred_term\": \"policy_snapshot_target\",\n      \"synonyms\": [],\n      \"register_variants\": {},\n      \"domain_vocabulary\": {},\n      \"translations\": {"
+      },
+      "suggested_skos": {
+        "prefLabel": "policy_snapshot_target",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "dssc-canonical-source-catalog",
+      "entity_type": "RATIONALE_REFERENCE",
+      "confidence": 0.3877,
+      "status": "candidate",
+      "source_location": {
+        "line": 330,
+        "offset": 9490,
+        "end_offset": 9519,
+        "context": "ranslations\": {},\n      \"broader\": \"GovernanceSurface\",\n      \"narrower\": [],\n      \"source_refs\": [\n        \"dssc-canonical-source-catalog\"\n      ],\n      \"ner_provenance\": null\n    },\n    {\n      \"concept_id\": \"dssc-bilateral-challenge-receipt.rat"
+      },
+      "suggested_skos": {
+        "prefLabel": "dssc-canonical-source-catalog",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "dssc-bilateral-challenge-receipt",
+      "entity_type": "RECEIPT_ID",
+      "confidence": 0.4568,
+      "status": "candidate",
+      "source_location": {
+        "line": 335,
+        "offset": 9593,
+        "end_offset": 9625,
+        "context": "      \"dssc-canonical-source-catalog\"\n      ],\n      \"ner_provenance\": null\n    },\n    {\n      \"concept_id\": \"dssc-bilateral-challenge-receipt.rationale.ref.target.v1\",\n      \"preferred_term\": \"rationale_ref_target\",\n      \"synonyms\": [],\n      \"regist"
+      },
+      "suggested_skos": {
+        "prefLabel": "dssc-bilateral-challenge-receipt",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "rationale_ref_target",
+      "entity_type": "RATIONALE_REFERENCE",
+      "confidence": 0.4207,
+      "status": "candidate",
+      "source_location": {
+        "line": 336,
+        "offset": 9677,
+        "end_offset": 9697,
+        "context": "   {\n      \"concept_id\": \"dssc-bilateral-challenge-receipt.rationale.ref.target.v1\",\n      \"preferred_term\": \"rationale_ref_target\",\n      \"synonyms\": [],\n      \"register_variants\": {},\n      \"domain_vocabulary\": {},\n      \"translations\": {"
+      },
+      "suggested_skos": {
+        "prefLabel": "rationale_ref_target",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "dssc-canonical-so",
+      "entity_type": "RATIONALE_REFERENCE",
+      "confidence": 0.3645,
+      "status": "candidate",
+      "source_location": {
+        "line": 344,
+        "offset": 9902,
+        "end_offset": 9919,
+        "context": "ranslations\": {},\n      \"broader\": \"GovernanceSurface\",\n      \"narrower\": [],\n      \"source_refs\": [\n        \"dssc-canonical-source-catalog\"\n      ],\n      \"ner_provenance\": null\n    },\n    {\n      \"concept_id\": \"dssc-bilateral-challenge"
+      },
+      "suggested_skos": {
+        "prefLabel": "dssc-canonical-so",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "dssc-bilateral-challenge-receipt",
+      "entity_type": "RECEIPT_ID",
+      "confidence": 0.4474,
+      "status": "candidate",
+      "source_location": {
+        "line": 349,
+        "offset": 10005,
+        "end_offset": 10037,
+        "context": "      \"dssc-canonical-source-catalog\"\n      ],\n      \"ner_provenance\": null\n    },\n    {\n      \"concept_id\": \"dssc-bilateral-challenge-receipt.status.v1\",\n      \"preferred_term\": \"status\",\n      \"synonyms\": [],\n      \"register_variants\": {},\n      \"dom"
+      },
+      "suggested_skos": {
+        "prefLabel": "dssc-bilateral-challenge-receipt",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "status.v1",
+      "entity_type": "CHALLENGE_ID",
+      "confidence": 0.3992,
+      "status": "candidate",
+      "source_location": {
+        "line": 349,
+        "offset": 10038,
+        "end_offset": 10047,
+        "context": "log\"\n      ],\n      \"ner_provenance\": null\n    },\n    {\n      \"concept_id\": \"dssc-bilateral-challenge-receipt.status.v1\",\n      \"preferred_term\": \"status\",\n      \"synonyms\": [],\n      \"register_variants\": {},\n      \"domain_vocabu"
+      },
+      "suggested_skos": {
+        "prefLabel": "status.v1",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "status",
+      "entity_type": "STATUS",
+      "confidence": 0.578,
+      "status": "candidate",
+      "source_location": {
+        "line": 350,
+        "offset": 10075,
+        "end_offset": 10081,
+        "context": " null\n    },\n    {\n      \"concept_id\": \"dssc-bilateral-challenge-receipt.status.v1\",\n      \"preferred_term\": \"status\",\n      \"synonyms\": [],\n      \"register_variants\": {},\n      \"domain_vocabulary\": {},\n      \"translations\": {"
+      },
+      "suggested_skos": {
+        "prefLabel": "status",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "dssc-canonical-source-catalog",
+      "entity_type": "RATIONALE_REFERENCE",
+      "confidence": 0.4739,
+      "status": "candidate",
+      "source_location": {
+        "line": 358,
+        "offset": 10286,
+        "end_offset": 10315,
+        "context": "ranslations\": {},\n      \"broader\": \"GovernanceSurface\",\n      \"narrower\": [],\n      \"source_refs\": [\n        \"dssc-canonical-source-catalog\"\n      ],\n      \"ner_provenance\": null\n    },\n    {\n      \"concept_id\": \"dssc-bilateral-challenge-receipt.cor"
+      },
+      "suggested_skos": {
+        "prefLabel": "dssc-canonical-source-catalog",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "dssc-bilateral-challenge-receipt",
+      "entity_type": "RECEIPT_ID",
+      "confidence": 0.5231,
+      "status": "candidate",
+      "source_location": {
+        "line": 363,
+        "offset": 10389,
+        "end_offset": 10421,
+        "context": "      \"dssc-canonical-source-catalog\"\n      ],\n      \"ner_provenance\": null\n    },\n    {\n      \"concept_id\": \"dssc-bilateral-challenge-receipt.correlation.id.v1\",\n      \"preferred_term\": \"correlation_id\",\n      \"synonyms\": [],\n      \"register_variants\""
+      },
+      "suggested_skos": {
+        "prefLabel": "dssc-bilateral-challenge-receipt",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "correlation_id",
+      "entity_type": "CORRELATION_ID",
+      "confidence": 0.5602,
+      "status": "candidate",
+      "source_location": {
+        "line": 364,
+        "offset": 10467,
+        "end_offset": 10481,
+        "context": "  },\n    {\n      \"concept_id\": \"dssc-bilateral-challenge-receipt.correlation.id.v1\",\n      \"preferred_term\": \"correlation_id\",\n      \"synonyms\": [],\n      \"register_variants\": {},\n      \"domain_vocabulary\": {},\n      \"translations\": {"
+      },
+      "suggested_skos": {
+        "prefLabel": "correlation_id",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "GovernanceSurface",
+      "entity_type": "JURISDICTION",
+      "confidence": 0.9131,
+      "status": "candidate",
+      "source_location": {
+        "line": 369,
+        "offset": 10612,
+        "end_offset": 10629,
+        "context": "[],\n      \"register_variants\": {},\n      \"domain_vocabulary\": {},\n      \"translations\": {},\n      \"broader\": \"GovernanceSurface\",\n      \"narrower\": [],\n      \"source_refs\": [\n        \"dssc-canonical-source-catalog\"\n      ],\n      \"ner_pr"
+      },
+      "suggested_skos": {
+        "prefLabel": "GovernanceSurface",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "dssc-canonical-source-catalog",
+      "entity_type": "RATIONALE_REFERENCE",
+      "confidence": 0.4537,
+      "status": "candidate",
+      "source_location": {
+        "line": 372,
+        "offset": 10686,
+        "end_offset": 10715,
+        "context": "ranslations\": {},\n      \"broader\": \"GovernanceSurface\",\n      \"narrower\": [],\n      \"source_refs\": [\n        \"dssc-canonical-source-catalog\"\n      ],\n      \"ner_provenance\": null\n    },\n    {\n      \"concept_id\": \"dssc-bilateral-challenge-receipt.anc"
+      },
+      "suggested_skos": {
+        "prefLabel": "dssc-canonical-source-catalog",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "dssc-bilateral-challenge-receipt",
+      "entity_type": "RECEIPT_ID",
+      "confidence": 0.4495,
+      "status": "candidate",
+      "source_location": {
+        "line": 377,
+        "offset": 10789,
+        "end_offset": 10821,
+        "context": "      \"dssc-canonical-source-catalog\"\n      ],\n      \"ner_provenance\": null\n    },\n    {\n      \"concept_id\": \"dssc-bilateral-challenge-receipt.anchor.hash.origin.v1\",\n      \"preferred_term\": \"anchor_hash_origin\",\n      \"synonyms\": [],\n      \"register_v"
+      },
+      "suggested_skos": {
+        "prefLabel": "dssc-bilateral-challenge-receipt",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "anchor_hash_origin",
+      "entity_type": "RATIONALE_REFERENCE",
+      "confidence": 0.4269,
+      "status": "candidate",
+      "source_location": {
+        "line": 378,
+        "offset": 10871,
+        "end_offset": 10889,
+        "context": "\n    {\n      \"concept_id\": \"dssc-bilateral-challenge-receipt.anchor.hash.origin.v1\",\n      \"preferred_term\": \"anchor_hash_origin\",\n      \"synonyms\": [],\n      \"register_variants\": {},\n      \"domain_vocabulary\": {},\n      \"translations\": {"
+      },
+      "suggested_skos": {
+        "prefLabel": "anchor_hash_origin",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "GovernanceSurface",
+      "entity_type": "JURISDICTION",
+      "confidence": 0.9206,
+      "status": "candidate",
+      "source_location": {
+        "line": 383,
+        "offset": 11020,
+        "end_offset": 11037,
+        "context": "[],\n      \"register_variants\": {},\n      \"domain_vocabulary\": {},\n      \"translations\": {},\n      \"broader\": \"GovernanceSurface\",\n      \"narrower\": [],\n      \"source_refs\": [\n        \"dssc-canonical-source-catalog\"\n      ],\n      \"ner_pr"
+      },
+      "suggested_skos": {
+        "prefLabel": "GovernanceSurface",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "dssc-bilateral-challenge-receipt",
+      "entity_type": "RECEIPT_ID",
+      "confidence": 0.4133,
+      "status": "candidate",
+      "source_location": {
+        "line": 391,
+        "offset": 11197,
+        "end_offset": 11229,
+        "context": "      \"dssc-canonical-source-catalog\"\n      ],\n      \"ner_provenance\": null\n    },\n    {\n      \"concept_id\": \"dssc-bilateral-challenge-receipt.anchor.hash.target.v1\",\n      \"preferred_term\": \"anchor_hash_target\",\n      \"synonyms\": [],\n      \"register_v"
+      },
+      "suggested_skos": {
+        "prefLabel": "dssc-bilateral-challenge-receipt",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "anchor_hash_target",
+      "entity_type": "RATIONALE_REFERENCE",
+      "confidence": 0.4275,
+      "status": "candidate",
+      "source_location": {
+        "line": 392,
+        "offset": 11279,
+        "end_offset": 11297,
+        "context": "\n    {\n      \"concept_id\": \"dssc-bilateral-challenge-receipt.anchor.hash.target.v1\",\n      \"preferred_term\": \"anchor_hash_target\",\n      \"synonyms\": [],\n      \"register_variants\": {},\n      \"domain_vocabulary\": {},\n      \"translations\": {"
+      },
+      "suggested_skos": {
+        "prefLabel": "anchor_hash_target",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "GovernanceSurface",
+      "entity_type": "JURISDICTION",
+      "confidence": 0.9277,
+      "status": "candidate",
+      "source_location": {
+        "line": 397,
+        "offset": 11428,
+        "end_offset": 11445,
+        "context": "[],\n      \"register_variants\": {},\n      \"domain_vocabulary\": {},\n      \"translations\": {},\n      \"broader\": \"GovernanceSurface\",\n      \"narrower\": [],\n      \"source_refs\": [\n        \"dssc-canonical-source-catalog\"\n      ],\n      \"ner_pr"
+      },
+      "suggested_skos": {
+        "prefLabel": "GovernanceSurface",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "concept_id",
+      "entity_type": "CHALLENGE_ID",
+      "confidence": 0.3579,
+      "status": "candidate",
+      "source_location": {
+        "line": 405,
+        "offset": 11591,
+        "end_offset": 11601,
+        "context": "ce_refs\": [\n        \"dssc-canonical-source-catalog\"\n      ],\n      \"ner_provenance\": null\n    },\n    {\n      \"concept_id\": \"dssc-bilateral-challenge-receipt.event.hash.v1\",\n      \"preferred_term\": \"event_hash\",\n      \"synonyms\": ["
+      },
+      "suggested_skos": {
+        "prefLabel": "concept_id",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "dssc-bilateral-challenge-receipt",
+      "entity_type": "RECEIPT_ID",
+      "confidence": 0.3618,
+      "status": "candidate",
+      "source_location": {
+        "line": 405,
+        "offset": 11605,
+        "end_offset": 11637,
+        "context": "      \"dssc-canonical-source-catalog\"\n      ],\n      \"ner_provenance\": null\n    },\n    {\n      \"concept_id\": \"dssc-bilateral-challenge-receipt.event.hash.v1\",\n      \"preferred_term\": \"event_hash\",\n      \"synonyms\": [],\n      \"register_variants\": {},\n  "
+      },
+      "suggested_skos": {
+        "prefLabel": "dssc-bilateral-challenge-receipt",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "event_hash",
+      "entity_type": "PAYLOAD_HASH",
+      "confidence": 0.3629,
+      "status": "candidate",
+      "source_location": {
+        "line": 406,
+        "offset": 11679,
+        "end_offset": 11689,
+        "context": "l\n    },\n    {\n      \"concept_id\": \"dssc-bilateral-challenge-receipt.event.hash.v1\",\n      \"preferred_term\": \"event_hash\",\n      \"synonyms\": [],\n      \"register_variants\": {},\n      \"domain_vocabulary\": {},\n      \"translations\": {"
+      },
+      "suggested_skos": {
+        "prefLabel": "event_hash",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "GovernanceSurface",
+      "entity_type": "JURISDICTION",
+      "confidence": 0.9158,
+      "status": "candidate",
+      "source_location": {
+        "line": 411,
+        "offset": 11820,
+        "end_offset": 11837,
+        "context": "[],\n      \"register_variants\": {},\n      \"domain_vocabulary\": {},\n      \"translations\": {},\n      \"broader\": \"GovernanceSurface\",\n      \"narrower\": [],\n      \"source_refs\": [\n        \"dssc-canonical-source-catalog\"\n      ],\n      \"ner_pr"
+      },
+      "suggested_skos": {
+        "prefLabel": "GovernanceSurface",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "GovernanceSurface",
+      "entity_type": "JURISDICTION",
+      "confidence": 0.9209,
+      "status": "candidate",
+      "source_location": {
+        "line": 425,
+        "offset": 12210,
+        "end_offset": 12227,
+        "context": "[],\n      \"register_variants\": {},\n      \"domain_vocabulary\": {},\n      \"translations\": {},\n      \"broader\": \"GovernanceSurface\",\n      \"narrower\": [],\n      \"source_refs\": [\n        \"dssc-canonical-source-catalog\"\n      ],\n      \"ner_pr"
+      },
+      "suggested_skos": {
+        "prefLabel": "GovernanceSurface",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "dssc_governance_submit_challenge_v1",
+      "entity_type": "CHALLENGE_ID",
+      "confidence": 0.5722,
+      "status": "candidate",
+      "source_location": {
+        "line": 442,
+        "offset": 12503,
+        "end_offset": 12538,
+        "context": "  \"schema_version\": \"1.0\",\n  \"domain\": \"dssc-bilateral-challenge-receipt\",\n  \"patterns\": [\n    {\n      \"id\": \"dssc_governance_submit_challenge_v1\",\n      \"concept_uri\": \"dssc:GovernanceSurface\",\n      \"entity_type\": \"intent_hint\",\n      \"regex\": \"(?i)\\\\bd"
+      },
+      "suggested_skos": {
+        "prefLabel": "dssc_governance_submit_challenge_v1",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "dssc",
+      "entity_type": "JURISDICTION",
+      "confidence": 0.4537,
+      "status": "candidate",
+      "source_location": {
+        "line": 443,
+        "offset": 12563,
+        "end_offset": 12567,
+        "context": "enge-receipt\",\n  \"patterns\": [\n    {\n      \"id\": \"dssc_governance_submit_challenge_v1\",\n      \"concept_uri\": \"dssc:GovernanceSurface\",\n      \"entity_type\": \"intent_hint\",\n      \"regex\": \"(?i)\\\\bdssc\\\\.governance\\\\.submit_cha"
+      },
+      "suggested_skos": {
+        "prefLabel": "dssc",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "GovernanceSurface",
+      "entity_type": "JURISDICTION",
+      "confidence": 0.6778,
+      "status": "candidate",
+      "source_location": {
+        "line": 443,
+        "offset": 12568,
+        "end_offset": 12585,
+        "context": "receipt\",\n  \"patterns\": [\n    {\n      \"id\": \"dssc_governance_submit_challenge_v1\",\n      \"concept_uri\": \"dssc:GovernanceSurface\",\n      \"entity_type\": \"intent_hint\",\n      \"regex\": \"(?i)\\\\bdssc\\\\.governance\\\\.submit_challenge\\\\.v1\\\\b\",\n "
+      },
+      "suggested_skos": {
+        "prefLabel": "GovernanceSurface",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "intent_hint",
+      "entity_type": "INTENT_CLASS",
+      "confidence": 0.4967,
+      "status": "candidate",
+      "source_location": {
+        "line": 444,
+        "offset": 12610,
+        "end_offset": 12621,
+        "context": ": \"dssc_governance_submit_challenge_v1\",\n      \"concept_uri\": \"dssc:GovernanceSurface\",\n      \"entity_type\": \"intent_hint\",\n      \"regex\": \"(?i)\\\\bdssc\\\\.governance\\\\.submit_challenge\\\\.v1\\\\b\",\n      \"examples\": [\n        \"dssc.gov"
+      },
+      "suggested_skos": {
+        "prefLabel": "intent_hint",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "v1",
+      "entity_type": "POLICY_SNAPSHOT",
+      "confidence": 0.4611,
+      "status": "candidate",
+      "source_location": {
+        "line": 445,
+        "offset": 12686,
+        "end_offset": 12688,
+        "context": "ceSurface\",\n      \"entity_type\": \"intent_hint\",\n      \"regex\": \"(?i)\\\\bdssc\\\\.governance\\\\.submit_challenge\\\\.v1\\\\b\",\n      \"examples\": [\n        \"dssc.governance.submit_challenge.v1\"\n      ]\n    },\n    {\n      \"id\": \"dssc"
+      },
+      "suggested_skos": {
+        "prefLabel": "v1",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "submit_challenge",
+      "entity_type": "CHALLENGE_ID",
+      "confidence": 0.3556,
+      "status": "candidate",
+      "source_location": {
+        "line": 447,
+        "offset": 12739,
+        "end_offset": 12755,
+        "context": " \"regex\": \"(?i)\\\\bdssc\\\\.governance\\\\.submit_challenge\\\\.v1\\\\b\",\n      \"examples\": [\n        \"dssc.governance.submit_challenge.v1\"\n      ]\n    },\n    {\n      \"id\": \"dssc_governance_issue_receipt_v1\",\n      \"concept_uri\": \"dssc:Governanc"
+      },
+      "suggested_skos": {
+        "prefLabel": "submit_challenge",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "v1",
+      "entity_type": "POLICY_SNAPSHOT",
+      "confidence": 0.4443,
+      "status": "candidate",
+      "source_location": {
+        "line": 447,
+        "offset": 12756,
+        "end_offset": 12758,
+        "context": "bdssc\\\\.governance\\\\.submit_challenge\\\\.v1\\\\b\",\n      \"examples\": [\n        \"dssc.governance.submit_challenge.v1\"\n      ]\n    },\n    {\n      \"id\": \"dssc_governance_issue_receipt_v1\",\n      \"concept_uri\": \"dssc:GovernanceSu"
+      },
+      "suggested_skos": {
+        "prefLabel": "v1",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "dssc_governance_issue_receipt_v1",
+      "entity_type": "RECEIPT_ID",
+      "confidence": 0.5766,
+      "status": "candidate",
+      "source_location": {
+        "line": 451,
+        "offset": 12794,
+        "end_offset": 12826,
+        "context": "\\.v1\\\\b\",\n      \"examples\": [\n        \"dssc.governance.submit_challenge.v1\"\n      ]\n    },\n    {\n      \"id\": \"dssc_governance_issue_receipt_v1\",\n      \"concept_uri\": \"dssc:GovernanceSurface\",\n      \"entity_type\": \"intent_hint\",\n      \"regex\": \"(?i)\\\\bd"
+      },
+      "suggested_skos": {
+        "prefLabel": "dssc_governance_issue_receipt_v1",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "GovernanceSurface",
+      "entity_type": "JURISDICTION",
+      "confidence": 0.4643,
+      "status": "candidate",
+      "source_location": {
+        "line": 452,
+        "offset": 12856,
+        "end_offset": 12873,
+        "context": "challenge.v1\"\n      ]\n    },\n    {\n      \"id\": \"dssc_governance_issue_receipt_v1\",\n      \"concept_uri\": \"dssc:GovernanceSurface\",\n      \"entity_type\": \"intent_hint\",\n      \"regex\": \"(?i)\\\\bdssc\\\\.governance\\\\.issue_receipt\\\\.v1\\\\b\",\n    "
+      },
+      "suggested_skos": {
+        "prefLabel": "GovernanceSurface",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "intent_hint",
+      "entity_type": "INTENT_CLASS",
+      "confidence": 0.4481,
+      "status": "candidate",
+      "source_location": {
+        "line": 453,
+        "offset": 12898,
+        "end_offset": 12909,
+        "context": "id\": \"dssc_governance_issue_receipt_v1\",\n      \"concept_uri\": \"dssc:GovernanceSurface\",\n      \"entity_type\": \"intent_hint\",\n      \"regex\": \"(?i)\\\\bdssc\\\\.governance\\\\.issue_receipt\\\\.v1\\\\b\",\n      \"examples\": [\n        \"dssc.govern"
+      },
+      "suggested_skos": {
+        "prefLabel": "intent_hint",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "v1",
+      "entity_type": "POLICY_SNAPSHOT",
+      "confidence": 0.36,
+      "status": "candidate",
+      "source_location": {
+        "line": 454,
+        "offset": 12971,
+        "end_offset": 12973,
+        "context": "nanceSurface\",\n      \"entity_type\": \"intent_hint\",\n      \"regex\": \"(?i)\\\\bdssc\\\\.governance\\\\.issue_receipt\\\\.v1\\\\b\",\n      \"examples\": [\n        \"dssc.governance.issue_receipt.v1\"\n      ]\n    }\n  ]\n}\n\n\n### FILE: source-ex"
+      },
+      "suggested_skos": {
+        "prefLabel": "v1",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "issue_receipt",
+      "entity_type": "RECEIPT_ID",
+      "confidence": 0.4159,
+      "status": "candidate",
+      "source_location": {
+        "line": 456,
+        "offset": 13024,
+        "end_offset": 13037,
+        "context": "    \"regex\": \"(?i)\\\\bdssc\\\\.governance\\\\.issue_receipt\\\\.v1\\\\b\",\n      \"examples\": [\n        \"dssc.governance.issue_receipt.v1\"\n      ]\n    }\n  ]\n}\n\n\n### FILE: source-extract/sources.json\n{\n  \"schema_version\": \"1.0\",\n  \"generated_at_"
+      },
+      "suggested_skos": {
+        "prefLabel": "issue_receipt",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "v1",
+      "entity_type": "POLICY_SNAPSHOT",
+      "confidence": 0.4152,
+      "status": "candidate",
+      "source_location": {
+        "line": 456,
+        "offset": 13038,
+        "end_offset": 13040,
+        "context": "(?i)\\\\bdssc\\\\.governance\\\\.issue_receipt\\\\.v1\\\\b\",\n      \"examples\": [\n        \"dssc.governance.issue_receipt.v1\"\n      ]\n    }\n  ]\n}\n\n\n### FILE: source-extract/sources.json\n{\n  \"schema_version\": \"1.0\",\n  \"generated_at_utc"
+      },
+      "suggested_skos": {
+        "prefLabel": "v1",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "canonical-source-1",
+      "entity_type": "RATIONALE_REFERENCE",
+      "confidence": 0.4303,
+      "status": "candidate",
+      "source_location": {
+        "line": 471,
+        "offset": 13340,
+        "end_offset": 13358,
+        "context": "pack\",\n  \"bundle_id\": \"dssc-bilateral-challenge-receipt-source-2026-04-14\",\n  \"sources\": [\n    {\n      \"id\": \"canonical-source-1\",\n      \"title\": \"Canonical source 1\",\n      \"url\": \"https://blueprint.dssc.eu/\",\n      \"type\": \"canonical_re"
+      },
+      "suggested_skos": {
+        "prefLabel": "canonical-source-1",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "Canonical source 1",
+      "entity_type": "RECEIPT_ID",
+      "confidence": 0.3628,
+      "status": "candidate",
+      "source_location": {
+        "line": 472,
+        "offset": 13377,
+        "end_offset": 13395,
+        "context": "-challenge-receipt-source-2026-04-14\",\n  \"sources\": [\n    {\n      \"id\": \"canonical-source-1\",\n      \"title\": \"Canonical source 1\",\n      \"url\": \"https://blueprint.dssc.eu/\",\n      \"type\": \"canonical_reference\",\n      \"status\": \"referenced"
+      },
+      "suggested_skos": {
+        "prefLabel": "Canonical source 1",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "status",
+      "entity_type": "STATUS",
+      "confidence": 0.7327,
+      "status": "candidate",
+      "source_location": {
+        "line": 475,
+        "offset": 13485,
+        "end_offset": 13491,
+        "context": " \"Canonical source 1\",\n      \"url\": \"https://blueprint.dssc.eu/\",\n      \"type\": \"canonical_reference\",\n      \"status\": \"referenced\"\n    },\n    {\n      \"id\": \"canonical-source-2\",\n      \"title\": \"Canonical source 2\",\n      \"url"
+      },
+      "suggested_skos": {
+        "prefLabel": "status",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "canonical-source-2",
+      "entity_type": "RATIONALE_REFERENCE",
+      "confidence": 0.4337,
+      "status": "candidate",
+      "source_location": {
+        "line": 478,
+        "offset": 13533,
+        "end_offset": 13551,
+        "context": "eprint.dssc.eu/\",\n      \"type\": \"canonical_reference\",\n      \"status\": \"referenced\"\n    },\n    {\n      \"id\": \"canonical-source-2\",\n      \"title\": \"Canonical source 2\",\n      \"url\": \"https://eclipse-dataspace-protocol-base.github.io/Datasp"
+      },
+      "suggested_skos": {
+        "prefLabel": "canonical-source-2",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "Canonical source 2",
+      "entity_type": "RECEIPT_ID",
+      "confidence": 0.4113,
+      "status": "candidate",
+      "source_location": {
+        "line": 479,
+        "offset": 13570,
+        "end_offset": 13588,
+        "context": "nical_reference\",\n      \"status\": \"referenced\"\n    },\n    {\n      \"id\": \"canonical-source-2\",\n      \"title\": \"Canonical source 2\",\n      \"url\": \"https://eclipse-dataspace-protocol-base.github.io/DataspaceProtocol/HEAD/\",\n      \"type\": \"ca"
+      },
+      "suggested_skos": {
+        "prefLabel": "Canonical source 2",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "status",
+      "entity_type": "STATUS",
+      "confidence": 0.6767,
+      "status": "candidate",
+      "source_location": {
+        "line": 482,
+        "offset": 13725,
+        "end_offset": 13731,
+        "context": "lipse-dataspace-protocol-base.github.io/DataspaceProtocol/HEAD/\",\n      \"type\": \"canonical_reference\",\n      \"status\": \"referenced\"\n    }\n  ]\n}\n\n\n### FILE: message-identifiers.json\n{\n  \"schema_version\": \"0.1\",\n  \"generated_at_"
+      },
+      "suggested_skos": {
+        "prefLabel": "status",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "dssc-bilateral-challenge-receipt",
+      "entity_type": "RATIONALE_REFERENCE",
+      "confidence": 0.3799,
+      "status": "candidate",
+      "source_location": {
+        "line": 493,
+        "offset": 13943,
+        "end_offset": 13975,
+        "context": "ated_at_utc\": \"2026-04-14T12:00:00Z\",\n  \"profile\": \"dssc-bilateral-challenge-receipt-demo-pack\",\n  \"domain\": \"dssc-bilateral-challenge-receipt\",\n  \"message_identifiers\": [],\n  \"message_types\": [],\n  \"note\": \"No ISO-style message identifiers for this DS"
+      },
+      "suggested_skos": {
+        "prefLabel": "dssc-bilateral-challenge-receipt",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "Stage-4",
+      "entity_type": "STATUS",
+      "confidence": 0.4569,
+      "status": "candidate",
+      "source_location": {
+        "line": 510,
+        "offset": 14500,
+        "end_offset": 14507,
+        "context": "alk notes\",\n  \"source_artifact_count\": 2,\n  \"mapped_symbol_count\": 16,\n  \"mapped_field_count\": 12,\n  \"note\": \"Stage-4 skeleton pack authored from stage-3 spec artifacts.\"\n}\n"
+      },
+      "suggested_skos": {
+        "prefLabel": "Stage-4",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "stage-3",
+      "entity_type": "STATUS",
+      "confidence": 0.4946,
+      "status": "candidate",
+      "source_location": {
+        "line": 510,
+        "offset": 14536,
+        "end_offset": 14543,
+        "context": "\": 2,\n  \"mapped_symbol_count\": 16,\n  \"mapped_field_count\": 12,\n  \"note\": \"Stage-4 skeleton pack authored from stage-3 spec artifacts.\"\n}\n"
+      },
+      "suggested_skos": {
+        "prefLabel": "stage-3",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    }
+  ],
+  "provenance": {
+    "extraction_run_id": "dssc-bilateral-challenge-receipt-gliner-docker-pass-2026-04-14",
+    "adapter": "gliner",
+    "model": "urchade/gliner_medium-v2.1",
+    "model_hash": "sha256:6c2fcfc92ecee10654d9d3151b2fca9dee740b375c4c99d928c87a9d969e1f7b",
+    "timestamp": "2026-04-14T09:24:12.368048+00:00",
+    "document_hash": "sha256:4c047381b70f5c166c41832f690f296bd5d2737d5ccb306448569108e0049f68",
+    "config_hash": "sha256:49de280dd98cfce34d5da62f8396b3c2df6b5c6772f8443b309d34980199f38a",
+    "entity_count": 150,
+    "entity_type_distribution": {
+      "JURISDICTION": 26,
+      "POLICY_SNAPSHOT": 23,
+      "INTENT_CLASS": 8,
+      "PAYLOAD_HASH": 9,
+      "DENY_REASON_CODE": 6,
+      "CHALLENGE_ID": 13,
+      "RECEIPT_ID": 22,
+      "RATIONALE_REFERENCE": 30,
+      "STATUS": 12,
+      "CORRELATION_ID": 1
+    },
+    "processing_time_ms": 22152
+  }
+}

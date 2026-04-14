@@ -1,0 +1,3372 @@
+{
+  "schema_version": "1.0",
+  "extraction_run_id": "dssc-catalog-discovery-gliner-docker-pass-2026-04-14",
+  "adapter": "gliner",
+  "model": "urchade/gliner_medium-v2.1",
+  "model_hash": "sha256:6c2fcfc92ecee10654d9d3151b2fca9dee740b375c4c99d928c87a9d969e1f7b",
+  "source_document": "corpus.txt",
+  "source_document_hash": "sha256:cc4676f402a917d38da9765d3e2779aafbe9ed019d00cd850a0c2f02b8fa0769",
+  "labels_used": [
+    "CATALOG_ENTITY",
+    "OFFERING",
+    "DATASET_METADATA",
+    "SERVICE_ENDPOINT",
+    "USAGE_POLICY",
+    "LIFECYCLE_STATE",
+    "INTENT_CLASS",
+    "JURISDICTION",
+    "IDENTIFIER",
+    "POLICY_SNAPSHOT"
+  ],
+  "threshold": 0.35,
+  "candidates": [
+    {
+      "surface_form": "Intent Surface",
+      "entity_type": "INTENT_CLASS",
+      "confidence": 0.4009,
+      "status": "candidate",
+      "source_location": {
+        "line": 21,
+        "offset": 779,
+        "end_offset": 793,
+        "context": "n-profile-data-portals-europe\n- https://eclipse-dataspace-protocol-base.github.io/DataspaceProtocol/HEAD/\n\n## Intent Surface\n\n- `dssc.catalog.publish_offering.v1`: Publish new offering metadata into catalog scope.\n- `dssc.catalog.upda"
+      },
+      "suggested_skos": {
+        "prefLabel": "Intent Surface",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "offering",
+      "entity_type": "OFFERING",
+      "confidence": 0.7435,
+      "status": "candidate",
+      "source_location": {
+        "line": 23,
+        "offset": 845,
+        "end_offset": 853,
+        "context": "-base.github.io/DataspaceProtocol/HEAD/\n\n## Intent Surface\n\n- `dssc.catalog.publish_offering.v1`: Publish new offering metadata into catalog scope.\n- `dssc.catalog.update_offering.v1`: Update existing offering metadata and lifec"
+      },
+      "suggested_skos": {
+        "prefLabel": "offering",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "metadata",
+      "entity_type": "DATASET_METADATA",
+      "confidence": 0.5937,
+      "status": "candidate",
+      "source_location": {
+        "line": 23,
+        "offset": 854,
+        "end_offset": 862,
+        "context": "hub.io/DataspaceProtocol/HEAD/\n\n## Intent Surface\n\n- `dssc.catalog.publish_offering.v1`: Publish new offering metadata into catalog scope.\n- `dssc.catalog.update_offering.v1`: Update existing offering metadata and lifecycle stat"
+      },
+      "suggested_skos": {
+        "prefLabel": "metadata",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "catalog scope",
+      "entity_type": "CATALOG_ENTITY",
+      "confidence": 0.6238,
+      "status": "candidate",
+      "source_location": {
+        "line": 23,
+        "offset": 868,
+        "end_offset": 881,
+        "context": "ceProtocol/HEAD/\n\n## Intent Surface\n\n- `dssc.catalog.publish_offering.v1`: Publish new offering metadata into catalog scope.\n- `dssc.catalog.update_offering.v1`: Update existing offering metadata and lifecycle state.\n- `dssc.catalog."
+      },
+      "suggested_skos": {
+        "prefLabel": "catalog scope",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "v1",
+      "entity_type": "POLICY_SNAPSHOT",
+      "confidence": 0.3759,
+      "status": "candidate",
+      "source_location": {
+        "line": 24,
+        "offset": 915,
+        "end_offset": 917,
+        "context": "talog.publish_offering.v1`: Publish new offering metadata into catalog scope.\n- `dssc.catalog.update_offering.v1`: Update existing offering metadata and lifecycle state.\n- `dssc.catalog.remove_offering.v1`: Remove/deprecat"
+      },
+      "suggested_skos": {
+        "prefLabel": "v1",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "offering",
+      "entity_type": "OFFERING",
+      "confidence": 0.6646,
+      "status": "candidate",
+      "source_location": {
+        "line": 24,
+        "offset": 936,
+        "end_offset": 944,
+        "context": "g.v1`: Publish new offering metadata into catalog scope.\n- `dssc.catalog.update_offering.v1`: Update existing offering metadata and lifecycle state.\n- `dssc.catalog.remove_offering.v1`: Remove/deprecate offering from discoverabl"
+      },
+      "suggested_skos": {
+        "prefLabel": "offering",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "metadata",
+      "entity_type": "DATASET_METADATA",
+      "confidence": 0.7104,
+      "status": "candidate",
+      "source_location": {
+        "line": 24,
+        "offset": 945,
+        "end_offset": 953,
+        "context": "blish new offering metadata into catalog scope.\n- `dssc.catalog.update_offering.v1`: Update existing offering metadata and lifecycle state.\n- `dssc.catalog.remove_offering.v1`: Remove/deprecate offering from discoverable catalog"
+      },
+      "suggested_skos": {
+        "prefLabel": "metadata",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "lifecycle state",
+      "entity_type": "LIFECYCLE_STATE",
+      "confidence": 0.9064,
+      "status": "candidate",
+      "source_location": {
+        "line": 24,
+        "offset": 958,
+        "end_offset": 973,
+        "context": "ering metadata into catalog scope.\n- `dssc.catalog.update_offering.v1`: Update existing offering metadata and lifecycle state.\n- `dssc.catalog.remove_offering.v1`: Remove/deprecate offering from discoverable catalog set.\n- `dssc.catalo"
+      },
+      "suggested_skos": {
+        "prefLabel": "lifecycle state",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "v1",
+      "entity_type": "POLICY_SNAPSHOT",
+      "confidence": 0.3649,
+      "status": "candidate",
+      "source_location": {
+        "line": 25,
+        "offset": 1007,
+        "end_offset": 1009,
+        "context": "g.update_offering.v1`: Update existing offering metadata and lifecycle state.\n- `dssc.catalog.remove_offering.v1`: Remove/deprecate offering from discoverable catalog set.\n- `dssc.catalog.query_offering.v1`: Query offering"
+      },
+      "suggested_skos": {
+        "prefLabel": "v1",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "offering",
+      "entity_type": "OFFERING",
+      "confidence": 0.6565,
+      "status": "candidate",
+      "source_location": {
+        "line": 25,
+        "offset": 1029,
+        "end_offset": 1037,
+        "context": " Update existing offering metadata and lifecycle state.\n- `dssc.catalog.remove_offering.v1`: Remove/deprecate offering from discoverable catalog set.\n- `dssc.catalog.query_offering.v1`: Query offering metadata in bounded discove"
+      },
+      "suggested_skos": {
+        "prefLabel": "offering",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "v1",
+      "entity_type": "POLICY_SNAPSHOT",
+      "confidence": 0.3691,
+      "status": "candidate",
+      "source_location": {
+        "line": 26,
+        "offset": 1100,
+        "end_offset": 1102,
+        "context": ".remove_offering.v1`: Remove/deprecate offering from discoverable catalog set.\n- `dssc.catalog.query_offering.v1`: Query offering metadata in bounded discovery profile.\n\n## Determinism Boundary\n\n- Out-of-scope behavior is "
+      },
+      "suggested_skos": {
+        "prefLabel": "v1",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "offering",
+      "entity_type": "OFFERING",
+      "confidence": 0.8794,
+      "status": "candidate",
+      "source_location": {
+        "line": 26,
+        "offset": 1111,
+        "end_offset": 1119,
+        "context": "ering.v1`: Remove/deprecate offering from discoverable catalog set.\n- `dssc.catalog.query_offering.v1`: Query offering metadata in bounded discovery profile.\n\n## Determinism Boundary\n\n- Out-of-scope behavior is `escalate`.\n- Pol"
+      },
+      "suggested_skos": {
+        "prefLabel": "offering",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "metadata",
+      "entity_type": "DATASET_METADATA",
+      "confidence": 0.7123,
+      "status": "candidate",
+      "source_location": {
+        "line": 26,
+        "offset": 1120,
+        "end_offset": 1128,
+        "context": ": Remove/deprecate offering from discoverable catalog set.\n- `dssc.catalog.query_offering.v1`: Query offering metadata in bounded discovery profile.\n\n## Determinism Boundary\n\n- Out-of-scope behavior is `escalate`.\n- Policy/bundl"
+      },
+      "suggested_skos": {
+        "prefLabel": "metadata",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "Policy",
+      "entity_type": "USAGE_POLICY",
+      "confidence": 0.4242,
+      "status": "candidate",
+      "source_location": {
+        "line": 31,
+        "offset": 1226,
+        "end_offset": 1232,
+        "context": "ing metadata in bounded discovery profile.\n\n## Determinism Boundary\n\n- Out-of-scope behavior is `escalate`.\n- Policy/bundle binding is required for admitted execution paths.\n- Deny reason codes are explicit and stable for fixt"
+      },
+      "suggested_skos": {
+        "prefLabel": "Policy",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "olicy",
+      "entity_type": "USAGE_POLICY",
+      "confidence": 0.4348,
+      "status": "candidate",
+      "source_location": {
+        "line": 31,
+        "offset": 1227,
+        "end_offset": 1232,
+        "context": "ng metadata in bounded discovery profile.\n\n## Determinism Boundary\n\n- Out-of-scope behavior is `escalate`.\n- Policy/bundle binding is required for admitted execution paths.\n- Deny reason codes are explicit and stable for fixt"
+      },
+      "suggested_skos": {
+        "prefLabel": "olicy",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "pack.json",
+      "entity_type": "DATASET_METADATA",
+      "confidence": 0.4535,
+      "status": "candidate",
+      "source_location": {
+        "line": 37,
+        "offset": 1395,
+        "end_offset": 1404,
+        "context": "ths.\n- Deny reason codes are explicit and stable for fixture replay.\n\n## Included Artifacts\n\n- `README.md`\n- `pack.json`\n- `context.jsonld`\n- `vocab.skos.jsonld`\n- `shapes.ttl`\n- `thesaurus.jsonld`\n- `thesaurus-local.json`\n- `pat"
+      },
+      "suggested_skos": {
+        "prefLabel": "pack.json",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "context.jsonld",
+      "entity_type": "DATASET_METADATA",
+      "confidence": 0.4828,
+      "status": "candidate",
+      "source_location": {
+        "line": 38,
+        "offset": 1409,
+        "end_offset": 1423,
+        "context": "ason codes are explicit and stable for fixture replay.\n\n## Included Artifacts\n\n- `README.md`\n- `pack.json`\n- `context.jsonld`\n- `vocab.skos.jsonld`\n- `shapes.ttl`\n- `thesaurus.jsonld`\n- `thesaurus-local.json`\n- `patterns.json`\n- `inte"
+      },
+      "suggested_skos": {
+        "prefLabel": "context.jsonld",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "shapes.ttl",
+      "entity_type": "DATASET_METADATA",
+      "confidence": 0.381,
+      "status": "candidate",
+      "source_location": {
+        "line": 40,
+        "offset": 1450,
+        "end_offset": 1460,
+        "context": "xture replay.\n\n## Included Artifacts\n\n- `README.md`\n- `pack.json`\n- `context.jsonld`\n- `vocab.skos.jsonld`\n- `shapes.ttl`\n- `thesaurus.jsonld`\n- `thesaurus-local.json`\n- `patterns.json`\n- `intent-mappings.json`\n- `convergence.json"
+      },
+      "suggested_skos": {
+        "prefLabel": "shapes.ttl",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "thesaurus.jsonld",
+      "entity_type": "DATASET_METADATA",
+      "confidence": 0.5265,
+      "status": "candidate",
+      "source_location": {
+        "line": 41,
+        "offset": 1465,
+        "end_offset": 1481,
+        "context": "## Included Artifacts\n\n- `README.md`\n- `pack.json`\n- `context.jsonld`\n- `vocab.skos.jsonld`\n- `shapes.ttl`\n- `thesaurus.jsonld`\n- `thesaurus-local.json`\n- `patterns.json`\n- `intent-mappings.json`\n- `convergence.json`\n- `decision-space.j"
+      },
+      "suggested_skos": {
+        "prefLabel": "thesaurus.jsonld",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "thesaurus-local.json",
+      "entity_type": "DATASET_METADATA",
+      "confidence": 0.5402,
+      "status": "candidate",
+      "source_location": {
+        "line": 42,
+        "offset": 1486,
+        "end_offset": 1506,
+        "context": "\n\n- `README.md`\n- `pack.json`\n- `context.jsonld`\n- `vocab.skos.jsonld`\n- `shapes.ttl`\n- `thesaurus.jsonld`\n- `thesaurus-local.json`\n- `patterns.json`\n- `intent-mappings.json`\n- `convergence.json`\n- `decision-space.json`\n- `message-identifie"
+      },
+      "suggested_skos": {
+        "prefLabel": "thesaurus-local.json",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "patterns.json",
+      "entity_type": "DATASET_METADATA",
+      "confidence": 0.6954,
+      "status": "candidate",
+      "source_location": {
+        "line": 43,
+        "offset": 1511,
+        "end_offset": 1524,
+        "context": "son`\n- `context.jsonld`\n- `vocab.skos.jsonld`\n- `shapes.ttl`\n- `thesaurus.jsonld`\n- `thesaurus-local.json`\n- `patterns.json`\n- `intent-mappings.json`\n- `convergence.json`\n- `decision-space.json`\n- `message-identifiers.json`\n- `extrac"
+      },
+      "suggested_skos": {
+        "prefLabel": "patterns.json",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "intent-mappings.json",
+      "entity_type": "DATASET_METADATA",
+      "confidence": 0.6521,
+      "status": "candidate",
+      "source_location": {
+        "line": 44,
+        "offset": 1529,
+        "end_offset": 1549,
+        "context": "onld`\n- `vocab.skos.jsonld`\n- `shapes.ttl`\n- `thesaurus.jsonld`\n- `thesaurus-local.json`\n- `patterns.json`\n- `intent-mappings.json`\n- `convergence.json`\n- `decision-space.json`\n- `message-identifiers.json`\n- `extraction-summary.json`\n- `bun"
+      },
+      "suggested_skos": {
+        "prefLabel": "intent-mappings.json",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "convergence.json",
+      "entity_type": "DATASET_METADATA",
+      "confidence": 0.6768,
+      "status": "candidate",
+      "source_location": {
+        "line": 45,
+        "offset": 1554,
+        "end_offset": 1570,
+        "context": "d`\n- `shapes.ttl`\n- `thesaurus.jsonld`\n- `thesaurus-local.json`\n- `patterns.json`\n- `intent-mappings.json`\n- `convergence.json`\n- `decision-space.json`\n- `message-identifiers.json`\n- `extraction-summary.json`\n- `bundle.json`\n- `obt.jws`"
+      },
+      "suggested_skos": {
+        "prefLabel": "convergence.json",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "decision-space.json",
+      "entity_type": "DATASET_METADATA",
+      "confidence": 0.769,
+      "status": "candidate",
+      "source_location": {
+        "line": 46,
+        "offset": 1575,
+        "end_offset": 1594,
+        "context": "thesaurus.jsonld`\n- `thesaurus-local.json`\n- `patterns.json`\n- `intent-mappings.json`\n- `convergence.json`\n- `decision-space.json`\n- `message-identifiers.json`\n- `extraction-summary.json`\n- `bundle.json`\n- `obt.jws`\n- `source-extract/sourc"
+      },
+      "suggested_skos": {
+        "prefLabel": "decision-space.json",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "message-identifiers.json",
+      "entity_type": "DATASET_METADATA",
+      "confidence": 0.7174,
+      "status": "candidate",
+      "source_location": {
+        "line": 47,
+        "offset": 1599,
+        "end_offset": 1623,
+        "context": "saurus-local.json`\n- `patterns.json`\n- `intent-mappings.json`\n- `convergence.json`\n- `decision-space.json`\n- `message-identifiers.json`\n- `extraction-summary.json`\n- `bundle.json`\n- `obt.jws`\n- `source-extract/sources.json`\n- `source-extract/cr"
+      },
+      "suggested_skos": {
+        "prefLabel": "message-identifiers.json",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "extraction-summary.json",
+      "entity_type": "DATASET_METADATA",
+      "confidence": 0.606,
+      "status": "candidate",
+      "source_location": {
+        "line": 48,
+        "offset": 1628,
+        "end_offset": 1651,
+        "context": "s.json`\n- `intent-mappings.json`\n- `convergence.json`\n- `decision-space.json`\n- `message-identifiers.json`\n- `extraction-summary.json`\n- `bundle.json`\n- `obt.jws`\n- `source-extract/sources.json`\n- `source-extract/crosswalk/dssc-dcat-to-pact-cr"
+      },
+      "suggested_skos": {
+        "prefLabel": "extraction-summary.json",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "bundle.json",
+      "entity_type": "DATASET_METADATA",
+      "confidence": 0.6631,
+      "status": "candidate",
+      "source_location": {
+        "line": 49,
+        "offset": 1656,
+        "end_offset": 1667,
+        "context": "son`\n- `convergence.json`\n- `decision-space.json`\n- `message-identifiers.json`\n- `extraction-summary.json`\n- `bundle.json`\n- `obt.jws`\n- `source-extract/sources.json`\n- `source-extract/crosswalk/dssc-dcat-to-pact-crosswalk.v1.json`"
+      },
+      "suggested_skos": {
+        "prefLabel": "bundle.json",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "obt.jws",
+      "entity_type": "DATASET_METADATA",
+      "confidence": 0.3709,
+      "status": "candidate",
+      "source_location": {
+        "line": 50,
+        "offset": 1672,
+        "end_offset": 1679,
+        "context": "nce.json`\n- `decision-space.json`\n- `message-identifiers.json`\n- `extraction-summary.json`\n- `bundle.json`\n- `obt.jws`\n- `source-extract/sources.json`\n- `source-extract/crosswalk/dssc-dcat-to-pact-crosswalk.v1.json`\n\n## Notes\n\n"
+      },
+      "suggested_skos": {
+        "prefLabel": "obt.jws",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "Fixture harness",
+      "entity_type": "CATALOG_ENTITY",
+      "confidence": 0.36,
+      "status": "candidate",
+      "source_location": {
+        "line": 57,
+        "offset": 1883,
+        "end_offset": 1898,
+        "context": "son`\n\n## Notes\n\n- This pack is a non-normative demo surface for conformance and governance experimentation.\n- Fixture harness wiring is planned in Stage-5.\n\n## Fixture Harness\n\nRun from repository root:\n\n```bash\nnode tools/run-dssc-cat"
+      },
+      "suggested_skos": {
+        "prefLabel": "Fixture harness",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "candidate entities",
+      "entity_type": "CATALOG_ENTITY",
+      "confidence": 0.5935,
+      "status": "candidate",
+      "source_location": {
+        "line": 70,
+        "offset": 2217,
+        "end_offset": 2235,
+        "context": "ed baseline for deterministic runtime and fixture behavior.\n- `V2 GLiNER candidate`: fast extraction pass for candidate entities/relations only.\n- `Review gate`: no V2 candidate is promoted without explicit human review.\n\nCandidate artifa"
+      },
+      "suggested_skos": {
+        "prefLabel": "candidate entities",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "id",
+      "entity_type": "IDENTIFIER",
+      "confidence": 0.6146,
+      "status": "candidate",
+      "source_location": {
+        "line": 79,
+        "offset": 2476,
+        "end_offset": 2478,
+        "context": "`source-extract/candidates/gliner-dirty-pass-2026-04-14/`.\n\n\n### FILE: pack.json\n{\n  \"pack_schema\": \"1.0\",\n  \"id\": \"dssc-catalog-discovery-demo-0.1.0\",\n  \"domain\": \"dssc-catalog-discovery\",\n  \"version\": \"0.1.0\",\n  \"provide"
+      },
+      "suggested_skos": {
+        "prefLabel": "id",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "context",
+      "entity_type": "DATASET_METADATA",
+      "confidence": 0.6416,
+      "status": "candidate",
+      "source_location": {
+        "line": 90,
+        "offset": 2793,
+        "end_offset": 2800,
+        "context": "  \"exp\": \"2031-04-14T00:00:00Z\",\n  \"rev_epoch\": 1,\n  \"deny_wins\": true,\n  \"precedence\": [],\n  \"files\": {\n    \"context\": \"context.jsonld\",\n    \"vocab\": \"vocab.skos.jsonld\",\n    \"shapes\": \"shapes.ttl\",\n    \"thesaurus\": \"thesaurus"
+      },
+      "suggested_skos": {
+        "prefLabel": "context",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "context",
+      "entity_type": "DATASET_METADATA",
+      "confidence": 0.6323,
+      "status": "candidate",
+      "source_location": {
+        "line": 90,
+        "offset": 2804,
+        "end_offset": 2811,
+        "context": "031-04-14T00:00:00Z\",\n  \"rev_epoch\": 1,\n  \"deny_wins\": true,\n  \"precedence\": [],\n  \"files\": {\n    \"context\": \"context.jsonld\",\n    \"vocab\": \"vocab.skos.jsonld\",\n    \"shapes\": \"shapes.ttl\",\n    \"thesaurus\": \"thesaurus.jsonld\",\n "
+      },
+      "suggested_skos": {
+        "prefLabel": "context",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "vocab",
+      "entity_type": "DATASET_METADATA",
+      "confidence": 0.5867,
+      "status": "candidate",
+      "source_location": {
+        "line": 91,
+        "offset": 2826,
+        "end_offset": 2831,
+        "context": "  \"rev_epoch\": 1,\n  \"deny_wins\": true,\n  \"precedence\": [],\n  \"files\": {\n    \"context\": \"context.jsonld\",\n    \"vocab\": \"vocab.skos.jsonld\",\n    \"shapes\": \"shapes.ttl\",\n    \"thesaurus\": \"thesaurus.jsonld\",\n    \"thesaurus_local\""
+      },
+      "suggested_skos": {
+        "prefLabel": "vocab",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "vocab",
+      "entity_type": "DATASET_METADATA",
+      "confidence": 0.5796,
+      "status": "candidate",
+      "source_location": {
+        "line": 91,
+        "offset": 2835,
+        "end_offset": 2840,
+        "context": "och\": 1,\n  \"deny_wins\": true,\n  \"precedence\": [],\n  \"files\": {\n    \"context\": \"context.jsonld\",\n    \"vocab\": \"vocab.skos.jsonld\",\n    \"shapes\": \"shapes.ttl\",\n    \"thesaurus\": \"thesaurus.jsonld\",\n    \"thesaurus_local\": \"thesau"
+      },
+      "suggested_skos": {
+        "prefLabel": "vocab",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "shapes",
+      "entity_type": "DATASET_METADATA",
+      "confidence": 0.3939,
+      "status": "candidate",
+      "source_location": {
+        "line": 92,
+        "offset": 2860,
+        "end_offset": 2866,
+        "context": "rue,\n  \"precedence\": [],\n  \"files\": {\n    \"context\": \"context.jsonld\",\n    \"vocab\": \"vocab.skos.jsonld\",\n    \"shapes\": \"shapes.ttl\",\n    \"thesaurus\": \"thesaurus.jsonld\",\n    \"thesaurus_local\": \"thesaurus-local.json\",\n    \"patt"
+      },
+      "suggested_skos": {
+        "prefLabel": "shapes",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "shapes",
+      "entity_type": "DATASET_METADATA",
+      "confidence": 0.4778,
+      "status": "candidate",
+      "source_location": {
+        "line": 92,
+        "offset": 2870,
+        "end_offset": 2876,
+        "context": "ecedence\": [],\n  \"files\": {\n    \"context\": \"context.jsonld\",\n    \"vocab\": \"vocab.skos.jsonld\",\n    \"shapes\": \"shapes.ttl\",\n    \"thesaurus\": \"thesaurus.jsonld\",\n    \"thesaurus_local\": \"thesaurus-local.json\",\n    \"patterns\": \"pa"
+      },
+      "suggested_skos": {
+        "prefLabel": "shapes",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "thesaurus",
+      "entity_type": "DATASET_METADATA",
+      "confidence": 0.6907,
+      "status": "candidate",
+      "source_location": {
+        "line": 93,
+        "offset": 2888,
+        "end_offset": 2897,
+        "context": "files\": {\n    \"context\": \"context.jsonld\",\n    \"vocab\": \"vocab.skos.jsonld\",\n    \"shapes\": \"shapes.ttl\",\n    \"thesaurus\": \"thesaurus.jsonld\",\n    \"thesaurus_local\": \"thesaurus-local.json\",\n    \"patterns\": \"patterns.json\",\n    \"in"
+      },
+      "suggested_skos": {
+        "prefLabel": "thesaurus",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "thesaurus",
+      "entity_type": "DATASET_METADATA",
+      "confidence": 0.6524,
+      "status": "candidate",
+      "source_location": {
+        "line": 93,
+        "offset": 2901,
+        "end_offset": 2910,
+        "context": " \"context\": \"context.jsonld\",\n    \"vocab\": \"vocab.skos.jsonld\",\n    \"shapes\": \"shapes.ttl\",\n    \"thesaurus\": \"thesaurus.jsonld\",\n    \"thesaurus_local\": \"thesaurus-local.json\",\n    \"patterns\": \"patterns.json\",\n    \"intent_mappings"
+      },
+      "suggested_skos": {
+        "prefLabel": "thesaurus",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "thesaurus",
+      "entity_type": "CATALOG_ENTITY",
+      "confidence": 0.3568,
+      "status": "candidate",
+      "source_location": {
+        "line": 93,
+        "offset": 2901,
+        "end_offset": 2910,
+        "context": " \"context\": \"context.jsonld\",\n    \"vocab\": \"vocab.skos.jsonld\",\n    \"shapes\": \"shapes.ttl\",\n    \"thesaurus\": \"thesaurus.jsonld\",\n    \"thesaurus_local\": \"thesaurus-local.json\",\n    \"patterns\": \"patterns.json\",\n    \"intent_mappings"
+      },
+      "suggested_skos": {
+        "prefLabel": "thesaurus",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "thesaurus_local",
+      "entity_type": "CATALOG_ENTITY",
+      "confidence": 0.4091,
+      "status": "candidate",
+      "source_location": {
+        "line": 94,
+        "offset": 2925,
+        "end_offset": 2940,
+        "context": "nld\",\n    \"vocab\": \"vocab.skos.jsonld\",\n    \"shapes\": \"shapes.ttl\",\n    \"thesaurus\": \"thesaurus.jsonld\",\n    \"thesaurus_local\": \"thesaurus-local.json\",\n    \"patterns\": \"patterns.json\",\n    \"intent_mappings\": \"intent-mappings.json\",\n   "
+      },
+      "suggested_skos": {
+        "prefLabel": "thesaurus_local",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "patterns",
+      "entity_type": "DATASET_METADATA",
+      "confidence": 0.4446,
+      "status": "candidate",
+      "source_location": {
+        "line": 95,
+        "offset": 2972,
+        "end_offset": 2980,
+        "context": "apes\": \"shapes.ttl\",\n    \"thesaurus\": \"thesaurus.jsonld\",\n    \"thesaurus_local\": \"thesaurus-local.json\",\n    \"patterns\": \"patterns.json\",\n    \"intent_mappings\": \"intent-mappings.json\",\n    \"convergence\": \"convergence.json\",\n    "
+      },
+      "suggested_skos": {
+        "prefLabel": "patterns",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "patterns",
+      "entity_type": "DATASET_METADATA",
+      "confidence": 0.4602,
+      "status": "candidate",
+      "source_location": {
+        "line": 95,
+        "offset": 2984,
+        "end_offset": 2992,
+        "context": "es.ttl\",\n    \"thesaurus\": \"thesaurus.jsonld\",\n    \"thesaurus_local\": \"thesaurus-local.json\",\n    \"patterns\": \"patterns.json\",\n    \"intent_mappings\": \"intent-mappings.json\",\n    \"convergence\": \"convergence.json\",\n    \"decision_sp"
+      },
+      "suggested_skos": {
+        "prefLabel": "patterns",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "convergence",
+      "entity_type": "CATALOG_ENTITY",
+      "confidence": 0.4173,
+      "status": "candidate",
+      "source_location": {
+        "line": 97,
+        "offset": 3052,
+        "end_offset": 3063,
+        "context": " \"thesaurus-local.json\",\n    \"patterns\": \"patterns.json\",\n    \"intent_mappings\": \"intent-mappings.json\",\n    \"convergence\": \"convergence.json\",\n    \"decision_space\": \"decision-space.json\",\n    \"message_identifiers\": \"message-identi"
+      },
+      "suggested_skos": {
+        "prefLabel": "convergence",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "message_identifiers",
+      "entity_type": "DATASET_METADATA",
+      "confidence": 0.5051,
+      "status": "candidate",
+      "source_location": {
+        "line": 99,
+        "offset": 3136,
+        "end_offset": 3155,
+        "context": "tent-mappings.json\",\n    \"convergence\": \"convergence.json\",\n    \"decision_space\": \"decision-space.json\",\n    \"message_identifiers\": \"message-identifiers.json\",\n    \"extraction_summary\": \"extraction-summary.json\",\n    \"source_extract\": \"sou"
+      },
+      "suggested_skos": {
+        "prefLabel": "message_identifiers",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "message-identifiers",
+      "entity_type": "DATASET_METADATA",
+      "confidence": 0.386,
+      "status": "candidate",
+      "source_location": {
+        "line": 99,
+        "offset": 3159,
+        "end_offset": 3178,
+        "context": "  \"convergence\": \"convergence.json\",\n    \"decision_space\": \"decision-space.json\",\n    \"message_identifiers\": \"message-identifiers.json\",\n    \"extraction_summary\": \"extraction-summary.json\",\n    \"source_extract\": \"source-extract/sources.jso"
+      },
+      "suggested_skos": {
+        "prefLabel": "message-identifiers",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "json",
+      "entity_type": "DATASET_METADATA",
+      "confidence": 0.4409,
+      "status": "candidate",
+      "source_location": {
+        "line": 101,
+        "offset": 3285,
+        "end_offset": 3289,
+        "context": "ers.json\",\n    \"extraction_summary\": \"extraction-summary.json\",\n    \"source_extract\": \"source-extract/sources.json\",\n    \"crosswalk\": \"source-extract/crosswalk/dssc-dcat-to-pact-crosswalk.v1.json\",\n    \"execution_checklist\":"
+      },
+      "suggested_skos": {
+        "prefLabel": "json",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "json",
+      "entity_type": "DATASET_METADATA",
+      "confidence": 0.3514,
+      "status": "candidate",
+      "source_location": {
+        "line": 103,
+        "offset": 3457,
+        "end_offset": 3461,
+        "context": "-pact-crosswalk.v1.json\",\n    \"execution_checklist\": \"source-extract/tasks/immutable-authoring-pipeline.v1-v2.json\",\n    \"gliner_dirty_manifest\": \"source-extract/candidates/gliner-dirty-pass-2026-04-14/manifest.json\",\n    \"g"
+      },
+      "suggested_skos": {
+        "prefLabel": "json",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "dc",
+      "entity_type": "IDENTIFIER",
+      "confidence": 0.4466,
+      "status": "candidate",
+      "source_location": {
+        "line": 108,
+        "offset": 3787,
+        "end_offset": 3789,
+        "context": "iner_dirty_summary\": \"source-extract/candidates/gliner-dirty-pass-2026-04-14/extraction-summary.json\"\n  },\n  \"dc\": {\n    \"identifier\": \"ontology:dssc-catalog-discovery-demo:v0.1.0\",\n    \"title\": \"dssc-catalog-discovery dem"
+      },
+      "suggested_skos": {
+        "prefLabel": "dc",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "PACT Public Working Draft",
+      "entity_type": "OFFERING",
+      "confidence": 0.3908,
+      "status": "candidate",
+      "source_location": {
+        "line": 111,
+        "offset": 3924,
+        "end_offset": 3949,
+        "context": "ntology:dssc-catalog-discovery-demo:v0.1.0\",\n    \"title\": \"dssc-catalog-discovery demo pack\",\n    \"creator\": \"PACT Public Working Draft\",\n    \"issued\": \"2026-04-14\",\n    \"rights\": \"Apache-2.0\",\n    \"description\": \"Demonstrate DSSC-aligned public"
+      },
+      "suggested_skos": {
+        "prefLabel": "PACT Public Working Draft",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "2026-04-14",
+      "entity_type": "POLICY_SNAPSHOT",
+      "confidence": 0.5057,
+      "status": "candidate",
+      "source_location": {
+        "line": 112,
+        "offset": 3967,
+        "end_offset": 3977,
+        "context": ",\n    \"title\": \"dssc-catalog-discovery demo pack\",\n    \"creator\": \"PACT Public Working Draft\",\n    \"issued\": \"2026-04-14\",\n    \"rights\": \"Apache-2.0\",\n    \"description\": \"Demonstrate DSSC-aligned publication/discovery semantics ma"
+      },
+      "suggested_skos": {
+        "prefLabel": "2026-04-14",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "out_of_scope_behavior",
+      "entity_type": "USAGE_POLICY",
+      "confidence": 0.3672,
+      "status": "candidate",
+      "source_location": {
+        "line": 125,
+        "offset": 4307,
+        "end_offset": 4328,
+        "context": "domain\": \"dssc-catalog-discovery\",\n  \"pack_id\": \"dssc-catalog-discovery-demo-0.1.0\",\n  \"version\": \"0.1.0\",\n  \"out_of_scope_behavior\": \"escalate\",\n  \"state_model\": {\n    \"states\": [\n      \"ingress\",\n      \"validated\",\n      \"classified\",\n    "
+      },
+      "suggested_skos": {
+        "prefLabel": "out_of_scope_behavior",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "escalate",
+      "entity_type": "USAGE_POLICY",
+      "confidence": 0.6069,
+      "status": "candidate",
+      "source_location": {
+        "line": 125,
+        "offset": 4332,
+        "end_offset": 4340,
+        "context": "scovery\",\n  \"pack_id\": \"dssc-catalog-discovery-demo-0.1.0\",\n  \"version\": \"0.1.0\",\n  \"out_of_scope_behavior\": \"escalate\",\n  \"state_model\": {\n    \"states\": [\n      \"ingress\",\n      \"validated\",\n      \"classified\",\n      \"authorize"
+      },
+      "suggested_skos": {
+        "prefLabel": "escalate",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "ingress",
+      "entity_type": "SERVICE_ENDPOINT",
+      "confidence": 0.9836,
+      "status": "candidate",
+      "source_location": {
+        "line": 128,
+        "offset": 4385,
+        "end_offset": 4392,
+        "context": ".1.0\",\n  \"version\": \"0.1.0\",\n  \"out_of_scope_behavior\": \"escalate\",\n  \"state_model\": {\n    \"states\": [\n      \"ingress\",\n      \"validated\",\n      \"classified\",\n      \"authorized\",\n      \"responded\",\n      \"rejected\",\n      \"esca"
+      },
+      "suggested_skos": {
+        "prefLabel": "ingress",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "classified",
+      "entity_type": "DATASET_METADATA",
+      "confidence": 0.3968,
+      "status": "candidate",
+      "source_location": {
+        "line": 130,
+        "offset": 4421,
+        "end_offset": 4431,
+        "context": "of_scope_behavior\": \"escalate\",\n  \"state_model\": {\n    \"states\": [\n      \"ingress\",\n      \"validated\",\n      \"classified\",\n      \"authorized\",\n      \"responded\",\n      \"rejected\",\n      \"escalated\"\n    ],\n    \"initial_state\": \"ing"
+      },
+      "suggested_skos": {
+        "prefLabel": "classified",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "escalated",
+      "entity_type": "USAGE_POLICY",
+      "confidence": 0.5126,
+      "status": "candidate",
+      "source_location": {
+        "line": 134,
+        "offset": 4498,
+        "end_offset": 4507,
+        "context": "ress\",\n      \"validated\",\n      \"classified\",\n      \"authorized\",\n      \"responded\",\n      \"rejected\",\n      \"escalated\"\n    ],\n    \"initial_state\": \"ingress\",\n    \"terminal_states\": [\n      \"responded\",\n      \"rejected\",\n      \""
+      },
+      "suggested_skos": {
+        "prefLabel": "escalated",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "ingress",
+      "entity_type": "SERVICE_ENDPOINT",
+      "confidence": 0.9862,
+      "status": "candidate",
+      "source_location": {
+        "line": 136,
+        "offset": 4538,
+        "end_offset": 4545,
+        "context": "ied\",\n      \"authorized\",\n      \"responded\",\n      \"rejected\",\n      \"escalated\"\n    ],\n    \"initial_state\": \"ingress\",\n    \"terminal_states\": [\n      \"responded\",\n      \"rejected\",\n      \"escalated\"\n    ]\n  },\n  \"intent_resour"
+      },
+      "suggested_skos": {
+        "prefLabel": "ingress",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "GovernanceDecision",
+      "entity_type": "OFFERING",
+      "confidence": 0.9522,
+      "status": "candidate",
+      "source_location": {
+        "line": 145,
+        "offset": 4715,
+        "end_offset": 4733,
+        "context": "ed\",\n      \"escalated\"\n    ]\n  },\n  \"intent_resource_map\": {\n    \"dssc.catalog.publish_offering.v1\": [\n      \"GovernanceDecision\"\n    ],\n    \"dssc.catalog.update_offering.v1\": [\n      \"GovernanceDecision\"\n    ],\n    \"dssc.catalog.remove_o"
+      },
+      "suggested_skos": {
+        "prefLabel": "GovernanceDecision",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "GovernanceDecision",
+      "entity_type": "OFFERING",
+      "confidence": 0.9433,
+      "status": "candidate",
+      "source_location": {
+        "line": 148,
+        "offset": 4790,
+        "end_offset": 4808,
+        "context": "log.publish_offering.v1\": [\n      \"GovernanceDecision\"\n    ],\n    \"dssc.catalog.update_offering.v1\": [\n      \"GovernanceDecision\"\n    ],\n    \"dssc.catalog.remove_offering.v1\": [\n      \"GovernanceDecision\"\n    ],\n    \"dssc.catalog.query_of"
+      },
+      "suggested_skos": {
+        "prefLabel": "GovernanceDecision",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "GovernanceDecision",
+      "entity_type": "OFFERING",
+      "confidence": 0.9386,
+      "status": "candidate",
+      "source_location": {
+        "line": 151,
+        "offset": 4865,
+        "end_offset": 4883,
+        "context": "alog.update_offering.v1\": [\n      \"GovernanceDecision\"\n    ],\n    \"dssc.catalog.remove_offering.v1\": [\n      \"GovernanceDecision\"\n    ],\n    \"dssc.catalog.query_offering.v1\": [\n      \"GovernanceDecision\"\n    ]\n  },\n  \"required_fields_by_i"
+      },
+      "suggested_skos": {
+        "prefLabel": "GovernanceDecision",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "GovernanceDecision",
+      "entity_type": "OFFERING",
+      "confidence": 0.9408,
+      "status": "candidate",
+      "source_location": {
+        "line": 154,
+        "offset": 4939,
+        "end_offset": 4957,
+        "context": "talog.remove_offering.v1\": [\n      \"GovernanceDecision\"\n    ],\n    \"dssc.catalog.query_offering.v1\": [\n      \"GovernanceDecision\"\n    ]\n  },\n  \"required_fields_by_intent\": {\n    \"dssc.catalog.publish_offering.v1\": [\n      \"policy_snapshot"
+      },
+      "suggested_skos": {
+        "prefLabel": "GovernanceDecision",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "policy_snapshot_id",
+      "entity_type": "POLICY_SNAPSHOT",
+      "confidence": 0.968,
+      "status": "candidate",
+      "source_location": {
+        "line": 159,
+        "offset": 5052,
+        "end_offset": 5070,
+        "context": "ernanceDecision\"\n    ]\n  },\n  \"required_fields_by_intent\": {\n    \"dssc.catalog.publish_offering.v1\": [\n      \"policy_snapshot_id\"\n    ],\n    \"dssc.catalog.update_offering.v1\": [\n      \"policy_snapshot_id\"\n    ],\n    \"dssc.catalog.remove_o"
+      },
+      "suggested_skos": {
+        "prefLabel": "policy_snapshot_id",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "policy_snapshot_id",
+      "entity_type": "POLICY_SNAPSHOT",
+      "confidence": 0.9808,
+      "status": "candidate",
+      "source_location": {
+        "line": 162,
+        "offset": 5127,
+        "end_offset": 5145,
+        "context": "log.publish_offering.v1\": [\n      \"policy_snapshot_id\"\n    ],\n    \"dssc.catalog.update_offering.v1\": [\n      \"policy_snapshot_id\"\n    ],\n    \"dssc.catalog.remove_offering.v1\": [\n      \"policy_snapshot_id\"\n    ],\n    \"dssc.catalog.query_of"
+      },
+      "suggested_skos": {
+        "prefLabel": "policy_snapshot_id",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "policy_snapshot_id",
+      "entity_type": "POLICY_SNAPSHOT",
+      "confidence": 0.9811,
+      "status": "candidate",
+      "source_location": {
+        "line": 165,
+        "offset": 5202,
+        "end_offset": 5220,
+        "context": "alog.update_offering.v1\": [\n      \"policy_snapshot_id\"\n    ],\n    \"dssc.catalog.remove_offering.v1\": [\n      \"policy_snapshot_id\"\n    ],\n    \"dssc.catalog.query_offering.v1\": [\n      \"policy_snapshot_id\"\n    ]\n  },\n  \"deny_reason_codes\": "
+      },
+      "suggested_skos": {
+        "prefLabel": "policy_snapshot_id",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "policy_snapshot_id",
+      "entity_type": "POLICY_SNAPSHOT",
+      "confidence": 0.9811,
+      "status": "candidate",
+      "source_location": {
+        "line": 168,
+        "offset": 5276,
+        "end_offset": 5294,
+        "context": "talog.remove_offering.v1\": [\n      \"policy_snapshot_id\"\n    ],\n    \"dssc.catalog.query_offering.v1\": [\n      \"policy_snapshot_id\"\n    ]\n  },\n  \"deny_reason_codes\": [\n    \"CIC_REQUIRED_FIELD_MISSING\",\n    \"DENY_POLICY_REFERENCE_UNBOUND\",\n "
+      },
+      "suggested_skos": {
+        "prefLabel": "policy_snapshot_id",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "DENY_POLICY_REFERENCE_UNBOUND",
+      "entity_type": "USAGE_POLICY",
+      "confidence": 0.4172,
+      "status": "candidate",
+      "source_location": {
+        "line": 173,
+        "offset": 5371,
+        "end_offset": 5400,
+        "context": ".v1\": [\n      \"policy_snapshot_id\"\n    ]\n  },\n  \"deny_reason_codes\": [\n    \"CIC_REQUIRED_FIELD_MISSING\",\n    \"DENY_POLICY_REFERENCE_UNBOUND\",\n    \"ESCALATE_OUT_OF_SCOPE_INTENT\",\n    \"PSC_BUNDLE_COMMIT_MISMATCH\"\n  ]\n}\n\n\n### FILE: intent-mappings.json"
+      },
+      "suggested_skos": {
+        "prefLabel": "DENY_POLICY_REFERENCE_UNBOUND",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "dssc-catalog-discovery",
+      "entity_type": "OFFERING",
+      "confidence": 0.7149,
+      "status": "candidate",
+      "source_location": {
+        "line": 183,
+        "offset": 5553,
+        "end_offset": 5575,
+        "context": "\"PSC_BUNDLE_COMMIT_MISMATCH\"\n  ]\n}\n\n\n### FILE: intent-mappings.json\n{\n  \"schema_version\": \"1.0\",\n  \"domain\": \"dssc-catalog-discovery\",\n  \"mappings\": [\n    {\n      \"concept_uri\": \"dssc:GovernanceSurface\",\n      \"intent_class\": \"dssc.catalog.pu"
+      },
+      "suggested_skos": {
+        "prefLabel": "dssc-catalog-discovery",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "dssc",
+      "entity_type": "CATALOG_ENTITY",
+      "confidence": 0.4815,
+      "status": "candidate",
+      "source_location": {
+        "line": 186,
+        "offset": 5622,
+        "end_offset": 5626,
+        "context": "\n  \"schema_version\": \"1.0\",\n  \"domain\": \"dssc-catalog-discovery\",\n  \"mappings\": [\n    {\n      \"concept_uri\": \"dssc:GovernanceSurface\",\n      \"intent_class\": \"dssc.catalog.publish_offering.v1\",\n      \"confidence_floor\": 0.76\n"
+      },
+      "suggested_skos": {
+        "prefLabel": "dssc",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "GovernanceSurface",
+      "entity_type": "CATALOG_ENTITY",
+      "confidence": 0.506,
+      "status": "candidate",
+      "source_location": {
+        "line": 186,
+        "offset": 5627,
+        "end_offset": 5644,
+        "context": "chema_version\": \"1.0\",\n  \"domain\": \"dssc-catalog-discovery\",\n  \"mappings\": [\n    {\n      \"concept_uri\": \"dssc:GovernanceSurface\",\n      \"intent_class\": \"dssc.catalog.publish_offering.v1\",\n      \"confidence_floor\": 0.76\n    },\n    {\n     "
+      },
+      "suggested_skos": {
+        "prefLabel": "GovernanceSurface",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "intent_class",
+      "entity_type": "INTENT_CLASS",
+      "confidence": 0.6931,
+      "status": "candidate",
+      "source_location": {
+        "line": 187,
+        "offset": 5654,
+        "end_offset": 5666,
+        "context": "omain\": \"dssc-catalog-discovery\",\n  \"mappings\": [\n    {\n      \"concept_uri\": \"dssc:GovernanceSurface\",\n      \"intent_class\": \"dssc.catalog.publish_offering.v1\",\n      \"confidence_floor\": 0.76\n    },\n    {\n      \"concept_uri\": \"dssc:"
+      },
+      "suggested_skos": {
+        "prefLabel": "intent_class",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "publish_offering",
+      "entity_type": "OFFERING",
+      "confidence": 0.5739,
+      "status": "candidate",
+      "source_location": {
+        "line": 187,
+        "offset": 5683,
+        "end_offset": 5699,
+        "context": "ry\",\n  \"mappings\": [\n    {\n      \"concept_uri\": \"dssc:GovernanceSurface\",\n      \"intent_class\": \"dssc.catalog.publish_offering.v1\",\n      \"confidence_floor\": 0.76\n    },\n    {\n      \"concept_uri\": \"dssc:GovernanceSurface\",\n      \"intent"
+      },
+      "suggested_skos": {
+        "prefLabel": "publish_offering",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "dssc",
+      "entity_type": "CATALOG_ENTITY",
+      "confidence": 0.4925,
+      "status": "candidate",
+      "source_location": {
+        "line": 191,
+        "offset": 5771,
+        "end_offset": 5775,
+        "context": "class\": \"dssc.catalog.publish_offering.v1\",\n      \"confidence_floor\": 0.76\n    },\n    {\n      \"concept_uri\": \"dssc:GovernanceSurface\",\n      \"intent_class\": \"dssc.catalog.update_offering.v1\",\n      \"confidence_floor\": 0.76\n "
+      },
+      "suggested_skos": {
+        "prefLabel": "dssc",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "dssc",
+      "entity_type": "OFFERING",
+      "confidence": 0.4464,
+      "status": "candidate",
+      "source_location": {
+        "line": 191,
+        "offset": 5771,
+        "end_offset": 5775,
+        "context": "class\": \"dssc.catalog.publish_offering.v1\",\n      \"confidence_floor\": 0.76\n    },\n    {\n      \"concept_uri\": \"dssc:GovernanceSurface\",\n      \"intent_class\": \"dssc.catalog.update_offering.v1\",\n      \"confidence_floor\": 0.76\n "
+      },
+      "suggested_skos": {
+        "prefLabel": "dssc",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "GovernanceSurface",
+      "entity_type": "CATALOG_ENTITY",
+      "confidence": 0.4251,
+      "status": "candidate",
+      "source_location": {
+        "line": 191,
+        "offset": 5776,
+        "end_offset": 5793,
+        "context": "\": \"dssc.catalog.publish_offering.v1\",\n      \"confidence_floor\": 0.76\n    },\n    {\n      \"concept_uri\": \"dssc:GovernanceSurface\",\n      \"intent_class\": \"dssc.catalog.update_offering.v1\",\n      \"confidence_floor\": 0.76\n    },\n    {\n      "
+      },
+      "suggested_skos": {
+        "prefLabel": "GovernanceSurface",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "intent_class",
+      "entity_type": "INTENT_CLASS",
+      "confidence": 0.8144,
+      "status": "candidate",
+      "source_location": {
+        "line": 192,
+        "offset": 5803,
+        "end_offset": 5815,
+        "context": "fering.v1\",\n      \"confidence_floor\": 0.76\n    },\n    {\n      \"concept_uri\": \"dssc:GovernanceSurface\",\n      \"intent_class\": \"dssc.catalog.update_offering.v1\",\n      \"confidence_floor\": 0.76\n    },\n    {\n      \"concept_uri\": \"dssc:G"
+      },
+      "suggested_skos": {
+        "prefLabel": "intent_class",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "dssc",
+      "entity_type": "OFFERING",
+      "confidence": 0.4837,
+      "status": "candidate",
+      "source_location": {
+        "line": 196,
+        "offset": 5919,
+        "end_offset": 5923,
+        "context": "_class\": \"dssc.catalog.update_offering.v1\",\n      \"confidence_floor\": 0.76\n    },\n    {\n      \"concept_uri\": \"dssc:GovernanceSurface\",\n      \"intent_class\": \"dssc.catalog.remove_offering.v1\",\n      \"confidence_floor\": 0.76\n "
+      },
+      "suggested_skos": {
+        "prefLabel": "dssc",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "intent_class",
+      "entity_type": "INTENT_CLASS",
+      "confidence": 0.7719,
+      "status": "candidate",
+      "source_location": {
+        "line": 197,
+        "offset": 5951,
+        "end_offset": 5963,
+        "context": "fering.v1\",\n      \"confidence_floor\": 0.76\n    },\n    {\n      \"concept_uri\": \"dssc:GovernanceSurface\",\n      \"intent_class\": \"dssc.catalog.remove_offering.v1\",\n      \"confidence_floor\": 0.76\n    },\n    {\n      \"concept_uri\": \"dssc:G"
+      },
+      "suggested_skos": {
+        "prefLabel": "intent_class",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "dssc",
+      "entity_type": "OFFERING",
+      "confidence": 0.5213,
+      "status": "candidate",
+      "source_location": {
+        "line": 201,
+        "offset": 6067,
+        "end_offset": 6071,
+        "context": "_class\": \"dssc.catalog.remove_offering.v1\",\n      \"confidence_floor\": 0.76\n    },\n    {\n      \"concept_uri\": \"dssc:GovernanceSurface\",\n      \"intent_class\": \"dssc.catalog.query_offering.v1\",\n      \"confidence_floor\": 0.76\n  "
+      },
+      "suggested_skos": {
+        "prefLabel": "dssc",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "intent_class",
+      "entity_type": "INTENT_CLASS",
+      "confidence": 0.7852,
+      "status": "candidate",
+      "source_location": {
+        "line": 202,
+        "offset": 6099,
+        "end_offset": 6111,
+        "context": "fering.v1\",\n      \"confidence_floor\": 0.76\n    },\n    {\n      \"concept_uri\": \"dssc:GovernanceSurface\",\n      \"intent_class\": \"dssc.catalog.query_offering.v1\",\n      \"confidence_floor\": 0.76\n    }\n  ]\n}\n\n\n### FILE: thesaurus-local.js"
+      },
+      "suggested_skos": {
+        "prefLabel": "intent_class",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "dssc",
+      "entity_type": "OFFERING",
+      "confidence": 0.3813,
+      "status": "candidate",
+      "source_location": {
+        "line": 202,
+        "offset": 6115,
+        "end_offset": 6119,
+        "context": "  \"confidence_floor\": 0.76\n    },\n    {\n      \"concept_uri\": \"dssc:GovernanceSurface\",\n      \"intent_class\": \"dssc.catalog.query_offering.v1\",\n      \"confidence_floor\": 0.76\n    }\n  ]\n}\n\n\n### FILE: thesaurus-local.json\n{\n  \""
+      },
+      "suggested_skos": {
+        "prefLabel": "dssc",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "catalog",
+      "entity_type": "CATALOG_ENTITY",
+      "confidence": 0.359,
+      "status": "candidate",
+      "source_location": {
+        "line": 216,
+        "offset": 6390,
+        "end_offset": 6397,
+        "context": "iscovery\",\n  \"last_modified\": \"2026-04-14\",\n  \"concepts\": [\n    {\n      \"concept_id\": \"dssc-catalog-discovery.catalog.v1\",\n      \"preferred_term\": \"Catalog\",\n      \"synonyms\": [],\n      \"register_variants\": {},\n      \"domain_vo"
+      },
+      "suggested_skos": {
+        "prefLabel": "catalog",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "Catalog",
+      "entity_type": "CATALOG_ENTITY",
+      "confidence": 0.4224,
+      "status": "candidate",
+      "source_location": {
+        "line": 217,
+        "offset": 6428,
+        "end_offset": 6435,
+        "context": "-14\",\n  \"concepts\": [\n    {\n      \"concept_id\": \"dssc-catalog-discovery.catalog.v1\",\n      \"preferred_term\": \"Catalog\",\n      \"synonyms\": [],\n      \"register_variants\": {},\n      \"domain_vocabulary\": {},\n      \"translations\": {"
+      },
+      "suggested_skos": {
+        "prefLabel": "Catalog",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "GovernanceSurface",
+      "entity_type": "JURISDICTION",
+      "confidence": 0.9155,
+      "status": "candidate",
+      "source_location": {
+        "line": 222,
+        "offset": 6566,
+        "end_offset": 6583,
+        "context": "[],\n      \"register_variants\": {},\n      \"domain_vocabulary\": {},\n      \"translations\": {},\n      \"broader\": \"GovernanceSurface\",\n      \"narrower\": [],\n      \"source_refs\": [\n        \"dssc-canonical-source-catalog\"\n      ],\n      \"ner_pr"
+      },
+      "suggested_skos": {
+        "prefLabel": "GovernanceSurface",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "dssc-canonical-source-catalog",
+      "entity_type": "OFFERING",
+      "confidence": 0.7953,
+      "status": "candidate",
+      "source_location": {
+        "line": 225,
+        "offset": 6640,
+        "end_offset": 6669,
+        "context": "ranslations\": {},\n      \"broader\": \"GovernanceSurface\",\n      \"narrower\": [],\n      \"source_refs\": [\n        \"dssc-canonical-source-catalog\"\n      ],\n      \"ner_provenance\": null\n    },\n    {\n      \"concept_id\": \"dssc-catalog-discovery.offering.v1\","
+      },
+      "suggested_skos": {
+        "prefLabel": "dssc-canonical-source-catalog",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "dssc-catalog-discovery",
+      "entity_type": "OFFERING",
+      "confidence": 0.5521,
+      "status": "candidate",
+      "source_location": {
+        "line": 230,
+        "offset": 6743,
+        "end_offset": 6765,
+        "context": "      \"dssc-canonical-source-catalog\"\n      ],\n      \"ner_provenance\": null\n    },\n    {\n      \"concept_id\": \"dssc-catalog-discovery.offering.v1\",\n      \"preferred_term\": \"Offering\",\n      \"synonyms\": [],\n      \"register_variants\": {},\n      "
+      },
+      "suggested_skos": {
+        "prefLabel": "dssc-catalog-discovery",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "offering",
+      "entity_type": "OFFERING",
+      "confidence": 0.5373,
+      "status": "candidate",
+      "source_location": {
+        "line": 230,
+        "offset": 6766,
+        "end_offset": 6774,
+        "context": "ource-catalog\"\n      ],\n      \"ner_provenance\": null\n    },\n    {\n      \"concept_id\": \"dssc-catalog-discovery.offering.v1\",\n      \"preferred_term\": \"Offering\",\n      \"synonyms\": [],\n      \"register_variants\": {},\n      \"domain_v"
+      },
+      "suggested_skos": {
+        "prefLabel": "offering",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "Offering",
+      "entity_type": "OFFERING",
+      "confidence": 0.8013,
+      "status": "candidate",
+      "source_location": {
+        "line": 231,
+        "offset": 6805,
+        "end_offset": 6813,
+        "context": "enance\": null\n    },\n    {\n      \"concept_id\": \"dssc-catalog-discovery.offering.v1\",\n      \"preferred_term\": \"Offering\",\n      \"synonyms\": [],\n      \"register_variants\": {},\n      \"domain_vocabulary\": {},\n      \"translations\": {"
+      },
+      "suggested_skos": {
+        "prefLabel": "Offering",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "dssc-canonical-source-catalog",
+      "entity_type": "OFFERING",
+      "confidence": 0.8006,
+      "status": "candidate",
+      "source_location": {
+        "line": 239,
+        "offset": 7018,
+        "end_offset": 7047,
+        "context": "ranslations\": {},\n      \"broader\": \"GovernanceSurface\",\n      \"narrower\": [],\n      \"source_refs\": [\n        \"dssc-canonical-source-catalog\"\n      ],\n      \"ner_provenance\": null\n    },\n    {\n      \"concept_id\": \"dssc-catalog-discovery.datasetmetada"
+      },
+      "suggested_skos": {
+        "prefLabel": "dssc-canonical-source-catalog",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "datasetmetadata",
+      "entity_type": "DATASET_METADATA",
+      "confidence": 0.4892,
+      "status": "candidate",
+      "source_location": {
+        "line": 244,
+        "offset": 7144,
+        "end_offset": 7159,
+        "context": "ource-catalog\"\n      ],\n      \"ner_provenance\": null\n    },\n    {\n      \"concept_id\": \"dssc-catalog-discovery.datasetmetadata.v1\",\n      \"preferred_term\": \"DatasetMetadata\",\n      \"synonyms\": [],\n      \"register_variants\": {},\n      \"d"
+      },
+      "suggested_skos": {
+        "prefLabel": "datasetmetadata",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "DatasetMetadata",
+      "entity_type": "DATASET_METADATA",
+      "confidence": 0.8485,
+      "status": "candidate",
+      "source_location": {
+        "line": 245,
+        "offset": 7190,
+        "end_offset": 7205,
+        "context": ": null\n    },\n    {\n      \"concept_id\": \"dssc-catalog-discovery.datasetmetadata.v1\",\n      \"preferred_term\": \"DatasetMetadata\",\n      \"synonyms\": [],\n      \"register_variants\": {},\n      \"domain_vocabulary\": {},\n      \"translations\": {"
+      },
+      "suggested_skos": {
+        "prefLabel": "DatasetMetadata",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "ner_provenance",
+      "entity_type": "CATALOG_ENTITY",
+      "confidence": 0.4625,
+      "status": "candidate",
+      "source_location": {
+        "line": 255,
+        "offset": 7457,
+        "end_offset": 7471,
+        "context": "urface\",\n      \"narrower\": [],\n      \"source_refs\": [\n        \"dssc-canonical-source-catalog\"\n      ],\n      \"ner_provenance\": null\n    },\n    {\n      \"concept_id\": \"dssc-catalog-discovery.dataserviceendpoint.v1\",\n      \"preferred_ter"
+      },
+      "suggested_skos": {
+        "prefLabel": "ner_provenance",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "dataserviceendpoint",
+      "entity_type": "SERVICE_ENDPOINT",
+      "confidence": 0.7416,
+      "status": "candidate",
+      "source_location": {
+        "line": 258,
+        "offset": 7536,
+        "end_offset": 7555,
+        "context": "ource-catalog\"\n      ],\n      \"ner_provenance\": null\n    },\n    {\n      \"concept_id\": \"dssc-catalog-discovery.dataserviceendpoint.v1\",\n      \"preferred_term\": \"DataServiceEndpoint\",\n      \"synonyms\": [],\n      \"register_variants\": {},\n    "
+      },
+      "suggested_skos": {
+        "prefLabel": "dataserviceendpoint",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "DataServiceEndpoint",
+      "entity_type": "SERVICE_ENDPOINT",
+      "confidence": 0.9006,
+      "status": "candidate",
+      "source_location": {
+        "line": 259,
+        "offset": 7586,
+        "end_offset": 7605,
+        "context": "ll\n    },\n    {\n      \"concept_id\": \"dssc-catalog-discovery.dataserviceendpoint.v1\",\n      \"preferred_term\": \"DataServiceEndpoint\",\n      \"synonyms\": [],\n      \"register_variants\": {},\n      \"domain_vocabulary\": {},\n      \"translations\": {"
+      },
+      "suggested_skos": {
+        "prefLabel": "DataServiceEndpoint",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "GovernanceSurface",
+      "entity_type": "JURISDICTION",
+      "confidence": 0.8664,
+      "status": "candidate",
+      "source_location": {
+        "line": 264,
+        "offset": 7736,
+        "end_offset": 7753,
+        "context": "[],\n      \"register_variants\": {},\n      \"domain_vocabulary\": {},\n      \"translations\": {},\n      \"broader\": \"GovernanceSurface\",\n      \"narrower\": [],\n      \"source_refs\": [\n        \"dssc-canonical-source-catalog\"\n      ],\n      \"ner_pr"
+      },
+      "suggested_skos": {
+        "prefLabel": "GovernanceSurface",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "ner_provenance",
+      "entity_type": "CATALOG_ENTITY",
+      "confidence": 0.4922,
+      "status": "candidate",
+      "source_location": {
+        "line": 269,
+        "offset": 7857,
+        "end_offset": 7871,
+        "context": "urface\",\n      \"narrower\": [],\n      \"source_refs\": [\n        \"dssc-canonical-source-catalog\"\n      ],\n      \"ner_provenance\": null\n    },\n    {\n      \"concept_id\": \"dssc-catalog-discovery.usagepolicyreference.v1\",\n      \"preferred_te"
+      },
+      "suggested_skos": {
+        "prefLabel": "ner_provenance",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "usagepolicyreference",
+      "entity_type": "USAGE_POLICY",
+      "confidence": 0.6594,
+      "status": "candidate",
+      "source_location": {
+        "line": 272,
+        "offset": 7936,
+        "end_offset": 7956,
+        "context": "ource-catalog\"\n      ],\n      \"ner_provenance\": null\n    },\n    {\n      \"concept_id\": \"dssc-catalog-discovery.usagepolicyreference.v1\",\n      \"preferred_term\": \"UsagePolicyReference\",\n      \"synonyms\": [],\n      \"register_variants\": {},\n   "
+      },
+      "suggested_skos": {
+        "prefLabel": "usagepolicyreference",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "UsagePolicyReference",
+      "entity_type": "USAGE_POLICY",
+      "confidence": 0.9052,
+      "status": "candidate",
+      "source_location": {
+        "line": 273,
+        "offset": 7987,
+        "end_offset": 8007,
+        "context": "l\n    },\n    {\n      \"concept_id\": \"dssc-catalog-discovery.usagepolicyreference.v1\",\n      \"preferred_term\": \"UsagePolicyReference\",\n      \"synonyms\": [],\n      \"register_variants\": {},\n      \"domain_vocabulary\": {},\n      \"translations\": {"
+      },
+      "suggested_skos": {
+        "prefLabel": "UsagePolicyReference",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "GovernanceSurface",
+      "entity_type": "JURISDICTION",
+      "confidence": 0.8867,
+      "status": "candidate",
+      "source_location": {
+        "line": 278,
+        "offset": 8138,
+        "end_offset": 8155,
+        "context": "[],\n      \"register_variants\": {},\n      \"domain_vocabulary\": {},\n      \"translations\": {},\n      \"broader\": \"GovernanceSurface\",\n      \"narrower\": [],\n      \"source_refs\": [\n        \"dssc-canonical-source-catalog\"\n      ],\n      \"ner_pr"
+      },
+      "suggested_skos": {
+        "prefLabel": "GovernanceSurface",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "participantvisibilityscope",
+      "entity_type": "CATALOG_ENTITY",
+      "confidence": 0.482,
+      "status": "candidate",
+      "source_location": {
+        "line": 286,
+        "offset": 8338,
+        "end_offset": 8364,
+        "context": "ource-catalog\"\n      ],\n      \"ner_provenance\": null\n    },\n    {\n      \"concept_id\": \"dssc-catalog-discovery.participantvisibilityscope.v1\",\n      \"preferred_term\": \"ParticipantVisibilityScope\",\n      \"synonyms\": [],\n      \"register_variants\": {"
+      },
+      "suggested_skos": {
+        "prefLabel": "participantvisibilityscope",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "ParticipantVisibilityScope",
+      "entity_type": "CATALOG_ENTITY",
+      "confidence": 0.6375,
+      "status": "candidate",
+      "source_location": {
+        "line": 287,
+        "offset": 8395,
+        "end_offset": 8421,
+        "context": "},\n    {\n      \"concept_id\": \"dssc-catalog-discovery.participantvisibilityscope.v1\",\n      \"preferred_term\": \"ParticipantVisibilityScope\",\n      \"synonyms\": [],\n      \"register_variants\": {},\n      \"domain_vocabulary\": {},\n      \"translations\": {"
+      },
+      "suggested_skos": {
+        "prefLabel": "ParticipantVisibilityScope",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "GovernanceSurface",
+      "entity_type": "JURISDICTION",
+      "confidence": 0.912,
+      "status": "candidate",
+      "source_location": {
+        "line": 292,
+        "offset": 8552,
+        "end_offset": 8569,
+        "context": "[],\n      \"register_variants\": {},\n      \"domain_vocabulary\": {},\n      \"translations\": {},\n      \"broader\": \"GovernanceSurface\",\n      \"narrower\": [],\n      \"source_refs\": [\n        \"dssc-canonical-source-catalog\"\n      ],\n      \"ner_pr"
+      },
+      "suggested_skos": {
+        "prefLabel": "GovernanceSurface",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "lifecyclestate",
+      "entity_type": "LIFECYCLE_STATE",
+      "confidence": 0.8523,
+      "status": "candidate",
+      "source_location": {
+        "line": 300,
+        "offset": 8752,
+        "end_offset": 8766,
+        "context": "ource-catalog\"\n      ],\n      \"ner_provenance\": null\n    },\n    {\n      \"concept_id\": \"dssc-catalog-discovery.lifecyclestate.v1\",\n      \"preferred_term\": \"LifecycleState\",\n      \"synonyms\": [],\n      \"register_variants\": {},\n      \"do"
+      },
+      "suggested_skos": {
+        "prefLabel": "lifecyclestate",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "LifecycleState",
+      "entity_type": "LIFECYCLE_STATE",
+      "confidence": 0.8756,
+      "status": "candidate",
+      "source_location": {
+        "line": 301,
+        "offset": 8797,
+        "end_offset": 8811,
+        "context": "\": null\n    },\n    {\n      \"concept_id\": \"dssc-catalog-discovery.lifecyclestate.v1\",\n      \"preferred_term\": \"LifecycleState\",\n      \"synonyms\": [],\n      \"register_variants\": {},\n      \"domain_vocabulary\": {},\n      \"translations\": {"
+      },
+      "suggested_skos": {
+        "prefLabel": "LifecycleState",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "GovernanceSurface",
+      "entity_type": "JURISDICTION",
+      "confidence": 0.896,
+      "status": "candidate",
+      "source_location": {
+        "line": 306,
+        "offset": 8942,
+        "end_offset": 8959,
+        "context": "[],\n      \"register_variants\": {},\n      \"domain_vocabulary\": {},\n      \"translations\": {},\n      \"broader\": \"GovernanceSurface\",\n      \"narrower\": [],\n      \"source_refs\": [\n        \"dssc-canonical-source-catalog\"\n      ],\n      \"ner_pr"
+      },
+      "suggested_skos": {
+        "prefLabel": "GovernanceSurface",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "dssc-catalog-discovery",
+      "entity_type": "OFFERING",
+      "confidence": 0.43,
+      "status": "candidate",
+      "source_location": {
+        "line": 320,
+        "offset": 9165,
+        "end_offset": 9187,
+        "context": "\n      \"ner_provenance\": null\n    }\n  ]\n}\n\n\n### FILE: patterns.json\n{\n  \"schema_version\": \"1.0\",\n  \"domain\": \"dssc-catalog-discovery\",\n  \"patterns\": [\n    {\n      \"id\": \"dssc_catalog_publish_offering_v1\",\n      \"concept_uri\": \"dssc:Governance"
+      },
+      "suggested_skos": {
+        "prefLabel": "dssc-catalog-discovery",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "id",
+      "entity_type": "IDENTIFIER",
+      "confidence": 0.5806,
+      "status": "candidate",
+      "source_location": {
+        "line": 323,
+        "offset": 9219,
+        "end_offset": 9221,
+        "context": "patterns.json\n{\n  \"schema_version\": \"1.0\",\n  \"domain\": \"dssc-catalog-discovery\",\n  \"patterns\": [\n    {\n      \"id\": \"dssc_catalog_publish_offering_v1\",\n      \"concept_uri\": \"dssc:GovernanceSurface\",\n      \"entity_type\": \"in"
+      },
+      "suggested_skos": {
+        "prefLabel": "id",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "dssc_catalog_publish_offering_v1",
+      "entity_type": "OFFERING",
+      "confidence": 0.745,
+      "status": "candidate",
+      "source_location": {
+        "line": 323,
+        "offset": 9225,
+        "end_offset": 9257,
+        "context": "ns.json\n{\n  \"schema_version\": \"1.0\",\n  \"domain\": \"dssc-catalog-discovery\",\n  \"patterns\": [\n    {\n      \"id\": \"dssc_catalog_publish_offering_v1\",\n      \"concept_uri\": \"dssc:GovernanceSurface\",\n      \"entity_type\": \"intent_hint\",\n      \"regex\": \"(?i)\\\\bd"
+      },
+      "suggested_skos": {
+        "prefLabel": "dssc_catalog_publish_offering_v1",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "dssc",
+      "entity_type": "OFFERING",
+      "confidence": 0.3508,
+      "status": "candidate",
+      "source_location": {
+        "line": 324,
+        "offset": 9282,
+        "end_offset": 9286,
+        "context": "talog-discovery\",\n  \"patterns\": [\n    {\n      \"id\": \"dssc_catalog_publish_offering_v1\",\n      \"concept_uri\": \"dssc:GovernanceSurface\",\n      \"entity_type\": \"intent_hint\",\n      \"regex\": \"(?i)\\\\bdssc\\\\.catalog\\\\.publish_offer"
+      },
+      "suggested_skos": {
+        "prefLabel": "dssc",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "GovernanceSurface",
+      "entity_type": "JURISDICTION",
+      "confidence": 0.8739,
+      "status": "candidate",
+      "source_location": {
+        "line": 324,
+        "offset": 9287,
+        "end_offset": 9304,
+        "context": "-discovery\",\n  \"patterns\": [\n    {\n      \"id\": \"dssc_catalog_publish_offering_v1\",\n      \"concept_uri\": \"dssc:GovernanceSurface\",\n      \"entity_type\": \"intent_hint\",\n      \"regex\": \"(?i)\\\\bdssc\\\\.catalog\\\\.publish_offering\\\\.v1\\\\b\",\n    "
+      },
+      "suggested_skos": {
+        "prefLabel": "GovernanceSurface",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "intent_hint",
+      "entity_type": "INTENT_CLASS",
+      "confidence": 0.5248,
+      "status": "candidate",
+      "source_location": {
+        "line": 325,
+        "offset": 9329,
+        "end_offset": 9340,
+        "context": "id\": \"dssc_catalog_publish_offering_v1\",\n      \"concept_uri\": \"dssc:GovernanceSurface\",\n      \"entity_type\": \"intent_hint\",\n      \"regex\": \"(?i)\\\\bdssc\\\\.catalog\\\\.publish_offering\\\\.v1\\\\b\",\n      \"examples\": [\n        \"dssc.catalo"
+      },
+      "suggested_skos": {
+        "prefLabel": "intent_hint",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "publish_offering",
+      "entity_type": "OFFERING",
+      "confidence": 0.6243,
+      "status": "candidate",
+      "source_location": {
+        "line": 326,
+        "offset": 9383,
+        "end_offset": 9399,
+        "context": "t_uri\": \"dssc:GovernanceSurface\",\n      \"entity_type\": \"intent_hint\",\n      \"regex\": \"(?i)\\\\bdssc\\\\.catalog\\\\.publish_offering\\\\.v1\\\\b\",\n      \"examples\": [\n        \"dssc.catalog.publish_offering.v1\"\n      ]\n    },\n    {\n      \"id\": \"ds"
+      },
+      "suggested_skos": {
+        "prefLabel": "publish_offering",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "dssc",
+      "entity_type": "OFFERING",
+      "confidence": 0.6141,
+      "status": "candidate",
+      "source_location": {
+        "line": 328,
+        "offset": 9439,
+        "end_offset": 9443,
+        "context": "intent_hint\",\n      \"regex\": \"(?i)\\\\bdssc\\\\.catalog\\\\.publish_offering\\\\.v1\\\\b\",\n      \"examples\": [\n        \"dssc.catalog.publish_offering.v1\"\n      ]\n    },\n    {\n      \"id\": \"dssc_catalog_update_offering_v1\",\n      \"conce"
+      },
+      "suggested_skos": {
+        "prefLabel": "dssc",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "publish_offering",
+      "entity_type": "OFFERING",
+      "confidence": 0.5524,
+      "status": "candidate",
+      "source_location": {
+        "line": 328,
+        "offset": 9452,
+        "end_offset": 9468,
+        "context": "\n      \"regex\": \"(?i)\\\\bdssc\\\\.catalog\\\\.publish_offering\\\\.v1\\\\b\",\n      \"examples\": [\n        \"dssc.catalog.publish_offering.v1\"\n      ]\n    },\n    {\n      \"id\": \"dssc_catalog_update_offering_v1\",\n      \"concept_uri\": \"dssc:Governance"
+      },
+      "suggested_skos": {
+        "prefLabel": "publish_offering",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "id",
+      "entity_type": "IDENTIFIER",
+      "confidence": 0.747,
+      "status": "candidate",
+      "source_location": {
+        "line": 332,
+        "offset": 9501,
+        "end_offset": 9503,
+        "context": "offering\\\\.v1\\\\b\",\n      \"examples\": [\n        \"dssc.catalog.publish_offering.v1\"\n      ]\n    },\n    {\n      \"id\": \"dssc_catalog_update_offering_v1\",\n      \"concept_uri\": \"dssc:GovernanceSurface\",\n      \"entity_type\": \"int"
+      },
+      "suggested_skos": {
+        "prefLabel": "id",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "dss",
+      "entity_type": "OFFERING",
+      "confidence": 0.6813,
+      "status": "candidate",
+      "source_location": {
+        "line": 332,
+        "offset": 9507,
+        "end_offset": 9510,
+        "context": "ng\\\\.v1\\\\b\",\n      \"examples\": [\n        \"dssc.catalog.publish_offering.v1\"\n      ]\n    },\n    {\n      \"id\": \"dssc_catalog_update_offering_v1\",\n      \"concept_uri\": \"dssc:GovernanceSurface\",\n      \"entity_type\": \"intent_hin"
+      },
+      "suggested_skos": {
+        "prefLabel": "dss",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "dssc_catalog_update_offering_v1",
+      "entity_type": "OFFERING",
+      "confidence": 0.5839,
+      "status": "candidate",
+      "source_location": {
+        "line": 332,
+        "offset": 9507,
+        "end_offset": 9538,
+        "context": "ng\\\\.v1\\\\b\",\n      \"examples\": [\n        \"dssc.catalog.publish_offering.v1\"\n      ]\n    },\n    {\n      \"id\": \"dssc_catalog_update_offering_v1\",\n      \"concept_uri\": \"dssc:GovernanceSurface\",\n      \"entity_type\": \"intent_hint\",\n      \"regex\": \"(?i)\\\\bd"
+      },
+      "suggested_skos": {
+        "prefLabel": "dssc_catalog_update_offering_v1",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "dssc",
+      "entity_type": "CATALOG_ENTITY",
+      "confidence": 0.5727,
+      "status": "candidate",
+      "source_location": {
+        "line": 333,
+        "offset": 9563,
+        "end_offset": 9567,
+        "context": "ublish_offering.v1\"\n      ]\n    },\n    {\n      \"id\": \"dssc_catalog_update_offering_v1\",\n      \"concept_uri\": \"dssc:GovernanceSurface\",\n      \"entity_type\": \"intent_hint\",\n      \"regex\": \"(?i)\\\\bdssc\\\\.catalog\\\\.update_offeri"
+      },
+      "suggested_skos": {
+        "prefLabel": "dssc",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "GovernanceSurface",
+      "entity_type": "CATALOG_ENTITY",
+      "confidence": 0.4734,
+      "status": "candidate",
+      "source_location": {
+        "line": 333,
+        "offset": 9568,
+        "end_offset": 9585,
+        "context": "h_offering.v1\"\n      ]\n    },\n    {\n      \"id\": \"dssc_catalog_update_offering_v1\",\n      \"concept_uri\": \"dssc:GovernanceSurface\",\n      \"entity_type\": \"intent_hint\",\n      \"regex\": \"(?i)\\\\bdssc\\\\.catalog\\\\.update_offering\\\\.v1\\\\b\",\n     "
+      },
+      "suggested_skos": {
+        "prefLabel": "GovernanceSurface",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "intent_hint",
+      "entity_type": "INTENT_CLASS",
+      "confidence": 0.6622,
+      "status": "candidate",
+      "source_location": {
+        "line": 334,
+        "offset": 9610,
+        "end_offset": 9621,
+        "context": "\"id\": \"dssc_catalog_update_offering_v1\",\n      \"concept_uri\": \"dssc:GovernanceSurface\",\n      \"entity_type\": \"intent_hint\",\n      \"regex\": \"(?i)\\\\bdssc\\\\.catalog\\\\.update_offering\\\\.v1\\\\b\",\n      \"examples\": [\n        \"dssc.catalog"
+      },
+      "suggested_skos": {
+        "prefLabel": "intent_hint",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "update_offering",
+      "entity_type": "CATALOG_ENTITY",
+      "confidence": 0.3885,
+      "status": "candidate",
+      "source_location": {
+        "line": 335,
+        "offset": 9664,
+        "end_offset": 9679,
+        "context": "t_uri\": \"dssc:GovernanceSurface\",\n      \"entity_type\": \"intent_hint\",\n      \"regex\": \"(?i)\\\\bdssc\\\\.catalog\\\\.update_offering\\\\.v1\\\\b\",\n      \"examples\": [\n        \"dssc.catalog.update_offering.v1\"\n      ]\n    },\n    {\n      \"id\": \"dss"
+      },
+      "suggested_skos": {
+        "prefLabel": "update_offering",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "dssc",
+      "entity_type": "OFFERING",
+      "confidence": 0.5758,
+      "status": "candidate",
+      "source_location": {
+        "line": 337,
+        "offset": 9719,
+        "end_offset": 9723,
+        "context": "\"intent_hint\",\n      \"regex\": \"(?i)\\\\bdssc\\\\.catalog\\\\.update_offering\\\\.v1\\\\b\",\n      \"examples\": [\n        \"dssc.catalog.update_offering.v1\"\n      ]\n    },\n    {\n      \"id\": \"dssc_catalog_remove_offering_v1\",\n      \"concep"
+      },
+      "suggested_skos": {
+        "prefLabel": "dssc",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "id",
+      "entity_type": "IDENTIFIER",
+      "confidence": 0.5525,
+      "status": "candidate",
+      "source_location": {
+        "line": 341,
+        "offset": 9780,
+        "end_offset": 9782,
+        "context": "_offering\\\\.v1\\\\b\",\n      \"examples\": [\n        \"dssc.catalog.update_offering.v1\"\n      ]\n    },\n    {\n      \"id\": \"dssc_catalog_remove_offering_v1\",\n      \"concept_uri\": \"dssc:GovernanceSurface\",\n      \"entity_type\": \"int"
+      },
+      "suggested_skos": {
+        "prefLabel": "id",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "dssc_catalog_remove_offering_v1",
+      "entity_type": "OFFERING",
+      "confidence": 0.6052,
+      "status": "candidate",
+      "source_location": {
+        "line": 341,
+        "offset": 9786,
+        "end_offset": 9817,
+        "context": "ing\\\\.v1\\\\b\",\n      \"examples\": [\n        \"dssc.catalog.update_offering.v1\"\n      ]\n    },\n    {\n      \"id\": \"dssc_catalog_remove_offering_v1\",\n      \"concept_uri\": \"dssc:GovernanceSurface\",\n      \"entity_type\": \"intent_hint\",\n      \"regex\": \"(?i)\\\\bd"
+      },
+      "suggested_skos": {
+        "prefLabel": "dssc_catalog_remove_offering_v1",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "dssc",
+      "entity_type": "CATALOG_ENTITY",
+      "confidence": 0.5655,
+      "status": "candidate",
+      "source_location": {
+        "line": 342,
+        "offset": 9842,
+        "end_offset": 9846,
+        "context": "update_offering.v1\"\n      ]\n    },\n    {\n      \"id\": \"dssc_catalog_remove_offering_v1\",\n      \"concept_uri\": \"dssc:GovernanceSurface\",\n      \"entity_type\": \"intent_hint\",\n      \"regex\": \"(?i)\\\\bdssc\\\\.catalog\\\\.remove_offeri"
+      },
+      "suggested_skos": {
+        "prefLabel": "dssc",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "GovernanceSurface",
+      "entity_type": "CATALOG_ENTITY",
+      "confidence": 0.428,
+      "status": "candidate",
+      "source_location": {
+        "line": 342,
+        "offset": 9847,
+        "end_offset": 9864,
+        "context": "e_offering.v1\"\n      ]\n    },\n    {\n      \"id\": \"dssc_catalog_remove_offering_v1\",\n      \"concept_uri\": \"dssc:GovernanceSurface\",\n      \"entity_type\": \"intent_hint\",\n      \"regex\": \"(?i)\\\\bdssc\\\\.catalog\\\\.remove_offering\\\\.v1\\\\b\",\n     "
+      },
+      "suggested_skos": {
+        "prefLabel": "GovernanceSurface",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "intent_hint",
+      "entity_type": "INTENT_CLASS",
+      "confidence": 0.7039,
+      "status": "candidate",
+      "source_location": {
+        "line": 343,
+        "offset": 9889,
+        "end_offset": 9900,
+        "context": "\"id\": \"dssc_catalog_remove_offering_v1\",\n      \"concept_uri\": \"dssc:GovernanceSurface\",\n      \"entity_type\": \"intent_hint\",\n      \"regex\": \"(?i)\\\\bdssc\\\\.catalog\\\\.remove_offering\\\\.v1\\\\b\",\n      \"examples\": [\n        \"dssc.catalog"
+      },
+      "suggested_skos": {
+        "prefLabel": "intent_hint",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "bdssc",
+      "entity_type": "OFFERING",
+      "confidence": 0.4584,
+      "status": "candidate",
+      "source_location": {
+        "line": 344,
+        "offset": 9925,
+        "end_offset": 9930,
+        "context": "v1\",\n      \"concept_uri\": \"dssc:GovernanceSurface\",\n      \"entity_type\": \"intent_hint\",\n      \"regex\": \"(?i)\\\\bdssc\\\\.catalog\\\\.remove_offering\\\\.v1\\\\b\",\n      \"examples\": [\n        \"dssc.catalog.remove_offering.v1\"\n      ]\n "
+      },
+      "suggested_skos": {
+        "prefLabel": "bdssc",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "dssc",
+      "entity_type": "OFFERING",
+      "confidence": 0.4913,
+      "status": "candidate",
+      "source_location": {
+        "line": 346,
+        "offset": 9998,
+        "end_offset": 10002,
+        "context": "\"intent_hint\",\n      \"regex\": \"(?i)\\\\bdssc\\\\.catalog\\\\.remove_offering\\\\.v1\\\\b\",\n      \"examples\": [\n        \"dssc.catalog.remove_offering.v1\"\n      ]\n    },\n    {\n      \"id\": \"dssc_catalog_query_offering_v1\",\n      \"concept"
+      },
+      "suggested_skos": {
+        "prefLabel": "dssc",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "dssc_catalog_query_offering_v1",
+      "entity_type": "OFFERING",
+      "confidence": 0.5331,
+      "status": "candidate",
+      "source_location": {
+        "line": 350,
+        "offset": 10065,
+        "end_offset": 10095,
+        "context": "ing\\\\.v1\\\\b\",\n      \"examples\": [\n        \"dssc.catalog.remove_offering.v1\"\n      ]\n    },\n    {\n      \"id\": \"dssc_catalog_query_offering_v1\",\n      \"concept_uri\": \"dssc:GovernanceSurface\",\n      \"entity_type\": \"intent_hint\",\n      \"regex\": \"(?i)\\\\bd"
+      },
+      "suggested_skos": {
+        "prefLabel": "dssc_catalog_query_offering_v1",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "dssc",
+      "entity_type": "CATALOG_ENTITY",
+      "confidence": 0.5998,
+      "status": "candidate",
+      "source_location": {
+        "line": 351,
+        "offset": 10120,
+        "end_offset": 10124,
+        "context": ".remove_offering.v1\"\n      ]\n    },\n    {\n      \"id\": \"dssc_catalog_query_offering_v1\",\n      \"concept_uri\": \"dssc:GovernanceSurface\",\n      \"entity_type\": \"intent_hint\",\n      \"regex\": \"(?i)\\\\bdssc\\\\.catalog\\\\.query_offerin"
+      },
+      "suggested_skos": {
+        "prefLabel": "dssc",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "GovernanceSurface",
+      "entity_type": "CATALOG_ENTITY",
+      "confidence": 0.6766,
+      "status": "candidate",
+      "source_location": {
+        "line": 351,
+        "offset": 10125,
+        "end_offset": 10142,
+        "context": "ve_offering.v1\"\n      ]\n    },\n    {\n      \"id\": \"dssc_catalog_query_offering_v1\",\n      \"concept_uri\": \"dssc:GovernanceSurface\",\n      \"entity_type\": \"intent_hint\",\n      \"regex\": \"(?i)\\\\bdssc\\\\.catalog\\\\.query_offering\\\\.v1\\\\b\",\n      "
+      },
+      "suggested_skos": {
+        "prefLabel": "GovernanceSurface",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "intent_hint",
+      "entity_type": "INTENT_CLASS",
+      "confidence": 0.6465,
+      "status": "candidate",
+      "source_location": {
+        "line": 352,
+        "offset": 10167,
+        "end_offset": 10178,
+        "context": " \"id\": \"dssc_catalog_query_offering_v1\",\n      \"concept_uri\": \"dssc:GovernanceSurface\",\n      \"entity_type\": \"intent_hint\",\n      \"regex\": \"(?i)\\\\bdssc\\\\.catalog\\\\.query_offering\\\\.v1\\\\b\",\n      \"examples\": [\n        \"dssc.catalog."
+      },
+      "suggested_skos": {
+        "prefLabel": "intent_hint",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "bdssc",
+      "entity_type": "OFFERING",
+      "confidence": 0.5599,
+      "status": "candidate",
+      "source_location": {
+        "line": 353,
+        "offset": 10203,
+        "end_offset": 10208,
+        "context": "v1\",\n      \"concept_uri\": \"dssc:GovernanceSurface\",\n      \"entity_type\": \"intent_hint\",\n      \"regex\": \"(?i)\\\\bdssc\\\\.catalog\\\\.query_offering\\\\.v1\\\\b\",\n      \"examples\": [\n        \"dssc.catalog.query_offering.v1\"\n      ]\n   "
+      },
+      "suggested_skos": {
+        "prefLabel": "bdssc",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "dssc",
+      "entity_type": "OFFERING",
+      "confidence": 0.4743,
+      "status": "candidate",
+      "source_location": {
+        "line": 355,
+        "offset": 10275,
+        "end_offset": 10279,
+        "context": " \"intent_hint\",\n      \"regex\": \"(?i)\\\\bdssc\\\\.catalog\\\\.query_offering\\\\.v1\\\\b\",\n      \"examples\": [\n        \"dssc.catalog.query_offering.v1\"\n      ]\n    }\n  ]\n}\n\n\n### FILE: source-extract/sources.json\n{\n  \"schema_version\": "
+      },
+      "suggested_skos": {
+        "prefLabel": "dssc",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "query_offering",
+      "entity_type": "OFFERING",
+      "confidence": 0.3851,
+      "status": "candidate",
+      "source_location": {
+        "line": 355,
+        "offset": 10288,
+        "end_offset": 10302,
+        "context": "\",\n      \"regex\": \"(?i)\\\\bdssc\\\\.catalog\\\\.query_offering\\\\.v1\\\\b\",\n      \"examples\": [\n        \"dssc.catalog.query_offering.v1\"\n      ]\n    }\n  ]\n}\n\n\n### FILE: source-extract/sources.json\n{\n  \"schema_version\": \"1.0\",\n  \"generated_at_"
+      },
+      "suggested_skos": {
+        "prefLabel": "query_offering",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "dssc-catalog-discovery-demo-pack",
+      "entity_type": "OFFERING",
+      "confidence": 0.4029,
+      "status": "candidate",
+      "source_location": {
+        "line": 366,
+        "offset": 10457,
+        "end_offset": 10489,
+        "context": "xtract/sources.json\n{\n  \"schema_version\": \"1.0\",\n  \"generated_at_utc\": \"2026-04-14T12:00:00Z\",\n  \"vertical\": \"dssc-catalog-discovery-demo-pack\",\n  \"bundle_id\": \"dssc-catalog-discovery-source-2026-04-14\",\n  \"sources\": [\n    {\n      \"id\": \"canonical-sour"
+      },
+      "suggested_skos": {
+        "prefLabel": "dssc-catalog-discovery-demo-pack",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "dssc-catalog-discovery-source-2026-04-14",
+      "entity_type": "OFFERING",
+      "confidence": 0.4184,
+      "status": "candidate",
+      "source_location": {
+        "line": 367,
+        "offset": 10508,
+        "end_offset": 10548,
+        "context": "\"generated_at_utc\": \"2026-04-14T12:00:00Z\",\n  \"vertical\": \"dssc-catalog-discovery-demo-pack\",\n  \"bundle_id\": \"dssc-catalog-discovery-source-2026-04-14\",\n  \"sources\": [\n    {\n      \"id\": \"canonical-source-1\",\n      \"title\": \"Canonical source 1\",\n      \"url\": \"h"
+      },
+      "suggested_skos": {
+        "prefLabel": "dssc-catalog-discovery-source-2026-04-14",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "Canonical source 1",
+      "entity_type": "IDENTIFIER",
+      "confidence": 0.4078,
+      "status": "candidate",
+      "source_location": {
+        "line": 371,
+        "offset": 10622,
+        "end_offset": 10640,
+        "context": "-catalog-discovery-source-2026-04-14\",\n  \"sources\": [\n    {\n      \"id\": \"canonical-source-1\",\n      \"title\": \"Canonical source 1\",\n      \"url\": \"https://blueprint.dssc.eu/\",\n      \"type\": \"canonical_reference\",\n      \"status\": \"referenced"
+      },
+      "suggested_skos": {
+        "prefLabel": "Canonical source 1",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "canonical_reference",
+      "entity_type": "DATASET_METADATA",
+      "confidence": 0.4437,
+      "status": "candidate",
+      "source_location": {
+        "line": 373,
+        "offset": 10701,
+        "end_offset": 10720,
+        "context": "cal-source-1\",\n      \"title\": \"Canonical source 1\",\n      \"url\": \"https://blueprint.dssc.eu/\",\n      \"type\": \"canonical_reference\",\n      \"status\": \"referenced\"\n    },\n    {\n      \"id\": \"canonical-source-2\",\n      \"title\": \"Canonical sourc"
+      },
+      "suggested_skos": {
+        "prefLabel": "canonical_reference",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "id",
+      "entity_type": "IDENTIFIER",
+      "confidence": 0.427,
+      "status": "candidate",
+      "source_location": {
+        "line": 377,
+        "offset": 10772,
+        "end_offset": 10774,
+        "context": "://blueprint.dssc.eu/\",\n      \"type\": \"canonical_reference\",\n      \"status\": \"referenced\"\n    },\n    {\n      \"id\": \"canonical-source-2\",\n      \"title\": \"Canonical source 2\",\n      \"url\": \"https://toolbox.dssc.eu/?pane=tech"
+      },
+      "suggested_skos": {
+        "prefLabel": "id",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "canonical-source-2",
+      "entity_type": "IDENTIFIER",
+      "confidence": 0.8694,
+      "status": "candidate",
+      "source_location": {
+        "line": 377,
+        "offset": 10778,
+        "end_offset": 10796,
+        "context": "eprint.dssc.eu/\",\n      \"type\": \"canonical_reference\",\n      \"status\": \"referenced\"\n    },\n    {\n      \"id\": \"canonical-source-2\",\n      \"title\": \"Canonical source 2\",\n      \"url\": \"https://toolbox.dssc.eu/?pane=technical&technical=data-s"
+      },
+      "suggested_skos": {
+        "prefLabel": "canonical-source-2",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "Canonical source 2",
+      "entity_type": "IDENTIFIER",
+      "confidence": 0.6489,
+      "status": "candidate",
+      "source_location": {
+        "line": 378,
+        "offset": 10815,
+        "end_offset": 10833,
+        "context": "nical_reference\",\n      \"status\": \"referenced\"\n    },\n    {\n      \"id\": \"canonical-source-2\",\n      \"title\": \"Canonical source 2\",\n      \"url\": \"https://toolbox.dssc.eu/?pane=technical&technical=data-services-and-offerings-descriptions\",\n"
+      },
+      "suggested_skos": {
+        "prefLabel": "Canonical source 2",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "canonical-source-3",
+      "entity_type": "IDENTIFIER",
+      "confidence": 0.8156,
+      "status": "candidate",
+      "source_location": {
+        "line": 384,
+        "offset": 11035,
+        "end_offset": 11053,
+        "context": "gs-descriptions\",\n      \"type\": \"canonical_reference\",\n      \"status\": \"referenced\"\n    },\n    {\n      \"id\": \"canonical-source-3\",\n      \"title\": \"Canonical source 3\",\n      \"url\": \"https://www.w3.org/TR/vocab-dcat-3/\",\n      \"type\": \"can"
+      },
+      "suggested_skos": {
+        "prefLabel": "canonical-source-3",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "Canonical source 3",
+      "entity_type": "IDENTIFIER",
+      "confidence": 0.4945,
+      "status": "candidate",
+      "source_location": {
+        "line": 385,
+        "offset": 11072,
+        "end_offset": 11090,
+        "context": "nical_reference\",\n      \"status\": \"referenced\"\n    },\n    {\n      \"id\": \"canonical-source-3\",\n      \"title\": \"Canonical source 3\",\n      \"url\": \"https://www.w3.org/TR/vocab-dcat-3/\",\n      \"type\": \"canonical_reference\",\n      \"status\": \"r"
+      },
+      "suggested_skos": {
+        "prefLabel": "Canonical source 3",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "id",
+      "entity_type": "IDENTIFIER",
+      "confidence": 0.3728,
+      "status": "candidate",
+      "source_location": {
+        "line": 391,
+        "offset": 11231,
+        "end_offset": 11233,
+        "context": ".org/TR/vocab-dcat-3/\",\n      \"type\": \"canonical_reference\",\n      \"status\": \"referenced\"\n    },\n    {\n      \"id\": \"canonical-source-4\",\n      \"title\": \"Canonical source 4\",\n      \"url\": \"https://interoperable-europe.ec.eu"
+      },
+      "suggested_skos": {
+        "prefLabel": "id",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "canonical-source-4",
+      "entity_type": "IDENTIFIER",
+      "confidence": 0.8353,
+      "status": "candidate",
+      "source_location": {
+        "line": 391,
+        "offset": 11237,
+        "end_offset": 11255,
+        "context": "R/vocab-dcat-3/\",\n      \"type\": \"canonical_reference\",\n      \"status\": \"referenced\"\n    },\n    {\n      \"id\": \"canonical-source-4\",\n      \"title\": \"Canonical source 4\",\n      \"url\": \"https://interoperable-europe.ec.europa.eu/collection/sem"
+      },
+      "suggested_skos": {
+        "prefLabel": "canonical-source-4",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "Canonical source 4",
+      "entity_type": "IDENTIFIER",
+      "confidence": 0.38,
+      "status": "candidate",
+      "source_location": {
+        "line": 392,
+        "offset": 11274,
+        "end_offset": 11292,
+        "context": "nical_reference\",\n      \"status\": \"referenced\"\n    },\n    {\n      \"id\": \"canonical-source-4\",\n      \"title\": \"Canonical source 4\",\n      \"url\": \"https://interoperable-europe.ec.europa.eu/collection/semic-support-centre/solution/dcat-appli"
+      },
+      "suggested_skos": {
+        "prefLabel": "Canonical source 4",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "canonical_reference",
+      "entity_type": "CATALOG_ENTITY",
+      "confidence": 0.7375,
+      "status": "candidate",
+      "source_location": {
+        "line": 394,
+        "offset": 11454,
+        "end_offset": 11473,
+        "context": "opa.eu/collection/semic-support-centre/solution/dcat-application-profile-data-portals-europe\",\n      \"type\": \"canonical_reference\",\n      \"status\": \"referenced\"\n    },\n    {\n      \"id\": \"canonical-source-5\",\n      \"title\": \"Canonical sourc"
+      },
+      "suggested_skos": {
+        "prefLabel": "canonical_reference",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "id",
+      "entity_type": "IDENTIFIER",
+      "confidence": 0.3617,
+      "status": "candidate",
+      "source_location": {
+        "line": 398,
+        "offset": 11525,
+        "end_offset": 11527,
+        "context": "e-data-portals-europe\",\n      \"type\": \"canonical_reference\",\n      \"status\": \"referenced\"\n    },\n    {\n      \"id\": \"canonical-source-5\",\n      \"title\": \"Canonical source 5\",\n      \"url\": \"https://eclipse-dataspace-protocol"
+      },
+      "suggested_skos": {
+        "prefLabel": "id",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "canonical-source-5",
+      "entity_type": "IDENTIFIER",
+      "confidence": 0.8135,
+      "status": "candidate",
+      "source_location": {
+        "line": 398,
+        "offset": 11531,
+        "end_offset": 11549,
+        "context": "-portals-europe\",\n      \"type\": \"canonical_reference\",\n      \"status\": \"referenced\"\n    },\n    {\n      \"id\": \"canonical-source-5\",\n      \"title\": \"Canonical source 5\",\n      \"url\": \"https://eclipse-dataspace-protocol-base.github.io/Datasp"
+      },
+      "suggested_skos": {
+        "prefLabel": "canonical-source-5",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "canonical-source-5",
+      "entity_type": "CATALOG_ENTITY",
+      "confidence": 0.4648,
+      "status": "candidate",
+      "source_location": {
+        "line": 398,
+        "offset": 11531,
+        "end_offset": 11549,
+        "context": "-portals-europe\",\n      \"type\": \"canonical_reference\",\n      \"status\": \"referenced\"\n    },\n    {\n      \"id\": \"canonical-source-5\",\n      \"title\": \"Canonical source 5\",\n      \"url\": \"https://eclipse-dataspace-protocol-base.github.io/Datasp"
+      },
+      "suggested_skos": {
+        "prefLabel": "canonical-source-5",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "Canonical source 5",
+      "entity_type": "CATALOG_ENTITY",
+      "confidence": 0.461,
+      "status": "candidate",
+      "source_location": {
+        "line": 399,
+        "offset": 11568,
+        "end_offset": 11586,
+        "context": "nical_reference\",\n      \"status\": \"referenced\"\n    },\n    {\n      \"id\": \"canonical-source-5\",\n      \"title\": \"Canonical source 5\",\n      \"url\": \"https://eclipse-dataspace-protocol-base.github.io/DataspaceProtocol/HEAD/\",\n      \"type\": \"ca"
+      },
+      "suggested_skos": {
+        "prefLabel": "Canonical source 5",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "canonical_reference",
+      "entity_type": "CATALOG_ENTITY",
+      "confidence": 0.7831,
+      "status": "candidate",
+      "source_location": {
+        "line": 401,
+        "offset": 11694,
+        "end_offset": 11713,
+        "context": " 5\",\n      \"url\": \"https://eclipse-dataspace-protocol-base.github.io/DataspaceProtocol/HEAD/\",\n      \"type\": \"canonical_reference\",\n      \"status\": \"referenced\"\n    }\n  ]\n}\n\n\n### FILE: message-identifiers.json\n{\n  \"schema_version\": \"0.1\",\n"
+      },
+      "suggested_skos": {
+        "prefLabel": "canonical_reference",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "message_identifiers",
+      "entity_type": "DATASET_METADATA",
+      "confidence": 0.487,
+      "status": "candidate",
+      "source_location": {
+        "line": 414,
+        "offset": 11959,
+        "end_offset": 11978,
+        "context": "6-04-14T12:00:00Z\",\n  \"profile\": \"dssc-catalog-discovery-demo-pack\",\n  \"domain\": \"dssc-catalog-discovery\",\n  \"message_identifiers\": [],\n  \"message_types\": [],\n  \"note\": \"No ISO-style message identifiers for this DSSC governance demo pack.\""
+      },
+      "suggested_skos": {
+        "prefLabel": "message_identifiers",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "message_types",
+      "entity_type": "DATASET_METADATA",
+      "confidence": 0.3954,
+      "status": "candidate",
+      "source_location": {
+        "line": 415,
+        "offset": 11988,
+        "end_offset": 12001,
+        "context": "e\": \"dssc-catalog-discovery-demo-pack\",\n  \"domain\": \"dssc-catalog-discovery\",\n  \"message_identifiers\": [],\n  \"message_types\": [],\n  \"note\": \"No ISO-style message identifiers for this DSSC governance demo pack.\"\n}\n\n\n### FILE: extracti"
+      },
+      "suggested_skos": {
+        "prefLabel": "message_types",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "ISO-style message identifiers",
+      "entity_type": "DATASET_METADATA",
+      "confidence": 0.4393,
+      "status": "candidate",
+      "source_location": {
+        "line": 416,
+        "offset": 12022,
+        "end_offset": 12051,
+        "context": "ack\",\n  \"domain\": \"dssc-catalog-discovery\",\n  \"message_identifiers\": [],\n  \"message_types\": [],\n  \"note\": \"No ISO-style message identifiers for this DSSC governance demo pack.\"\n}\n\n\n### FILE: extraction-summary.json\n{\n  \"schema_version\": \"0.1\",\n  \"ge"
+      },
+      "suggested_skos": {
+        "prefLabel": "ISO-style message identifiers",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "Catalog",
+      "entity_type": "CATALOG_ENTITY",
+      "confidence": 0.3581,
+      "status": "candidate",
+      "source_location": {
+        "line": 443,
+        "offset": 12841,
+        "end_offset": 12848,
+        "context": "to-pact-crosswalk.v1.json\",\n  \"mappings\": [\n    {\n      \"source_term\": \"Catalog\",\n      \"pact_concept\": \"dssc:Catalog\",\n      \"relation\": \"closeMatch\"\n    },\n    {\n      \"source_term\": \"Offering\",\n      \"pact_concept\": \"dssc:Of"
+      },
+      "suggested_skos": {
+        "prefLabel": "Catalog",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "Offering",
+      "entity_type": "OFFERING",
+      "confidence": 0.818,
+      "status": "candidate",
+      "source_location": {
+        "line": 447,
+        "offset": 12917,
+        "end_offset": 12925,
+        "context": "log\",\n      \"pact_concept\": \"dssc:Catalog\",\n      \"relation\": \"closeMatch\"\n    },\n    {\n      \"source_term\": \"Offering\",\n      \"pact_concept\": \"dssc:Offering\",\n      \"relation\": \"closeMatch\"\n    },\n    {\n      \"source_term\": \"Da"
+      },
+      "suggested_skos": {
+        "prefLabel": "Offering",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "Offering",
+      "entity_type": "OFFERING",
+      "confidence": 0.8023,
+      "status": "candidate",
+      "source_location": {
+        "line": 448,
+        "offset": 12956,
+        "end_offset": 12964,
+        "context": "og\",\n      \"relation\": \"closeMatch\"\n    },\n    {\n      \"source_term\": \"Offering\",\n      \"pact_concept\": \"dssc:Offering\",\n      \"relation\": \"closeMatch\"\n    },\n    {\n      \"source_term\": \"DatasetMetadata\",\n      \"pact_concept\": \""
+      },
+      "suggested_skos": {
+        "prefLabel": "Offering",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "DatasetMetadata",
+      "entity_type": "DATASET_METADATA",
+      "confidence": 0.816,
+      "status": "candidate",
+      "source_location": {
+        "line": 452,
+        "offset": 13033,
+        "end_offset": 13048,
+        "context": "ng\",\n      \"pact_concept\": \"dssc:Offering\",\n      \"relation\": \"closeMatch\"\n    },\n    {\n      \"source_term\": \"DatasetMetadata\",\n      \"pact_concept\": \"dssc:DatasetMetadata\",\n      \"relation\": \"closeMatch\"\n    },\n    {\n      \"source_ter"
+      },
+      "suggested_skos": {
+        "prefLabel": "DatasetMetadata",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "dssc",
+      "entity_type": "DATASET_METADATA",
+      "confidence": 0.7419,
+      "status": "candidate",
+      "source_location": {
+        "line": 453,
+        "offset": 13074,
+        "end_offset": 13078,
+        "context": "\",\n      \"relation\": \"closeMatch\"\n    },\n    {\n      \"source_term\": \"DatasetMetadata\",\n      \"pact_concept\": \"dssc:DatasetMetadata\",\n      \"relation\": \"closeMatch\"\n    },\n    {\n      \"source_term\": \"DataServiceEndpoint\",\n   "
+      },
+      "suggested_skos": {
+        "prefLabel": "dssc",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "DatasetMetadata",
+      "entity_type": "DATASET_METADATA",
+      "confidence": 0.8213,
+      "status": "candidate",
+      "source_location": {
+        "line": 453,
+        "offset": 13079,
+        "end_offset": 13094,
+        "context": "    \"relation\": \"closeMatch\"\n    },\n    {\n      \"source_term\": \"DatasetMetadata\",\n      \"pact_concept\": \"dssc:DatasetMetadata\",\n      \"relation\": \"closeMatch\"\n    },\n    {\n      \"source_term\": \"DataServiceEndpoint\",\n      \"pact_concept"
+      },
+      "suggested_skos": {
+        "prefLabel": "DatasetMetadata",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "tadata",
+      "entity_type": "DATASET_METADATA",
+      "confidence": 0.3693,
+      "status": "candidate",
+      "source_location": {
+        "line": 453,
+        "offset": 13088,
+        "end_offset": 13094,
+        "context": "tion\": \"closeMatch\"\n    },\n    {\n      \"source_term\": \"DatasetMetadata\",\n      \"pact_concept\": \"dssc:DatasetMetadata\",\n      \"relation\": \"closeMatch\"\n    },\n    {\n      \"source_term\": \"DataServiceEndpoint\",\n      \"pact_concept"
+      },
+      "suggested_skos": {
+        "prefLabel": "tadata",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "DataServiceEndpoint",
+      "entity_type": "SERVICE_ENDPOINT",
+      "confidence": 0.9288,
+      "status": "candidate",
+      "source_location": {
+        "line": 457,
+        "offset": 13163,
+        "end_offset": 13182,
+        "context": "    \"pact_concept\": \"dssc:DatasetMetadata\",\n      \"relation\": \"closeMatch\"\n    },\n    {\n      \"source_term\": \"DataServiceEndpoint\",\n      \"pact_concept\": \"dssc:DataServiceEndpoint\",\n      \"relation\": \"closeMatch\"\n    },\n    {\n      \"source"
+      },
+      "suggested_skos": {
+        "prefLabel": "DataServiceEndpoint",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "dssc",
+      "entity_type": "SERVICE_ENDPOINT",
+      "confidence": 0.8305,
+      "status": "candidate",
+      "source_location": {
+        "line": 458,
+        "offset": 13208,
+        "end_offset": 13212,
+        "context": "     \"relation\": \"closeMatch\"\n    },\n    {\n      \"source_term\": \"DataServiceEndpoint\",\n      \"pact_concept\": \"dssc:DataServiceEndpoint\",\n      \"relation\": \"closeMatch\"\n    },\n    {\n      \"source_term\": \"UsagePolicyReference\""
+      },
+      "suggested_skos": {
+        "prefLabel": "dssc",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "DataServiceEndpoint",
+      "entity_type": "SERVICE_ENDPOINT",
+      "confidence": 0.7922,
+      "status": "candidate",
+      "source_location": {
+        "line": 458,
+        "offset": 13213,
+        "end_offset": 13232,
+        "context": "\"relation\": \"closeMatch\"\n    },\n    {\n      \"source_term\": \"DataServiceEndpoint\",\n      \"pact_concept\": \"dssc:DataServiceEndpoint\",\n      \"relation\": \"closeMatch\"\n    },\n    {\n      \"source_term\": \"UsagePolicyReference\",\n      \"pact_concep"
+      },
+      "suggested_skos": {
+        "prefLabel": "DataServiceEndpoint",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "UsagePolicyReference",
+      "entity_type": "USAGE_POLICY",
+      "confidence": 0.8373,
+      "status": "candidate",
+      "source_location": {
+        "line": 462,
+        "offset": 13301,
+        "end_offset": 13321,
+        "context": "\"pact_concept\": \"dssc:DataServiceEndpoint\",\n      \"relation\": \"closeMatch\"\n    },\n    {\n      \"source_term\": \"UsagePolicyReference\",\n      \"pact_concept\": \"dssc:UsagePolicyReference\",\n      \"relation\": \"closeMatch\"\n    },\n    {\n      \"sourc"
+      },
+      "suggested_skos": {
+        "prefLabel": "UsagePolicyReference",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "dssc",
+      "entity_type": "SERVICE_ENDPOINT",
+      "confidence": 0.7857,
+      "status": "candidate",
+      "source_location": {
+        "line": 463,
+        "offset": 13347,
+        "end_offset": 13351,
+        "context": "    \"relation\": \"closeMatch\"\n    },\n    {\n      \"source_term\": \"UsagePolicyReference\",\n      \"pact_concept\": \"dssc:UsagePolicyReference\",\n      \"relation\": \"closeMatch\"\n    },\n    {\n      \"source_term\": \"ParticipantVisibilit"
+      },
+      "suggested_skos": {
+        "prefLabel": "dssc",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "UsagePolicyReference",
+      "entity_type": "USAGE_POLICY",
+      "confidence": 0.8381,
+      "status": "candidate",
+      "source_location": {
+        "line": 463,
+        "offset": 13352,
+        "end_offset": 13372,
+        "context": "relation\": \"closeMatch\"\n    },\n    {\n      \"source_term\": \"UsagePolicyReference\",\n      \"pact_concept\": \"dssc:UsagePolicyReference\",\n      \"relation\": \"closeMatch\"\n    },\n    {\n      \"source_term\": \"ParticipantVisibilityScope\",\n      \"pact_"
+      },
+      "suggested_skos": {
+        "prefLabel": "UsagePolicyReference",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "dssc",
+      "entity_type": "SERVICE_ENDPOINT",
+      "confidence": 0.7391,
+      "status": "candidate",
+      "source_location": {
+        "line": 468,
+        "offset": 13493,
+        "end_offset": 13497,
+        "context": "elation\": \"closeMatch\"\n    },\n    {\n      \"source_term\": \"ParticipantVisibilityScope\",\n      \"pact_concept\": \"dssc:ParticipantVisibilityScope\",\n      \"relation\": \"closeMatch\"\n    },\n    {\n      \"source_term\": \"LifecycleState"
+      },
+      "suggested_skos": {
+        "prefLabel": "dssc",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "closeMatch",
+      "entity_type": "USAGE_POLICY",
+      "confidence": 0.7326,
+      "status": "candidate",
+      "source_location": {
+        "line": 469,
+        "offset": 13546,
+        "end_offset": 13556,
+        "context": "m\": \"ParticipantVisibilityScope\",\n      \"pact_concept\": \"dssc:ParticipantVisibilityScope\",\n      \"relation\": \"closeMatch\"\n    },\n    {\n      \"source_term\": \"LifecycleState\",\n      \"pact_concept\": \"dssc:LifecycleState\",\n      \"rela"
+      },
+      "suggested_skos": {
+        "prefLabel": "closeMatch",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "LifecycleState",
+      "entity_type": "LIFECYCLE_STATE",
+      "confidence": 0.9608,
+      "status": "candidate",
+      "source_location": {
+        "line": 472,
+        "offset": 13593,
+        "end_offset": 13607,
+        "context": "oncept\": \"dssc:ParticipantVisibilityScope\",\n      \"relation\": \"closeMatch\"\n    },\n    {\n      \"source_term\": \"LifecycleState\",\n      \"pact_concept\": \"dssc:LifecycleState\",\n      \"relation\": \"closeMatch\"\n    }\n  ]\n}\n"
+      },
+      "suggested_skos": {
+        "prefLabel": "LifecycleState",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "LifecycleState",
+      "entity_type": "LIFECYCLE_STATE",
+      "confidence": 0.9558,
+      "status": "candidate",
+      "source_location": {
+        "line": 473,
+        "offset": 13638,
+        "end_offset": 13652,
+        "context": "     \"relation\": \"closeMatch\"\n    },\n    {\n      \"source_term\": \"LifecycleState\",\n      \"pact_concept\": \"dssc:LifecycleState\",\n      \"relation\": \"closeMatch\"\n    }\n  ]\n}\n"
+      },
+      "suggested_skos": {
+        "prefLabel": "LifecycleState",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "relation",
+      "entity_type": "USAGE_POLICY",
+      "confidence": 0.4494,
+      "status": "candidate",
+      "source_location": {
+        "line": 474,
+        "offset": 13662,
+        "end_offset": 13670,
+        "context": "atch\"\n    },\n    {\n      \"source_term\": \"LifecycleState\",\n      \"pact_concept\": \"dssc:LifecycleState\",\n      \"relation\": \"closeMatch\"\n    }\n  ]\n}\n"
+      },
+      "suggested_skos": {
+        "prefLabel": "relation",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    },
+    {
+      "surface_form": "closeMatch",
+      "entity_type": "USAGE_POLICY",
+      "confidence": 0.8147,
+      "status": "candidate",
+      "source_location": {
+        "line": 474,
+        "offset": 13674,
+        "end_offset": 13684,
+        "context": "\n    {\n      \"source_term\": \"LifecycleState\",\n      \"pact_concept\": \"dssc:LifecycleState\",\n      \"relation\": \"closeMatch\"\n    }\n  ]\n}\n"
+      },
+      "suggested_skos": {
+        "prefLabel": "closeMatch",
+        "altLabel": [],
+        "broader": null,
+        "narrower": [],
+        "scopeNote": null
+      }
+    }
+  ],
+  "provenance": {
+    "extraction_run_id": "dssc-catalog-discovery-gliner-docker-pass-2026-04-14",
+    "adapter": "gliner",
+    "model": "urchade/gliner_medium-v2.1",
+    "model_hash": "sha256:6c2fcfc92ecee10654d9d3151b2fca9dee740b375c4c99d928c87a9d969e1f7b",
+    "timestamp": "2026-04-14T09:22:40.050859+00:00",
+    "document_hash": "sha256:cc4676f402a917d38da9765d3e2779aafbe9ed019d00cd850a0c2f02b8fa0769",
+    "config_hash": "sha256:d9f70517b3f295424807adbde40fd7ee2e52ed15ca417b289acc2afed08cd956",
+    "entity_count": 175,
+    "entity_type_distribution": {
+      "INTENT_CLASS": 9,
+      "OFFERING": 40,
+      "DATASET_METADATA": 41,
+      "CATALOG_ENTITY": 28,
+      "POLICY_SNAPSHOT": 8,
+      "LIFECYCLE_STATE": 5,
+      "USAGE_POLICY": 13,
+      "IDENTIFIER": 16,
+      "SERVICE_ENDPOINT": 9,
+      "JURISDICTION": 6
+    },
+    "processing_time_ms": 23319
+  }
+}

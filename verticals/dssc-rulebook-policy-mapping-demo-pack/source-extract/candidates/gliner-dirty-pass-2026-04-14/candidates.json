@@ -1,0 +1,2349 @@
+{
+  "schema_version": "1.0",
+  "tool": "extract_candidates",
+  "run_id": "dssc-rulebook-policy-mapping-gliner-docker-pass-2026-04-14",
+  "review_status": "candidate",
+  "authoritative": false,
+  "candidates": [
+    {
+      "candidate_id": "DSSC-RULEBOOK-POLICY-MAPPING-CAND-0001",
+      "surface_form": "ODRL policy expressions",
+      "label": "ODRL_PROHIBITION",
+      "confidence": 0.5613,
+      "review_status": "candidate",
+      "span": {
+        "start": 243,
+        "end": 266
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 8,
+        "line_end": 8
+      },
+      "context": "ping` under Stage-4 pack authoring.\n\n## Purpose\n\nDemonstrate deterministic mapping of DSSC-style rulebook and ODRL policy expressions into PACT fail-closed decision semantics.\n\n## Source Grounding\n\nCanonical source references used for this pac"
+    },
+    {
+      "candidate_id": "DSSC-RULEBOOK-POLICY-MAPPING-CAND-0002",
+      "surface_form": "odrl-vocab",
+      "label": "ODRL_PROHIBITION",
+      "confidence": 0.4064,
+      "review_status": "candidate",
+      "span": {
+        "start": 539,
+        "end": 549
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 17,
+        "line_end": 17
+      },
+      "context": "\nPrimary references:\n- https://blueprint.dssc.eu/\n- https://www.w3.org/TR/odrl-model/\n- https://www.w3.org/TR/odrl-vocab/\n- https://eclipse-dataspace-protocol-base.github.io/DataspaceProtocol/HEAD/\n\n## Intent Surface\n\n- `dssc.poli"
+    },
+    {
+      "candidate_id": "DSSC-RULEBOOK-POLICY-MAPPING-CAND-0003",
+      "surface_form": "Intent Surface",
+      "label": "INTENT_CLASS",
+      "confidence": 0.5288,
+      "review_status": "candidate",
+      "span": {
+        "start": 631,
+        "end": 645
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 20,
+        "line_end": 20
+      },
+      "context": "s://www.w3.org/TR/odrl-vocab/\n- https://eclipse-dataspace-protocol-base.github.io/DataspaceProtocol/HEAD/\n\n## Intent Surface\n\n- `dssc.policy.evaluate_access.v1`: Evaluate access request against mapped rulebook/ODRL policy snapshot.\n- "
+    },
+    {
+      "candidate_id": "DSSC-RULEBOOK-POLICY-MAPPING-CAND-0004",
+      "surface_form": "access request",
+      "label": "ODRL_PERMISSION",
+      "confidence": 0.3595,
+      "review_status": "candidate",
+      "span": {
+        "start": 692,
+        "end": 706
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 22,
+        "line_end": 22
+      },
+      "context": "tocol-base.github.io/DataspaceProtocol/HEAD/\n\n## Intent Surface\n\n- `dssc.policy.evaluate_access.v1`: Evaluate access request against mapped rulebook/ODRL policy snapshot.\n- `dssc.policy.evaluate_usage.v1`: Evaluate post-access usage o"
+    },
+    {
+      "candidate_id": "DSSC-RULEBOOK-POLICY-MAPPING-CAND-0005",
+      "surface_form": "rulebook",
+      "label": "RULEBOOK_CLAUSE",
+      "confidence": 0.7761,
+      "review_status": "candidate",
+      "span": {
+        "start": 722,
+        "end": 730
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 22,
+        "line_end": 22
+      },
+      "context": "Protocol/HEAD/\n\n## Intent Surface\n\n- `dssc.policy.evaluate_access.v1`: Evaluate access request against mapped rulebook/ODRL policy snapshot.\n- `dssc.policy.evaluate_usage.v1`: Evaluate post-access usage obligations and prohibiti"
+    },
+    {
+      "candidate_id": "DSSC-RULEBOOK-POLICY-MAPPING-CAND-0006",
+      "surface_form": "ODRL policy snapshot",
+      "label": "POLICY_SNAPSHOT",
+      "confidence": 0.8309,
+      "review_status": "candidate",
+      "span": {
+        "start": 731,
+        "end": 751
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 22,
+        "line_end": 22
+      },
+      "context": "HEAD/\n\n## Intent Surface\n\n- `dssc.policy.evaluate_access.v1`: Evaluate access request against mapped rulebook/ODRL policy snapshot.\n- `dssc.policy.evaluate_usage.v1`: Evaluate post-access usage obligations and prohibitions.\n- `dssc.policy.r"
+    },
+    {
+      "candidate_id": "DSSC-RULEBOOK-POLICY-MAPPING-CAND-0007",
+      "surface_form": "resolve_conflict.v1",
+      "label": "POLICY_SNAPSHOT",
+      "confidence": 0.3585,
+      "review_status": "candidate",
+      "span": {
+        "start": 860,
+        "end": 879
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 24,
+        "line_end": 24
+      },
+      "context": "t.\n- `dssc.policy.evaluate_usage.v1`: Evaluate post-access usage obligations and prohibitions.\n- `dssc.policy.resolve_conflict.v1`: Deterministically resolve policy conflicts with deny-wins precedence.\n\n## Determinism Boundary\n\n- Out-of-sc"
+    },
+    {
+      "candidate_id": "DSSC-RULEBOOK-POLICY-MAPPING-CAND-0008",
+      "surface_form": "Deny",
+      "label": "DENY_REASON_CODE",
+      "confidence": 0.4495,
+      "review_status": "candidate",
+      "span": {
+        "start": 1085,
+        "end": 1089
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 30,
+        "line_end": 30
+      },
+      "context": "y\n\n- Out-of-scope behavior is `escalate`.\n- Policy/bundle binding is required for admitted execution paths.\n- Deny reason codes are explicit and stable for fixture replay.\n\n## Included Artifacts\n\n- `README.md`\n- `pack.json`\n"
+    },
+    {
+      "candidate_id": "DSSC-RULEBOOK-POLICY-MAPPING-CAND-0009",
+      "surface_form": "V1",
+      "label": "POLICY_SNAPSHOT",
+      "confidence": 0.5707,
+      "review_status": "candidate",
+      "span": {
+        "start": 1865,
+        "end": 1867
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 65,
+        "line_end": 65
+      },
+      "context": "epository root:\n\n```bash\nnode tools/run-dssc-rulebook-policy-mapping-fixtures.mjs\n```\n\n## Two-Pass Authoring (V1/V2)\n\n- `V1 mechanical`: canonical authored baseline for deterministic runtime and fixture behavior.\n- `V2 GLi"
+    },
+    {
+      "candidate_id": "DSSC-RULEBOOK-POLICY-MAPPING-CAND-0010",
+      "surface_form": "V2",
+      "label": "POLICY_SNAPSHOT",
+      "confidence": 0.5895,
+      "review_status": "candidate",
+      "span": {
+        "start": 1868,
+        "end": 1870
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 65,
+        "line_end": 65
+      },
+      "context": "sitory root:\n\n```bash\nnode tools/run-dssc-rulebook-policy-mapping-fixtures.mjs\n```\n\n## Two-Pass Authoring (V1/V2)\n\n- `V1 mechanical`: canonical authored baseline for deterministic runtime and fixture behavior.\n- `V2 GLiNER"
+    },
+    {
+      "candidate_id": "DSSC-RULEBOOK-POLICY-MAPPING-CAND-0011",
+      "surface_form": "V1",
+      "label": "POLICY_SNAPSHOT",
+      "confidence": 0.4959,
+      "review_status": "candidate",
+      "span": {
+        "start": 1876,
+        "end": 1878
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 67,
+        "line_end": 67
+      },
+      "context": "oot:\n\n```bash\nnode tools/run-dssc-rulebook-policy-mapping-fixtures.mjs\n```\n\n## Two-Pass Authoring (V1/V2)\n\n- `V1 mechanical`: canonical authored baseline for deterministic runtime and fixture behavior.\n- `V2 GLiNER candida"
+    },
+    {
+      "candidate_id": "DSSC-RULEBOOK-POLICY-MAPPING-CAND-0012",
+      "surface_form": "V2",
+      "label": "POLICY_SNAPSHOT",
+      "confidence": 0.5481,
+      "review_status": "candidate",
+      "span": {
+        "start": 1971,
+        "end": 1973
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 68,
+        "line_end": 68
+      },
+      "context": "ng (V1/V2)\n\n- `V1 mechanical`: canonical authored baseline for deterministic runtime and fixture behavior.\n- `V2 GLiNER candidate`: fast extraction pass for candidate entities/relations only.\n- `Review gate`: no V2 candida"
+    },
+    {
+      "candidate_id": "DSSC-RULEBOOK-POLICY-MAPPING-CAND-0013",
+      "surface_form": "fast extraction pass",
+      "label": "CONSTRAINT_EXPRESSION",
+      "confidence": 0.6698,
+      "review_status": "candidate",
+      "span": {
+        "start": 1993,
+        "end": 2013
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 68,
+        "line_end": 68
+      },
+      "context": "anical`: canonical authored baseline for deterministic runtime and fixture behavior.\n- `V2 GLiNER candidate`: fast extraction pass for candidate entities/relations only.\n- `Review gate`: no V2 candidate is promoted without explicit human re"
+    },
+    {
+      "candidate_id": "DSSC-RULEBOOK-POLICY-MAPPING-CAND-0014",
+      "surface_form": "Review gate",
+      "label": "ODRL_PROHIBITION",
+      "confidence": 0.5361,
+      "review_status": "candidate",
+      "span": {
+        "start": 2056,
+        "end": 2067
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 69,
+        "line_end": 69
+      },
+      "context": "and fixture behavior.\n- `V2 GLiNER candidate`: fast extraction pass for candidate entities/relations only.\n- `Review gate`: no V2 candidate is promoted without explicit human review.\n\nCandidate artifacts are stored under `source-ex"
+    },
+    {
+      "candidate_id": "DSSC-RULEBOOK-POLICY-MAPPING-CAND-0015",
+      "surface_form": "V2",
+      "label": "POLICY_SNAPSHOT",
+      "confidence": 0.5793,
+      "review_status": "candidate",
+      "span": {
+        "start": 2073,
+        "end": 2075
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 69,
+        "line_end": 69
+      },
+      "context": "ior.\n- `V2 GLiNER candidate`: fast extraction pass for candidate entities/relations only.\n- `Review gate`: no V2 candidate is promoted without explicit human review.\n\nCandidate artifacts are stored under `source-extract/ca"
+    },
+    {
+      "candidate_id": "DSSC-RULEBOOK-POLICY-MAPPING-CAND-0016",
+      "surface_form": "id",
+      "label": "IDENTIFIER",
+      "confidence": 0.3622,
+      "review_status": "candidate",
+      "span": {
+        "start": 2277,
+        "end": 2279
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 77,
+        "line_end": 77
+      },
+      "context": "`source-extract/candidates/gliner-dirty-pass-2026-04-14/`.\n\n\n### FILE: pack.json\n{\n  \"pack_schema\": \"1.0\",\n  \"id\": \"dssc-rulebook-policy-mapping-demo-0.1.0\",\n  \"domain\": \"dssc-rulebook-policy-mapping\",\n  \"version\": \"0.1.0\""
+    },
+    {
+      "candidate_id": "DSSC-RULEBOOK-POLICY-MAPPING-CAND-0017",
+      "surface_form": "deny_wi",
+      "label": "DENY_REASON_CODE",
+      "confidence": 0.5662,
+      "review_status": "candidate",
+      "span": {
+        "start": 2550,
+        "end": 2557
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 85,
+        "line_end": 85
+      },
+      "context": "\"trust_tier\": \"Tier1\",\n  \"nbf\": \"2026-04-14T00:00:00Z\",\n  \"exp\": \"2031-04-14T00:00:00Z\",\n  \"rev_epoch\": 1,\n  \"deny_wins\": true,\n  \"precedence\": [],\n  \"files\": {\n    \"context\": \"context.jsonld\",\n    \"vocab\": \"vocab.skos.jsonld\","
+    },
+    {
+      "candidate_id": "DSSC-RULEBOOK-POLICY-MAPPING-CAND-0018",
+      "surface_form": "deny_wins",
+      "label": "DENY_REASON_CODE",
+      "confidence": 0.469,
+      "review_status": "candidate",
+      "span": {
+        "start": 2550,
+        "end": 2559
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 85,
+        "line_end": 85
+      },
+      "context": "\"trust_tier\": \"Tier1\",\n  \"nbf\": \"2026-04-14T00:00:00Z\",\n  \"exp\": \"2031-04-14T00:00:00Z\",\n  \"rev_epoch\": 1,\n  \"deny_wins\": true,\n  \"precedence\": [],\n  \"files\": {\n    \"context\": \"context.jsonld\",\n    \"vocab\": \"vocab.skos.jsonld\",\n "
+    },
+    {
+      "candidate_id": "DSSC-RULEBOOK-POLICY-MAPPING-CAND-0019",
+      "surface_form": "convergence",
+      "label": "ODRL_PROHIBITION",
+      "confidence": 0.5285,
+      "review_status": "candidate",
+      "span": {
+        "start": 2865,
+        "end": 2876
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 95,
+        "line_end": 95
+      },
+      "context": " \"thesaurus-local.json\",\n    \"patterns\": \"patterns.json\",\n    \"intent_mappings\": \"intent-mappings.json\",\n    \"convergence\": \"convergence.json\",\n    \"decision_space\": \"decision-space.json\",\n    \"message_identifiers\": \"message-identi"
+    },
+    {
+      "candidate_id": "DSSC-RULEBOOK-POLICY-MAPPING-CAND-0020",
+      "surface_form": "convergence",
+      "label": "ODRL_PROHIBITION",
+      "confidence": 0.5208,
+      "review_status": "candidate",
+      "span": {
+        "start": 2880,
+        "end": 2891
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 95,
+        "line_end": 95
+      },
+      "context": "al.json\",\n    \"patterns\": \"patterns.json\",\n    \"intent_mappings\": \"intent-mappings.json\",\n    \"convergence\": \"convergence.json\",\n    \"decision_space\": \"decision-space.json\",\n    \"message_identifiers\": \"message-identifiers.json\",\n  "
+    },
+    {
+      "candidate_id": "DSSC-RULEBOOK-POLICY-MAPPING-CAND-0021",
+      "surface_form": "message_identifiers",
+      "label": "IDENTIFIER",
+      "confidence": 0.3952,
+      "review_status": "candidate",
+      "span": {
+        "start": 2949,
+        "end": 2968
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 97,
+        "line_end": 97
+      },
+      "context": "tent-mappings.json\",\n    \"convergence\": \"convergence.json\",\n    \"decision_space\": \"decision-space.json\",\n    \"message_identifiers\": \"message-identifiers.json\",\n    \"extraction_summary\": \"extraction-summary.json\",\n    \"source_extract\": \"sou"
+    },
+    {
+      "candidate_id": "DSSC-RULEBOOK-POLICY-MAPPING-CAND-0022",
+      "surface_form": "gliner-dirty-pass-2026-04-14",
+      "label": "POLICY_SNAPSHOT",
+      "confidence": 0.4491,
+      "review_status": "candidate",
+      "span": {
+        "start": 3335,
+        "end": 3363
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 102,
+        "line_end": 102
+      },
+      "context": "tract/tasks/immutable-authoring-pipeline.v1-v2.json\",\n    \"gliner_dirty_manifest\": \"source-extract/candidates/gliner-dirty-pass-2026-04-14/manifest.json\",\n    \"gliner_dirty_candidates\": \"source-extract/candidates/gliner-dirty-pass-2026-04-14/candid"
+    },
+    {
+      "candidate_id": "DSSC-RULEBOOK-POLICY-MAPPING-CAND-0023",
+      "surface_form": "gliner-dirty-pass-2026-04-14",
+      "label": "POLICY_SNAPSHOT",
+      "confidence": 0.5085,
+      "review_status": "candidate",
+      "span": {
+        "start": 3438,
+        "end": 3466
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 103,
+        "line_end": 103
+      },
+      "context": "idates/gliner-dirty-pass-2026-04-14/manifest.json\",\n    \"gliner_dirty_candidates\": \"source-extract/candidates/gliner-dirty-pass-2026-04-14/candidates.json\",\n    \"gliner_dirty_summary\": \"source-extract/candidates/gliner-dirty-pass-2026-04-14/extract"
+    },
+    {
+      "candidate_id": "DSSC-RULEBOOK-POLICY-MAPPING-CAND-0024",
+      "surface_form": "gliner-dirty-pass-2026-04-14",
+      "label": "POLICY_SNAPSHOT",
+      "confidence": 0.5181,
+      "review_status": "candidate",
+      "span": {
+        "start": 3540,
+        "end": 3568
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 104,
+        "line_end": 104
+      },
+      "context": "didates/gliner-dirty-pass-2026-04-14/candidates.json\",\n    \"gliner_dirty_summary\": \"source-extract/candidates/gliner-dirty-pass-2026-04-14/extraction-summary.json\"\n  },\n  \"dc\": {\n    \"identifier\": \"ontology:dssc-rulebook-policy-mapping-demo:v0.1.0\""
+    },
+    {
+      "candidate_id": "DSSC-RULEBOOK-POLICY-MAPPING-CAND-0025",
+      "surface_form": "dc",
+      "label": "IDENTIFIER",
+      "confidence": 0.5149,
+      "review_status": "candidate",
+      "span": {
+        "start": 3602,
+        "end": 3604
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 106,
+        "line_end": 106
+      },
+      "context": "iner_dirty_summary\": \"source-extract/candidates/gliner-dirty-pass-2026-04-14/extraction-summary.json\"\n  },\n  \"dc\": {\n    \"identifier\": \"ontology:dssc-rulebook-policy-mapping-demo:v0.1.0\",\n    \"title\": \"dssc-rulebook-policy"
+    },
+    {
+      "candidate_id": "DSSC-RULEBOOK-POLICY-MAPPING-CAND-0026",
+      "surface_form": "dssc-rulebook-policy-mapping-demo",
+      "label": "ODRL_PROHIBITION",
+      "confidence": 0.3766,
+      "review_status": "candidate",
+      "span": {
+        "start": 3637,
+        "end": 3670
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 107,
+        "line_end": 107
+      },
+      "context": "t/candidates/gliner-dirty-pass-2026-04-14/extraction-summary.json\"\n  },\n  \"dc\": {\n    \"identifier\": \"ontology:dssc-rulebook-policy-mapping-demo:v0.1.0\",\n    \"title\": \"dssc-rulebook-policy-mapping demo pack\",\n    \"creator\": \"PACT Public Working Draft\",\n "
+    },
+    {
+      "candidate_id": "DSSC-RULEBOOK-POLICY-MAPPING-CAND-0027",
+      "surface_form": "ODRL policy expressions",
+      "label": "ODRL_PROHIBITION",
+      "confidence": 0.564,
+      "review_status": "candidate",
+      "span": {
+        "start": 3916,
+        "end": 3939
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 112,
+        "line_end": 112
+      },
+      "context": "\n    \"rights\": \"Apache-2.0\",\n    \"description\": \"Demonstrate deterministic mapping of DSSC-style rulebook and ODRL policy expressions into PACT fail-closed decision semantics.\"\n  }\n}\n\n\n### FILE: decision-space.json\n{\n  \"schema_version\": \"1.0\","
+    },
+    {
+      "candidate_id": "DSSC-RULEBOOK-POLICY-MAPPING-CAND-0028",
+      "surface_form": "dssc-rulebook-policy-mapping-demo-0.1.0",
+      "label": "POLICY_SNAPSHOT",
+      "confidence": 0.6822,
+      "review_status": "candidate",
+      "span": {
+        "start": 4108,
+        "end": 4147
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 121,
+        "line_end": 121
+      },
+      "context": "E: decision-space.json\n{\n  \"schema_version\": \"1.0\",\n  \"domain\": \"dssc-rulebook-policy-mapping\",\n  \"pack_id\": \"dssc-rulebook-policy-mapping-demo-0.1.0\",\n  \"version\": \"0.1.0\",\n  \"out_of_scope_behavior\": \"escalate\",\n  \"state_model\": {\n    \"states\": [\n      \"ingr"
+    },
+    {
+      "candidate_id": "DSSC-RULEBOOK-POLICY-MAPPING-CAND-0029",
+      "surface_form": "0.1.0",
+      "label": "POLICY_SNAPSHOT",
+      "confidence": 0.5124,
+      "review_status": "candidate",
+      "span": {
+        "start": 4164,
+        "end": 4169
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 122,
+        "line_end": 122
+      },
+      "context": "omain\": \"dssc-rulebook-policy-mapping\",\n  \"pack_id\": \"dssc-rulebook-policy-mapping-demo-0.1.0\",\n  \"version\": \"0.1.0\",\n  \"out_of_scope_behavior\": \"escalate\",\n  \"state_model\": {\n    \"states\": [\n      \"ingress\",\n      \"validated"
+    },
+    {
+      "candidate_id": "DSSC-RULEBOOK-POLICY-MAPPING-CAND-0030",
+      "surface_form": "escalate",
+      "label": "ODRL_PROHIBITION",
+      "confidence": 0.3708,
+      "review_status": "candidate",
+      "span": {
+        "start": 4200,
+        "end": 4208
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 123,
+        "line_end": 123
+      },
+      "context": "g\",\n  \"pack_id\": \"dssc-rulebook-policy-mapping-demo-0.1.0\",\n  \"version\": \"0.1.0\",\n  \"out_of_scope_behavior\": \"escalate\",\n  \"state_model\": {\n    \"states\": [\n      \"ingress\",\n      \"validated\",\n      \"classified\",\n      \"authorize"
+    },
+    {
+      "candidate_id": "DSSC-RULEBOOK-POLICY-MAPPING-CAND-0031",
+      "surface_form": "rejected",
+      "label": "DENY_REASON_CODE",
+      "confidence": 0.5399,
+      "review_status": "candidate",
+      "span": {
+        "start": 4348,
+        "end": 4356
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 131,
+        "line_end": 131
+      },
+      "context": "tes\": [\n      \"ingress\",\n      \"validated\",\n      \"classified\",\n      \"authorized\",\n      \"responded\",\n      \"rejected\",\n      \"escalated\"\n    ],\n    \"initial_state\": \"ingress\",\n    \"terminal_states\": [\n      \"responded\",\n      "
+    },
+    {
+      "candidate_id": "DSSC-RULEBOOK-POLICY-MAPPING-CAND-0032",
+      "surface_form": "escalated",
+      "label": "ODRL_PROHIBITION",
+      "confidence": 0.4138,
+      "review_status": "candidate",
+      "span": {
+        "start": 4366,
+        "end": 4375
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 132,
+        "line_end": 132
+      },
+      "context": "ress\",\n      \"validated\",\n      \"classified\",\n      \"authorized\",\n      \"responded\",\n      \"rejected\",\n      \"escalated\"\n    ],\n    \"initial_state\": \"ingress\",\n    \"terminal_states\": [\n      \"responded\",\n      \"rejected\",\n      \""
+    },
+    {
+      "candidate_id": "DSSC-RULEBOOK-POLICY-MAPPING-CAND-0033",
+      "surface_form": "responded",
+      "label": "ODRL_PROHIBITION",
+      "confidence": 0.4391,
+      "review_status": "candidate",
+      "span": {
+        "start": 4448,
+        "end": 4457
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 136,
+        "line_end": 136
+      },
+      "context": "\",\n      \"rejected\",\n      \"escalated\"\n    ],\n    \"initial_state\": \"ingress\",\n    \"terminal_states\": [\n      \"responded\",\n      \"rejected\",\n      \"escalated\"\n    ]\n  },\n  \"intent_resource_map\": {\n    \"dssc.policy.evaluate_access."
+    },
+    {
+      "candidate_id": "DSSC-RULEBOOK-POLICY-MAPPING-CAND-0034",
+      "surface_form": "rejected",
+      "label": "DENY_REASON_CODE",
+      "confidence": 0.5706,
+      "review_status": "candidate",
+      "span": {
+        "start": 4467,
+        "end": 4475
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 137,
+        "line_end": 137
+      },
+      "context": ",\n      \"escalated\"\n    ],\n    \"initial_state\": \"ingress\",\n    \"terminal_states\": [\n      \"responded\",\n      \"rejected\",\n      \"escalated\"\n    ]\n  },\n  \"intent_resource_map\": {\n    \"dssc.policy.evaluate_access.v1\": [\n      \"Gove"
+    },
+    {
+      "candidate_id": "DSSC-RULEBOOK-POLICY-MAPPING-CAND-0035",
+      "surface_form": "escalated",
+      "label": "ODRL_PROHIBITION",
+      "confidence": 0.3757,
+      "review_status": "candidate",
+      "span": {
+        "start": 4485,
+        "end": 4494
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 138,
+        "line_end": 138
+      },
+      "context": "\"\n    ],\n    \"initial_state\": \"ingress\",\n    \"terminal_states\": [\n      \"responded\",\n      \"rejected\",\n      \"escalated\"\n    ]\n  },\n  \"intent_resource_map\": {\n    \"dssc.policy.evaluate_access.v1\": [\n      \"GovernanceDecision\"\n   "
+    },
+    {
+      "candidate_id": "DSSC-RULEBOOK-POLICY-MAPPING-CAND-0036",
+      "surface_form": "policy_snapshot_id",
+      "label": "POLICY_SNAPSHOT",
+      "confidence": 0.8478,
+      "review_status": "candidate",
+      "span": {
+        "start": 4840,
+        "end": 4858
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 154,
+        "line_end": 154
+      },
+      "context": "overnanceDecision\"\n    ]\n  },\n  \"required_fields_by_intent\": {\n    \"dssc.policy.evaluate_access.v1\": [\n      \"policy_snapshot_id\",\n      \"rulebook_clause_id\",\n      \"odrl_permission\",\n      \"odrl_prohibition\",\n      \"odrl_obligation\",\n   "
+    },
+    {
+      "candidate_id": "DSSC-RULEBOOK-POLICY-MAPPING-CAND-0037",
+      "surface_form": "rulebook_clause_id",
+      "label": "RULEBOOK_CLAUSE",
+      "confidence": 0.7925,
+      "review_status": "candidate",
+      "span": {
+        "start": 4868,
+        "end": 4886
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 155,
+        "line_end": 155
+      },
+      "context": ",\n  \"required_fields_by_intent\": {\n    \"dssc.policy.evaluate_access.v1\": [\n      \"policy_snapshot_id\",\n      \"rulebook_clause_id\",\n      \"odrl_permission\",\n      \"odrl_prohibition\",\n      \"odrl_obligation\",\n      \"constraint_expression\"\n "
+    },
+    {
+      "candidate_id": "DSSC-RULEBOOK-POLICY-MAPPING-CAND-0038",
+      "surface_form": "odrl_permission",
+      "label": "ODRL_PERMISSION",
+      "confidence": 0.9173,
+      "review_status": "candidate",
+      "span": {
+        "start": 4896,
+        "end": 4911
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 156,
+        "line_end": 156
+      },
+      "context": "nt\": {\n    \"dssc.policy.evaluate_access.v1\": [\n      \"policy_snapshot_id\",\n      \"rulebook_clause_id\",\n      \"odrl_permission\",\n      \"odrl_prohibition\",\n      \"odrl_obligation\",\n      \"constraint_expression\"\n    ],\n    \"dssc.policy.ev"
+    },
+    {
+      "candidate_id": "DSSC-RULEBOOK-POLICY-MAPPING-CAND-0039",
+      "surface_form": "odrl_prohibition",
+      "label": "ODRL_PROHIBITION",
+      "confidence": 0.6156,
+      "review_status": "candidate",
+      "span": {
+        "start": 4921,
+        "end": 4937
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 157,
+        "line_end": 157
+      },
+      "context": "valuate_access.v1\": [\n      \"policy_snapshot_id\",\n      \"rulebook_clause_id\",\n      \"odrl_permission\",\n      \"odrl_prohibition\",\n      \"odrl_obligation\",\n      \"constraint_expression\"\n    ],\n    \"dssc.policy.evaluate_usage.v1\": [\n      "
+    },
+    {
+      "candidate_id": "DSSC-RULEBOOK-POLICY-MAPPING-CAND-0040",
+      "surface_form": "odrl_obligation",
+      "label": "ODRL_OBLIGATION",
+      "confidence": 0.6403,
+      "review_status": "candidate",
+      "span": {
+        "start": 4947,
+        "end": 4962
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 158,
+        "line_end": 158
+      },
+      "context": "  \"policy_snapshot_id\",\n      \"rulebook_clause_id\",\n      \"odrl_permission\",\n      \"odrl_prohibition\",\n      \"odrl_obligation\",\n      \"constraint_expression\"\n    ],\n    \"dssc.policy.evaluate_usage.v1\": [\n      \"policy_snapshot_id\",\n   "
+    },
+    {
+      "candidate_id": "DSSC-RULEBOOK-POLICY-MAPPING-CAND-0041",
+      "surface_form": "constraint_expression",
+      "label": "CONSTRAINT_EXPRESSION",
+      "confidence": 0.6151,
+      "review_status": "candidate",
+      "span": {
+        "start": 4972,
+        "end": 4993
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 159,
+        "line_end": 159
+      },
+      "context": "     \"rulebook_clause_id\",\n      \"odrl_permission\",\n      \"odrl_prohibition\",\n      \"odrl_obligation\",\n      \"constraint_expression\"\n    ],\n    \"dssc.policy.evaluate_usage.v1\": [\n      \"policy_snapshot_id\",\n      \"rulebook_clause_id\",\n      "
+    },
+    {
+      "candidate_id": "DSSC-RULEBOOK-POLICY-MAPPING-CAND-0042",
+      "surface_form": "policy_snapshot_id",
+      "label": "POLICY_SNAPSHOT",
+      "confidence": 0.8924,
+      "review_status": "candidate",
+      "span": {
+        "start": 5048,
+        "end": 5066
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 162,
+        "line_end": 162
+      },
+      "context": ",\n      \"odrl_obligation\",\n      \"constraint_expression\"\n    ],\n    \"dssc.policy.evaluate_usage.v1\": [\n      \"policy_snapshot_id\",\n      \"rulebook_clause_id\",\n      \"odrl_permission\",\n      \"odrl_prohibition\",\n      \"odrl_obligation\",\n   "
+    },
+    {
+      "candidate_id": "DSSC-RULEBOOK-POLICY-MAPPING-CAND-0043",
+      "surface_form": "rulebook_clause_id",
+      "label": "RULEBOOK_CLAUSE",
+      "confidence": 0.8951,
+      "review_status": "candidate",
+      "span": {
+        "start": 5076,
+        "end": 5094
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 163,
+        "line_end": 163
+      },
+      "context": "     \"constraint_expression\"\n    ],\n    \"dssc.policy.evaluate_usage.v1\": [\n      \"policy_snapshot_id\",\n      \"rulebook_clause_id\",\n      \"odrl_permission\",\n      \"odrl_prohibition\",\n      \"odrl_obligation\",\n      \"constraint_expression\"\n "
+    },
+    {
+      "candidate_id": "DSSC-RULEBOOK-POLICY-MAPPING-CAND-0044",
+      "surface_form": "odrl_permission",
+      "label": "ODRL_PERMISSION",
+      "confidence": 0.8795,
+      "review_status": "candidate",
+      "span": {
+        "start": 5104,
+        "end": 5119
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 164,
+        "line_end": 164
+      },
+      "context": "\n    ],\n    \"dssc.policy.evaluate_usage.v1\": [\n      \"policy_snapshot_id\",\n      \"rulebook_clause_id\",\n      \"odrl_permission\",\n      \"odrl_prohibition\",\n      \"odrl_obligation\",\n      \"constraint_expression\"\n    ],\n    \"dssc.policy.re"
+    },
+    {
+      "candidate_id": "DSSC-RULEBOOK-POLICY-MAPPING-CAND-0045",
+      "surface_form": "odrl_prohibition",
+      "label": "ODRL_PROHIBITION",
+      "confidence": 0.7575,
+      "review_status": "candidate",
+      "span": {
+        "start": 5129,
+        "end": 5145
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 165,
+        "line_end": 165
+      },
+      "context": "evaluate_usage.v1\": [\n      \"policy_snapshot_id\",\n      \"rulebook_clause_id\",\n      \"odrl_permission\",\n      \"odrl_prohibition\",\n      \"odrl_obligation\",\n      \"constraint_expression\"\n    ],\n    \"dssc.policy.resolve_conflict.v1\": [\n    "
+    },
+    {
+      "candidate_id": "DSSC-RULEBOOK-POLICY-MAPPING-CAND-0046",
+      "surface_form": "odrl_obligation",
+      "label": "ODRL_OBLIGATION",
+      "confidence": 0.7553,
+      "review_status": "candidate",
+      "span": {
+        "start": 5155,
+        "end": 5170
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 166,
+        "line_end": 166
+      },
+      "context": "  \"policy_snapshot_id\",\n      \"rulebook_clause_id\",\n      \"odrl_permission\",\n      \"odrl_prohibition\",\n      \"odrl_obligation\",\n      \"constraint_expression\"\n    ],\n    \"dssc.policy.resolve_conflict.v1\": [\n      \"policy_snapshot_id\",\n "
+    },
+    {
+      "candidate_id": "DSSC-RULEBOOK-POLICY-MAPPING-CAND-0047",
+      "surface_form": "constraint_expression",
+      "label": "CONSTRAINT_EXPRESSION",
+      "confidence": 0.7817,
+      "review_status": "candidate",
+      "span": {
+        "start": 5180,
+        "end": 5201
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 167,
+        "line_end": 167
+      },
+      "context": "     \"rulebook_clause_id\",\n      \"odrl_permission\",\n      \"odrl_prohibition\",\n      \"odrl_obligation\",\n      \"constraint_expression\"\n    ],\n    \"dssc.policy.resolve_conflict.v1\": [\n      \"policy_snapshot_id\",\n      \"rulebook_clause_id\",\n    "
+    },
+    {
+      "candidate_id": "DSSC-RULEBOOK-POLICY-MAPPING-CAND-0048",
+      "surface_form": "policy_snapshot_id",
+      "label": "POLICY_SNAPSHOT",
+      "confidence": 0.8743,
+      "review_status": "candidate",
+      "span": {
+        "start": 5258,
+        "end": 5276
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 170,
+        "line_end": 170
+      },
+      "context": "      \"odrl_obligation\",\n      \"constraint_expression\"\n    ],\n    \"dssc.policy.resolve_conflict.v1\": [\n      \"policy_snapshot_id\",\n      \"rulebook_clause_id\",\n      \"odrl_permission\",\n      \"odrl_prohibition\",\n      \"odrl_obligation\",\n   "
+    },
+    {
+      "candidate_id": "DSSC-RULEBOOK-POLICY-MAPPING-CAND-0049",
+      "surface_form": "rulebook_clause_id",
+      "label": "RULEBOOK_CLAUSE",
+      "confidence": 0.8718,
+      "review_status": "candidate",
+      "span": {
+        "start": 5286,
+        "end": 5304
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 171,
+        "line_end": 171
+      },
+      "context": "   \"constraint_expression\"\n    ],\n    \"dssc.policy.resolve_conflict.v1\": [\n      \"policy_snapshot_id\",\n      \"rulebook_clause_id\",\n      \"odrl_permission\",\n      \"odrl_prohibition\",\n      \"odrl_obligation\",\n      \"constraint_expression\"\n "
+    },
+    {
+      "candidate_id": "DSSC-RULEBOOK-POLICY-MAPPING-CAND-0050",
+      "surface_form": "odrl_permission",
+      "label": "ODRL_PERMISSION",
+      "confidence": 0.886,
+      "review_status": "candidate",
+      "span": {
+        "start": 5314,
+        "end": 5329
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 172,
+        "line_end": 172
+      },
+      "context": "   ],\n    \"dssc.policy.resolve_conflict.v1\": [\n      \"policy_snapshot_id\",\n      \"rulebook_clause_id\",\n      \"odrl_permission\",\n      \"odrl_prohibition\",\n      \"odrl_obligation\",\n      \"constraint_expression\"\n    ]\n  },\n  \"deny_reason_"
+    },
+    {
+      "candidate_id": "DSSC-RULEBOOK-POLICY-MAPPING-CAND-0051",
+      "surface_form": "l_permission",
+      "label": "ODRL_PERMISSION",
+      "confidence": 0.4541,
+      "review_status": "candidate",
+      "span": {
+        "start": 5317,
+        "end": 5329
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 172,
+        "line_end": 172
+      },
+      "context": "],\n    \"dssc.policy.resolve_conflict.v1\": [\n      \"policy_snapshot_id\",\n      \"rulebook_clause_id\",\n      \"odrl_permission\",\n      \"odrl_prohibition\",\n      \"odrl_obligation\",\n      \"constraint_expression\"\n    ]\n  },\n  \"deny_reason_"
+    },
+    {
+      "candidate_id": "DSSC-RULEBOOK-POLICY-MAPPING-CAND-0052",
+      "surface_form": "odrl_prohibition",
+      "label": "ODRL_PROHIBITION",
+      "confidence": 0.7534,
+      "review_status": "candidate",
+      "span": {
+        "start": 5339,
+        "end": 5355
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 173,
+        "line_end": 173
+      },
+      "context": "solve_conflict.v1\": [\n      \"policy_snapshot_id\",\n      \"rulebook_clause_id\",\n      \"odrl_permission\",\n      \"odrl_prohibition\",\n      \"odrl_obligation\",\n      \"constraint_expression\"\n    ]\n  },\n  \"deny_reason_codes\": [\n    \"DENY_RULEBO"
+    },
+    {
+      "candidate_id": "DSSC-RULEBOOK-POLICY-MAPPING-CAND-0053",
+      "surface_form": "odrl_prohibition",
+      "label": "ODRL_OBLIGATION",
+      "confidence": 0.5051,
+      "review_status": "candidate",
+      "span": {
+        "start": 5339,
+        "end": 5355
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 173,
+        "line_end": 173
+      },
+      "context": "solve_conflict.v1\": [\n      \"policy_snapshot_id\",\n      \"rulebook_clause_id\",\n      \"odrl_permission\",\n      \"odrl_prohibition\",\n      \"odrl_obligation\",\n      \"constraint_expression\"\n    ]\n  },\n  \"deny_reason_codes\": [\n    \"DENY_RULEBO"
+    },
+    {
+      "candidate_id": "DSSC-RULEBOOK-POLICY-MAPPING-CAND-0054",
+      "surface_form": "odrl_obligation",
+      "label": "ODRL_OBLIGATION",
+      "confidence": 0.7133,
+      "review_status": "candidate",
+      "span": {
+        "start": 5365,
+        "end": 5380
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 174,
+        "line_end": 174
+      },
+      "context": "  \"policy_snapshot_id\",\n      \"rulebook_clause_id\",\n      \"odrl_permission\",\n      \"odrl_prohibition\",\n      \"odrl_obligation\",\n      \"constraint_expression\"\n    ]\n  },\n  \"deny_reason_codes\": [\n    \"DENY_RULEBOOK_PROHIBITION\",\n    \"DEN"
+    },
+    {
+      "candidate_id": "DSSC-RULEBOOK-POLICY-MAPPING-CAND-0055",
+      "surface_form": "constraint_expression",
+      "label": "CONSTRAINT_EXPRESSION",
+      "confidence": 0.8082,
+      "review_status": "candidate",
+      "span": {
+        "start": 5390,
+        "end": 5411
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 175,
+        "line_end": 175
+      },
+      "context": "     \"rulebook_clause_id\",\n      \"odrl_permission\",\n      \"odrl_prohibition\",\n      \"odrl_obligation\",\n      \"constraint_expression\"\n    ]\n  },\n  \"deny_reason_codes\": [\n    \"DENY_RULEBOOK_PROHIBITION\",\n    \"DENY_POLICY_CONFLICT_DENY_WINS\",\n "
+    },
+    {
+      "candidate_id": "DSSC-RULEBOOK-POLICY-MAPPING-CAND-0056",
+      "surface_form": "DENY_RULEBOOK_PROHIBITION",
+      "label": "ODRL_PROHIBITION",
+      "confidence": 0.5814,
+      "review_status": "candidate",
+      "span": {
+        "start": 5454,
+        "end": 5479
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 179,
+        "line_end": 179
+      },
+      "context": "prohibition\",\n      \"odrl_obligation\",\n      \"constraint_expression\"\n    ]\n  },\n  \"deny_reason_codes\": [\n    \"DENY_RULEBOOK_PROHIBITION\",\n    \"DENY_POLICY_CONFLICT_DENY_WINS\",\n    \"DENY_POLICY_SNAPSHOT_UNBOUND\",\n    \"DENY_CONSTRAINT_UNMAPPED\",\n "
+    },
+    {
+      "candidate_id": "DSSC-RULEBOOK-POLICY-MAPPING-CAND-0057",
+      "surface_form": "DENY_POLICY_CONFLICT_DENY_WINS",
+      "label": "DENY_REASON_CODE",
+      "confidence": 0.4321,
+      "review_status": "candidate",
+      "span": {
+        "start": 5487,
+        "end": 5517
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 180,
+        "line_end": 180
+      },
+      "context": "ion\",\n      \"constraint_expression\"\n    ]\n  },\n  \"deny_reason_codes\": [\n    \"DENY_RULEBOOK_PROHIBITION\",\n    \"DENY_POLICY_CONFLICT_DENY_WINS\",\n    \"DENY_POLICY_SNAPSHOT_UNBOUND\",\n    \"DENY_CONSTRAINT_UNMAPPED\",\n    \"DENY_OBLIGATION_UNSATISFIED\",\n    "
+    },
+    {
+      "candidate_id": "DSSC-RULEBOOK-POLICY-MAPPING-CAND-0058",
+      "surface_form": "DENY_OBLIGATION_UNSATISFIED",
+      "label": "DENY_REASON_CODE",
+      "confidence": 0.4743,
+      "review_status": "candidate",
+      "span": {
+        "start": 5593,
+        "end": 5620
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 183,
+        "line_end": 183
+      },
+      "context": "   \"DENY_POLICY_CONFLICT_DENY_WINS\",\n    \"DENY_POLICY_SNAPSHOT_UNBOUND\",\n    \"DENY_CONSTRAINT_UNMAPPED\",\n    \"DENY_OBLIGATION_UNSATISFIED\",\n    \"PSC_BUNDLE_COMMIT_MISMATCH\"\n  ]\n}\n\n\n### FILE: intent-mappings.json\n{\n  \"schema_version\": \"1.0\",\n  \"dom"
+    },
+    {
+      "candidate_id": "DSSC-RULEBOOK-POLICY-MAPPING-CAND-0059",
+      "surface_form": "GovernanceSu",
+      "label": "JURISDICTION",
+      "confidence": 0.5814,
+      "review_status": "candidate",
+      "span": {
+        "start": 5817,
+        "end": 5829
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 195,
+        "line_end": 195
+      },
+      "context": "version\": \"1.0\",\n  \"domain\": \"dssc-rulebook-policy-mapping\",\n  \"mappings\": [\n    {\n      \"concept_uri\": \"dssc:GovernanceSurface\",\n      \"intent_class\": \"dssc.policy.evaluate_access.v1\",\n      \"confidence_floor\": 0.76\n    },\n    {\n  "
+    },
+    {
+      "candidate_id": "DSSC-RULEBOOK-POLICY-MAPPING-CAND-0060",
+      "surface_form": "GovernanceSurface",
+      "label": "JURISDICTION",
+      "confidence": 0.3537,
+      "review_status": "candidate",
+      "span": {
+        "start": 5817,
+        "end": 5834
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 195,
+        "line_end": 195
+      },
+      "context": "version\": \"1.0\",\n  \"domain\": \"dssc-rulebook-policy-mapping\",\n  \"mappings\": [\n    {\n      \"concept_uri\": \"dssc:GovernanceSurface\",\n      \"intent_class\": \"dssc.policy.evaluate_access.v1\",\n      \"confidence_floor\": 0.76\n    },\n    {\n      \""
+    },
+    {
+      "candidate_id": "DSSC-RULEBOOK-POLICY-MAPPING-CAND-0061",
+      "surface_form": "intent_class",
+      "label": "INTENT_CLASS",
+      "confidence": 0.7392,
+      "review_status": "candidate",
+      "span": {
+        "start": 5844,
+        "end": 5856
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 196,
+        "line_end": 196
+      },
+      "context": ": \"dssc-rulebook-policy-mapping\",\n  \"mappings\": [\n    {\n      \"concept_uri\": \"dssc:GovernanceSurface\",\n      \"intent_class\": \"dssc.policy.evaluate_access.v1\",\n      \"confidence_floor\": 0.76\n    },\n    {\n      \"concept_uri\": \"dssc:Go"
+    },
+    {
+      "candidate_id": "DSSC-RULEBOOK-POLICY-MAPPING-CAND-0062",
+      "surface_form": "evaluate_access.v1",
+      "label": "POLICY_SNAPSHOT",
+      "confidence": 0.5994,
+      "review_status": "candidate",
+      "span": {
+        "start": 5872,
+        "end": 5890
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 196,
+        "line_end": 196
+      },
+      "context": "ing\",\n  \"mappings\": [\n    {\n      \"concept_uri\": \"dssc:GovernanceSurface\",\n      \"intent_class\": \"dssc.policy.evaluate_access.v1\",\n      \"confidence_floor\": 0.76\n    },\n    {\n      \"concept_uri\": \"dssc:GovernanceSurface\",\n      \"intent_cl"
+    },
+    {
+      "candidate_id": "DSSC-RULEBOOK-POLICY-MAPPING-CAND-0063",
+      "surface_form": "intent_class",
+      "label": "INTENT_CLASS",
+      "confidence": 0.7523,
+      "review_status": "candidate",
+      "span": {
+        "start": 5991,
+        "end": 6003
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 201,
+        "line_end": 201
+      },
+      "context": "access.v1\",\n      \"confidence_floor\": 0.76\n    },\n    {\n      \"concept_uri\": \"dssc:GovernanceSurface\",\n      \"intent_class\": \"dssc.policy.evaluate_usage.v1\",\n      \"confidence_floor\": 0.76\n    },\n    {\n      \"concept_uri\": \"dssc:Gov"
+    },
+    {
+      "candidate_id": "DSSC-RULEBOOK-POLICY-MAPPING-CAND-0064",
+      "surface_form": "evaluate_usage.v1",
+      "label": "POLICY_SNAPSHOT",
+      "confidence": 0.5795,
+      "review_status": "candidate",
+      "span": {
+        "start": 6019,
+        "end": 6036
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 201,
+        "line_end": 201
+      },
+      "context": "e_floor\": 0.76\n    },\n    {\n      \"concept_uri\": \"dssc:GovernanceSurface\",\n      \"intent_class\": \"dssc.policy.evaluate_usage.v1\",\n      \"confidence_floor\": 0.76\n    },\n    {\n      \"concept_uri\": \"dssc:GovernanceSurface\",\n      \"intent_cl"
+    },
+    {
+      "candidate_id": "DSSC-RULEBOOK-POLICY-MAPPING-CAND-0065",
+      "surface_form": "intent_class",
+      "label": "INTENT_CLASS",
+      "confidence": 0.7399,
+      "review_status": "candidate",
+      "span": {
+        "start": 6137,
+        "end": 6149
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 206,
+        "line_end": 206
+      },
+      "context": "_usage.v1\",\n      \"confidence_floor\": 0.76\n    },\n    {\n      \"concept_uri\": \"dssc:GovernanceSurface\",\n      \"intent_class\": \"dssc.policy.resolve_conflict.v1\",\n      \"confidence_floor\": 0.76\n    }\n  ]\n}\n\n\n### FILE: thesaurus-local.j"
+    },
+    {
+      "candidate_id": "DSSC-RULEBOOK-POLICY-MAPPING-CAND-0066",
+      "surface_form": "resolve_conflict.v1",
+      "label": "POLICY_SNAPSHOT",
+      "confidence": 0.641,
+      "review_status": "candidate",
+      "span": {
+        "start": 6165,
+        "end": 6184
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 206,
+        "line_end": 206
+      },
+      "context": "e_floor\": 0.76\n    },\n    {\n      \"concept_uri\": \"dssc:GovernanceSurface\",\n      \"intent_class\": \"dssc.policy.resolve_conflict.v1\",\n      \"confidence_floor\": 0.76\n    }\n  ]\n}\n\n\n### FILE: thesaurus-local.json\n{\n  \"schema_version\": \"1.0\",\n  "
+    },
+    {
+      "candidate_id": "DSSC-RULEBOOK-POLICY-MAPPING-CAND-0067",
+      "surface_form": "v1",
+      "label": "POLICY_SNAPSHOT",
+      "confidence": 0.3511,
+      "review_status": "candidate",
+      "span": {
+        "start": 6182,
+        "end": 6184
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 206,
+        "line_end": 206
+      },
+      "context": "  },\n    {\n      \"concept_uri\": \"dssc:GovernanceSurface\",\n      \"intent_class\": \"dssc.policy.resolve_conflict.v1\",\n      \"confidence_floor\": 0.76\n    }\n  ]\n}\n\n\n### FILE: thesaurus-local.json\n{\n  \"schema_version\": \"1.0\",\n  "
+    },
+    {
+      "candidate_id": "DSSC-RULEBOOK-POLICY-MAPPING-CAND-0068",
+      "surface_form": "v1",
+      "label": "POLICY_SNAPSHOT",
+      "confidence": 0.5111,
+      "review_status": "candidate",
+      "span": {
+        "start": 6460,
+        "end": 6462
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 220,
+        "line_end": 220
+      },
+      "context": "ed\": \"2026-04-14\",\n  \"concepts\": [\n    {\n      \"concept_id\": \"dssc-rulebook-policy-mapping.rulebook.clause.id.v1\",\n      \"preferred_term\": \"rulebook_clause_id\",\n      \"synonyms\": [],\n      \"register_variants\": {},\n      \"d"
+    },
+    {
+      "candidate_id": "DSSC-RULEBOOK-POLICY-MAPPING-CAND-0069",
+      "surface_form": "rulebook_clause_id",
+      "label": "RULEBOOK_CLAUSE",
+      "confidence": 0.6306,
+      "review_status": "candidate",
+      "span": {
+        "start": 6490,
+        "end": 6508
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 221,
+        "line_end": 221
+      },
+      "context": "\": [\n    {\n      \"concept_id\": \"dssc-rulebook-policy-mapping.rulebook.clause.id.v1\",\n      \"preferred_term\": \"rulebook_clause_id\",\n      \"synonyms\": [],\n      \"register_variants\": {},\n      \"domain_vocabulary\": {},\n      \"translations\": {"
+    },
+    {
+      "candidate_id": "DSSC-RULEBOOK-POLICY-MAPPING-CAND-0070",
+      "surface_form": "Governan",
+      "label": "JURISDICTION",
+      "confidence": 0.9115,
+      "review_status": "candidate",
+      "span": {
+        "start": 6639,
+        "end": 6647
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 226,
+        "line_end": 226
+      },
+      "context": "[],\n      \"register_variants\": {},\n      \"domain_vocabulary\": {},\n      \"translations\": {},\n      \"broader\": \"GovernanceSurface\",\n      \"narrower\": [],\n      \"source_refs\": [\n        \"dssc-canonical-source-catalog\"\n      ],\n    "
+    },
+    {
+      "candidate_id": "DSSC-RULEBOOK-POLICY-MAPPING-CAND-0071",
+      "surface_form": "odrl_permission",
+      "label": "ODRL_PERMISSION",
+      "confidence": 0.7187,
+      "review_status": "candidate",
+      "span": {
+        "start": 6891,
+        "end": 6906
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 235,
+        "line_end": 235
+      },
+      "context": "\n    },\n    {\n      \"concept_id\": \"dssc-rulebook-policy-mapping.odrl.permission.v1\",\n      \"preferred_term\": \"odrl_permission\",\n      \"synonyms\": [],\n      \"register_variants\": {},\n      \"domain_vocabulary\": {},\n      \"translations\": {"
+    },
+    {
+      "candidate_id": "DSSC-RULEBOOK-POLICY-MAPPING-CAND-0072",
+      "surface_form": "GovernanceSurface",
+      "label": "ODRL_PERMISSION",
+      "confidence": 0.5081,
+      "review_status": "candidate",
+      "span": {
+        "start": 7037,
+        "end": 7054
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 240,
+        "line_end": 240
+      },
+      "context": "[],\n      \"register_variants\": {},\n      \"domain_vocabulary\": {},\n      \"translations\": {},\n      \"broader\": \"GovernanceSurface\",\n      \"narrower\": [],\n      \"source_refs\": [\n        \"dssc-canonical-source-catalog\"\n      ],\n      \"ner_pr"
+    },
+    {
+      "candidate_id": "DSSC-RULEBOOK-POLICY-MAPPING-CAND-0073",
+      "surface_form": "prohibition",
+      "label": "ODRL_PROHIBITION",
+      "confidence": 0.4891,
+      "review_status": "candidate",
+      "span": {
+        "start": 7248,
+        "end": 7259
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 248,
+        "line_end": 248
+      },
+      "context": "og\"\n      ],\n      \"ner_provenance\": null\n    },\n    {\n      \"concept_id\": \"dssc-rulebook-policy-mapping.odrl.prohibition.v1\",\n      \"preferred_term\": \"odrl_prohibition\",\n      \"synonyms\": [],\n      \"register_variants\": {},\n      \""
+    },
+    {
+      "candidate_id": "DSSC-RULEBOOK-POLICY-MAPPING-CAND-0074",
+      "surface_form": "v1",
+      "label": "POLICY_SNAPSHOT",
+      "confidence": 0.3761,
+      "review_status": "candidate",
+      "span": {
+        "start": 7260,
+        "end": 7262
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 248,
+        "line_end": 248
+      },
+      "context": "\n      \"ner_provenance\": null\n    },\n    {\n      \"concept_id\": \"dssc-rulebook-policy-mapping.odrl.prohibition.v1\",\n      \"preferred_term\": \"odrl_prohibition\",\n      \"synonyms\": [],\n      \"register_variants\": {},\n      \"dom"
+    },
+    {
+      "candidate_id": "DSSC-RULEBOOK-POLICY-MAPPING-CAND-0075",
+      "surface_form": "odrl_prohibition",
+      "label": "ODRL_PROHIBITION",
+      "confidence": 0.647,
+      "review_status": "candidate",
+      "span": {
+        "start": 7290,
+        "end": 7306
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 249,
+        "line_end": 249
+      },
+      "context": "    },\n    {\n      \"concept_id\": \"dssc-rulebook-policy-mapping.odrl.prohibition.v1\",\n      \"preferred_term\": \"odrl_prohibition\",\n      \"synonyms\": [],\n      \"register_variants\": {},\n      \"domain_vocabulary\": {},\n      \"translations\": {"
+    },
+    {
+      "candidate_id": "DSSC-RULEBOOK-POLICY-MAPPING-CAND-0076",
+      "surface_form": "narrower",
+      "label": "IDENTIFIER",
+      "confidence": 0.4028,
+      "review_status": "candidate",
+      "span": {
+        "start": 7464,
+        "end": 7472
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 255,
+        "line_end": 255
+      },
+      "context": "s\": {},\n      \"domain_vocabulary\": {},\n      \"translations\": {},\n      \"broader\": \"GovernanceSurface\",\n      \"narrower\": [],\n      \"source_refs\": [\n        \"dssc-canonical-source-catalog\"\n      ],\n      \"ner_provenance\": null\n  "
+    },
+    {
+      "candidate_id": "DSSC-RULEBOOK-POLICY-MAPPING-CAND-0077",
+      "surface_form": "obligation",
+      "label": "ODRL_PROHIBITION",
+      "confidence": 0.3901,
+      "review_status": "candidate",
+      "span": {
+        "start": 7648,
+        "end": 7658
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 262,
+        "line_end": 262
+      },
+      "context": "og\"\n      ],\n      \"ner_provenance\": null\n    },\n    {\n      \"concept_id\": \"dssc-rulebook-policy-mapping.odrl.obligation.v1\",\n      \"preferred_term\": \"odrl_obligation\",\n      \"synonyms\": [],\n      \"register_variants\": {},\n      \"d"
+    },
+    {
+      "candidate_id": "DSSC-RULEBOOK-POLICY-MAPPING-CAND-0078",
+      "surface_form": "odrl_obligation",
+      "label": "ODRL_OBLIGATION",
+      "confidence": 0.7969,
+      "review_status": "candidate",
+      "span": {
+        "start": 7689,
+        "end": 7704
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 263,
+        "line_end": 263
+      },
+      "context": "\n    },\n    {\n      \"concept_id\": \"dssc-rulebook-policy-mapping.odrl.obligation.v1\",\n      \"preferred_term\": \"odrl_obligation\",\n      \"synonyms\": [],\n      \"register_variants\": {},\n      \"domain_vocabulary\": {},\n      \"translations\": {"
+    },
+    {
+      "candidate_id": "DSSC-RULEBOOK-POLICY-MAPPING-CAND-0079",
+      "surface_form": "narrower",
+      "label": "IDENTIFIER",
+      "confidence": 0.4044,
+      "review_status": "candidate",
+      "span": {
+        "start": 7862,
+        "end": 7870
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 269,
+        "line_end": 269
+      },
+      "context": "s\": {},\n      \"domain_vocabulary\": {},\n      \"translations\": {},\n      \"broader\": \"GovernanceSurface\",\n      \"narrower\": [],\n      \"source_refs\": [\n        \"dssc-canonical-source-catalog\"\n      ],\n      \"ner_provenance\": null\n  "
+    },
+    {
+      "candidate_id": "DSSC-RULEBOOK-POLICY-MAPPING-CAND-0080",
+      "surface_form": "constraint_expression",
+      "label": "CONSTRAINT_EXPRESSION",
+      "confidence": 0.5924,
+      "review_status": "candidate",
+      "span": {
+        "start": 8093,
+        "end": 8114
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 277,
+        "line_end": 277
+      },
+      "context": ",\n    {\n      \"concept_id\": \"dssc-rulebook-policy-mapping.constraint.expression.v1\",\n      \"preferred_term\": \"constraint_expression\",\n      \"synonyms\": [],\n      \"register_variants\": {},\n      \"domain_vocabulary\": {},\n      \"translations\": {"
+    },
+    {
+      "candidate_id": "DSSC-RULEBOOK-POLICY-MAPPING-CAND-0081",
+      "surface_form": "intent_class",
+      "label": "INTENT_CLASS",
+      "confidence": 0.7909,
+      "review_status": "candidate",
+      "span": {
+        "start": 8494,
+        "end": 8506
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 291,
+        "line_end": 291
+      },
+      "context": "ull\n    },\n    {\n      \"concept_id\": \"dssc-rulebook-policy-mapping.intent.class.v1\",\n      \"preferred_term\": \"intent_class\",\n      \"synonyms\": [],\n      \"register_variants\": {},\n      \"domain_vocabulary\": {},\n      \"translations\": {"
+    },
+    {
+      "candidate_id": "DSSC-RULEBOOK-POLICY-MAPPING-CAND-0082",
+      "surface_form": "narrower",
+      "label": "IDENTIFIER",
+      "confidence": 0.3503,
+      "review_status": "candidate",
+      "span": {
+        "start": 8664,
+        "end": 8672
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 297,
+        "line_end": 297
+      },
+      "context": "s\": {},\n      \"domain_vocabulary\": {},\n      \"translations\": {},\n      \"broader\": \"GovernanceSurface\",\n      \"narrower\": [],\n      \"source_refs\": [\n        \"dssc-canonical-source-catalog\"\n      ],\n      \"ner_provenance\": null\n  "
+    },
+    {
+      "candidate_id": "DSSC-RULEBOOK-POLICY-MAPPING-CAND-0083",
+      "surface_form": "v1",
+      "label": "POLICY_SNAPSHOT",
+      "confidence": 0.3926,
+      "review_status": "candidate",
+      "span": {
+        "start": 8860,
+        "end": 8862
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 304,
+        "line_end": 304
+      },
+      "context": "\n      \"ner_provenance\": null\n    },\n    {\n      \"concept_id\": \"dssc-rulebook-policy-mapping.deny.reason.code.v1\",\n      \"preferred_term\": \"deny_reason_code\",\n      \"synonyms\": [],\n      \"register_variants\": {},\n      \"dom"
+    },
+    {
+      "candidate_id": "DSSC-RULEBOOK-POLICY-MAPPING-CAND-0084",
+      "surface_form": "deny_reason_code",
+      "label": "DENY_REASON_CODE",
+      "confidence": 0.9136,
+      "review_status": "candidate",
+      "span": {
+        "start": 8890,
+        "end": 8906
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 305,
+        "line_end": 305
+      },
+      "context": "    },\n    {\n      \"concept_id\": \"dssc-rulebook-policy-mapping.deny.reason.code.v1\",\n      \"preferred_term\": \"deny_reason_code\",\n      \"synonyms\": [],\n      \"register_variants\": {},\n      \"domain_vocabulary\": {},\n      \"translations\": {"
+    },
+    {
+      "candidate_id": "DSSC-RULEBOOK-POLICY-MAPPING-CAND-0085",
+      "surface_form": "v1",
+      "label": "POLICY_SNAPSHOT",
+      "confidence": 0.3616,
+      "review_status": "candidate",
+      "span": {
+        "start": 9260,
+        "end": 9262
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 318,
+        "line_end": 318
+      },
+      "context": "\n      \"ner_provenance\": null\n    },\n    {\n      \"concept_id\": \"dssc-rulebook-policy-mapping.obligation.state.v1\",\n      \"preferred_term\": \"obligation_state\",\n      \"synonyms\": [],\n      \"register_variants\": {},\n      \"dom"
+    },
+    {
+      "candidate_id": "DSSC-RULEBOOK-POLICY-MAPPING-CAND-0086",
+      "surface_form": "narrower",
+      "label": "IDENTIFIER",
+      "confidence": 0.3583,
+      "review_status": "candidate",
+      "span": {
+        "start": 9464,
+        "end": 9472
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 325,
+        "line_end": 325
+      },
+      "context": "s\": {},\n      \"domain_vocabulary\": {},\n      \"translations\": {},\n      \"broader\": \"GovernanceSurface\",\n      \"narrower\": [],\n      \"source_refs\": [\n        \"dssc-canonical-source-catalog\"\n      ],\n      \"ner_provenance\": null\n  "
+    },
+    {
+      "candidate_id": "DSSC-RULEBOOK-POLICY-MAPPING-CAND-0087",
+      "surface_form": "policy_snapshot_id",
+      "label": "POLICY_SNAPSHOT",
+      "confidence": 0.8523,
+      "review_status": "candidate",
+      "span": {
+        "start": 9692,
+        "end": 9710
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 333,
+        "line_end": 333
+      },
+      "context": "  },\n    {\n      \"concept_id\": \"dssc-rulebook-policy-mapping.policy.snapshot.id.v1\",\n      \"preferred_term\": \"policy_snapshot_id\",\n      \"synonyms\": [],\n      \"register_variants\": {},\n      \"domain_vocabulary\": {},\n      \"translations\": {"
+    },
+    {
+      "candidate_id": "DSSC-RULEBOOK-POLICY-MAPPING-CAND-0088",
+      "surface_form": "intent_hint",
+      "label": "INTENT_CLASS",
+      "confidence": 0.4827,
+      "review_status": "candidate",
+      "span": {
+        "start": 10232,
+        "end": 10243
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 357,
+        "line_end": 357
+      },
+      "context": " \"id\": \"dssc_policy_evaluate_access_v1\",\n      \"concept_uri\": \"dssc:GovernanceSurface\",\n      \"entity_type\": \"intent_hint\",\n      \"regex\": \"(?i)\\\\bdssc\\\\.policy\\\\.evaluate_access\\\\.v1\\\\b\",\n      \"examples\": [\n        \"dssc.policy.e"
+    },
+    {
+      "candidate_id": "DSSC-RULEBOOK-POLICY-MAPPING-CAND-0089",
+      "surface_form": "evaluate_access",
+      "label": "POLICY_SNAPSHOT",
+      "confidence": 0.3748,
+      "review_status": "candidate",
+      "span": {
+        "start": 10285,
+        "end": 10300
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 358,
+        "line_end": 358
+      },
+      "context": "pt_uri\": \"dssc:GovernanceSurface\",\n      \"entity_type\": \"intent_hint\",\n      \"regex\": \"(?i)\\\\bdssc\\\\.policy\\\\.evaluate_access\\\\.v1\\\\b\",\n      \"examples\": [\n        \"dssc.policy.evaluate_access.v1\"\n      ]\n    },\n    {\n      \"id\": \"dssc"
+    },
+    {
+      "candidate_id": "DSSC-RULEBOOK-POLICY-MAPPING-CAND-0090",
+      "surface_form": "v1",
+      "label": "POLICY_SNAPSHOT",
+      "confidence": 0.4486,
+      "review_status": "candidate",
+      "span": {
+        "start": 10303,
+        "end": 10305
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 358,
+        "line_end": 358
+      },
+      "context": "ernanceSurface\",\n      \"entity_type\": \"intent_hint\",\n      \"regex\": \"(?i)\\\\bdssc\\\\.policy\\\\.evaluate_access\\\\.v1\\\\b\",\n      \"examples\": [\n        \"dssc.policy.evaluate_access.v1\"\n      ]\n    },\n    {\n      \"id\": \"dssc_poli"
+    },
+    {
+      "candidate_id": "DSSC-RULEBOOK-POLICY-MAPPING-CAND-0091",
+      "surface_form": "evaluate_access",
+      "label": "POLICY_SNAPSHOT",
+      "confidence": 0.5573,
+      "review_status": "candidate",
+      "span": {
+        "start": 10352,
+        "end": 10367
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 360,
+        "line_end": 360
+      },
+      "context": "t\",\n      \"regex\": \"(?i)\\\\bdssc\\\\.policy\\\\.evaluate_access\\\\.v1\\\\b\",\n      \"examples\": [\n        \"dssc.policy.evaluate_access.v1\"\n      ]\n    },\n    {\n      \"id\": \"dssc_policy_evaluate_usage_v1\",\n      \"concept_uri\": \"dssc:GovernanceSu"
+    },
+    {
+      "candidate_id": "DSSC-RULEBOOK-POLICY-MAPPING-CAND-0092",
+      "surface_form": "id",
+      "label": "IDENTIFIER",
+      "confidence": 0.5882,
+      "review_status": "candidate",
+      "span": {
+        "start": 10400,
+        "end": 10402
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 364,
+        "line_end": 364
+      },
+      "context": "ate_access\\\\.v1\\\\b\",\n      \"examples\": [\n        \"dssc.policy.evaluate_access.v1\"\n      ]\n    },\n    {\n      \"id\": \"dssc_policy_evaluate_usage_v1\",\n      \"concept_uri\": \"dssc:GovernanceSurface\",\n      \"entity_type\": \"inten"
+    },
+    {
+      "candidate_id": "DSSC-RULEBOOK-POLICY-MAPPING-CAND-0093",
+      "surface_form": "GovernanceSurface",
+      "label": "JURISDICTION",
+      "confidence": 0.7389,
+      "review_status": "candidate",
+      "span": {
+        "start": 10465,
+        "end": 10482
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 365,
+        "line_end": 365
+      },
+      "context": "luate_access.v1\"\n      ]\n    },\n    {\n      \"id\": \"dssc_policy_evaluate_usage_v1\",\n      \"concept_uri\": \"dssc:GovernanceSurface\",\n      \"entity_type\": \"intent_hint\",\n      \"regex\": \"(?i)\\\\bdssc\\\\.policy\\\\.evaluate_usage\\\\.v1\\\\b\",\n      \""
+    },
+    {
+      "candidate_id": "DSSC-RULEBOOK-POLICY-MAPPING-CAND-0094",
+      "surface_form": "intent_hint",
+      "label": "INTENT_CLASS",
+      "confidence": 0.5967,
+      "review_status": "candidate",
+      "span": {
+        "start": 10507,
+        "end": 10518
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 366,
+        "line_end": 366
+      },
+      "context": "  \"id\": \"dssc_policy_evaluate_usage_v1\",\n      \"concept_uri\": \"dssc:GovernanceSurface\",\n      \"entity_type\": \"intent_hint\",\n      \"regex\": \"(?i)\\\\bdssc\\\\.policy\\\\.evaluate_usage\\\\.v1\\\\b\",\n      \"examples\": [\n        \"dssc.policy.ev"
+    },
+    {
+      "candidate_id": "DSSC-RULEBOOK-POLICY-MAPPING-CAND-0095",
+      "surface_form": "evaluate_usage",
+      "label": "POLICY_SNAPSHOT",
+      "confidence": 0.4605,
+      "review_status": "candidate",
+      "span": {
+        "start": 10560,
+        "end": 10574
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 367,
+        "line_end": 367
+      },
+      "context": "pt_uri\": \"dssc:GovernanceSurface\",\n      \"entity_type\": \"intent_hint\",\n      \"regex\": \"(?i)\\\\bdssc\\\\.policy\\\\.evaluate_usage\\\\.v1\\\\b\",\n      \"examples\": [\n        \"dssc.policy.evaluate_usage.v1\"\n      ]\n    },\n    {\n      \"id\": \"dssc_"
+    },
+    {
+      "candidate_id": "DSSC-RULEBOOK-POLICY-MAPPING-CAND-0096",
+      "surface_form": "evaluate_usage",
+      "label": "POLICY_SNAPSHOT",
+      "confidence": 0.5434,
+      "review_status": "candidate",
+      "span": {
+        "start": 10626,
+        "end": 10640
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 369,
+        "line_end": 369
+      },
+      "context": "nt\",\n      \"regex\": \"(?i)\\\\bdssc\\\\.policy\\\\.evaluate_usage\\\\.v1\\\\b\",\n      \"examples\": [\n        \"dssc.policy.evaluate_usage.v1\"\n      ]\n    },\n    {\n      \"id\": \"dssc_policy_resolve_conflict_v1\",\n      \"concept_uri\": \"dssc:Governance"
+    },
+    {
+      "candidate_id": "DSSC-RULEBOOK-POLICY-MAPPING-CAND-0097",
+      "surface_form": "id",
+      "label": "IDENTIFIER",
+      "confidence": 0.6852,
+      "review_status": "candidate",
+      "span": {
+        "start": 10673,
+        "end": 10675
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 373,
+        "line_end": 373
+      },
+      "context": "luate_usage\\\\.v1\\\\b\",\n      \"examples\": [\n        \"dssc.policy.evaluate_usage.v1\"\n      ]\n    },\n    {\n      \"id\": \"dssc_policy_resolve_conflict_v1\",\n      \"concept_uri\": \"dssc:GovernanceSurface\",\n      \"entity_type\": \"int"
+    },
+    {
+      "candidate_id": "DSSC-RULEBOOK-POLICY-MAPPING-CAND-0098",
+      "surface_form": "GovernanceSurface",
+      "label": "JURISDICTION",
+      "confidence": 0.7414,
+      "review_status": "candidate",
+      "span": {
+        "start": 10740,
+        "end": 10757
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 374,
+        "line_end": 374
+      },
+      "context": "uate_usage.v1\"\n      ]\n    },\n    {\n      \"id\": \"dssc_policy_resolve_conflict_v1\",\n      \"concept_uri\": \"dssc:GovernanceSurface\",\n      \"entity_type\": \"intent_hint\",\n      \"regex\": \"(?i)\\\\bdssc\\\\.policy\\\\.resolve_conflict\\\\.v1\\\\b\",\n     "
+    },
+    {
+      "candidate_id": "DSSC-RULEBOOK-POLICY-MAPPING-CAND-0099",
+      "surface_form": "intent_hint",
+      "label": "INTENT_CLASS",
+      "confidence": 0.3576,
+      "review_status": "candidate",
+      "span": {
+        "start": 10782,
+        "end": 10793
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 375,
+        "line_end": 375
+      },
+      "context": "\"id\": \"dssc_policy_resolve_conflict_v1\",\n      \"concept_uri\": \"dssc:GovernanceSurface\",\n      \"entity_type\": \"intent_hint\",\n      \"regex\": \"(?i)\\\\bdssc\\\\.policy\\\\.resolve_conflict\\\\.v1\\\\b\",\n      \"examples\": [\n        \"dssc.policy."
+    },
+    {
+      "candidate_id": "DSSC-RULEBOOK-POLICY-MAPPING-CAND-0100",
+      "surface_form": "resolve_conflict",
+      "label": "POLICY_SNAPSHOT",
+      "confidence": 0.3596,
+      "review_status": "candidate",
+      "span": {
+        "start": 10903,
+        "end": 10919
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 378,
+        "line_end": 378
+      },
+      "context": "\",\n      \"regex\": \"(?i)\\\\bdssc\\\\.policy\\\\.resolve_conflict\\\\.v1\\\\b\",\n      \"examples\": [\n        \"dssc.policy.resolve_conflict.v1\"\n      ]\n    }\n  ]\n}\n\n\n### FILE: source-extract/sources.json\n{\n  \"schema_version\": \"1.0\",\n  \"generated_at_"
+    },
+    {
+      "candidate_id": "DSSC-RULEBOOK-POLICY-MAPPING-CAND-0101",
+      "surface_form": "canonical-source-1",
+      "label": "IDENTIFIER",
+      "confidence": 0.9184,
+      "review_status": "candidate",
+      "span": {
+        "start": 11214,
+        "end": 11232
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 393,
+        "line_end": 393
+      },
+      "context": "emo-pack\",\n  \"bundle_id\": \"dssc-rulebook-policy-mapping-source-2026-04-14\",\n  \"sources\": [\n    {\n      \"id\": \"canonical-source-1\",\n      \"title\": \"Canonical source 1\",\n      \"url\": \"https://blueprint.dssc.eu/\",\n      \"type\": \"canonical_re"
+    },
+    {
+      "candidate_id": "DSSC-RULEBOOK-POLICY-MAPPING-CAND-0102",
+      "surface_form": "Canonical source 1",
+      "label": "IDENTIFIER",
+      "confidence": 0.6997,
+      "review_status": "candidate",
+      "span": {
+        "start": 11251,
+        "end": 11269
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 394,
+        "line_end": 394
+      },
+      "context": "ook-policy-mapping-source-2026-04-14\",\n  \"sources\": [\n    {\n      \"id\": \"canonical-source-1\",\n      \"title\": \"Canonical source 1\",\n      \"url\": \"https://blueprint.dssc.eu/\",\n      \"type\": \"canonical_reference\",\n      \"status\": \"referenced"
+    },
+    {
+      "candidate_id": "DSSC-RULEBOOK-POLICY-MAPPING-CAND-0103",
+      "surface_form": "canonical-source-2",
+      "label": "IDENTIFIER",
+      "confidence": 0.9126,
+      "review_status": "candidate",
+      "span": {
+        "start": 11407,
+        "end": 11425
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 400,
+        "line_end": 400
+      },
+      "context": "eprint.dssc.eu/\",\n      \"type\": \"canonical_reference\",\n      \"status\": \"referenced\"\n    },\n    {\n      \"id\": \"canonical-source-2\",\n      \"title\": \"Canonical source 2\",\n      \"url\": \"https://www.w3.org/TR/odrl-model/\",\n      \"type\": \"canon"
+    },
+    {
+      "candidate_id": "DSSC-RULEBOOK-POLICY-MAPPING-CAND-0104",
+      "surface_form": "Canonical source 2",
+      "label": "IDENTIFIER",
+      "confidence": 0.6434,
+      "review_status": "candidate",
+      "span": {
+        "start": 11444,
+        "end": 11462
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 401,
+        "line_end": 401
+      },
+      "context": "nical_reference\",\n      \"status\": \"referenced\"\n    },\n    {\n      \"id\": \"canonical-source-2\",\n      \"title\": \"Canonical source 2\",\n      \"url\": \"https://www.w3.org/TR/odrl-model/\",\n      \"type\": \"canonical_reference\",\n      \"status\": \"ref"
+    },
+    {
+      "candidate_id": "DSSC-RULEBOOK-POLICY-MAPPING-CAND-0105",
+      "surface_form": "canonical_reference",
+      "label": "ODRL_PROHIBITION",
+      "confidence": 0.5038,
+      "review_status": "candidate",
+      "span": {
+        "start": 11530,
+        "end": 11549
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 403,
+        "line_end": 403
+      },
+      "context": "rce-2\",\n      \"title\": \"Canonical source 2\",\n      \"url\": \"https://www.w3.org/TR/odrl-model/\",\n      \"type\": \"canonical_reference\",\n      \"status\": \"referenced\"\n    },\n    {\n      \"id\": \"canonical-source-3\",\n      \"title\": \"Canonical sourc"
+    },
+    {
+      "candidate_id": "DSSC-RULEBOOK-POLICY-MAPPING-CAND-0106",
+      "surface_form": "canonical-source-3",
+      "label": "IDENTIFIER",
+      "confidence": 0.9303,
+      "review_status": "candidate",
+      "span": {
+        "start": 11607,
+        "end": 11625
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 407,
+        "line_end": 407
+      },
+      "context": "/TR/odrl-model/\",\n      \"type\": \"canonical_reference\",\n      \"status\": \"referenced\"\n    },\n    {\n      \"id\": \"canonical-source-3\",\n      \"title\": \"Canonical source 3\",\n      \"url\": \"https://www.w3.org/TR/odrl-vocab/\",\n      \"type\": \"canon"
+    },
+    {
+      "candidate_id": "DSSC-RULEBOOK-POLICY-MAPPING-CAND-0107",
+      "surface_form": "Canonical source 3",
+      "label": "IDENTIFIER",
+      "confidence": 0.5462,
+      "review_status": "candidate",
+      "span": {
+        "start": 11644,
+        "end": 11662
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 408,
+        "line_end": 408
+      },
+      "context": "nical_reference\",\n      \"status\": \"referenced\"\n    },\n    {\n      \"id\": \"canonical-source-3\",\n      \"title\": \"Canonical source 3\",\n      \"url\": \"https://www.w3.org/TR/odrl-vocab/\",\n      \"type\": \"canonical_reference\",\n      \"status\": \"ref"
+    },
+    {
+      "candidate_id": "DSSC-RULEBOOK-POLICY-MAPPING-CAND-0108",
+      "surface_form": "canonical_reference",
+      "label": "ODRL_PROHIBITION",
+      "confidence": 0.5146,
+      "review_status": "candidate",
+      "span": {
+        "start": 11730,
+        "end": 11749
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 410,
+        "line_end": 410
+      },
+      "context": "rce-3\",\n      \"title\": \"Canonical source 3\",\n      \"url\": \"https://www.w3.org/TR/odrl-vocab/\",\n      \"type\": \"canonical_reference\",\n      \"status\": \"referenced\"\n    },\n    {\n      \"id\": \"canonical-source-4\",\n      \"title\": \"Canonical sourc"
+    },
+    {
+      "candidate_id": "DSSC-RULEBOOK-POLICY-MAPPING-CAND-0109",
+      "surface_form": "canonical-source-4",
+      "label": "IDENTIFIER",
+      "confidence": 0.9131,
+      "review_status": "candidate",
+      "span": {
+        "start": 11807,
+        "end": 11825
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 414,
+        "line_end": 414
+      },
+      "context": "/TR/odrl-vocab/\",\n      \"type\": \"canonical_reference\",\n      \"status\": \"referenced\"\n    },\n    {\n      \"id\": \"canonical-source-4\",\n      \"title\": \"Canonical source 4\",\n      \"url\": \"https://eclipse-dataspace-protocol-base.github.io/Datasp"
+    },
+    {
+      "candidate_id": "DSSC-RULEBOOK-POLICY-MAPPING-CAND-0110",
+      "surface_form": "Canonical source 4",
+      "label": "IDENTIFIER",
+      "confidence": 0.4888,
+      "review_status": "candidate",
+      "span": {
+        "start": 11844,
+        "end": 11862
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 415,
+        "line_end": 415
+      },
+      "context": "nical_reference\",\n      \"status\": \"referenced\"\n    },\n    {\n      \"id\": \"canonical-source-4\",\n      \"title\": \"Canonical source 4\",\n      \"url\": \"https://eclipse-dataspace-protocol-base.github.io/DataspaceProtocol/HEAD/\",\n      \"type\": \"ca"
+    },
+    {
+      "candidate_id": "DSSC-RULEBOOK-POLICY-MAPPING-CAND-0111",
+      "surface_form": "canonical_reference",
+      "label": "IDENTIFIER",
+      "confidence": 0.5962,
+      "review_status": "candidate",
+      "span": {
+        "start": 11970,
+        "end": 11989
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 417,
+        "line_end": 417
+      },
+      "context": " 4\",\n      \"url\": \"https://eclipse-dataspace-protocol-base.github.io/DataspaceProtocol/HEAD/\",\n      \"type\": \"canonical_reference\",\n      \"status\": \"referenced\"\n    }\n  ]\n}\n\n\n### FILE: message-identifiers.json\n{\n  \"schema_version\": \"0.1\",\n"
+    },
+    {
+      "candidate_id": "DSSC-RULEBOOK-POLICY-MAPPING-CAND-0112",
+      "surface_form": "message_identifiers",
+      "label": "IDENTIFIER",
+      "confidence": 0.5724,
+      "review_status": "candidate",
+      "span": {
+        "start": 12247,
+        "end": 12266
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 430,
+        "line_end": 430
+      },
+      "context": "0:00Z\",\n  \"profile\": \"dssc-rulebook-policy-mapping-demo-pack\",\n  \"domain\": \"dssc-rulebook-policy-mapping\",\n  \"message_identifiers\": [],\n  \"message_types\": [],\n  \"note\": \"No ISO-style message identifiers for this DSSC governance demo pack.\""
+    },
+    {
+      "candidate_id": "DSSC-RULEBOOK-POLICY-MAPPING-CAND-0113",
+      "surface_form": "ISO-style message identifiers",
+      "label": "IDENTIFIER",
+      "confidence": 0.4473,
+      "review_status": "candidate",
+      "span": {
+        "start": 12310,
+        "end": 12339
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 432,
+        "line_end": 432
+      },
+      "context": "  \"domain\": \"dssc-rulebook-policy-mapping\",\n  \"message_identifiers\": [],\n  \"message_types\": [],\n  \"note\": \"No ISO-style message identifiers for this DSSC governance demo pack.\"\n}\n\n\n### FILE: extraction-summary.json\n{\n  \"schema_version\": \"0.1\",\n  \"ge"
+    },
+    {
+      "candidate_id": "DSSC-RULEBOOK-POLICY-MAPPING-CAND-0114",
+      "surface_form": "odrl-to-pact-policy-crosswalk",
+      "label": "ODRL_PROHIBITION",
+      "confidence": 0.4998,
+      "review_status": "candidate",
+      "span": {
+        "start": 12856,
+        "end": 12885
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 450,
+        "line_end": 450
+      },
+      "context": " \"note\": \"Stage-4 skeleton pack authored from stage-3 spec artifacts.\"\n}\n\n\n### FILE: source-extract/crosswalk/odrl-to-pact-policy-crosswalk.v1.json\n{\n  \"schema_version\": \"0.1\",\n  \"generated_at_utc\": \"2026-04-14T12:00:00Z\",\n  \"domain\": \"dssc-rulebook"
+    },
+    {
+      "candidate_id": "DSSC-RULEBOOK-POLICY-MAPPING-CAND-0115",
+      "surface_form": "odrl-to-pact-policy-crosswalk",
+      "label": "ODRL_PROHIBITION",
+      "confidence": 0.5421,
+      "review_status": "candidate",
+      "span": {
+        "start": 13029,
+        "end": 13058
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 455,
+        "line_end": 455
+      },
+      "context": "1\",\n  \"generated_at_utc\": \"2026-04-14T12:00:00Z\",\n  \"domain\": \"dssc-rulebook-policy-mapping\",\n  \"crosswalk\": \"odrl-to-pact-policy-crosswalk.v1.json\",\n  \"mappings\": [\n    {\n      \"source_term\": \"rulebook_clause_id\",\n      \"pact_concept\": \"dssc:rulebo"
+    },
+    {
+      "candidate_id": "DSSC-RULEBOOK-POLICY-MAPPING-CAND-0116",
+      "surface_form": "rulebook_clause_id",
+      "label": "RULEBOOK_CLAUSE",
+      "confidence": 0.9248,
+      "review_status": "candidate",
+      "span": {
+        "start": 13113,
+        "end": 13131
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 458,
+        "line_end": 458
+      },
+      "context": "mapping\",\n  \"crosswalk\": \"odrl-to-pact-policy-crosswalk.v1.json\",\n  \"mappings\": [\n    {\n      \"source_term\": \"rulebook_clause_id\",\n      \"pact_concept\": \"dssc:rulebook_clause_id\",\n      \"relation\": \"closeMatch\"\n    },\n    {\n      \"source_"
+    },
+    {
+      "candidate_id": "DSSC-RULEBOOK-POLICY-MAPPING-CAND-0117",
+      "surface_form": "rulebook_clause_id",
+      "label": "RULEBOOK_CLAUSE",
+      "confidence": 0.9031,
+      "review_status": "candidate",
+      "span": {
+        "start": 13162,
+        "end": 13180
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 459,
+        "line_end": 459
+      },
+      "context": "sswalk.v1.json\",\n  \"mappings\": [\n    {\n      \"source_term\": \"rulebook_clause_id\",\n      \"pact_concept\": \"dssc:rulebook_clause_id\",\n      \"relation\": \"closeMatch\"\n    },\n    {\n      \"source_term\": \"odrl_permission\",\n      \"pact_concept\": \""
+    },
+    {
+      "candidate_id": "DSSC-RULEBOOK-POLICY-MAPPING-CAND-0118",
+      "surface_form": "odrl_permission",
+      "label": "ODRL_PERMISSION",
+      "confidence": 0.7997,
+      "review_status": "candidate",
+      "span": {
+        "start": 13249,
+        "end": 13264
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 463,
+        "line_end": 463
+      },
+      "context": " \"pact_concept\": \"dssc:rulebook_clause_id\",\n      \"relation\": \"closeMatch\"\n    },\n    {\n      \"source_term\": \"odrl_permission\",\n      \"pact_concept\": \"dssc:odrl_permission\",\n      \"relation\": \"closeMatch\"\n    },\n    {\n      \"source_ter"
+    },
+    {
+      "candidate_id": "DSSC-RULEBOOK-POLICY-MAPPING-CAND-0119",
+      "surface_form": "odrl_permission",
+      "label": "ODRL_PERMISSION",
+      "confidence": 0.7464,
+      "review_status": "candidate",
+      "span": {
+        "start": 13295,
+        "end": 13310
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 464,
+        "line_end": 464
+      },
+      "context": "    \"relation\": \"closeMatch\"\n    },\n    {\n      \"source_term\": \"odrl_permission\",\n      \"pact_concept\": \"dssc:odrl_permission\",\n      \"relation\": \"closeMatch\"\n    },\n    {\n      \"source_term\": \"odrl_prohibition\",\n      \"pact_concept\": "
+    },
+    {
+      "candidate_id": "DSSC-RULEBOOK-POLICY-MAPPING-CAND-0120",
+      "surface_form": "odrl_prohibition",
+      "label": "ODRL_OBLIGATION",
+      "confidence": 0.7631,
+      "review_status": "candidate",
+      "span": {
+        "start": 13379,
+        "end": 13395
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 468,
+        "line_end": 468
+      },
+      "context": "    \"pact_concept\": \"dssc:odrl_permission\",\n      \"relation\": \"closeMatch\"\n    },\n    {\n      \"source_term\": \"odrl_prohibition\",\n      \"pact_concept\": \"dssc:odrl_prohibition\",\n      \"relation\": \"closeMatch\"\n    },\n    {\n      \"source_te"
+    },
+    {
+      "candidate_id": "DSSC-RULEBOOK-POLICY-MAPPING-CAND-0121",
+      "surface_form": "odrl_prohibition",
+      "label": "ODRL_OBLIGATION",
+      "confidence": 0.7573,
+      "review_status": "candidate",
+      "span": {
+        "start": 13426,
+        "end": 13442
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 469,
+        "line_end": 469
+      },
+      "context": "   \"relation\": \"closeMatch\"\n    },\n    {\n      \"source_term\": \"odrl_prohibition\",\n      \"pact_concept\": \"dssc:odrl_prohibition\",\n      \"relation\": \"closeMatch\"\n    },\n    {\n      \"source_term\": \"odrl_obligation\",\n      \"pact_concept\": \""
+    },
+    {
+      "candidate_id": "DSSC-RULEBOOK-POLICY-MAPPING-CAND-0122",
+      "surface_form": "odrl_obligation",
+      "label": "ODRL_OBLIGATION",
+      "confidence": 0.7839,
+      "review_status": "candidate",
+      "span": {
+        "start": 13511,
+        "end": 13526
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 473,
+        "line_end": 473
+      },
+      "context": "   \"pact_concept\": \"dssc:odrl_prohibition\",\n      \"relation\": \"closeMatch\"\n    },\n    {\n      \"source_term\": \"odrl_obligation\",\n      \"pact_concept\": \"dssc:odrl_obligation\",\n      \"relation\": \"closeMatch\"\n    },\n    {\n      \"source_ter"
+    },
+    {
+      "candidate_id": "DSSC-RULEBOOK-POLICY-MAPPING-CAND-0123",
+      "surface_form": "pact_concept",
+      "label": "INTENT_CLASS",
+      "confidence": 0.4523,
+      "review_status": "candidate",
+      "span": {
+        "start": 13536,
+        "end": 13548
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 474,
+        "line_end": 474
+      },
+      "context": "odrl_prohibition\",\n      \"relation\": \"closeMatch\"\n    },\n    {\n      \"source_term\": \"odrl_obligation\",\n      \"pact_concept\": \"dssc:odrl_obligation\",\n      \"relation\": \"closeMatch\"\n    },\n    {\n      \"source_term\": \"constraint_expres"
+    },
+    {
+      "candidate_id": "DSSC-RULEBOOK-POLICY-MAPPING-CAND-0124",
+      "surface_form": "dssc",
+      "label": "INTENT_CLASS",
+      "confidence": 0.4506,
+      "review_status": "candidate",
+      "span": {
+        "start": 13552,
+        "end": 13556
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 474,
+        "line_end": 474
+      },
+      "context": "\",\n      \"relation\": \"closeMatch\"\n    },\n    {\n      \"source_term\": \"odrl_obligation\",\n      \"pact_concept\": \"dssc:odrl_obligation\",\n      \"relation\": \"closeMatch\"\n    },\n    {\n      \"source_term\": \"constraint_expression\",\n "
+    },
+    {
+      "candidate_id": "DSSC-RULEBOOK-POLICY-MAPPING-CAND-0125",
+      "surface_form": "odrl_obligation",
+      "label": "ODRL_OBLIGATION",
+      "confidence": 0.7803,
+      "review_status": "candidate",
+      "span": {
+        "start": 13557,
+        "end": 13572
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 474,
+        "line_end": 474
+      },
+      "context": "    \"relation\": \"closeMatch\"\n    },\n    {\n      \"source_term\": \"odrl_obligation\",\n      \"pact_concept\": \"dssc:odrl_obligation\",\n      \"relation\": \"closeMatch\"\n    },\n    {\n      \"source_term\": \"constraint_expression\",\n      \"pact_conce"
+    },
+    {
+      "candidate_id": "DSSC-RULEBOOK-POLICY-MAPPING-CAND-0126",
+      "surface_form": "constraint_expression",
+      "label": "CONSTRAINT_EXPRESSION",
+      "confidence": 0.4375,
+      "review_status": "candidate",
+      "span": {
+        "start": 13641,
+        "end": 13662
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 478,
+        "line_end": 478
+      },
+      "context": "    \"pact_concept\": \"dssc:odrl_obligation\",\n      \"relation\": \"closeMatch\"\n    },\n    {\n      \"source_term\": \"constraint_expression\",\n      \"pact_concept\": \"dssc:constraint_expression\",\n      \"relation\": \"closeMatch\"\n    },\n    {\n      \"sour"
+    },
+    {
+      "candidate_id": "DSSC-RULEBOOK-POLICY-MAPPING-CAND-0127",
+      "surface_form": "pact_concept",
+      "label": "ODRL_PROHIBITION",
+      "confidence": 0.3632,
+      "review_status": "candidate",
+      "span": {
+        "start": 13672,
+        "end": 13684
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 479,
+        "line_end": 479
+      },
+      "context": "obligation\",\n      \"relation\": \"closeMatch\"\n    },\n    {\n      \"source_term\": \"constraint_expression\",\n      \"pact_concept\": \"dssc:constraint_expression\",\n      \"relation\": \"closeMatch\"\n    },\n    {\n      \"source_term\": \"intent_clas"
+    },
+    {
+      "candidate_id": "DSSC-RULEBOOK-POLICY-MAPPING-CAND-0128",
+      "surface_form": "dssc",
+      "label": "INTENT_CLASS",
+      "confidence": 0.4973,
+      "review_status": "candidate",
+      "span": {
+        "start": 13688,
+        "end": 13692
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 479,
+        "line_end": 479
+      },
+      "context": "   \"relation\": \"closeMatch\"\n    },\n    {\n      \"source_term\": \"constraint_expression\",\n      \"pact_concept\": \"dssc:constraint_expression\",\n      \"relation\": \"closeMatch\"\n    },\n    {\n      \"source_term\": \"intent_class\",\n    "
+    },
+    {
+      "candidate_id": "DSSC-RULEBOOK-POLICY-MAPPING-CAND-0129",
+      "surface_form": "constraint_expression",
+      "label": "CONSTRAINT_EXPRESSION",
+      "confidence": 0.5381,
+      "review_status": "candidate",
+      "span": {
+        "start": 13693,
+        "end": 13714
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 479,
+        "line_end": 479
+      },
+      "context": "elation\": \"closeMatch\"\n    },\n    {\n      \"source_term\": \"constraint_expression\",\n      \"pact_concept\": \"dssc:constraint_expression\",\n      \"relation\": \"closeMatch\"\n    },\n    {\n      \"source_term\": \"intent_class\",\n      \"pact_concept\": \"dss"
+    },
+    {
+      "candidate_id": "DSSC-RULEBOOK-POLICY-MAPPING-CAND-0130",
+      "surface_form": "intent_class",
+      "label": "INTENT_CLASS",
+      "confidence": 0.8244,
+      "review_status": "candidate",
+      "span": {
+        "start": 13783,
+        "end": 13795
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 483,
+        "line_end": 483
+      },
+      "context": "act_concept\": \"dssc:constraint_expression\",\n      \"relation\": \"closeMatch\"\n    },\n    {\n      \"source_term\": \"intent_class\",\n      \"pact_concept\": \"dssc:intent_class\",\n      \"relation\": \"closeMatch\"\n    },\n    {\n      \"source_term\":"
+    },
+    {
+      "candidate_id": "DSSC-RULEBOOK-POLICY-MAPPING-CAND-0131",
+      "surface_form": "pact_concept",
+      "label": "ODRL_PROHIBITION",
+      "confidence": 0.3885,
+      "review_status": "candidate",
+      "span": {
+        "start": 13805,
+        "end": 13817
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 484,
+        "line_end": 484
+      },
+      "context": "nstraint_expression\",\n      \"relation\": \"closeMatch\"\n    },\n    {\n      \"source_term\": \"intent_class\",\n      \"pact_concept\": \"dssc:intent_class\",\n      \"relation\": \"closeMatch\"\n    },\n    {\n      \"source_term\": \"deny_reason_code\",\n "
+    },
+    {
+      "candidate_id": "DSSC-RULEBOOK-POLICY-MAPPING-CAND-0132",
+      "surface_form": "dssc",
+      "label": "INTENT_CLASS",
+      "confidence": 0.5868,
+      "review_status": "candidate",
+      "span": {
+        "start": 13821,
+        "end": 13825
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 484,
+        "line_end": 484
+      },
+      "context": "ion\",\n      \"relation\": \"closeMatch\"\n    },\n    {\n      \"source_term\": \"intent_class\",\n      \"pact_concept\": \"dssc:intent_class\",\n      \"relation\": \"closeMatch\"\n    },\n    {\n      \"source_term\": \"deny_reason_code\",\n      \"pa"
+    },
+    {
+      "candidate_id": "DSSC-RULEBOOK-POLICY-MAPPING-CAND-0133",
+      "surface_form": "intent_class",
+      "label": "INTENT_CLASS",
+      "confidence": 0.8087,
+      "review_status": "candidate",
+      "span": {
+        "start": 13826,
+        "end": 13838
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 484,
+        "line_end": 484
+      },
+      "context": "\n      \"relation\": \"closeMatch\"\n    },\n    {\n      \"source_term\": \"intent_class\",\n      \"pact_concept\": \"dssc:intent_class\",\n      \"relation\": \"closeMatch\"\n    },\n    {\n      \"source_term\": \"deny_reason_code\",\n      \"pact_concept\": "
+    },
+    {
+      "candidate_id": "DSSC-RULEBOOK-POLICY-MAPPING-CAND-0134",
+      "surface_form": "deny_reason_code",
+      "label": "DENY_REASON_CODE",
+      "confidence": 0.9079,
+      "review_status": "candidate",
+      "span": {
+        "start": 13907,
+        "end": 13923
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 488,
+        "line_end": 488
+      },
+      "context": "\n      \"pact_concept\": \"dssc:intent_class\",\n      \"relation\": \"closeMatch\"\n    },\n    {\n      \"source_term\": \"deny_reason_code\",\n      \"pact_concept\": \"dssc:deny_reason_code\",\n      \"relation\": \"closeMatch\"\n    },\n    {\n      \"source_te"
+    },
+    {
+      "candidate_id": "DSSC-RULEBOOK-POLICY-MAPPING-CAND-0135",
+      "surface_form": "dssc",
+      "label": "INTENT_CLASS",
+      "confidence": 0.3941,
+      "review_status": "candidate",
+      "span": {
+        "start": 13949,
+        "end": 13953
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 489,
+        "line_end": 489
+      },
+      "context": ",\n      \"relation\": \"closeMatch\"\n    },\n    {\n      \"source_term\": \"deny_reason_code\",\n      \"pact_concept\": \"dssc:deny_reason_code\",\n      \"relation\": \"closeMatch\"\n    },\n    {\n      \"source_term\": \"obligation_state\",\n     "
+    },
+    {
+      "candidate_id": "DSSC-RULEBOOK-POLICY-MAPPING-CAND-0136",
+      "surface_form": "deny_reason_code",
+      "label": "DENY_REASON_CODE",
+      "confidence": 0.9134,
+      "review_status": "candidate",
+      "span": {
+        "start": 13954,
+        "end": 13970
+      },
+      "source_ref": {
+        "path": "source-extract/candidates/gliner-dirty-pass-2026-04-14/corpus.txt",
+        "line_start": 489,
+        "line_end": 489
+      },
+      "context": "   \"relation\": \"closeMatch\"\n    },\n    {\n      \"source_term\": \"deny_reason_code\",\n      \"pact_concept\": \"dssc:deny_reason_code\",\n      \"relation\": \"closeMatch\"\n    },\n    {\n      \"source_term\": \"obligation_state\",\n      \"pact_concept\": "
+    }
+  ],
+  "provenance": {
+    "run_id": "dssc-rulebook-policy-mapping-gliner-docker-pass-2026-04-14",
+    "model_id": "urchade/gliner_medium-v2.1",
+    "model_hash": "sha256:6c2fcfc92ecee10654d9d3151b2fca9dee740b375c4c99d928c87a9d969e1f7b",
+    "adapter": "gliner",
+    "threshold": 0.35,
+    "docker_image": "gliner-extractor:latest",
+    "config_digest": "sha256:50ef53e4e9bf6281273df52da09a3c75179e4040e80d2580444ecd848e12b6c4",
+    "source_digest": "sha256:296d6d1ba99a7913367b0dda5459b55c26f2574156b32b118c6a1498490e9eac",
+    "raw_output_digest": "sha256:6f4c6597c7468b969e3b42c20d4bd8bd0ee1fc16870f2404f60af7b4e2c6d471",
+    "created_at": "2026-04-14T09:23:19.126Z"
+  },
+  "summary": {
+    "candidate_count": 136,
+    "labels_used": [
+      "RULEBOOK_CLAUSE",
+      "ODRL_PERMISSION",
+      "ODRL_PROHIBITION",
+      "ODRL_OBLIGATION",
+      "CONSTRAINT_EXPRESSION",
+      "INTENT_CLASS",
+      "DENY_REASON_CODE",
+      "POLICY_SNAPSHOT",
+      "JURISDICTION",
+      "IDENTIFIER"
+    ],
+    "processing_time_ms": 37470
+  }
+}

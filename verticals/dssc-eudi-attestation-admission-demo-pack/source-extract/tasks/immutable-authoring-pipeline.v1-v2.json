@@ -1,0 +1,58 @@
+{
+  "schema_version": "1.0",
+  "domain": "dssc-eudi-attestation-admission",
+  "pipeline_profile": "v1-mechanical-v2-gliner-candidate",
+  "generated_at_utc": "2026-04-14T13:00:00Z",
+  "immutable_rules": [
+    "v1 mechanical artifacts are authoritative baseline for deterministic runtime behavior.",
+    "v2 GLiNER output is candidate-only and cannot auto-promote into canonical ontology artifacts.",
+    "Promotion from v2 candidates requires explicit human review and approval.",
+    "Bundle binding and reason-code determinism must remain stable across v1/v2 runs."
+  ],
+  "stages": [
+    {
+      "stage_id": "V1-MECHANICAL",
+      "status": "done",
+      "outputs": [
+        "pack.json",
+        "context.jsonld",
+        "vocab.skos.jsonld",
+        "shapes.ttl",
+        "thesaurus.jsonld",
+        "thesaurus-local.json",
+        "patterns.json",
+        "intent-mappings.json",
+        "decision-space.json",
+        "bundle.json",
+        "obt.jws"
+      ],
+      "notes": "Deterministic authored baseline from canonical source and crosswalk interpretation."
+    },
+    {
+      "stage_id": "V2-GLINER-CANDIDATE",
+      "status": "done",
+      "outputs": [
+        "source-extract/candidates/gliner-dirty-pass-2026-04-14/manifest.json",
+        "source-extract/candidates/gliner-dirty-pass-2026-04-14/candidates.json",
+        "source-extract/candidates/gliner-dirty-pass-2026-04-14/extraction-summary.json"
+      ],
+      "notes": "Acceleration layer for candidate entities/relations pending human review."
+    },
+    {
+      "stage_id": "REVIEW-GATE",
+      "status": "next",
+      "required_actions": [
+        "Review candidate entities for ontology fit and ambiguity.",
+        "Approve/reject each candidate with rationale.",
+        "Apply approved candidates into canonical artifacts in a separate authored revision."
+      ]
+    }
+  ],
+  "execution": {
+    "mode": "docker_gliner_real",
+    "run_id": "dssc-eudi-attestation-admission-gliner-docker-pass-2026-04-14",
+    "docker_image": "gliner-extractor:latest",
+    "pass_date": "2026-04-14",
+    "human_mediation": "required"
+  }
+}

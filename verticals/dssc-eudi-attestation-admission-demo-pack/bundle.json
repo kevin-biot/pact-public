@@ -18,7 +18,13 @@
     "message_identifiers": "sha256:0bdf543e26193a790ab1124a9c49cbce52d698e41ec1c07061b1cf36e373031d",
     "extraction_summary": "sha256:2848e325eae2e423333d2e61f4f131c5fc81a640137a69604caf2030dc5cbbee",
     "source_extract": "sha256:2558e166759348536cd9a69a54c3abb665e846e6a9bc941ead6b293a430ea611",
-    "crosswalk": "sha256:70b7987d4f1ca2d539dfa021de27781572a7dec3656e19a96ef1a5049c24198d"
+    "crosswalk": "sha256:70b7987d4f1ca2d539dfa021de27781572a7dec3656e19a96ef1a5049c24198d",
+    "execution_checklist": "sha256:f8a58c7dfe0f748dd6fbb0000139cf3606046fcddffe7723d73d3530e2d9963b",
+    "gliner_dirty_manifest": "sha256:713aa021d5919a8060e89083937595b24bb5e9ae41a353f8894ec0cd2429af0a",
+    "gliner_dirty_candidates": "sha256:12b6bb82492ecec517694276b77e59465f0e6896e66633e520d33da432c0028b",
+    "gliner_dirty_summary": "sha256:01106bb5a4b496de7b71132c6207d4edd7fff002f1a2a1c872047d493eec860f",
+    "gliner_dirty_config": "sha256:211c23c65f8443c7e235cc6e7cec813b331ae856a67a37e27e0de16b9c9a3761",
+    "gliner_dirty_raw_output": "sha256:bc2fdec8c78139a49f9cfe7d5387651be110306b98a1d37d153cd392b08fe55d"
   },
   "precedence": [],
   "denyWins": true,

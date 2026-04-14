@@ -22,7 +22,13 @@
     "decision_space": "decision-space.json",
     "message_identifiers": "message-identifiers.json",
     "extraction_summary": "extraction-summary.json",
-    "source_extract": "source-extract/sources.json"
+    "source_extract": "source-extract/sources.json",
+    "execution_checklist": "source-extract/tasks/immutable-authoring-pipeline.v1-v2.json",
+    "gliner_dirty_manifest": "source-extract/candidates/gliner-dirty-pass-2026-04-14/manifest.json",
+    "gliner_dirty_candidates": "source-extract/candidates/gliner-dirty-pass-2026-04-14/candidates.json",
+    "gliner_dirty_summary": "source-extract/candidates/gliner-dirty-pass-2026-04-14/extraction-summary.json",
+    "gliner_dirty_config": "source-extract/candidates/gliner-dirty-pass-2026-04-14/config.json",
+    "gliner_dirty_raw_output": "source-extract/candidates/gliner-dirty-pass-2026-04-14/candidates.raw.json"
   },
   "dc": {
     "identifier": "ontology:dssc-bilateral-challenge-receipt-demo:v0.1.0",

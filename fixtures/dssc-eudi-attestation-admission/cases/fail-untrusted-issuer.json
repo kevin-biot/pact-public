@@ -1,5 +1,5 @@
 {
-  "bundleId": "sha256:0ea274e2fb9188b567f7c72eaabfc0eba2c970f5c5d50074fd8471eb34bae5d7",
+  "bundleId": "sha256:d2fcc53b8e723c74f85ef1578f7047df95c6eefdd1e8b2bd361b66398452bebe",
   "decision": {
     "type": "DSSCAttestationAdmissionIntent",
     "intent_class": "dssc.identity.verify_trust_anchor.v1",

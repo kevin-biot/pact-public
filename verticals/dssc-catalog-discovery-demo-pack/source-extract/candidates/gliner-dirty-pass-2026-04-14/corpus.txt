@@ -1,0 +1,477 @@
+### FILE: README.md
+# dssc-catalog-discovery-demo-pack
+
+This is a DSSC-aligned demo ontology pack for `dssc-catalog-discovery` under Stage-4 pack authoring.
+
+## Purpose
+
+Demonstrate DSSC-aligned publication/discovery semantics mapped into a bounded PACT pack profile.
+
+## Source Grounding
+
+Canonical source references used for this pack draft are listed in `source-extract/sources.json`.
+
+Primary references:
+- https://blueprint.dssc.eu/
+- https://toolbox.dssc.eu/?pane=technical&technical=data-services-and-offerings-descriptions
+- https://www.w3.org/TR/vocab-dcat-3/
+- https://interoperable-europe.ec.europa.eu/collection/semic-support-centre/solution/dcat-application-profile-data-portals-europe
+- https://eclipse-dataspace-protocol-base.github.io/DataspaceProtocol/HEAD/
+
+## Intent Surface
+
+- `dssc.catalog.publish_offering.v1`: Publish new offering metadata into catalog scope.
+- `dssc.catalog.update_offering.v1`: Update existing offering metadata and lifecycle state.
+- `dssc.catalog.remove_offering.v1`: Remove/deprecate offering from discoverable catalog set.
+- `dssc.catalog.query_offering.v1`: Query offering metadata in bounded discovery profile.
+
+## Determinism Boundary
+
+- Out-of-scope behavior is `escalate`.
+- Policy/bundle binding is required for admitted execution paths.
+- Deny reason codes are explicit and stable for fixture replay.
+
+## Included Artifacts
+
+- `README.md`
+- `pack.json`
+- `context.jsonld`
+- `vocab.skos.jsonld`
+- `shapes.ttl`
+- `thesaurus.jsonld`
+- `thesaurus-local.json`
+- `patterns.json`
+- `intent-mappings.json`
+- `convergence.json`
+- `decision-space.json`
+- `message-identifiers.json`
+- `extraction-summary.json`
+- `bundle.json`
+- `obt.jws`
+- `source-extract/sources.json`
+- `source-extract/crosswalk/dssc-dcat-to-pact-crosswalk.v1.json`
+
+## Notes
+
+- This pack is a non-normative demo surface for conformance and governance experimentation.
+- Fixture harness wiring is planned in Stage-5.
+
+## Fixture Harness
+
+Run from repository root:
+
+```bash
+node tools/run-dssc-catalog-discovery-fixtures.mjs
+```
+
+## Two-Pass Authoring (V1/V2)
+
+- `V1 mechanical`: canonical authored baseline for deterministic runtime and fixture behavior.
+- `V2 GLiNER candidate`: fast extraction pass for candidate entities/relations only.
+- `Review gate`: no V2 candidate is promoted without explicit human review.
+
+Candidate artifacts are stored under `source-extract/candidates/gliner-dirty-pass-2026-04-14/`.
+
+
+### FILE: pack.json
+{
+  "pack_schema": "1.0",
+  "id": "dssc-catalog-discovery-demo-0.1.0",
+  "domain": "dssc-catalog-discovery",
+  "version": "0.1.0",
+  "provider_id": "ontology:pact-public:trust",
+  "trust_tier": "Tier1",
+  "nbf": "2026-04-14T00:00:00Z",
+  "exp": "2031-04-14T00:00:00Z",
+  "rev_epoch": 1,
+  "deny_wins": true,
+  "precedence": [],
+  "files": {
+    "context": "context.jsonld",
+    "vocab": "vocab.skos.jsonld",
+    "shapes": "shapes.ttl",
+    "thesaurus": "thesaurus.jsonld",
+    "thesaurus_local": "thesaurus-local.json",
+    "patterns": "patterns.json",
+    "intent_mappings": "intent-mappings.json",
+    "convergence": "convergence.json",
+    "decision_space": "decision-space.json",
+    "message_identifiers": "message-identifiers.json",
+    "extraction_summary": "extraction-summary.json",
+    "source_extract": "source-extract/sources.json",
+    "crosswalk": "source-extract/crosswalk/dssc-dcat-to-pact-crosswalk.v1.json",
+    "execution_checklist": "source-extract/tasks/immutable-authoring-pipeline.v1-v2.json",
+    "gliner_dirty_manifest": "source-extract/candidates/gliner-dirty-pass-2026-04-14/manifest.json",
+    "gliner_dirty_candidates": "source-extract/candidates/gliner-dirty-pass-2026-04-14/candidates.json",
+    "gliner_dirty_summary": "source-extract/candidates/gliner-dirty-pass-2026-04-14/extraction-summary.json"
+  },
+  "dc": {
+    "identifier": "ontology:dssc-catalog-discovery-demo:v0.1.0",
+    "title": "dssc-catalog-discovery demo pack",
+    "creator": "PACT Public Working Draft",
+    "issued": "2026-04-14",
+    "rights": "Apache-2.0",
+    "description": "Demonstrate DSSC-aligned publication/discovery semantics mapped into a bounded PACT pack profile."
+  }
+}
+
+
+### FILE: decision-space.json
+{
+  "schema_version": "1.0",
+  "domain": "dssc-catalog-discovery",
+  "pack_id": "dssc-catalog-discovery-demo-0.1.0",
+  "version": "0.1.0",
+  "out_of_scope_behavior": "escalate",
+  "state_model": {
+    "states": [
+      "ingress",
+      "validated",
+      "classified",
+      "authorized",
+      "responded",
+      "rejected",
+      "escalated"
+    ],
+    "initial_state": "ingress",
+    "terminal_states": [
+      "responded",
+      "rejected",
+      "escalated"
+    ]
+  },
+  "intent_resource_map": {
+    "dssc.catalog.publish_offering.v1": [
+      "GovernanceDecision"
+    ],
+    "dssc.catalog.update_offering.v1": [
+      "GovernanceDecision"
+    ],
+    "dssc.catalog.remove_offering.v1": [
+      "GovernanceDecision"
+    ],
+    "dssc.catalog.query_offering.v1": [
+      "GovernanceDecision"
+    ]
+  },
+  "required_fields_by_intent": {
+    "dssc.catalog.publish_offering.v1": [
+      "policy_snapshot_id"
+    ],
+    "dssc.catalog.update_offering.v1": [
+      "policy_snapshot_id"
+    ],
+    "dssc.catalog.remove_offering.v1": [
+      "policy_snapshot_id"
+    ],
+    "dssc.catalog.query_offering.v1": [
+      "policy_snapshot_id"
+    ]
+  },
+  "deny_reason_codes": [
+    "CIC_REQUIRED_FIELD_MISSING",
+    "DENY_POLICY_REFERENCE_UNBOUND",
+    "ESCALATE_OUT_OF_SCOPE_INTENT",
+    "PSC_BUNDLE_COMMIT_MISMATCH"
+  ]
+}
+
+
+### FILE: intent-mappings.json
+{
+  "schema_version": "1.0",
+  "domain": "dssc-catalog-discovery",
+  "mappings": [
+    {
+      "concept_uri": "dssc:GovernanceSurface",
+      "intent_class": "dssc.catalog.publish_offering.v1",
+      "confidence_floor": 0.76
+    },
+    {
+      "concept_uri": "dssc:GovernanceSurface",
+      "intent_class": "dssc.catalog.update_offering.v1",
+      "confidence_floor": 0.76
+    },
+    {
+      "concept_uri": "dssc:GovernanceSurface",
+      "intent_class": "dssc.catalog.remove_offering.v1",
+      "confidence_floor": 0.76
+    },
+    {
+      "concept_uri": "dssc:GovernanceSurface",
+      "intent_class": "dssc.catalog.query_offering.v1",
+      "confidence_floor": 0.76
+    }
+  ]
+}
+
+
+### FILE: thesaurus-local.json
+{
+  "schema_version": "1.0",
+  "domain": "dssc-catalog-discovery",
+  "last_modified": "2026-04-14",
+  "concepts": [
+    {
+      "concept_id": "dssc-catalog-discovery.catalog.v1",
+      "preferred_term": "Catalog",
+      "synonyms": [],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "GovernanceSurface",
+      "narrower": [],
+      "source_refs": [
+        "dssc-canonical-source-catalog"
+      ],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "dssc-catalog-discovery.offering.v1",
+      "preferred_term": "Offering",
+      "synonyms": [],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "GovernanceSurface",
+      "narrower": [],
+      "source_refs": [
+        "dssc-canonical-source-catalog"
+      ],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "dssc-catalog-discovery.datasetmetadata.v1",
+      "preferred_term": "DatasetMetadata",
+      "synonyms": [],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "GovernanceSurface",
+      "narrower": [],
+      "source_refs": [
+        "dssc-canonical-source-catalog"
+      ],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "dssc-catalog-discovery.dataserviceendpoint.v1",
+      "preferred_term": "DataServiceEndpoint",
+      "synonyms": [],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "GovernanceSurface",
+      "narrower": [],
+      "source_refs": [
+        "dssc-canonical-source-catalog"
+      ],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "dssc-catalog-discovery.usagepolicyreference.v1",
+      "preferred_term": "UsagePolicyReference",
+      "synonyms": [],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "GovernanceSurface",
+      "narrower": [],
+      "source_refs": [
+        "dssc-canonical-source-catalog"
+      ],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "dssc-catalog-discovery.participantvisibilityscope.v1",
+      "preferred_term": "ParticipantVisibilityScope",
+      "synonyms": [],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "GovernanceSurface",
+      "narrower": [],
+      "source_refs": [
+        "dssc-canonical-source-catalog"
+      ],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "dssc-catalog-discovery.lifecyclestate.v1",
+      "preferred_term": "LifecycleState",
+      "synonyms": [],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "GovernanceSurface",
+      "narrower": [],
+      "source_refs": [
+        "dssc-canonical-source-catalog"
+      ],
+      "ner_provenance": null
+    }
+  ]
+}
+
+
+### FILE: patterns.json
+{
+  "schema_version": "1.0",
+  "domain": "dssc-catalog-discovery",
+  "patterns": [
+    {
+      "id": "dssc_catalog_publish_offering_v1",
+      "concept_uri": "dssc:GovernanceSurface",
+      "entity_type": "intent_hint",
+      "regex": "(?i)\\bdssc\\.catalog\\.publish_offering\\.v1\\b",
+      "examples": [
+        "dssc.catalog.publish_offering.v1"
+      ]
+    },
+    {
+      "id": "dssc_catalog_update_offering_v1",
+      "concept_uri": "dssc:GovernanceSurface",
+      "entity_type": "intent_hint",
+      "regex": "(?i)\\bdssc\\.catalog\\.update_offering\\.v1\\b",
+      "examples": [
+        "dssc.catalog.update_offering.v1"
+      ]
+    },
+    {
+      "id": "dssc_catalog_remove_offering_v1",
+      "concept_uri": "dssc:GovernanceSurface",
+      "entity_type": "intent_hint",
+      "regex": "(?i)\\bdssc\\.catalog\\.remove_offering\\.v1\\b",
+      "examples": [
+        "dssc.catalog.remove_offering.v1"
+      ]
+    },
+    {
+      "id": "dssc_catalog_query_offering_v1",
+      "concept_uri": "dssc:GovernanceSurface",
+      "entity_type": "intent_hint",
+      "regex": "(?i)\\bdssc\\.catalog\\.query_offering\\.v1\\b",
+      "examples": [
+        "dssc.catalog.query_offering.v1"
+      ]
+    }
+  ]
+}
+
+
+### FILE: source-extract/sources.json
+{
+  "schema_version": "1.0",
+  "generated_at_utc": "2026-04-14T12:00:00Z",
+  "vertical": "dssc-catalog-discovery-demo-pack",
+  "bundle_id": "dssc-catalog-discovery-source-2026-04-14",
+  "sources": [
+    {
+      "id": "canonical-source-1",
+      "title": "Canonical source 1",
+      "url": "https://blueprint.dssc.eu/",
+      "type": "canonical_reference",
+      "status": "referenced"
+    },
+    {
+      "id": "canonical-source-2",
+      "title": "Canonical source 2",
+      "url": "https://toolbox.dssc.eu/?pane=technical&technical=data-services-and-offerings-descriptions",
+      "type": "canonical_reference",
+      "status": "referenced"
+    },
+    {
+      "id": "canonical-source-3",
+      "title": "Canonical source 3",
+      "url": "https://www.w3.org/TR/vocab-dcat-3/",
+      "type": "canonical_reference",
+      "status": "referenced"
+    },
+    {
+      "id": "canonical-source-4",
+      "title": "Canonical source 4",
+      "url": "https://interoperable-europe.ec.europa.eu/collection/semic-support-centre/solution/dcat-application-profile-data-portals-europe",
+      "type": "canonical_reference",
+      "status": "referenced"
+    },
+    {
+      "id": "canonical-source-5",
+      "title": "Canonical source 5",
+      "url": "https://eclipse-dataspace-protocol-base.github.io/DataspaceProtocol/HEAD/",
+      "type": "canonical_reference",
+      "status": "referenced"
+    }
+  ]
+}
+
+
+### FILE: message-identifiers.json
+{
+  "schema_version": "0.1",
+  "generated_at_utc": "2026-04-14T12:00:00Z",
+  "profile": "dssc-catalog-discovery-demo-pack",
+  "domain": "dssc-catalog-discovery",
+  "message_identifiers": [],
+  "message_types": [],
+  "note": "No ISO-style message identifiers for this DSSC governance demo pack."
+}
+
+
+### FILE: extraction-summary.json
+{
+  "schema_version": "0.1",
+  "generated_at_utc": "2026-04-14T12:00:00Z",
+  "profile": "dssc-catalog-discovery-demo-pack",
+  "domain": "dssc-catalog-discovery",
+  "source_spec": "DSSC source-grounded pack spec and crosswalk notes",
+  "source_artifact_count": 5,
+  "mapped_symbol_count": 7,
+  "mapped_field_count": 1,
+  "note": "Stage-4 skeleton pack authored from stage-3 spec artifacts."
+}
+
+
+### FILE: source-extract/crosswalk/dssc-dcat-to-pact-crosswalk.v1.json
+{
+  "schema_version": "0.1",
+  "generated_at_utc": "2026-04-14T12:00:00Z",
+  "domain": "dssc-catalog-discovery",
+  "crosswalk": "dssc-dcat-to-pact-crosswalk.v1.json",
+  "mappings": [
+    {
+      "source_term": "Catalog",
+      "pact_concept": "dssc:Catalog",
+      "relation": "closeMatch"
+    },
+    {
+      "source_term": "Offering",
+      "pact_concept": "dssc:Offering",
+      "relation": "closeMatch"
+    },
+    {
+      "source_term": "DatasetMetadata",
+      "pact_concept": "dssc:DatasetMetadata",
+      "relation": "closeMatch"
+    },
+    {
+      "source_term": "DataServiceEndpoint",
+      "pact_concept": "dssc:DataServiceEndpoint",
+      "relation": "closeMatch"
+    },
+    {
+      "source_term": "UsagePolicyReference",
+      "pact_concept": "dssc:UsagePolicyReference",
+      "relation": "closeMatch"
+    },
+    {
+      "source_term": "ParticipantVisibilityScope",
+      "pact_concept": "dssc:ParticipantVisibilityScope",
+      "relation": "closeMatch"
+    },
+    {
+      "source_term": "LifecycleState",
+      "pact_concept": "dssc:LifecycleState",
+      "relation": "closeMatch"
+    }
+  ]
+}
