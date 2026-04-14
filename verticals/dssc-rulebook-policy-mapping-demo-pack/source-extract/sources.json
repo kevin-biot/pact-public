@@ -1,0 +1,36 @@
+{
+  "schema_version": "1.0",
+  "generated_at_utc": "2026-04-14T12:00:00Z",
+  "vertical": "dssc-rulebook-policy-mapping-demo-pack",
+  "bundle_id": "dssc-rulebook-policy-mapping-source-2026-04-14",
+  "sources": [
+    {
+      "id": "canonical-source-1",
+      "title": "Canonical source 1",
+      "url": "https://blueprint.dssc.eu/",
+      "type": "canonical_reference",
+      "status": "referenced"
+    },
+    {
+      "id": "canonical-source-2",
+      "title": "Canonical source 2",
+      "url": "https://www.w3.org/TR/odrl-model/",
+      "type": "canonical_reference",
+      "status": "referenced"
+    },
+    {
+      "id": "canonical-source-3",
+      "title": "Canonical source 3",
+      "url": "https://www.w3.org/TR/odrl-vocab/",
+      "type": "canonical_reference",
+      "status": "referenced"
+    },
+    {
+      "id": "canonical-source-4",
+      "title": "Canonical source 4",
+      "url": "https://eclipse-dataspace-protocol-base.github.io/DataspaceProtocol/HEAD/",
+      "type": "canonical_reference",
+      "status": "referenced"
+    }
+  ]
+}

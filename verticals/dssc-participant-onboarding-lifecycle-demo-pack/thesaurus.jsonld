@@ -1,0 +1,63 @@
+{
+  "@context": {
+    "dssc": "https://pact.example/ontology/dssc-participant-onboarding-lifecycle/"
+  },
+  "entries": [
+    {
+      "label": "candidate",
+      "alt": [],
+      "properties": {
+        "entity_type": "concept",
+        "description": "Canonical concept for dssc-participant-onboarding-lifecycle"
+      }
+    },
+    {
+      "label": "pending_review",
+      "alt": [],
+      "properties": {
+        "entity_type": "concept",
+        "description": "Canonical concept for dssc-participant-onboarding-lifecycle"
+      }
+    },
+    {
+      "label": "admitted",
+      "alt": [],
+      "properties": {
+        "entity_type": "concept",
+        "description": "Canonical concept for dssc-participant-onboarding-lifecycle"
+      }
+    },
+    {
+      "label": "restricted",
+      "alt": [],
+      "properties": {
+        "entity_type": "concept",
+        "description": "Canonical concept for dssc-participant-onboarding-lifecycle"
+      }
+    },
+    {
+      "label": "suspended",
+      "alt": [],
+      "properties": {
+        "entity_type": "concept",
+        "description": "Canonical concept for dssc-participant-onboarding-lifecycle"
+      }
+    },
+    {
+      "label": "revoked",
+      "alt": [],
+      "properties": {
+        "entity_type": "concept",
+        "description": "Canonical concept for dssc-participant-onboarding-lifecycle"
+      }
+    },
+    {
+      "label": "reinstated",
+      "alt": [],
+      "properties": {
+        "entity_type": "concept",
+        "description": "Canonical concept for dssc-participant-onboarding-lifecycle"
+      }
+    }
+  ]
+}

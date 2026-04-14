@@ -1,0 +1,33 @@
+{
+  "schema_version": "1.0",
+  "domain": "dssc-rulebook-policy-mapping",
+  "patterns": [
+    {
+      "id": "dssc_policy_evaluate_access_v1",
+      "concept_uri": "dssc:GovernanceSurface",
+      "entity_type": "intent_hint",
+      "regex": "(?i)\\bdssc\\.policy\\.evaluate_access\\.v1\\b",
+      "examples": [
+        "dssc.policy.evaluate_access.v1"
+      ]
+    },
+    {
+      "id": "dssc_policy_evaluate_usage_v1",
+      "concept_uri": "dssc:GovernanceSurface",
+      "entity_type": "intent_hint",
+      "regex": "(?i)\\bdssc\\.policy\\.evaluate_usage\\.v1\\b",
+      "examples": [
+        "dssc.policy.evaluate_usage.v1"
+      ]
+    },
+    {
+      "id": "dssc_policy_resolve_conflict_v1",
+      "concept_uri": "dssc:GovernanceSurface",
+      "entity_type": "intent_hint",
+      "regex": "(?i)\\bdssc\\.policy\\.resolve_conflict\\.v1\\b",
+      "examples": [
+        "dssc.policy.resolve_conflict.v1"
+      ]
+    }
+  ]
+}

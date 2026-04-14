@@ -1,0 +1,28 @@
+{
+  "id": "dssc-eudi-attestation-admission-demo-0.1.0",
+  "domain": "dssc-eudi-attestation-admission",
+  "version": "0.1.0",
+  "providerId": "ontology:pact-public:trust",
+  "trustTier": "Tier1",
+  "policySnapshotId": "sha256:9e2a1b451c35cd116fc30dc68cb2dfe9813e56544bd6368e8556502163c3e19a",
+  "files": {
+    "context": "sha256:07f090f1a92d80ea89d8a82bb79937ebd82e657f781a53e9ab1885f0c418e9f8",
+    "vocab": "sha256:37434984b17943c5acc901b68aea6bfa6af31da78df8cfbca0e7cd3b80e83fe6",
+    "shapes": "sha256:4fa49f4c1d725caac450d9748d6bcf6991ca7c336f1ec6b00e903d1ab9d6d17e",
+    "thesaurus": "sha256:6623fe157478dd554258b6da711d59307cc1847b6a9a943e77640e809a212a01",
+    "thesaurus_local": "sha256:810c247ae13f3c47db612f1a3dbfbd1f125217df228810ab3fdae932fb3ddde0",
+    "patterns": "sha256:09fa6be89d694d7eee3775929c71efddbb5c423a29f7cdd90a88c15d35ec4d04",
+    "intent_mappings": "sha256:9df67c7498b741e1b7e96372efb60f3aae27a5049a117ed22a98958368980084",
+    "convergence": "sha256:fa7f8c9f9ec2ec960aeea8bb57c053eace6836dbd486abb68ae3b97ee59c892c",
+    "decision_space": "sha256:9e2a1b451c35cd116fc30dc68cb2dfe9813e56544bd6368e8556502163c3e19a",
+    "message_identifiers": "sha256:0bdf543e26193a790ab1124a9c49cbce52d698e41ec1c07061b1cf36e373031d",
+    "extraction_summary": "sha256:2848e325eae2e423333d2e61f4f131c5fc81a640137a69604caf2030dc5cbbee",
+    "source_extract": "sha256:2558e166759348536cd9a69a54c3abb665e846e6a9bc941ead6b293a430ea611",
+    "crosswalk": "sha256:70b7987d4f1ca2d539dfa021de27781572a7dec3656e19a96ef1a5049c24198d"
+  },
+  "precedence": [],
+  "denyWins": true,
+  "nbf": "2026-04-14T00:00:00Z",
+  "exp": "2031-04-14T00:00:00Z",
+  "revEpoch": 1
+}

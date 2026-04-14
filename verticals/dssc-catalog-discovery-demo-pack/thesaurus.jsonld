@@ -1,0 +1,63 @@
+{
+  "@context": {
+    "dssc": "https://pact.example/ontology/dssc-catalog-discovery/"
+  },
+  "entries": [
+    {
+      "label": "Catalog",
+      "alt": [],
+      "properties": {
+        "entity_type": "concept",
+        "description": "Canonical concept for dssc-catalog-discovery"
+      }
+    },
+    {
+      "label": "Offering",
+      "alt": [],
+      "properties": {
+        "entity_type": "concept",
+        "description": "Canonical concept for dssc-catalog-discovery"
+      }
+    },
+    {
+      "label": "DatasetMetadata",
+      "alt": [],
+      "properties": {
+        "entity_type": "concept",
+        "description": "Canonical concept for dssc-catalog-discovery"
+      }
+    },
+    {
+      "label": "DataServiceEndpoint",
+      "alt": [],
+      "properties": {
+        "entity_type": "concept",
+        "description": "Canonical concept for dssc-catalog-discovery"
+      }
+    },
+    {
+      "label": "UsagePolicyReference",
+      "alt": [],
+      "properties": {
+        "entity_type": "concept",
+        "description": "Canonical concept for dssc-catalog-discovery"
+      }
+    },
+    {
+      "label": "ParticipantVisibilityScope",
+      "alt": [],
+      "properties": {
+        "entity_type": "concept",
+        "description": "Canonical concept for dssc-catalog-discovery"
+      }
+    },
+    {
+      "label": "LifecycleState",
+      "alt": [],
+      "properties": {
+        "entity_type": "concept",
+        "description": "Canonical concept for dssc-catalog-discovery"
+      }
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dssc: <https://pact.example/ontology/dssc-catalog-discovery/> .
+
+dssc:IntentShape
+  a sh:NodeShape ;
+  sh:targetClass dssc:Intent ;
+  sh:property [
+    sh:path dssc:intentClass ;
+    sh:datatype xsd:string ;
+    sh:minCount 1 ;
+    sh:message "intentClass is required"
+  ] ;
+  sh:property [
+    sh:path dssc:policySnapshotId ;
+    sh:datatype xsd:string ;
+    sh:minCount 1 ;
+    sh:message "policySnapshotId is required"
+  ] .

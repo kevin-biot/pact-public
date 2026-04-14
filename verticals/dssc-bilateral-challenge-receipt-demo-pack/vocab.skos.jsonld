@@ -1,0 +1,91 @@
+{
+  "@context": {
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "dssc": "https://pact.example/ontology/dssc-bilateral-challenge-receipt/"
+  },
+  "concepts": [
+    {
+      "id": "dssc:GovernanceSurface",
+      "prefLabel": "Governance Surface"
+    },
+    {
+      "id": "dssc:challenge_id",
+      "prefLabel": "challenge_id"
+    },
+    {
+      "id": "dssc:origin_jurisdiction",
+      "prefLabel": "origin_jurisdiction",
+      "broader": "dssc:GovernanceSurface"
+    },
+    {
+      "id": "dssc:target_jurisdiction",
+      "prefLabel": "target_jurisdiction",
+      "broader": "dssc:GovernanceSurface"
+    },
+    {
+      "id": "dssc:payload_hash",
+      "prefLabel": "payload_hash",
+      "broader": "dssc:GovernanceSurface"
+    },
+    {
+      "id": "dssc:policy_snapshot_origin",
+      "prefLabel": "policy_snapshot_origin",
+      "broader": "dssc:GovernanceSurface"
+    },
+    {
+      "id": "dssc:rationale_ref_origin",
+      "prefLabel": "rationale_ref_origin",
+      "broader": "dssc:GovernanceSurface"
+    },
+    {
+      "id": "dssc:receipt_id",
+      "prefLabel": "receipt_id",
+      "broader": "dssc:GovernanceSurface"
+    },
+    {
+      "id": "dssc:acceptance_hash",
+      "prefLabel": "acceptance_hash",
+      "broader": "dssc:GovernanceSurface"
+    },
+    {
+      "id": "dssc:policy_snapshot_target",
+      "prefLabel": "policy_snapshot_target",
+      "broader": "dssc:GovernanceSurface"
+    },
+    {
+      "id": "dssc:rationale_ref_target",
+      "prefLabel": "rationale_ref_target",
+      "broader": "dssc:GovernanceSurface"
+    },
+    {
+      "id": "dssc:status",
+      "prefLabel": "status",
+      "broader": "dssc:GovernanceSurface"
+    },
+    {
+      "id": "dssc:correlation_id",
+      "prefLabel": "correlation_id",
+      "broader": "dssc:GovernanceSurface"
+    },
+    {
+      "id": "dssc:anchor_hash_origin",
+      "prefLabel": "anchor_hash_origin",
+      "broader": "dssc:GovernanceSurface"
+    },
+    {
+      "id": "dssc:anchor_hash_target",
+      "prefLabel": "anchor_hash_target",
+      "broader": "dssc:GovernanceSurface"
+    },
+    {
+      "id": "dssc:event_hash",
+      "prefLabel": "event_hash",
+      "broader": "dssc:GovernanceSurface"
+    },
+    {
+      "id": "dssc:prev_hash",
+      "prefLabel": "prev_hash",
+      "broader": "dssc:GovernanceSurface"
+    }
+  ]
+}

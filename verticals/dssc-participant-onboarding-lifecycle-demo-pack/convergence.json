@@ -1,0 +1,22 @@
+{
+  "schema_version": "1.0",
+  "domain": "dssc-participant-onboarding-lifecycle",
+  "thresholds": {
+    "overall_min_pass_rate": 1,
+    "require_critical_pass": true
+  },
+  "cases": [
+    {
+      "id": "case_1",
+      "phrase": "Apply participant lifecycle transition with deterministic guards.",
+      "expect": "dssc.participant.transition_state.v1",
+      "critical": true
+    },
+    {
+      "id": "case_2",
+      "phrase": "Evaluate admission readiness from trust and policy inputs.",
+      "expect": "dssc.participant.evaluate_admission.v1",
+      "critical": true
+    }
+  ]
+}

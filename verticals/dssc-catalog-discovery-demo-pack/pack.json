@@ -1,0 +1,36 @@
+{
+  "pack_schema": "1.0",
+  "id": "dssc-catalog-discovery-demo-0.1.0",
+  "domain": "dssc-catalog-discovery",
+  "version": "0.1.0",
+  "provider_id": "ontology:pact-public:trust",
+  "trust_tier": "Tier1",
+  "nbf": "2026-04-14T00:00:00Z",
+  "exp": "2031-04-14T00:00:00Z",
+  "rev_epoch": 1,
+  "deny_wins": true,
+  "precedence": [],
+  "files": {
+    "context": "context.jsonld",
+    "vocab": "vocab.skos.jsonld",
+    "shapes": "shapes.ttl",
+    "thesaurus": "thesaurus.jsonld",
+    "thesaurus_local": "thesaurus-local.json",
+    "patterns": "patterns.json",
+    "intent_mappings": "intent-mappings.json",
+    "convergence": "convergence.json",
+    "decision_space": "decision-space.json",
+    "message_identifiers": "message-identifiers.json",
+    "extraction_summary": "extraction-summary.json",
+    "source_extract": "source-extract/sources.json",
+    "crosswalk": "source-extract/crosswalk/dssc-dcat-to-pact-crosswalk.v1.json"
+  },
+  "dc": {
+    "identifier": "ontology:dssc-catalog-discovery-demo:v0.1.0",
+    "title": "dssc-catalog-discovery demo pack",
+    "creator": "PACT Public Working Draft",
+    "issued": "2026-04-14",
+    "rights": "Apache-2.0",
+    "description": "Demonstrate DSSC-aligned publication/discovery semantics mapped into a bounded PACT pack profile."
+  }
+}

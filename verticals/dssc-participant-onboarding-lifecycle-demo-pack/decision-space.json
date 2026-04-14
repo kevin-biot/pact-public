@@ -1,0 +1,46 @@
+{
+  "schema_version": "1.0",
+  "domain": "dssc-participant-onboarding-lifecycle",
+  "pack_id": "dssc-participant-onboarding-lifecycle-demo-0.1.0",
+  "version": "0.1.0",
+  "out_of_scope_behavior": "escalate",
+  "state_model": {
+    "states": [
+      "ingress",
+      "validated",
+      "classified",
+      "authorized",
+      "responded",
+      "rejected",
+      "escalated"
+    ],
+    "initial_state": "ingress",
+    "terminal_states": [
+      "responded",
+      "rejected",
+      "escalated"
+    ]
+  },
+  "intent_resource_map": {
+    "dssc.participant.transition_state.v1": [
+      "GovernanceDecision"
+    ],
+    "dssc.participant.evaluate_admission.v1": [
+      "GovernanceDecision"
+    ]
+  },
+  "required_fields_by_intent": {
+    "dssc.participant.transition_state.v1": [
+      "policy_snapshot_id"
+    ],
+    "dssc.participant.evaluate_admission.v1": [
+      "policy_snapshot_id"
+    ]
+  },
+  "deny_reason_codes": [
+    "DENY_TRUST_PROOF_MISSING",
+    "DENY_STATE_TRANSITION_INVALID",
+    "DENY_PARTICIPANT_REVOKED",
+    "PSC_BUNDLE_COMMIT_MISMATCH"
+  ]
+}

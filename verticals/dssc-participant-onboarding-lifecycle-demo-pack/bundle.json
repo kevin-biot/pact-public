@@ -1,0 +1,27 @@
+{
+  "id": "dssc-participant-onboarding-lifecycle-demo-0.1.0",
+  "domain": "dssc-participant-onboarding-lifecycle",
+  "version": "0.1.0",
+  "providerId": "ontology:pact-public:trust",
+  "trustTier": "Tier1",
+  "policySnapshotId": "sha256:f730e3e79fff0d7e363a5d12da0e249785d30026c2b8874b357171f6abc5ebc5",
+  "files": {
+    "context": "sha256:f26a7b250b659c9782ee041d260cd6b69e92bd1534c205f0ab5a1eb609357f90",
+    "vocab": "sha256:2365fc01b74f9efe0bb278801a97f7eb2658cfd91cc567ec2f447c35c6d74f63",
+    "shapes": "sha256:b2d7292c151ddd1d4307844a1ea687b070a687cb83526d5fae3403267c10c963",
+    "thesaurus": "sha256:8ffb36b6a53a4628fc6bbfd8f1261f22a954d4248d0170566af7b37bfed3ab10",
+    "thesaurus_local": "sha256:7c4e3037a475786f955844e396173c6ffcffe65c6f3da528b5ac4a81ec1667f3",
+    "patterns": "sha256:bad606a054b0f94dcf2dc56734891c41fdcde0b1e73c2f6bf4ccc74a54c91620",
+    "intent_mappings": "sha256:239b16032d4b9d16bdc9292680c5c4ac14cf948bde69932680e92fd579899242",
+    "convergence": "sha256:3f4e592f55e1777b3e55893e19b33889da85c7337a4f954eeb70a067bb572481",
+    "decision_space": "sha256:f730e3e79fff0d7e363a5d12da0e249785d30026c2b8874b357171f6abc5ebc5",
+    "message_identifiers": "sha256:d497e6d02d7dbbd317793b2ab2461697841b9e0c8f114ce9bacabf333a0eddac",
+    "extraction_summary": "sha256:5553e88e3a8e833b6e94a529c3f09f0d02db3e2f35dfacb2b174863eef47c77f",
+    "source_extract": "sha256:9e919245eb6da975734195a67162cb713a625172a9adc7fbc609f353fd05ada1"
+  },
+  "precedence": [],
+  "denyWins": true,
+  "nbf": "2026-04-14T00:00:00Z",
+  "exp": "2031-04-14T00:00:00Z",
+  "revEpoch": 1
+}

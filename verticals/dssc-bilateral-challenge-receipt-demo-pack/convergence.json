@@ -1,0 +1,22 @@
+{
+  "schema_version": "1.0",
+  "domain": "dssc-bilateral-challenge-receipt",
+  "thresholds": {
+    "overall_min_pass_rate": 1,
+    "require_critical_pass": true
+  },
+  "cases": [
+    {
+      "id": "case_1",
+      "phrase": "Submit cross-jurisdiction challenge payload with origin snapshot.",
+      "expect": "dssc.governance.submit_challenge.v1",
+      "critical": true
+    },
+    {
+      "id": "case_2",
+      "phrase": "Issue correlated receipt with target-side policy snapshot.",
+      "expect": "dssc.governance.issue_receipt.v1",
+      "critical": true
+    }
+  ]
+}

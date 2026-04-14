@@ -1,0 +1,22 @@
+{
+  "schema_version": "1.0",
+  "generated_at_utc": "2026-04-14T12:00:00Z",
+  "vertical": "dssc-bilateral-challenge-receipt-demo-pack",
+  "bundle_id": "dssc-bilateral-challenge-receipt-source-2026-04-14",
+  "sources": [
+    {
+      "id": "canonical-source-1",
+      "title": "Canonical source 1",
+      "url": "https://blueprint.dssc.eu/",
+      "type": "canonical_reference",
+      "status": "referenced"
+    },
+    {
+      "id": "canonical-source-2",
+      "title": "Canonical source 2",
+      "url": "https://eclipse-dataspace-protocol-base.github.io/DataspaceProtocol/HEAD/",
+      "type": "canonical_reference",
+      "status": "referenced"
+    }
+  ]
+}

@@ -1,0 +1,105 @@
+{
+  "schema_version": "1.0",
+  "domain": "dssc-catalog-discovery",
+  "last_modified": "2026-04-14",
+  "concepts": [
+    {
+      "concept_id": "dssc-catalog-discovery.catalog.v1",
+      "preferred_term": "Catalog",
+      "synonyms": [],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "GovernanceSurface",
+      "narrower": [],
+      "source_refs": [
+        "dssc-canonical-source-catalog"
+      ],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "dssc-catalog-discovery.offering.v1",
+      "preferred_term": "Offering",
+      "synonyms": [],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "GovernanceSurface",
+      "narrower": [],
+      "source_refs": [
+        "dssc-canonical-source-catalog"
+      ],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "dssc-catalog-discovery.datasetmetadata.v1",
+      "preferred_term": "DatasetMetadata",
+      "synonyms": [],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "GovernanceSurface",
+      "narrower": [],
+      "source_refs": [
+        "dssc-canonical-source-catalog"
+      ],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "dssc-catalog-discovery.dataserviceendpoint.v1",
+      "preferred_term": "DataServiceEndpoint",
+      "synonyms": [],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "GovernanceSurface",
+      "narrower": [],
+      "source_refs": [
+        "dssc-canonical-source-catalog"
+      ],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "dssc-catalog-discovery.usagepolicyreference.v1",
+      "preferred_term": "UsagePolicyReference",
+      "synonyms": [],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "GovernanceSurface",
+      "narrower": [],
+      "source_refs": [
+        "dssc-canonical-source-catalog"
+      ],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "dssc-catalog-discovery.participantvisibilityscope.v1",
+      "preferred_term": "ParticipantVisibilityScope",
+      "synonyms": [],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "GovernanceSurface",
+      "narrower": [],
+      "source_refs": [
+        "dssc-canonical-source-catalog"
+      ],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "dssc-catalog-discovery.lifecyclestate.v1",
+      "preferred_term": "LifecycleState",
+      "synonyms": [],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "GovernanceSurface",
+      "narrower": [],
+      "source_refs": [
+        "dssc-canonical-source-catalog"
+      ],
+      "ner_provenance": null
+    }
+  ]
+}

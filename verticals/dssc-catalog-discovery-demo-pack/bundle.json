@@ -1,0 +1,28 @@
+{
+  "id": "dssc-catalog-discovery-demo-0.1.0",
+  "domain": "dssc-catalog-discovery",
+  "version": "0.1.0",
+  "providerId": "ontology:pact-public:trust",
+  "trustTier": "Tier1",
+  "policySnapshotId": "sha256:73e33689a3391b962481287782a0bfaa51157f9038455f149fed1d6baadb0cdd",
+  "files": {
+    "context": "sha256:9a38e003c841fd4d72093a5efc5b64955dc160ddf7e4d1a4807993a03c54bbf1",
+    "vocab": "sha256:11c8c27fb09e77235fa513735717a94ce929cdb0fa60e86349f6502b9ea9e203",
+    "shapes": "sha256:6d733e7abaed17e2bfe1682406ea16c82260b574d2016361913fa1c53f110e58",
+    "thesaurus": "sha256:c39d95e46e2643aa08c9bccb3bfc98cc3217caebeeeed1ee5bb3e673c9056472",
+    "thesaurus_local": "sha256:db1d257913e43c1040c4c09120e4699fae78a73961ece1d72837cf3825b578b7",
+    "patterns": "sha256:9c4f841bbc1be3d71a6e39c75a2041594dee7f64eac8810758a3a226d36bffbc",
+    "intent_mappings": "sha256:85c471a3c699f0e092c1e0069db275e3de52f0928d11c6f0d29c47d38b2b524f",
+    "convergence": "sha256:7ee7606e75038a0b284deb90ed80e3ef9b3c6541027150264cf5bb45a266d6fe",
+    "decision_space": "sha256:73e33689a3391b962481287782a0bfaa51157f9038455f149fed1d6baadb0cdd",
+    "message_identifiers": "sha256:bcc549eaeff2c3ce10f29c1d9773f49ae753cd552dc81e9c3c90ab5786f78b72",
+    "extraction_summary": "sha256:e192840f41d5f8b2c0a64fdcf576b5d67c2d8bd48eb4c35cc8e2785b8d7c6b46",
+    "source_extract": "sha256:d6fbb010f5c60a937a3ad300facf768a2876ecf7fd9636afce731545a8cf3652",
+    "crosswalk": "sha256:6f6496a09124391826a4f52f303fb304c30f465c382d7753a89e2fde82d75c8d"
+  },
+  "precedence": [],
+  "denyWins": true,
+  "nbf": "2026-04-14T00:00:00Z",
+  "exp": "2031-04-14T00:00:00Z",
+  "revEpoch": 1
+}

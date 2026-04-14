@@ -1,0 +1,58 @@
+{
+  "schema_version": "1.0",
+  "domain": "dssc-catalog-discovery",
+  "pack_id": "dssc-catalog-discovery-demo-0.1.0",
+  "version": "0.1.0",
+  "out_of_scope_behavior": "escalate",
+  "state_model": {
+    "states": [
+      "ingress",
+      "validated",
+      "classified",
+      "authorized",
+      "responded",
+      "rejected",
+      "escalated"
+    ],
+    "initial_state": "ingress",
+    "terminal_states": [
+      "responded",
+      "rejected",
+      "escalated"
+    ]
+  },
+  "intent_resource_map": {
+    "dssc.catalog.publish_offering.v1": [
+      "GovernanceDecision"
+    ],
+    "dssc.catalog.update_offering.v1": [
+      "GovernanceDecision"
+    ],
+    "dssc.catalog.remove_offering.v1": [
+      "GovernanceDecision"
+    ],
+    "dssc.catalog.query_offering.v1": [
+      "GovernanceDecision"
+    ]
+  },
+  "required_fields_by_intent": {
+    "dssc.catalog.publish_offering.v1": [
+      "policy_snapshot_id"
+    ],
+    "dssc.catalog.update_offering.v1": [
+      "policy_snapshot_id"
+    ],
+    "dssc.catalog.remove_offering.v1": [
+      "policy_snapshot_id"
+    ],
+    "dssc.catalog.query_offering.v1": [
+      "policy_snapshot_id"
+    ]
+  },
+  "deny_reason_codes": [
+    "CIC_REQUIRED_FIELD_MISSING",
+    "DENY_POLICY_REFERENCE_UNBOUND",
+    "ESCALATE_OUT_OF_SCOPE_INTENT",
+    "PSC_BUNDLE_COMMIT_MISMATCH"
+  ]
+}

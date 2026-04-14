@@ -1,0 +1,65 @@
+{
+  "schema_version": "1.0",
+  "domain": "dssc-eudi-attestation-admission",
+  "pack_id": "dssc-eudi-attestation-admission-demo-0.1.0",
+  "version": "0.1.0",
+  "out_of_scope_behavior": "escalate",
+  "state_model": {
+    "states": [
+      "ingress",
+      "validated",
+      "classified",
+      "authorized",
+      "responded",
+      "rejected",
+      "escalated"
+    ],
+    "initial_state": "ingress",
+    "terminal_states": [
+      "responded",
+      "rejected",
+      "escalated"
+    ]
+  },
+  "intent_resource_map": {
+    "dssc.identity.evaluate_attestation.v1": [
+      "GovernanceDecision"
+    ],
+    "dssc.identity.verify_trust_anchor.v1": [
+      "GovernanceDecision"
+    ]
+  },
+  "required_fields_by_intent": {
+    "dssc.identity.evaluate_attestation.v1": [
+      "policy_snapshot_id",
+      "vp_token",
+      "credential_type",
+      "issuer_id",
+      "subject_id",
+      "assurance_level",
+      "attestation_class",
+      "valid_from",
+      "valid_until",
+      "revocation_status"
+    ],
+    "dssc.identity.verify_trust_anchor.v1": [
+      "policy_snapshot_id",
+      "vp_token",
+      "credential_type",
+      "issuer_id",
+      "subject_id",
+      "assurance_level",
+      "attestation_class",
+      "valid_from",
+      "valid_until",
+      "revocation_status"
+    ]
+  },
+  "deny_reason_codes": [
+    "DENY_CREDENTIAL_EXPIRED",
+    "DENY_CREDENTIAL_REVOKED",
+    "DENY_ATTESTATION_LEVEL_INSUFFICIENT",
+    "DENY_TRUST_ANCHOR_UNVERIFIED",
+    "PSC_BUNDLE_COMMIT_MISMATCH"
+  ]
+}

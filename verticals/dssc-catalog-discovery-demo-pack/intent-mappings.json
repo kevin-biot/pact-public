@@ -1,0 +1,26 @@
+{
+  "schema_version": "1.0",
+  "domain": "dssc-catalog-discovery",
+  "mappings": [
+    {
+      "concept_uri": "dssc:GovernanceSurface",
+      "intent_class": "dssc.catalog.publish_offering.v1",
+      "confidence_floor": 0.76
+    },
+    {
+      "concept_uri": "dssc:GovernanceSurface",
+      "intent_class": "dssc.catalog.update_offering.v1",
+      "confidence_floor": 0.76
+    },
+    {
+      "concept_uri": "dssc:GovernanceSurface",
+      "intent_class": "dssc.catalog.remove_offering.v1",
+      "confidence_floor": 0.76
+    },
+    {
+      "concept_uri": "dssc:GovernanceSurface",
+      "intent_class": "dssc.catalog.query_offering.v1",
+      "confidence_floor": 0.76
+    }
+  ]
+}

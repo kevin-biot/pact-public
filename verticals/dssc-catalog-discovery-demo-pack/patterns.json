@@ -1,0 +1,42 @@
+{
+  "schema_version": "1.0",
+  "domain": "dssc-catalog-discovery",
+  "patterns": [
+    {
+      "id": "dssc_catalog_publish_offering_v1",
+      "concept_uri": "dssc:GovernanceSurface",
+      "entity_type": "intent_hint",
+      "regex": "(?i)\\bdssc\\.catalog\\.publish_offering\\.v1\\b",
+      "examples": [
+        "dssc.catalog.publish_offering.v1"
+      ]
+    },
+    {
+      "id": "dssc_catalog_update_offering_v1",
+      "concept_uri": "dssc:GovernanceSurface",
+      "entity_type": "intent_hint",
+      "regex": "(?i)\\bdssc\\.catalog\\.update_offering\\.v1\\b",
+      "examples": [
+        "dssc.catalog.update_offering.v1"
+      ]
+    },
+    {
+      "id": "dssc_catalog_remove_offering_v1",
+      "concept_uri": "dssc:GovernanceSurface",
+      "entity_type": "intent_hint",
+      "regex": "(?i)\\bdssc\\.catalog\\.remove_offering\\.v1\\b",
+      "examples": [
+        "dssc.catalog.remove_offering.v1"
+      ]
+    },
+    {
+      "id": "dssc_catalog_query_offering_v1",
+      "concept_uri": "dssc:GovernanceSurface",
+      "entity_type": "intent_hint",
+      "regex": "(?i)\\bdssc\\.catalog\\.query_offering\\.v1\\b",
+      "examples": [
+        "dssc.catalog.query_offering.v1"
+      ]
+    }
+  ]
+}

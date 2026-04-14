@@ -1,0 +1,15 @@
+{
+  "schema_version": "1.0",
+  "generated_at_utc": "2026-04-14T12:00:00Z",
+  "vertical": "dssc-participant-onboarding-lifecycle-demo-pack",
+  "bundle_id": "dssc-participant-onboarding-lifecycle-source-2026-04-14",
+  "sources": [
+    {
+      "id": "canonical-source-1",
+      "title": "Canonical source 1",
+      "url": "https://blueprint.dssc.eu/",
+      "type": "canonical_reference",
+      "status": "referenced"
+    }
+  ]
+}

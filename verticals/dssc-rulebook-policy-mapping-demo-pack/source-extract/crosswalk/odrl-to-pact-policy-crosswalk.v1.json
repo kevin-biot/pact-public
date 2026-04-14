@@ -1,0 +1,48 @@
+{
+  "schema_version": "0.1",
+  "generated_at_utc": "2026-04-14T12:00:00Z",
+  "domain": "dssc-rulebook-policy-mapping",
+  "crosswalk": "odrl-to-pact-policy-crosswalk.v1.json",
+  "mappings": [
+    {
+      "source_term": "rulebook_clause_id",
+      "pact_concept": "dssc:rulebook_clause_id",
+      "relation": "closeMatch"
+    },
+    {
+      "source_term": "odrl_permission",
+      "pact_concept": "dssc:odrl_permission",
+      "relation": "closeMatch"
+    },
+    {
+      "source_term": "odrl_prohibition",
+      "pact_concept": "dssc:odrl_prohibition",
+      "relation": "closeMatch"
+    },
+    {
+      "source_term": "odrl_obligation",
+      "pact_concept": "dssc:odrl_obligation",
+      "relation": "closeMatch"
+    },
+    {
+      "source_term": "constraint_expression",
+      "pact_concept": "dssc:constraint_expression",
+      "relation": "closeMatch"
+    },
+    {
+      "source_term": "intent_class",
+      "pact_concept": "dssc:intent_class",
+      "relation": "closeMatch"
+    },
+    {
+      "source_term": "deny_reason_code",
+      "pact_concept": "dssc:deny_reason_code",
+      "relation": "closeMatch"
+    },
+    {
+      "source_term": "obligation_state",
+      "pact_concept": "dssc:obligation_state",
+      "relation": "closeMatch"
+    }
+  ]
+}

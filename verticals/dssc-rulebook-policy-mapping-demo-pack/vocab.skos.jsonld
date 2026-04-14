@@ -1,0 +1,56 @@
+{
+  "@context": {
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "dssc": "https://pact.example/ontology/dssc-rulebook-policy-mapping/"
+  },
+  "concepts": [
+    {
+      "id": "dssc:GovernanceSurface",
+      "prefLabel": "Governance Surface"
+    },
+    {
+      "id": "dssc:rulebook_clause_id",
+      "prefLabel": "rulebook_clause_id"
+    },
+    {
+      "id": "dssc:odrl_permission",
+      "prefLabel": "odrl_permission",
+      "broader": "dssc:GovernanceSurface"
+    },
+    {
+      "id": "dssc:odrl_prohibition",
+      "prefLabel": "odrl_prohibition",
+      "broader": "dssc:GovernanceSurface"
+    },
+    {
+      "id": "dssc:odrl_obligation",
+      "prefLabel": "odrl_obligation",
+      "broader": "dssc:GovernanceSurface"
+    },
+    {
+      "id": "dssc:constraint_expression",
+      "prefLabel": "constraint_expression",
+      "broader": "dssc:GovernanceSurface"
+    },
+    {
+      "id": "dssc:intent_class",
+      "prefLabel": "intent_class",
+      "broader": "dssc:GovernanceSurface"
+    },
+    {
+      "id": "dssc:deny_reason_code",
+      "prefLabel": "deny_reason_code",
+      "broader": "dssc:GovernanceSurface"
+    },
+    {
+      "id": "dssc:obligation_state",
+      "prefLabel": "obligation_state",
+      "broader": "dssc:GovernanceSurface"
+    },
+    {
+      "id": "dssc:policy_snapshot_id",
+      "prefLabel": "policy_snapshot_id",
+      "broader": "dssc:GovernanceSurface"
+    }
+  ]
+}

@@ -1,0 +1,103 @@
+{
+  "@context": {
+    "dssc": "https://pact.example/ontology/dssc-bilateral-challenge-receipt/"
+  },
+  "entries": [
+    {
+      "label": "challenge_id",
+      "alt": [],
+      "properties": {
+        "entity_type": "concept",
+        "description": "Canonical concept for dssc-bilateral-challenge-receipt"
+      }
+    },
+    {
+      "label": "origin_jurisdiction",
+      "alt": [],
+      "properties": {
+        "entity_type": "concept",
+        "description": "Canonical concept for dssc-bilateral-challenge-receipt"
+      }
+    },
+    {
+      "label": "target_jurisdiction",
+      "alt": [],
+      "properties": {
+        "entity_type": "concept",
+        "description": "Canonical concept for dssc-bilateral-challenge-receipt"
+      }
+    },
+    {
+      "label": "payload_hash",
+      "alt": [],
+      "properties": {
+        "entity_type": "concept",
+        "description": "Canonical concept for dssc-bilateral-challenge-receipt"
+      }
+    },
+    {
+      "label": "policy_snapshot_origin",
+      "alt": [],
+      "properties": {
+        "entity_type": "concept",
+        "description": "Canonical concept for dssc-bilateral-challenge-receipt"
+      }
+    },
+    {
+      "label": "rationale_ref_origin",
+      "alt": [],
+      "properties": {
+        "entity_type": "concept",
+        "description": "Canonical concept for dssc-bilateral-challenge-receipt"
+      }
+    },
+    {
+      "label": "receipt_id",
+      "alt": [],
+      "properties": {
+        "entity_type": "concept",
+        "description": "Canonical concept for dssc-bilateral-challenge-receipt"
+      }
+    },
+    {
+      "label": "acceptance_hash",
+      "alt": [],
+      "properties": {
+        "entity_type": "concept",
+        "description": "Canonical concept for dssc-bilateral-challenge-receipt"
+      }
+    },
+    {
+      "label": "policy_snapshot_target",
+      "alt": [],
+      "properties": {
+        "entity_type": "concept",
+        "description": "Canonical concept for dssc-bilateral-challenge-receipt"
+      }
+    },
+    {
+      "label": "rationale_ref_target",
+      "alt": [],
+      "properties": {
+        "entity_type": "concept",
+        "description": "Canonical concept for dssc-bilateral-challenge-receipt"
+      }
+    },
+    {
+      "label": "status",
+      "alt": [],
+      "properties": {
+        "entity_type": "concept",
+        "description": "Canonical concept for dssc-bilateral-challenge-receipt"
+      }
+    },
+    {
+      "label": "correlation_id",
+      "alt": [],
+      "properties": {
+        "entity_type": "concept",
+        "description": "Canonical concept for dssc-bilateral-challenge-receipt"
+      }
+    }
+  ]
+}

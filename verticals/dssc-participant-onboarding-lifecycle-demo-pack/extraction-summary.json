@@ -1,0 +1,11 @@
+{
+  "schema_version": "0.1",
+  "generated_at_utc": "2026-04-14T12:00:00Z",
+  "profile": "dssc-participant-onboarding-lifecycle-demo-pack",
+  "domain": "dssc-participant-onboarding-lifecycle",
+  "source_spec": "DSSC source-grounded pack spec and crosswalk notes",
+  "source_artifact_count": 1,
+  "mapped_symbol_count": 7,
+  "mapped_field_count": 1,
+  "note": "Stage-4 skeleton pack authored from stage-3 spec artifacts."
+}

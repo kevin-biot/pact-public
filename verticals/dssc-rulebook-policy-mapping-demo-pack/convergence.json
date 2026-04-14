@@ -1,0 +1,28 @@
+{
+  "schema_version": "1.0",
+  "domain": "dssc-rulebook-policy-mapping",
+  "thresholds": {
+    "overall_min_pass_rate": 1,
+    "require_critical_pass": true
+  },
+  "cases": [
+    {
+      "id": "case_1",
+      "phrase": "Evaluate access request against mapped rulebook/ODRL policy snapshot.",
+      "expect": "dssc.policy.evaluate_access.v1",
+      "critical": true
+    },
+    {
+      "id": "case_2",
+      "phrase": "Evaluate post-access usage obligations and prohibitions.",
+      "expect": "dssc.policy.evaluate_usage.v1",
+      "critical": true
+    },
+    {
+      "id": "case_3",
+      "phrase": "Deterministically resolve policy conflicts with deny-wins precedence.",
+      "expect": "dssc.policy.resolve_conflict.v1",
+      "critical": true
+    }
+  ]
+}

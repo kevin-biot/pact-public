@@ -1,0 +1,14 @@
+{
+  "@context": {
+    "dssc": "https://pact.example/ontology/dssc-catalog-discovery/",
+    "intentClass": "dssc:intentClass",
+    "policySnapshotId": "dssc:policySnapshotId",
+    "reasonCode": "dssc:reasonCode",
+    "correlationId": "dssc:correlationId",
+    "participantId": "dssc:participantId",
+    "attestationLevel": "dssc:attestationLevel",
+    "lifecycleState": "dssc:lifecycleState",
+    "challengeId": "dssc:challengeId",
+    "receiptId": "dssc:receiptId"
+  }
+}

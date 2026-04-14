@@ -1,0 +1,21 @@
+{
+  "schema_version": "1.0",
+  "domain": "dssc-rulebook-policy-mapping",
+  "mappings": [
+    {
+      "concept_uri": "dssc:GovernanceSurface",
+      "intent_class": "dssc.policy.evaluate_access.v1",
+      "confidence_floor": 0.76
+    },
+    {
+      "concept_uri": "dssc:GovernanceSurface",
+      "intent_class": "dssc.policy.evaluate_usage.v1",
+      "confidence_floor": 0.76
+    },
+    {
+      "concept_uri": "dssc:GovernanceSurface",
+      "intent_class": "dssc.policy.resolve_conflict.v1",
+      "confidence_floor": 0.76
+    }
+  ]
+}

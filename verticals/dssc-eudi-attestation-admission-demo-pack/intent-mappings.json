@@ -1,0 +1,16 @@
+{
+  "schema_version": "1.0",
+  "domain": "dssc-eudi-attestation-admission",
+  "mappings": [
+    {
+      "concept_uri": "dssc:GovernanceSurface",
+      "intent_class": "dssc.identity.evaluate_attestation.v1",
+      "confidence_floor": 0.76
+    },
+    {
+      "concept_uri": "dssc:GovernanceSurface",
+      "intent_class": "dssc.identity.verify_trust_anchor.v1",
+      "confidence_floor": 0.76
+    }
+  ]
+}

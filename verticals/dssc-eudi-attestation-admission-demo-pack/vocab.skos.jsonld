@@ -1,0 +1,21 @@
+{
+  "@context": {
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "dssc": "https://pact.example/ontology/dssc-eudi-attestation-admission/"
+  },
+  "concepts": [
+    {
+      "id": "dssc:GovernanceSurface",
+      "prefLabel": "Governance Surface"
+    },
+    {
+      "id": "dssc:GovernanceDecision",
+      "prefLabel": "GovernanceDecision"
+    },
+    {
+      "id": "dssc:PolicySnapshotBinding",
+      "prefLabel": "PolicySnapshotBinding",
+      "broader": "dssc:GovernanceSurface"
+    }
+  ]
+}

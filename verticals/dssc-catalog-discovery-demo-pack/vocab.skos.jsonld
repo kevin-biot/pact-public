@@ -1,0 +1,46 @@
+{
+  "@context": {
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "dssc": "https://pact.example/ontology/dssc-catalog-discovery/"
+  },
+  "concepts": [
+    {
+      "id": "dssc:GovernanceSurface",
+      "prefLabel": "Governance Surface"
+    },
+    {
+      "id": "dssc:Catalog",
+      "prefLabel": "Catalog"
+    },
+    {
+      "id": "dssc:Offering",
+      "prefLabel": "Offering",
+      "broader": "dssc:GovernanceSurface"
+    },
+    {
+      "id": "dssc:DatasetMetadata",
+      "prefLabel": "DatasetMetadata",
+      "broader": "dssc:GovernanceSurface"
+    },
+    {
+      "id": "dssc:DataServiceEndpoint",
+      "prefLabel": "DataServiceEndpoint",
+      "broader": "dssc:GovernanceSurface"
+    },
+    {
+      "id": "dssc:UsagePolicyReference",
+      "prefLabel": "UsagePolicyReference",
+      "broader": "dssc:GovernanceSurface"
+    },
+    {
+      "id": "dssc:ParticipantVisibilityScope",
+      "prefLabel": "ParticipantVisibilityScope",
+      "broader": "dssc:GovernanceSurface"
+    },
+    {
+      "id": "dssc:LifecycleState",
+      "prefLabel": "LifecycleState",
+      "broader": "dssc:GovernanceSurface"
+    }
+  ]
+}

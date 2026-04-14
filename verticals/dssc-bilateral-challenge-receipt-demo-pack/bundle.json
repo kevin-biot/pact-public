@@ -1,0 +1,27 @@
+{
+  "id": "dssc-bilateral-challenge-receipt-demo-0.1.0",
+  "domain": "dssc-bilateral-challenge-receipt",
+  "version": "0.1.0",
+  "providerId": "ontology:pact-public:trust",
+  "trustTier": "Tier1",
+  "policySnapshotId": "sha256:25404ebf19751b396c553b0b051cc2b02224557a78982ef941675829d4b9a289",
+  "files": {
+    "context": "sha256:57ee9bfcc6cee916fe9b9a063ddbae340b5281da99ea6d71934e6029fa473a8a",
+    "vocab": "sha256:239de3ab42ca474af930b6b355e684d03f1b6c0bd584686d2580dd124fb82caa",
+    "shapes": "sha256:564a1b47a6319a00f9c7324ac90b878658bf561954bd80f0738ec80cf82a8906",
+    "thesaurus": "sha256:eadf95598ce932dc5b705810eb5449399351d570651fc4f7dbc5345213bfb8f1",
+    "thesaurus_local": "sha256:70e1cbeadb783dd8c22c069c006825aaeea1d5330c6e47e4f638f9ff6c93245d",
+    "patterns": "sha256:de358d02d2a8f7c205e7f048b31eb4641af2f7f45567b5fc9d591af80c61fb79",
+    "intent_mappings": "sha256:2ac1fbeb146ede17884f48710cea33d96c777f67979604626d5464f90099eb4b",
+    "convergence": "sha256:7ea43025c0c663261fad900e054b0e2c078053399f253c229192449d4f046f69",
+    "decision_space": "sha256:25404ebf19751b396c553b0b051cc2b02224557a78982ef941675829d4b9a289",
+    "message_identifiers": "sha256:53d9016ef5f2fbac9edfbd3a9b2a5db11ff54ce1dacfc9a12756234d13db4600",
+    "extraction_summary": "sha256:5aa0c2cdd63069e98fb16799f917b128b5e22f0925f74833d8eab394991b8382",
+    "source_extract": "sha256:cd02feff33c99d191111a03d927fa811d26ac434a10033fd1b079209f7605a3b"
+  },
+  "precedence": [],
+  "denyWins": true,
+  "nbf": "2026-04-14T00:00:00Z",
+  "exp": "2031-04-14T00:00:00Z",
+  "revEpoch": 1
+}

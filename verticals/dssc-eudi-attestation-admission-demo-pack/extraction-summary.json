@@ -1,0 +1,11 @@
+{
+  "schema_version": "0.1",
+  "generated_at_utc": "2026-04-14T12:00:00Z",
+  "profile": "dssc-eudi-attestation-admission-demo-pack",
+  "domain": "dssc-eudi-attestation-admission",
+  "source_spec": "DSSC source-grounded pack spec and crosswalk notes",
+  "source_artifact_count": 5,
+  "mapped_symbol_count": 2,
+  "mapped_field_count": 10,
+  "note": "Stage-4 skeleton pack authored from stage-3 spec artifacts."
+}

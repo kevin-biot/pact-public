@@ -1,0 +1,22 @@
+{
+  "schema_version": "1.0",
+  "domain": "dssc-eudi-attestation-admission",
+  "thresholds": {
+    "overall_min_pass_rate": 1,
+    "require_critical_pass": true
+  },
+  "cases": [
+    {
+      "id": "case_1",
+      "phrase": "Evaluate attestation and corridor admission eligibility.",
+      "expect": "dssc.identity.evaluate_attestation.v1",
+      "critical": true
+    },
+    {
+      "id": "case_2",
+      "phrase": "Verify credential issuer trust anchor and revocation status.",
+      "expect": "dssc.identity.verify_trust_anchor.v1",
+      "critical": true
+    }
+  ]
+}

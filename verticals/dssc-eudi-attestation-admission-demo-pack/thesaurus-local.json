@@ -1,0 +1,35 @@
+{
+  "schema_version": "1.0",
+  "domain": "dssc-eudi-attestation-admission",
+  "last_modified": "2026-04-14",
+  "concepts": [
+    {
+      "concept_id": "dssc-eudi-attestation-admission.governancedecision.v1",
+      "preferred_term": "GovernanceDecision",
+      "synonyms": [],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "GovernanceSurface",
+      "narrower": [],
+      "source_refs": [
+        "dssc-canonical-source-catalog"
+      ],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "dssc-eudi-attestation-admission.policysnapshotbinding.v1",
+      "preferred_term": "PolicySnapshotBinding",
+      "synonyms": [],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "GovernanceSurface",
+      "narrower": [],
+      "source_refs": [
+        "dssc-canonical-source-catalog"
+      ],
+      "ner_provenance": null
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "@context": {
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "dssc": "https://pact.example/ontology/dssc-participant-onboarding-lifecycle/"
+  },
+  "concepts": [
+    {
+      "id": "dssc:GovernanceSurface",
+      "prefLabel": "Governance Surface"
+    },
+    {
+      "id": "dssc:candidate",
+      "prefLabel": "candidate"
+    },
+    {
+      "id": "dssc:pending_review",
+      "prefLabel": "pending_review",
+      "broader": "dssc:GovernanceSurface"
+    },
+    {
+      "id": "dssc:admitted",
+      "prefLabel": "admitted",
+      "broader": "dssc:GovernanceSurface"
+    },
+    {
+      "id": "dssc:restricted",
+      "prefLabel": "restricted",
+      "broader": "dssc:GovernanceSurface"
+    },
+    {
+      "id": "dssc:suspended",
+      "prefLabel": "suspended",
+      "broader": "dssc:GovernanceSurface"
+    },
+    {
+      "id": "dssc:revoked",
+      "prefLabel": "revoked",
+      "broader": "dssc:GovernanceSurface"
+    },
+    {
+      "id": "dssc:reinstated",
+      "prefLabel": "reinstated",
+      "broader": "dssc:GovernanceSurface"
+    }
+  ]
+}

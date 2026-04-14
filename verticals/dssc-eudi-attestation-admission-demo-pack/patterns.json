@@ -1,0 +1,24 @@
+{
+  "schema_version": "1.0",
+  "domain": "dssc-eudi-attestation-admission",
+  "patterns": [
+    {
+      "id": "dssc_identity_evaluate_attestation_v1",
+      "concept_uri": "dssc:GovernanceSurface",
+      "entity_type": "intent_hint",
+      "regex": "(?i)\\bdssc\\.identity\\.evaluate_attestation\\.v1\\b",
+      "examples": [
+        "dssc.identity.evaluate_attestation.v1"
+      ]
+    },
+    {
+      "id": "dssc_identity_verify_trust_anchor_v1",
+      "concept_uri": "dssc:GovernanceSurface",
+      "entity_type": "intent_hint",
+      "regex": "(?i)\\bdssc\\.identity\\.verify_trust_anchor\\.v1\\b",
+      "examples": [
+        "dssc.identity.verify_trust_anchor.v1"
+      ]
+    }
+  ]
+}

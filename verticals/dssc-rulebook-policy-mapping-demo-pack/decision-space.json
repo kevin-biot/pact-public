@@ -1,0 +1,69 @@
+{
+  "schema_version": "1.0",
+  "domain": "dssc-rulebook-policy-mapping",
+  "pack_id": "dssc-rulebook-policy-mapping-demo-0.1.0",
+  "version": "0.1.0",
+  "out_of_scope_behavior": "escalate",
+  "state_model": {
+    "states": [
+      "ingress",
+      "validated",
+      "classified",
+      "authorized",
+      "responded",
+      "rejected",
+      "escalated"
+    ],
+    "initial_state": "ingress",
+    "terminal_states": [
+      "responded",
+      "rejected",
+      "escalated"
+    ]
+  },
+  "intent_resource_map": {
+    "dssc.policy.evaluate_access.v1": [
+      "GovernanceDecision"
+    ],
+    "dssc.policy.evaluate_usage.v1": [
+      "GovernanceDecision"
+    ],
+    "dssc.policy.resolve_conflict.v1": [
+      "GovernanceDecision"
+    ]
+  },
+  "required_fields_by_intent": {
+    "dssc.policy.evaluate_access.v1": [
+      "policy_snapshot_id",
+      "rulebook_clause_id",
+      "odrl_permission",
+      "odrl_prohibition",
+      "odrl_obligation",
+      "constraint_expression"
+    ],
+    "dssc.policy.evaluate_usage.v1": [
+      "policy_snapshot_id",
+      "rulebook_clause_id",
+      "odrl_permission",
+      "odrl_prohibition",
+      "odrl_obligation",
+      "constraint_expression"
+    ],
+    "dssc.policy.resolve_conflict.v1": [
+      "policy_snapshot_id",
+      "rulebook_clause_id",
+      "odrl_permission",
+      "odrl_prohibition",
+      "odrl_obligation",
+      "constraint_expression"
+    ]
+  },
+  "deny_reason_codes": [
+    "DENY_RULEBOOK_PROHIBITION",
+    "DENY_POLICY_CONFLICT_DENY_WINS",
+    "DENY_POLICY_SNAPSHOT_UNBOUND",
+    "DENY_CONSTRAINT_UNMAPPED",
+    "DENY_OBLIGATION_UNSATISFIED",
+    "PSC_BUNDLE_COMMIT_MISMATCH"
+  ]
+}

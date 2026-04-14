@@ -1,0 +1,79 @@
+{
+  "@context": {
+    "dssc": "https://pact.example/ontology/dssc-rulebook-policy-mapping/"
+  },
+  "entries": [
+    {
+      "label": "rulebook_clause_id",
+      "alt": [],
+      "properties": {
+        "entity_type": "concept",
+        "description": "Canonical concept for dssc-rulebook-policy-mapping"
+      }
+    },
+    {
+      "label": "odrl_permission",
+      "alt": [],
+      "properties": {
+        "entity_type": "concept",
+        "description": "Canonical concept for dssc-rulebook-policy-mapping"
+      }
+    },
+    {
+      "label": "odrl_prohibition",
+      "alt": [],
+      "properties": {
+        "entity_type": "concept",
+        "description": "Canonical concept for dssc-rulebook-policy-mapping"
+      }
+    },
+    {
+      "label": "odrl_obligation",
+      "alt": [],
+      "properties": {
+        "entity_type": "concept",
+        "description": "Canonical concept for dssc-rulebook-policy-mapping"
+      }
+    },
+    {
+      "label": "constraint_expression",
+      "alt": [],
+      "properties": {
+        "entity_type": "concept",
+        "description": "Canonical concept for dssc-rulebook-policy-mapping"
+      }
+    },
+    {
+      "label": "intent_class",
+      "alt": [],
+      "properties": {
+        "entity_type": "concept",
+        "description": "Canonical concept for dssc-rulebook-policy-mapping"
+      }
+    },
+    {
+      "label": "deny_reason_code",
+      "alt": [],
+      "properties": {
+        "entity_type": "concept",
+        "description": "Canonical concept for dssc-rulebook-policy-mapping"
+      }
+    },
+    {
+      "label": "obligation_state",
+      "alt": [],
+      "properties": {
+        "entity_type": "concept",
+        "description": "Canonical concept for dssc-rulebook-policy-mapping"
+      }
+    },
+    {
+      "label": "policy_snapshot_id",
+      "alt": [],
+      "properties": {
+        "entity_type": "concept",
+        "description": "Canonical concept for dssc-rulebook-policy-mapping"
+      }
+    }
+  ]
+}

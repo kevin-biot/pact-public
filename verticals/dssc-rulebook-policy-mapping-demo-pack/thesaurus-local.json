@@ -1,0 +1,133 @@
+{
+  "schema_version": "1.0",
+  "domain": "dssc-rulebook-policy-mapping",
+  "last_modified": "2026-04-14",
+  "concepts": [
+    {
+      "concept_id": "dssc-rulebook-policy-mapping.rulebook.clause.id.v1",
+      "preferred_term": "rulebook_clause_id",
+      "synonyms": [],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "GovernanceSurface",
+      "narrower": [],
+      "source_refs": [
+        "dssc-canonical-source-catalog"
+      ],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "dssc-rulebook-policy-mapping.odrl.permission.v1",
+      "preferred_term": "odrl_permission",
+      "synonyms": [],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "GovernanceSurface",
+      "narrower": [],
+      "source_refs": [
+        "dssc-canonical-source-catalog"
+      ],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "dssc-rulebook-policy-mapping.odrl.prohibition.v1",
+      "preferred_term": "odrl_prohibition",
+      "synonyms": [],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "GovernanceSurface",
+      "narrower": [],
+      "source_refs": [
+        "dssc-canonical-source-catalog"
+      ],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "dssc-rulebook-policy-mapping.odrl.obligation.v1",
+      "preferred_term": "odrl_obligation",
+      "synonyms": [],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "GovernanceSurface",
+      "narrower": [],
+      "source_refs": [
+        "dssc-canonical-source-catalog"
+      ],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "dssc-rulebook-policy-mapping.constraint.expression.v1",
+      "preferred_term": "constraint_expression",
+      "synonyms": [],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "GovernanceSurface",
+      "narrower": [],
+      "source_refs": [
+        "dssc-canonical-source-catalog"
+      ],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "dssc-rulebook-policy-mapping.intent.class.v1",
+      "preferred_term": "intent_class",
+      "synonyms": [],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "GovernanceSurface",
+      "narrower": [],
+      "source_refs": [
+        "dssc-canonical-source-catalog"
+      ],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "dssc-rulebook-policy-mapping.deny.reason.code.v1",
+      "preferred_term": "deny_reason_code",
+      "synonyms": [],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "GovernanceSurface",
+      "narrower": [],
+      "source_refs": [
+        "dssc-canonical-source-catalog"
+      ],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "dssc-rulebook-policy-mapping.obligation.state.v1",
+      "preferred_term": "obligation_state",
+      "synonyms": [],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "GovernanceSurface",
+      "narrower": [],
+      "source_refs": [
+        "dssc-canonical-source-catalog"
+      ],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "dssc-rulebook-policy-mapping.policy.snapshot.id.v1",
+      "preferred_term": "policy_snapshot_id",
+      "synonyms": [],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "GovernanceSurface",
+      "narrower": [],
+      "source_refs": [
+        "dssc-canonical-source-catalog"
+      ],
+      "ner_provenance": null
+    }
+  ]
+}

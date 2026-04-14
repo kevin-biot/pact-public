@@ -1,0 +1,9 @@
+{
+  "schema_version": "0.1",
+  "generated_at_utc": "2026-04-14T12:00:00Z",
+  "profile": "dssc-catalog-discovery-demo-pack",
+  "domain": "dssc-catalog-discovery",
+  "message_identifiers": [],
+  "message_types": [],
+  "note": "No ISO-style message identifiers for this DSSC governance demo pack."
+}

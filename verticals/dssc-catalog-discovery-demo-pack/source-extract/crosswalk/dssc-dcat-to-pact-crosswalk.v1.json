@@ -1,0 +1,43 @@
+{
+  "schema_version": "0.1",
+  "generated_at_utc": "2026-04-14T12:00:00Z",
+  "domain": "dssc-catalog-discovery",
+  "crosswalk": "dssc-dcat-to-pact-crosswalk.v1.json",
+  "mappings": [
+    {
+      "source_term": "Catalog",
+      "pact_concept": "dssc:Catalog",
+      "relation": "closeMatch"
+    },
+    {
+      "source_term": "Offering",
+      "pact_concept": "dssc:Offering",
+      "relation": "closeMatch"
+    },
+    {
+      "source_term": "DatasetMetadata",
+      "pact_concept": "dssc:DatasetMetadata",
+      "relation": "closeMatch"
+    },
+    {
+      "source_term": "DataServiceEndpoint",
+      "pact_concept": "dssc:DataServiceEndpoint",
+      "relation": "closeMatch"
+    },
+    {
+      "source_term": "UsagePolicyReference",
+      "pact_concept": "dssc:UsagePolicyReference",
+      "relation": "closeMatch"
+    },
+    {
+      "source_term": "ParticipantVisibilityScope",
+      "pact_concept": "dssc:ParticipantVisibilityScope",
+      "relation": "closeMatch"
+    },
+    {
+      "source_term": "LifecycleState",
+      "pact_concept": "dssc:LifecycleState",
+      "relation": "closeMatch"
+    }
+  ]
+}

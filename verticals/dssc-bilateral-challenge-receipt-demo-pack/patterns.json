@@ -1,0 +1,24 @@
+{
+  "schema_version": "1.0",
+  "domain": "dssc-bilateral-challenge-receipt",
+  "patterns": [
+    {
+      "id": "dssc_governance_submit_challenge_v1",
+      "concept_uri": "dssc:GovernanceSurface",
+      "entity_type": "intent_hint",
+      "regex": "(?i)\\bdssc\\.governance\\.submit_challenge\\.v1\\b",
+      "examples": [
+        "dssc.governance.submit_challenge.v1"
+      ]
+    },
+    {
+      "id": "dssc_governance_issue_receipt_v1",
+      "concept_uri": "dssc:GovernanceSurface",
+      "entity_type": "intent_hint",
+      "regex": "(?i)\\bdssc\\.governance\\.issue_receipt\\.v1\\b",
+      "examples": [
+        "dssc.governance.issue_receipt.v1"
+      ]
+    }
+  ]
+}

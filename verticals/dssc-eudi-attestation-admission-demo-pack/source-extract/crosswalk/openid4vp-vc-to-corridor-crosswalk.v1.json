@@ -1,0 +1,18 @@
+{
+  "schema_version": "0.1",
+  "generated_at_utc": "2026-04-14T12:00:00Z",
+  "domain": "dssc-eudi-attestation-admission",
+  "crosswalk": "openid4vp-vc-to-corridor-crosswalk.v1.json",
+  "mappings": [
+    {
+      "source_term": "GovernanceDecision",
+      "pact_concept": "dssc:GovernanceDecision",
+      "relation": "closeMatch"
+    },
+    {
+      "source_term": "PolicySnapshotBinding",
+      "pact_concept": "dssc:PolicySnapshotBinding",
+      "relation": "closeMatch"
+    }
+  ]
+}

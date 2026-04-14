@@ -1,0 +1,105 @@
+{
+  "schema_version": "1.0",
+  "domain": "dssc-participant-onboarding-lifecycle",
+  "last_modified": "2026-04-14",
+  "concepts": [
+    {
+      "concept_id": "dssc-participant-onboarding-lifecycle.candidate.v1",
+      "preferred_term": "candidate",
+      "synonyms": [],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "GovernanceSurface",
+      "narrower": [],
+      "source_refs": [
+        "dssc-canonical-source-catalog"
+      ],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "dssc-participant-onboarding-lifecycle.pending.review.v1",
+      "preferred_term": "pending_review",
+      "synonyms": [],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "GovernanceSurface",
+      "narrower": [],
+      "source_refs": [
+        "dssc-canonical-source-catalog"
+      ],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "dssc-participant-onboarding-lifecycle.admitted.v1",
+      "preferred_term": "admitted",
+      "synonyms": [],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "GovernanceSurface",
+      "narrower": [],
+      "source_refs": [
+        "dssc-canonical-source-catalog"
+      ],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "dssc-participant-onboarding-lifecycle.restricted.v1",
+      "preferred_term": "restricted",
+      "synonyms": [],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "GovernanceSurface",
+      "narrower": [],
+      "source_refs": [
+        "dssc-canonical-source-catalog"
+      ],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "dssc-participant-onboarding-lifecycle.suspended.v1",
+      "preferred_term": "suspended",
+      "synonyms": [],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "GovernanceSurface",
+      "narrower": [],
+      "source_refs": [
+        "dssc-canonical-source-catalog"
+      ],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "dssc-participant-onboarding-lifecycle.revoked.v1",
+      "preferred_term": "revoked",
+      "synonyms": [],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "GovernanceSurface",
+      "narrower": [],
+      "source_refs": [
+        "dssc-canonical-source-catalog"
+      ],
+      "ner_provenance": null
+    },
+    {
+      "concept_id": "dssc-participant-onboarding-lifecycle.reinstated.v1",
+      "preferred_term": "reinstated",
+      "synonyms": [],
+      "register_variants": {},
+      "domain_vocabulary": {},
+      "translations": {},
+      "broader": "GovernanceSurface",
+      "narrower": [],
+      "source_refs": [
+        "dssc-canonical-source-catalog"
+      ],
+      "ner_provenance": null
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "schema_version": "1.0",
+  "domain": "dssc-participant-onboarding-lifecycle",
+  "patterns": [
+    {
+      "id": "dssc_participant_transition_state_v1",
+      "concept_uri": "dssc:GovernanceSurface",
+      "entity_type": "intent_hint",
+      "regex": "(?i)\\bdssc\\.participant\\.transition_state\\.v1\\b",
+      "examples": [
+        "dssc.participant.transition_state.v1"
+      ]
+    },
+    {
+      "id": "dssc_participant_evaluate_admission_v1",
+      "concept_uri": "dssc:GovernanceSurface",
+      "entity_type": "intent_hint",
+      "regex": "(?i)\\bdssc\\.participant\\.evaluate_admission\\.v1\\b",
+      "examples": [
+        "dssc.participant.evaluate_admission.v1"
+      ]
+    }
+  ]
+}

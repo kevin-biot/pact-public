@@ -1,0 +1,28 @@
+{
+  "id": "dssc-rulebook-policy-mapping-demo-0.1.0",
+  "domain": "dssc-rulebook-policy-mapping",
+  "version": "0.1.0",
+  "providerId": "ontology:pact-public:trust",
+  "trustTier": "Tier1",
+  "policySnapshotId": "sha256:8287a8f5229dffc64e18540c14bd1fc02d80f6d9a42ecb17d338dae83135ff15",
+  "files": {
+    "context": "sha256:ee73d52fbc100d23408fbe952888ad7199316223b06d80181bf0662f2443d82b",
+    "vocab": "sha256:b8a54c6256ec66c66b22abd94a44f8582f7c70c9bb7f54a5c5d17e33f7b0daf9",
+    "shapes": "sha256:0c9c4284913965f7985222599c74d1ec2a0bc2e23972bfb4e704556c4d7a6096",
+    "thesaurus": "sha256:f09d26803c98a46240591c042a35d64bc48848f0d6c35b6727e52de69be8aa97",
+    "thesaurus_local": "sha256:0409ef0a6515c2d1bc2aeeebf6fa69515a59456277bbf195c6220b47539b6125",
+    "patterns": "sha256:9cf1b462be52ea1ecce5603ccc25052c51554dfe79f962c587074c66f91cebd3",
+    "intent_mappings": "sha256:425d0ac1d786b3c20f60a93da4e73c3824a409ddedebe1f1d8c33f8dc65fd336",
+    "convergence": "sha256:b8f244194c134a8767da4707826b78d84be0c09c604c106d5ae5e5c35f0f3956",
+    "decision_space": "sha256:8287a8f5229dffc64e18540c14bd1fc02d80f6d9a42ecb17d338dae83135ff15",
+    "message_identifiers": "sha256:d69647c59f7e9ffad60c7a6efeb41d19f1147e90f9c4afb9222117d5e028475f",
+    "extraction_summary": "sha256:9af7a181e7627dde0e5f50eea55469e78b1aa83c333d8b5fed46a652dd7dbe60",
+    "source_extract": "sha256:e6365f60f19a31bfeac75d209b9f643fe0ccccb20fb74c0622b2eb5af04ec0f3",
+    "crosswalk": "sha256:847da632a499bd3a19c3c2daa1a6e32d05ea36eedd80f68794de713525fa537e"
+  },
+  "precedence": [],
+  "denyWins": true,
+  "nbf": "2026-04-14T00:00:00Z",
+  "exp": "2031-04-14T00:00:00Z",
+  "revEpoch": 1
+}

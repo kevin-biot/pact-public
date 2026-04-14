@@ -1,0 +1,23 @@
+{
+  "@context": {
+    "dssc": "https://pact.example/ontology/dssc-eudi-attestation-admission/"
+  },
+  "entries": [
+    {
+      "label": "GovernanceDecision",
+      "alt": [],
+      "properties": {
+        "entity_type": "concept",
+        "description": "Canonical concept for dssc-eudi-attestation-admission"
+      }
+    },
+    {
+      "label": "PolicySnapshotBinding",
+      "alt": [],
+      "properties": {
+        "entity_type": "concept",
+        "description": "Canonical concept for dssc-eudi-attestation-admission"
+      }
+    }
+  ]
+}

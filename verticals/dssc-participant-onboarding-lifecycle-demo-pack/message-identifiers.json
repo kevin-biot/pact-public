@@ -1,0 +1,9 @@
+{
+  "schema_version": "0.1",
+  "generated_at_utc": "2026-04-14T12:00:00Z",
+  "profile": "dssc-participant-onboarding-lifecycle-demo-pack",
+  "domain": "dssc-participant-onboarding-lifecycle",
+  "message_identifiers": [],
+  "message_types": [],
+  "note": "No ISO-style message identifiers for this DSSC governance demo pack."
+}
